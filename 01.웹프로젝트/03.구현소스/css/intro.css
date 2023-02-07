@@ -5,12 +5,24 @@ html, body{
     width: 100vw;
     height: 100vh;
     margin: 0;
+    padding: 0;
     /* overflow: hidden; */
 }
 
 body{
     background-color: #253B82;
 }
-video{
-    width: 700px;
+
+.l_con{
+    width: 600px;
+    height: 600px;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+#lvid{
+    height: 600px;
+    width: 625px;
+    object-fit: cover;
+    object-position: left bottom;
 }

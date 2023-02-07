@@ -7,3 +7,10 @@ html, body{
     margin: 0;
     /* overflow: hidden; */
 }
+
+body{
+    background-color: #253B82;
+}
+video{
+    width: 700px;
+}

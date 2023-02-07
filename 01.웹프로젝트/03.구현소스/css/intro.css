@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* EDIYA COFFEE PJ 인트로 페이지 CSS - intro.css */
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    /* overflow: hidden; */
+}

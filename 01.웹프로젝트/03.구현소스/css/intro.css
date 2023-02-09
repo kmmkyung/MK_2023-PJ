@@ -1,64 +1,57 @@
 @charset "utf-8";
 /* EDIYA COFFEE PJ 인트로 페이지 CSS - intro.css */
 
+@import url(./reset.css);
+
 /* 공사중! */
 *{
     outline: 1px dotted yellow;
 }
 
-html, body{
-    width: 100%;
+body{
     height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-/* 초기화 */
-h2, p{
-    margin: 0;
-    padding: 0;
+    background-color: #253B82;
 }
 
 .intro_all{
-    height: 100%;
     display: flex;
+}
+.container{
+    flex: 1;
 }
 
 .half{
     width: 50%;
-    background-color: #253B82;
-}
-
-.container{
     position: relative;
 }
 
-.l_con{
-    background-color: rgb(50, 131, 131);
-}
-
 .container h2{
-    margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 100px;
-    font-weight: 900;
-    color: #fff;
     position: absolute;
     top: 120px;
     left: 95px;
-
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 130px;
+    color: #fff;
 }
 
+.con{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 240px;
+}
 .con p{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 26px;
     color: #fff;
+    text-align: center;
+    padding: 40px 0 0;
 }
-
 
 .vid{
     height: 600px;
-    width: 625px;
+    width: 600px;
     object-fit: cover;
     object-position: left bottom;
 }

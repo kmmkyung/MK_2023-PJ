@@ -5,35 +5,57 @@
 
 /* 공사중! */
 *{
-    outline: 1px dotted yellow;
+    /* outline: 1px dotted yellow; */
 }
 
 body{
-    height: 100vh;
     background-color: #253B82;
 }
 
-.intro_all{
+#intro_all{
     display: flex;
-}
-.container{
-    flex: 1;
+    height: 100vh;
 }
 
 .half{
     width: 50%;
+    height: 100%;
     position: relative;
+    /* .container h2의 부모 */
+}
+
+.half::before{
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#half_l:hover{
+    background-color: #253B82;
+
+}
+
+.container{
+    flex: 1;
 }
 
 .container h2{
     position: absolute;
     top: 120px;
-    left: 95px;
+    left: 120px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 10rem;
     font-weight: 900;
     line-height: 130px;
-    color: #fff;
+    /* color: #fff; */
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0)
+}
+
+#textrtl{
+    direction: rtl;
 }
 
 .con{
@@ -41,9 +63,10 @@ body{
     margin: 0 auto;
     margin-top: 240px;
 }
+
 .con p{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 26px;
+    font-size: 2.6rem;
     color: #fff;
     text-align: center;
     padding: 40px 0 0;

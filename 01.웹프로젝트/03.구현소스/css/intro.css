@@ -31,34 +31,32 @@ body{
 }
 
 .half::before{
-    /* content: '';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); */
+    background: rgba(0, 0, 0, 0.6);
 }
 
-/* #half_l:hover{
-    background-color: #253B82;
+/* .h_l:hover h2{
+    color: #fff;
 } */
-
-.container{
-    flex: 1;
-}
 
 .container h2{
     position: absolute;
     top: 120px;
-    left: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 10rem;
     font-weight: 900;
     line-height: 130px;
     /* color: #fff; */
     -webkit-text-stroke: 1px #fff;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0)
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    white-space: nowrap;
 }
 
 #textrtl{

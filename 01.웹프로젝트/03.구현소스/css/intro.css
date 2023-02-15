@@ -18,7 +18,7 @@ body{
 }
 
 #intro_all>a{
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
@@ -30,7 +30,7 @@ body{
     overflow: hidden;
 }
 
-/* .half::before{
+.half::before{
     content: '';
     position: absolute;
     top: 0;
@@ -38,7 +38,7 @@ body{
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-} */
+}
 
 /* .h_l:hover h2{
     color: #fff;

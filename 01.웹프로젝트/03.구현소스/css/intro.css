@@ -27,7 +27,7 @@ body{
     height: 100%;
     position: relative;
     /* .container h2의 부모 */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .half::before{
@@ -40,9 +40,9 @@ body{
     background: rgba(0, 0, 0, 0.6);
 }
 
-/* .h_l:hover h2{
-    color: #fff;
-} */
+.container{
+    padding-top: 240px;
+}
 
 .container h2{
     position: absolute;
@@ -53,11 +53,9 @@ body{
     font-size: 10rem;
     font-weight: 900;
     line-height: 130px;
-    /* color: #fff; */
     -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     white-space: nowrap;
-    box-sizing: border-box;
 }
 
 #textrtl{
@@ -67,7 +65,7 @@ body{
 .con{
     width: 600px;
     margin: 0 auto;
-    margin-top: 240px;
+    /* margin-top: 240px; */
 }
 
 .con p{

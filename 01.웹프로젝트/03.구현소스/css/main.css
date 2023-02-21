@@ -9,12 +9,15 @@
 }
 
 #gnb{
-
 }
 
 #all_nav{
-    display: grid;
+    display: flex;
     height: 100px;
+}
+
+.l_nav, .r_nav{
+    border-bottom: 1px solid #fff;
 }
 
 .l_nav>ul{
@@ -45,6 +48,10 @@
 .r_nav{
     display: flex;
     justify-content: flex-end;
-
+    align-items: center;
+    width: 850px;
 }
 
+.r_nav>.fran{
+    margin-right: 130px;
+}

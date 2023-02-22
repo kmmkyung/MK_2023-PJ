@@ -22,6 +22,15 @@ body{
     height: 100%;
 }
 
+#intro_all>a{
+    width: 50%;
+    height: 100%;
+}
+#intro_all>a:hover .half::before{
+    background: rgba(0, 0, 0, 0);
+}
+
+
 .half{
     width: 100%;
     height: 100%;

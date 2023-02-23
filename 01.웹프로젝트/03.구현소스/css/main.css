@@ -2,8 +2,10 @@
 /* EDIYA COFFEE PJ 메인페이지 CSS - main.css */
 
 @import url(./reset.css);
+@import url(./core.css);
 
-#page_1,#page_2{
+#page_1{
+    width: 100%;
     height: 100vh;
     background: url(../images/p1_bg.jpg) no-repeat top/100%
 }
@@ -18,13 +20,13 @@
     position: relative;
     box-sizing: border-box;
     height: 100px;
-    /* width: 850px; */
+    width: 44.5vw;
 }
 .l_nav::after, .r_nav::after{
     content: '';
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     height: 1px;
     background-color: #fff;
 }
@@ -33,12 +35,12 @@
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    /* gap: 80px; */
     /* width: 850px; */
 }
 
 .l_nav ul>li{
-    padding: 0 min(1vw,40px);
-    line-height: 100px;
+    padding: 0 min(2vw,40px);
 }
 
 /* 메뉴 폰트 */
@@ -47,6 +49,8 @@
     font-size: 2.4rem;
     font-weight: bold;
     color: #fff;
+    line-height: 100px;
+
     /* display: block; */
 }
 
@@ -68,6 +72,21 @@
     /* right: 0; */
 }
 
+.r_nav>.i_search img{
+    width: 48px; 
+    padding: 0 1vw;
+}
+
+.r_nav>.i_search a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .r_nav>.fran{
-    margin-right: 5vw;
+    padding: 0 7vw;
+}
+
+.borl{
+    border-left: 1px solid #fff;
 }

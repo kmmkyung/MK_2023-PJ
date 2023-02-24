@@ -22,7 +22,7 @@
     position: relative;
     box-sizing: border-box;
     height: 100px;
-    /* width: 44.5vw; */
+    width: 44.5vw;
 }
 .l_nav::after, .r_nav::after{
     content: '';
@@ -93,9 +93,7 @@
 }
 
 .r_nav>.fran{
-    box-sizing: border-box;
-    width: 400px;
-text-align: center;
+    padding: 0 7vw;
 }
 
 .borl{

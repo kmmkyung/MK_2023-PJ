@@ -96,3 +96,22 @@ text-align: center;
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
 }
+
+.new_menu{
+    display: flex;
+}
+
+.newimg img{
+    width: 1200px;
+    height: 980px;
+    object-fit: cover;
+    flex: 1;
+}
+
+.r_new{
+    width: 720px;
+}
+
+.r_new>h2{
+    
+}

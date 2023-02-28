@@ -97,6 +97,12 @@ text-align: center;
     border-bottom: 5px solid #000;
 }
 
+#movetext span{
+    font-size: 3.6rem;
+    padding: 0 30px;
+    line-height: 90px;s
+} 
+
 .new_menu{
     display: flex;
 }
@@ -113,5 +119,6 @@ text-align: center;
 }
 
 .r_new>h2{
-    
+    font-size: 6rem;
+    font-weight: bold;
 }

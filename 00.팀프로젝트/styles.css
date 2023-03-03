@@ -1,11 +1,17 @@
 
-@import url(/css/reset.css);
-@import url(/css/footer.css);
-@import url(/css/header.css);
+@import url(./css/reset.css);
+@import url(./css/footer.css); 
+@import url(./css/footer-media.css); 
+@import url(./css/main.css);
+@import url(./css/main-media.css);
+@import url(./css/header.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+/* ***** MEDIA ***** */
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* ***** MEDIA ***** */
 
 main {
   margin-top: 0;
@@ -18,7 +24,7 @@ main {
 
 /* ***** MEDIA ***** */
 
-.media_all{
+#media_all{
   width: min(64vw,1000px);
 }
 
@@ -62,10 +68,19 @@ main {
   cursor: pointer;
 }
 
+.media_Btns div>a{
+  color: #8c8c8c;
+}
+
+
 .media_Btns div:last-child,
 .media_Btns div:hover{
-  background: #e1425d;
-  color: white;
+  background-color: #e1425d;
+}
+
+.media_Btns div:last-child a,
+.media_Btns div:hover a{
+  color: #fff;
 }
 
 .media_con{
@@ -101,9 +116,8 @@ transform: translateX(-50%); */
 
 .media_con button:hover{
   background-color: #e966a1;
-  color: white;
+  color: #fff;
 }
-
 
 @media screen and (max-width: 767px) {
   .media_top{
@@ -130,3 +144,8 @@ transform: translateX(-50%); */
 }
 
 /* ***** MEDIA ***** */
+
+
+
+
+

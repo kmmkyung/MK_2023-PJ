@@ -40,16 +40,30 @@
     flex: 1;
     background: url(../images/p2_main_img.jpg) no-repeat center/cover;
 }
+
+.r_new{
+    flex-basis: 720px;
+    /* width: 720px; */
+}
+
+/* div-h2 */
+.r_new div:first-child{
+    padding: 40px 0;    
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.r_new div:first-child>h2{
+    font-size: 6rem;
+    font-weight: bold;
+}
+
 .new_menu_con{
     position: relative;
 }
-/* .newimg>img{
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-} */
+
 .btns{
     cursor: pointer;
+    width: 50px;
 }
 .lbtn{
     position: absolute;
@@ -83,20 +97,4 @@
 .slide img{
     width: 100%;
     height: 100%;
-}
-.r_new{
-    flex-basis: 600px;
-    width: 720px;
-}
-
-.r_new div:first-child{
-    box-sizing: border-box;
-    /* height: 153px; */
-    border-bottom: 1px solid #000;
-}
-.r_new>div>h2{
-    font-size: 6rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 153px;
 }

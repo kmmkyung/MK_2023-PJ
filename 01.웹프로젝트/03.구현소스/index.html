@@ -1,86 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/ED_icon.png" />
-    <link rel="stylesheet" href="./css/main.css">
-    <title>EDIYA COFFEE</title>
-</head>
-<body>
-    <section id="page_1">
-        <header id="gnb">
-            <div id="all_nav">
-                <nav class="l_nav">
-                    <ul>
-                        <li>
-                            <a href="#">BRAND</a>
-                        </li>
-                        <li>
-                            <a href="#">MENU</a>
-                        </li>
-                        <li>
-                            <a href="#">STORE</a>
-                        </li>
-                        <li>
-                            <a href="#">NEWS</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div id="p1_logo">
-                    <img src="./images/ED_icon.png" alt="이디야 아이콘">
-                </div>
-                <div class="r_nav">
-                    <div class="i_search borl">
-                        <a href="#">
-                            <img src="./images/icon_search.png" alt="search 아이콘">
-                        </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="./images/ED_icon.png" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>EDIYA COFFEE</title>
+        <script>
+            window.addEventListener("DOMContentLoaded",()=>{
+                console.log(111);
+                const sld=document.querySelector(".slide ul");
+                let num = 0;
+                document.querySelector(".rbtn").onclick=()=>{
+                    console.log(2322)
+                    sld.style.left = (num++*-300) + "px";
+                    sld.style.transition = ".4s";
+                }
+                document.querySelector(".lbtn").onclick=()=>{
+                    console.log(2322)
+                    sld.style.left = (num--*-300) + "px";
+                    sld.style.transition = ".4s";
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <section id="page_1">
+            <header id="gnb">
+                <div id="all_nav">
+                    <nav class="l_nav">
+                        <ul>
+                            <li>
+                                <a href="#">BRAND</a>
+                            </li>
+                            <li>
+                                <a href="#">MENU</a>
+                            </li>
+                            <li>
+                                <a href="#">STORE</a>
+                            </li>
+                            <li>
+                                <a href="#">NEWS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="p1_logo">
+                        <img src="./images/ED_icon.png" alt="이디야 아이콘" />
                     </div>
-                    <div class="fran borl">
-                        <a href="#">FRANCHISE</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-    <main>
-        <section id="page_2">
-            <!-- 흘러가는 문구 -->
-            <div id="movetext">
-                <span>EDIYA #THE NEW GRAY</span>
-                <span>EDIYA #THE NEW GRAY</span>
-                <span>EDIYA #THE NEW GRAY</span>
-                <span>EDIYA #THE NEW GRAY</span>
-                <span>EDIYA #THE NEW GRAY</span>
-            </div>
-            <div class="new_menu">
-                <div class="newimg">
-                    <img src="./images/p2_main_img.jpg" alt="신메뉴">
-                </div>
-                <div class="r_new">
-                    <div>
-                        <h2>NEW MENU</h2>
-                    </div>
-                    <div class="new_menu_con">
-                        <img src="./images/icon_left.png" alt="왼쪽 아이콘">
-                        <div></div>
-                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼">
-                        <img src="./images/icon_right.png" alt="오른쪽 아이콘">
-                    </div>
-                    <div>
-                        <p>The New Gray</p>
-                        <a href="#"><img src="./images/icon_add.png" alt="더보기">more</a>
-                    </div>
-                    <div>
-                        <p><span>Black Sesame Cream Latte</span>HOT 흑임자크림 라떼</p>
+                    <div class="r_nav">
+                        <div class="i_search borl">
+                            <a href="#">
+                                <img src="./images/icon_search.png" alt="search 아이콘" />
+                            </a>
+                        </div>
+                        <div class="fran borl">
+                            <a href="#">FRANCHISE</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </header>
         </section>
-        <section id="page_3"></section>
-        <section id="page_4"></section>
-        <section id="page_5"></section>
-        <section id="page_6"></section>
-    </main>
-</body>
-</html> 
+        <main>
+            <section id="page_2">
+                <!-- 흘러가는 문구 -->
+                <div id="movetext">
+                    <span>EDIYA #THE NEW GRAY</span>
+                    <span>EDIYA #THE NEW GRAY</span>
+                    <span>EDIYA #THE NEW GRAY</span>
+                    <span>EDIYA #THE NEW GRAY</span>
+                    <span>EDIYA #THE NEW GRAY</span>
+                </div>
+                <div class="new_menu">
+                    <div class="newimg">
+                        <!-- <img src="./images/p2_main_img.jpg" alt="신메뉴"> -->
+                    </div>
+                    <div class="r_new">
+                        <div>
+                            <h2>NEW MENU</h2>
+                        </div>
+                        <div class="new_menu_con">
+                            <img src="./images/icon_left.png" alt="왼쪽 아이콘" class="btns lbtn" />
+                            <div class="slide">
+                                <ul>
+                                    <li>
+                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                    </li>
+                                    <li>
+                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                    </li>
+                                    <li>
+                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                    </li>
+                                    <li>
+                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="./images/icon_right.png" alt="오른쪽 아이콘" class="btns rbtn" />
+                        </div>
+                        <div>
+                            <p>The New Gray</p>
+                            <a href="#"><img src="./images/icon_add.png" alt="더보기" />more</a>
+                        </div>
+                        <div>
+                            <p><span>Black Sesame Cream Latte</span>HOT 흑임자크림 라떼</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="page_3"></section>
+            <section id="page_4"></section>
+            <section id="page_5"></section>
+            <section id="page_6"></section>
+        </main>
+    </body>
+</html>

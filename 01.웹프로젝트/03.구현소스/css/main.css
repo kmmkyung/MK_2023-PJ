@@ -4,7 +4,7 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-/*---------- page1 ----------*/
+/*---------- _____page1_____ ----------*/
 
 #page_1{
     height: 100vh;
@@ -12,24 +12,47 @@
 }
 
 
-/*---------- page2 ----------*/
+/*---------- _____page2_____ ----------*/
 
 #page_2{
     height: 100vh;
 }
 
+/*-- 흘러가는 글자 --*/
 #movetext{
     box-sizing: border-box;
-    height: 100px;
+    width: 100%;
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
+    overflow: hidden;
+    height: 100px;
 }
 
-#movetext span{
+.movetext{
+    display: flex;
+    height: 100%;
+    width: 200%;
+    justify-content: center;
+    align-items: center;
+    
+    white-space: nowrap;
+    
+    position: relative;
+    left: 0%;
+    animation: moveP2 30s linear infinite;
+}
+
+.movetext span{
     font-size: 3.6rem;
     padding: 0 30px;
-    line-height: 90px;
-} 
+}
+
+@keyframes moveP2 {
+    to{
+        left: -100%;
+    }
+}
+/*-- 흘러가는 글자 --*/
 
 .new_menu{
     display: flex;
@@ -43,58 +66,92 @@
 
 .r_new{
     flex-basis: 720px;
-    /* width: 720px; */
+    /* 720px 영역을 배분했는데 width가 필요한지...?
+    개발자 도구로 보면 둘 다 적용이 됨(⊙_⊙;) */
+    width: 720px;
 }
 
-/* div-h2 */
-.r_new div:first-child{
+.new_menu-con1{
     padding: 40px 0;    
     text-align: center;
     border-bottom: 1px solid #000;
 }
-.r_new div:first-child>h2{
+.new_menu-con1>h2{
     font-size: 6rem;
     font-weight: bold;
 }
 
-.new_menu_con{
+.new_menu-con2{
     position: relative;
+    top: 60px;
 }
 
 .btns{
     cursor: pointer;
-    width: 50px;
+    width: 46px;
+    height: 10px;
 }
+
 .lbtn{
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 56px;
 }
+
 .rbtn{
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 56px;
 }
+
 .slide{
-    text-align: center;
-    width: 300px;
-    height: 350px;
-    background-color: #ccc;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
+    background-color: #eee;
+    text-align: center;
     overflow: hidden;
 }
+
 .slide ul{
-    position: relative;
-    left: 0;
+    /* position: relative; */
+    /* left: 0; */
     display: flex;
     width: 400%;
-
+    height: 400px;
+    /* height 고정을 안하니까 2.5픽셀정도가 추가됨...?? */
 }
+
 .slide li{
     flex: 1;
     flex-shrink: 0;
 }
+
 .slide img{
     width: 100%;
     height: 100%;
+}
+
+.new_menu-con3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+
+.new_menu-con3 p{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.new_menu-con3 a{
+    display: block;
+    color: #757575;
+    font-size: 2rem;
+}
+
+
+.new_menu-con4 img{
+    width: 48px;
+    height: 48px;
 }

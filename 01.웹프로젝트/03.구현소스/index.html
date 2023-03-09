@@ -7,21 +7,21 @@
         <link rel="stylesheet" href="./css/main.css" />
         <title>EDIYA COFFEE</title>
         <script>
-            window.addEventListener("DOMContentLoaded",()=>{
-                console.log(111);
-                const sld=document.querySelector(".slide ul");
-                let num = 0;
-                document.querySelector(".rbtn").onclick=()=>{
-                    console.log(2322)
-                    sld.style.left = (num++*-300) + "px";
-                    sld.style.transition = ".4s";
-                }
-                document.querySelector(".lbtn").onclick=()=>{
-                    console.log(2322)
-                    sld.style.left = (num--*-300) + "px";
-                    sld.style.transition = ".4s";
-                }
-            })
+            // window.addEventListener("DOMContentLoaded",()=>{
+            //     console.log(111);
+            //     const sld=document.querySelector(".slide ul");
+            //     let num = 0;
+            //     document.querySelector(".rbtn").onclick=()=>{
+            //         console.log(2322)
+            //         sld.style.left = (num++*-300) + "px";
+            //         sld.style.transition = ".4s";
+            //     }
+            //     document.querySelector(".lbtn").onclick=()=>{
+            //         console.log(2322)
+            //         sld.style.left = (num--*-300) + "px";
+            //         sld.style.transition = ".4s";
+            //     }
+            // })
         </script>
     </head>
     <body>
@@ -64,43 +64,45 @@
             <section id="page_2">
                 <!-- 흘러가는 문구 -->
                 <div id="movetext">
-                    <span>EDIYA #THE NEW GRAY</span>
-                    <span>EDIYA #THE NEW GRAY</span>
-                    <span>EDIYA #THE NEW GRAY</span>
-                    <span>EDIYA #THE NEW GRAY</span>
-                    <span>EDIYA #THE NEW GRAY</span>
+                    <div class="movetext">
+                        <span>EDIYA #THE NEW GRAY</span>
+                        <span>EDIYA #THE NEW GRAY</span>
+                        <span>EDIYA #THE NEW GRAY</span>
+                        <span>EDIYA #THE NEW GRAY</span>
+                        <span>EDIYA #THE NEW GRAY</span>
+                    </div>
                 </div>
                 <div class="new_menu">
                     <div class="newimg"></div>
                     <div class="r_new">
-                        <div>
+                        <div class="new_menu-con1">
                             <h2>NEW MENU</h2>
                         </div>
-                        <div class="new_menu_con">
-                            <img src="./images/icon_left.png" alt="왼쪽 아이콘" class="btns lbtn" />
+                        <div class="new_menu-con2">
+                            <img class="btns lbtn" src="./images/icon_left.png" alt="왼쪽 아이콘"/>
                             <div class="slide">
                                 <ul>
                                     <li>
-                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                        <img src="./images/P2_Black Sesame Cream Latte.png" alt="흑임자크림 라떼" />
                                     </li>
                                     <li>
-                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                        <img src="./images/P2_Black Sesame Cream Caffe Latte.png" alt="흑임자크림 카페라떼" />
+                                    </li>
+                                       <li>
+                                        <img src="./images/P2_ICED Black Sesame Cream Latte.png" alt="ICED 흑임자크림 라떼" />
                                     </li>
                                     <li>
-                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
-                                    </li>
-                                    <li>
-                                        <img src="./images/Black Sesame Cream Latte.png" alt="흑임자 라떼" />
+                                        <img src="./images/P2_ICED Black Sesame Cream Caffe Latte.png" alt="ICED 흑임자크림 카페라떼" />
                                     </li>
                                 </ul>
                             </div>
-                            <img src="./images/icon_right.png" alt="오른쪽 아이콘" class="btns rbtn" />
+                            <img  class="btns rbtn" src="./images/icon_right.png" alt="오른쪽 아이콘"/>
                         </div>
-                        <div>
+                        <div class="new_menu-con3">
                             <p>The New Gray</p>
-                            <a href="#"><img src="./images/icon_add.png" alt="더보기" />more</a>
+                            <a href="#"><img src="./images/icon_add.png" alt="더보기"/>more</a>
                         </div>
-                        <div>
+                        <div class="new_menu-con4">
                             <p><span>Black Sesame Cream Latte</span>HOT 흑임자크림 라떼</p>
                         </div>
                     </div>

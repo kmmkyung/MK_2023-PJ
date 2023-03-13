@@ -5,10 +5,8 @@ function linkFn(){
 
   // 로고 대상 선정
   const logo = document.querySelectorAll(".logo a");
-  for(let x of logo){
-    x.onclick = (e) => {
+    logo.onclick = (e) => {
         e.preventDefault();
         location.href = "main_page.html";
     }; //////// click ///////////
-  }
 } ////////// linkFn함수 //////////////

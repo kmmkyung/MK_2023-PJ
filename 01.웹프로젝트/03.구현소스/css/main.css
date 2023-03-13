@@ -295,6 +295,26 @@ margin-right: min(5vw,128px);
     transform: translate(-50%,-50%);
 }
 
+.page_3-con1__title{
+    margin-left: 1vw;
+    height: 20%;
+}
+
+.page_3-con1__title p{
+    font-size: 2.2rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+.page_3-con1__title span{
+    display: block;
+    font-size: 2.4rem;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+
 .page_3-con2{
     box-sizing: border-box;
     height: 18%;
@@ -309,29 +329,13 @@ margin-right: min(5vw,128px);
     margin-left: 100px;
 }
 
-.page_3-con1__title{
-    margin-left: 1vw;
-}
-
-.page_3-con1__title p{
-    font-size: min(2rem,2.2rem);
-    position: relative;
-    top: -50%;
-    transform: translateY(50%);
-    white-space: nowrap;
-}
-
-.page_3-con1__title span{
-    display: block;
-    font-size: min(1.8rem,2.4rem);
-    margin-top: 4px;
-    white-space: nowrap;
-}
 /*---------- _____page4_____ ----------*/
 #page_4{
     background-color: var(--main-color);
-    /* height: 2094px; */
+    height: 2094px;
 }
+
+
 /*---------- _____page5_____ ----------*/
 #page_5{
 
@@ -362,3 +366,5 @@ new menu칸을 세로 꽉 차게 %로 잡았는데...
 2. position: relative;
 transform: ;
 */
+
+/* bar html 검사 */

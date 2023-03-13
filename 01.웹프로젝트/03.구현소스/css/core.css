@@ -8,6 +8,10 @@ font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
+:root{
+    --main-color:#253B82
+}
+
 /* -------헤더-------- */
 
 #all_nav{

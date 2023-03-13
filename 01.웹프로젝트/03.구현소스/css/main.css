@@ -174,7 +174,7 @@
 .small_bar{
     width: 100px;
     height: 8px;
-    background-color: #253B82;
+    background-color: var(--main-color);
 }
 
 .new_menu-con3{
@@ -205,25 +205,141 @@
     height: 48px;
 }
 
-
 .new_menu-con4{
     box-sizing: border-box;
     height: 15%;
     text-align: center;
 }
 
-.new_menu-con4__en{
+.new_menu-con4__title{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 2.2rem;
-    margin-bottom: 4px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.new_menu-con4__ko{
+
+.new_menu-con4__title>span{
+    display: block;
     font-size: 2.4rem;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 4px;
 }
 
+/*---------- _____page3_____ ----------*/
 
+#page_3{
+    height: 100vh;
+}
+.page_3-nav{
+    box-sizing: border-box;
+    height: 80px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.page_3-nav>ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.page_3-nav>ul>li:first-child,
+.page_3-nav>ul>li:nth-child(2),
+.page_3-nav>ul>li:nth-child(3),
+.page_3-nav>ul>li:nth-child(4),
+.page_3-nav>ul>li:nth-child(5){
+margin-right: min(5vw,128px);
+}
+
+.page_3-nav ul>li>a{
+    font-size: 2.4rem;
+    color: #000;
+    white-space: nowrap;
+}
+
+#page_3-cons{
+    height: calc(100vh - 80px);
+}
+
+.page_3-con1{
+    height: 82%;
+}
+
+.page_3-con1>ul{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page_3-con1>ul>li{
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-right: 1px solid #000;
+}
+
+.page_3-con1>ul>li>div:first-child{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+}
+
+.page_3-con1__img{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.page_3-con2{
+    box-sizing: border-box;
+    height: 18%;
+    border-top: 1px solid #000;
+}
+
+.page_3-con2>h2{
+    font-size: 8rem;
+    font-weight: bold;
+    height: 100%;
+    line-height: 16.5vh;
+    margin-left: 100px;
+}
+
+.page_3-con1__title{
+    margin-left: 1vw;
+}
+
+.page_3-con1__title p{
+    font-size: min(2rem,2.2rem);
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
+    white-space: nowrap;
+}
+
+.page_3-con1__title span{
+    display: block;
+    font-size: min(1.8rem,2.4rem);
+    margin-top: 4px;
+    white-space: nowrap;
+}
+/*---------- _____page4_____ ----------*/
+#page_4{
+    background-color: var(--main-color);
+    /* height: 2094px; */
+}
+/*---------- _____page5_____ ----------*/
+#page_5{
+
+}
+/*---------- _____page6_____ ----------*/
+#page_6{
+
+}
 
 /* 여쭤볼것 */
 /* 1. font-family

@@ -4,6 +4,9 @@
 @import url(./reset.css);
 @import url(./core.css);
 
+body{
+    font-family: 'Noto Sans KR','Nunito Sans';
+}
 /*---------- _____page1_____ ----------*/
 
 #page_1{
@@ -212,7 +215,7 @@
 }
 
 .new_menu-con4__title{
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
     font-size: 2.2rem;
     position: relative;
     top: 50%;
@@ -222,7 +225,7 @@
 .new_menu-con4__title>span{
     display: block;
     font-size: 2.4rem;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     margin-top: 4px;
 }
 
@@ -381,8 +384,11 @@ new menu칸을 세로 꽉 차게 %로 잡았는데...
 /* 블록 세로 중앙정렬
 1. flex
 
-2. position: relative;
-transform: ;
+2. position: relative/absolute/fixed;
+top:50%;
+transform: translateY(-50%) ;
+________________________
+top:calc(50% - 높이값절반)
 */
 
 /* bar html 검사 */

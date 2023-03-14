@@ -5,7 +5,7 @@
 @import url(./core.css);
 
 body{
-    font-family: 'Noto Sans KR','Nunito Sans';
+    font-family: 'Nunito Sans','Noto Sans KR';
 }
 /*---------- _____page1_____ ----------*/
 
@@ -347,6 +347,13 @@ margin-right: min(5vw,128px);
     left: 125px;
 }
 
+.page_4-con1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 160px 0px;
+}
+
 .page_4-top h2{
     font-size: 10rem;
     font-weight: bold;
@@ -354,7 +361,50 @@ margin-right: min(5vw,128px);
     padding-top: 200px;
 }
 
+.page_4-top p{
+    font-size: 4rem;
+    margin-top: 20px;
+    text-align: center;
+}
 
+
+.page_4-con1__text{
+    width: 597px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+.page_4-con1__text::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.page_4-con1 h5,
+.page_4-con2 h5{
+    font-size: 2.8rem;
+}
+
+.page_4-con1 p,
+.page_4-con2 p{
+    font-size: 2rem;
+}
+
+
+.page_4-con1 img{
+    width: 850px; 
+    height: 550px;
+
+}
+
+.page_4-con2 img{
+    width: 600px;
+    height: 600px;
+}
 
 
 /*---------- _____page5_____ ----------*/
@@ -366,20 +416,13 @@ margin-right: min(5vw,128px);
 
 }
 
-/* 여쭤볼것 */
-/* 1. font-family
-Nunito Sans - 영문체
-Noto Sans KR -한글체
 
-font-family: 'Nunito Sans','Noto Sans KR', sans-serif;
-이렇게 설정하면 한글도 첫번째로 나오는데...
-전체 바디에 설정하고 한글마다 따로 설정해줘야할지,,,（；´д｀）ゞ
-*/
 
-/* 
-new menu칸을 세로 꽉 차게 %로 잡았는데...
-줄이니까 슬라이드 ul이 뚫고 나온다..!
-*/
+
+
+
+
+
 
 /* 블록 세로 중앙정렬
 1. flex
@@ -390,5 +433,3 @@ transform: translateY(-50%) ;
 ________________________
 top:calc(50% - 높이값절반)
 */
-
-/* bar html 검사 */

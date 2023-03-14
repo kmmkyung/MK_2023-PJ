@@ -430,6 +430,6 @@ margin-right: min(5vw,128px);
 2. position: relative/absolute/fixed;
 top:50%;
 transform: translateY(-50%) ;
-________________________
-top:calc(50% - 높이값절반)
+
+3. top:calc(50% - 높이값절반)
 */

@@ -92,6 +92,7 @@ img{
     position: relative;
     width: max-content;
     overflow: hidden;
+    left: 0;
 }
 .slide::after{
     content: '';

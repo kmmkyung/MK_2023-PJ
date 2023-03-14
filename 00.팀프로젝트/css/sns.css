@@ -6,6 +6,10 @@
   outline: 1px dotted red;
 } */
 
+main{
+  place-items: center;
+}
+
 /* 루트동그라미 */
 .sbx h2 > div {
   background-repeat: no-repeat;
@@ -15,13 +19,13 @@
   border-radius: 50%;
 }
 .circle1 > div {
-  background-image: url(./images/images_SNS/color2.jpg);
+  background-image: url(../images/images_SNS/color2.jpg);
 }
 .circle2 > div {
-  background-image: url(./images/images_SNS/color3.jpg);
+  background-image: url(../images/images_SNS/color3.jpg);
 }
 .circle3 > div {
-  background-image: url(./images/images_SNS/color4.jpg);
+  background-image: url(../images/images_SNS/color4.jpg);
 }
 
 /* 오른쪽상단 루트박스 */
@@ -43,6 +47,7 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px;
+  color: #000;
 }
 .tbx h3 {
   font-size: 12px;

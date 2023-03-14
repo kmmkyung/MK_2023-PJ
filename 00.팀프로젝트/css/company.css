@@ -17,29 +17,19 @@ html,body{min-width:1200px;height:auto;min-height:100%;overflow:auto;} */
 .tit_cat{
   margin-bottom: 40px;
 }
+
 .tit_cat hgroup h2 {
-    line-height: 34px;
-    font-size: 24px;
-}
-.tit_cat hgroup h2 {
-    line-height: 40px;
-    font-size: 18px;
-    color: #1e1e1e;
-}
-h1, h2, h3, h4, h5, h6, b, strong {
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
 }
 
-user agent stylesheet
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.tit_cat hgroup h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8c8c8c;
 }
+
 
 /* media="screen and (min-width: 768px)" */
 .contents {
@@ -105,9 +95,6 @@ img, hr {
     line-height: 33px;
     font-weight: 600;
     letter-spacing: -0.04em;
-}
-h1, h2, h3, h4, h5, h6, b, strong {
-    font-weight: 600;
 }
 
 strong {

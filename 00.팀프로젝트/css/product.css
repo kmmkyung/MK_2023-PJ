@@ -135,6 +135,7 @@ Menu
 
 .prodocutP{
   font-weight:700;
+  color: #8c8c8c;
 }
 
 
@@ -212,7 +213,7 @@ Menu
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
-    width: 40rem;
+    width: 30rem;
   }
   .photo {
     height: 175px;

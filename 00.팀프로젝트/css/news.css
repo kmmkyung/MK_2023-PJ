@@ -17,10 +17,15 @@ main{
 }
 .tit_wrap h2{
     display: inline-block;
-    font-size: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
 }
 .tit_wrap h5{
     display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #8c8c8c;
 }
 .table_wrap{
     margin: 0 auto;

@@ -11,7 +11,7 @@ body{
 
 #page_1{
     height: 100vh;
-    background: url(../images/p1_bg.jpg) no-repeat top/100%
+    background: url(../images/p1_bg.jpg) no-repeat top/cover;
 }
 
 
@@ -175,8 +175,8 @@ body{
 }
 
 .small_bar{
-    width: 100px;
-    height: 8px;
+    width: 20%;
+    height: 100%;
     background-color: var(--main-color);
 }
 
@@ -322,6 +322,7 @@ margin-right: min(5vw,128px);
     box-sizing: border-box;
     height: 18%;
     border-top: 1px solid #000;
+    position: relative;
 }
 
 .page_3-con2>h2{
@@ -332,16 +333,34 @@ margin-right: min(5vw,128px);
     margin-left: 100px;
 }
 
+.page_3-con2__icon{
+    position: absolute;
+    top: 0;
+}
+
+.icon-full_bar{
+    width: 500px;
+    height: 8px;
+    background-color: #eee;
+}
+
+.icon-small_bar{
+    width: 60%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
 /*---------- _____page4_____ ----------*/
 #page_4{
     background-color: var(--main-color);
-    height: 2094px;
+    /* height: 2094px; */
+    height: 216vh;
     position: relative;
     color: #fff;
 }
 
 #page_4>img{
-    width: 125px;
+    width: 6.5vw;
     position: absolute;
     top: 608px;
     left: 125px;
@@ -368,7 +387,8 @@ margin-right: min(5vw,128px);
 }
 
 .page_4-con1__text{
-    width: 597px;
+    flex-shrink: 1;
+    width: 31vw;
     display: flex;
     flex-direction: column;
     margin-right: 5vw;
@@ -377,6 +397,8 @@ margin-right: min(5vw,128px);
 .page_4-con1__text::after,
 .page_4-con2__text::after{
     content: '';
+    /* 디스플레이블록없어도 나오는데...있어야하는지? */
+    display: block;
     margin-top: 40px;
     width: 100%;
     height: 1px;
@@ -390,12 +412,13 @@ margin-right: min(5vw,128px);
 
 .page_4-con1 p,
 .page_4-con2 p{
-    font-size: 2rem;
+    white-space: nowrap;
+    font-size: min(20px,2vw);
 }
 
 .page_4-con1 img{
-    width: 850px; 
-    height: 550px;
+    width: 44.3vw; 
+    aspect-ratio: 1.544/1;
 }
 
 .page_4-con2{
@@ -405,8 +428,8 @@ margin-right: min(5vw,128px);
 }
 
 .page_4-con2 img{
-    width: 600px;
-    height: 600px;
+    aspect-ratio: 1/1;
+    width: 31vw;
 }
 
 .page_4-con2__text{
@@ -441,12 +464,16 @@ margin-right: min(5vw,128px);
 
 .page_5-listall__list{
     position: relative;
-    outline: 1px solid #eee;
     width: 700px;
 }
 
-.page_5-listall__list::before{
-    
+.page_5-listall__list::before,
+.page_5-listall__list:last-child::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
 }
 
 
@@ -476,16 +503,10 @@ margin-right: min(5vw,128px);
 }
 
 .list-icon{
-    width: 46px;
     position: absolute;
     top: calc(50% - 5.5px);
     right: 0;
 }
-
-
-
-
-
 
 /*---------- _____page6_____ ----------*/
 #page_6{

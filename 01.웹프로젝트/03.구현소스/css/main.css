@@ -304,7 +304,8 @@ margin-right: min(5vw,128px);
 }
 
 .page_3-con1__title p{
-    font-size: 2.2rem;
+    font-size: min(1.5vw, 22px);
+    /* font-size: 2.2rem; */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -313,7 +314,8 @@ margin-right: min(5vw,128px);
 
 .page_3-con1__title span{
     display: block;
-    font-size: 2.4rem;
+    font-size: min(1.7vw, 24px);
+    /* font-size: 2.4rem; */
     margin-top: 4px;
     white-space: nowrap;
 }
@@ -335,13 +337,20 @@ margin-right: min(5vw,128px);
 
 .page_3-con2__icon{
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+
+.icon-left{
+    margin-right: 40px;
 }
 
 .icon-full_bar{
-    width: 500px;
+    width: 26vw;
     height: 8px;
     background-color: #eee;
+    margin-top: 20px;
 }
 
 .icon-small_bar{
@@ -374,14 +383,14 @@ margin-right: min(5vw,128px);
 }
 
 .page_4-top h2{
-    font-size: 10rem;
+    font-size: min(8vw,100px);
     font-weight: bold;
     text-align: center;
     padding-top: 200px;
 }
 
 .page_4-top p{
-    font-size: 4rem;
+    font-size: min(4vw,40px);
     margin-top: 20px;
     text-align: center;
 }
@@ -397,7 +406,6 @@ margin-right: min(5vw,128px);
 .page_4-con1__text::after,
 .page_4-con2__text::after{
     content: '';
-    /* 디스플레이블록없어도 나오는데...있어야하는지? */
     display: block;
     margin-top: 40px;
     width: 100%;
@@ -407,13 +415,14 @@ margin-right: min(5vw,128px);
 
 .page_4-con1 h5,
 .page_4-con2 h5{
-    font-size: 2.8rem;
+    /* white-space: nowrap; */
+    font-size: min(3vw,28px);
 }
 
 .page_4-con1 p,
 .page_4-con2 p{
-    white-space: nowrap;
-    font-size: min(20px,2vw);
+    /* white-space: nowrap; */
+    font-size: min(2vw,20px);
 }
 
 .page_4-con1 img{
@@ -424,7 +433,7 @@ margin-right: min(5vw,128px);
 .page_4-con2{
     display: flex;
     align-items: center;
-    margin: 210px 0 0 215px;
+    margin: 22vh 11.2vw 0;
 }
 
 .page_4-con2 img{
@@ -454,17 +463,18 @@ margin-right: min(5vw,128px);
 }
 
 .page_5-title{
-    font-size: 8rem;
-    font-weight: 900;
-    /* font인 경우 사이즈가 rem이라 고정높이가
-    아니기 때문에 top:calc() 적용 불가능?? */
-    margin-right: 14vw;
+    font-size: min(5vw,80px);
+    font-weight: bold;
+    margin-right:14vw;
     white-space: nowrap;
+}
+
+.page_5-listall{
 }
 
 .page_5-listall__list{
     position: relative;
-    width: 700px;
+    width: min(37vw,700px);
 }
 
 .page_5-listall__list::before,
@@ -486,19 +496,19 @@ margin-right: min(5vw,128px);
 .list-type{
     display: block;
     color: var(--main-color);
-    font-size: 2rem;
+    font-size: min(1.3vw,2rem);
     margin-bottom: 40px;
 }
 
 .list-read{
     display: block;
-    font-size: 2.4rem;
+    font-size: min(1.5vw,2.4rem);
     font-weight: bold;
 }
 
 .list-date{
     display: block;
-    font-size: 2rem;
+    font-size: min(1.3vw,2rem);
     margin-top: 12px;
 }
 
@@ -514,10 +524,57 @@ margin-right: min(5vw,128px);
     background-color: var(--main-color);
 }
 
+.page_6-listall{
+    display: flex;
+    justify-content: center;
+}
 
+.page_6-listall__list{
+    margin: 57px 10px;
+}
 
+.page_6-listall__list a{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    white-space: nowrap;
+}
 
+#page_6>img{
+    width: 650px;
+    text-align: center;
+}
 
+.page_6-icon{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page_6-icon a{
+    color: #fff;
+}
+
+.page_6-icon .fa-facebook,
+.page_6-icon .fa-youtube,
+.page_6-icon .fa-instagram{
+    font-size: 36px;
+    margin: 0 0.5vw;
+}
+
+.address{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.address span:last-child{
+    display: block;
+    margin-top: 20px;
+}
 
 
 

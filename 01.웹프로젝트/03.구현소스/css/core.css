@@ -25,7 +25,9 @@ font-family: 'Nunito Sans', sans-serif;
     position: relative;
     box-sizing: border-box;
     height: 100px;
+    width: 100%;
 }
+
 .l_nav::after, .r_nav::after{
     content: '';
     position: absolute;
@@ -42,13 +44,14 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .l_nav ul>li{
-    padding: 0 min(2vw,40px);
+    /* padding: 0 40px; */
+    /* padding: 0 2vw; */
+    padding:0 min(1vw,40px);
 }
 
 /* 메뉴 폰트 */
 .l_nav>ul>li a, .fran>a{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 2.4rem;
+    font-size: min(2vw, 24px);
     font-weight: bold;
     color: #fff;
     line-height: 100px;
@@ -62,26 +65,25 @@ font-family: 'Nunito Sans', sans-serif;
 .r_nav{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
-.r_nav>.i_search{
-    height: 100px;
+.r_nav>.icon-search{
     width: 100px;
+    height: 100px;
     text-align: center;
-    line-height: 148px;
     box-sizing: border-box;
 }
 
-.r_nav>.i_search img{
-    width: 48px; 
-
+.r_nav>.icon-search i{
+    font-size: 36px;
+    line-height: 100px;
+    color: #fff;
 }
 
 .r_nav>.fran{
     box-sizing: border-box;
-    width: 400px;
-text-align: center;
+    width: min(20vw,400px);
+    text-align: center;
 }
 
 .borl{

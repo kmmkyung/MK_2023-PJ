@@ -19,6 +19,7 @@ body{
 
 #page_2{
     height: 100vh;
+
 }
 
 #movetext{
@@ -74,7 +75,7 @@ body{
 
 @keyframes moveP2 {
     to{
-        /* left: -100%; */
+        left: -100%;
     }
 }
 /*-- 흘러가는 글자 --*/
@@ -233,13 +234,18 @@ body{
 
 #page_3{
     height: 100vh;
+    /* position: fixed;
+    top: 500px;
+    background-color: #fff; */
 }
+
 .page_3-nav{
     box-sizing: border-box;
     height: 80px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
+
 .page_3-nav>ul{
     height: 100%;
     display: flex;
@@ -259,6 +265,10 @@ margin-right: min(5vw,128px);
     font-size: 2.4rem;
     color: #000;
     white-space: nowrap;
+}
+
+.page_3-nav ul>li>a:hover{
+    text-decoration: underline;
 }
 
 #page_3-cons{
@@ -452,6 +462,7 @@ margin-right: min(5vw,128px);
 #page_5{
     height: 100vh;
     background-color: #F5F5F5;
+
 }
 
 .page_5-container{
@@ -469,12 +480,22 @@ margin-right: min(5vw,128px);
     white-space: nowrap;
 }
 
-.page_5-listall{
-}
-
 .page_5-listall__list{
     position: relative;
     width: min(37vw,700px);
+}
+
+.page_5-listall__list:hover{
+    background-color: var(--main-color);
+}
+.page_5-listall__list:hover .list-type{
+    color: #eee;
+}
+.page_5-listall__list:hover a{
+    color: #fff;
+}
+.page_5-listall__list:hover .list-icon{
+    display: none;
 }
 
 .page_5-listall__list::before,
@@ -490,7 +511,7 @@ margin-right: min(5vw,128px);
 .page_5-listall__list a{
     display: block;
     color: #000;
-    padding: 40px 0;
+    padding: 40px;
 }
 
 .list-type{
@@ -515,7 +536,7 @@ margin-right: min(5vw,128px);
 .list-icon{
     position: absolute;
     top: calc(50% - 5.5px);
-    right: 0;
+    right: 40px;
 }
 
 /*---------- _____page6_____ ----------*/

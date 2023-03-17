@@ -570,8 +570,7 @@ margin-right: min(5vw,128px);
 }
 
 .page_6-logo{
-    width: 100%;
-    height: 60%;
+    width: max(150px,min(200px,15vw));
 }
 
 #page_6>img{

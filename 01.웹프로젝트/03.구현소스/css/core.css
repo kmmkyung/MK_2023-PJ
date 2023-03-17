@@ -46,7 +46,7 @@ font-family: 'Nunito Sans', sans-serif;
 .l_nav ul>li{
     /* padding: 0 40px; */
     /* padding: 0 2vw; */
-    padding:0 min(1vw, 40px);
+    padding:0 min(3vw, 40px);
 }
 
 /* 메뉴 폰트 */

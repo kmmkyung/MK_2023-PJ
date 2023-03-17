@@ -126,20 +126,31 @@ body{
 }
 
 .lbtn{
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 68px;
 }
 
 .rbtn{
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     right: 68px;
 }
 
+.new_menu-con2__con{
+    display: flex;
+    align-items: center;
+}
+
+.btnswrap{
+    width: 20%;
+}
+
 .slide{
-    width: 350px;
-    height: 350px;
+    /* width: 350px;
+    height: 350px; */
+    height: 36.5vh;
+    aspect-ratio: 1/1;
     margin: 0 auto;
     background-color: #eee;
     text-align: center;
@@ -534,6 +545,8 @@ margin-right: min(5vw,128px);
     display: block;
     font-size: min(1.5vw,2.4rem);
     font-weight: bold;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .list-date{

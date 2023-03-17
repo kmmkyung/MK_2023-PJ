@@ -209,6 +209,10 @@ body{
     height: 48px;
 }
 
+.new_menu-con3 a>span{
+    /* 안움직임....!! */
+}
+
 .new_menu-con4{
     box-sizing: border-box;
     height: 15%;

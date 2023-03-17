@@ -46,12 +46,12 @@ font-family: 'Nunito Sans', sans-serif;
 .l_nav ul>li{
     /* padding: 0 40px; */
     /* padding: 0 2vw; */
-    padding:0 min(3vw, 40px);
+    padding:0 min(2vw, 20px);
 }
 
 /* 메뉴 폰트 */
 .l_nav>ul>li a, .fran>a{
-    font-size: min(2vw, 24px);
+    font-size: min(1.5vw, 24px);
     font-weight: bold;
     color: #fff;
     line-height: 100px;

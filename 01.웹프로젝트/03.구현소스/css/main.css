@@ -208,10 +208,7 @@ body{
 .new_menu-con3 img{
     width: 48px;
     height: 48px;
-}
-
-.new_menu-con3 a>span{
-    /* 안움직임....!! */
+    vertical-align: -18px;
 }
 
 .new_menu-con4{
@@ -519,6 +516,7 @@ margin-right: min(5vw,128px);
     display: block;
     color: #000;
     padding: 40px;
+    padding-right: 100px;
 }
 
 .list-type{

@@ -375,7 +375,7 @@ margin-right: min(5vw,128px);
 #page_4{
     background-color: var(--main-color);
     /* height: 2094px; */
-    height: 216vh;
+    height: 316vh;
     position: relative;
     color: #fff;
 }
@@ -448,6 +448,8 @@ margin-right: min(5vw,128px);
     display: flex;
     align-items: center;
     margin: 22vh 11.2vw 0;
+    position: sticky;
+    top: 100px;
 }
 
 .page_4-con2 img{
@@ -464,6 +466,8 @@ margin-right: min(5vw,128px);
 
 /*---------- _____page5_____ ----------*/
 #page_5{
+    position: relative;
+    margin-top: -100vh;
     height: 100vh;
     background-color: #F5F5F5;
 

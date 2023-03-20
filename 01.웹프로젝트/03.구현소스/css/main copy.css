@@ -122,7 +122,7 @@ body{
 .new_menu-con2__con{
     display: flex;
     align-items: center;
-    justify-content: space-around;}
+}
 
 .btns{
     cursor: pointer;
@@ -130,9 +130,19 @@ body{
     height: 10px;
 }
 
+.lbtn{
+    /* position: absolute;
+    top: 50%;
+    left: 68px; */
+}
+
+.rbtn{
+    /* position: absolute;
+    top: 50%;
+    right: 68px; */
+}
+
 .mmm{
-    width: calc(50% - 175px);
-    text-align: center;
 }
 
 .slide{
@@ -140,6 +150,7 @@ body{
     height: 350px; */
     height: 36.5vh;
     aspect-ratio: 1/1;
+    margin: 0 auto;
     background-color: #eee;
     text-align: center;
     overflow: hidden;

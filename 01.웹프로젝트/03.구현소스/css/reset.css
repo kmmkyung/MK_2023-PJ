@@ -25,3 +25,8 @@ html{
 a{
     text-decoration: none;
 }
+
+address{
+    margin: 0;
+    padding: 0;
+}

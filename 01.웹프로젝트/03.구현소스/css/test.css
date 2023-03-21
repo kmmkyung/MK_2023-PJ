@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#page1{
+    height: 100vh;
+    background-color: #eee;
+    position: relative;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/p4_con2.jpg) no-repeat center/cover;
+    position: sticky;
+    top: 0;
+}
+#page3{
+    height: 100vh;
+    background: url(../images/P4_con1.png) no-repeat center/cover;
+    position: sticky;
+}
+#page4{
+    height: 500vh;
+    background-color: lightblue;
+    position: fixed;
+}

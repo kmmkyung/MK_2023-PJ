@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         }
     }
 
-    p2Slide();
+    // p2Slide();
 
     /*-------------------------
      footer - svg 로고 삽입 

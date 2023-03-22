@@ -10,30 +10,43 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     /*-------------------------
      page2 - new menu 슬라이드
+     함수명: p2Slide
      기능: 버튼 이벤트 및 기능구현
      -------------------------*/
 
-    const p2_Slide = document.querySelector(".con-slide");
-    const p2_rbtn = document.querySelector(".con-rbtn");
-    const p2_lbtn = document.querySelector(".con-lbtn");
+    function p2Slide(){
+        // 대상선정 - 변경대상 / 이벤트대상버튼(좌우) / 슬라이드 li / bar
+        const slide = document.querySelector(".con-slide>ul");
+        const rbtn = document.querySelector(".con-rbtn");
+        const lbtn = document.querySelector(".con-lbtn");
+        const slideli =document.querySelector(".con-slide>ul>li")
+        const bar= document.querySelector(".bar-small_bar")
+    
+        // slideli 고유 순번 지정
+        slideli.forEach((ele, idx)=>{
+            ele.setAttribute("data-seq",idx)
+        });
 
-        let num = 0;
-        
-        p2_rbtn.onclick=()=>{
-            console.log("P2_오른쪽 버튼")
-            p2_Slide.style.left = (num++*-350) + "px";
-            p2_Slide.style.transition = ".4s";
-        }
-        p2_lbtn.onclick=()=>{
+        // 
+
+        lbtn.onclick=()=>{
             console.log("P2_왼쪽 버튼")
-            p2_Slide.style.left = (num--*-350) + "px";
-            p2_Slide.style.transition = ".4s";
+            slide.style.left = 350 + "px";
+            slide.style.transition = ".4s";
         }
+        rbtn.onclick=()=>{
+            console.log("P2_오른쪽 버튼")
+            slide.style.left = -350+"px";
+            slide.style.transition = ".4s";
+        }
+    }
+
+    p2Slide();
 
     /*-------------------------
      footer - svg 로고 삽입 
      -------------------------*/
-    // svg 대상 : .page_6-logo
+    // svg 대상 : .page_6-vector__logo
     const logoSVG = qs(".page_6-vector__logo");
 
     // svg넣기

@@ -4,8 +4,8 @@ const qs = x => document.querySelector(x);
 const qsa = x => document.querySelectorAll(x);
 const cg = x => console.log(x);
 
+///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
-
     cg("로딩완료!");
 
     /*-------------------------
@@ -33,4 +33,4 @@ window.addEventListener("DOMContentLoaded",()=>{
     // svg넣기
     logoSVG.innerHTML = svgData.logo;
 
-}); /////////// load /////////////////////////
+}); ///////////////////////// load /////////////////////////

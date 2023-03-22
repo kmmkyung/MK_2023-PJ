@@ -87,3 +87,10 @@ font-family: 'Nunito Sans', sans-serif;
 .borl{
     border-left: 1px solid #fff;
 }
+
+.l_nav>ul>li>a:hover #all_nav,
+.r_nav>.fran:hover,
+.r_nav>i:hover .icon-search{
+    background-color: var(--main-color);
+}
+

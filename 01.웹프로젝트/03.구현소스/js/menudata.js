@@ -2,19 +2,15 @@
 
 const gnbData = {
     "brand":{
-        "brand":["brand history","오시는길","사회공헌","앱,맴버쉽"],
-        "about":["about"]
+        "about":["brand history","오시는길","사회공헌","앱,맴버쉽"],
     },
     "menu":{
-        "menu":["brand history","오시는길","사회공헌","앱,맴버쉽"],
-        "about":["about"]
+        "about":["coffee","ice blended","tea","juice/ade","deli&dessert","md"],
     },
-    "brand":{
-        "brand":["brand history","오시는길","사회공헌","앱,맴버쉽"],
-        "about":["about"]
+    "store":{
+        "about":["이디야 커피랩","매장안내"],
     },
-    "brand":{
-        "brand":["brand history","오시는길","사회공헌","앱,맴버쉽"],
-        "about":["about"]
+    "news":{
+        "about":["공지사항","이벤트","보도자료"]
     }
-}
+}; ////// menudata //////

@@ -8,6 +8,10 @@ font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
+body *{
+    /* outline: 1px dotted tomato; */
+}
+
 :root{
     --main-color:#253B82
 }
@@ -43,16 +47,19 @@ font-family: 'Nunito Sans', sans-serif;
     white-space: nowrap;
 }
 
-.l_nav ul>li{
-    padding: 0 2vw;
-}
+/* .l_nav ul>li{
+} */
 
 /* 메뉴 폰트 */
-.l_nav>ul>li a, .fran>a{
+.l_nav>ul>li>a, .fran>a{
     font-size: min(1.5vw, 24px);
     font-weight: bold;
     color: #fff;
     line-height: 100px;
+
+    /* a요소 확장 */
+    padding: 0 2vw;
+    display: block;
 }
 
 #p1_logo img{
@@ -92,4 +99,62 @@ font-family: 'Nunito Sans', sans-serif;
 .r_nav>.fran:hover,
 .r_nav>i:hover .icon-search{
     background-color: var(--main-color);
+}
+
+/* 하위메뉴 */
+.submenu{
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    /* 메뉴 숨기기 */
+    /* h: 각각높이만큼 오버시 변경 */
+    /* op: 오버시 1로 보이게 함 */
+    /* overflow: hidden; */
+    /* height: 0; */
+    /* opacity: 0; */
+    transition: .4s ease-in-out;
+}
+
+/* 하위메뉴 구조랩핑박스 */
+.submenu-box{
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/* 첫번째박스만 */
+.l_nav>ul>li:first-child .submenu{
+    /* display: block; */
+}
+
+.submenu-box ul{
+    width: 50vw;
+}
+.submenu-box h2{
+    width: 50vw;
+
+}
+
+.l_nav>ul>li .submenu-box li{
+    margin: 40px 2vw;
+}
+
+.l_nav>ul>li .submenu-box li a{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.l_nav>ul>li .submenu-box li:hover::after,
+.l_nav>ul>li .submenu-box h2:hover a
+{
+    /* text-decoration: underline; */
+    width: 100%;
+}
+
+.l_nav>ul>li .submenu-box h2 a{
+    font-size: 6rem;
+    color: #fff;
+    font-weight: bold;
 }

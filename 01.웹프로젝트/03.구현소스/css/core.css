@@ -47,8 +47,9 @@ body *{
     white-space: nowrap;
 }
 
-/* .l_nav ul>li{
-} */
+.l_nav ul>li{
+    position: relative;
+}
 
 /* 메뉴 폰트 */
 .l_nav>ul>li>a, .fran>a{
@@ -112,12 +113,11 @@ body *{
     transition: .4s ease-in-out;
     position: absolute;
     left: 0;
-    width:100vw;
+    width:90vw;
 }
 
 /* 하위메뉴 구조랩핑박스 */
 .submenu-box{
-    display: flex;
 }
 
 /* 첫번째박스만 */
@@ -126,12 +126,32 @@ body *{
 }
 
 .submenu-box ul{
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
 }
 
-.submenu-box h2{
+
+.submenu-box__brand-h2{
     position: absolute;
-    right: 7%;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submenu-box__menu-h2{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.submenu-box__store-h2{
+    position: absolute;
+    right: 19%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.submenu-box__news-h2{
+    position: absolute;
+    right: 29%;
     top: 50%;
     transform: translateY(-50%);
 }

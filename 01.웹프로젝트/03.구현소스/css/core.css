@@ -113,9 +113,17 @@ body *{
     transition: .4s ease-in-out;
     position: absolute;
     left: 0;
-    width:90vw;
 }
 
+.smbox1{
+    width: calc(100vw - 177%);
+}
+.smbox2{
+    width: calc(100vw - 310%);
+}
+.smbox3{
+    width: calc(100vw - 390%);
+}
 /* 하위메뉴 구조랩핑박스 */
 .submenu-box{
 }
@@ -125,34 +133,31 @@ body *{
     display: block;
 }
 
-.submenu-box ul{
-    /* margin-left: 30vw; */
-}
-
 
 .submenu-box__brand-h2{
+    color: #fff;
     position: absolute;
-    right: 0%;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
 }
 
 .submenu-box__menu-h2{
     position: absolute;
-    right: 10%;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
 }
 .submenu-box__store-h2{
     position: absolute;
-    right: 19%;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
 }
 .submenu-box__news-h2{
     position: absolute;
-    right: 29%;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
 }
 

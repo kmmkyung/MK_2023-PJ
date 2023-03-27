@@ -2,7 +2,7 @@
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
-    // console.log("mouse-JS 로딩")
+    // console.log("mouse-JS 로딩완료!")
 
     // 대상: #cursor
     const mouseCursor = document.querySelector("#cursor");

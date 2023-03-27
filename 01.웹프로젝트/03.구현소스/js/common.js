@@ -10,14 +10,22 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     /*-------------------------
      footer - svg 로고 삽입 
+     대상 : .page_6-vector__logo
      -------------------------*/
-    // svg 대상 : .page_6-vector__logo
     const logoSVG = qs(".page_6-vector__logo");
 
     // svg넣기
     logoSVG.innerHTML = svgData.logo;
 
-}); ///////////////////////// load /////////////////////////
+    /*-------------------------
+     page1 - 메뉴 보이기
+     함수명: 
+     기능: 
+     대상: 
+     변경대상: 
+     -------------------------*/
+
+
 
     /*-------------------------
      page2 - new menu 슬라이드
@@ -32,7 +40,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         const slide = document.querySelector(".con-slide>ul");
         const rbtn = document.querySelector(".con-rbtn");
         const lbtn = document.querySelector(".con-lbtn");
-        let slideli =document.querySelector(".con-slide>ul>li");
+        const slideli =document.querySelector(".con-slide>ul>li");
         const bar= document.querySelector(".bar-small_bar");
     
         // 초기화 1 - 순번 붙이기
@@ -71,3 +79,6 @@ window.addEventListener("DOMContentLoaded",()=>{
         //     slide.style.transition = ".4s";
         // }
     } /////p2Slide/////
+
+
+}); ///////////////////////// load /////////////////////////

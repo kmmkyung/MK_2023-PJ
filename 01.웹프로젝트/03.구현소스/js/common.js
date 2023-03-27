@@ -8,6 +8,7 @@ const cg = x => console.log(x);
 window.addEventListener("DOMContentLoaded",()=>{
     cg("common.js 로딩완료!");
 
+  
     /*-------------------------
      footer - svg 로고 삽입 
      대상 : .page_6-vector__logo
@@ -19,13 +20,60 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     /*-------------------------
      page1 - 메뉴 보이기
-     함수명: 
-     기능: 
-     대상: 
-     변경대상: 
-     -------------------------*/
+     함수명: showMenu
+     기능: 오버시 메뉴보이기
+     대상: .l_nav>ul>li
+     변경대상: .l_nav, #all_nav
+     변경내용: 높이값 기존100px에서 메뉴 내용만큼
+     -------------------------*/ 
+    $(".l_nav>ul>li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown(300);
+        $(".r_nav").css({height:"400px"});
 
+        let Ht = $(this).find(".submenu-box").height() + 200;
+        $("#all_nav").addClass("on")
+        .css({height:Ht+"px"})
+        console.log(Ht);
+    })
+    $(".l_nav>ul>li").mouseout(function(){
+        $(this).find(".submenu").stop().slideUp(300)
+        // $(".r_nav").stop().slideUp(300);
+    })
+    let setTT;
+    $("#all_nav").mouseleave(function(){
+       clearTimeout(setTT);
+        setTT = setTimeout(() => {
+            $(this).removeClass("on")
+        }, 300);
+        $(".r_nav").css({height:"100px"});
+    })
 
+    // const Lnav = qs(".l_nav");
+    // const Lmenu = qsa(".l_nav>ul>li");
+    // Lmenu.forEach(ele=>{
+    //     ele.onmouseenter=()=>{
+    //         // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
+    //         // ele.nextElementSibling - 다음형제요소
+    //         // clientHeight - 높이값
+    //         let eleH = ele.querySelector(".submenu").nextElementSibling.clientHeight+100;
+    //         console.log(ele.querySelector("a").nextElementSibling.clientHeight);
+
+    //         allNav.classList.add("on");
+    //         allNav.style.height = eleH+"px";
+    //         ele.style.height = eleH+"px";
+    //         ele.querySelector(".submenu").style.height = eleH+"px";
+
+    //     }
+    //     ele.onmouseleave=()=>{
+    //         allNav.classList.remove("on");
+    //         allNav.style.height = "100px";
+    //         Lnav.style.height = "100px";
+    //         ele.style.height = "100px";
+    //         ele.querySelector(".submenu").style.height = "0px";
+    //     }
+
+    // })
+    
 
     /*-------------------------
      page2 - new menu 슬라이드

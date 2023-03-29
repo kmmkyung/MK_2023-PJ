@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded",()=>{
      -------------------------*/
      const btns = document.querySelectorAll(".con-btns>.btns");
      const bar= document.querySelector(".bar-small_bar");
-     
+    
      const p2Slide = (dir) => {
         // dir 버튼구분(1-오른쪽 / 0- 왼쪽)
         

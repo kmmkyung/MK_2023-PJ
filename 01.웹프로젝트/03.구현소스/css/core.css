@@ -50,6 +50,7 @@ body *{
     justify-content: center;
     white-space: nowrap;
 }
+
 .l_nav>ul>li{
     overflow: hidden;
 }
@@ -111,39 +112,22 @@ body *{
 
 /* 하위메뉴 */
 .submenu{
-    /* 메뉴 숨기기 */
-    /* h: 각각높이만큼 오버시 변경 */
-    /* op: 오버시 1로 보이게 함 */
-    /* overflow: hidden; */
-    /* height: 0; */
-    /* opacity: 0; */
-    /* transition: .4s ease-in-out; */
     position: absolute;
-    /* overflow: hidden; */
     display: none;
 }
 
-.smbox3{
-    width: calc(100vw - 390%);
-}
 /* 하위메뉴 구조랩핑박스 */
 .submenu_h2{
     position: absolute;
-    right: 5vw;
-    top: 120px;
-    font-size: 34px;
+    right: 6vw;
+    top: 150px;
+    font-size: 6rem;
 }
+
 .submenu_h2 a{
+    font-weight: bold;
     color: #fff;
 }
-
-
-/* .l_nav>ul>li>.submenu {
-    display: none;
-}
-.l_nav>ul>li:hover>.submenu {
-    display: block;
-} */
 
 .l_nav>ul>li .submenu-box li{
     margin: 40px 2vw;
@@ -156,13 +140,7 @@ body *{
 }
 
 .l_nav>ul>li .submenu-box li a:hover,
-.l_nav>ul>li .submenu-box h2 a:hover
+.submenu_h2 a:hover
 {
     text-decoration: underline;
-}
-
-.l_nav>ul>li .submenu-box h2 a{
-    font-size: 6rem;
-    color: #fff;
-    font-weight: bold;
 }

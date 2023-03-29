@@ -75,58 +75,92 @@ window.addEventListener("DOMContentLoaded",()=>{
     // })
     
 
+    // ______________________________page2_____________________________
     /*-------------------------
      page2 - new menu 슬라이드
      함수명: p2Slide
-     기능: 버튼 이벤트 및 기능구현
-     대상: rbtn, lbtn
+     기능: 이동방향에 따른 요소 이동하기
+     대상: btns
      변경대상: slide, bar
      -------------------------*/
-
-    function p2Slide(){
-        // 대상선정 - 변경대상 / 이벤트대상버튼(좌우) / 슬라이드 li / bar
+     const btns = document.querySelectorAll(".con-btns>.btns");
+     const bar= document.querySelector(".bar-small_bar");
+     
+     const p2Slide = (dir) => {
+        // dir 버튼구분(1-오른쪽 / 0- 왼쪽)
+        
+        // 선정 / 광클금지변수 / 대상
+        let prot = 0;
         const slide = document.querySelector(".con-slide>ul");
-        const rbtn = document.querySelector(".con-rbtn");
-        const lbtn = document.querySelector(".con-lbtn");
-        const slideli =document.querySelector(".con-slide>ul>li");
-        const bar= document.querySelector(".bar-small_bar");
-    
-        // 초기화 1 - 순번 붙이기
-        slideli.forEach(ele,idx => {
-            ele.setAtrribute("data-seq", idx);
+        let slideli =document.querySelectorAll(".con-slide>ul>li");
+        
+        // 광클금지
+        if(prot) return;
+        prot =1; //잠금
+        setTimeout(() => {
+            prot = 0; // 0.4초 후 해제
+        },400)
+        
+        // 호출확인
+        console.log("dir", dir);
+        
+        // 분기하기(이동대상 : slideli)
+        // if 오른쪽 / else 왼쪽
+        if(dir) {
+            slide.appendChild(slideli[0]);
+        }
+        else{
+            slide.insertBefore(slideli[slideli.length - 1], slideli[0]);
+        }
+    }; ///// p2Slide /////
+
+        // 버튼 클릭이벤트
+        console.log(btns)
+        btns.forEach((ele, idx) => {
+            ele.onclick = () => {
+                // 슬라이드 함수 호출
+                p2Slide(idx);
+                // 자동호출 지우기
+                clearAuto();
+            }; ///// click /////
         }); ///// forEach /////
+                
+        /*-------------------------
+        함수명: autoSlide
+        기능: 인터발 함수로 슬라이드 자동 함수 호출
+        -------------------------*/
+        
+        // 인터발 함수 지우기 위한 변수
+        let autoI
+        // 타임아웃함수 지우기 위한 변수
+        let autoT
+        function autoSlide() {
+            console.log("인터발 시작");
+            // 인터발함수로 슬라이드 함수 호출
+            autoI = setInterval(() => p2Slide(1), 3000);
+        } /////autoSlide 함수 /////
 
-        // 초기화 2 - 맨뒤 맨앞으로 이동 2번
-        const chgseq = () =>{
-            // 현재 슬라이드 li 새로읽기
-            slideli = slide.querySelectorAll("li");
-            slide.insertBefore(slideli[slideli.length-1],slideli[0]);
-        } ///// chgseq 함수 //////
+        // 최초호출
+        autoSlide();
 
-        for(let i=0;i<2;i++) chgseq();
+    /*-------------------------
+     함수명: clearAuto
+     기능: 인터발 함수 지우고 다시 셋팅
+     -------------------------*/
+     function clearAuto() {
+        console.log("인터발 멈춤");
+        // 인터발 지우기
+        clearInterval(autoI);
 
-        // 슬라이드 변경함수
-        const GoSlide = (seq) => {
-            if(prot) return;
-            prot = 1;
-            setTimeout(() => {
-                prot = 0;
-            }, 400);
+        // 타임아웃 지우기
+        clearTimeout(autoT);
 
-            // 오른쪽 버튼 클릭시
-            console.log("P2_오른쪽 버튼")
-            if(seq){
-                slide.style.left = -350+"px";
-                slide.style.transition = "left .4s ease-in-out";
-            }
-        }// 슬라이드 변경함수
+        // 5초 후 작동(인터발은 3초 후 => 8초)
+        autoT = setTimeout(autoSlide, 5000);
+     } ///// clearAuto 함수 /////
 
-        // lbtn.onclick=()=>{
-        //     console.log("P2_왼쪽 버튼")
-        //     slide.style.left = 350 + "px";
-        //     slide.style.transition = ".4s";
-        // }
-    } /////p2Slide/////
+    
+    // ______________________________page2_____________________________
 
 
 }); ///////////////////////// load /////////////////////////

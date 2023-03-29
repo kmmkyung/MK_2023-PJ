@@ -135,7 +135,7 @@ body{
     box-sizing: border-box;
     height: 60%;
     position: relative;
-    padding: 8vh 0;
+    padding: 12vh 0;
     border-bottom: 1px solid #000;
 }
 
@@ -158,11 +158,11 @@ body{
 .con-slide{
     /* width: 350px;
     height: 350px; */
-    height: 36.5vh;
+    height: 29.3vh;
     aspect-ratio: 1/1;
     background-color: #eee;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .con-slide ul{

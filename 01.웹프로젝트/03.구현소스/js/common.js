@@ -85,6 +85,7 @@ window.addEventListener("DOMContentLoaded",()=>{
      -------------------------*/
      const btns = document.querySelectorAll(".con-btns>.btns");
      const bar= document.querySelector(".bar-small_bar");
+     let mlVal = 0;
     
      const p2Slide = (dir) => {
         // dir 버튼구분(1-오른쪽 / 0- 왼쪽)
@@ -103,11 +104,13 @@ window.addEventListener("DOMContentLoaded",()=>{
         
         // 호출확인
         console.log("dir", dir);
-        
+
         // 분기하기(이동대상 : slideli)
-        // if 오른쪽 / else 왼쪽
+        // if 왼쪽 / else 오른쪽
         if(dir) {
             slide.appendChild(slideli[0]);
+            console.log(toString(mlVal))
+            // bar.style.marginLeft = toString(mlval+25) + "%";
         }
         else{
             slide.insertBefore(slideli[slideli.length - 1], slideli[0]);
@@ -161,6 +164,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
     
     // ______________________________page2_____________________________
+    // ______________________________page3_____________________________
 
 
 }); ///////////////////////// load /////////////////////////

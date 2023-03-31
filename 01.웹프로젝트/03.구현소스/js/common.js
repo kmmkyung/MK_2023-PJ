@@ -6,34 +6,36 @@ const cg = x => console.log(x);
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
-    cg("common.js 로딩완료!");
+    cg("common-JS 로딩완료!");
 
-  
+    // ______________________________footer_____________________________
     /*-------------------------
-     footer - svg 로고 삽입 
-     대상 : .page_6-vector__logo
-     -------------------------*/
+    footer - svg 로고 삽입 
+    대상 : .page_6-vector__logo
+    -------------------------*/
     const logoSVG = qs(".page_6-vector__logo");
-
+    
     // svg넣기
     logoSVG.innerHTML = svgData.logo;
-
+    
+    // ______________________________footer_____________________________
+    // ______________________________page1_____________________________
     /*-------------------------
-     page1 - 메뉴 보이기
-     함수명: showMenu
+    page1 - 메뉴 보이기
+    함수명: showMenu
      기능: 오버시 메뉴보이기
      대상: .l_nav>ul>li
      변경대상: .l_nav, #all_nav
      변경내용: 높이값 기존100px에서 메뉴 내용만큼
      -------------------------*/ 
-    $(".l_nav>ul>li").mouseover(function(){
-        $(this).find(".submenu").stop().slideDown(300);
-        $(".r_nav").css({height:"400px"});
-
-        let Ht = $(this).find(".submenu-box").height() + 200;
-        $("#all_nav").addClass("on")
+     $(".l_nav>ul>li").mouseover(function(){
+         $(this).find(".submenu").stop().slideDown(300);
+         $(".r_nav").css({height:"400px"});
+         
+         let Ht = $(this).find(".submenu-box").height() + 200;
+         $("#all_nav").addClass("on")
         .css({height:Ht+"px"})
-        console.log(Ht);
+        // console.log(Ht);
     })
     $(".l_nav>ul>li").mouseout(function(){
         $(this).find(".submenu").stop().slideUp(300)
@@ -41,85 +43,87 @@ window.addEventListener("DOMContentLoaded",()=>{
     })
     let setTT;
     $("#all_nav").mouseleave(function(){
-       clearTimeout(setTT);
+        clearTimeout(setTT);
         setTT = setTimeout(() => {
             $(this).removeClass("on")
         }, 300);
         $(".r_nav").css({height:"100px"});
     })
-
+    
     // const Lnav = qs(".l_nav");
     // const Lmenu = qsa(".l_nav>ul>li");
     // Lmenu.forEach(ele=>{
-    //     ele.onmouseenter=()=>{
-    //         // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
-    //         // ele.nextElementSibling - 다음형제요소
-    //         // clientHeight - 높이값
-    //         let eleH = ele.querySelector(".submenu").nextElementSibling.clientHeight+100;
-    //         console.log(ele.querySelector("a").nextElementSibling.clientHeight);
-
-    //         allNav.classList.add("on");
+        //     ele.onmouseenter=()=>{
+            //         // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
+            //         // ele.nextElementSibling - 다음형제요소
+            //         // clientHeight - 높이값
+            //         let eleH = ele.querySelector(".submenu").nextElementSibling.clientHeight+100;
+            //         console.log(ele.querySelector("a").nextElementSibling.clientHeight);
+            
+            //         allNav.classList.add("on");
     //         allNav.style.height = eleH+"px";
     //         ele.style.height = eleH+"px";
     //         ele.querySelector(".submenu").style.height = eleH+"px";
-
+    
     //     }
     //     ele.onmouseleave=()=>{
-    //         allNav.classList.remove("on");
-    //         allNav.style.height = "100px";
-    //         Lnav.style.height = "100px";
-    //         ele.style.height = "100px";
-    //         ele.querySelector(".submenu").style.height = "0px";
-    //     }
-
-    // })
-    
-
-    // ______________________________page2_____________________________
-    /*-------------------------
-     page2 - new menu 슬라이드
-     함수명: p2Slide
-     기능: 이동방향에 따른 요소 이동하기
-     대상: btns
-     변경대상: slide, bar
-     -------------------------*/
-     const btns = document.querySelectorAll(".con-btns>.btns");
-     const bar= document.querySelector(".bar-small_bar");
-     let mlVal = 0;
-    
-     const p2Slide = (dir) => {
-        // dir 버튼구분(1-오른쪽 / 0- 왼쪽)
+        //         allNav.classList.remove("on");
+        //         allNav.style.height = "100px";
+        //         Lnav.style.height = "100px";
+        //         ele.style.height = "100px";
+        //         ele.querySelector(".submenu").style.height = "0px";
+        //     }
         
-        // 선정 / 광클금지변수 / 대상
-        let prot = 0;
-        const slide = document.querySelector(".con-slide>ul");
-        let slideli =document.querySelectorAll(".con-slide>ul>li");
-        
-        // 광클금지
-        if(prot) return;
-        prot =1; //잠금
-        setTimeout(() => {
-            prot = 0; // 0.4초 후 해제
-        },400)
-        
-        // 호출확인
-        console.log("dir", dir);
+        // })
+        // ______________________________page1_____________________________
+        // ______________________________page2_____________________________
+        /*-------------------------
+        page2 - new menu 슬라이드
+        함수명: p2Slide
+        기능: 이동방향에 따른 요소 이동하기
+        대상: btns
+        변경대상: slide, bar
+        -------------------------*/
+        const p2Btns = qsa(".con-btns>.btns");
+        const bar= qs(".bar-small_bar");    
+        let mlCnt = 0;
+        const p2Slide = (dir) => {
+            // dir 버튼구분
+            // 선정 / 광클금지변수 / 대상
+            let prot = 0;
+            const slide = qs(".con-slide>ul");
+            let slideli = qsa(".con-slide>ul>li");
+            
+            // 광클금지
+            if(prot) return;
+            prot =1; //잠금
+            setTimeout(() => {
+                prot = 0; // 0.4초 후 해제
+            },400)
+            
+            // 호출확인
+            // cg("dir", dir);
 
-        // 분기하기(이동대상 : slideli)
-        // if 왼쪽 / else 오른쪽
-        if(dir) {
-            slide.appendChild(slideli[0]);
-            console.log(toString(mlVal))
-            // bar.style.marginLeft = toString(mlval+25) + "%";
-        }
-        else{
-            slide.insertBefore(slideli[slideli.length - 1], slideli[0]);
-        }
-    }; ///// p2Slide /////
+            
+            // 분기하기(이동대상 : slideli)
+            // if 왼쪽 / else 오른쪽
+            if(dir) {
+                mlCnt++;
+                slide.appendChild(slideli[0]);
+                if(mlCnt === 4) mlCnt = 0;
+                bar.style.marginLeft = `${mlCnt*25}%`;
+            }
+            else{
+                slide.insertBefore(slideli[slideli.length - 1], slideli[0]);
+                mlCnt--;
+                if(mlCnt === -1) mlCnt = 3;
+                bar.style.marginLeft = `${mlCnt*25}%`;
+            }
+        }; ///// p2Slide /////
 
         // 버튼 클릭이벤트
-        console.log(btns)
-        btns.forEach((ele, idx) => {
+        // cg(p2Btns);
+        p2Btns.forEach((ele, idx) => {
             ele.onclick = () => {
                 // 슬라이드 함수 호출
                 p2Slide(idx);
@@ -138,7 +142,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         // 타임아웃함수 지우기 위한 변수
         let autoT
         function autoSlide() {
-            console.log("인터발 시작");
+            // console.log("인터발 시작");
             // 인터발함수로 슬라이드 함수 호출
             autoI = setInterval(() => p2Slide(1), 3000);
         } /////autoSlide 함수 /////
@@ -151,7 +155,7 @@ window.addEventListener("DOMContentLoaded",()=>{
      기능: 인터발 함수 지우고 다시 셋팅
      -------------------------*/
      function clearAuto() {
-        console.log("인터발 멈춤");
+        // console.log("인터발 멈춤");
         // 인터발 지우기
         clearInterval(autoI);
 
@@ -165,6 +169,85 @@ window.addEventListener("DOMContentLoaded",()=>{
     
     // ______________________________page2_____________________________
     // ______________________________page3_____________________________
+        /*-------------------------
+        page3 - best menu 슬라이드
+        함수명: p3Slide
+        기능: 이동방향에 따른 요소 이동하기
+        대상: page_3-con2__icon>btns
+        변경대상: page_3-con1>ul
+        -------------------------*/
+        const p3slide = qs(".page_3-con1");
+        let p3slideli = qsa(".page_3-con1>ul>li");
+        const p3Btns = qsa(".page_3-con2__icon>.btns");
+        // cg(p3slide);
+        // cg(p3slideli);
+        // cg(p3Btns);
+        
+    // ______________________________page3_____________________________
+    // ______________________________page4_____________________________
+        /*-------------------------
+        page4 - 스크롤 액션
+        함수명: scrollC
+        기능: 스크롤시 등장액션 
+        대상: scroll-con
+        -------------------------*/
+
+        // 대상선정
+        const scrollCon = qsa(".scroll-con");
+        cg(scrollCon);
+
+        // 화면 높이값 2/3
+        const hv = window.innerHeight/3*2;
+        // console.log("hv-2/3",hv);
+
+        // 등장액션 대상 위치값 리턴함수/////
+        const retVal = 
+        ele => ele.getBoundingClientRect().top;
+
+        const showIt = x => { // x - 등장요소
+            // 대상요소의 현재스크롤 위치
+            let xval = retVal(x);
+
+            // 구간적용여부 검사하기
+            // 0보다 크고 화면의 2/3보다 작은 구간!
+            if(xval < hv && xval > 0){
+                // console.log("작동!~~~~");
+                // 해당요소에 클래스 넣기!
+                x.classList.add("on");
+            }
+        }; //////////// showIt //////////
+
+        window.addEventListener("scroll",()=>{
+            // cg("스크롤중")
+
+            // 스크롤 등장 요소 개수만큼 for
+            for(let x of scrollCon) showIt(x);
+        })
+
+    // ______________________________page4_____________________________
+    // ______________________________page5_____________________________
+        /*-------------------------
+        page5 - 스크롤 액션
+        함수명: scroll
+        기능: 
+        대상: 
+        변경대상: 
+        -------------------------*/
+
+        // 윈도우 높이값
+        const winH = window.innerHeight;
+
+        // 전체문서 높이값
+        const docH = document.body.clientHeight;
+        console.log("문서전체높이:",docH);
+        
+        // 스크롤한계값
+        const scLimit = docH - winH;
+        console.log("스크롤한계값:",scLimit);
+        // 스크롤한계값은 전체문서길이 - 윈도우높이
+        // 단, body에 기본마진 8px을 초기화해야 정확히 일치함!
+
+    // ______________________________page5_____________________________
 
 
 }); ///////////////////////// load /////////////////////////

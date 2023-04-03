@@ -194,7 +194,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
         // 대상선정
         const scrollCon = qsa(".scroll-con");
-        cg(scrollCon);
+        // cg(scrollCon);
 
         // 화면 높이값 2/3
         const hv = window.innerHeight/3*2;
@@ -239,11 +239,11 @@ window.addEventListener("DOMContentLoaded",()=>{
 
         // 전체문서 높이값
         const docH = document.body.clientHeight;
-        console.log("문서전체높이:",docH);
+        // console.log("문서전체높이:",docH);
         
         // 스크롤한계값
         const scLimit = docH - winH;
-        console.log("스크롤한계값:",scLimit);
+        // console.log("스크롤한계값:",scLimit);
         // 스크롤한계값은 전체문서길이 - 윈도우높이
         // 단, body에 기본마진 8px을 초기화해야 정확히 일치함!
 

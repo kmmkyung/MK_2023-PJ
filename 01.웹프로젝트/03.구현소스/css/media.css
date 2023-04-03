@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 1200px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1200px) {
+    .page2-newmenu{
+        flex-direction: column;
+    }
+    .page2-newmenu__mainimg{
+        flex: 1;
+        height: 40%;
+    }
+    .page2-newmenu__R-menu{
+        flex: 1;
+        height: 60%;
+    }
+    .R-menu-con2{
+        padding: 2vh 0;
+    }
+    .con-slide{
+        height: 20vh;
+    }
+}
+/* 1024px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1024px) {}
+/* 768px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 768px) {}

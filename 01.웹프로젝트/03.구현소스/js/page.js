@@ -1,8 +1,8 @@
 // 새로고침할때 스크롤위치 캐싱 무시하고 맨 위로 이동
 // scrollTo(가로,세로) -> 위치이동 메서드
-// setTimeout(() => {
-//     window.scrollTo(0,0);
-// }, 100);
+setTimeout(() => {
+    window.scrollTo(0,0);
+}, 100);
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     let pgnum = 0;
     // (2)전체 페이지 수
     const pgall = document.querySelectorAll(".page").length+1;
-    console.log("페이지 수",pgall);
+    // console.log("페이지 수",pgall);
     // (3) 광스크롤 금지변수
     let prot_sc = 0;
     
@@ -86,7 +86,7 @@ window.addEventListener("DOMContentLoaded",()=>{
         ***********************************************/ 
         function updatePg(){ 
             // 1. 함수 호출 확인
-            console.log("업데이트");
+            // console.log("업데이트");
     
             // 2. 페이지 이동하기
             // scrollTo(가로,세로)

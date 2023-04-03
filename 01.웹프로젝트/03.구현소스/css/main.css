@@ -4,9 +4,13 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
+
+/* html,body{
+    overflow: hidden;
+} */
 
 body{
     font-family: 'Nunito Sans','Noto Sans KR';
@@ -305,9 +309,11 @@ margin-right: min(5vw,128px);
 }
 
 .page_3-con1>ul{
+    position: relative;
+    left: 0;
     display: flex;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .page_3-con1>ul>li{
@@ -389,6 +395,8 @@ margin-right: min(5vw,128px);
 }
 
 .icon-small_bar{
+    position: relative;
+    left: 0;
     width: 60%;
     height: 100%;
     background-color: var(--main-color);

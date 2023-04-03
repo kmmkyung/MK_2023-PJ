@@ -77,6 +77,11 @@ window.addEventListener("DOMContentLoaded",()=>{
         // })
         // ______________________________page1_____________________________
         // ______________________________page2_____________________________
+
+
+        // 기본셋팅
+        let c4 = $(".R-menu-con4");
+        c4.hide().first().show();
         /*-------------------------
         page2 - new menu 슬라이드
         함수명: p2Slide
@@ -119,6 +124,10 @@ window.addEventListener("DOMContentLoaded",()=>{
                 if(mlCnt === -1) mlCnt = 3;
                 bar.style.marginLeft = `${mlCnt*25}%`;
             }
+
+            // 내용변경하기
+            c4.eq(mlCnt).show().siblings(".R-menu-con4").hide();
+
         }; ///// p2Slide /////
 
         // 버튼 클릭이벤트
@@ -176,12 +185,33 @@ window.addEventListener("DOMContentLoaded",()=>{
         대상: page_3-con2__icon>btns
         변경대상: page_3-con1>ul
         -------------------------*/
-        const p3slide = qs(".page_3-con1");
-        let p3slideli = qsa(".page_3-con1>ul>li");
-        const p3Btns = qsa(".page_3-con2__icon>.btns");
-        // cg(p3slide);
-        // cg(p3slideli);
-        // cg(p3Btns);
+        const p3slide = $(".page_3-con1>ul");
+
+        const p3btns = $("#page_3 .btns");
+        // console.log(p3btns);
+
+        const p3bar = $(".icon-small_bar");
+
+        let p3seq = 0;
+
+        p3btns.click(function(){
+            // 버튼구분
+            let isB = $(this).is(".icon-right");
+            // console.log(isB);
+            // 오른쪽
+            if(isB){
+                p3seq++;
+                if(p3seq===3)p3seq=2;
+            }
+            // 왼쪽
+            else{
+                p3seq--;
+                if(p3seq===-1)p3seq=0;
+            }
+            // 적용!
+            p3slide.stop().animate({left:(-30*p3seq)+"%"},400);
+            p3bar.stop().animate({left:(20*p3seq)+"%"},400);
+        })
         
     // ______________________________page3_____________________________
     // ______________________________page4_____________________________

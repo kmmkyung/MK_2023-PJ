@@ -273,6 +273,7 @@ body{
     height: 80px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    background-color: #f5f5f5;
 }
 
 .page_3-nav>ul{

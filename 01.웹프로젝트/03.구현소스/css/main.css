@@ -296,6 +296,12 @@ margin-right: min(5vw,128px);
     white-space: nowrap;
 }
 
+.page_3-nav ul>li:first-child{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 .page_3-nav ul>li>a:hover{
     text-decoration: underline;
 }
@@ -405,7 +411,7 @@ margin-right: min(5vw,128px);
 /*---------- _____page4_____ ----------*/
 #page_4{
     background-color: var(--main-color);
-    /* height: 2094px; */
+    /* height: 2500px; */
     height: 200vh;
     /* height: 316vh; */
     position: relative;
@@ -497,6 +503,18 @@ margin-right: min(5vw,128px);
     width: 695px;
 }
 
+
+.scroll-con{
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+}
+
+.scroll-con.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /*---------- _____page5_____ ----------*/
 #page_5{
     position: relative;
@@ -523,6 +541,7 @@ margin-right: min(5vw,128px);
 .page_5-listall__list{
     position: relative;
     width: min(37vw,700px);
+    transition: all .5s ease-in-out;
 }
 
 .page_5-listall__list:hover{
@@ -671,16 +690,3 @@ transform: translateY(-50%) ;
 */
 
 
-
-
-
-.scroll-con{
-    transform: translateY(10%);
-    opacity: 0;
-    transition: all 1.2s ease-in-out;
-}
-
-.scroll-con.on{
-    transform: translateY(0);
-    opacity: 1;
-}

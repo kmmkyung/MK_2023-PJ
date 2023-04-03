@@ -69,7 +69,7 @@ body{
 }
 
 /*-- 흘러가는 글자(font-size고정용) --*/
-/* .movetext{
+.page_2-movetext{
     display: flex;
     height: 100%;
     width: 4000px;
@@ -86,9 +86,9 @@ body{
     to{
         left: -2000px;
     }
-} */
+}
 
-.page_2-movetext{
+/* .page_2-movetext{
     display: flex;
     height: 100%;
     width: 200%;
@@ -106,7 +106,7 @@ body{
     to{
         left: -100%;
     }
-}
+} */
 /*-- 흘러가는 글자 --*/
 
 .page2-newmenu{

@@ -1,8 +1,8 @@
 // 새로고침할때 스크롤위치 캐싱 무시하고 맨 위로 이동
 // scrollTo(가로,세로) -> 위치이동 메서드
-setTimeout(() => {
-    window.scrollTo(0, 0);
-}, 100);
+// setTimeout(() => {
+//     window.scrollTo(0, 0);
+// }, 100);
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded", () => {

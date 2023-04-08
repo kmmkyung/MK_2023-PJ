@@ -144,3 +144,18 @@ body *{
 {
     text-decoration: underline;
 }
+
+/* -------모바일-------- */
+/* 햄버거 버튼 */
+.ham{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 38px;
+    left: 36px;
+
+    /* 처음에 숨기기 */
+    display: none;
+}

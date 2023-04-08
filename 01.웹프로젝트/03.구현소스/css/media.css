@@ -2,7 +2,115 @@
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1200px) {
-    .page2-newmenu{
+/*---------- _____page2_____ ----------*/
+    #page2{
+        min-height: 100vw;
+    }
+
+    .page2-newmenu__R-menu{
+        flex-basis: 50%;
+    }
+
+    .R-menu-con2{
+        padding: 10vh 0;
+    }
+
+    .con-slide{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .bar-full_bar{
+        width: 300px;
+    }
+    
+/*---------- _____page3_____ ----------*/
+.page_3-con1__img{
+    width: 300px;
+    height: 300px;
+}
+
+/*---------- _____page4_____ ----------*/
+    #page_4>img{
+        left: 70px;
+    }
+    
+}
+
+/* 1024px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1024px) {
+/*---------- _____page2_____ ----------*/
+
+.R-menu-con2{
+    padding: 12.8vh 0;
+}
+
+.con-slide{
+    width: 30vw;
+    height: 30vw;
+    aspect-ratio: 1/1;
+}
+
+.bar-full_bar{
+    width: 30vw;
+}
+
+.btns{
+    width: 36px;
+}
+
+.R-menu-con3__title{
+    margin-left: 2vw;
+}
+
+.R-menu-con3 a{
+    margin-right: 2vw;
+}
+
+/*---------- _____page3_____ ----------*/
+.page_3-nav ul>li>a{
+    font-size: 2rem;
+}
+.page_3-con1__img{
+    width: 30vw;
+    height: 30vw;
+}  
+
+/*---------- _____page4_____ ----------*/
+#page_4>img{
+    left: 60px;
+}
+}
+
+/* 768px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 768px) {
+    
+    /* 가로스크롤 없애기 */
+    /* html,body{
+        width: 100vw;
+        overflow-x: hidden;
+    } */
+    
+    /* 디스플레이 없애기 */
+    .l_nav>ul, .r_nav>.fran, .l_nav::after, .r_nav::after {
+        display: none;
+        
+    }
+
+    #p1_logo img {
+        margin-top: 10px;
+    }
+    
+    .r_nav .borl{
+        border-left: none;
+    }
+
+     /* 햄버거 버튼 보이기 */
+    .ham{
+        display: block;
+    }
+
+    /* .page2-newmenu{
         flex-direction: column;
     }
     .page2-newmenu__mainimg{
@@ -18,9 +126,5 @@
     }
     .con-slide{
         height: 20vh;
-    }
+    } */
 }
-/* 1024px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width: 1024px) {}
-/* 768px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (max-width: 768px) {}

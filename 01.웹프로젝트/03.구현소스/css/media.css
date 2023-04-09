@@ -86,10 +86,10 @@
 @media screen and (max-width: 768px) {
     
     /* 가로스크롤 없애기 */
-    /* html,body{
+    html,body{
         width: 100vw;
         overflow-x: hidden;
-    } */
+    }
     
     /* 디스플레이 없애기 */
     .l_nav>ul, .r_nav>.fran, .l_nav::after, .r_nav::after {
@@ -103,10 +103,46 @@
     
     .r_nav .borl{
         border-left: none;
+        margin-right: 15px;
     }
 
      /* 햄버거 버튼 보이기 */
     .ham{
+        display: block;
+    }
+
+    /* gnb 메뉴 변경 */
+    #gnb.on{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--main-color);
+        z-index: 999;
+    }
+
+    #gnb.on .l_nav>ul{
+        display: block;
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+
+    #gnb.on .l_nav>ul>li>a{
+        font-size: 2rem;
+        line-height: 80px;
+        padding: 0 40px;
+    }
+
+    #gnb.on .r_nav>.submenu_h2{
+        display: block;
+    }
+
+    #gnb.on .ham{
+        display: none;
+    }
+
+    #gnb.on .close{
         display: block;
     }
 
@@ -127,4 +163,8 @@
     .con-slide{
         height: 20vh;
     } */
+
+    .page_3-con1>ul>li {
+        width: 40%;
+    }
 }

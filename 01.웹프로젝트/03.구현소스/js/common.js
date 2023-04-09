@@ -19,21 +19,42 @@ window.addEventListener("DOMContentLoaded",()=>{
     logoSVG.innerHTML = svgData.logo;
     
     // ______________________________footer_____________________________
+    // ______________________________mobile-menu_____________________________
+    /*-------------------------
+    mobile-menu - menu 보이기
+    함수명: mobileMenu
+    기능: #gnb에 class .on을 적용시키면 모바일전용 메뉴 보여짐
+    대상: .ham , .close
+    변경대상: #gnb
+    -------------------------*/
+    // 대상
+    const ham = document.querySelector(".ham")
+    const close = document.querySelector(".close")
+    // console.log(ham,close)
+    ham.onclick = mobileMenu;
+    close.onclick = mobileMenu;
+    function mobileMenu(){
+        // console.log("모바일메뉴");
+        const gnb = document.querySelector("#gnb");
+        // console.log(gnb);
+        gnb.classList.toggle("on");
+    }
+    // ______________________________mobile-menu_____________________________
     // ______________________________page1_____________________________
     /*-------------------------
     page1 - 메뉴 보이기
     함수명: showMenu
-     기능: 오버시 메뉴보이기
-     대상: .l_nav>ul>li
-     변경대상: .l_nav, #all_nav
-     변경내용: 높이값 기존100px에서 메뉴 내용만큼
-     -------------------------*/ 
-     $(".l_nav>ul>li").mouseover(function(){
-         $(this).find(".submenu").stop().slideDown(300);
-         $(".r_nav").css({height:"400px"});
-         
-         let Ht = $(this).find(".submenu-box").height() + 200;
-         $("#all_nav").addClass("on")
+    기능: 오버시 메뉴보이기
+    대상: .l_nav>ul>li
+    변경대상: .l_nav, #all_nav
+    변경내용: 높이값 기존100px에서 메뉴 내용만큼
+    -------------------------*/ 
+    $(".l_nav>ul>li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown(300);
+        $(".r_nav").css({height:"400px"});
+        
+        let Ht = $(this).find(".submenu-box").height() + 200;
+        $("#all_nav").addClass("on")
         .css({height:Ht+"px"})
         // console.log(Ht);
     })
@@ -77,8 +98,6 @@ window.addEventListener("DOMContentLoaded",()=>{
         // })
         // ______________________________page1_____________________________
         // ______________________________page2_____________________________
-
-
         // 기본셋팅
         let c4 = $(".R-menu-con4");
         c4.hide().first().show();
@@ -160,10 +179,10 @@ window.addEventListener("DOMContentLoaded",()=>{
         autoSlide();
 
     /*-------------------------
-     함수명: clearAuto
-     기능: 인터발 함수 지우고 다시 셋팅
-     -------------------------*/
-     function clearAuto() {
+    함수명: clearAuto
+    기능: 인터발 함수 지우고 다시 셋팅
+    -------------------------*/
+    function clearAuto() {
         // console.log("인터발 멈춤");
         // 인터발 지우기
         clearInterval(autoI);

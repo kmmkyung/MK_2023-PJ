@@ -670,6 +670,7 @@ margin-right: min(5vw,128px);
     margin-bottom: 40px;
     position: absolute;
     bottom: 0px;
+    padding: 0 5vw;
 }
 
 .address span:last-child{

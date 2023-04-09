@@ -146,8 +146,8 @@ body *{
 }
 
 /* -------모바일-------- */
-/* 햄버거 버튼 */
-.ham{
+/* 햄버거 버튼, 닫기버튼 */
+.ham, .close{
     background-color: transparent;
     border: none;
     font-size: 24px;

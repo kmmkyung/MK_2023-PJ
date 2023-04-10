@@ -613,7 +613,7 @@ margin-right: min(5vw,128px);
 .page_6-listall{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     height: 12%;
 }

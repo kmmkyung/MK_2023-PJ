@@ -35,7 +35,6 @@ height: 300px;
     left: 70px;
 }
 
-}
 
 /* 1024px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1024px) {
@@ -80,7 +79,6 @@ height: 30vw;
 #page_4>img{
 left: 60px;
 }
-
 }
 
 /* 768px 사이즈 이하 미디어쿼리 시작 */
@@ -165,7 +163,10 @@ width: 20%;
 }
 }
 /*---------- _____footer_____ ----------*/
-
+.page_6-listall {
+    height:15%;
+}
+}
 
 /* .page2-newmenu{
     flex-direction: column;
@@ -184,3 +185,10 @@ width: 20%;
 .con-slide{
     height: 20vh;
 } */
+
+
+@media screen and (orientation:landscape) and (max-width:1000px){
+    .page_6-vector__logo{
+        width: min(360px,40vw);
+    }
+}

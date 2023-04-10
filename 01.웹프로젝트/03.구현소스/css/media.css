@@ -2,6 +2,10 @@
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1200px) {
+/* 가로스크롤 없애기 */
+html,body{
+    overflow-x: hidden;
+}
 /*---------- _____page2_____ ----------*/
 #page2{
     min-height: 100vw;
@@ -29,6 +33,7 @@ height: 300px;
 /*---------- _____page4_____ ----------*/
 #page_4>img{
     left: 70px;
+}
 }
 
 
@@ -76,10 +81,6 @@ left: 60px;
 /* 768px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 768px) {
 /*---------- _____page1_____ ----------*/
-/* 가로스크롤 없애기 */
-html,body{
-    overflow-x: hidden;
-}
 
 /* 디스플레이 없애기 */
 .l_nav>ul, .r_nav>.fran, .l_nav::after, .r_nav::after {
@@ -154,16 +155,29 @@ html,body{
 }
 .page2-newmenu__mainimg{
     flex: 1;
-    height: 40%;
+    height: 50%;
 }
 .page2-newmenu__R-menu{
     flex: 1;
-    height: 60%;
-}
-.con-slide{
-    height: 20vh;
+    height: 50%;
 }
 
+.con-slide{
+    width: 25vw;
+    height: auto;
+}
+
+.bar-full_bar{
+    width: 25vw;
+    }
+
+.R-menu-con2{
+    height:70%;
+}
+
+.R-menu-con3{
+    display: none;
+}
 
 
 /*---------- _____page3_____ ----------*/
@@ -174,19 +188,51 @@ html,body{
     height: 100%;
     width: 100vw;
     flex-wrap: wrap;
-    
 }
 
 .page_3-con1>ul>li {
     width: 40%;
 }
+/*---------- _____page5_____ ----------*/
+.page_5-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.page_5-title {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.page_5-listall{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page_5-listall>ul {
+    width: min(80vw,700px);
+}
+
+.page_5-listall__list{
+    width: 100%;
 }
 /*---------- _____footer_____ ----------*/
-
+.page_6-all{
+    display: flex;
+}
+.page_6-listall{
+    order: 2;
+}
+.page_6-vector{
+    order: 1;
 }
 
 
-@media screen and (orientation:landscape) and (max-width:1000px){
+@media screen and (orientation:landscape) and (max-width:2000px){
     .page_6-vector__logo{
         width: min(360px,40vw);
     }

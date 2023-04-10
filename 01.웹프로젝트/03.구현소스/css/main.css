@@ -637,7 +637,7 @@ margin-right: min(5vw,128px);
 }
 
 .page_6-vector__logo{
-    width: max(300px,min(570px,42vw));
+    width: max(250px,min(500px,42vw));
 }
 
 .page_6-vector__icon{
@@ -660,17 +660,18 @@ margin-right: min(5vw,128px);
 }
 
 .address{
-    width: 100%;
+    width: 80%;
     text-align: center;
     color: #fff;
     font-style: normal;
-    font-size: min(1.5vw,1.6rem);
+    font-size: min(2.5vw,1.6rem);
     word-break: keep-all;
     word-wrap: break-word;
     margin-bottom: 40px;
     position: absolute;
     bottom: 0px;
-    padding: 0 5vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .address span:last-child{

@@ -80,6 +80,7 @@ height: 30vw;
 #page_4>img{
 left: 60px;
 }
+
 }
 
 /* 768px 사이즈 이하 미디어쿼리 시작 */
@@ -87,7 +88,6 @@ left: 60px;
 /*---------- _____page1_____ ----------*/
 /* 가로스크롤 없애기 */
 html,body{
-    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -149,7 +149,7 @@ html,body{
 .con-btns{
 width: 20%;
 }
-/*---------- _____page_____ ----------*/
+/*---------- _____page3_____ ----------*/
 .page_3-nav {
     height: 80px;
 }
@@ -164,8 +164,7 @@ width: 20%;
     width: 40%;
 }
 }
-
-
+/*---------- _____footer_____ ----------*/
 
 
 /* .page2-newmenu{

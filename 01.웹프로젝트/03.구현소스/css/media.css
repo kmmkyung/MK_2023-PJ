@@ -11,10 +11,6 @@
     flex-basis: 50%;
 }
 
-.R-menu-con2{
-    padding: 10vh 0;
-}
-
 .con-slide{
     width: 300px;
     height: 300px;
@@ -39,10 +35,6 @@ height: 300px;
 /* 1024px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1024px) {
 /*---------- _____page2_____ ----------*/
-
-.R-menu-con2{
-padding: 12.8vh 0;
-}
 
 .con-slide{
 width: 30vw;
@@ -144,9 +136,36 @@ html,body{
     display: block;
 }
 /*---------- _____page2_____ ----------*/
-.con-btns{
-width: 20%;
+#movetext {
+    height: 50px;
 }
+
+.page_2-movetext {
+    width: 2000px;
+}
+
+.page_2-movetext span {
+    font-size: 1.8rem;
+}
+
+.page2-newmenu{
+    flex-direction: column;
+    height: calc(100% - 50px);
+}
+.page2-newmenu__mainimg{
+    flex: 1;
+    height: 40%;
+}
+.page2-newmenu__R-menu{
+    flex: 1;
+    height: 60%;
+}
+.con-slide{
+    height: 20vh;
+}
+
+
+
 /*---------- _____page3_____ ----------*/
 .page_3-nav {
     height: 80px;
@@ -163,28 +182,8 @@ width: 20%;
 }
 }
 /*---------- _____footer_____ ----------*/
-.page_6-listall {
-    height:15%;
-}
-}
 
-/* .page2-newmenu{
-    flex-direction: column;
 }
-.page2-newmenu__mainimg{
-    flex: 1;
-    height: 40%;
-}
-.page2-newmenu__R-menu{
-    flex: 1;
-    height: 60%;
-}
-.R-menu-con2{
-    padding: 2vh 0;
-}
-.con-slide{
-    height: 20vh;
-} */
 
 
 @media screen and (orientation:landscape) and (max-width:1000px){

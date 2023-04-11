@@ -6,7 +6,7 @@
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded", () => {
-    // console.log("mouse-JS 로딩완료!")
+    console.log("mouse-JS 로딩완료!")
     //_____________마우스 따라다니는 로고_____________//
     // 대상: #cursor
     const mouseCursor = document.querySelector("#cursor");
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }; ///// EVNET-FN__onmousemove /////
 
     //_____________지동 페이지 휠 효과_____________
-    // console.log("page-JS 로딩완료!")
+    console.log("page wheel-JS 로딩완료!")
 
     // 0. 변수 설정하기
     // (1) 전체 페이지 변수
@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let pg4Ht = pg4.height() - $(window).height();
     // 총이동가능거리
     let mvHt = pg4pos + pg4Ht;
-    console.log("4페이지top:", pg4pos, pg4Ht, mvHt);
+    // console.log("4페이지top:", pg4pos, pg4Ht, mvHt);
 
     // pg4 내부 pgnum 분기 기준박스
     const pg3Inbx = $(".page_4-con1").offset().top;

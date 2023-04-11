@@ -141,9 +141,17 @@
         margin: 2vh;
     }
 
-    #gnb.on .submenu-box>ul>li>a{
+    #gnb.on .submenu-box{
         position: static;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        transition: height .4s ease-out;
+
+    }
+    #gnb.on .submenu-box>ul>li>a{
         font-size: 1.8rem;
+        display: block;
     }
 
     #gnb.on .r_nav>.fran,

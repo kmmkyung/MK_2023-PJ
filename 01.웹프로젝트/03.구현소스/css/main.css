@@ -480,6 +480,7 @@ margin-right: min(5vw,128px);
     font-size: min(1.6vw,20px);
     word-break: keep-all;
     word-wrap: break-word;
+    white-space: nowrap;
 }
 
 .page_4-con1 img{

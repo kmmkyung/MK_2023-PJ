@@ -36,6 +36,7 @@
     #page_4 > img {
         width: auto;
         height: 100vh;
+        left: 5vw;
     }
 }
 
@@ -75,9 +76,6 @@
     }
 
     /*---------- _____page4_____ ----------*/
-    #page_4 > img {
-        left: 60px;
-    }
 }
 
 /* 768px 사이즈 이하 미디어쿼리 시작 */
@@ -236,9 +234,7 @@
     .R-menu-con3 {
         display: none;
     }
-
     /*---------- _____page3_____ ----------*/
-
     .page_3-nav {
         height: 80px;
     }
@@ -250,6 +246,45 @@
 
     .page_3-con1 > ul > li {
         width: 40%;
+    }
+    /*---------- _____page4_____ ----------*/
+    .page_4-top h2 {
+        padding-top: 14vh;
+    }
+
+    .page_4-top p {
+        margin-top: 4px;
+    }
+    
+    #page_4>img{
+        height: 49vh;
+        top: 100vh;
+        }
+
+    .page_4-con1 {
+        flex-direction: column-reverse;
+        margin-top: 5vh;
+    }
+
+    .page_4-con1__text,
+    .page_4-con1>img{
+        width: 80%;
+    }
+
+    .page_4-con1__text>p,
+    .page_4-con2__text>p{
+        white-space: normal;
+    }
+
+    .page_4-con2__text,
+    .page_4-con2>img{
+        width: 80%;
+    }
+
+    .page_4-con2{
+        margin: 9vh 5vw 0 0;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     /*---------- _____page5_____ ----------*/

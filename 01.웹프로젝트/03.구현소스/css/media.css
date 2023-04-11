@@ -225,6 +225,7 @@
 
     .bar-full_bar {
         width: 25vw;
+        height: 4px;
     }
 
     .R-menu-con2 {
@@ -241,10 +242,28 @@
     .page_3-nav > ul {
         height: 100%;
         width: 100vw;
-        flex-wrap: wrap;
+        margin: 0 10vw;
+        justify-content: flex-start;
     }
 
     .page_3-con1 > ul > li {
+        width: 50%;
+    }
+
+    .page_3-con1__img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .page_3-con2__icon {
+        right: 50px;
+    }
+    
+    .icon-full_bar{
+        height: 4px;
+    }
+    
+    .icon-small_bar {
         width: 40%;
     }
     /*---------- _____page4_____ ----------*/

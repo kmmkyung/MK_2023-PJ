@@ -3,10 +3,10 @@
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1200px) {
     /* 가로스크롤 없애기 */
-    html,
+    /* html,
     body {
-        /* overflow-x: hidden; */
-    }
+        overflow-x: hidden;
+    } */
     /*---------- _____page2_____ ----------*/
     #page2 {
         min-height: 100vw;
@@ -238,6 +238,7 @@
     }
 
     /*---------- _____page3_____ ----------*/
+
     .page_3-nav {
         height: 80px;
     }
@@ -281,12 +282,26 @@
     /*---------- _____footer_____ ----------*/
     .page_6-all {
         display: flex;
+        justify-content: flex-end
     }
     .page_6-listall {
         order: 2;
+        padding-top: 0;
+        margin: 4vh;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
     }
+    
+    .page_6-listall__list a  {
+        font-size: 1.4rem;
+    }
+
     .page_6-vector {
+        height: 50%;
         order: 1;
+    }
+    .address{
+        order: 3;
     }
 }
 

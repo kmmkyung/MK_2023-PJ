@@ -144,7 +144,7 @@
     #gnb.on .submenu-box{
         position: static;
         width: 200px;
-        height: 0;
+        /* height: 0; */
         overflow: hidden;
         transition: height .4s ease-out;
 
@@ -365,5 +365,12 @@
     .address{
         order: 3;
     }
+
+
+
+    /* 하위메뉴 */
+.submenu{
+    position: static;
+}
 }
 

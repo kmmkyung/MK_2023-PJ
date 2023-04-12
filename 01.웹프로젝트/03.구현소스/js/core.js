@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
       // (2)타겟의 높이값이 0이 아니면 0으로 hv값 변경
       if(tg.clientHeight!=0) hv = 0;
-      tg.style.height = hv + "px";
+      tg.querySelector(".submenu-box").style.height = hv + "px";
       x.parentElement.classList.toggle("on");
       }///// click /////
     })///// forEach /////

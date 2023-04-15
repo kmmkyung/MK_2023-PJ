@@ -356,7 +356,7 @@ margin-right: min(5vw,128px);
 }
 
 .page_3-con1__title p{
-    font-size: min(2vw, 22px);
+    font-size: min(1.5vw, 22px);
     /* font-size: 2.2rem; */
     position: relative;
     top: 50%;
@@ -477,7 +477,7 @@ margin-right: min(5vw,128px);
 
 .page_4-con1 p,
 .page_4-con2 p{
-    font-size: min(2vw,16px);
+    font-size: min(1.4vw,14px);
     word-break: keep-all;
     word-wrap: break-word;
     /* white-space: nowrap; */
@@ -491,7 +491,7 @@ margin-right: min(5vw,128px);
 .page_4-con2{
     display: flex;
     align-items: center;
-    margin: 18vh 11.2vw 0;
+    margin: 22vh 11.2vw 0;
     /* position: sticky; */
     /* top: 100px; */
 }

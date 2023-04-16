@@ -15,6 +15,14 @@
     body {
         overflow-x: hidden;
     } */
+    
+    /*---------- _____page1_____ ----------*/
+    #p1_logo{
+        top: 26px;
+    }
+    #p1_logo img{
+        width: 140px;
+    }
     /*---------- _____page2_____ ----------*/
     #page2 {
         min-height: 100vw;
@@ -50,6 +58,13 @@
 
 /* 1024px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1024px) {
+    /*---------- _____page1_____ ----------*/
+    #p1_logo{
+        top: 47px;
+        }
+    #p1_logo img{
+        width: 100px;
+    }
     /*---------- _____page2_____ ----------*/
 
     .con-slide {
@@ -84,8 +99,6 @@
         width: 30vw;
         height: 30vw;
     }
-
-    /*---------- _____page4_____ ----------*/
 }
 
 /* 768px 사이즈 이하 미디어쿼리 시작 */
@@ -93,21 +106,24 @@
     /*---------- _____page1_____ ----------*/
 
     /* 디스플레이 없애기 */
-    .l_nav>ul,
-    .r_nav>.fran,
-    .l_nav::after,
-    .r_nav::after,
+    .nav>ul,
+    .nav>ol>.fran,
+    .Wline,
+    .submenu_h2,
     #cursor {
         display: none;
     }
 
-    #p1_logo img {
-        margin-top: 10px;
+
+    #p1_logo{
+        top: 10px;
+        justify-content: center;
     }
 
-    .r_nav .borl {
-        border-left: none;
-        /* margin-right: 15px; */
+    .icon-search{
+        position: absolute;
+        right: 0;
+        border: none;
     }
 
     /* 햄버거 버튼 보이기 */
@@ -126,7 +142,8 @@
         z-index: 999;
     }
 
-    #gnb.on .l_nav>ul {
+    #gnb.on .nav>ul,
+    #gnb.on .submenu_h2 {
         display: block;
         flex-direction: column;
         margin-top: 20vh;
@@ -278,7 +295,7 @@
     }
 
     .page_3-con1 > ul > li {
-        width: 50%;
+        width: 70%;
     }
 
     .page_3-con1__img {
@@ -295,7 +312,7 @@
     }
     
     .icon-small_bar {
-        width: 40%;
+        width: 30%;
     }
     /*---------- _____page4_____ ----------*/
     .page_4-top h2 {

@@ -119,56 +119,59 @@ window.addEventListener("DOMContentLoaded",()=>{
     page1 - 메뉴 보이기
     함수명: showMenu
     기능: 오버시 메뉴보이기
-    대상: .l_nav>ul>li
-    변경대상: .l_nav, #all_nav
+    대상: .nav>ul>li
+    변경대상: .nav
     변경내용: 높이값 기존100px에서 메뉴 내용만큼
     -------------------------*/ 
-    $(".l_nav>ul>li").mouseover(function(){
-      $(this).find(".submenu").stop().slideDown(300);
-      $(".r_nav").css({height:"400px"});
+  //   $(".nav>ul>li").mouseover(function(){
+  //     $(this).find(".submenu").stop().slideDown(300);
+  //     $(".r_nav").css({height:"400px"});
       
-      let Ht = $(this).find(".submenu-box").height() + 200;
-      $("#all_nav").addClass("on")
-      .css({height:Ht+"px"})
-      // console.log(Ht);
-  })
-  $(".l_nav>ul>li").mouseout(function(){
-      $(this).find(".submenu").stop().slideUp(300)
-      // $(".r_nav").stop().slideUp(300);
-  })
-  let setTT;
-  $("#all_nav").mouseleave(function(){
-      clearTimeout(setTT);
-      setTT = setTimeout(() => {
-          $(this).removeClass("on")
-      }, 300);
-      $(".r_nav").css({height:"100px"});
-  })
+  //     let Ht = $(this).find(".submenu-box").height() + 200;
+  //     $("#all_nav").addClass("on")
+  //     .css({height:Ht+"px"})
+  //     // console.log(Ht);
+  // })
+  // $(".l_nav>ul>li").mouseout(function(){
+  //     $(this).find(".submenu").stop().slideUp(300)
+  //     // $(".r_nav").stop().slideUp(300);
+  // })
+  // let setTT;
+  // $("#all_nav").mouseleave(function(){
+  //     clearTimeout(setTT);
+  //     setTT = setTimeout(() => {
+  //         $(this).removeClass("on")
+  //     }, 300);
+  //     $(".r_nav").css({height:"100px"});
+  // })
   
-  // const Lnav = qs(".l_nav");
-  // const Lmenu = qsa(".l_nav>ul>li");
-  // Lmenu.forEach(ele=>{
-      //     ele.onmouseenter=()=>{
-          //         // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
-          //         // ele.nextElementSibling - 다음형제요소
-          //         // clientHeight - 높이값
-          //         let eleH = ele.querySelector(".submenu").nextElementSibling.clientHeight+100;
-          //         console.log(ele.querySelector("a").nextElementSibling.clientHeight);
-          
-          //         allNav.classList.add("on");
-  //         allNav.style.height = eleH+"px";
-  //         ele.style.height = eleH+"px";
-  //         ele.querySelector(".submenu").style.height = eleH+"px";
+  const gnb =qs("#gnb")
+  const nav = qs(".nav");
+  const menu = qsa(".nav>ul>li");
+  console.log(gnb,nav,menu);
+
+  nav.forEach(ele=>{
+          ele.onmouseenter=()=>{
+          // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
+          // ele.nextElementSibling - 다음형제요소
+          // clientHeight - 높이값
+          let eleH = ele.querySelector(".submenu").nextElementSibling.clientHeight+100;
+          console.log(ele.querySelector(".submenu>a").nextElementSibling.clientHeight);
   
-  //     }
-  //     ele.onmouseleave=()=>{
-      //         allNav.classList.remove("on");
-      //         allNav.style.height = "100px";
-      //         Lnav.style.height = "100px";
-      //         ele.style.height = "100px";
-      //         ele.querySelector(".submenu").style.height = "0px";
-      //     }
+          nav.classList.add("on");
+          nav.style.height = eleH+"px";
+          ele.style.height = eleH+"px";
+          ele.querySelector(".submenu").style.height = eleH+"px";
+  
+      }
+      ele.onmouseleave=()=>{
+              nav.classList.remove("on");
+              nav.style.height = "100px";
+              Lnav.style.height = "100px";
+              ele.style.height = "100px";
+              ele.querySelector(".submenu").style.height = "0px";
+          }
       
-      // })
+      })
       // ______________________________page1_____________________________
-})
+})//////////////////////////////////////////////////////////////////////////////////////

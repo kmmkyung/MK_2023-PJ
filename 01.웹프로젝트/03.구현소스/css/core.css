@@ -45,19 +45,22 @@ body *{
     padding: 0 2vw;
     display: block;
 }
+
 #p1_logo{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+}
+
+#p1_logo a{
+    display: block;
 }
 
 #p1_logo img{
-    width: min(15vw,160px);
-    height: auto;
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 160px;
 }
 
 .Wline{
@@ -68,7 +71,7 @@ body *{
 
 .icon-search{
     width: 98px;
-    height: 100px;
+    height: 99px;
     text-align: center;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
@@ -93,6 +96,7 @@ body *{
 
 /* 하위메뉴 */
 .submenu{
+    display: none;
     position: absolute;
 }
 
@@ -111,6 +115,7 @@ body *{
     right: 6vw;
     top: 150px;
     font-size: 6rem;
+    display: none;
 }
 
 .submenu_h2 a{
@@ -125,6 +130,11 @@ body *{
 } 
 
 /* -------모바일-------- */
+/* -------메뉴 on-------- */
+.submenu .on{
+    display: block;
+}
+
 /* 햄버거 버튼, 닫기버튼 */
 .ham, .close{
     background-color: transparent;

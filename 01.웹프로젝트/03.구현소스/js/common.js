@@ -195,7 +195,4 @@ window.addEventListener("DOMContentLoaded",()=>{
             for(let x of scrollCon) showIt(x);
         })
 
-    // ______________________________page4_____________________________
-
-
-}); ///////////////////////// load /////////////////////////
+c

@@ -194,5 +194,4 @@ window.addEventListener("DOMContentLoaded",()=>{
             // 스크롤 등장 요소 개수만큼 for
             for(let x of scrollCon) showIt(x);
         })
-
-c
+    })

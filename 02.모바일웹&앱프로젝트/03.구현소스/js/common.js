@@ -1,12 +1,8 @@
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
 
-// ______________________________page4_____________________________
+// ______________________________page_____________________________
 
-const logoSVG = document.querySelector("");
-console.log(logoSVG)
-
-logoSVG.innerHTML = svgData.logo_1;
 
 
 

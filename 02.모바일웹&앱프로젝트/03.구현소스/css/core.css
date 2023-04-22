@@ -1,2 +1,101 @@
 @charset "utf-8";
 /* maison margiela PJ Core CSS - core.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Libre+Franklin:wght@400;700&family=Noto+Sans+KR&display=swap');
+/* 
+font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+#gnb{
+  font-family: 'Libre Franklin', sans-serif;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 26px 26px 0 26px;
+}
+
+.nav{
+  width: 100%;
+  height: 48px;
+  display: flex;
+  /* border: 1px solid tomato; */
+  justify-content: space-between;
+  border-radius: var(--borderR);
+}
+
+.nav_L{
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+  padding-left: 15px;
+}
+
+.nav_L ul{
+  display: flex;
+  align-items: center;
+}
+
+.nav_L ul>li{
+  margin-right: 40px;
+}
+
+.nav_L ul>li>a{
+  display: block;
+  font-size: 1.4rem;
+  color: var(--Lblack);
+  padding: 10px;
+  background-color: var(--gray);
+  border-radius: var(--borderR);
+}
+
+.nav_C{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_C a{
+  display: block;
+  height: 100%;
+}
+
+.nav_Logo1{
+  width: 135px;
+  height: 28px;
+  margin: 10px 0;
+}
+
+.nav_Logo2{
+  display: none;
+  width: 49px;
+  height: 28px;
+  margin: 10px 0;
+}
+
+.nab_R{
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.nab_R button{
+  box-sizing: border-box;
+  padding: 10px;
+  color: var(--Lblack);
+  cursor: pointer;
+  border-radius: var(--borderR);
+}
+
+.-ghost{
+  background-color : transparent;
+}
+
+.nab_R button:hover{
+  background-color: var(--gray);
+  backdrop-filter: blur(135px);
+}

@@ -8,6 +8,7 @@ font-family: 'Libre Franklin', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+/*---------- _____header_____ ----------*/
 #gnb{
   font-family: 'Libre Franklin', sans-serif;
   position: fixed;
@@ -89,3 +90,6 @@ font-family: 'Noto Sans KR', sans-serif;
   cursor: pointer;
   border-radius: var(--borderR);
 }
+
+
+/*---------- _____footer_____ ----------*/

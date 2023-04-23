@@ -47,7 +47,6 @@ font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.4rem;
   color: var(--Lblack);
   padding: 10px;
-  background-color: var(--gray);
   border-radius: var(--borderR);
 }
 
@@ -89,13 +88,4 @@ font-family: 'Noto Sans KR', sans-serif;
   color: var(--Lblack);
   cursor: pointer;
   border-radius: var(--borderR);
-}
-
-.-ghost{
-  background-color : transparent;
-}
-
-.nab_R button:hover{
-  background-color: var(--gray);
-  backdrop-filter: blur(135px);
 }

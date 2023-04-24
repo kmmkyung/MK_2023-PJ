@@ -4,13 +4,15 @@
 @import url(./reset.css);
 @import url(./core.css);
 
+
+*{
+    /* outline: 1px dotted turquoise; */
+}
 /* 
 font-family: 'Libre Baskerville', serif;
 font-family: 'Libre Franklin', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
-
-/* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); */
 
 /*-- root --*/
 :root{
@@ -19,6 +21,7 @@ font-family: 'Noto Sans KR', sans-serif;
     --white:#ffffff;
     --Lblack:#121212;
     --gray:rgba(247, 247, 242, 0.2);
+    --lightgray:rgba(224, 224, 224, 0.5);
     --blue:#007aff;
     --borderR: 20px;
 }
@@ -105,45 +108,102 @@ body{
 #page2{
     z-index: 100;
     position: relative;
-    height: 80vh;
+    height: 84.5vh;
     background-color: var(--main);
 }
 
 .page2_text{
     width: 100%;
+    padding: 12vh 0;
 }
 
 .page2_text p{
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 3vw;
     max-width: 900px;
     font-size: 2rem;
     text-align: center;
 }
 
+.page2_list{
+    margin:  0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between
+}
+
+.page2_list--con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2_list--con img{
+    width: 220px;
+    border-radius: var(--borderR);
+}
+.page2_list--con a{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.4rem;
+}
+
+.page2_list--con a>div{
+    padding-top: 20px;
+}
 
 /*---------- _____page3_____ ----------*/
 #page3{
     height: 100vh;
+    
 }
 
 .page3-vidbox{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    z-index: 2;
     top: 0vh;
 }
 
 .page3-vid{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
+.vid{
+    width: 120vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /*---------- _____page4_____ ----------*/
 #page4{
-    height: 80vh;
+    height: 84vh;
+    padding: 200px;
+    box-sizing: border-box;
 }
+
+.page4_text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.page4_text--en{
+    font-size: 2rem;
+    max-width: 1000px;
+}
+
+.page4_text--ko{
+    max-width: 670px;
+    font-size: 2.2rem;
+}
+
 
 /*---------- _____page5_____ ----------*/
 #page5{
@@ -152,5 +212,42 @@ body{
     background-image: url(../imges/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    transform: rotateX('90deg');
+    position: relative;
+}
+.page5_title{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.page5_title h4{
+    font-size: 1.4rem;
+}
+
+.page5_title h5{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.paga5_con--text{
+    position: absolute;
+    font-size: 7rem;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+}
+
+.page5-colorGray{
+    color: var(--lightgray);
+}
+
+.page5_con--img1{
+    width: 350px;
+    position: absolute;
+}
+
+.page5_con--img2{
+    width: 450px;
+    position: absolute;
 }

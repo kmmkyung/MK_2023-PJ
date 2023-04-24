@@ -163,7 +163,7 @@ body{
 }
 
 .page3-vidbox{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0vh;
 }
@@ -255,4 +255,7 @@ body{
 .page5_con--img2{
     width: 450px;
     position: absolute;
+}
+.dh{
+    height: 100vh;
 }

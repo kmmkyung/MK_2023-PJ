@@ -40,6 +40,7 @@ font-family: 'Noto Sans KR', sans-serif;
 }
 
 .nav_L ul>li{
+  white-space: nowrap;
   margin-right: 40px;
 }
 
@@ -93,3 +94,6 @@ font-family: 'Noto Sans KR', sans-serif;
 
 
 /*---------- _____footer_____ ----------*/
+#footer{
+  height: 72vh;
+}

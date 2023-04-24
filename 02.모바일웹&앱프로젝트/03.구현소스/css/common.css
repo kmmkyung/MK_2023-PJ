@@ -74,7 +74,7 @@ body{
 
 .img-con img{
     aspect-ratio: 3/1.7;
-    width: 1200px;
+    width: min(90vw,1200px);
     border-radius: var(--borderR);
     margin: 0 auto;
     display: block;

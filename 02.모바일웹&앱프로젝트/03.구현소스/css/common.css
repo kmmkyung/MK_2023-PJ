@@ -6,7 +6,7 @@
 
 
 *{
-    outline: 1px dotted turquoise;
+    /* outline: 1px dotted turquoise; */
 }
 /* 
 font-family: 'Libre Baskerville', serif;
@@ -273,7 +273,4 @@ body{
 .page5_con--img2{
     width: 450px;
     position: absolute;
-}
-.dh{
-    height: 100vh;
 }

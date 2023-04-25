@@ -96,10 +96,22 @@ font-family: 'Noto Sans KR', sans-serif;
 /*---------- _____footer_____ ----------*/
 #footer{
   height: 72vh;
+  box-sizing: border-box;
+  padding: 200px 0 100px;
+  position: relative;
+}
+
+.footer_con {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .footer_latter{
   font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer_latter h5{
@@ -112,19 +124,64 @@ font-family: 'Noto Sans KR', sans-serif;
 .footer_latter>p{
   font-size: 1.2rem;
   color: var(--darkgray);
+  margin-bottom: 40px;
+}
+
+.footer_latter form{
+  position: relative;
 }
 
 .footer_latter input{
   border-color: var(--darkgray);
+  padding: 10px;
+  width: 320px;
+  border-radius: 10px;
 }
 
-.footer_latter>form>label{}
+.footer_latter>form>label{
+  font-size: 1.2rem;
+  color: var(--darkgray);
+  padding: 2px;
+  background-color: var(--main);
+  position: absolute;
+  top: -6px;
+  left: 10px;
+}
 
 
 .footer_links{
-  font-family: 'Libre Franklin', sans-serif;  
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+
+}
+
+.footer_links--box{
+  display: flex;
+  flex-direction: row;
+  margin: 0 30px;
+  flex-wrap: wrap;
+}
+
+div ul>li{
+  margin-left: 30px;
+}
+
+.footer_links--btn, .footer_links ul>li>a{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .footer_text{
   font-family: 'Libre Baskerville', serif;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  bottom: 12vh;
+  transform: translateX(-50%);
+  text-align: center;
 }

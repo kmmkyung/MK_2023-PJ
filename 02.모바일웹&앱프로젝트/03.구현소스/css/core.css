@@ -103,7 +103,7 @@ font-family: 'Noto Sans KR', sans-serif;
 
 .footer_con {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-evenly;
 }
 
@@ -166,7 +166,7 @@ font-family: 'Noto Sans KR', sans-serif;
   flex-wrap: wrap;
 }
 
-div ul>li{
+.footer_links--list>li{
   margin-left: 30px;
 }
 

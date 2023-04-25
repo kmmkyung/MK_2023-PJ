@@ -97,3 +97,34 @@ font-family: 'Noto Sans KR', sans-serif;
 #footer{
   height: 72vh;
 }
+
+.footer_latter{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.footer_latter h5{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--Lblack);
+}
+
+.footer_latter>p{
+  font-size: 1.2rem;
+  color: var(--darkgray);
+}
+
+.footer_latter input{
+  border-color: var(--darkgray);
+}
+
+.footer_latter>form>label{}
+
+
+.footer_links{
+  font-family: 'Libre Franklin', sans-serif;  
+}
+
+.footer_text{
+  font-family: 'Libre Baskerville', serif;
+}

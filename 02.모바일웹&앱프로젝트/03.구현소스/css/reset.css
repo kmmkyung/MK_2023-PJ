@@ -43,3 +43,7 @@ address{
 button{
     border: none;
 }
+
+a:focus{
+    border: none;
+}

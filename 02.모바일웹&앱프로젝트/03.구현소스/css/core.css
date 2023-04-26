@@ -25,6 +25,7 @@ font-family: 'Noto Sans KR', sans-serif;
   /* border: 1px solid tomato; */
   justify-content: space-between;
   border-radius: var(--borderR);
+  /* background-color: tomato; */
 }
 
 .nav_L{
@@ -39,12 +40,12 @@ font-family: 'Noto Sans KR', sans-serif;
   align-items: center;
 }
 
-.nav_L--list>li{
+.nav_L--menu{
   white-space: nowrap;
   margin-right: 40px;
 }
 
-.nav_L--list>li>a{
+.nav_L--menu>a{
   display: block;
   font-size: 1.4rem;
   color: var(--Lblack);
@@ -52,6 +53,33 @@ font-family: 'Noto Sans KR', sans-serif;
   border-radius: var(--borderR);
 }
 
+/* 서브메뉴 */
+.submenu-all{
+position: absolute;
+display: flex;
+margin-top: 15px;
+padding-bottom: 200px;
+
+}
+
+.nav_L--submenu{
+  margin-right: 40px;
+}
+
+.nav_L--submenu>a{
+  font-size: 1.4rem;
+}
+
+.submenu_list>li{
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+.submenu_list>li>a{
+  font-size: 1.4rem;
+}
+
+/* 로고 */
 .nav_C{
   display: flex;
   flex-direction: column;

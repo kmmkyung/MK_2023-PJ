@@ -15,9 +15,7 @@ function FullImg(){
     // console.log("메인이미지박스",mainImgBox);
     // console.log("메인이미지",mainImg);
     // console.log("메인텍스트",mainTitle);
-    mainTitle.innerHTML = `
-    <div></div>
-    `
+
 }
 
 FullImg()

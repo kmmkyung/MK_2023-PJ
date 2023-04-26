@@ -6,7 +6,7 @@
 
 
 *{
-    /* outline: 1px dotted turquoise; */
+    outline: 1px dotted turquoise;
 }
 /* 
 font-family: 'Libre Baskerville', serif;
@@ -35,6 +35,11 @@ font-family: 'Noto Sans KR', sans-serif;
 
 .-blur:hover{
     background-color: var(--gray);
+    backdrop-filter: blur(135px);
+}
+
+.-blur_submenu:hover{
+    background-color: var(--darkgray);
     backdrop-filter: blur(135px);
 }
 

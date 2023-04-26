@@ -34,17 +34,17 @@ font-family: 'Noto Sans KR', sans-serif;
   padding-left: 15px;
 }
 
-.nav_L ul{
+.nav_L--list{
   display: flex;
   align-items: center;
 }
 
-.nav_L ul>li{
+.nav_L--list>li{
   white-space: nowrap;
   margin-right: 40px;
 }
 
-.nav_L ul>li>a{
+.nav_L--list>li>a{
   display: block;
   font-size: 1.4rem;
   color: var(--Lblack);

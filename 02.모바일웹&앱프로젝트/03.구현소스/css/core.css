@@ -26,6 +26,7 @@ font-family: 'Noto Sans KR', sans-serif;
   justify-content: space-between;
   border-radius: var(--borderR);
   /* background-color: tomato; */
+  padding-bottom: 500px;
 }
 
 .nav_L{
@@ -58,24 +59,38 @@ font-family: 'Noto Sans KR', sans-serif;
 position: absolute;
 display: flex;
 margin-top: 15px;
-padding-bottom: 200px;
 
 }
 
 .nav_L--submenu{
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  padding: 10px;
+  margin: 10px 10px 20px 0;
+  width: 180px;
+
 }
 
 .nav_L--submenu>a{
   font-size: 1.4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.submenu_list{
+  width: 180px;
+  position: relative;
+  left: -10px;
 }
 
 .submenu_list>li{
   margin: 10px 10px 10px 0;
   padding: 10px;
+  border-radius: var(--borderR);
+
 }
 
 .submenu_list>li>a{
+  color: var(--darkgray);
   font-size: 1.4rem;
 }
 
@@ -151,7 +166,7 @@ padding-bottom: 200px;
 
 .footer_latter>p{
   font-size: 1.2rem;
-  color: var(--darkgray);
+  color: var(--grayfooterfont);
   margin-bottom: 40px;
 }
 
@@ -160,7 +175,7 @@ padding-bottom: 200px;
 }
 
 .footer_latter input{
-  border-color: var(--darkgray);
+  border-color: var(--grayfooterfont);
   padding: 10px;
   width: 320px;
   border-radius: 10px;
@@ -168,7 +183,7 @@ padding-bottom: 200px;
 
 .footer_latter>form>label{
   font-size: 1.2rem;
-  color: var(--darkgray);
+  color: var(--grayfooterfont);
   padding: 2px;
   background-color: var(--main);
   position: absolute;

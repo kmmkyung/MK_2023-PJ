@@ -170,10 +170,9 @@ font-family: 'Noto Sans KR', sans-serif;
 .footer_links--list>li{
   margin: 5px 20px;
   padding: 10px;
-  background-color: red;
-  border: 1px solid ;
-  display: none
-  ;
+  /* border: 1px solid ; */
+  border-radius: calc(var(--borderR) - 10px);
+  /* display: none; */
 }
 
 .footer_links--btn, .footer_links ul>li>a{

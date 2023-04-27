@@ -64,34 +64,29 @@ margin-top: 15px;
 
 .nav_L--submenu{
   /* margin-right: 40px; */
-  padding: 10px;
-  margin: 10px 10px 20px 0;
-  width: 180px;
-
+  margin: 30px 20px 20px 0;
+  width: 160px;
 }
 
 .nav_L--submenu>a{
   font-size: 1.4rem;
   margin-bottom: 20px;
   display: block;
-}
-
-.submenu_list{
-  width: 180px;
-  position: relative;
-  left: -10px;
+  padding: 10px;
+  border-radius: var(--borderR);
 }
 
 .submenu_list>li{
-  margin: 10px 10px 10px 0;
-  padding: 10px;
-  border-radius: var(--borderR);
-
+  margin: 25px 0;
+  width: 160px;
 }
 
 .submenu_list>li>a{
   color: var(--darkgray);
   font-size: 1.4rem;
+  padding: 10px;
+  border-radius: var(--borderR);
+  display: block;
 }
 
 /* 로고 */

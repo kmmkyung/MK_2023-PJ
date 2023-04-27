@@ -228,3 +228,19 @@ margin-top: 15px;
   transform: translateX(-50%);
   text-align: center;
 }
+
+
+
+
+
+.nav:hover .test{
+  width: 99%;
+  height: calc(99% - 48px);
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--graybglight);
+    backdrop-filter: blur(135px);
+    border-radius: var(--borderR);
+}

@@ -17,22 +17,22 @@ window.addEventListener("DOMContentLoaded",()=>{
     gnb 메뉴 넣기
   ********************/
   // 1. 대상 선정
-  const nav = document.querySelector(".nav");
-  console.log(nav);
+  // const nav = document.querySelector(".nav");
+  // console.log(nav);
 
-  // 2. 변수
-  let hcode ="";
+  // // 2. 변수
+  // let hcode ="";
 
-  // 3. 구조화
-  hcode += 
-  for(let sm in gnbdata){
-    hcode += `
+  // // 3. 구조화
+  // hcode += 
+  // for(let sm in gnbdata){
+  //   hcode += `
 
-    `;
-  }
+  //   `;
+  // }
 
       // 4. GNB 박스에 출력하기
-      nav.innerHTML = hcode;
+      // nav.innerHTML = hcode;
 
 }) ///////////////////////// load /////////////////////////
 

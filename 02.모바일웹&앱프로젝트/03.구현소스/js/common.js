@@ -12,12 +12,12 @@ function FullImg(){
     const mainImgBox = document.querySelector(".img-con")
     const mainImg = document.querySelector(".img-con>img");
     const mainTitle = document.querySelector(".page1-con>.text-con")
-    // console.log("메인이미지박스",mainImgBox);
-    // console.log("메인이미지",mainImg);
-    // console.log("메인텍스트",mainTitle);
+    console.log("메인이미지박스",mainImgBox);
+    console.log("메인이미지",mainImg);
+    console.log("메인텍스트",mainTitle);
 
 }
-
+mainImg
 FullImg()
 
 

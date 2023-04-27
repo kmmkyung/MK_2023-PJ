@@ -16,9 +16,13 @@ function FullImg(){
     console.log("메인이미지",mainImg);
     console.log("메인텍스트",mainTitle);
 
+    if(){
+        mainImg.style.transition = "scale 3s 3s";
+        mainImg.style.scale="1.65";
+    }
+    // mainImg.style.borderRadius="0px";
 }
-mainImg
-FullImg()
+FullImg();
 
 
 

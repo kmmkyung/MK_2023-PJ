@@ -8,19 +8,17 @@ window.addEventListener("DOMContentLoaded",()=>{
     기능: 화면 로딩 3초 후 이미지 크기 변화
 ******************************/
 
-function FullImg(){
-    const mainImgBox = document.querySelector(".img-con")
-    const mainImg = document.querySelector(".img-con>img");
-    const mainTitle = document.querySelector(".page1-con>.text-con")
-    console.log("메인이미지박스",mainImgBox);
-    console.log("메인이미지",mainImg);
-    console.log("메인텍스트",mainTitle);
+const mainImgBox = document.querySelector(".img-con")
+const mainImg = document.querySelector(".img-con>img");
+const mainTitle = document.querySelector(".page1-con>.text-con")
+// console.log("메인이미지박스",mainImgBox);
+// console.log("메인이미지",mainImg);
+// console.log("메인텍스트",mainTitle);
 
-    if(){
-        mainImg.style.transition = "scale 3s 3s";
-        mainImg.style.scale="1.65";
-    }
-    // mainImg.style.borderRadius="0px";
+function FullImg(){
+    let posWinY
+    let posY
+
 }
 FullImg();
 

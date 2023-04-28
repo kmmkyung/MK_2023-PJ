@@ -29,6 +29,7 @@ body{
 }
 
 .img-con img{
+    background-color: rgb(0, 0, 0);
     /* aspect-ratio: 3/1.7; */
     width: min(98vw,1200px);
     border-radius: var(--borderR);
@@ -43,6 +44,7 @@ body{
     color: var(--white);
     font-size: 6rem;
     font-weight: normal;
+    white-space: nowrap;
 }
 
 .text-con button{
@@ -56,6 +58,7 @@ body{
     font-size: 1.8rem;
     font-family: 'Libre Franklin', sans-serif;
     box-sizing: border-box;
+    cursor: pointer;
 
 }
 

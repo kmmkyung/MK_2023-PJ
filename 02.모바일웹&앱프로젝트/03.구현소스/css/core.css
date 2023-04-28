@@ -186,7 +186,6 @@ margin-top: 15px;
   left: 10px;
 }
 
-
 .footer_links{
   font-family: 'Libre Franklin', sans-serif;
   display: flex;
@@ -194,7 +193,7 @@ margin-top: 15px;
   width: 700px;
   white-space: nowrap;
   flex-wrap: wrap;
-
+  height: 400px;
 }
 
 .footer_links--box{
@@ -203,6 +202,10 @@ margin-top: 15px;
   margin: 0 30px;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.footer_links--box:first-child{
+  margin-left: 0;
 }
 
 .footer_links--list>li{
@@ -241,6 +244,6 @@ margin-top: 15px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--graybglight);
-    backdrop-filter: blur(135px);
-    border-radius: var(--borderR);
+  backdrop-filter: blur(135px);
+  border-radius: var(--borderR);
 }

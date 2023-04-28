@@ -26,7 +26,7 @@ font-family: 'Noto Sans KR', sans-serif;
   justify-content: space-between;
   border-radius: var(--borderR);
   /* background-color: tomato; */
-  padding-bottom: 500px;
+  padding-bottom: 100px;
 }
 
 .nav_L{

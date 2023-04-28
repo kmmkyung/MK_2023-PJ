@@ -54,4 +54,8 @@ font-family: 'Noto Sans KR', sans-serif;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.-zoom{
+    scale: 1.65;
+}
 /*----------*/

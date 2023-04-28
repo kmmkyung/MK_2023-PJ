@@ -16,15 +16,10 @@ const mainTitle = document.querySelector(".page1-con>.text-con")
 // console.log("메인텍스트",mainTitle);
 
 function FullImg(){
-    let posWinY
-    let posY
-
+    let posY = mainImg.getBoundingClientRect().top;
+    console.log(posY);
 }
 FullImg();
-
-
-
-
 
 // ______________________________page3_____________________________
 /******************************

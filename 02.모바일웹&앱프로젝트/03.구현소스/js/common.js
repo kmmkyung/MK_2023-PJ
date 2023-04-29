@@ -10,18 +10,17 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 const mainImg = document.querySelector(".img-con>img");
 const mainTitle = document.querySelector(".page1-con>.text-con")
-// console.log("메인이미지박스",mainImgBox);
 // console.log("메인이미지",mainImg);
 // console.log("메인텍스트",mainTitle);
 
 function FullImg(){
-    // mainImg.style.scale="1.8";
-    // mainImg.style.borderRadius="0px";
-    // mainImg.style.filter="brightness(.7)";
-    // mainTitle.classList.remove("-hidden")
+    mainImg.style.transition = "all 3s";
+    mainImg.style.scale="1.8";
+    mainImg.style.borderRadius="0px";
+    mainImg.style.filter="brightness(.7)";
+    mainTitle.classList.remove("-hidden")
 }
-FullImg();
-
+window.addEventListener("wheel",FullImg);
 // ______________________________page3_____________________________
 /******************************
     함수명: posFixed

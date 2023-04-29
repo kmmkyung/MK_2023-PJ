@@ -13,10 +13,8 @@ const mainTitle = document.querySelector(".page1-con>.text-con")
 // console.log("메인이미지",mainImg);
 // console.log("메인텍스트",mainTitle);
 
-function FullImg(){
-    // 이미지가 커지는동안은 아래로 스크롤 할 수 없게 하고싶어요
-    // event.preventDefault;
-
+function FullImg(event){
+    event.preventDefault; //이거 아닌가봐...ㅠ
     mainImg.classList.add("p1_fullimg");
     setTimeout(() => {
         mainTitle.classList.remove("-hidden")

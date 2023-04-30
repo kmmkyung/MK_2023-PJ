@@ -18,7 +18,7 @@ function FullImg(event){
     mainImg.classList.add("p1_fullimg");
     setTimeout(() => {
         mainTitle.classList.remove("-hidden")
-    }, 2500);
+    },500,"ease-out");
 }
 window.addEventListener("wheel",FullImg);
 

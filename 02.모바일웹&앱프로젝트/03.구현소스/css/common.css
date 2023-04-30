@@ -45,6 +45,7 @@ body{
     font-size: 6rem;
     font-weight: normal;
     white-space: nowrap;
+    transition: all ease-in-out;
 }
 
 .text-con button{
@@ -59,13 +60,15 @@ body{
     font-family: 'Libre Franklin', sans-serif;
     box-sizing: border-box;
     cursor: pointer;
+    transition: all ease-in-out;
+
 }
 
 .p1_fullimg{
-    transition:all 2s linear;
+    transition: all 1.5s ease-in-out;
     border-radius: 0%;
     transform: scale(1.65);
-    filter: brightness(.7)
+    filter: brightness(0.6)
 }
 
 /*---------- _____page2_____ ----------*/

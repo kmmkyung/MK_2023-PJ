@@ -18,13 +18,12 @@ window.addEventListener("DOMContentLoaded",()=>{
   ********************/
   // 1. 대상 선정
   const nav = document.querySelector(".nav_L--list");
-  console.log(nav);
+  // console.log(nav);
 
-  // // 2. 변수
+  // 2. 변수
   let hcode =""
   
-
-
+  // 3. 구조화
   hcode += `
   `;
     
@@ -34,14 +33,14 @@ window.addEventListener("DOMContentLoaded",()=>{
       <a class="-ghost -blur" href="#">${x}</a>
       <ul class="submenu-all">
     `
-    console.log(x);
+    // console.log(x);
     
     for(let y in gnbdata[x]){
       hcode += `
         <li class="nav_L--submenu"><a class="-blur_submenu" href="#">${y}</a>
           <ol class="submenu_list">
       `;
-      console.log(y);
+      // console.log(y);
       
       for(let z of gnbdata[x][y]){
         hcode += `
@@ -61,7 +60,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   hcode += `
   `;
 
-  console.log(hcode);
+  // console.log(hcode);
   //   nav.forEach(ele=>{
     
   //   let mtit = ele.innerText;
@@ -73,39 +72,33 @@ window.addEventListener("DOMContentLoaded",()=>{
   // })
   nav.innerHTML = hcode;
 
-    
+/********************
+  gnb 메뉴 오버시 서브메뉴 보이기
+********************/
+const list = document.querySelectorAll(".nav_L--menu");
+console.log("list",list);
+// console.log("메뉴박스",menuBox);
 
+// 1. 하위메뉴/메뉴배경 변경함수
+const subBg = (ele,hv,opa) => {
+  ele.style.paddingBottom = hv+"px"
+  ele.style.opacity = opa;
+};
 
-;
-
-  // const letVal = obj => {
-  //   console.log(obj);
-  //   let smallH = "";
-  //   for(let x in obj){
-  //           smallH += `
-  //             <li><a class="-blur_submenu" href="#">${obj[x]}</a></li>
-  //           `
-  //         }
-
-  //   return smallH;
-  // }
-
-  // // // 3. 구조화
-  // hcode += `<ul>`;
-  // for(let sm in gnbdata){
-  //   console.log(gnbdata[sm]["Ready-to-wear"]);
-  //   hcode += `
-  //     <li class="nav_L--submenu"><a class="-blur_submenu" href="#">Ready-to-wear</a>
-  //       <ol class="submenu_list">
-  //         ${letVal(gnbdata[sm]["Ready-to-wear"])}
-  //       </ol>
-  //   </li>
-  //   `;
-  // }
-  // hcode += `</ul>`;
-
-  //     // 4. GNB 박스에 출력하기
-  //     nav.innerHTML = hcode;
-
+// 2. 상위메뉴 li이벤트 설정
+for(let x of list){
+  // 마우스 오버시 ___________________ 하위메뉴 박스/하위 내부 박스높이값/변경함수 호출
+  x.onmouseenter = () => {
+    const menuBox = document.querySelector(".nav")
+    let submenuBoxHv = menuBox.querySelector(".submenu-all").clientHeight;
+    // console.log("하위내부높이",submenuBoxHv);
+    subBg(menuBox,submenuBoxHv,1)
+  }
+  // 마우스 아웃시 ___________________
+  x.onmouseleave = () => {
+    let menuBox = x.querySelector(".nav");
+    subBg(menuBox,0,1)
+  }
+}
 }) ///////////////////////// load /////////////////////////
 

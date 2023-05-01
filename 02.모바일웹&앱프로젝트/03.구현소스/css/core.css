@@ -22,11 +22,11 @@ font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: 48px;
   display: flex;
-  /* border: 1px solid tomato; */
+  border: 1px solid tomato;
   justify-content: space-between;
   border-radius: var(--borderR);
   /* background-color: tomato; */
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 .nav_L{
@@ -43,7 +43,7 @@ font-family: 'Noto Sans KR', sans-serif;
 
 .nav_L--menu{
   white-space: nowrap;
-  margin-right: 40px;
+  margin-right: 41px;
 }
 
 .nav_L--menu>a{
@@ -57,6 +57,7 @@ font-family: 'Noto Sans KR', sans-serif;
 /* 서브메뉴 */
 .submenu-all{
 position: absolute;
+left: calc(41px - 1%);
 display: flex;
 margin-top: 15px;
 

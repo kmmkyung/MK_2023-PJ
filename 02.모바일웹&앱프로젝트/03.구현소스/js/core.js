@@ -17,26 +17,65 @@ window.addEventListener("DOMContentLoaded",()=>{
     gnb 메뉴 넣기
   ********************/
   // 1. 대상 선정
-  const nav = document.querySelectorAll(".nav_L--menu");
+  const nav = document.querySelector(".nav_L--list");
   console.log(nav);
 
   // // 2. 변수
   let hcode =""
+  
 
-  nav.forEach(ele=>{
 
-    let mtit = ele.innerText;
-    console.log(mtit);
+  hcode += `
+  `;
     
-    let tgdata = gnbdata[mtit];
-    console.log(tgdata);
-
+  for(let x in gnbdata){
+    hcode += `
+    <li class="nav_L--menu">
+      <a class="-ghost -blur" href="#">${x}</a>
+      <ul class="submenu-all">
+    `
+    console.log(x);
     
-
-
-  })
+    for(let y in gnbdata[x]){
+      hcode += `
+        <li class="nav_L--submenu"><a class="-blur_submenu" href="#">${y}</a>
+          <ol class="submenu_list">
+      `;
+      console.log(y);
+      
+      for(let z of gnbdata[x][y]){
+        hcode += `
+        <li><a class="-blur_submenu" href="#">${z}</a></li>
+        `;
+      }
+      hcode += `
+          </ol>
+        </li>
+      `;
+    }
+    hcode += `
+      </ul>
+      </li>
+    `;
+  }
+  hcode += `
+  `;
 
   console.log(hcode);
+  //   nav.forEach(ele=>{
+    
+  //   let mtit = ele.innerText;
+  //   // console.log(mtit);
+    
+  //   let tgdata = gnbdata[mtit];
+    
+  //   // console.log("tgdata", tgdata);
+  // })
+  nav.innerHTML = hcode;
+
+    
+
+
 ;
 
   // const letVal = obj => {

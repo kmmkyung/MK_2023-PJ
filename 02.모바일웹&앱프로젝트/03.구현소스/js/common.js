@@ -2,6 +2,7 @@
 window.addEventListener("DOMContentLoaded",()=>{
     console.log("common.jS 로딩!")
 
+    // https://www.kisshouse.co.uk/
 // ______________________________page1_____________________________
 /******************************
     함수명: FullImg

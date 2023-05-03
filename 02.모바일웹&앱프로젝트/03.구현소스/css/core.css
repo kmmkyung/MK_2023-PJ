@@ -27,6 +27,7 @@ font-family: 'Noto Sans KR', sans-serif;
   border-radius: var(--borderR);
   /* background-color: tomato; */
   /* padding-bottom: 100px; */
+  transition: 1s ease-in-out;
 }
 
 .nav_L{
@@ -54,13 +55,19 @@ font-family: 'Noto Sans KR', sans-serif;
   border-radius: var(--borderR);
 }
 
-/* 서브메뉴 */
+/* 서브메뉴 div */
 .submenu-all{
 position: absolute;
 left: calc(41px - 1%);
-display: flex;
 margin-top: 15px;
+overflow: hidden;
+height: 0;
+transition: 1s ease-in-out;
+}
 
+/* 서브메뉴 div >ul */
+.submenu-all>ul{
+display: flex;
 }
 
 .nav_L--submenu{
@@ -96,6 +103,7 @@ margin-top: 15px;
   flex-direction: column;
   align-items: center;
   transition: all 1s;
+  overflow: hidden;
 }
 
 .nav_C a{
@@ -104,13 +112,12 @@ margin-top: 15px;
 }
 
 .nav_Logo1{
-  width: 135px;
+  width: 165px;
   height: 28px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .nav_Logo2{
-  display: none;
   width: 49px;
   height: 28px;
   margin: 10px 0;

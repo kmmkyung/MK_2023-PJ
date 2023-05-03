@@ -41,7 +41,7 @@ font-family: 'Noto Sans KR', sans-serif;
 }
 
 .-hidden{
-    display: none;
+    display: none !important;
 }
 
 .-show{

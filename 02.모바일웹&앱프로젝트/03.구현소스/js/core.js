@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded",()=>{
   /********************
     gnb에 로고 넣기 / 바꾸기 / 메뉴 넣기
   ********************/
+  const myNav = document.querySelector(".nav");
   const logoSVG1 = document.querySelector(".nav_Logo1");
   const logoSVG2 = document.querySelector(".nav_Logo2");
   const nav = document.querySelector(".nav_L--list");
@@ -15,12 +16,14 @@ window.addEventListener("DOMContentLoaded",()=>{
   logoSVG2.innerHTML = svgData.logo_2;
 
   // 2. gnb 로고 바꾸기
-  function logoChSvg2(){
-    logoSVG2.style.display="block"
-    logoSVG1.classList.add("-hidden")
+  function logoChSvg2(e){
+    let dir = e.wheelDelta;
+    console.log(dir);
+    // logoSVG2.style.display="block"
+    // logoSVG1.classList.add("-hidden")
   }
 
-  nav.addEventListener("wheel",logoChSvg2);
+  window.addEventListener("wheel",logoChSvg2);
   nav.addEventListener("onmouseenter",logoChSvg2);
 
   // 3. 메뉴 넣기
@@ -35,7 +38,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     hcode += `
     <li class="nav_L--menu">
       <a class="-ghost -blur" href="#">${x}</a>
-      <ul class="submenu-all">
+      <div class="submenu-all"><ul>
     `
     // console.log(x);
     
@@ -58,6 +61,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     }
     hcode += `
       </ul>
+      </div>
       </li>
     `;
   }
@@ -76,32 +80,37 @@ window.addEventListener("DOMContentLoaded",()=>{
   // })
   nav.innerHTML = hcode;
   
-  const submenu = document.querySelector(".submenu-all");
-  submenu.classList.add("-hidden")
+  // const submenu = document.querySelectorAll(".submenu-all");
+  // submenu.forEach(ele=>{
+  //   ele.classList.add("-hidden");
+  // })
   // 3-3. gnb 메뉴 오버시 서브메뉴 보이기
   const list = document.querySelectorAll(".nav_L--menu");
   console.log("list",list);
-  console.log("submenu",submenu);
+  // console.log("submenu",submenu);
   
   
   // 3-3-1. 하위메뉴/메뉴배경 변경함수
-  const subBg = (ele,hv,opa) => {
-    ele.style.paddingBottom = hv+"px"
-    ele.style.opacity = opa;
+  const subBg = (ele,hv) => {
+    ele.style.height = hv+"px";
+    myNav.style.paddingBottom = hv+"px";
   };
   
   for(let x of list){
+    console.log(x);
     // 마우스 오버시 ___________________ 하위메뉴 박스/하위 내부 박스높이값/변경함수 호출
     x.onmouseenter = () => {
-      const menuBox = document.querySelector(".nav")
-      let submenuBoxHv = menuBox.querySelector(".submenu-all").clientHeight;
-      // console.log("하위내부높이",submenuBoxHv);
-      subBg(menuBox,submenuBoxHv,1)
+      let menu = x.querySelector(".submenu-all");
+      let tgele=x.querySelector(".submenu-all>ul");
+      console.log(tgele);
+      let submenuBoxHv = tgele.clientHeight;
+      console.log("하위내부높이",submenuBoxHv);
+      subBg(menu,submenuBoxHv)
     } 
     // 마우스 아웃시 ___________________
-    x.onmouseleave = () => {
-      let menuBox = x.querySelector(".nav");
-      subBg(menuBox,0,1)
+    x.onmouseleave = () => {      
+      let menu=x.querySelector(".submenu-all");
+      subBg(menu,0)
     } //___________________
   } ////// for of /////
 }) ///////////////////////// load /////////////////////////

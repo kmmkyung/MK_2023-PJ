@@ -15,7 +15,7 @@ const mainTitle = document.querySelector(".page1-con>.text-con")
 // console.log("메인텍스트",mainTitle);
 
 function FullImg(event){
-    event.preventDefault; //이거 아닌가봐...ㅠ
+    event.preventDefault; // 이거 아닌가봐...ㅠ
     mainImg.classList.add("p1_fullimg");
     setTimeout(() => {
         mainTitle.classList.remove("-hidden")

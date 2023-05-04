@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* maison margiela PJ 서브 CSS - sub.css */
+
+@import url(./reset.css);
+@import url(./core.css);
+
+
+body{
+    font-family: 'Libre Baskerville', Noto Sans KR;
+    background-color: var(--main);
+}
+
+.null_box{
+    padding-top: 74px;
+}
+
+.main-header{
+    margin-top: 17vh;
+}
+
+.main-title{
+    font-size: 2.4rem;
+}
+

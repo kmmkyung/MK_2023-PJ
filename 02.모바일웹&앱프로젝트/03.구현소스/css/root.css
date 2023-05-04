@@ -3,6 +3,7 @@
 
 *{
     /* outline: 1px dotted turquoise; */
+    /* outline: 1px dotted tomato; */
 }
 
 /* 
@@ -18,9 +19,8 @@ font-family: 'Noto Sans KR', sans-serif;
     --white:#ffffff;
     --Lblack:#121212;
     --graybglight:rgba(26,26,26,.08);
-    --grayfooterfont:#9e9e9e;
-    --lightgray:rgba(224, 224, 224, 0.5);
-    --darkgray:#696969;
+    --gray9e:#9e9e9e;
+    --gray69:#696969;
     --blue:#007aff;
     --borderR: 15px;
 }

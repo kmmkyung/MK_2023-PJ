@@ -133,7 +133,7 @@ body{
     margin: 0 auto;
     width: 400px;
     height: 4px;
-    background-color: var(--gray);
+    background-color: var(--gray69);
 }
 
 .bar_sm{
@@ -148,16 +148,10 @@ body{
 }
 
 .page3-vidbox{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0vh;
     z-index: -1;
-}
-
-.page3-vid{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .vid{
@@ -230,7 +224,7 @@ body{
 }
 
 .page5-colorGray{
-    color: var(--lightgray);
+    color: var(--gray9e);
 }
 
 .page5_con--img1{

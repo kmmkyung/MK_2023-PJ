@@ -80,10 +80,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   // })
   nav.innerHTML = hcode;
   
-  // const submenu = document.querySelectorAll(".submenu-all");
-  // submenu.forEach(ele=>{
-  //   ele.classList.add("-hidden");
-  // })
   // 3-3. gnb 메뉴 오버시 서브메뉴 보이기
   const list = document.querySelectorAll(".nav_L--menu");
   console.log("list",list);

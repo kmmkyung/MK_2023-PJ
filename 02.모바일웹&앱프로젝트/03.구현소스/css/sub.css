@@ -20,5 +20,26 @@ body{
 
 .main-title{
     font-size: 2.4rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 160px;
 }
 
+.list-all{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: min(1vw,10px);
+    grid-row-gap: min(1vw,10px);
+}
+
+.list-con__img{
+    width: 15vw;
+    aspect-ratio: 1/1.5;
+}
+
+.list-con__title{
+    display: flex;
+}

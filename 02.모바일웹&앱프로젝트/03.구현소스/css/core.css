@@ -28,7 +28,7 @@ font-family: 'Noto Sans KR', sans-serif;
   transition: .8s ease-in-out;
 }
 
-.nav:hover .nav_inbox{
+.nav:hover .nav-inbox{
   width: 99%;
   height: calc(99% - 50px);
   position: absolute;
@@ -39,24 +39,24 @@ font-family: 'Noto Sans KR', sans-serif;
   border-radius: var(--borderR);
 }
 
-.nav_L{
+.nav-L{
   display: flex;
   align-items: center;
   flex-basis: 50%;
   padding-left: 15px;
 }
 
-.nav_L--list{
+.nav-L__list{
   display: flex;
   align-items: center;
 }
 
-.nav_L--menu{
+.nav-L__menu{
   white-space: nowrap;
   margin-right: 41px;
 }
 
-.nav_L--menu>a{
+.nav-L__menu>a{
   display: block;
   font-size: 1.4rem;
   color: var(--Lblack);
@@ -80,13 +80,13 @@ transition: 1s ease-in-out;
 display: flex;
 }
 
-.nav_L--submenu{
+.nav-L__submenu{
   /* margin-right: 40px; */
   margin: 30px 20px 20px 0;
   width: 160px;
 }
 
-.nav_L--submenu>a{
+.nav-L__submenu>a{
   font-size: 1.4rem;
   margin-bottom: 20px;
   display: block;
@@ -95,12 +95,12 @@ display: flex;
   font-weight: bold;
 }
 
-.submenu_list>li{
+.submenu-list>li{
   margin: 25px 0;
   width: 160px;
 }
 
-.submenu_list>li>a{
+.submenu-list>li>a{
   color: var(--gray69);
   font-size: 1.4rem;
   padding: 10px;
@@ -110,31 +110,31 @@ display: flex;
 }
 
 /* 로고 */
-.nav_C{
+.nav-C{
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 1s;
 }
 
-.nav_C a{
+.nav-C a{
   display: block;
   height: 100%;
 }
 
-.nav_Logo1{
+.nav-Logo1{
   width: 135px;
   height: 28px;
   margin: 15px 0;
 }
 
-.nav_Logo2{
+.nav-Logo2{
   width: 49px;
   height: 28px;
   margin: 10px 0;
 }
 
-.nab_R{
+.nab-R{
   display: flex;
   flex-basis: 50%;
   align-items: center;
@@ -142,7 +142,7 @@ display: flex;
   padding-right: 15px;
 }
 
-.nab_R button{
+.nab-R button{
   box-sizing: border-box;
   padding: 10px;
   color: var(--Lblack);
@@ -152,43 +152,45 @@ display: flex;
 
 /*---------- _____footer_____ ----------*/
 #footer{
-  height: 72vh;
+  height: 80vh;
   box-sizing: border-box;
-  padding: 200px 0 100px;
+  padding: 100px;
   position: relative;
 }
 
-.footer_con {
+.footer-con {
+  height: 100%;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
-.footer_latter{
+.footer-latter{
   font-family: 'Libre Franklin', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer_latter h5{
+.footer-latter h5{
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: var(--Lblack);
 }
 
-.footer_latter>p{
+.footer-latter>p{
   font-size: 1.2rem;
   color: var(--gray9e);
   margin-bottom: 40px;
 }
 
-.footer_latter form{
+.footer-latter form{
   position: relative;
 }
 
-.footer_latter input{
+.footer-latter input{
   border-color: var(--gray9e);
   padding: 10px;
   width: 320px;
@@ -197,7 +199,7 @@ display: flex;
   border-style: solid;
 }
 
-.footer_latter>form>label{
+.footer-latter>form>label{
   font-size: 1.2rem;
   color: var(--gray9e);
   padding: 2px;
@@ -208,16 +210,15 @@ display: flex;
 }
 
 /*-- article --*/
-.footer_links{
+.footer-links{
   font-family: 'Libre Franklin', sans-serif;
   display: flex;
   align-items: flex-start;
   white-space: nowrap;
   flex-wrap: wrap;
-  height: 400px;
 }
 
-.footer_links--box{
+.footer-links__box{
   display: flex;
   flex-direction: row;
   margin: 0 10px;
@@ -229,14 +230,14 @@ display: flex;
   margin-left: 0;
 }
 
-.footer_links--btn{
+.footer-links__btn{
   /* background-color: var(--main); */
   position: relative;
   width: 140px;
   padding: 10px;
 }
 
-.footer_links--list{
+.footer-links__list{
   width: 140px;
   box-sizing: border-box;
   margin-left: 10px;
@@ -244,18 +245,18 @@ display: flex;
   text-align: center;
 }
 
-.footer_links--list:hover{
+.footer-links__list:hover{
   background-color: var(--main);
   box-shadow: 3px 3px 3px #eee;
   border-radius: calc(var(--borderR) - 5px);
 }
 
-.footer_links--list>li>a{
+.footer-links__list>li>a{
   display: block;
   padding: 10px;
 }
 
-.footer_links--btn, .footer_links ul>li>a{
+.footer-links__btn, .footer-links ul>li>a{
   border-radius: calc(var(--borderR) - 5px);
   font-family: 'Libre Franklin', sans-serif;
   text-transform: uppercase;
@@ -263,12 +264,7 @@ display: flex;
   font-weight: bold;
 }
 
-.footer_text{
+.footer-text{
   font-family: 'Libre Baskerville', serif;
-  position: absolute;
-  top: auto;
-  left: 50%;
-  bottom: 12vh;
-  transform: translateX(-50%);
   text-align: center;
 }

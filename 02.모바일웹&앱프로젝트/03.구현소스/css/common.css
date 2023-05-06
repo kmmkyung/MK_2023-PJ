@@ -64,7 +64,7 @@ body{
 
 }
 
-.p1_fullimg{
+.p1-fullimg{
     transition: all 1.5s ease-in-out;
     border-radius: 0%;
     transform: scale(1.65);
@@ -79,12 +79,12 @@ body{
     width: 100%;
 }
 
-.page2_text{
+.page2-text{
     width: 100%;
     padding: 12vh 0;
 }
 
-.page2_text p{
+.page2-text p{
     margin: 0 auto;
     padding: 0 3vw;
     max-width: 900px;
@@ -92,51 +92,51 @@ body{
     text-align: center;
 }
 
-.page2_list{
+.page2-list{
     margin:  0 auto;
     width: 1200px;
     display: flex;
     justify-content: space-between
 }
 
-.page2_list--con{
+.page2-list__con{
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all .3s;
 }
 
-.page2_list--con img{
+.page2-list__con img{
     width: 220px;
     border-radius: var(--borderR);
 }
-.page2_list--con a{
+.page2-list__con a{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-.page2_list--con a>div{
+.page2-list__con a>div{
     padding-top: 20px;
 }
 
-.page2_list--con:hover {
+.page2-list__con:hover {
     transform: scale(.99);
 }
 
-.page2_bar{
+.page2-bar{
     width: 100%;
     margin-top: 100px;
 }
 
-.bar_full{
+.bar-full{
     margin: 0 auto;
     width: 400px;
     height: 4px;
     background-color: var(--gray69);
 }
 
-.bar_sm{
+.bar-sm{
     width: 100px;
     height: 100%;
     background-color: var(--Lblack);
@@ -148,7 +148,7 @@ body{
 }
 
 .page3-vidbox{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0vh;
     z-index: -1;
@@ -170,7 +170,7 @@ body{
     box-sizing: border-box;
 }
 
-.page4_text{
+.page4-text{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -179,12 +179,12 @@ body{
     text-align: center;
 }
 
-.page4_text--en{
+.page4-text__en{
     font-size: 2rem;
     max-width: 1000px;
 }
 
-.page4_text--ko{
+.page4-text__ko{
     max-width: 670px;
     font-size: 2.2rem;
 }
@@ -199,40 +199,43 @@ body{
     background-size: cover;
     position: relative;
 }
-.page5_title{
+.page5-title{
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
 }
 
-.page5_title h4{
+.page5-title h4{
     font-size: 1.4rem;
 }
 
-.page5_title h5{
+.page5-title h5{
     font-size: 2rem;
     margin-top: 10px;
 }
 
-.paga5_con--text{
+.paga5-con__text{
     position: absolute;
     font-size: 7rem;
     width: 100%;
-    color: var(--white);
     text-align: center;
 }
 
-.page5-colorGray{
+.paga5-con__text-hover-color{
+    color: var(--white);
+}
+
+.paga5-con__text-color{
     color: var(--graybglight);
 }
 
-.page5_con--img1{
+.page5-con__img1{
     width: 350px;
     position: absolute;
 }
 
-.page5_con--img2{
+.page5-con__img2{
     width: 450px;
     position: absolute;
 }

@@ -25,7 +25,7 @@ font-family: 'Noto Sans KR', sans-serif;
   /* border: 1px solid tomato; */
   justify-content: space-between;
   border-radius: var(--borderR);
-  transition: .5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .nav:hover .nav-inbox{
@@ -125,7 +125,7 @@ display: flex;
 .nav-Logo1{
   width: 135px;
   height: 28px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .nav-Logo2{

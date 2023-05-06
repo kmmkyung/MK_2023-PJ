@@ -27,19 +27,32 @@ body{
 
 .list-all{
     display: grid;
-    max-width: 1200px;
+    max-width: 1500px;
+    min-width: 1200px;
     margin: 0 auto;
     justify-items: center;
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: min(1vw,10px);
-    grid-row-gap: min(1vw,10px);
+    /* grid-row-gap: min(1vw,10px); */
+}
+
+.list-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list-con__img{
-    width: 15vw;
+    width: 19vw;
     aspect-ratio: 1/1.5;
+    border-radius: var(--borderR);
 }
 
 .list-con__title{
     display: flex;
+}
+
+.list-con__title h3{
+    font-size: 1.6rem;
+    font-weight: normal;
 }

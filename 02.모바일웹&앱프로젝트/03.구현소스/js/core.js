@@ -25,8 +25,10 @@ window.addEventListener("DOMContentLoaded",()=>{
       if(scrollTop>50){
         logoSVG2.classList.remove("-hidden")
         logoSVG1.classList.add("-hidden")
-      } 
-      else{
+        myNav.classList.add("-blur_show")
+      }
+      else if(scrollTop<=50){
+        myNav.classList.remove("-blur_show")
         logoSVG1.classList.remove("-hidden")
         logoSVG2.classList.add("-hidden")
       }

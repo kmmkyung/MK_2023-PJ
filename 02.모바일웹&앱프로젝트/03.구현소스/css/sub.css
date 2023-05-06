@@ -22,7 +22,11 @@ body{
     font-size: 2.4rem;
     text-align: center;
     font-weight: normal;
-    margin-bottom: 160px;
+    margin-bottom: 30vw;
+}
+
+.main-con{
+    padding: 0px 150px;
 }
 
 .list-all{
@@ -33,7 +37,7 @@ body{
     justify-items: center;
     grid-template-columns: repeat(4,1fr);
     /* grid-column-gap: min(1vw,10px); */
-    /* grid-row-gap: min(1vw,10px); */
+    grid-row-gap: min(30vw,150px);
 }
 
 .list-con{
@@ -43,7 +47,7 @@ body{
 }
 
 .list-con__img{
-    width: min(600px,20vw);
+    width: min(600px,19vw);
     aspect-ratio: 1/1.5;
     border-radius: var(--borderR);
 }

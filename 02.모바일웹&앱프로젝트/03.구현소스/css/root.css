@@ -35,6 +35,11 @@ font-family: 'Noto Sans KR', sans-serif;
     backdrop-filter: blur(135px);
 }
 
+.-blur_show{
+    background-color: var(--graybglight);
+    backdrop-filter: blur(135px);
+}
+
 .-blur_submenu:hover{
     background-color: var(--graybglight);
     backdrop-filter: blur(135px);

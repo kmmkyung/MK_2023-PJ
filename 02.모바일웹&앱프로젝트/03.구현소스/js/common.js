@@ -35,11 +35,12 @@ window.addEventListener("wheel",FullImg);
 const vid = document.querySelector(".vid")
 // console.log(vid)
 // 영상 크기 구하기
-// let vidH = document.
+let vidH = vid.offsetHeight/4*3;
+// console.log(vidH)
+
 window.addEventListener("scroll",()=>{
     // console.log("스크롤중")
-    let scTop = window.scrollY;
-    console.log(scTop);
+    vid.style.position="relative"
 })
 // ______________________________page5_____________________________
 /******************************
@@ -49,7 +50,24 @@ const text1 = document.querySelector(".text-1")
 const img1 = document.querySelector(".page5-con__img1")
 const text2 = document.querySelector(".text-2")
 const img2 = document.querySelector(".page5-con__img2")
-// console.log(text1,text2,img1,img2)
+console.log(text1,text2,img1,img2)
 
+text1.addEventListener("mouseenter",()=>{
+    text1.classList.add("paga5-con__text-hover-color");
+    text1.classList.remove("paga5-con__text-color");
+    text2.classList.remove("paga5-con__text-hover-color");
+    text2.classList.add("paga5-con__text-color");
+    img2.classList.add("-hidden")
+    img1.classList.remove("-hidden")
+})
+
+text2.addEventListener("mouseenter",()=>{
+    text1.classList.add("paga5-con__text-color");
+    text1.classList.remove("paga5-con__text-hover-color");
+    text2.classList.add("paga5-con__text-hover-color")
+    text2.classList.remove("paga5-con__text-color")
+    img1.classList.add("-hidden");
+    img2.classList.remove("-hidden")
+})
 
 }); ///////////////////////// load /////////////////////////

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* maison margiela PJ list CSS - list.css */
+
+@import url(./reset.css);
+@import url(./core.css);
+
+
+body{
+    font-family: 'Libre Baskerville', Noto Sans KR;
+    background-color: var(--main);
+}
+
+#list .list-con{
+    background-color: var(--main);
+    outline: 1px solid tomato;
+    width: 80vw;
+    height: 200vh;
+    position: absolute;
+    top: 74px;
+    right: 0;
+}

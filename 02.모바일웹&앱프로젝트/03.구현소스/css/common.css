@@ -25,7 +25,7 @@ body{
 }
 
 .img-con{
-    position: relative;
+    position: absolute;
 }
 
 .img-con img{
@@ -88,15 +88,15 @@ body{
     margin: 0 auto;
     padding: 0 3vw;
     max-width: 900px;
-    font-size: 2rem;
+    font-size: min(2vw,2rem);
     text-align: center;
 }
 
 .page2-list{
-    margin:  0 auto;
-    width: 1200px;
+    margin: 0 auto;
+    gap: 1vw;
     display: flex;
-    justify-content: space-between
+    justify-content: center;
 }
 
 .page2-list__con{
@@ -107,9 +107,10 @@ body{
 }
 
 .page2-list__con img{
-    width: 220px;
+    width: min(15vw,220px);
     border-radius: var(--borderR);
 }
+
 .page2-list__con a{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1.4rem;
@@ -148,7 +149,7 @@ body{
 }
 
 .page3-vidbox{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0vh;
     z-index: -1;
@@ -166,27 +167,28 @@ body{
 /*---------- _____page4_____ ----------*/
 #page4{
     height: 84vh;
-    padding: 200px;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .page4-text{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
 }
 
+
 .page4-text__en{
-    font-size: 2rem;
+    font-size: min(2vw,2rem);
     max-width: 1000px;
+    margin-bottom: 50px;
 }
 
 .page4-text__ko{
     max-width: 670px;
-    font-size: 2.2rem;
+    font-size: min(2vw,2rem);
 }
 
 
@@ -211,13 +213,13 @@ body{
 }
 
 .page5-title h5{
-    font-size: 2rem;
+    font-size: min(2vw,2rem);
     margin-top: 10px;
 }
 
 .paga5-con__text{
     position: absolute;
-    font-size: 7rem;
+    font-size: min(5vw,7rem);
     width: 100%;
     text-align: center;
 }

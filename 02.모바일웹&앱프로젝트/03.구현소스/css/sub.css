@@ -39,6 +39,11 @@ body{
     align-items: center;
 }
 
+.list-con:hover .list-con__img{
+    transform: translateY(-8px);
+    transition: transform .4s;
+}
+
 .list-con__img{
     width: min(600px,20vw);
     aspect-ratio: 1/1.5;
@@ -47,9 +52,16 @@ body{
 
 .list-con__title{
     display: flex;
+    align-items: center;
+    padding: 8px;
 }
 
 .list-con__title h3{
     font-size: 1.6rem;
     font-weight: normal;
+}
+
+.list-con__title i{
+    font-size: 1.6rem;
+    margin-left: 8px;
 }

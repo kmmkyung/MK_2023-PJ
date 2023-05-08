@@ -32,42 +32,49 @@ window.addEventListener("wheel",FullImg);
 /******************************
     기능: 영상 포지션 바꾸기(화면 4/3이 내려가면 포지션 변경)
 ******************************/
+const pg3 = document.querySelector(".page3-vidbox")
 const vid = document.querySelector(".vid")
-// console.log(vid)
+console.log(vid)
 // 영상 크기 구하기
 let vidH = vid.offsetHeight/4*3;
-// console.log(vidH)
+console.log(vidH)
+
+const retVal = x => x.getBoundingClientRect().top;
 
 window.addEventListener("scroll",()=>{
-    // console.log("스크롤중")
-    vid.style.position="relative"
+    console.log("스크롤중",retVal(vid))
+
+    if(retVal(pg3)<0) {
+        vid.style.position="fixed";
+        vid.style.top="0";
+        vid.play();
+    }
+    else{
+        vid.style.position="relative";
+        vid.style.top="0";
+        vid.pause();
+    }
 })
 // ______________________________page5_____________________________
 /******************************
     기능: 해당 text에 마우스 오버 시 폰트색 및 이미지 변경
 ******************************/
-const text1 = document.querySelector(".text-1")
-const img1 = document.querySelector(".page5-con__img1")
-const text2 = document.querySelector(".text-2")
-const img2 = document.querySelector(".page5-con__img2")
-console.log(text1,text2,img1,img2)
+const txtbx = document.querySelectorAll(".txtbx")
+const shoes = document.querySelectorAll(".shoes")
 
-text1.addEventListener("mouseenter",()=>{
-    text1.classList.add("paga5-con__text-hover-color");
-    text1.classList.remove("paga5-con__text-color");
-    text2.classList.remove("paga5-con__text-hover-color");
-    text2.classList.add("paga5-con__text-color");
-    img2.classList.add("-hidden")
-    img1.classList.remove("-hidden")
-})
+const setCls = (ele,idx) => {
+    let temp;
+    idx?temp=0:temp=1;
+    // console.log(idx);
+    ele.classList.add("paga5-con__text-hover-color");
+    ele.classList.remove("paga5-con__text-color");
+    txtbx[temp].classList.remove("paga5-con__text-hover-color");
+    txtbx[temp].classList.add("paga5-con__text-color");
+    shoes[temp].classList.add("-hidden")
+    shoes[idx].classList.remove("-hidden")
 
-text2.addEventListener("mouseenter",()=>{
-    text1.classList.add("paga5-con__text-color");
-    text1.classList.remove("paga5-con__text-hover-color");
-    text2.classList.add("paga5-con__text-hover-color")
-    text2.classList.remove("paga5-con__text-color")
-    img1.classList.add("-hidden");
-    img2.classList.remove("-hidden")
-})
+}; //////////// setCls ///////////////
+
+txtbx.forEach((ele,idx)=>ele.addEventListener("mouseenter",()=>setCls(ele,idx)));
 
 }); ///////////////////////// load /////////////////////////

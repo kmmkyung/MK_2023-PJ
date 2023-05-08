@@ -34,16 +34,16 @@ window.addEventListener("wheel",FullImg);
 ******************************/
 const pg3 = document.querySelector(".page3-vidbox")
 const vid = document.querySelector(".vid")
+const pg4 = document.querySelector("#page4")
 // 영상 크기 구하기
-let vidH = vid.offsetHeight/4*2;
+let vidH = vid.offsetHeight3*2;
 console.log(vidH)
 
 const retVal = x => x.getBoundingClientRect().top;
 
 window.addEventListener("scroll",()=>{
     console.log("스크롤중",retVal(vid))
-
-    if(retVal(pg3)<0) {
+    if(retVal(vid)<0) {
         vid.style.position="fixed";
         vid.style.top="0";
         vid.play();

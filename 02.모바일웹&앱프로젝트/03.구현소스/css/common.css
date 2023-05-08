@@ -215,7 +215,7 @@ body{
 
 .paga5-con__text{
     position: absolute;
-    font-size: min(5vw,7rem);
+    font-size: 7rem;
     width: 100%;
     text-align: center;
 }
@@ -233,21 +233,19 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 300px;
-    height: 500px;
-    background-color: tomato;
+    width: 180px;
+    height: 320px;
+    overflow: hidden;
 }
 
 .page5-con__img-1{
     object-fit: contain;
-    width: 100%;
-    /* width: 350px; */
-    /* position: absolute; */
+    width: 148%;
+    object-position: -38px -40px;
 }
 
 .page5-con__img-2{
     object-fit: contain;
-    width: 100%;
-    /* width: 450px; */
-    /* position: absolute; */
+    width: 145%;
+    object-position: -35px -40px;
 }

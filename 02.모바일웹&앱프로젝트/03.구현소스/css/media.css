@@ -6,16 +6,38 @@
 
 /*---------- _____page5_____ ----------*/
 .page5-title{
-  position: absolute;
   top: auto;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
-
 }
 
+@media screen and (max-width: 1400px) {
+  /*---------- _____page5_____ ----------*/
+.paga5-con__text {
+  font-size: 5rem;
+}
+}
 
+@media screen and (max-width: 1100px) {
+/*---------- _____footer_____ ----------*/
+.footer-links__btn, .footer-links ul>li>a{
+  font-size: 1.0rem;
+}
+
+.footer-links__box {
+  margin: 0;
+}
+}
+@media screen and (max-width: 1035px){
+
+  element.style {
+  }
+  .footer-links {
+      flex-direction: column;
+  }
+}
 
 

@@ -21,7 +21,7 @@ function FullImg(event){
         mainTitle.classList.remove("-hidden")
     },500,"ease-out");
 }
-window.addEventListener("wheel",FullImg);
+// window.addEventListener("wheel",FullImg);
 
 // 페이지가 넘어가면 셋팅 원래대로!(이미지 작아지고 글씨 없어짐)
 // if(){
@@ -36,8 +36,8 @@ const pg3 = document.querySelector(".page3-vidbox")
 const vid = document.querySelector(".vid")
 const pg4 = document.querySelector("#page4")
 // 영상 크기 구하기
-let vidH = vid.offsetHeight3*2;
-console.log(vidH)
+let vidH = vid.offsetHeight/3*2;
+// console.log(vidH)
 
 const retVal = x => x.getBoundingClientRect().top;
 

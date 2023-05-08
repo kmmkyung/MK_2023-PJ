@@ -109,5 +109,34 @@ window.addEventListener("DOMContentLoaded",()=>{
     } //___________________
   } ////// for of /////
 
+  /********************
+    footer 메뉴 넣기
+  ********************/
+
+const footerbox = document.querySelectorAll(".footer-links__box")
+// const aaa = document.querySelectorAll(".aaa")
+const bbb = document.querySelectorAll(".footer-links__list")
+// console.log("bbb",bbb);
+
+const footermenu = (ele,hv) => {
+  ele.style.height = hv+"px";
+  aaa.style.height = hv+"px";
+};
+
+for(let y of footerbox){
+  // console.log(y);
+  y.onclick = () => {
+    let ftmenu = y.querySelector(".aaa");
+    let ftgele= y.querySelector(".footer-links__list");
+    console.log("ul",ftgele);
+    let footersubmenuBoxHv = ftgele.clientHeight;
+    console.log("하위내부높이",footersubmenuBoxHv);
+    footermenu(ftmenu,footersubmenuBoxHv)
+  }
+  y.onmouseleave = () => {      
+    let ftmenu=y.querySelector(".aaa");
+    footermenu(ftmenu,0)
+}
+}
 }) ///////////////////////// load /////////////////////////
 

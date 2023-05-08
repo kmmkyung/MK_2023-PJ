@@ -44,10 +44,13 @@ const retVal = x => x.getBoundingClientRect().top;
 window.addEventListener("scroll",()=>{
     console.log("스크롤중",retVal(vid))
 
-    if(retVal(pg3)<0) {
+    if(retVal(pg3)>-300) {
         vid.style.position="fixed";
         vid.style.top="0";
         vid.play();
+    }
+    else if(retVal>500){
+        vid.style.position="relative";
     }
     else{
         vid.style.position="relative";

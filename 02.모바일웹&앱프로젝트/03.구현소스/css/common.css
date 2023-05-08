@@ -149,7 +149,7 @@ body{
 }
 
 .page3-vidbox{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0vh;
     z-index: -1;
@@ -175,19 +175,15 @@ body{
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
 }
-
 
 .page4-text__en{
     font-size: min(2vw,2rem);
-    max-width: 1000px;
     margin-bottom: 50px;
 }
 
 .page4-text__ko{
-    max-width: 670px;
     font-size: min(2vw,2rem);
 }
 
@@ -232,12 +228,23 @@ body{
     color: var(--graybglight);
 }
 
-.page5-con__img1{
-    width: 350px;
-    position: absolute;
+.paga5-con__img{
+    /* position: absolute; */
+    width: 300px;
+    height: 500px;
+    background-color: tomato;
 }
 
-.page5-con__img2{
-    width: 450px;
-    position: absolute;
+.page5-con__img-1{
+    object-fit: contain;
+    width: 100%;
+    /* width: 350px; */
+    /* position: absolute; */
+}
+
+.page5-con__img-2{
+    object-fit: contain;
+    width: 100%;
+    /* width: 450px; */
+    /* position: absolute; */
 }

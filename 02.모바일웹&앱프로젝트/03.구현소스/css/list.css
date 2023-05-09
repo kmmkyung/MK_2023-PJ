@@ -10,9 +10,7 @@ body{
     background-color: var(--main);
 }
 
-
-
-.list-all{
+.sublist-all{
     background-color: var(--main);
     outline: 1px solid tomato;
     width: 80vw;
@@ -20,14 +18,33 @@ body{
     position: absolute;
     top: 76px;
     right: 0;
-    z-index: 1;
 }
 
-.list-con__img-sub-ul-li img{
+.sublist-con__imgbox{
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+}
+
+.sublist-con__img-sub-ul-li img{
     width: 64px;
+    border-radius: var(--borderR);
+    margin-bottom: 20px;
+}
+
+.sublist-con__img-main img{
+    width: 450px;
     border-radius: var(--borderR);
 }
 
+/* right */
+.list-con__content-title h5{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.2rem;
+}
 
-
-/* max-width: 66%; */
+.list-con__content-title h3{
+    font-size: 2.4rem;
+    max-width: 30%;
+    text-align: center;
+}

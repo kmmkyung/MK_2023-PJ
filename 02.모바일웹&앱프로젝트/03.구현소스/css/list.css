@@ -10,7 +10,9 @@ body{
     background-color: var(--main);
 }
 
-#list .list-con__imgbox{
+
+
+.list-all{
     background-color: var(--main);
     outline: 1px solid tomato;
     width: 80vw;
@@ -18,4 +20,14 @@ body{
     position: absolute;
     top: 76px;
     right: 0;
+    z-index: 1;
 }
+
+.list-con__img-sub-ul-li img{
+    width: 64px;
+    border-radius: var(--borderR);
+}
+
+
+
+/* max-width: 66%; */

@@ -149,19 +149,19 @@ body{
 }
 
 .page3-vidbox{
-    /* position: fixed; */
-    width: 100%;
-    top: 0vh;
-    z-index: -1;
 }
 
 .vid{
+    position: fixed;
+    width: 100%;
+    top: 0vh;
+    z-index: -1;
     width: 120vw;
     height: 100vh;
     object-fit: cover;
-    position: relative;
+    /* position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 /*---------- _____page4_____ ----------*/
@@ -234,15 +234,15 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 180px;
-    height: 320px;
+    width: 272px;
+    height: 652px;
     overflow: hidden;
 }
 
 .page5-con__img-1{
     object-fit: contain;
-    width: 148%;
-    object-position: -38px -40px;
+    width: 205%;
+    object-position: -133px -94px;
 }
 
 .page5-con__img-2{

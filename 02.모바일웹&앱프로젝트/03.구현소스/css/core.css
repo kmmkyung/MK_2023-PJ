@@ -220,12 +220,12 @@ display: flex;
 .footer-links__btn{
   /* background-color: var(--main); */
   position: relative;
-  width: 120px;
+  width: 140px;
   padding: 10px;
 }
 
 .footer-links__list{
-  width: 120px;
+  width: 140px;
   box-sizing: border-box;
   /* text-align: center; */
   background-color: var(--main);

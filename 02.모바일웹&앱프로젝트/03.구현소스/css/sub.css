@@ -27,10 +27,11 @@ body{
 
 .list-all{
     display: flex;
+    width: 90vw;
     flex-wrap: wrap;
-    justify-content: center;
     column-gap: min(1vw,10px);
     row-gap: min(30vw,150px);
+    justify-content: center;
 }
 
 .list-con{
@@ -44,8 +45,8 @@ body{
     transition: transform .4s;
 }
 
-.list-con__img{
-    width: min(600px,20vw);
+.list-con__img, .null_box2{
+    width: min(600px,19.4vw);
     aspect-ratio: 1/1.5;
     border-radius: var(--borderR_sub);
 }
@@ -57,7 +58,7 @@ body{
 }
 
 .list-con__title h3{
-    font-size: 1.6rem;
+    font-size: min(0.8vw,1.6rem);
     font-weight: normal;
 }
 

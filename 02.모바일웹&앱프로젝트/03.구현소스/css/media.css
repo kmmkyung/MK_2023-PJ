@@ -19,10 +19,6 @@
 .paga5-con__text {
   font-size: 5rem;
 }
-}
-
-@media screen and (max-width: 1100px) {
-/*---------- _____footer_____ ----------*/
 .footer-links__btn, .footer-links ul>li>a{
   font-size: 1.0rem;
 }
@@ -30,6 +26,10 @@
 .footer-links__box {
   margin: 0;
 }
+}
+
+@media screen and (max-width: 1100px) {
+/*---------- _____footer_____ ----------*/
 }
 @media screen and (max-width: 1035px){
 

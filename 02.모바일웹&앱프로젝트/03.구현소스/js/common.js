@@ -34,9 +34,9 @@ function FullImg(event){
 ******************************/
 const pg3 = document.querySelector(".page3-vidbox")
 const vid = document.querySelector(".vid")
-const pg4 = document.querySelector("#page4")
+const cover = document.querySelector(".page3-vidbox__cover")
 // 영상 크기 구하기
-let vidH = vid.offsetHeight/3*2;
+// let vidH = vid.offsetHeight/3*2;
 // console.log(vidH)
 
 const retVal = x => x.getBoundingClientRect().top;
@@ -54,6 +54,14 @@ window.addEventListener("scroll",()=>{
         vid.pause();
     }
 })
+
+let scrollTop = 0;
+window.addEventListener("scroll",(e)=>{
+    scrollTop =document.documentElement.scrollTop;
+    cover.style.opacity = .3% + scrollTop /1000;
+})
+
+
 // ______________________________page5_____________________________
 /******************************
     기능: 해당 text에 마우스 오버 시 폰트색 및 이미지 변경

@@ -148,7 +148,11 @@ body{
     overflow: hidden;
 }
 
-.page3-vidbox{
+.page3-vidbox__cover{
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 
 .vid{
@@ -159,9 +163,9 @@ body{
     width: 120vw;
     height: 100vh;
     object-fit: cover;
-    /* position: relative;
+    /* position: relative; */
     left: 50%;
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
 }
 
 /*---------- _____page4_____ ----------*/
@@ -247,6 +251,6 @@ body{
 
 .page5-con__img-2{
     object-fit: contain;
-    width: 145%;
-    object-position: -35px -40px;
+    width: 200%;
+    object-position: -112px -81px;
 }

@@ -42,8 +42,8 @@ let vidH = vid.offsetHeight/3*2;
 const retVal = x => x.getBoundingClientRect().top;
 
 window.addEventListener("scroll",()=>{
-    console.log("스크롤중",retVal(vid))
-    if(retVal(vid)<0) {
+    console.log("스크롤중",retVal(pg3))
+    if(retVal(pg3)<0) {
         vid.style.position="fixed";
         vid.style.top="0";
         vid.play();

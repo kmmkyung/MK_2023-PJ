@@ -60,7 +60,7 @@ font-family: 'Noto Sans KR', sans-serif;
     transform: translate(-50%, -50%);
 }
 
-.-checked{
+.-click{
     -webkit-box-shadow: 0 0 0 2px #f7f7f2, 0 0 0 4px #1f69ff;
 }
 /*----------*/

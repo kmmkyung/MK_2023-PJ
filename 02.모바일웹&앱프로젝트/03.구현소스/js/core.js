@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     
     for(let y in gnbdata[x]){
       hcode += `
-        <li class="nav-L__submenu"><a class="-blur_submenu" href="sub.html">${y}</a>
+        <li class="nav-L__submenu"><a class="-blur_submenu" href="list.html">${y}</a>
           <ol class="submenu-list">
       `;
       // console.log(y);

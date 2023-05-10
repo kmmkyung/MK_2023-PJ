@@ -42,7 +42,7 @@ body{
     justify-content: center;
 }
 
-.list-con:hover .list-con__img{
+.imgMove{
     transform: translateY(-8px);
     transition: transform .4s;
 }

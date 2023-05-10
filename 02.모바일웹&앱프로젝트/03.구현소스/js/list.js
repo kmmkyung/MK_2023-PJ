@@ -1,4 +1,6 @@
 window.addEventListener("DOMContentLoaded",()=>{
+console.log("list.js 로딩완료")
+//____________________________________________________________________________
 
 // 리스트 예시
 function list(){
@@ -14,13 +16,41 @@ function list(){
             </div>
         </li>
         `;
-    }/////for/////
+    }
 }
 list();
+//____________________________________________________________________________
 
-// 커서 올리면 사ㄴ ㅂ
+// 오버시 사진 변경
+const mainPic = document.querySelector(".sublist-con__img-main>img");
+let subPic = document.querySelectorAll(".sublist-con__img-sub-ul-li>img");
+let subPicLi = document.querySelectorAll(".sublist-con__img-sub-ul-li");
+// console.log(mainPic,subPic);
 
+for(let i=0; i<subPic.length; i++){
+    subPic[i].addEventListener("mouseover",chgPic);
+}
+function chgPic(){
+    let subPicAttribute = this.getAttribute("src");
+    mainPic.setAttribute("src",subPicAttribute)
+}
+//____________________________________________________________________________
 
+// 이미지 클릭시 상세페이지 보기
+// 스크롤 막기...?????????
+const listImg = document.querySelectorAll(".list-con__img")
+const listBox = document.querySelector("#sublist");
+// console.log(listBox,listImg)
+// listBox.addEventListener("mousewheel",(event)=>{
+//     event.preventDefault;
+//     event.stopPropagation();
+//     return false;
+// })
+
+listImg.addEventListener("mouseevent",()=>{
+    this.classList.add(".imgMove")
 })
+
+}); ///////////////////////// load /////////////////////////
 
 

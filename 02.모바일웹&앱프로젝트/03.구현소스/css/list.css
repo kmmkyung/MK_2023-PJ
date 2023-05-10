@@ -23,9 +23,10 @@ body{
 }
 
 .sublist-all{
-    padding-top: 100px;
+    padding: 100px;
     display: flex;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .sublist-con__imgbox{
@@ -47,7 +48,7 @@ body{
 }
 
 .sublist-con__img-main img{
-    width: 450px;
+    width: min(24vw,450px);
     aspect-ratio: 450/675;
     border-radius: var(--borderR);
 }

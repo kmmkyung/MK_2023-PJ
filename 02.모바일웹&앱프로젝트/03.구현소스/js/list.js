@@ -1,9 +1,6 @@
 import Women from "./listData-women.js";
 
 console.log("list.js 로딩완료")
-console.log("answer:",Women.shoes[1].color)
-//경로: 배열. 객체:속성으로! 들어간다
-// Women_RTW -> shoes의 두번째 객체의 -> 색상
 //____________________________________________________________________________
 
 // 리스트 예시
@@ -14,14 +11,14 @@ function list(){
         hcode +=` 
                 <li>
                     <div class="none_hover">
-                    <img class="list-con__img imgMove" src=${Women.RTW[i].img2}>
+                    <img class="list-con__img imgMove" src=./imges/RTW/women/${Women.RTW[i].img}>
                         <div class="list-con__title">
                         <h3>${Women.RTW[i].name}</h3>
                         <i class="fa-regular fa-bookmark"></i>
                     </div>
                 </div>
                 <div class="hover">
-                <img class="list-con__img2 imgMove" src=${Women.RTW[i].img}>
+                <img class="list-con__img2 imgMove" src=./imges/RTW/women/${Women.RTW[i].img2}>
                     <div class="list-con__title2">
                     <h3>${Women.RTW[i].name2}</h3>
                 </div>

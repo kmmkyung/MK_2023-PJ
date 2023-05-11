@@ -9,23 +9,50 @@ console.log("answer:",Women.shoes[1].color)
 // 리스트 예시
 function list(){
     const a = document.querySelector(".list-con");
-    a.innerHTML = ""; 
-    for(let i=0; i<Women.length; i++){
-        a.innerHTML +=`
-        <li>
-            <img class="list-con__img imgMove" src=${Women.RTW.img}>
-            <div class="list-con__title">
-                <h3>${Women.RTW[i].name}</h3>
-                <i class="fa-regular fa-bookmark"></i>
-            </div>
-        </li>
+    let hcode = ""; 
+    for(let i=0; i<Women.RTW.length; i++){
+        hcode +=` 
+                <li>
+                    <div class="none_hover">
+                    <img class="list-con__img imgMove" src=${Women.RTW[i].img2}>
+                        <div class="list-con__title">
+                        <h3>${Women.RTW[i].name}</h3>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <div class="hover">
+                <img class="list-con__img2 imgMove" src=${Women.RTW[i].img}>
+                    <div class="list-con__title2">
+                    <h3>${Women.RTW[i].name2}</h3>
+                </div>
+            </li> 
         `;
     }
+    a.innerHTML = hcode;
 }
 list();
 //____________________________________________________________________________
 
-// 오버시 사진 변경
+// 서브페이지 오버시 사진 변경
+    const mainLi2 = document.querySelectorAll(".none_hover")
+    const mainLiH = document.querySelectorAll(".hover")
+    console.log("메인이미지",mainLi2)
+    console.log("호버이미지",mainLiH)
+
+    mainLiH.forEach((ele,idx)=>{
+        ele.addEventListener("mouseenter",function(){
+            this.style.opacity = 1;
+            mainLi2[idx].style.opacity =0;
+        });
+        ele.addEventListener("mouseout", function(){
+            this.style.opacity = 0;
+            mainLi2[idx].style.opacity =1;
+        })
+    })
+//____________________________________________________________________________
+//____________________________________________________________________________
+
+// 상세페이지 오버시 사진 변경
 const mainPic = document.querySelector(".sublist-con__img-main>img");
 let subPic = document.querySelectorAll(".sublist-con__img-sub-ul-li>img");
 // let subPicLi = document.querySelectorAll(".sublist-con__img-sub-ul-li");
@@ -46,8 +73,8 @@ const listBox = document.querySelector("#sublist");
 const blurBox = document.querySelector(".blur_box");
 const listImg = document.querySelectorAll(".list-con li");
 const closeBtn = document.querySelector(".sublist_close");
-console.log(listImg)
-console.log(listBox);
+// console.log(listImg)
+// console.log(listBox);
 
 listImg.forEach((ele, idx /* ,(객체 자신) */) =>{
     ele.addEventListener("click",function(){
@@ -59,11 +86,3 @@ closeBtn.addEventListener("click",function(){
     listBox.classList.add("-hidden");
     blurBox.classList.add("-hidden");
 })
-// listBox.addEventListener("mousewheel",(event)=>{
-//     event.preventDefault;
-//     event.stopPropagation();
-//     return false;
-// })
-
-
-

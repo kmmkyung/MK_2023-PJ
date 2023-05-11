@@ -86,3 +86,20 @@ closeBtn.addEventListener("click",function(){
     listBox.classList.add("-hidden");
     blurBox.classList.add("-hidden");
 })
+
+// 일단 상태이상 변수 줄거 - 하지만 실패했습니다.
+// let aaa = 0;
+// $('.footer-latter h5').on('click',function(){
+//     console.log('클릭')
+//     aaa = 1
+// })
+
+// $(window).on('wheel',(e)=>{
+//     console.log('스크롤',aaa)
+//     if(aaa){
+//         console.log(e)
+//         e.preventDefault();
+//     }
+// })
+
+// bbb()

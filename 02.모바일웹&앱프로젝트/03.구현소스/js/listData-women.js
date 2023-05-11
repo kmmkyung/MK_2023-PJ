@@ -3,12 +3,11 @@
 const Women = {
     RTW:[
         {   title:"COATS & JACKETS",
-            name2:"Bnana",
             name:"Utility cotton trench coat",
+            name2:"Bnana",
             color:"Banana",
             img:"./imges/RTW/women/RTW-women_H01.jpg",
             img2:"./imges/RTW/women/RTW-women01.jpg",
-
             description:"The trench coat in utility cotton features a minimal design with a buttoned collar and back vent. The buttons are hidden for a clean aspect. Maison Margiela's signature, the four stitches, appear at the back; the opposite of a label."
         },
         {   title:"SHIRTS",

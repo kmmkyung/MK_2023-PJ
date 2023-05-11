@@ -1,17 +1,21 @@
-import {Women_RTW, Women_Shoes} from "./listData-women.js";
+import Women from "./listData-women.js";
+
 console.log("list.js 로딩완료")
+console.log("answer:",Women.shoes[1].color)
+//경로: 배열. 객체:속성으로! 들어간다
+// Women_RTW -> shoes의 두번째 객체의 -> 색상
 //____________________________________________________________________________
 
 // 리스트 예시
 function list(){
     const a = document.querySelector(".list-con");
     a.innerHTML = ""; 
-    for(let i=0; i<Women_RTW.length; i++){
+    for(let i=0; i<Women.length; i++){
         a.innerHTML +=`
         <li>
-            <img class="list-con__img imgMove" src=${Women_RTW[i].img}>
+            <img class="list-con__img imgMove" src=${Women.RTW.img}>
             <div class="list-con__title">
-                <h3>${Women_RTW[i].name}</h3>
+                <h3>${Women.RTW[i].name}</h3>
                 <i class="fa-regular fa-bookmark"></i>
             </div>
         </li>

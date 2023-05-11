@@ -120,7 +120,7 @@ const bbb = document.querySelectorAll(".footer-links__list")
 
 const footermenu = (ele,hv) => {
   ele.style.height = hv+"px";
-  aaa.style.height = hv+"px";
+  // aaa.style.height = hv+"px";
 };
 
 for(let y of footerbox){
@@ -136,7 +136,7 @@ for(let y of footerbox){
   y.onmouseleave = () => {      
     let ftmenu=y.querySelector(".aaa");
     footermenu(ftmenu,0)
-}
+  }
 }
 }) ///////////////////////// load /////////////////////////
 

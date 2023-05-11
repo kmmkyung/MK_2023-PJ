@@ -42,7 +42,7 @@ body{
     justify-content: center;
 }
 
-.imgMove{
+.imgMove:hover{
     transform: translateY(-8px);
     transition: transform .4s;
 }

@@ -77,8 +77,8 @@ const setCls = (ele,idx) => {
     ele.classList.remove("paga5-con__text-color");
     txtbx[temp].classList.remove("paga5-con__text-hover-color");
     txtbx[temp].classList.add("paga5-con__text-color");
-    shoes[temp].classList.add("-hidden")
-    shoes[idx].classList.remove("-hidden")
+    shoes[temp].classList.add("-hidden");
+    shoes[idx].classList.remove("-hidden");
 
 }; //////////// setCls ///////////////
 

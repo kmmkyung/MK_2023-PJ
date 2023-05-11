@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded",()=>{
+import {Women_RTW, Women_Shoes} from "./listData-women.js";
 console.log("list.js 로딩완료")
 //____________________________________________________________________________
 
@@ -6,12 +6,12 @@ console.log("list.js 로딩완료")
 function list(){
     const a = document.querySelector(".list-con");
     a.innerHTML = ""; 
-    for(let i=0; i<9; i++){
+    for(let i=0; i<Women_RTW.length; i++){
         a.innerHTML +=`
         <li>
-            <img class="list-con__img" src="./imges/Ready-to-wear/women/01_Utility Cotton Trench Coat.jpg" alt="Ready-To-Wear">
+            <img class="list-con__img imgMove" src=${Women_RTW[i].img}>
             <div class="list-con__title">
-                <h3>Utility Cotton Trench Coat</h3>
+                <h3>${Women_RTW[i].name}</h3>
                 <i class="fa-regular fa-bookmark"></i>
             </div>
         </li>
@@ -24,7 +24,7 @@ list();
 // 오버시 사진 변경
 const mainPic = document.querySelector(".sublist-con__img-main>img");
 let subPic = document.querySelectorAll(".sublist-con__img-sub-ul-li>img");
-let subPicLi = document.querySelectorAll(".sublist-con__img-sub-ul-li");
+// let subPicLi = document.querySelectorAll(".sublist-con__img-sub-ul-li");
 // console.log(mainPic,subPic);
 
 for(let i=0; i<subPic.length; i++){
@@ -38,19 +38,28 @@ function chgPic(){
 
 // 이미지 클릭시 상세페이지 보기
 // 스크롤 막기...?????????
-const listImg = document.querySelectorAll(".list-con__img")
 const listBox = document.querySelector("#sublist");
-// console.log(listBox,listImg)
+const blurBox = document.querySelector(".blur_box");
+const listImg = document.querySelectorAll(".list-con li");
+const closeBtn = document.querySelector(".sublist_close");
+console.log(listImg)
+console.log(listBox);
+
+listImg.forEach((ele, idx /* ,(객체 자신) */) =>{
+    ele.addEventListener("click",function(){
+        listBox.classList.remove("-hidden");
+        blurBox.classList.remove("-hidden");
+    })
+})
+closeBtn.addEventListener("click",function(){
+    listBox.classList.add("-hidden");
+    blurBox.classList.add("-hidden");
+})
 // listBox.addEventListener("mousewheel",(event)=>{
 //     event.preventDefault;
 //     event.stopPropagation();
 //     return false;
 // })
 
-listImg.addEventListener("mouseevent",()=>{
-    this.classList.add(".imgMove")
-})
-
-}); ///////////////////////// load /////////////////////////
 
 

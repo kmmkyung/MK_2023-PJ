@@ -1,4 +1,4 @@
-import Women from "./listData-women.js";
+import store from "./listData-women.js";
 
 console.log("list.js 로딩완료")
 //____________________________________________________________________________
@@ -27,7 +27,36 @@ function list(){
     }
     a.innerHTML = hcode;
 }
-list();
+// list();
+
+Vue.component("list-comp",{
+    template:
+        `<div class="list-all">
+                <ul class="list-con">
+                    <li v-for="(v,i) in $store.state.RTW">
+                        <div class="none_hover">
+                            <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+v.img">
+                            <div class="list-con__title">
+                                <h3>{{v.name}}</h3>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="hover">
+                            <img class="list-con__img2 imgMove" v-bind:src="'./imges/RTW/women/'+v.img2">
+                            <div class="list-con__title2">
+                                <h3>{{v.name2}}</h3>
+                            </div>
+                        </div>
+                    </li> 
+                </ul>
+            </div>`
+    
+})
+new Vue({
+    el:"#list",
+    store
+})
+
 //____________________________________________________________________________
 
 // 서브페이지 오버시 사진 변경

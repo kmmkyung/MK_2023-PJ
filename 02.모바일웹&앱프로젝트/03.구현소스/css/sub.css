@@ -73,7 +73,7 @@ body{
     padding: 8px;
 }
 
-.list-con__title h3{
+.list-con__title h3, .list-con__title2 h3{
     font-size: min(0.8vw,1.6rem);
     font-weight: normal;
     text-align: center;

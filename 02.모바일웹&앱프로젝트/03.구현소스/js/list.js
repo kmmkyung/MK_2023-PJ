@@ -4,34 +4,40 @@ console.log("list.js 로딩완료")
 //____________________________________________________________________________
 
 // 리스트 예시
-function list(){
-    const a = document.querySelector(".list-con");
-    let hcode = ""; 
-    for(let i=0; i<Women.RTW.length; i++){
-        hcode +=` 
-                <li>
-                    <div class="none_hover">
-                    <img class="list-con__img imgMove" src=./imges/RTW/women/${Women.RTW[i].img}>
-                        <div class="list-con__title">
-                        <h3>${Women.RTW[i].name}</h3>
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-                </div>
-                <div class="hover">
-                <img class="list-con__img2 imgMove" src=./imges/RTW/women/${Women.RTW[i].img2}>
-                    <div class="list-con__title2">
-                    <h3>${Women.RTW[i].name2}</h3>
-                </div>
-            </li> 
-        `;
-    }
-    a.innerHTML = hcode;
-}
+// function list(){
+//     const a = document.querySelector(".list-con");
+//     let hcode = ""; 
+//     for(let i=0; i<Women.RTW.length; i++){
+//         hcode +=` 
+//                 <li>
+//                     <div class="none_hover">
+//                     <img class="list-con__img imgMove" src=./imges/RTW/women/${Women.RTW[i].img}>
+//                         <div class="list-con__title">
+//                         <h3>${Women.RTW[i].name}</h3>
+//                         <i class="fa-regular fa-bookmark"></i>
+//                     </div>
+//                 </div>
+//                 <div class="hover">
+//                 <img class="list-con__img2 imgMove" src=./imges/RTW/women/${Women.RTW[i].img2}>
+//                     <div class="list-con__title2">
+//                     <h3>${Women.RTW[i].name2}</h3>
+//                 </div>
+//             </li> 
+//         `;
+//     }
+//     a.innerHTML = hcode;
+// }
 // list();
 
 Vue.component("list-comp",{
     template:
-        `<div class="list-all">
+        `
+        <div class="main-header">
+            <h2 class="main-title">Ready-To-Wear</h2>
+        </div>
+            <div class="main-con" id="list">
+            
+        <div class="list-all">
                 <ul class="list-con">
                     <li v-for="(v,i) in $store.state.RTW">
                         <div class="none_hover">
@@ -49,7 +55,8 @@ Vue.component("list-comp",{
                         </div>
                     </li> 
                 </ul>
-            </div>`
+            </div>
+        `
     
 })
 new Vue({

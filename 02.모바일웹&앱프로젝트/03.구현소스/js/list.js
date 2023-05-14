@@ -39,9 +39,9 @@ Vue.component("list-comp",{
             
         <div class="list-all">
                 <ul class="list-con">
-                    <li v-for="(v,i) in $store.state.RTW">
+                    <li v-for="(v,i) in $store.state.RTW" :key="i">
                         <div class="none_hover">
-                            <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+v.img">
+                            <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+i.img">
                             <div class="list-con__title">
                                 <h3>{{v.name}}</h3>
                                 <i class="fa-regular fa-bookmark"></i>

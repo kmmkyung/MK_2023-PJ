@@ -39,7 +39,7 @@ Vue.component("list-comp",{
             
         <div class="list-all">
                 <ul class="list-con">
-                    <li v-for="(v,i) in $store.state.RTW" :key="i">
+                    <li v-for="(v,i) in $store.state.RTW"">
                         <div class="none_hover">
                             <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+i.img">
                             <div class="list-con__title">

@@ -67,11 +67,11 @@ Vue.component("list-comp",{
 )
 new Vue({
     el:"#title",
-    store
+    
 })
 new Vue({
     el:"#list",
-    store
+    
 })
 
 

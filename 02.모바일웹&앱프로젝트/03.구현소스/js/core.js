@@ -134,16 +134,15 @@ const core = function(){
   /********************
     footer 메뉴 넣기
   ********************/
+
     const footerbox = document.querySelectorAll(".footer-links__box")
-    const aaa = document.querySelectorAll(".aaa")
+    // const aaa = document.querySelectorAll(".aaa")
     const bbb = document.querySelectorAll(".footer-links__list")
     // console.log("bbb",bbb);
-    console.log("aaa",aaa);
-    console.log("footer",footerbox);
     
     const footermenu = (ele,hv) => {
       ele.style.height = hv+"px";
-      aaa.style.height = hv+"px";
+      // aaa.style.height = hv+"px";
     };
     
     for(let y of footerbox){

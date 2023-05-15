@@ -23,10 +23,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <!-- JS -->
     <script src="js/svg.js"></script>
-    <script src="js/list.js" type="module"></script>
-    <script src="js/common.js" type="module"></script>
-    <!-- <script src="js/gnbdata.js"></script> -->
-    <!-- <script src="js/core.js"></script> -->
+    <script src="js/list-component.js" type="module"></script>
+    <script src="js/core.js"></script>
+    <script src="js/main.js"></script>
+
 
 </head>
 <body>
@@ -38,14 +38,18 @@
                 </ul>
             </div>
             <div class="nav-C">
-                <a href="index.html">
-                    <svg class="nav-Logo1"></svg>
-                    <span class="ir">Maison Margiela Paris Homepage</span>
-                </a>
-                <a href="index.html">
-                    <svg class="nav-Logo2 -hidden"></svg>
-                    <span class="ir">Maison Margiela Paris Homepage</span>
-                </a>
+                <div>
+                    <a href="index.html">
+                        <svg class="nav-Logo1"></svg>
+                        <span class="ir">Maison Margiela Paris Homepage</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <svg class="nav-Logo2 -hidden"></svg>
+                        <span class="ir">Maison Margiela Paris Homepage</span>
+                    </a>
+                </div>
             </div>
             <div class="nab-R">
                 <button class="-ghost -blur">Search</button>
@@ -117,9 +121,8 @@
     <main>
         <div class="null_box"></div>
         <!-- 메인 제목 -->
-        <!-- <title-comp></title-comp> -->
-        <div class="main-header">
-            <h2 class="main-title">Ready-To-Wear</h2>
+        <div id="title">
+            <title-comp></title-comp>
         </div>
             <div class="main-con" id="list">
             <list-comp></list-comp>

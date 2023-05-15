@@ -1,9 +1,10 @@
 ///////////////////////// load /////////////////////////
 import gnbdata from "./gnbdata.js";
 import svgData from "./svg.js";
-const core = function(){
 
+const core = function(){
   console.log("core.js 로딩완료")
+
 
   /********************
     gnb에 로고 넣기 / 바꾸기 / 메뉴 넣기
@@ -82,19 +83,10 @@ const core = function(){
 
   nav.innerHTML = hcode;
 
-  var ws;
-  // $(".-blur_submenu").click(function(){
-  //   ws = $(this).html()
-  //   console.log(ws)
-  // })
-  
-
-
   // 3-3. gnb 메뉴 오버시 서브메뉴 보이기
   const list = document.querySelectorAll(".nav-L__menu");
   // console.log("list",list);
   // console.log("submenu",submenu);
-  
   
   // 3-3-1. 하위메뉴/메뉴배경 변경함수
   const subBg = (ele,hv) => {
@@ -122,52 +114,53 @@ const core = function(){
     } //___________________
   } ////// for of /////
 
-/********************
-  footer 메뉴 넣기
-********************/
-
-const footerbox = document.querySelectorAll(".footer-links__box")
-// const aaa = document.querySelectorAll(".aaa")
-const bbb = document.querySelectorAll(".footer-links__list")
-// console.log("bbb",bbb);
-
-const footermenu = (ele,hv) => {
-  ele.style.height = hv+"px";
-  // aaa.style.height = hv+"px";
-};
-
-for(let y of footerbox){
-  // console.log(y);
-  y.onclick = () => {
-    let ftmenu = y.querySelector(".aaa");
-    let ftgele= y.querySelector(".footer-links__list");
-    console.log("ul",ftgele);
-    let footersubmenuBoxHv = ftgele.clientHeight;
-    console.log("하위내부높이",footersubmenuBoxHv);
-    footermenu(ftmenu,footersubmenuBoxHv)
-  }
-  y.onmouseleave = () => {      
-    let ftmenu=y.querySelector(".aaa");
-    footermenu(ftmenu,0)
-  }
-}
-
-// 이벤트대상 윈도우
-const wdw = $(window)
-// '.cubewrap' <- 클래스를 주어야 할 대상
-const tg = $('.nav-C')
-
-wdw.on('scroll',function(){
-    cube(tg)
-})
-
-function cube(x){
-    // console.log('큐브',this)
-    let a = wdw.scrollTop();
+    // 4. 로고 3d 변화
+    const wdw = $(window)
+    const tg = $('.nav-C')
+    // console.log(tg);
     
-    if(a!==0) $(x).addClass('on');
-    else $(x).removeClass('on');
-}
+    wdw.on('scroll',function(){
+        cube(tg)
+    })
+    
+    function cube(x){
+        // console.log('큐브',this)
+        let a = wdw.scrollTop();
+        
+        if(a!==0) $(x).addClass('on');
+        else $(x).removeClass('on');
+    }
+    
+  /********************
+    footer 메뉴 넣기
+  ********************/
+    const footerbox = document.querySelectorAll(".footer-links__box")
+    const aaa = document.querySelectorAll(".aaa")
+    const bbb = document.querySelectorAll(".footer-links__list")
+    // console.log("bbb",bbb);
+    console.log("aaa",aaa);
+    console.log("footer",footerbox);
+    
+    const footermenu = (ele,hv) => {
+      ele.style.height = hv+"px";
+      aaa.style.height = hv+"px";
+    };
+    
+    for(let y of footerbox){
+      // console.log(y);
+      y.onclick = () => {
+        let ftmenu = y.querySelector(".aaa");
+        let ftgele= y.querySelector(".footer-links__list");
+        console.log("ul",ftgele);
+        let footersubmenuBoxHv = ftgele.clientHeight;
+        console.log("하위내부높이",footersubmenuBoxHv);
+        footermenu(ftmenu,footersubmenuBoxHv)
+      }
+      y.onmouseleave = () => {      
+        let ftmenu=y.querySelector(".aaa");
+        footermenu(ftmenu,0)
+      }
+    }
 
 }
 core();

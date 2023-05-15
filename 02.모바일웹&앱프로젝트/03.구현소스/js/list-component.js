@@ -6,14 +6,14 @@ console.log("list.js 로딩완료")
 core();
 
 
-// Vue.component("title-comp",{
-//     template:
-//     `
-//     <div class="main-header">
-//         <h2 class="main-title">Ready-To-Wear</h2>
-//     </div>
-//     `
-// })
+Vue.component("title-comp",{
+    template:
+    `
+    <div class="main-header">
+        <h2 class="main-title">Ready-To-Wear</h2>
+    </div>
+    `
+})
 
 let aa;
 Vue.component("list-comp",{
@@ -65,6 +65,10 @@ Vue.component("list-comp",{
     
     }
 )
+new Vue({
+    el:"#title",
+    store
+})
 new Vue({
     el:"#list",
     store

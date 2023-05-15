@@ -117,7 +117,7 @@ display: flex;
   transform-style: preserve-3d;
 }
 
-.nav-C-logo1, .nav-C-logo2{
+.nav-Logo1, .nav-Logo2{
   /* position: absolute; */
   /* 앱솔루트는 자동블럭 */
   width: 100%;

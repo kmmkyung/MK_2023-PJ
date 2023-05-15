@@ -2,7 +2,6 @@
 
 const store = new Vuex.Store({
     state:{
-
         RTW:[
             {   
                 title:"COATS & JACKETS",

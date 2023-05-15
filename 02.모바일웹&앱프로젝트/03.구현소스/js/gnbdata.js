@@ -27,3 +27,4 @@ const gnbdata = {
         "Artisanal":["Artisanal AW22","Artisanal AW21"]
     }
 }
+export default gnbdata;

@@ -8,22 +8,27 @@
 body{
     font-family: 'Libre Baskerville', Noto Sans KR;
     background-color: var(--main);
+    /* overflow: hidden; */
 }
 
+body.xx{
+    overflow-y: hidden;
+}
 #sublist{
     background-color: var(--main);
     /* outline: 1px solid tomato; */
     width: 80vw;
-    height: calc(100vh - 76px);
+    /* height: calc(100vh - 76px); */
+    height: 100vh;
     position: fixed;
-    top: 76px;
+    top: 0;
     /* left: calc(100vw - 20vw); */
     right: 0;
     z-index: 1;
 }
 
 .sublist-all{
-    padding: 100px;
+    padding: 150px 100px 0;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
@@ -140,17 +145,20 @@ body{
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 5%;
+    top: 10%;
     left: 5%;
     font-size: 30px;
     }
     
 /* test */
 .blur_box{
-    top: 76px;
+    /* top: 76px; */
     width: 100%;
-    position: absolute;
-    height: 100vh;
+    height: 100%;
+    /* position: absolute; */
+    /* height: 100vh; */
+    background-color: var(--graybglight);
+    backdrop-filter: blur(135px);
 }
 
 

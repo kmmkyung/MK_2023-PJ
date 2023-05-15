@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="./css/list.css">
-    <!-- JS -->
-    <script src="js/svg.js"></script>
-    <script src="js/gnbdata.js"></script>
-    <script src="js/core.js"></script>
-    <script src="js/list.js" type="module"></script>
-       <!-- SCRIPT -->
+    <!-- SCRIPT -->
     <!-- 뷰JS 스탠드얼론 버전 -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <!-- 뷰JS vuex CDN -->
@@ -26,6 +21,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- 제이쿼리 UI CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- JS -->
+    <script src="js/svg.js"></script>
+    <script src="js/gnbdata.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/list.js" type="module"></script>
 
 </head>
 <body>
@@ -125,7 +125,10 @@
     <main>
         <div class="null_box"></div>
         <div class="blur_box -blur_show -hidden"></div>
-
+        <div class="main-header">
+            <h2 class="main-title">Ready-To-Wear</h2>
+        </div>
+            <div class="main-con" id="list">
             <list-comp></list-comp>
         </div>
     </main>
@@ -226,3 +229,14 @@
     </footer>
 </body>
 </html>
+
+
+<!-- 
+
+        <div class="main-header">
+            <h2 class="main-title">Ready-To-Wear</h2>
+        </div>
+            <div class="main-con" id="list">
+
+
+ -->

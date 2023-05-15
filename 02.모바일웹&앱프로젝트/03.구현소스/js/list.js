@@ -1,5 +1,5 @@
 import store from "./listData-women.js";
-
+// import core from "./core.js"
 console.log("list.js 로딩완료")
 //____________________________________________________________________________
 
@@ -29,40 +29,48 @@ console.log("list.js 로딩완료")
 // }
 // list();
 
+
+  
+
+
 Vue.component("list-comp",{
     template:
         `
-        <div class="main-header">
-            <h2 class="main-title">Ready-To-Wear</h2>
-        </div>
-            <div class="main-con" id="list">
-            
         <div class="list-all">
-                <ul class="list-con">
-                    <li v-for="(v,i) in $store.state.RTW"">
-                        <div class="none_hover">
-                            <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+i.img">
-                            <div class="list-con__title">
-                                <h3>{{v.name}}</h3>
-                                <i class="fa-regular fa-bookmark"></i>
-                            </div>
+            <ul class="list-con">
+                <li v-for="(v,i) in $store.state.RTW"">
+                    <div class="none_hover">
+                        <img class="list-con__img imgMove" v-bind:src="'./imges/RTW/women/'+v.img">
+                        <div class="list-con__title">
+                            <h3>{{v.name}}</h3>
+                            <i class="fa-regular fa-bookmark"></i>
                         </div>
-                        <div class="hover">
-                            <img class="list-con__img2 imgMove" v-bind:src="'./imges/RTW/women/'+v.img2">
-                            <div class="list-con__title2">
-                                <h3>{{v.name2}}</h3>
-                            </div>
+                    </div>
+                    <div class="hover">
+                        <img class="list-con__img2 imgMove" v-bind:src="'./imges/RTW/women/'+v.img2">
+                        <div class="list-con__title2">
+                            <h3>{{v.name2}}</h3>
                         </div>
-                    </li> 
-                </ul>
-            </div>
-        `
+                    </div>
+                </li> 
+            </ul>
+        </div>
+        `,
+        methods:{
+
+        },
+        mounted(){
+            console.log()
+        }
     
-})
+    }
+)
 new Vue({
     el:"#list",
     store
 })
+
+
 
 //____________________________________________________________________________
 

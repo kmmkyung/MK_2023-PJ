@@ -1,5 +1,7 @@
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded",()=>{
+
+
   console.log("core.js 로딩완료")
 
   /********************
@@ -52,7 +54,7 @@ window.addEventListener("DOMContentLoaded",()=>{
     
     for(let y in gnbdata[x]){
       hcode += `
-        <li class="nav-L__submenu"><a class="-blur_submenu" href="list.html">${y}</a>
+        <li class="nav-L__submenu"><a class="-blur_submenu" >${y}</a>
           <ol class="submenu-list">
       `;
       // console.log(y);
@@ -75,8 +77,18 @@ window.addEventListener("DOMContentLoaded",()=>{
   }
   hcode += `
   `;
+
+
   nav.innerHTML = hcode;
+
+  var ws;
+  // $(".-blur_submenu").click(function(){
+  //   ws = $(this).html()
+  //   console.log(ws)
+  // })
   
+
+
   // 3-3. gnb 메뉴 오버시 서브메뉴 보이기
   const list = document.querySelectorAll(".nav-L__menu");
   // console.log("list",list);
@@ -160,5 +172,5 @@ function cube(x){
     else $(x).removeClass('on');
 }
 
-}) ///////////////////////// load /////////////////////////
+})
 

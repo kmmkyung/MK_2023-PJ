@@ -1,7 +1,31 @@
 ///////////////////////// load /////////////////////////
-import core from "./core.js";
+import {core, hcode} from "./core.js";
 core();
-    console.log("common.jS 로딩!")
+console.log("common.jS 로딩!")
+let menuCode = `
+    <ul class="nav-L__list">
+        ${hcode}
+    </ul>`;
+
+Vue.component("menu-comp", {
+    template: menuCode,
+    methods: {
+        myFn(pm) {
+            // console.log("찍어라!", pm);
+            // 스토어 변수 업데이트
+            store.state.cat = pm;
+            // console.log("변경!", store.state.cat);
+        },
+    },
+});
+new Vue({
+    el: ".mcont",
+    // store, // 스토어등록!!!
+    mounted() {
+        core();
+        console.log(hcode)
+    },
+});
 
 // ______________________________page1_____________________________
 /******************************

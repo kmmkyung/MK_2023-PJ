@@ -41,8 +41,12 @@ body{
 
 .text-con h2{
     position: absolute;
-    color: var(--white);
-    font-size: 6rem;
+    left: 50%;
+    top: auto;
+    bottom: 3%;
+    
+    color: var(--Lblack);
+    font-size: 2rem;
     font-weight: normal;
     white-space: nowrap;
     transition: all ease-in-out;

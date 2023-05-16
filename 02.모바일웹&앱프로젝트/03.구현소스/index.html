@@ -21,16 +21,16 @@
     <!-- 제이쿼리 UI CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <!-- JS -->
-    <script src="js/common.js" ></script>
+    <script src="js/common.js" type="module"></script>
 </head>
 <body>
-    <header id="gnb">
-        <nav class="nav -blur">
-            <div class="nav-inbox -blur"></div>
-                <div class="nav-L">
-                <ul class="nav-L__list">
-                </ul>
-            </div>
+    <div class="mcont">
+        <header id="gnb">
+            <nav class="nav -blur">
+                <div class="nav-inbox -blur"></div>
+                    <div class="nav-L">
+                    <menu-comp></menu-comp>
+                </div>
             <div class="nav-C">
                 <div class="nav-Logo1">
                     <a href="index.html">
@@ -56,9 +56,8 @@
                 <div class="img-con -center">
                     <img src="./imges/Signature-White_2.jpg" alt="page1 main img" >
                 </div>
-                <div class="text-con -hidden">
-                    <h2 class="-center">Signature White</h2>
-                    <button class="-ghost -center">VIEW ALL</button>
+                <div class="text-con">
+                    <h2>Signature White</h2>
                 </div>
             </div>
         </section>
@@ -255,5 +254,6 @@
             </article>
         </div>
     </footer>
+    </div>
 </body>
 </html>

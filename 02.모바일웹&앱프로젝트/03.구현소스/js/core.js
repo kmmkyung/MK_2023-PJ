@@ -123,26 +123,24 @@ const core = function(){
 
     }
 
-
-
   } ////// for of /////
 
     // 4. 로고 3d 변화
     const wdw = $(window)
     const tg = $('.nav-C')
-    // console.log(tg);
+    console.log("tg",tg);
     
     wdw.on('scroll',function(){
         cube(tg)
     })
     
     function cube(x){
-        // console.log('큐브',this)
-        let a = wdw.scrollTop();
-        
-        if(a!==0) $(x).addClass('on');
-        else $(x).removeClass('on');
-    }
+      // console.log('큐브',this)
+      let a = wdw.scrollTop();
+      
+      if(a!==0) $(x).addClass('on');
+      else $(x).removeClass('on');
+  }
     
   /********************
     footer 메뉴 넣기

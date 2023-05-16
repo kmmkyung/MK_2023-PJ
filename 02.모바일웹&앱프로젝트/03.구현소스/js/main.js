@@ -56,6 +56,4 @@ closeBtn.addEventListener("click",function(){
     blurBox.classList.add("-hidden");
     document.querySelector("body").classList.remove("xx")
 })
-
-
 })

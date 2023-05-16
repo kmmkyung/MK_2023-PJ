@@ -6,7 +6,7 @@ console.log("list.js 로딩완료:");
 Vue.component("title-comp", {
     template: `
     <div class="main-header">
-        <h2 class="main-title">Ready-To-Wear</h2>
+        <h2 class="main-title">{{$store.state.cat}}</h2>
     </div>
     `,
 });
@@ -46,10 +46,10 @@ Vue.component("menu-comp", {
     template: menuCode,
     methods: {
         myFn(pm) {
-            console.log("찍어라!", pm);
+            // console.log("찍어라!", pm);
             // 스토어 변수 업데이트
             store.state.cat = pm;
-            console.log("변경!", store.state.cat);
+            // console.log("변경!", store.state.cat);
         },
     },
 });

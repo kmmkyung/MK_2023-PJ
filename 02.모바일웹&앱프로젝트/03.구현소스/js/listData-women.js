@@ -335,6 +335,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"(untitled) eau de parfum",
+                name2:"(untitled) eau de parfum",
                 img:"women01.jpg",
                 img2:"women_H01.jpg",
                 description:"(untitled) is a distinctive unisex scent that speaks for itself – the green and crisp olfactory image of a spring morning in the countryside. It features contrasted key notes of galbanum, musks and incense for a floral green finish. Size L (75ml)."
@@ -342,6 +343,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Lazy Sunday Morning eau de toilette",
+                name2:"Replica Lazy Sunday Morning eau de toilette",
                 img:"women02.jpg",
                 img2:"women_H02.jpg",
                 description:"Replica Lazy Sunday Morning eau de toilette evokes the soft sensation of freshly washed linen sheets on a sunny morning. Clean, fresh and comforting, the immaculate light gently warms your skin. With a floral musky scent, the memory of crisp sheets is recreated with lily of the valley and white musks. The warming sunlight is presented through iris and ambrette seeds. Size 100ml."
@@ -349,12 +351,14 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica at the Barber's eau de toilette",
+                name2:"Replica at the Barber's eau de toilette",
                 img:"women03.jpg",
                 img2:"women_H03.jpg",
                 description:"Replica at the Barber's eau de toilette evokes a vintage masculine ritual in the fresh and clean atmosphere of a barber shop. The sophistication of a sliding shaving brush through soapsuds mixes with the dry friction of a straight razor against a leather strap. The memory scent is recreated by tonka bean, black pepper, basil accord and lavender for a rich aromatic result. Size 100ml."
             },
             {
                 title:"ALL FRAGRANCES",
+                name2:"Replica Sailing Day eau de toilette",
                 name:"Replica Sailing Day eau de toilette",
                 img:"women04.jpg",
                 img2:"women_H04.jpg",
@@ -363,6 +367,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Sailing Day eau de toilette",
+                name2:"Replica Sailing Day eau de toilette",
                 img:"women05.jpg",
                 img2:"women_H05.jpg",
                 description:"Replica Under the Lemon Trees eau de toilette transports you to the bright and refreshing sensation of a nap in the shade of the refreshing lemon tree leaves, well-deserved after a warm summer day stroll, lulled by shadows and the soft scented breeze. The bright, citrus scent of sparkling lemons is recreated by calamansi lime accord and the floral freshness of shade under trees is conjured with coriander and cedar wood. Size 100ml."
@@ -370,6 +375,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Whispers in the Library eau de toilette",
+                name2:"Replica Whispers in the Library eau de toilette",
                 img:"women06.jpg",
                 img2:"women_H06.jpg",
                 description:"Replica Whispers in the Library eau de toilette is enchanting, woody and contrasted. The spicy oriental scent evokes the slowing down of time surrounded by books with woodwork perfectly waxed, the mutter of turning pages and discreet whispers. It invites you to imagine an unlimited quantity of books in a soft halo of light. The familiar scent of books is recreated with pepper, benzoin and vanilla. The hours spent reading at a wooden desk is recreated with cedar wood. Size 100ml."
@@ -377,6 +383,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Springtime in a Park eau de toilette",
+                name2:"Replica Springtime in a Park eau de toilette",
                 img:"women07.jpg",
                 img2:"women_H07.jpg",
                 description:"Replica Springtime in a Park eau de toilette captures the delicate and luminous memory of blooming blossoms. The gentle light and fresh floral atmosphere of a romantic spring afternoon in the park with blossoms appearing everywhere, beckoning the call of nature. The scent of flowers in full bloom is recreated by the Maison with jasmine and lily of the valley accord, and the joyful springtime sensation is recreated by pear accord lending a floral, fruity touch. Size 100ml."
@@ -384,6 +391,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Matcha Meditation eau de toilette",
+                name2:"Replica Matcha Meditation eau de toilette",
                 img:"women08.jpg",
                 img2:"women_H08.jpg",
                 description:"Replica Matcha Meditation eau de toilette conjures a peaceful moment with oneself, at home, on a bright afternoon. With senses awakened and feeling every gesture, focused on the now, the scent transports you by the soothing steam of a warm cup of matcha tea. The Zen scents feature top notes of bergamot essence and green tea accord, with middle notes of matcha accord and jasmine, and base notes of moss accord and cedar essence. Size 100ml."
@@ -391,6 +399,7 @@ const store = new Vuex.Store({
             {
                 title:"ALL FRAGRANCES",
                 name:"Replica Autumn Vibes eau de toilette",
+                name2:"Replica Autumn Vibes eau de toilette",
                 img:"women09.jpg",
                 img2:"women_H09.jpg",
                 description:"Replica Autumn Vibes eau de toilette is a scent capturing the memory of a beautiful getaway in a freshly scented forest. Conjuring a pure moment of escape, you think of golden leaves crunching under your feet and feel your senses awakened by the breath of fresh air and the century-old trees. Feel at one with nature with pink pepper and coriander top notes, mid notes of carrot, nutmeg and frankincense, and a base of cedar wood, oak moss and balsam. Size 100ml."

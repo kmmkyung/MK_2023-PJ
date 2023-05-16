@@ -257,7 +257,7 @@ const store = new Vuex.Store({
                 description:"The Glam Slam flat pocket bag is crafted from quilted nappa leather. The Glam Slam debuted in the SS18 show and has a quilted design which mimics matelassé – the style of hand-stitched quilts created in Marseilles, France. The concept reflects the Maison’s notion of unconscious glamour and evokes its association to comfort, following the study into dressing and travelling rituals worldwide. This style features a shoulder strap, and is adorned with the numeric logo label at the front."
             },
         ],
-        Accessories:[
+        accessories:[
             {
                 title:"KEY RINGS",
                 name:"Recicla key chain wallet",
@@ -331,7 +331,7 @@ const store = new Vuex.Store({
                 description:"Crafted from embossed grainy leather, the cardholder has a keyring chain, snap button closure and multiple card holders. Maison Margiela's signature, the four stitches, appear at the back; the opposite of a label."
             },
         ],
-        Fragrances:[
+        fragrances:[
             {
                 title:"ALL FRAGRANCES",
                 name:"(untitled) eau de parfum",
@@ -395,7 +395,8 @@ const store = new Vuex.Store({
                 img2:"women_H09.jpg",
                 description:"Replica Autumn Vibes eau de toilette is a scent capturing the memory of a beautiful getaway in a freshly scented forest. Conjuring a pure moment of escape, you think of golden leaves crunching under your feet and feel your senses awakened by the breath of fresh air and the century-old trees. Feel at one with nature with pink pepper and coriander top notes, mid notes of carrot, nutmeg and frankincense, and a base of cedar wood, oak moss and balsam. Size 100ml."
             }
-        ]
+        ],
+        cat:"RTW",
     }
 })
 

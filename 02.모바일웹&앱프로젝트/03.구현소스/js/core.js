@@ -2,6 +2,8 @@
 import gnbdata from "./gnbdata.js";
 import svgData from "./svg.js";
 
+let hcode ="";
+
 const core = function(){
   console.log("core.js 로딩완료")
 
@@ -40,7 +42,6 @@ const core = function(){
 
   // 3. 메뉴 넣기
   // 3-1. 변수
-  let hcode =""
   
   // 3-2. 구조화
   hcode += `
@@ -53,10 +54,13 @@ const core = function(){
       <div class="submenu-all"><ul>
     `
     // console.log(x);
+
+    const chgdata = x => x=="Ready-to-wear"?"RTW":x.toLowerCase();
     
     for(let y in gnbdata[x]){
       hcode += `
-        <li class="nav-L__submenu"><a class="-blur_submenu" >${y}</a>
+        <li class="nav-L__submenu">
+          <a class="-blur_submenu" v-on:click="myFn('${chgdata(y)}')">${y}</a>
           <ol class="submenu-list">
       `;
       // console.log(y);
@@ -81,7 +85,7 @@ const core = function(){
   `;
 
 
-  nav.innerHTML = hcode;
+  // nav.innerHTML = hcode;
 
   // 3-3. gnb 메뉴 오버시 서브메뉴 보이기
   const list = document.querySelectorAll(".nav-L__menu");
@@ -95,7 +99,7 @@ const core = function(){
   };
   
   for(let x of list){
-    // console.log(x);
+    console.log("4형제들:",x);
     // 마우스 오버시 ___________________ 하위메뉴 박스/하위 내부 박스높이값/로고 바꾸기/변경함수 호출
     x.onmouseenter = () => {
       let menu = x.querySelector(".submenu-all");
@@ -112,6 +116,15 @@ const core = function(){
       let menu=x.querySelector(".submenu-all");
       subBg(menu,0)
     } //___________________
+
+    let currMenu = x.querySelector("a").innerText;
+    console.log(currMenu);
+    if(currMenu==="Women"){
+
+    }
+
+
+
   } ////// for of /////
 
     // 4. 로고 3d 변화
@@ -162,5 +175,4 @@ const core = function(){
     }
 
 }
-core();
-export default core;
+export {hcode,core};

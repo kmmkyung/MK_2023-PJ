@@ -47,13 +47,12 @@ listImg.forEach((ele, idx) =>{
 ele.addEventListener("click",function(){
     listBox.classList.remove("-hidden");
     blurBox.classList.remove("-hidden");
-    document.querySelector("body").classList.add("xx")
+    
 })
 }) // forEach
 
 closeBtn.addEventListener("click",function(){
     listBox.classList.add("-hidden");
     blurBox.classList.add("-hidden");
-    document.querySelector("body").classList.remove("xx")
 })
 })

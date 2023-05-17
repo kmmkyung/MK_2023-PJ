@@ -172,6 +172,29 @@ display: flex;
   border-radius: var(--borderR);
 }
 
+
+/* -------모바일-------- */
+/* -------메뉴 on-------- */
+ .on{
+  display: block;
+}
+
+/* 햄버거 버튼, 닫기버튼 */
+.ham, .close{
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 38px;
+  left: 36px;
+
+  /* 처음에 숨기기 */
+  /* display: none; */
+}
+
+
+
 /*---------- _____footer_____ ----------*/
 #footer{
   height: 80vh;

@@ -35,6 +35,104 @@ Vue.component("list-comp", {
         `,
 });
 
+Vue.component("footer-comp",{
+    template:`
+    <div class="footer-con">
+                <article class="footer-latter">
+                    <h5>RECEIVE THE NEWSLETTER</h5>
+                    <p>Maison Margiela의 새로운 컬렉션, 독점 콘텐츠 및 이벤트에 대한 업데이트를 받으십시오.</p>
+                    <form>
+                        <input type="email" required="required" class="footer-email">
+                        <label for="footer-email">Email address</label>
+                    </form>
+                </article>
+                <article class="footer-links">
+                    <!-- 1. Country/Region -->
+                    <div class="footer-links__box">
+                        <button class="footer-links__btn -ghost -blur">
+                            Country/Region
+                        </button>
+                        <div class="aaa"></div>
+                    </div>
+                    <!-- 2. Boutiques -->
+                    <div class="footer-links__box">
+                        <button class="footer-links__btn -ghost -blur">Boutiques</button>
+                        <div class="aaa"></div>
+                    </div>
+                    <!-- 3. Client Care -->
+                    <div>
+                        <div class="footer-links__box">
+                            <button class="footer-links__btn -ghost -blur">Client Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="aaa">
+                                <ul class="footer-links__list">
+                                    <li><a href="#" class="-blur">CONTACT US</a></li>
+                                    <li><a href="#" class="-blur">FAQS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4. Follow us -->
+                    <div>
+                        <div class="footer-links__box">
+                            <button class="footer-links__btn -ghost -blur">Follow us
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="aaa">
+                                <ul class="footer-links__list">
+                                    <li><a href="#" class="-blur">INSTAGRAM</a></li>
+                                    <li><a href="#"class="-blur">TWITTER</a></li>
+                                    <li><a href="#"class="-blur">YOUTUBE</a></li>
+                                    <li><a href="#"class="-blur">WECHAT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5. Legal Area -->
+                    <div>
+                        <div class="footer-links__box">
+                            <button class="footer-links__btn -ghost -blur">Legal Area
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="aaa">
+                                <ul class="footer-links__list">
+                                    <li><a href="#" class="-blur">terms</a></li>
+                                    <li><a href="#" class="-blur">privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6. Accessibility -->
+                    <div>
+                        <div class="footer-links__box">
+                            <button class="footer-links__btn -ghost -blur">
+                                Accessibility
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="aaa">
+                                <ul class="footer-links__list">
+                                    <li><a href="#" class="-blur">statement</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7. Need assistance? -->
+                    <div class="footer-links__box">
+                        <button class="footer-links__btn -ghost -blur">Need assistance?</button>
+                        <div class="aaa"></div>
+                    </div>
+                </article>
+                <article class="footer-text">
+                    <p>Maison Margiela is part of OTB</p>
+                    <p>Maison Margiela supports the OTB Foundation</p>
+                    <p>Careers</p>
+                    <p>Copyright © 2023 - v3.5.11</p>
+                </article>
+            </div>
+    `,
+});
+
 core();
 console.log(hcode);
 let menuCode = `

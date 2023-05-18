@@ -45,10 +45,28 @@
   .nav-L__list{
     display: none;
   }
+
   /* 햄버거 버튼 보이기 */
   .ham {
     display: block;
-}
+  }
+
+  .nav.on{
+    position: relative;
+  }
+
+  .nav-L__menu.on{
+    width: 80vw;
+    margin: 30px;
+  }
+
+  .nav-L__list.on {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 
 }
 
@@ -68,7 +86,7 @@
   .page2-list {
     justify-content: flex-start;
     margin-left: 10px;
-}
+  }
 
   .page2-list__con img {
   

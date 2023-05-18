@@ -28,11 +28,6 @@
 }
 }
 
-@media screen and (max-width: 1100px) {
-
-}
-/*---------- _____footer_____ ----------*/
-
 @media screen and (max-width: 1035px){
   .footer-links {
       flex-direction: column;
@@ -40,10 +35,20 @@
 
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
   .page2-list__con a {
     font-size: 1.2rem;
   }
+}
+
+@media screen and (max-width: 900px){
+  .nav-L__list{
+    display: none;
+  }
+  /* 햄버거 버튼 보이기 */
+  .ham {
+    display: block;
+}
 
 }
 

@@ -23,7 +23,7 @@ new Vue({
     // store, // 스토어등록!!!
     mounted() {
         core();
-        console.log(hcode)
+        // console.log(hcode)
     },
 });
 

@@ -129,7 +129,7 @@ const core = function(){
     // 4. 로고 3d 변화
     const wdw = $(window)
     const tg = $('.nav-C')
-    console.log("tg",tg);
+    // console.log("tg",tg);
     
     wdw.on('scroll',function(){
         cube(tg)
@@ -142,15 +142,33 @@ const core = function(){
       if(a!==0) $(x).addClass('on');
       else $(x).removeClass('on');
   }
+
+      
+  /********************
+    mobile-menu
+  ********************/
+    const ham = document.querySelector(".ham")
+    const close = document.querySelector(".close")
+    // console.log(ham,close)
+
+    ham.onclick = mobileOn;
+    close.onclick = mobileOn;
     
+    function mobileOn(){
+      const gnd = document.querySelector("#gnb");
+      // console.log(gnb);
+      gnb.classList.toggle("on");
+    }
+
+
   /********************
     footer 메뉴 넣기
   ********************/
 
-    const footerbox = document.querySelectorAll(".footer-links__box")
-    // const aaa = document.querySelectorAll(".aaa")
+    const footerbox = document.querySelectorAll(".footer-links__box2")
+    const aaa = document.querySelectorAll(".aaa")
     const bbb = document.querySelectorAll(".footer-links__list")
-    // console.log("bbb",bbb);
+console.log(footerbox);
     
     const footermenu = (ele,hv) => {
       ele.style.height = hv+"px";
@@ -172,6 +190,5 @@ const core = function(){
         footermenu(ftmenu,0)
       }
     }
-
 }
 export {hcode,core};

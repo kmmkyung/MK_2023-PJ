@@ -34,28 +34,37 @@
                 <div class="nav-inbox -blur"></div>
                     <div class="nav-L">
                     <menu-comp></menu-comp>
+                    <!-- 모바일 버튼 -->
+                    <button class="ham -ghost -blur">Menu
+                    </button>
+                    <button class="close -ghost -blur">Close
+                    </button>
+                    <!-- 모바일 버튼 -->
                 </div>
-                <div class="nav-C">
-                    <div class="nav-Logo1">
-                        <a href="index.html">
-                            <svg class="nav-Logo1"></svg>
-                            <span class="ir">Maison Margiela Paris Homepage</span>
-                        </a>
-                    </div>
-                    <div class="nav-Logo2 -hidden">
-
-                        <a href="index.html">
-                            <svg class="nav-Logo2 -hidden"></svg>
-                            <span class="ir">Maison Margiela Paris Homepage</span>
-                        </a>
-                    </div>
+            <div class="nav-C">
+                <div class="nav-Logo1">
+                    <a href="index.html">
+                        <svg></svg>
+                        <span class="ir">Maison Margiela Paris Homepage</span>
+                    </a>
                 </div>
-                <div class="nab-R">
-                    <button class="-ghost -blur">Search</button>
+                <div class="nav-Logo2 -hidden">
+                    <a href="index.html">
+                        <svg></svg>
+                        <span class="ir">Maison Margiela Paris Homepage</span>
+                    </a>
                 </div>
-            </nav>
-        </header>
-        <!-- list -->
+            </div>
+            <div class="nab-R">
+                <button class="-ghost -blur">Search</button>
+            </div>
+        </nav>
+        
+ 
+    </header>
+        <!-- 리스트 상세페이지 -->
+        <div id="listD">
+            <div>
         <section id="sublist" class="-hidden">
             <div class="sublist-all">
                 <div class="sublist-con__imgbox">
@@ -115,15 +124,17 @@
             </div>
         </section>
         <div class="blur_box -blur_show -hidden"></div>
-        <!-- list -->
-    
+    </div>
+            <listDetail-comp></listDetail-comp>
+        </div>
         <main>
             <div class="null_box"></div>
-            <!-- 메인 제목 -->
+            <!-- 메인 타이틀 -->
             <div id="title">
                 <title-comp></title-comp>
             </div>
-                <div class="main-con" id="list">
+            <!-- 리스트 -->
+            <div class="main-con" id="list">
                 <list-comp></list-comp>
             </div>
         </main>

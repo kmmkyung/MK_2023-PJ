@@ -45,6 +45,8 @@ const closeBtn = document.querySelector(".sublist_close");
 
 listImg.forEach((ele, idx) =>{
 ele.addEventListener("click",function(){
+    console.log('ele', ele);
+    
     listBox.classList.remove("-hidden");
     blurBox.classList.remove("-hidden");
     

@@ -1,5 +1,6 @@
 ///////////////////////// load /////////////////////////
 import {core, hcode} from "./core.js";
+import store from "./listData-women.js";
 core();
 console.log("common.jS 로딩!")
 let menuCode = `
@@ -11,10 +12,11 @@ Vue.component("menu-comp", {
     template: menuCode,
     methods: {
         myFn(pm) {
-            // console.log("찍어라!", pm);
+            console.log("찍어라!", pm);
             // 스토어 변수 업데이트
-            store.state.cat = pm;
+            // store.state.cat = pm;
             // console.log("변경!", store.state.cat);
+            location.href = "list.html?cat=women";
         },
     },
 });

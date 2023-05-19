@@ -36,7 +36,7 @@ const core = function(){
       else if(scrollTop<=50){
         myNav.classList.remove("-blur_show")
         logoSVG1.classList.remove("-hidden")
-        logoSVG2.classList.add("-hidden")
+        // logoSVG2.classList.add("-hidden")
       }
   })
 
@@ -108,8 +108,8 @@ const core = function(){
       // console.log(tgele);
       let submenuBoxHv = tgele.clientHeight;
       // console.log("하위내부높이",submenuBoxHv);
-      logoSVG2.classList.remove("-hidden");
-      logoSVG1.classList.add("-hidden");
+      // logoSVG2.classList.remove("-hidden");
+      // logoSVG1.classList.add("-hidden");
       subBg(menu,submenuBoxHv);
     } //___________________
     // 마우스 아웃시 ___________________

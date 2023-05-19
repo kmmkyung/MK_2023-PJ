@@ -151,9 +151,10 @@ display: flex;
 }
 
 .nav-Logo2{
-  width: 49px;
+  width: 135px;
   height: 28px;
   margin: 10px 0;
+  text-align: center;
 }
 
 .nab-R{

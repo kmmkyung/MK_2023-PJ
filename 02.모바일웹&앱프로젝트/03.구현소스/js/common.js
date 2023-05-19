@@ -39,13 +39,14 @@ const mainTitle = document.querySelector(".page1-con>.text-con")
 // console.log("메인텍스트",mainTitle);
 
 function FullImg(event){
-    event.preventDefault; 
+    // event.preventDefault; 
     mainImg.classList.add("p1-fullimg");
     setTimeout(() => {
         mainTitle.classList.remove("-hidden")
-    },500);
+    },1500);
 }
 // window.addEventListener("wheel",FullImg);
+FullImg()
 
 // 페이지가 넘어가면 셋팅 원래대로!(이미지 작아지고 글씨 없어짐)
 // if(){

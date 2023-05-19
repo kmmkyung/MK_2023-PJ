@@ -34,13 +34,11 @@ body{
 }
 
 .page1-img{
-    /* aspect-ratio: 3/1.7; */
+    aspect-ratio: 16/9;
     width: min(95vw,1200px);
     border-radius: var(--borderR);
     margin: 0 auto;
     /* display: block; */
-    /* transition: transform 3s ease-in-out;
-    transform: scale(1.64);; */
 }
 
 .page2-img{
@@ -51,22 +49,19 @@ body{
 
 .text-con h2{
     position: absolute;
+    top: 50%;
     left: 50%;
-    top: auto;
-    bottom: 10%;
-    transform: translateX(-50%);
-    
-    color: #605a5a;
-    font-size: max(8vw,3rem);
+    transform: translate(-50%,-50%);
+    color: var(--white);
+    font-size: 6rem;
     font-weight: normal;
     white-space: nowrap;
-    transition: all ease-in-out;
 }
 
 .text-con button{
     position: absolute;
     top: auto;
-    bottom: 57.5px;
+    bottom: 10vw;
     color: var(--white);
     padding: 10px 20px;
     border-radius: var(--borderR);
@@ -76,8 +71,9 @@ body{
     box-sizing: border-box;
     cursor: pointer;
     transition: all ease-in-out;
-
 }
+
+
 
 .p1-fullimg{
     transition: all 1.5s ease-in-out;

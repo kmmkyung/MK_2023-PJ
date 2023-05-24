@@ -6,7 +6,7 @@
   <title>Document</title>
   <link rel="icon" href="../00.자료수집/images/favicon-frame-1.png" type="image/png">
   <script>
-    let favicon_img = [
+    const favicon_img = [
                           '../00.자료수집/images/favicon-frame-1.png',    
                           '../00.자료수집/images/favicon-frame-2.png',    
                           '../00.자료수집/images/favicon-frame-3.png',   
@@ -17,7 +17,7 @@
     image_counter = 0;
 
     setInterval(function(){
-  document.querySelector("head").innerHTML='<link rel="icon" href="' + favicon_img[image_counter] + '" type="image/png">'
+  document.querySelector("head").innerHTML='<link rel="icon" href="'+favicon_img[image_counter]+'" type="image/png">'
   if(image_counter == favicon_img.length-1)
   image_counter=0;
   else{

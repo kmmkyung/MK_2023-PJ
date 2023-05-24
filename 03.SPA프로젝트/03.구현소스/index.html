@@ -4,27 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="icon" href="../00.자료수집/images/favicon-frame-1.png" type="image/png">
   <script>
-    const favicon_img = [
-                          '../00.자료수집/images/favicon-frame-1.png',    
-                          '../00.자료수집/images/favicon-frame-2.png',    
-                          '../00.자료수집/images/favicon-frame-3.png',   
-                          '../00.자료수집/images/favicon-frame-4.png',   
-                          '../00.자료수집/images/favicon-frame-5.png',   
+    const faviconImg = [
+      '../00.자료수집/images/favicon-frame-1.png',    
+      '../00.자료수집/images/favicon-frame-2.png',    
+      '../00.자료수집/images/favicon-frame-3.png',   
+      '../00.자료수집/images/favicon-frame-4.png',   
+      '../00.자료수집/images/favicon-frame-5.png',   
     ]
-  
-
-    image_counter = 0;
-
+    faviconCounter = 0;
+    
     setInterval(function(){
-  document.querySelector("head").innerHTML='<link rel="icon" href="'+favicon_img[image_counter]+'" type="image/png">'
-  if(image_counter == favicon_img.length-1)
-  image_counter=0;
-  else{
-    image_counter++;
-  }
-},500)
+      document.querySelector("head").innerHTML='<link rel="icon" href="'+faviconImg[faviconCounter]+'" type="image/png">'
+      if(faviconCounter == faviconImg.length-1){
+        faviconCounter=0;
+      }
+      else{
+        faviconCounter++;
+      }
+    },1000)
   </script>
 </head>
 <body>

@@ -5,27 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-    const faviconImg = [
-      '../00.자료수집/images/favicon-frame-1.png',    
-      '../00.자료수집/images/favicon-frame-2.png',    
-      '../00.자료수집/images/favicon-frame-3.png',   
-      '../00.자료수집/images/favicon-frame-4.png',   
-      '../00.자료수집/images/favicon-frame-5.png',   
-    ]
-    let faviconCounter = 0;
-    
-    setInterval(function(){
-      document.querySelector("head").innerHTML='<link rel="icon" href="'+faviconImg[faviconCounter]+'" type="image/png">'
-      if(faviconCounter == faviconImg.length-1){
-        faviconCounter=0;
-      }
-      else{
-        faviconCounter++;
-      }
-    },1000)
+    // 파비콘 함수 + 호출 ________________________________________
+    function favicon(){
+      const faviconImg = [
+        './images/favicon-frame-1.png',
+        './images/favicon-frame-2.png',
+        './images/favicon-frame-3.png',
+        './images/favicon-frame-4.png',
+        './images/favicon-frame-5.png',
+      ]
+      let faviconCounter = 0;
+      
+      setInterval(function(){
+        document.querySelector("head").innerHTML='<link rel="icon" href="'+faviconImg[faviconCounter]+'" type="image/png">'
+        if(faviconCounter == faviconImg.length-1){
+          faviconCounter=0;
+        }
+        else{
+          faviconCounter++;
+        }
+        },1000)
+    };
+    favicon();
+    //______________________________________________________________
   </script>
 </head>
 <body>
-  
+
 </body>
 </html>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* ZORA PJ common CSS - common.css */
+
+.page1-warp{
+  background-color: var(--main2);
+}
+.page1-con{
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 110px);
+  /* height: calc(100vh - 190px); */
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  overflow: hidden;
+}
+
+.page1-con__text .page1-svg{
+  fill: var(--white);
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+}
+
+.page1-con__btn{
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-M);
+  color: var(--white);
+}
+
+.page1-con__btn::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  transition: all .5s;
+}
+
+.page1-con__btn:hover{
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.page1-con__btn:hover::after{
+  width: 0%;
+  height: 1px;  
+}
+
+.page1-con img{
+  object-fit:cover;
+  aspect-ratio: 2500 / 1283;
+  width: 100%;
+  height: 100%;
+}
+
+/* 모바일 버전일때 nullbox에 높이값 추가 */
+.nullbox.h{
+  height: 80px;
+  background-color: var(--main2);
+}
+

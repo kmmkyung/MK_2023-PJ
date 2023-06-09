@@ -73,6 +73,8 @@ body{
 
 #nav ul li a{
     color: var(--white);
+    font-family: var(--Atami);
+
 }
 
 /* round svg */

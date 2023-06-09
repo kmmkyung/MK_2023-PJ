@@ -1,15 +1,21 @@
 @charset "utf-8";
 /* ZORA PJ root CSS - root.css */
 
+@font-face{
+  font-family:'Cako Regular';
+  src:url('../font/Cako-Regular.woff2');
+}
+
+@font-face{
+  font-family:'Atami Regular';
+  src:url('../font/Atami-Regular.woff');
+}
+
 *{
-    outline: 1px dotted turquoise;
+    /* outline: 1px dotted turquoise; */
     /* outline: 1px dotted tomato; */
 }
 
-/* FONT 
-Atami Regular
-Cako Regular
-*/
 
 :root{
   /* COLOR */
@@ -27,9 +33,9 @@ Cako Regular
   /* FONTSIZE */
   --font-size-S: 1.3rem;
   --font-size-M: 2rem;
-  --font-size-L: 6rem;
+  --font-size-L:  min(8vw,6rem);
   --font-size-menu: 1.4rem;
-  --font-size-tit: min(10vh,10rem);
+  --font-size-tit: min(10vw,10rem);
 
   /* FONT-FAMILY */
   --Coko: Cako Regular, -apple-system, BlinkMacSystemFont, Times, serif;
@@ -53,7 +59,15 @@ Cako Regular
 }
 /*----------*/
 
+h2{
+  -webkit-font-smoothing: antialiased;
+}
+
 /* button */
+
+button{
+  font-family: var(--Coko);
+}
 .btn-W::after, .btn-B::after{
     content: '';
     display: block;

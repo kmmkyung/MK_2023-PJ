@@ -54,7 +54,7 @@
 
 /* ------------------------------------------------------------ */
 .page2-con{
-  margin: 120px 30px;
+  margin: 120px 30px 400px;
 }
 
 .page2-con h2{
@@ -71,6 +71,8 @@
 .page2-con__btn{
   display: block;
   margin: 0 auto;
+  font-size: var(--font-size-M);
+
 }
 
 .page2-con__btn::after{
@@ -78,37 +80,80 @@
 }
 
 /* ------------------------------------------------------------ */
-.chocolate-1__con{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.chocolate-1__img{
+.chocolate-warp{
   position: relative;
 }
 
-.chocolate-1__img-1, .chocolate-1__img-2{
-  width: 300px;
+.chocolate-1__con,
+.chocolate-2__con{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: min(-15vw,-150px);
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
-.chocolate-1__img-2{
+.chocolate-1__img,
+.chocolate-2__img{
+  position: relative;
+}
+
+.chocolate-1__img-1, .chocolate-1__img-2,
+.chocolate-2__img-1, .chocolate-2__img-2
+{
+  width: min(50vw,500px);
+}
+
+.chocolate-1__img-2,
+.chocolate-2__img-2{
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.chocolate-1__text-tit{
+.chocolate-1__text-tit,
+.chocolate-2__text-tit{
   font-size: var(--font-size-L);
 }
 
-.chocolate-1__text-btn{
+.chocolate-1__text-btn,
+.chocolate-2__text-btn{
   display: block;
   margin: 0 auto;
+  font-size: var(--font-size-M);
 }
 
-.chocolate-back{
-  width: 100vw;
-  height: 100px;
+.chocolate-1__text-btn::after,
+.chocolate-2__text-btn::after{
+  background-color: var(--black);
+}
+
+.chocolate-1__back{
+  /* margin-top: 300px; */
+  width: 100%;
+  height: 200vh;
   background-color: var(--org);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+#chocolate-2{
+  position: relative;
+}
+
+.chocolate-2__back{
+  /* margin-top: 300px; */
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blue);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.chocolate-2__warp{
+  position: relative;
+  top: min(-30vh,-200px);
 }

@@ -78,7 +78,7 @@ body{
 /* round svg */
 .svg__1, .svg__2{
     width: min(12vw,150px);
-    position: absolute;
+    position: fixed;
     top: 120px;
     left: 20px;
     z-index: 1;

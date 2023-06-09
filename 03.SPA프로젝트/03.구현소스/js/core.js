@@ -18,7 +18,7 @@ function favicon(){
     document.querySelector(".icon").setAttribute("href",faviconImg[faviconCounter])
     if(faviconCounter == faviconImg.length-1){faviconCounter=0;}
     else{faviconCounter++;}
-   },2000)
+   },800)
 }; //// setInterval ////
 favicon();
 //______________________________________________________________

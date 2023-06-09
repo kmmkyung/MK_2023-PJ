@@ -33,22 +33,8 @@
 }
 
 .page1-con__btn::after{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
   background-color: var(--white);
-  transition: all .5s;
-}
-
-.page1-con__btn:hover{
-  color: rgba(255, 255, 255, 0.5)
-}
-
-.page1-con__btn:hover::after{
-  width: 0%;
-  height: 1px;  
-}
+}  
 
 .page1-con img{
   object-fit:cover;
@@ -63,3 +49,66 @@
   background-color: var(--main2);
 }
 
+
+
+
+/* ------------------------------------------------------------ */
+.page2-con{
+  margin: 120px 30px;
+}
+
+.page2-con h2{
+  font-size: var(--font-size-L);
+  text-align: center;
+}
+.page2-con p{
+  font-size: var(--font-size-M);
+  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.page2-con__btn{
+  display: block;
+  margin: 0 auto;
+}
+
+.page2-con__btn::after{
+  background-color: var(--black);
+}
+
+/* ------------------------------------------------------------ */
+.chocolate-1__con{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chocolate-1__img{
+  position: relative;
+}
+
+.chocolate-1__img-1, .chocolate-1__img-2{
+  width: 300px;
+}
+
+.chocolate-1__img-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chocolate-1__text-tit{
+  font-size: var(--font-size-L);
+}
+
+.chocolate-1__text-btn{
+  display: block;
+  margin: 0 auto;
+}
+
+.chocolate-back{
+  width: 100vw;
+  height: 100px;
+  background-color: var(--org);
+}

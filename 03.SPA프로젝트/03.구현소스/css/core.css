@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* ZORA PJ core CSS - core.css */
 
+body{
+    background-color: var(--main);
+}
+
 /* header */
 .topBar{
     width: 100%;
@@ -79,3 +83,4 @@
     left: 20px;
     z-index: 1;
 }
+

@@ -212,7 +212,6 @@
   background-color: var(--blue);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  box-sizing: border-box;
 }
 .chocolate-3__back{
   width: 100%;
@@ -235,6 +234,7 @@
   height: 80vh;
   overflow: hidden;
 }
+
 .chocolate-5__back{
   margin: 0 auto;
   width: 100%;
@@ -254,15 +254,16 @@
 }
 
 .page4-text{
-  margin: 120px 30px 400px;
+  margin: 0px 30px 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .page4-text h2{
   font-size: var(--font-size-L);
-  text-align: center;
   font-family: var(--Coko);
+  text-align: center;
+  white-space: nowrap;
 }
 
 .page4-text p{

@@ -86,3 +86,28 @@ body{
     z-index: 1;
 }
 
+.svg__2:hover{
+    animation: RoundHend 1s linear;
+    transform-origin: bottom left;
+}
+
+@keyframes RoundHend {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(3deg);
+    }
+    40%{
+        transform: rotate(-3deg);
+    }
+    60%{
+        transform: rotate(3deg);
+    }
+    80%{
+        transform: rotate(-3deg);
+    }
+    95%{
+        transform: rotate(3deg);
+    }
+}

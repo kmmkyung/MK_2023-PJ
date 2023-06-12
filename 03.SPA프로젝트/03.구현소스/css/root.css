@@ -12,7 +12,7 @@
 }
 
 *{
-    outline: 1px dotted turquoise;
+    /* outline: 1px dotted turquoise; */
     /* outline: 1px dotted tomato; */
 }
 
@@ -62,7 +62,7 @@ body{
 }
 
 .-JSmove{
-  opacity: 1;
+  opacity: 0;
   transform: translateY(30%);
   transition: all .5s;
 }

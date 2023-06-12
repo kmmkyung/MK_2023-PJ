@@ -14,9 +14,7 @@ body{
     position: fixed;
     z-index: 999999999999999999;
     pointer-events: none;
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+    transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* header */

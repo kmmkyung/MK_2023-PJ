@@ -46,16 +46,18 @@ function roundSvgMove(){
 classJSmove(); //---- 호출
 function classJSmove(){
   const classMove = document.querySelectorAll(".-JSmove");
-  console.log('classMove',classMove);
+  console.log('classMove',classMove); 
+
+  // 위치값 구하기
   // window.addEventListener('scroll',function(){
   //   setTimeout(function(){
-    // classMove.style.opacity=1
-    // classMove.style.transform="translateY(0%)";
+  //   classMove.style.opacity=1
+  //   classMove.style.transform="translateY(0%)";
   //   },3000)
   // })
 }
 
-// MOUSE_CURSUR ______________________________________
+// MOUSE_CURSOR ______________________________________
 const mouseCursor = document.querySelector(".cursor");
 const mousePosition = mouseCursor.clientWidth/2;
 // console.log('cursor',mouseCursor); // ok
@@ -71,13 +73,21 @@ document.body.onmousemove = function(){
   mouseCursor.style.top=positionY+"px";
   mouseCursor.style.left=positionX+"px";
 }
-mouseCursor.addEventListener("click",function(){
-  mouseCursor.style.transform="scale(1.5)"
+
+document.body.addEventListener("mousedown",function(){
+  // console.log("클릭!")
+  mouseCursor.style.transform="scale(0.6)";
+})
+document.body.addEventListener("mouseup",function(){
+  // console.log("클릭땜!")
+  mouseCursor.style.transform="scale(1)";
 })
 
+// 이벤트 설정을 좀 더 자세히 클릭하고 있는 동안인지...
 
 
-
+// Chocolate 뽀각 _______________________________________________________
+// const chocolateImg1 = 
 
 })///////////////////////// load /////////////////////////
 

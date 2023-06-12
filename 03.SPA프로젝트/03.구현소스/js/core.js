@@ -38,7 +38,7 @@ function roundSvgMove(){
   window.addEventListener('scroll' ,function(){
     let WinscrollY = window.scrollY
     // console.log('scrollY',WinscrollY);
-    RC.style.transform="rotate("+WinscrollY+"deg)";
+    RC.style.transform="rotate("+WinscrollY/10+"deg)";
   })
 } //---- roundSvgMove 함수 ----//
 })///////////////////////// load /////////////////////////

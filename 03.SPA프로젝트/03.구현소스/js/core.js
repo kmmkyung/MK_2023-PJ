@@ -83,12 +83,22 @@ document.body.addEventListener("mouseup",function(){
   mouseCursor.style.transform="scale(1)";
 })
 
-// 이벤트 설정을 좀 더 자세히 클릭하고 있는 동안인지...
-
-
 // Chocolate 뽀각 _______________________________________________________
-// const chocolateImg1 = 
+const chocolateImg1 = document.querySelectorAll(".chocolatepack")
+const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
+chocolateImg2.forEach((ele,idx)=>{ //ele객체 idx순번
+  console.log('ele',ele);
+  console.log('idx',idx);
+  // 깨진 초콜릿에 마우스 오버시! 뽀각
+  ele.addEventListener("mouseenter",function(){
+    this.style.opacity=1;
+    chocolateImg1[idx].style.opacity=0;
+    console.log('chocolateImg1 배열 순번돌려!',chocolateImg1[idx]);
+  })
+  ele.addEventListener("mouseout",function(){
+    this.style.opacity=0;
+    chocolateImg1[idx].style.opacity=1;
+  })
+})
 
 })///////////////////////// load /////////////////////////
-
-

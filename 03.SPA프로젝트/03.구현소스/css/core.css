@@ -5,6 +5,20 @@ body{
     background-color: var(--main);
 }
 
+/* cursor */
+.cursor{
+    width: 20px;
+    height: 20px;
+    background-color:#f253b9;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 999999999999999999;
+    pointer-events: none;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
 /* header */
 .topBar{
     width: 100%;

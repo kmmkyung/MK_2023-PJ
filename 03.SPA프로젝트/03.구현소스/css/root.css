@@ -12,10 +12,13 @@
 }
 
 *{
-    /* outline: 1px dotted turquoise; */
+    outline: 1px dotted turquoise;
     /* outline: 1px dotted tomato; */
 }
 
+body{
+  cursor: none;
+}
 
 :root{
   /* COLOR */
@@ -42,7 +45,7 @@
   --Atami: Atami Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
 }
 /*----------*/
-/*-- CSS --*/
+/*-- CSS CLASS --*/
 
 .-hidden{
     display: none;
@@ -57,17 +60,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/*----------*/
 
+.-JSmove{
+  opacity: 1;
+  transform: translateY(30%);
+  transition: all .5s;
+}
+/*----- CSS -----*/
+/* h2 */
 h2{
   -webkit-font-smoothing: antialiased;
+  transform: translateY(3px);
 }
 
 /* button */
-
 button{
   font-family: var(--Coko);
 }
+
 .btn-W::after, .btn-B::after{
     content: '';
     display: block;

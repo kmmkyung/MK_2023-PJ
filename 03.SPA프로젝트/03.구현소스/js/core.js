@@ -30,15 +30,55 @@ document.querySelector(".svg__2").innerHTML=SvgData.rounde_hand;
 document.querySelector(".page1-svg").innerHTML=SvgData.page1;
 //______________________________________________________________
 
-// rounde SVG 스크롤시 움직임 ______________________________________
+// rounde SVG scroll rotate ______________________________________
 roundSvgMove(); //---- 호출
 function roundSvgMove(){
   const RC = document.querySelector(".svg__1")
   
   window.addEventListener('scroll' ,function(){
     let WinscrollY = window.scrollY
-    // console.log('scrollY',WinscrollY);
+    // console.log('scrollY',WinscrollY); // ok
     RC.style.transform="rotate("+WinscrollY/10+"deg)";
   })
 } //---- roundSvgMove 함수 ----//
+
+// .-JSmove scroll transform  ______________________________________ ((해야함))
+classJSmove(); //---- 호출
+function classJSmove(){
+  const classMove = document.querySelectorAll(".-JSmove");
+  console.log('classMove',classMove);
+  // window.addEventListener('scroll',function(){
+  //   setTimeout(function(){
+    // classMove.style.opacity=1
+    // classMove.style.transform="translateY(0%)";
+  //   },3000)
+  // })
+}
+
+// MOUSE_CURSUR ______________________________________
+const mouseCursor = document.querySelector(".cursor");
+const mousePosition = mouseCursor.clientWidth/2;
+// console.log('cursor',mouseCursor); // ok
+// console.log('cursorPosition',mousePosition); // 10
+
+document.body.onmousemove = function(){
+  // console.log('x',event.pageX,'y',event.pageY); // ok
+  // 위치값
+  let positionX = event.clientX-mousePosition
+  let positionY = event.clientY-mousePosition
+  
+  // 위치값 이동
+  mouseCursor.style.top=positionY+"px";
+  mouseCursor.style.left=positionX+"px";
+}
+mouseCursor.addEventListener("click",function(){
+  mouseCursor.style.transform="scale(1.5)"
+})
+
+
+
+
+
 })///////////////////////// load /////////////////////////
+
+

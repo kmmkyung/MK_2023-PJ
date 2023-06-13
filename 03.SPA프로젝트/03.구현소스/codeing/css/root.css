@@ -62,9 +62,9 @@ body{
 }
 
 .-JSmove{
-  opacity: 0;
+  /* opacity: 0;
   transform: translateY(30%);
-  transition: all .5s;
+  transition: all .5s; */
 }
 
 /*----- CSS -----*/

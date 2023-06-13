@@ -100,7 +100,7 @@ const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
 chocolateImg2.forEach((ele,idx)=>{ //ele객체 idx순번
   // console.log('ele',ele);
   // console.log('idx',idx);
-  // 깨진 초콜릿에 마우스 오버시! 뽀각
+  // 초콜릿에 마우스 오버시! 뽀각
   ele.addEventListener("mouseenter",function(){
     this.style.opacity=1;
     chocolateImg1[idx].style.opacity=0;

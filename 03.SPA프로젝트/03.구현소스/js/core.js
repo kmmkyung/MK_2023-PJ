@@ -46,11 +46,17 @@ function roundSvgMove(){
 classJSmove(); //---- 호출
 function classJSmove(){
   const classMove = document.querySelectorAll(".-JSmove");
-  console.log('classMove',classMove); 
+  // console.log('classMove',classMove); // ok
+  const winH = window.innerHeight;
+  const docH = document.body.clientHeight;
+  const scLimit = docH - winH;
+  console.log("윈도우높이",winH);
+  console.log("바디 높이:",docH);
+  console.log("스크롤한계값:",scLimit);
 
   // 위치값 구하기
   classMove.forEach((ele,idx)=>{
-    console.log('위치',idx.sc);
+    console.log('위치',idx);
 
   })
   

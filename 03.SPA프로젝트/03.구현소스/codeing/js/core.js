@@ -97,7 +97,7 @@ document.body.addEventListener("mouseup",function(){
 // Chocolate 뽀각 _______________________________________________________
 const chocolateImg1 = document.querySelectorAll(".chocolatepack")
 const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
-chocolateImg2.forEach((ele,idx)=>{ //ele객체 idx순번
+chocolateImg2.forEach((ele,idx)=>{
   // console.log('ele',ele);
   // console.log('idx',idx);
   // 초콜릿에 마우스 오버시! 뽀각
@@ -111,5 +111,8 @@ chocolateImg2.forEach((ele,idx)=>{ //ele객체 idx순번
     chocolateImg1[idx].style.opacity=1;
   })
 })
+
+
+
 
 })///////////////////////// load /////////////////////////

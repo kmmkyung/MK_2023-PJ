@@ -23,6 +23,8 @@ function favicon(){
 // SVG _________________________________________________________
 // 헤더 메뉴바 svg
 document.querySelector(".nav-logo").innerHTML=SvgData.logo;
+document.querySelector(".nav-logo-footer").innerHTML=SvgData.logo;
+
 // 고정 원형 svg
 document.querySelector(".svg__1").innerHTML=SvgData.rounde_cricle;
 document.querySelector(".svg__2").innerHTML=SvgData.rounde_hand;

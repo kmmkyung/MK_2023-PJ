@@ -86,7 +86,46 @@ body{
 #nav ul li a{
     color: var(--white);
     font-family: var(--Atami);
+}
 
+/* footer */
+#footer{
+    background-color: var(--black);
+    padding: 30px;
+    height: 30vh;
+}
+
+.nav-logo-footer{
+    width: 115px;
+    height: 35px;
+    fill: var(--white);
+}
+
+.footer-nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+
+.footer-nav__1{
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+.footer-nav__2{
+    flex-basis: 30%;
+}
+
+.footer-nav ul li a{
+font-size: var(--font-size-S);
+white-space: nowrap;
+color: var(--white);
+}
+
+.footer-wrap p{
+    color: var(--white);
 }
 
 /* round svg */

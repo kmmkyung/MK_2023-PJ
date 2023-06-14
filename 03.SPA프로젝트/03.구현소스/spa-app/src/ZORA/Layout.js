@@ -6,8 +6,8 @@ import rounde_hand from './data/rounde_hand.svg';
 import $ from 'jquery'
 
 $(()=>{
-// 파비콘
-  favicon(); //---- 호출
+// <head> 파비콘 함수 + 호출 _____________________________________
+favicon(); //---- 호출
 function favicon(){
   let faviconCounter = 0;
   const faviconImg = ['./images/favicon-frame-1.png',
@@ -21,7 +21,7 @@ function favicon(){
   },800)
 };
 
-// 마우스 커서
+// MOUSE_CURSOR ______________________________________
 const mouseCursor = $('.cursor');
 const mousePosition = mouseCursor.innerWidth()/2;
 console.log('cursor',mouseCursor); // ok
@@ -47,6 +47,18 @@ $("body").on("mouseup",function(){
   mouseCursor.css({transform:"scale(1)"})
 })
 
+// rounde SVG scroll rotate ______________________________________
+roundSvgMove(); //---- 호출
+function roundSvgMove(){
+  const RC = document.querySelector(".svg__1")
+  
+  window.addEventListener('scroll' ,function(){
+    let WinscrollY = window.scrollY
+    // console.log('scrollY',WinscrollY); // ok
+    RC.style.transform="rotate("+WinscrollY/10+"deg)";
+  })
+} //---- roundSvgMove 함수 ----//
+
 });
 
 
@@ -54,6 +66,7 @@ const Layout = () => {
   return (
       <>
         <div className ="cursor"></div>
+        {/* 상단영역 네비게이션 */}
         <header>
           <div className ="topBar">
             <p>~~(˘̩̩̩ε˘̩ƪ)~~ 민경초콜릿</p>
@@ -79,12 +92,37 @@ const Layout = () => {
             </div>
           </nav>
         </header>
+        {/* 움직이는 원 svg */}
         <aside>
           <div className ="svg">
             <img className ="svg__1" src={rounde_cricle} alt="logo" />
             <img className ="svg__2" src={rounde_hand} alt="logo" />
           </div>
         </aside>
+        {/* 하단영역 */}
+        <footer id="footer">
+          <img className ="nav-logo-footer" src={Logo_W} alt="logo" />
+          <div className="footer-wrap">
+            <div className="footer-nav">
+              <ul className="footer-nav__1">
+                <li><a href="#" className="btn-W">SHOP</a></li>
+                <li><a href="#" className="btn-W">OUR STORY</a></li>
+                <li><a href="#" className="btn-W">OUR IMPACT</a></li>
+                <li><a href="#" className="btn-W">CONTACT</a></li>
+              </ul>
+              <ul className="footer-nav__2">
+                <li><a href="#" className="btn-W">TERMS & CONDITIONS</a></li>
+                <li><a href="#" className="btn-W">PRIVACY POLICY</a></li>
+                <li><a href="#" className="btn-W">FAQ</a></li>
+              </ul>
+              <ul className="footer-nav__3">
+                <li><a href="#" className="btn-W">INSTAGRAM</a></li>
+                <li><a href="#" className="btn-W">SPOTIFY</a></li>
+              </ul>
+            </div>
+            <p>© 2023 ZORA™</p>
+          </div>
+        </footer>
       </>
   );
 }; 

@@ -57,7 +57,7 @@ body{
     margin: 0 10px;
 }
 
-.nav-logo svg{
+.nav-logo{
     width: 115px;
     height: 35px;
     fill: var(--white);

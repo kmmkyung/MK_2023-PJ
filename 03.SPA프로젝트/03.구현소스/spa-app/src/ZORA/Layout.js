@@ -1,7 +1,90 @@
+import "./css/root.css";
+import "./css/core.css";
+import Logo_W from './data/Logo_W.svg';
+import rounde_cricle from './data/rounde_cricle.svg';
+import rounde_hand from './data/rounde_hand.svg';
+import $ from 'jquery'
+
+$(()=>{
+// 파비콘
+  favicon(); //---- 호출
+function favicon(){
+  let faviconCounter = 0;
+  const faviconImg = ['./images/favicon-frame-1.png',
+    './images/favicon-frame-2.png','./images/favicon-frame-3.png',
+    './images/favicon-frame-4.png','./images/favicon-frame-5.png',]
+
+  setInterval(function(){  
+    document.querySelector(".icon").setAttribute("href",faviconImg[faviconCounter])
+    if(faviconCounter == faviconImg.length-1){faviconCounter=0;}
+    else{faviconCounter++;}
+  },800)
+};
+
+// 마우스 커서
+const mouseCursor = $('.cursor');
+const mousePosition = mouseCursor.innerWidth()/2;
+console.log('cursor',mouseCursor); // ok
+console.log('cursorPosition',mousePosition); // 10
+
+document.body.onmousemove = function(e){
+  // console.log('x',event.pageX,'y',event.pageY); // ok
+  // 위치값
+  let positionX = e.clientX-mousePosition
+  let positionY = e.clientY-mousePosition
+  
+  // 위치값 이동
+  mouseCursor.css({top:positionY+"px"})
+  mouseCursor.css({left:positionX+"px"})
+}
+
+$("body").on("mousedown",function(){
+  // console.log("클릭!")
+  mouseCursor.css({transform:"scale(0.6)"})
+})
+$("body").on("mouseup",function(){
+  // console.log("클릭땜!")
+  mouseCursor.css({transform:"scale(1)"})
+})
+
+});
+
+
 const Layout = () => {
   return (
       <>
-
+        <div className ="cursor"></div>
+        <header>
+          <div className ="topBar">
+            <p>~~(˘̩̩̩ε˘̩ƪ)~~ 민경초콜릿</p>
+          </div>
+          <nav id="nav">
+            <button className ="ham -hidden">
+              <i className ="fa-solid fa-bars"></i>
+            </button>
+            <div className ="nav-L">
+              <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">LEARN</a></li>
+              </ul>
+            </div>
+            <img className ="nav-C nav-logo" src={Logo_W} alt="logo" />
+            <span className ="ir">ZORA</span>
+            <div className ="nav-R">
+              <ul>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">BAG(0)</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <aside>
+          <div className ="svg">
+            <img className ="svg__1" src={rounde_cricle} alt="logo" />
+            <img className ="svg__2" src={rounde_hand} alt="logo" />
+          </div>
+        </aside>
       </>
   );
 }; 

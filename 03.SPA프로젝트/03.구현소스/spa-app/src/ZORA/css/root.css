@@ -1,16 +1,6 @@
 @charset "utf-8";
 /* ZORA PJ root CSS - root.css */
 
-@font-face{
-  font-family:'Cako Regular';
-  src:url('../font/Cako-Regular.woff2');
-}
-
-@font-face{
-  font-family:'Atami Regular';
-  src:url('../font/Atami-Regular.woff');
-}
-
 *{
     outline: 1px dotted turquoise;
     /* outline: 1px dotted tomato; */
@@ -60,12 +50,12 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* 
+
 .-JSmove{
   opacity: 0;
   transform: translateY(30%);
   transition: all .5s;
-} */
+}
 
 /*----- CSS -----*/
 /* h2 */

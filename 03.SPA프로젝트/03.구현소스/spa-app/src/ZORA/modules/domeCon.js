@@ -15,7 +15,11 @@ jqFn(); // 호출
 
 // 컴포넌트
 function domCon(){
-    return()
+    return(
+    <>
+    
+    </>
+    )
 } //______________ domCon_______________//
 
 export default domCon;

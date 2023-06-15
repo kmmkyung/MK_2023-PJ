@@ -3,6 +3,7 @@ import "./css/core.css";
 import Logo_W from './data/Logo_W.svg';
 import rounde_cricle from './data/rounde_cricle.svg';
 import rounde_hand from './data/rounde_hand.svg';
+import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 
 $(()=>{
@@ -24,8 +25,8 @@ function favicon(){
 // MOUSE_CURSOR ______________________________________
 const mouseCursor = $('.cursor');
 const mousePosition = mouseCursor.innerWidth()/2;
-console.log('cursor',mouseCursor); // ok
-console.log('cursorPosition',mousePosition); // 10
+// console.log('cursor',mouseCursor); // ok
+// console.log('cursorPosition',mousePosition); // 10
 
 document.body.onmousemove = function(e){
   // console.log('x',event.pageX,'y',event.pageY); // ok
@@ -69,7 +70,7 @@ const Layout = () => {
         {/* 상단영역 네비게이션 */}
         <header>
           <div className ="topBar">
-            <p>~~(˘̩̩̩ε˘̩ƪ)~~ 민경초콜릿</p>
+            <p>~~(˘̩̩̩ε˘̩ƪ)~~ 성우야 안나와</p>
           </div>
           <nav id="nav">
             <button className ="ham -hidden">
@@ -99,6 +100,10 @@ const Layout = () => {
             <img className ="svg__2" src={rounde_hand} alt="logo" />
           </div>
         </aside>
+        {/* 메인 */}
+        <main id="cont">
+          <Outlet />
+        </main>
         {/* 하단영역 */}
         <footer id="footer">
           <img className ="nav-logo-footer" src={Logo_W} alt="logo" />

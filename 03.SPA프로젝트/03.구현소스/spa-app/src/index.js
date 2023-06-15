@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
-import Layout from './ZORA/Layout'
 import Main from './ZORA/Main'
+import Layout from './ZORA/Layout'
 
 export default function App(){
   return(

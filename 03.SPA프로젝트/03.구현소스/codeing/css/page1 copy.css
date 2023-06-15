@@ -1,0 +1,42 @@
+.ban-con{
+  position: relative;
+  width: 400px;
+  height: 500px;
+}
+
+.ban-con img{
+  width: 300px;
+}
+
+.ban-bg__color, .ban-bg>img{
+  width: 400px;
+}
+
+.bna-tit>h3{
+  font-size: 20px;
+}
+
+.bna-tit>p{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ban-bg{
+  width: 400px;
+  height: 514px;
+  position: relative;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.ban-bg__color{
+  height: 514px;
+  background-color: rgba(77, 64, 189, 0.274);
+}
+
+.ban-bg>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}

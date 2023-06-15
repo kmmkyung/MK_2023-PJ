@@ -99,9 +99,11 @@ document.body.addEventListener("mouseup",function(){
 // Chocolate 뽀각 _______________________________________________________
 const chocolateImg1 = document.querySelectorAll(".chocolatepack")
 const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
+console.log(chocolateImg1);
+
 chocolateImg2.forEach((ele,idx)=>{
-  // console.log('ele',ele);
-  // console.log('idx',idx);
+  console.log('ele',ele);
+  console.log('idx',idx);
   // 초콜릿에 마우스 오버시! 뽀각
   ele.addEventListener("mouseenter",function(){
     this.style.opacity=1;

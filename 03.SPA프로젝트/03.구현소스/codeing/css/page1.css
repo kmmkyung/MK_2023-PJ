@@ -43,15 +43,6 @@
   height: 100%;
 }
 
-/* 모바일 버전일때 nullbox에 높이값 추가 */
-.nullbox.h{
-  height: 80px;
-  background-color: var(--main2);
-}
-
-
-
-
 /* ------------------------------------------------------------ */
 .page2-text{
   margin: 120px 30px 400px;

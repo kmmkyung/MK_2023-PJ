@@ -1,17 +1,22 @@
-.ban-con{
+.bna-wrap{
   position: relative;
   width: 400px;
-  height: 500px;
+  height: 514px;
+}
+
+.ban-con{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
 }
 
 .ban-con img{
   width: 300px;
 }
 
-.ban-bg__color, .ban-bg>img{
-  width: 400px;
-}
-
+/* 글씨 */
 .bna-tit>h3{
   font-size: 20px;
 }
@@ -21,12 +26,17 @@
   margin-top: 10px;
 }
 
+/* 배경 */
 .ban-bg{
   width: 400px;
   height: 514px;
   position: relative;
-  border-radius: 30%;
+  border-radius: 40%;
   overflow: hidden;
+}
+
+.ban-bg__color, .ban-bg>img{
+  width: 400px;
 }
 
 .ban-bg__color{
@@ -39,4 +49,9 @@
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.bna-wrap:hover .ban-bg>img{
+  opacity: 1;
+
 }

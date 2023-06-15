@@ -14,13 +14,12 @@ function jqFn(){
 
 
 // 컴포넌트 출력용
-function domeCon(){
+function DomeCon(){
     return(
         <>
-        <section className="main">
-
+        <section id="main">
         {
-            domeCon_data.map((v,i)=>
+            domeCon_data.main.map((v,i)=>
                 <div className="domeCon__warp chocolate-warp" key={i}>
                 <div className="domeCon__con">
                     <div className="domeCon__img">
@@ -28,7 +27,7 @@ function domeCon(){
                         <img className="domeCon__img-2  chocolatebreak" src={v.img2} alt="이미지" />
                     </div>
                     <div className="domeCon__text">
-                        <h2 className="domeCon__text-tit -JSmove">{v.tit}+<br/>{v.tit2}</h2>
+                        <h2 className="domeCon__text-tit">{v.tit}<br/>{v.tit2}</h2>
                         <button className="domeCon__text-btn btn-B">{v.btn}</button>
                     </div>
                 </div>
@@ -42,4 +41,4 @@ function domeCon(){
         </>
     )
 } //______________ domCon_______________//
-export default domeCon;
+export default DomeCon;

@@ -1,10 +1,10 @@
-import domeCon from "./modules/domeCon";
+import DomeCon from "./modules/DomeCon";
 
 const Main = () => {
   return (
       <>
         {/* 1. 메인 main */}
-        <domeCon />
+        <DomeCon />
       </>
   );
 }; /////////// Main //////////////

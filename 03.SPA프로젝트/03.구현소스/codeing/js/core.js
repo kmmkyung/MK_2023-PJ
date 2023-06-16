@@ -28,12 +28,8 @@ document.querySelector(".nav-logo-footer").innerHTML=SvgData.logo;
 // 고정 원형 svg
 document.querySelector(".svg__1").innerHTML=SvgData.rounde_cricle;
 document.querySelector(".svg__2").innerHTML=SvgData.rounde_hand;
-
-// page1 svg
+// page1 center svg
 document.querySelector(".page1-svg").innerHTML=SvgData.page1;
-document.querySelector(".svg_oneshool").innerHTML=SvgData.oneschool;
-
-
 //______________________________________________________________
 
 // rounde SVG scroll rotate ______________________________________

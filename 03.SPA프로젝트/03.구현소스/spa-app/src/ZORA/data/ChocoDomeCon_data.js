@@ -1,5 +1,15 @@
 const ChocoDomeCon_data={
     "main":[
+        // {
+        //     "src":"./images/main.jpg",
+        //     "img1":"",
+        //     "img2":"",
+        //     "tit":"",
+        //     "tit2":"",
+        //     "cont":"",
+        //     "btn":"Buy now",
+        //     "btnclass":"btn-W"
+        // },
         {
             "src1":"",
             "img1":"./images/Dark_1.png",
@@ -20,36 +30,7 @@ const ChocoDomeCon_data={
             "btn":"Buy now",
             "btnclass":"btn-B"
         },
-        {
-            "src1":"",
-            "img1":"./images/Pecan_cherry_1.png",
-            "img2":"./images/Pecan_cherry_2.png",
-            "tit":"Pecan +",
-            "tit2":"Cherry",
-            "cont":"",
-            "btn":"Buy now",
-            "btnclass":"btn-B"
-        },
-        {
-            "src1":"",
-            "img1":"./images/Ginger_sesame_1.png",
-            "img2":"./images/Ginger_sesame_2.png",
-            "tit":"Ginger sesame",
-            "tit2":"",
-            "cont":"",
-            "btn":"Buy now",
-            "btnclass":"btn-B"
-        },
-        {
-            "src1":"",
-            "img1":"./images/Rose_Flower_1.png",
-            "img2":"./images/Rose_Flower_2.png",
-            "tit":"Rose Flower",
-            "tit2":"",
-            "cont":"",
-            "btn":"Buy now",
-            "btnclass":"btn-B"
-        },
+    
     ]
 }
 

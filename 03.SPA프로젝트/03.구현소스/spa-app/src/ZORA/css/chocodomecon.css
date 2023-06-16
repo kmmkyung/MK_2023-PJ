@@ -1,10 +1,11 @@
 #main{
   position: relative;
 }
+
 .ChocoDomeCon-warp{
-    width: 100%;
+  width: 100%;
 }
-  
+
 .ChocoDomeCon__con{
   display: flex;
   align-items: center;
@@ -13,7 +14,6 @@
   top: min(-15vw,-150px);
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
 .ChocoDomeCon__img{
@@ -60,7 +60,6 @@
   margin: 0 auto;
   width: 100%;
   height: 100vh;
-  background-color: var(--pink);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
 }

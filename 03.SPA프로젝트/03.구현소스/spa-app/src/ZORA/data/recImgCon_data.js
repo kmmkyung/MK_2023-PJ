@@ -1,10 +1,9 @@
 // recImgCon 컴포넌트 데이터 
 // src, title, cont
 
-const rec_con = {
+const recImg_con = {
     "main":[
-        {
-            "src":"",
+        {   "src":"",
             "tit":"Mindfully made chocolate",
             "cont":`Our mission is to champion a radical change in the way the world sees West African cocoa and make it synonymous with equity, inclusivity and meaningful connection. Cocoa is more than a crop.`,
             "btn":"Read more"
@@ -57,5 +56,3 @@ const rec_con = {
         }
     ]
 }
-
-export default rec_con;

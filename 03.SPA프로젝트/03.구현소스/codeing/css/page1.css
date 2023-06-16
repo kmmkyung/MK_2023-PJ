@@ -296,6 +296,7 @@
 }
 
 .svg_oneshool{
+  width: min(12vw,150px);
 }
 
 .page5-con__tit{

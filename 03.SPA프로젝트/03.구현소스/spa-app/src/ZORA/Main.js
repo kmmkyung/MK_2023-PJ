@@ -3,6 +3,7 @@ import MainFace from './MainFace';
 import ChocoDomeCon from "./modules/ChocoDomeCon";
 import RecCon from "./modules/RecCon";
 import DomeCon from './modules/DomeCon';
+import EmailForm from './EmailForm';
 
 const Main = () => {
   return (
@@ -12,7 +13,8 @@ const Main = () => {
         <RecCon cat="main" num="0"/>
         <ChocoDomeCon />
         <RecCon cat="main" num="1"/>
-        <DomeCon cat="main"/>
+        <DomeCon cat="main" num="0"/>
+        <EmailForm />
       </>
   );
 }; /////////// Main //////////////

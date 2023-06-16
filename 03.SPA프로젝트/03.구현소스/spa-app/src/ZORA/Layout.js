@@ -1,3 +1,4 @@
+import React from 'react';
 import "./css/root.css";
 import "./css/core.css";
 import Logo_W from './data/Logo_W.svg';

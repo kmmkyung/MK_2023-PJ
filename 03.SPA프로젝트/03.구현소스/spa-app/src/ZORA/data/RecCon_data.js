@@ -1,7 +1,7 @@
 // recImgCon 컴포넌트 데이터 
 // src, title, cont
 
-const rec_con = {
+const RecCon_data = {
     "main":[
         {   "src":"",
             "tit":"Mindfully made chocolate",
@@ -57,4 +57,4 @@ const rec_con = {
     ]
 }
 
-export default rec_con;
+export default RecCon_data;

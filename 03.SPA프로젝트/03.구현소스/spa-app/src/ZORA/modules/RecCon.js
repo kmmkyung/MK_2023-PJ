@@ -2,7 +2,7 @@
 // CSS
 import "../css/reccon.css";
 // Data
-import rec_con from "../data/RecCon_data";
+import RecCon_data from "../data/RecCon_data";
 // 제이쿼리
 import $ from "jquery"
 
@@ -19,13 +19,13 @@ function RecCon(props){
             <section id="reccon">
                 <div className="reccon-con">
                     {
-                        rec_con[props.cat][props.num].src !== "" &&
-                        <img src={rec_con[props.cat][props.num].src} alt="이미지" />
+                        RecCon_data[props.cat][props.num].src !== "" &&
+                        <img src={RecCon_data[props.cat][props.num].src} alt="이미지" />
                     }
                     <div className="reccon-text">
-                        <h2>{rec_con[props.cat][props.num].tit}</h2>
-                        <p>{rec_con[props.cat][props.num].cont}</p>
-                        <button className="reccon-text__btn btn-B">{rec_con[props.cat][props.num].btn}</button>
+                        <h2>{RecCon_data[props.cat][props.num].tit}</h2>
+                        <p>{RecCon_data[props.cat][props.num].cont}</p>
+                        <button className="reccon-text__btn btn-B">{RecCon_data[props.cat][props.num].btn}</button>
                     </div>
                 </div>
             </section>

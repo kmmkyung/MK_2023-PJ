@@ -1,0 +1,51 @@
+.Email-wrap{
+  padding: 20px 20px 50px;
+}
+
+.Email-con{
+  text-align: center;
+}
+
+.Email-con__tit{
+  font-size: var(--font-size-L);
+  font-family: var(--Coko);
+  white-space: nowrap;
+}
+
+.Email-con__text{
+  margin: 5vh 0;
+  font-family: var(--Atami);
+  font-size: var(--font-size-M);
+}
+
+.Email-form{
+  text-align: center;
+  position: relative;
+}
+
+.Email-form label{
+  padding: 10px;
+  position: absolute;
+  pointer-events: none;
+  font-size: var(--font-size-S);
+  font-family: var(--Atami);
+}
+
+.Email-form__push input{
+  width: 100%;
+  font-size: var(--font-size-S);
+  font-family: var(--Atami);
+  border-style: none;
+  background-color: var(--main);
+  border-bottom: 1px solid var(--black);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Email-form__btn{
+  border-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}

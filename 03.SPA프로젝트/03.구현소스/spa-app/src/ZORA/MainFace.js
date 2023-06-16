@@ -1,3 +1,4 @@
+import React from 'react';
 import page1 from './data/page1.svg';
 // CSS
 import "./css/mainface.css";

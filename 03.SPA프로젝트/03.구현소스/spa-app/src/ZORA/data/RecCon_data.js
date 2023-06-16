@@ -1,7 +1,7 @@
 // recImgCon 컴포넌트 데이터 
 // src, title, cont
 
-const recImg_con = {
+const rec_con = {
     "main":[
         {   "src":"",
             "tit":"Mindfully made chocolate",
@@ -16,7 +16,7 @@ const recImg_con = {
         },
         {
             "src":"./images/Inspire women_1",
-            "tit":"Inspire women to empower women",
+            "tit":"Inspire women^to empower women",
             "cont":`Women are often the ones most marginalised by the current system. We’re working closely to inspire, empower and amplify the voices of female farmers, producers, artisans and aficionados. As a woman owned and operated company, we are proud to support our sisters from all backgrounds, stepping into the realm of change and possibility.`,
             "btn":"Read more"
         }
@@ -56,3 +56,5 @@ const recImg_con = {
         }
     ]
 }
+
+export default rec_con;

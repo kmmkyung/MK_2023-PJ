@@ -165,13 +165,6 @@
   border-top-right-radius: 9999px;
 }
 
-/* #chocolate-2,
-#chocolate-3,
-#chocolate-4,
-#chocolate-5{
-  position: relative;
-} */
-
 .chocolate-2__warp{
   /* top: -100vh; */
   /* transform: translateY(-100vh); */
@@ -278,10 +271,11 @@
 /* ------------------------------------------------------------ */
 .page5-wrap{
   display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .page5-img img{
-<<<<<<< HEAD
   width: 100%;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -302,7 +296,6 @@
 }
 
 .svg_oneshool{
-  width: min(12vw,150px);
 }
 
 .page5-con__tit{
@@ -324,9 +317,5 @@
 
 .page5-con__btn::after{
   background-color: var(--black);
-=======
-  width: 80vw;
->>>>>>> parent of f5b47c2 (s)
 }
 /* ------------------------------------------------------------ */
-

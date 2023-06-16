@@ -1,54 +1,42 @@
 // 돔 컴포넌트 - domCon.js
 // CSS
-// import "../css/chocodomecon.css";
+import "../css/domecon.css";
 // Data
-// import domeCon_data from "../data/ChocoDomeCon_data";
-// 제이쿼리
-// import $ from "jquery"
+import dome_con from '../data/DomeCon_data';
+// 제이쿼리 
+import $ from "jquery"
 
 function jqFn(){
     $(()=>[ 
-        console.log('domeCon로딩')
+        console.log('DomeCon로딩')
     ]); //--- JQB ---//
 } //_______________ jqFn _______________//
-
-<<<<<<< HEAD
 jqFn();
 
-=======
->>>>>>> parent of f5b47c2 (s)
 
 // 컴포넌트 출력용
-function DomeCon(){
-    return(
-        <>
-<<<<<<< HEAD
-    
-        {/* {jqFn()} */}
-=======
-        <section id="main">
-        {
-            domeCon_data.main.map((v,i)=>
-                <div className="domeCon__warp chocolate-warp" key={i}>
-                <div className="domeCon__con">
-                    <div className="domeCon__img">
-                        <img className="domeCon__img-1 chocolatepack" src={v.img1} alt="이미지" />
-                        <img className="domeCon__img-2  chocolatebreak" src={v.img2} alt="이미지" />
-                    </div>
-                    <div className="domeCon__text">
-                        <h2 className="domeCon__text-tit">{v.tit}<br/>{v.tit2}</h2>
-                        <button className="domeCon__text-btn btn-B">{v.btn}</button>
-                    </div>
-                </div>
-                <div className="domeCon__back"></div>
-            </div>
-
-                )
-            }
-            </section>
-            {jqFn()}
->>>>>>> parent of f5b47c2 (s)
-        </>
-    )
+function DomeCon(props){
+  return(
+    <>
+  <section id='domecon'>
+    <div className="DomeCon-wrap">
+      <div className="DomeCon-img">
+        <img src={dome_con[props.cat].src} alt="img"/>
+        <p className="DomeCon-img__cation">
+          <strong></strong><br/>
+          <strong></strong>
+        </p>
+      </div>
+      <div className="DomeCon-con">
+        <div className="svg_oneshool"></div>
+        <h2 className="DomeCon-con__tit">{dome_con[props.cat].tit}</h2>
+        <p className="DomeCon-con__text"></p>
+        <button className="DomeCon-con__btn"></button>
+      </div>
+    </div>
+  </section>
+    {/* {jqFn()} */}
+    </>
+  )
 } //______________ domCon_______________//
-// export default DomeCon;
+export default DomeCon;

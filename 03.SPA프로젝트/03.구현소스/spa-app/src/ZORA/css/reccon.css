@@ -1,0 +1,33 @@
+.reccon-text{
+  margin: 100px 30px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reccon-text h2{
+  font-size: var(--font-size-L);
+  text-align: center;
+  font-family: var(--Coko);
+}
+
+.reccon-text p{
+  font-family: var(--Atami);
+  font-size: var(--font-size-M);
+  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.reccon-text__btn{
+  font-size: var(--font-size-M);
+}
+
+.reccon-text__btn::after{
+  background-color: var(--black);
+}
+
+.reccon-con img{
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+}

@@ -1,0 +1,73 @@
+#main{
+  position: relative;
+}
+.ChocoDomeCon-warp{
+    width: 100%;
+}
+  
+.ChocoDomeCon__con{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: min(-15vw,-150px);
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.ChocoDomeCon__img{
+  position: relative;
+}
+
+.chocolatepack, .chocolatebreak{
+  width: min(50vw,450px);
+}
+
+.chocolatebreak{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.ChocoDomeCon__text-tit{
+  font-size: var(--font-size-tit);
+  font-family: var(--Coko);
+  text-align: center;
+  margin: 5vh 0;
+
+}
+
+.ChocoDomeCon__text-btn{
+  display: block;
+  margin: 0 auto;
+  font-size: var(--font-size-M);
+}
+
+.ChocoDomeCon__text-btn::after{
+  background-color: var(--black);
+}
+
+.ChocoDomeCon__back{
+  /* margin-top: 300px; */
+  width: 100%;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.chocolate-5__back{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pink);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.chocolate-5__backwrap{
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}

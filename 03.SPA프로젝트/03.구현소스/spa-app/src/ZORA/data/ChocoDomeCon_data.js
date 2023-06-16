@@ -1,4 +1,4 @@
-const domeCon_data={
+const ChocoDomeCon_data={
     "main":[
         {
             "src1":"",
@@ -53,4 +53,4 @@ const domeCon_data={
     ]
 }
 
-export default domeCon_data;
+export default ChocoDomeCon_data;

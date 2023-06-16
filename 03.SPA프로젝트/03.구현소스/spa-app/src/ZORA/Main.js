@@ -1,14 +1,15 @@
-import DomeCon from "./modules/DomeCon";
+import MainFace from './MainFace';
+import ChocoDomeCon from "./modules/ChocoDomeCon";
 import RecCon from "./modules/RecCon";
 
 const Main = () => {
   return (
       <>
         {/* 1. 메인 main */}
+        <MainFace />
         <RecCon cat="main" num="0"/>
-        <DomeCon />
+        <ChocoDomeCon />
         <RecCon cat="main" num="1"/>
-        
       </>
   );
 }; /////////// Main //////////////

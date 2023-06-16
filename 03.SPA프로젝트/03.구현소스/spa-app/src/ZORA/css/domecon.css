@@ -1,6 +1,7 @@
-
+#main{
+  position: relative;
+}
   .chocolate-warp{
-    position: relative;
     width: 100%;
   }
   
@@ -52,59 +53,9 @@
   .domeCon__back{
     /* margin-top: 300px; */
     width: 100%;
-    height: 480vh;
-    background-color: var(--org);
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
   }
-  
-.chocolate-2__warp{
-    position: absolute;
-    top: 100vh;
-  }
-  .chocolate-3__warp{
-    position: absolute;
-    top: 200vh;
-  }
-  .chocolate-4__warp{
-    position: absolute;
-    top: 300vh;
-  }
-  .chocolate-5__warp{
-    position: absolute;
-    top: 400vh;
-  }
-  
-  
-  .chocolate-2__back{
-    width: 100%;
-    height: 200vh;
-    background-color: var(--blue);
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-  }
-  .chocolate-3__back{
-    width: 100%;
-    height: 200vh;
-    background-color: var(--red);
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-  }
-  .chocolate-4__back{
-    width: 100%;
-    height: 180vh;
-    background-color: var(--yell);
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-  }
-  
-  .chocolate-5__backwrap{
-    margin: 0 auto;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-  }
-  
   .chocolate-5__back{
     margin: 0 auto;
     width: 100%;
@@ -112,5 +63,11 @@
     background-color: var(--pink);
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
-    
+  }
+
+  .chocolate-5__backwrap{
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
   }

@@ -12,6 +12,50 @@ function jqFn(){
     ]); //--- JQB ---//
 } //_______________ jqFn _______________//
 
+const setcss_wrap=[
+    {
+        position: "relative"
+    },
+    {
+        top:"100vh",
+        position: "absolute",
+    },
+    {
+        top:"200vh",
+        position: "absolute",
+    },
+    {
+        top:"300vh",
+        position: "absolute",
+    },
+    {
+        top:"400vh",
+        position: "absolute",
+    }
+]
+const setcss_bg = [
+    {
+        height: "480vh",
+        backgroundColor:"var(--org)"
+    },
+    {
+        height:"200vh",
+        backgroundColor:"var(--blue)"
+    },
+    {
+        height:"200vh",
+        backgroundColor:"var(--red)"
+    },
+    {
+        height:"180vh",
+        backgroundColor:"var(--yell)"
+    },
+    {
+        height:"100vh",
+        backgroundColor:"var(--pink)"
+    },
+];
+
 
 // 컴포넌트 출력용
 function DomeCon(){
@@ -20,24 +64,32 @@ function DomeCon(){
         <section id="main">
         {
             domeCon_data.main.map((v,i)=>
-                <div className="domeCon__warp chocolate-warp" key={i}>
-                <div className="domeCon__con">
-                    <div className="domeCon__img">
-                        <img className="domeCon__img-1 chocolatepack" src={v.img1} alt="이미지" />
-                        <img className="domeCon__img-2  chocolatebreak" src={v.img2} alt="이미지" />
+                <div className="domeCon__warp chocolate-warp" key={i} style={setcss_wrap[i]}>
+                    <div className="domeCon__con">
+                        <div className="domeCon__img">
+                            <img className="domeCon__img-1 chocolatepack" src={v.img1} alt="이미지" />
+                            <img className="domeCon__img-2  chocolatebreak" src={v.img2} alt="이미지" />
+                        </div>
+                        <div className="domeCon__text">
+                            <h2 className="domeCon__text-tit">{v.tit}<br/>{v.tit2}</h2>
+                            <button className="domeCon__text-btn btn-B">{v.btn}</button>
+                        </div>
                     </div>
-                    <div className="domeCon__text">
-                        <h2 className="domeCon__text-tit">{v.tit}<br/>{v.tit2}</h2>
-                        <button className="domeCon__text-btn btn-B">{v.btn}</button>
-                    </div>
+                    {
+                        i !== 4 && 
+                        <div className="domeCon__back" data-seq={i} style={setcss_bg[i]}></div>                
+                    }
+                    {
+                        i===4 &&
+                        <div className="chocolate-5__backwrap">
+                            <div className="domeCon__back" data-seq={i} style={setcss_bg[i]}></div>
+                        </div>
+                    }
                 </div>
-                <div className="domeCon__back"></div>
-            </div>
-
-                )
-            }
-            </section>
-            {jqFn()}
+            )
+        }
+        </section>
+        {jqFn()}
         </>
     )
 } //______________ domCon_______________//

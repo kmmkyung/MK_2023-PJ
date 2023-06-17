@@ -33,4 +33,4 @@ function RecCon(props){
         </>
     )
 } //______________ RecCon _______________//
-export default RecCon;
+export default RecCon;₩

@@ -32,7 +32,7 @@
 }
 
 .Email-form__push input{
-  width: 100%;
+  width: 80%;
   font-size: var(--font-size-S);
   font-family: var(--Atami);
   border-style: none;
@@ -47,5 +47,6 @@
   position: absolute;
   top: 0;
   right: 0;
+  left: auto;
   padding: 10px;
 }

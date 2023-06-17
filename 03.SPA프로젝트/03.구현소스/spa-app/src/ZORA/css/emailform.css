@@ -19,34 +19,37 @@
 }
 
 .Email-form{
-  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.Email-form__push{
   position: relative;
-}
-
-.Email-form label{
-  padding: 10px;
-  position: absolute;
-  pointer-events: none;
   font-size: var(--font-size-S);
   font-family: var(--Atami);
 }
 
-.Email-form__push input{
-  width: 80%;
-  font-size: var(--font-size-S);
-  font-family: var(--Atami);
+.push-em{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 5px;
   border-style: none;
   background-color: var(--main);
   border-bottom: 1px solid var(--black);
-  padding: 10px;
-  box-sizing: border-box;
 }
 
-.Email-form__btn{
+.Email-form label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.push-btn{
   border-style: none;
   position: absolute;
   top: 0;
   right: 0;
   left: auto;
-  padding: 10px;
 }

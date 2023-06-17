@@ -8,17 +8,19 @@ const EmailForm = () => {
   return(
     <>
   <section id="Email">
-    <div class="Email-wrap">
-      <div class="Email-con">
-        <h3 class="Email-con__tit">Big love for<br/>little rituals</h3>
-        <p class="Email-con__text">We only send nice emails. Promise.</p>
+    <div className="Email-wrap">
+      <div className="Email-con">
+        <h3 className="Email-con__tit">Big love for<br/>little rituals</h3>
+        <p className="Email-con__text">We only send nice emails. Promise.</p>
       </div>
-      <form class="Email-form">
-        <div class="Email-form__push">
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" placeholder="EMAIL" />
+      <form className="Email-form">
+        <div className="Email-form__push">
+          <input className="push-em" type="email" id="email" placeholder="EMAIL" />
+          <div>
+            <label for="email">EMAIL</label>
+            <input className="push-btn" type="submit" value="→" /> 
+          </div>
         </div>
-        <input class="Email-form__btn" type="submit" value="→" /> 
       </form>
     </div>
   </section>

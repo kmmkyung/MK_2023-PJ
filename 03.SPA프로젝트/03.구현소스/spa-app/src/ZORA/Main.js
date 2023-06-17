@@ -4,6 +4,7 @@ import ChocoDomeCon from "./modules/ChocoDomeCon";
 import RecCon from "./modules/RecCon";
 import DomeCon from './modules/DomeCon';
 import EmailForm from './EmailForm';
+import RecBlur from './modules/RecBlur';
 
 const Main = () => {
   return (
@@ -12,8 +13,9 @@ const Main = () => {
         <MainFace />
         <RecCon cat="main" num="0"/>
         <ChocoDomeCon />
-        <RecCon cat="main" num="1"/>
+        {/* <RecBlur/> */}
         <DomeCon cat="main" num="0"/>
+        {/* <RecCon cat="main" num="2"/> */}
         <EmailForm />
       </>
   );

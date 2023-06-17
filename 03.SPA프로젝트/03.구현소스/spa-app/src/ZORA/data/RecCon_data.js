@@ -9,13 +9,7 @@ const RecCon_data = {
             "btn":"Read more"
         },
         {
-            "src":"./images/zora-collection.jpg",
-            "tit":"The ZORA Collection",
-            "cont":`Experience the ZORA collection with our exploration pack – a selection of indulgent sensory delights to reward yourself or treat someone special.`,
-            "btn":"Buy now"
-        },
-        {
-            "src":"./images/Inspire women_1",
+            "src":"./images/Inspire women_1.jpg",
             "tit":"Inspire women^to empower women",
             "cont":`Women are often the ones most marginalised by the current system. We’re working closely to inspire, empower and amplify the voices of female farmers, producers, artisans and aficionados. As a woman owned and operated company, we are proud to support our sisters from all backgrounds, stepping into the realm of change and possibility.`,
             "btn":"Read more"
@@ -23,7 +17,7 @@ const RecCon_data = {
     ],
     "Our_Story":[
         {
-            "src":"./images/Our_Story_4",
+            "src":"./images/Our_Story_4.jpg",
             "tit":"Big love for little rituals",
             "cont":`We set out to make chocolate everyone can feel good about purchasing, consuming and gifting. For us, chocolate has always been about bliss, mindfulness and love. It speaks to minds, hearts and souls, encouraging us to savour those little moments we take for ourselves and the joy we share with others.`,
             "btn":""

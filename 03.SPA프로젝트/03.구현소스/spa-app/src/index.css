@@ -47,6 +47,6 @@ button{
     cursor: none;
 }
 
-a:focus, button:focus{
+a:focus, button:focus, input:focus{
     border: none;
 }

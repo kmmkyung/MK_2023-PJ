@@ -15,7 +15,7 @@ const Main = () => {
         <ChocoDomeCon />
         {/* <RecBlur/> */}
         <DomeCon cat="main" num="0"/>
-        {/* <RecCon cat="main" num="2"/> */}
+        <RecCon cat="main" num="1"/>
         <EmailForm />
       </>
   );

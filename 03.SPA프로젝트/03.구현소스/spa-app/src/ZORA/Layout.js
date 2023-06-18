@@ -1,9 +1,9 @@
 import React from 'react';
 import "./css/root.css";
 import "./css/core.css";
-import Logo_W from './data/Logo_W.svg';
-import rounde_cricle from './data/rounde_cricle.svg';
-import rounde_hand from './data/rounde_hand.svg';
+import Logo_W from './data/svg/Logo_W.svg';
+import rounde_cricle from './data/svg/rounde_cricle.svg';
+import rounde_hand from './data/svg/rounde_hand.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 

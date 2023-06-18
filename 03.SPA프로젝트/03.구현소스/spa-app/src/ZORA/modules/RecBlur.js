@@ -13,16 +13,16 @@ function jqFn(){
 } //_______________ jqFn _______________//
 jqFn();
 
-function RecBlur(){
+function RecBlur(props){
     return(
         <>        
             <section id="recblur">
                 <div className="recblur-con">
-                    <img src="" alt="이미지"  />
+                    <img src={RecCon_data[props.num].src} alt="이미지"  />
                     <div className="recblur-text">
-                        <h2></h2>
-                        <p></p>
-                        <button className="recblur-text__btn btn-B"></button>
+                        <h2>{RecCon_data[props.num].tit}</h2>
+                        <p>{RecCon_data[props.num].con}</p>
+                        <button className="recblur-text__btn btn-B">{RecCon_data[props.num].btn}</button>
                     </div>
                 </div>
             </section>

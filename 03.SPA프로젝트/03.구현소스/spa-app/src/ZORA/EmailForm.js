@@ -3,6 +3,9 @@ import React from 'react';
 import "./css/emailform.css";
 // 제이쿼리
 import $ from "jquery"
+$(()=>{
+  
+})
 
 const EmailForm = () => {
   return(
@@ -17,7 +20,7 @@ const EmailForm = () => {
         <div className="Email-form__push">
           <input className="push-em" type="email" id="email" placeholder="EMAIL" />
           <div>
-            <label for="email">EMAIL</label>
+            <label htmlFor="email">EMAIL</label>
             <input className="push-btn" type="submit" value="→" /> 
           </div>
         </div>

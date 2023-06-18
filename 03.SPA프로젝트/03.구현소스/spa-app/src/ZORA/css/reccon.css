@@ -1,5 +1,8 @@
-.reccon-text{
+.reccon-con{
   margin: 20vh 20px;
+}
+
+.reccon-text{
   display: flex;
   flex-direction: column;
   align-items: center;

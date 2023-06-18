@@ -1,17 +1,17 @@
-.reccon-text{
-  margin: 20px 30px 40vh;
+.recblur-text{
+  margin: 0 20px 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.reccon-text h2{
+.recblur-text h2{
   font-size: var(--font-size-L);
   text-align: center;
   font-family: var(--Coko);
 }
 
-.reccon-text p{
+.recblur-text p{
   font-family: var(--Atami);
   font-size: var(--font-size-M);
   text-align: center;
@@ -19,15 +19,15 @@
   margin: 50px auto;
 }
 
-.reccon-text__btn{
+.recblur-text__btn{
   font-size: var(--font-size-M);
 }
 
-.reccon-text__btn::after{
+.recblur-text__btn::after{
   background-color: var(--black);
 }
 
-.reccon-con img{
+.recblur-con img{
   width: 100%;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
 }

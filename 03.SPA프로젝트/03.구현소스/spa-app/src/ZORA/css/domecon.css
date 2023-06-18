@@ -8,11 +8,11 @@
   padding: 20px;
 }
 
-.page5-img{
+.domecon-img{
   margin: 0 auto;
 }
 
-.page5-img img {
+.domecon-img img {
     width: min(85vw,600px);
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;

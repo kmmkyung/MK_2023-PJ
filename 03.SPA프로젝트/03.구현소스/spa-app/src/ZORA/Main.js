@@ -5,6 +5,7 @@ import RecCon from "./modules/RecCon";
 import DomeCon from './modules/DomeCon';
 import EmailForm from './EmailForm';
 import RecBlur from './modules/RecBlur';
+import DomeSlide from './DomeSlide';
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
         <RecBlur num="0"/>
         <DomeCon cat="main" num="0"/>
         <RecCon cat="main" num="1"/>
+        <DomeSlide/>
         <EmailForm />
       </>
   );

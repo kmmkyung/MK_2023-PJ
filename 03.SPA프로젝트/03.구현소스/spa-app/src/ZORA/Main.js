@@ -13,7 +13,7 @@ const Main = () => {
         <MainFace />
         <RecCon cat="main" num="0"/>
         <ChocoDomeCon />
-        <RecBlur/>
+        <RecBlur num="0"/>
         <DomeCon cat="main" num="0"/>
         <RecCon cat="main" num="1"/>
         <EmailForm />

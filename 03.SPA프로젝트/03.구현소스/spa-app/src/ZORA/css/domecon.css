@@ -8,11 +8,18 @@
   padding: 20px;
 }
 
-.domecon-img img{
-  width: 100%;
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+.page5-img{
+  margin: 0 auto;
 }
+
+.page5-img img {
+    width: min(85vw,600px);
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
 
 .domecon-img__cation{
   font-family: var(--Atami);

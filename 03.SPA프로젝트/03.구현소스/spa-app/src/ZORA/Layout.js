@@ -79,11 +79,17 @@ const Layout = () => {
             </button>
             <div className ="nav-L">
               <ul>
-                <li><a href="#">SHOP</a></li>
+                <li>
+                  <Link to="/shop">
+                    <a href="#">SHOP</a>
+                  </Link>
+                </li>
                 <li><a href="#">LEARN</a></li>
               </ul>
             </div>
-            <img className ="nav-C nav-logo" src={Logo_W} alt="logo" />
+            <Link to="/main">
+              <img className ="nav-C nav-logo" src={Logo_W} alt="logo" />
+            </Link>
             <span className ="ir">ZORA</span>
             <div className ="nav-R">
               <ul>

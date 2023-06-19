@@ -17,7 +17,7 @@
 }
 
 body{
-  cursor: none;
+  /* cursor: none; */
 }
 
 :root{
@@ -34,7 +34,7 @@ body{
   
   
   /* FONTSIZE */
-  --font-size-S: 1.3rem;
+  --font-size-S: 1.4rem;
   --font-size-M: 2rem;
   --font-size-L:  min(8vw,6rem);
   --font-size-menu: 1.4rem;
@@ -99,4 +99,4 @@ button{
     width: 0%;
     height: 1px;  
   }
-  
+

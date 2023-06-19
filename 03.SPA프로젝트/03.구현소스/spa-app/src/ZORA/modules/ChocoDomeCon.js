@@ -2,6 +2,7 @@
 // CSS
 import "../css/chocodomecon.css";
 // Data
+import { Link, Outlet } from "react-router-dom";
 import ChocoDomeCon_data from "../data/ChocoDomeCon_data";
 // 제이쿼리
 import $ from "jquery";
@@ -104,7 +105,7 @@ function ChocoDomeCon() {
                   {v.tit2}
                 </h2>
                 <button className="ChocoDomeCon__text-btn btn-B">
-                  {v.btn}
+                <Link to="/subitemdark">{v.btn}</Link>
                 </button>
               </div>
             </div>

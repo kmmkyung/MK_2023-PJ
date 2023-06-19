@@ -7,9 +7,9 @@ import RecCon_data from "../data/RecBlur_data";
 import $ from "jquery"
 
 function jqFn(){
-    $(()=>[ 
+    $(()=>{ 
         console.log('RecBlur로딩')
-    ]); //--- JQB ---//
+    }); //--- JQB ---//
 } //_______________ jqFn _______________//
 jqFn();
 

@@ -7,9 +7,9 @@ import DomeCon_data from '../data/DomeCon_data';
 import $ from "jquery"
 
 function jqFn(){
-    $(()=>[ 
+    $(()=>{ 
         console.log('DomeCon로딩')
-    ]); //--- JQB ---//
+  }); //--- JQB ---//
 } //_______________ jqFn _______________//
 jqFn();
 

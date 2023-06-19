@@ -7,9 +7,9 @@ import RecCon_data from "../data/RecCon_data";
 import $ from "jquery"
 
 function jqFn(){
-    $(()=>[ 
+    $(()=>{ 
         console.log('RecCon로딩')
-    ]); //--- JQB ---//
+    }); //--- JQB ---//
 } //_______________ jqFn _______________//
 jqFn();
 

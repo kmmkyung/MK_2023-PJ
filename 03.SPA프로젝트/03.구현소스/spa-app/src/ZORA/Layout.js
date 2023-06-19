@@ -87,7 +87,6 @@ const Layout = () => {
             <span className ="ir">ZORA</span>
             <div className ="nav-R">
               <ul>
-                <li><a href="#">CONTACT</a></li>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">BAG(0)</a></li>
               </ul>

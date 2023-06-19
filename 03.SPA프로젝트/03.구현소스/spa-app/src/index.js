@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
-import Main from './ZORA/Main'
 import Layout from './ZORA/Layout'
+import Main from './ZORA/Main'
+import Shop from './ZORA/Shop'
 
 export default function App(){
   return(
@@ -13,6 +14,7 @@ export default function App(){
               <Route path="/" element={<Layout />}>
                   <Route index element={<Main />} />
                   <Route path="main" element={<Main />} />
+                  <Route path='shop' element={<Shop />} />
               </Route>
           </Routes>
       </BrowserRouter>

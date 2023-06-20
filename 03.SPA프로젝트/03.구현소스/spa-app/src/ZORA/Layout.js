@@ -6,6 +6,7 @@ import rounde_cricle from './data/svg/rounde_cricle.svg';
 import rounde_hand from './data/svg/rounde_hand.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
+import MainLogo from './modules/SVG Logo/MainLogo';
 
 $(()=>{
 // <head> 파비콘 함수 + 호출 _____________________________________
@@ -88,7 +89,8 @@ const Layout = () => {
               </ul>
             </div>
             <Link to="/main">
-              <img className ="nav-C nav-logo" src={Logo_W} alt="logo" />
+              <MainLogo/>
+              {/* <img className ="nav-C nav-logo" src={Logo_W} alt="logo" /> */}
             </Link>
             <span className ="ir">ZORA</span>
             <div className ="nav-R">

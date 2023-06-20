@@ -17,7 +17,7 @@ body{
     background-color:#f253b9;
     border-radius: 100%;
     position: fixed;
-    z-index: 999999999999999999;
+    z-index: 999;
     pointer-events: none;
     transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -46,7 +46,6 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: var(--main2);
 }
 
 .nav-L{
@@ -101,7 +100,6 @@ body{
 #footer{
     background-color: var(--black);
     padding: 30px;
-    height: 30vh;
 }
 
 .nav-logo-footer{
@@ -135,6 +133,7 @@ color: var(--white);
 
 .footer-wrap p{
     color: var(--white);
+    margin-top: 20px;
 }
 
 /* round svg */
@@ -190,7 +189,7 @@ color: var(--white);
 }
 
 /* 모바일 */
-
+/* 
 .Mnav-wrap{
     display: flex;
     width: 100%;
@@ -237,4 +236,4 @@ color: var(--white);
 .Mlogin h3{
     font-size: var(--font-size-M);
     font-family: var(--Atami);
-}
+} */

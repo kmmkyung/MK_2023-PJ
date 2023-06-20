@@ -16,10 +16,8 @@ const SubItem_data=[
         "./images/Sub_brownie.jpg",
         "./images/Sub_creamy.jpg"
       ],
-      Terroir:"Suhum, Ghana",
-      Roast:"Dark",
-      Taste:"Almond, Honey, Fruity",
-      Texture:"Creamy"
+      tit:["Terroir","Roast","Taste","Texture"],
+      about:["Suhum, Ghana","Dark","Almond, Honey, Fruity","Creamy"]
     },
     next:["Ginger+^Sesame","Fleur de Sel"],
     nextsrc_1:["./images/Ginger_sesame_1.png","./images/Ginger_sesame_2.png"],
@@ -38,10 +36,8 @@ const SubItem_data=[
         "./images/Sub_salt.jpg",
         "./images/Sub_Smooth_crunch.jpg"
       ],
-      Terroir:"Suhum, Ghana",
-      Roast:"Dark",
-      Taste:"Herbal, Honey",
-      Texture:"Smooth & subtle crunch"
+      tit:["Terroir","Roast","Taste","Texture"],
+      about:["Suhum, Ghana","Dark","Herbal, Honey","Smooth & subtle crunch"]
     },
     next:["Recan+^Cherry","Rose Flower"],
     nextsrc_1:["./images/Pecan_cherry_1.png","./images/Pecan_cherry_2.png"],
@@ -60,10 +56,8 @@ const SubItem_data=[
         "./images/Sub_cherry.jpg",
         "./images/Sub_pecans.jpg"
       ],
-      Terroir:"Suhum, Ghana",
-      Roast:"Dark",
-      Taste:"Fruity, Honey",
-      Texture:"Gentle crunch"
+      tit:["Terroir","Roast","Taste","Texture"],
+      about:["Suhum, Ghana","Dark","Fruity, Honey","Gentle crunch"]
     },
     next:["Fleur de Sel","Rose Flower"],
     nextsrc_1:["./images/Fleur_de_Sel_1.png","./images/Fleur_de_Sel_2.png"],
@@ -82,10 +76,8 @@ const SubItem_data=[
         "./images/Sub_ginger.jpg",
         "./images/Sub_sesame.jpg"
       ],
-      Terroir:"Suhum, Ghana",
-      Roast:"Dark",
-      Taste:"Fresh fruit, nutty",
-      Texture:"Delicate crunch"
+      tit:["Terroir","Roast","Taste","Texture"],
+      about:["Suhum, Ghana","Dark","Fresh fruit, nutty","Delicate crunch"]
     },
     next:["Rose Flower","Pecan + Cherry"],
     nextsrc_1:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"],
@@ -104,10 +96,8 @@ const SubItem_data=[
         "./images/Sub_Rose.jpg",
         "./images/Sub_Smooth.jpg"
       ],
-      Terroir:"Suhum, Ghana",
-      Roast:"Dark",
-      Taste:"Floral, Vanilla",
-      Texture:"Smooth"
+      tit:["Terroir","Roast","Taste","Texture"],
+      about:["Suhum, Ghana","Dark","Floral, Vanilla","Smooth"]
     },
     next:["Pecan + Cherry","Dark"],
     nextsrc_1:["./images/Pecan_cherry_1.png","./images/Pecan_cherry_2.png"],

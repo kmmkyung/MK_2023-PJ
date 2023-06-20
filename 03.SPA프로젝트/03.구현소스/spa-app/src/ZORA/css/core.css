@@ -150,7 +150,7 @@ color: var(--white);
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px;
+    width: min(12vw,150px);
 }
 
 .roundDT{
@@ -210,8 +210,12 @@ color: var(--white);
 
 }
 
-.icon{
+.ham, .close{
     font-size: var(--font-size-M);
+}
+
+.ham{
+    color: var(--white);
 }
 
 .Mmenu{

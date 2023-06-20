@@ -6,7 +6,10 @@ import rounde_cricle from './data/svg/rounde_cricle.svg';
 import rounde_hand from './data/svg/rounde_hand.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
-import MainLogo from './modules/SVG Logo/MainLogo';
+import MainLogo from './modules/SVG_Logo/MainLogo';
+
+/* 폰트어썸 임포트 */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
 // <head> 파비콘 함수 + 호출 _____________________________________
@@ -62,6 +65,8 @@ function roundSvgMove(){
   })
 } //---- roundSvgMove 함수 ----//
 
+// 웹 네비 숨기 ______________________________________________________
+document.querySelector("#DTnav").classList.add('-hidden');
 });
 
 
@@ -70,41 +75,64 @@ const Layout = () => {
       <>
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
-        <header>
-          <div className ="topBar">
-            <p>~~(˘̩̩̩ε˘̩ƪ)~~ 성우야 안나와</p>
+        <header id="header">
+          <div class="topBar">
+            <p>~~(˘̩̩̩ε˘̩ƪ)~~ 성우야 안나와ㅇㅅ"ㅇ</p>
           </div>
-          <nav id="nav">
-            <button className ="ham -hidden">
-              <i className ="fa-solid fa-bars"></i>
-            </button>
-            <div className ="nav-L">
+          <nav id="DTnav">
+            <div class="nav-L">
               <ul>
-                <li>
-                  <Link to="/shop">
-                    <a href="#">SHOP</a>
-                  </Link>
-                </li>
+                <li><a href="#">SHOP</a></li>
                 <li><a href="#">LEARN</a></li>
               </ul>
             </div>
-            <Link to="/main">
-              <MainLogo/>
-              {/* <img className ="nav-C nav-logo" src={Logo_W} alt="logo" /> */}
-            </Link>
-            <span className ="ir">ZORA</span>
-            <div className ="nav-R">
+            <MainLogo/>
+            <span class="ir">ZORA</span>
+            <div class="nav-R">
               <ul>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">BAG(0)</a></li>
               </ul>
             </div>
-          </nav>
+          </nav> 
+        <nav id="Mnav">
+            <div class="Mnav-wrap">
+                <div class="nav-L">
+                  <ul>
+                    <li>
+                      <button class="ham">
+                      <FontAwesomeIcon icon="fa-solid fa-bars" />
+                      </button>
+                      <button class="close -hidden">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <MainLogo/>
+                <span class="ir">ZORA</span>
+                <div class="nav-R">
+                  <ul>
+                  <li><a href="#">BAG(0)</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="Mheaderbg">
+              <div class="Mmenu">
+                <h3>SHOP</h3>
+                <h3>Our Story</h3>
+                <h3>Our impact</h3>
+              </div>
+              <div class="Mlogin">
+                <h3>LOG-IN</h3>
+              </div>
+            </div>
+          </nav> 
         </header>
         {/* 움직이는 원 svg */}
         <aside>
-          <div className ="svg">
-            <img className ="svg__1" src={rounde_cricle} alt="logo" />
+          <div class="svg">
+          <img className ="svg__1" src={rounde_cricle} alt="logo" />
             <img className ="svg__2" src={rounde_hand} alt="logo" />
           </div>
         </aside>

@@ -2,11 +2,10 @@ import React from 'react';
 import "./css/root.css";
 import "./css/core.css";
 import Logo_W from './data/svg/Logo_W.svg';
-import rounde_cricle from './data/svg/rounde_cricle.svg';
-import rounde_hand from './data/svg/rounde_hand.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
+import RotateHand from './modules/RotateHand';
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -54,18 +53,6 @@ $("body").on("mouseup",function(){
   mouseCursor.css({transform:"scale(1)"})
 })
 
-// rounde SVG scroll rotate ______________________________________
-roundSvgMove(); //---- 호출
-function roundSvgMove(){
-  const RC = document.querySelector(".svg__1")
-  
-  window.addEventListener('scroll' ,function(){
-    let WinscrollY = window.scrollY
-    // console.log('scrollY',WinscrollY); // ok
-    RC.style.transform="rotate("+WinscrollY/10+"deg)";
-  })
-} //---- roundSvgMove 함수 ----//
-
 // 웹 네비 숨기 ______________________________________________________
 document.querySelector("#DTnav").classList.add('-hidden');
 });
@@ -77,19 +64,25 @@ const Layout = () => {
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
         <header id="header">
-          <div class="topBar">
+          <div className="topBar">
             <p>~~(˘̩̩̩ε˘̩ƪ)~~ 성우야 안나와ㅇㅅ"ㅇ</p>
           </div>
           <nav id="DTnav">
-            <div class="nav-L">
+            <div className="nav-L">
               <ul>
-                <li><a href="#">SHOP</a></li>
+                <li>
+                  <Link to ='/shop'>
+                    <a href="#">SHOP</a>
+                  </Link>
+                  </li>
                 <li><a href="#">LEARN</a></li>
               </ul>
             </div>
-            <MainLogo/>
-            <span class="ir">ZORA</span>
-            <div class="nav-R">
+            <Link to ='/main'>
+              <MainLogo/>
+            </Link>
+            <span className="ir">ZORA</span>
+            <div className="nav-R">
               <ul>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">BAG(0)</a></li>
@@ -97,11 +90,11 @@ const Layout = () => {
             </div>
           </nav> 
         <nav id="Mnav">
-            <div class="Mnav-wrap">
-                <div class="nav-L">
+            <div className="Mnav-wrap">
+                <div className="nav-L">
                   <ul>
                     <li>
-                      <button class="ham">
+                      <button className="ham">
                         <FontAwesomeIcon icon={faBars} className='ham'/>
                       </button>
                       <button class="close -hidden">
@@ -110,7 +103,9 @@ const Layout = () => {
                     </li>
                   </ul>
                 </div>
-                <MainLogo/>
+                <Link to='main'>
+                  <MainLogo/>
+                </Link>
                 <span class="ir">ZORA</span>
                 <div class="nav-R">
                   <ul>
@@ -120,7 +115,9 @@ const Layout = () => {
             </div>
             <div id="Mheaderbg">
               <div class="Mmenu">
-                <h3>SHOP</h3>
+                <Link to ='shop'>
+                  <h3>SHOP</h3>
+                </Link>
                 <h3>Our Story</h3>
                 <h3>Our impact</h3>
               </div>
@@ -130,13 +127,7 @@ const Layout = () => {
             </div>
           </nav> 
         </header>
-        {/* 움직이는 원 svg */}
-        <aside>
-          <div class="svg">
-          <img className ="svg__1" src={rounde_cricle} alt="logo" />
-            <img className ="svg__2" src={rounde_hand} alt="logo" />
-          </div>
-        </aside>
+        <RotateHand />
         {/* 메인 */}
         <main id="cont">
           <Outlet />

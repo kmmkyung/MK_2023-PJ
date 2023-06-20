@@ -8,6 +8,7 @@ body{
 #header{
     position: absolute;
     width: 100%;
+    top: 0;
 }
 
 /* cursor */
@@ -134,56 +135,6 @@ color: var(--white);
 .footer-wrap p{
     color: var(--white);
     margin-top: 20px;
-}
-
-/* round svg */
-.svg{
-    width: min(12vw,150px);
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.svg__2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: min(12vw,150px);
-}
-
-.roundDT{
-    width: min(12vw,150px);
-    top: 120px;
-    left: 40px;
-    z-index: 1;
-}
-
-.svg__2:hover{
-    animation: RoundHend 1s linear;
-    transform-origin: bottom left;
-}
-
-@keyframes RoundHend {
-    0%{
-        transform: rotate(0deg);
-    }
-    20%{
-        transform: rotate(3deg);
-    }
-    40%{
-        transform: rotate(-3deg);
-    }
-    60%{
-        transform: rotate(3deg);
-    }
-    80%{
-        transform: rotate(-3deg);
-    }
-    95%{
-        transform: rotate(3deg);
-    }
 }
 
 /* 모바일 */

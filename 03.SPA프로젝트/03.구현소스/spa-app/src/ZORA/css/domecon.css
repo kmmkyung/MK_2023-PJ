@@ -8,8 +8,8 @@
   padding: 20px;
 }
 
-.domecon-img{
-  margin: 0 auto;
+.domecon-img {
+    margin: 0 auto;
 }
 
 .domecon-img img {
@@ -18,12 +18,15 @@
     border-top-right-radius: 9999px;
     aspect-ratio: 1/1;
     object-fit: cover;
+
 }
 
 
 .domecon-img__cation{
+  width: min(85vw,600px);
   font-family: var(--Atami);
   font-size: var(--font-size-S);
+  /* text-align: left; */
 }
 
 .domecon-con{

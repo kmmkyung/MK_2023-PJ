@@ -1,14 +1,15 @@
 @charset "utf-8";
 /* ZORA PJ common CSS - common.css */
 
+
 .page1-warp{
   background-color: var(--main2);
+  padding-top: 200px;
 }
 .page1-con{
   position: relative;
   width: 100%;
-  height: calc(100vh - 110px);
-  /* height: calc(100vh - 190px); */
+  height: calc(100vh - 210px);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
   overflow: hidden;

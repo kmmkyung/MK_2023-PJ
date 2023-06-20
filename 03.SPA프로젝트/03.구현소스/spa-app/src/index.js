@@ -16,7 +16,7 @@ export default function App(){
                   <Route index element={<Main />} />
                   <Route path="main" element={<Main />} />
                   <Route path='shop' element={<Shop />} />
-                  <Route path='subitemdark' element={<Sub_Dark />} />
+                  <Route path='dark' element={<Sub_Dark />} />
               </Route>
           </Routes>
       </BrowserRouter>

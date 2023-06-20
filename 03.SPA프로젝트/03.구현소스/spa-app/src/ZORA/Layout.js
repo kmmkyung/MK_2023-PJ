@@ -9,6 +9,7 @@ import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
 
 /* 폰트어썸 임포트 */
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
@@ -101,7 +102,7 @@ const Layout = () => {
                   <ul>
                     <li>
                       <button class="ham">
-                      <FontAwesomeIcon icon="fa-solid fa-bars" />
+                      <FontAwesomeIcon icon={faBars} />
                       </button>
                       <button class="close -hidden">
                         <i class="fa-solid fa-xmark"></i>

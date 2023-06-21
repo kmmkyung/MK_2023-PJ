@@ -105,7 +105,7 @@ function ChocoDomeCon() {
                   {v.tit2}
                 </h2>
                 <button className="ChocoDomeCon__text-btn btn-B">
-                <Link to="/subitemdark">{v.btn}</Link>
+                <Link to="/dark">{v.btn}</Link>
                 </button>
               </div>
             </div>

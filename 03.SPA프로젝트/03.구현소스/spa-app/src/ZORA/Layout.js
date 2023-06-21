@@ -54,15 +54,25 @@ $("body").on("mouseup",function(){
 })
 
 // 네비게이션 ____________________________________________________________
-Mmenu(); //---- 호출
-function Mmenu(){
+Mham(); //---- 호출
+function Mham(){
   document.querySelector("#DTnav").classList.add('-hidden');
   const ham = document.querySelector(".ham")
+  const close = document.querySelector(".close")
   // console.log('ham',ham);
-  ham.addEventListener('onclick',function(){
-    document.querySelector(".close").classList.remove('-hidden');
+  ham.addEventListener('click',function(){
+    close.classList.remove('-hidden');
+    ham.classList.add('-hidden');
+    document.querySelector('#Mheaderbg').style.transform="translateX(0%)"
+    document.querySelector('.Mnav-wrap svg').style.fill="#000000"
+    
+
   })
-  
+  close.addEventListener('click',function(){
+    close.classList.add('-hidden');
+    ham.classList.remove('-hidden');
+    document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
+  })
 }
 });
 

@@ -18,6 +18,7 @@ function SubItem(props){
         <>        
           <section id="subface">
             <div className="subface-wrap">
+              <img src="./images/Sub_Dark_Bg.jpg" />
               <div className="subface-bgwrap">
                 <div className="subface-bg">
                   <img src="./images/oneschool.png" alt="one school day"/>

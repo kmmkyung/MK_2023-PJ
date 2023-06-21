@@ -1,4 +1,5 @@
 //  초콜릿 돔 컴포넌트 - ChocoDomeCon.js
+import React from "react";
 // CSS
 import "../css/chocodomecon.css";
 // Data

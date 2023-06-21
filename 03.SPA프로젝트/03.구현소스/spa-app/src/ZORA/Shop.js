@@ -4,6 +4,8 @@ import ChocoDomeCon from "./modules/ChocoDomeCon";
 import RecBlur from "./modules/RecBlur";
 
 const Shop = () =>{
+
+  
   return(
     <>
       <ChocoDomeCon/>

@@ -28,7 +28,7 @@ function jqFn() {
         this.style.opacity=0;
         chocolateImg1[idx].style.opacity=1;
       })
-    })
+    }) // forEach
   
   }); //--- JQB ---//
 } //_______________ jqFn _______________//

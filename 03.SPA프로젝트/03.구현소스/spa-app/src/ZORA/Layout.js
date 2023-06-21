@@ -5,7 +5,6 @@ import Logo_W from './data/svg/Logo_W.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
-import RotateHand from './modules/RotateHand';
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -59,19 +58,30 @@ function Mham(){
   document.querySelector("#DTnav").classList.add('-hidden');
   const ham = document.querySelector(".ham")
   const close = document.querySelector(".close")
-  // console.log('ham',ham);
+  const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg')
+  const Mbag = document.querySelector('.Mnav-wrap .nav-R a')
+  
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
     ham.classList.add('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(0%)"
-    document.querySelector('.Mnav-wrap svg').style.fill="#000000"
-    
-
+    setTimeout(()=>{
+      MLogo.style.fill="#000000"
+    },300);
+    setTimeout(()=>{
+      Mbag.style.color="#000000"
+    },700);
   })
   close.addEventListener('click',function(){
     close.classList.add('-hidden');
     ham.classList.remove('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
+    setTimeout(()=>{
+      MLogo.style.fill="#ffffff"
+    },300)
+    setTimeout(()=>{
+      Mbag.style.color="#ffffff"
+    },200)
   })
 }
 });
@@ -94,7 +104,9 @@ const Layout = () => {
                     <a href="#">SHOP</a>
                   </Link>
                   </li>
-                <li><a href="#">LEARN</a></li>
+                <li>
+                  <a href="#">LEARN</a>
+                  </li>
               </ul>
             </div>
             <Link to ='/main'>
@@ -122,7 +134,7 @@ const Layout = () => {
                     </li>
                   </ul>
                 </div>
-                <Link to='main'>
+                <Link to='/main'>
                   <MainLogo/>
                 </Link>
                 <span className="ir">ZORA</span>
@@ -134,7 +146,7 @@ const Layout = () => {
             </div>
             <div id="Mheaderbg">
               <div className="Mmenu">
-                <Link to ='shop'>
+                <Link to ='/shop'>
                   <h3>SHOP</h3>
                 </Link>
                 <h3>Our Story</h3>
@@ -146,7 +158,6 @@ const Layout = () => {
             </div>
           </nav> 
         </header>
-        <RotateHand />
         {/* 메인 */}
         <main id="cont">
           <Outlet />
@@ -180,3 +191,11 @@ const Layout = () => {
 }; 
 // 내보내기
 export default Layout;
+
+
+
+
+// 해야할거
+// 위로 스크롤시 헤더 픽스드로
+// 클릭하면 메뉴가 사라짐
+// 

@@ -6,12 +6,15 @@ import DomeCon from './modules/DomeCon';
 import EmailForm from './EmailForm';
 import RecBlur from './modules/RecBlur';
 import DomeSlide from './DomeSlide';
+import RotateHand from './modules/RotateHand';
+
 
 const Main = () => {
   return (
       <>
         {/* 1. 메인 main */}
         <MainFace />
+        <RotateHand />
         <RecCon cat="main" num="0"/>
         <ChocoDomeCon />
         <RecBlur num="0"/>

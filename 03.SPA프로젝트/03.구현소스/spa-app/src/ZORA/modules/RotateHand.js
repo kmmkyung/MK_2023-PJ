@@ -31,7 +31,7 @@ function RotateHand(){
         <>        
         {/* 움직이는 원 svg */}
         <aside>
-          <div class="svg">
+          <div className="svg">
           <img className ="svg__1" src={rounde_cricle} alt="logo" />
             <img className ="svg__2" src={rounde_hand} alt="logo" />
           </div>

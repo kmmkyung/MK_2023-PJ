@@ -53,8 +53,17 @@ $("body").on("mouseup",function(){
   mouseCursor.css({transform:"scale(1)"})
 })
 
-// 웹 네비 숨기 ______________________________________________________
-document.querySelector("#DTnav").classList.add('-hidden');
+// 네비게이션 ____________________________________________________________
+Mmenu(); //---- 호출
+function Mmenu(){
+  document.querySelector("#DTnav").classList.add('-hidden');
+  const ham = document.querySelector(".ham")
+  // console.log('ham',ham);
+  ham.addEventListener('onclick',function(){
+    document.querySelector(".close").classList.remove('-hidden');
+  })
+  
+}
 });
 
 
@@ -97,7 +106,7 @@ const Layout = () => {
                       <button className="ham">
                         <FontAwesomeIcon icon={faBars} className='ham'/>
                       </button>
-                      <button class="close -hidden">
+                      <button className="close -hidden">
                         <FontAwesomeIcon icon={faXmark} className='close' />
                       </button>
                     </li>
@@ -106,22 +115,22 @@ const Layout = () => {
                 <Link to='main'>
                   <MainLogo/>
                 </Link>
-                <span class="ir">ZORA</span>
-                <div class="nav-R">
+                <span className="ir">ZORA</span>
+                <div className="nav-R">
                   <ul>
                   <li><a href="#">BAG(0)</a></li>
                 </ul>
               </div>
             </div>
             <div id="Mheaderbg">
-              <div class="Mmenu">
+              <div className="Mmenu">
                 <Link to ='shop'>
                   <h3>SHOP</h3>
                 </Link>
                 <h3>Our Story</h3>
                 <h3>Our impact</h3>
               </div>
-              <div class="Mlogin">
+              <div className="Mlogin">
                 <h3>LOG-IN</h3>
               </div>
             </div>

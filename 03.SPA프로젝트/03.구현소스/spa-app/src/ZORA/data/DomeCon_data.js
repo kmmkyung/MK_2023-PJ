@@ -13,7 +13,7 @@ const DomeCon_data = {
   ],
   "Our_Story":[
     {
-    "src":"./images/One bar_One school day.jpg",
+    "src":"./images/Our_Story_2.jpg",
     "svg":"",
     "caption1":"",
     "caption2":"",
@@ -23,7 +23,7 @@ const DomeCon_data = {
     "btn":""
     },
     {
-    "src":"./images/One bar_One school day.jpg",
+    "src":"./images/Our_Story_3.jpg",
     "svg":"",
     "caption1":"",
     "caption2":"",

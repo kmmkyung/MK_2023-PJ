@@ -52,24 +52,16 @@
   transform: translateX(-50%);
 }
 
-.domeslide-btn li {
-  display: flex;
-}
-
-.domeslide-btn li div{
+.domeslide-btn li .btn{
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  background-color: var(--white);
 }
 
 .domeslide-btn .btn-on{
-  background-color: var(--white);
+  background-color: var(--black);
   position: relative;
-}
-
-.domeslide-btn .btn-noon{
-  background-color: var(--red);
-  position: absolute;
 }
 
 .domeslide__backwrap{

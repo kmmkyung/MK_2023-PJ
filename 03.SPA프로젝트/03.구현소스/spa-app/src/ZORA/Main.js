@@ -3,9 +3,9 @@ import MainFace from './MainFace';
 import ChocoDomeCon from "./modules/ChocoDomeCon";
 import RecCon from "./modules/RecCon";
 import DomeCon from './modules/DomeCon';
-import EmailForm from './EmailForm';
+import EmailForm from './modules/EmailForm';
 import RecBlur from './modules/RecBlur';
-import DomeSlide from './DomeSlide';
+import DomeSlide from './modules/DomeSlide';
 import RotateHand from './modules/RotateHand';
 
 

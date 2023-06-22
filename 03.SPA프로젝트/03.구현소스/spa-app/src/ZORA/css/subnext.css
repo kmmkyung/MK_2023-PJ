@@ -18,7 +18,7 @@
   z-index: 1;
 }
 
-.subnext-tit{
+.subnext-tittit_LT{
   font-size: var(--font-size-L);
   font-family: var(--Coko);
   text-align: center;
@@ -41,12 +41,20 @@
   left: 0;
 }
 
-.subnext-L h3,
-.subnext-R h3{
+.subnext-L .tit_LT,
+.subnext-R .tit_RT{
   text-align: center;
   font-size: var(--font-size-L);
   font-family: var(--Coko);
-  margin: 50px 0;
+  margin-top: 50px;
+}
+
+.subnext-L .tit_LB,
+.subnext-R .tit_RB{
+  text-align: center;
+  font-size: var(--font-size-L);
+  font-family: var(--Coko);
+  margin-bottom: 50px;
 }
 
 .subnext-L button,

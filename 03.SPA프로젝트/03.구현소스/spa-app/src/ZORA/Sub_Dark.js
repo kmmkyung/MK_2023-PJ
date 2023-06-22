@@ -7,7 +7,7 @@ const Sub_Dark = () =>{
   return(
     <>
       <SubItem num="0"/>
-      <SubNext />
+      <SubNext num="0" />
     </>
   )
 }; /////// Shop ///////

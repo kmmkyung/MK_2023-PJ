@@ -2,8 +2,8 @@
 // CSS
 import "../css/subnext.css";
 // Data
-// import SubItem_data from "../data/"
-// 제이쿼리
+import SubNext_data from "../data/SubNext_data"
+// 제이쿼리 
 import $ from "jquery"
 
 function jqFn(){
@@ -13,44 +13,45 @@ function jqFn(){
 } //_______________ jqFn _______________//
 jqFn();
 
-function SubNext(){
+function SubNext(props){
     return(
       <>
-          <section id="subnext">
-            <h2 class="subnext-tit">You may also enjoy</h2>
-            <div class="subnext-wrap">
-              <div class="subnext-con">
-                <div class="subnext-L">
-                  <div class="subnext-L-wrap">
-                    <div class="subnext-L-con">
-                      <div class="subnext-img">
-                        <img class="chocolatepack" src="./images/Pecan_cherry_1.png" alt=""/>
-                        <img class="chocolatebreak" src="./images/Pecan_cherry_2.png" alt=""/>
-                      </div>
-                      <h3>Recan+ Cherry</h3>
-                      <button class="btn-B">Buy now</button>
+        <section id="subnext">
+          <h2 class="subnext-tit">You may also enjoy</h2>
+          <div class="subnext-wrap">
+            <div class="subnext-con">
+              <div class="subnext-L">
+                <div class="subnext-L-wrap">
+                  <div class="subnext-L-con">
+                    <div class="subnext-img">
+                      <img class="chocolatepack" src={SubNext_data[props.num].src1_L} alt=""/>
+                      <img class="chocolatebreak" src={SubNext_data[props.num].src2_L} alt=""/>
                     </div>
-                    <div class="subnext-bg"></div>
+                    <h3 className='tit_LT'>{SubNext_data[props.num].tit_L.split("^")[0]}</h3>
+                    <h3 className='tit_LB'>{SubNext_data[props.num].tit_L.split("^")[1]}</h3>
+                    <button class="btn-B">{SubNext_data[props.num].btn_L}</button>
                   </div>
+                  <div class="subnext-bg"></div>
                 </div>
-                <div class="subnext-R">
-                  <div class="subnext-R-wrap">
-                    <div class="subnext-R-con">
-                      <div class="subnext-img">
-                        <img class="chocolatepack" src="./images/Fleur_de_Sel_1.png" alt=""/>
-                        <img class="chocolatebreak" src="./images/Fleur_de_Sel_2.png" alt=""/>
-                      </div>
-                      <h3>Fleur de Sel</h3>
-                      <button class="btn-B">Buy now</button>
+              </div>
+              <div class="subnext-R">
+                <div class="subnext-R-wrap">
+                  <div class="subnext-R-con">
+                    <div class="subnext-img">
+                      <img class="chocolatepack" src={SubNext_data[props.num].src1_R} alt=""/>
+                      <img class="chocolatebreak" src={SubNext_data[props.num].src2_R} alt=""/>
                     </div>
-                    <div class="subnext-bg"></div>
+                    <h3>{SubNext_data[props.num].tit_R}</h3>
+                    <button class="btn-B">{SubNext_data[props.num].btn_R}</button>
                   </div>
+                  <div class="subnext-bg"></div>
                 </div>
               </div>
             </div>
-          </section>
-          {/* {jqFn()} */}
-        </>
+          </div>
+        </section>
+        {/* {jqFn()} */}
+      </>
     )
 } //______________ SubItem _______________//
 export default SubNext;

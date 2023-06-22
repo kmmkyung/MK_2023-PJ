@@ -56,12 +56,11 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: #c4c4c4;
 }
 
-.domeslide-btn .btn-on{
+.domeslide-btn li .btn.on{
   background-color: var(--black);
-  position: relative;
 }
 
 .domeslide__backwrap{

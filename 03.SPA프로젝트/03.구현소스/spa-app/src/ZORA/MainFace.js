@@ -15,7 +15,7 @@ const MainFace = () => {
               <div className="page1-con__text">
                 <img className ="page1-svg" src={page1} alt="page1 svg" />
                 <Link to ="/shop">
-                <button className="page1-con__btn btn-W">Buy now</button>
+                  <button className="page1-con__btn btn-W">Buy now</button>
                 </Link>
               </div>
               <img className='page1-main__img' src="./images/main.jpg" alt="main"/>

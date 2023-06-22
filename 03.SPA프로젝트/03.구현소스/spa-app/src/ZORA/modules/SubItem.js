@@ -29,8 +29,8 @@ function SubItem(props){
           <main>
             <section>
               <div className="subface-con">
-                <h1>Dark</h1>
-                <p>Rich, herbaceous aromas with hints of honey, raisins and sweet caramel notes, for a long finish, reminiscent of warm fudge baked brownies.</p>
+                <h1>{SubItem_data[props.num].tit}</h1>
+                <p>{SubItem_data[props.num].con}</p>
                 <div className="number-btn">
                   <div className="number-btn__1">
                     <span>-</span>
@@ -55,15 +55,11 @@ function SubItem(props){
                   </div>
                   <div className="about about-3">
                     <h4>Ingredients</h4>
-                    <p>Organic Cocoa, Cane Sugar, Cocoa Butter.
-                    </p>
+                    <p>{SubItem_data[props.num].Ingredients}</p>
                   </div>
                   <div className="about about-4">
                     <h4>Nutrition Facts</h4>
-                    <p>1 oz, Servings: 2, Calories: 170
-                      Total Fat: 11g (14% DV), Saturated Fat: 7g (35%), Total Carb: 13g (5%), Dietary Fiber: 3g (11% DV), Total Sugars: 9g, Inc. Added Sugars:, 8g (16%DV), Protein: 3g, Calcium: 20mg (2% DV), Iron: 1.3mg (8% DV),
-                      % Daily Value (DV) based on a 2,000 calorie diet.
-                    </p>
+                    <p>{SubItem_data[props.num]["Nutrition Facts"]}</p>
                   </div>
                   <div className="about about-5">
                     <h4>Packaging</h4>
@@ -76,12 +72,16 @@ function SubItem(props){
               <div className="tasting-wrap">
                 <h2>Tasting notes</h2>
                 <div className="tasting-con">
-                  <div className="tasting-1">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div>
-                  <div className="tasting-2">
+                  { // 물어볼것 map 
+                    SubItem_data.map((v,i)=>
+                    <div className="tasting">
+                    <img src={SubItem_data[props.num].tasting.src} alt="tasting img"/>
+                    <h4>{SubItem_data[props.num].tasting.tit}</h4>
+                    <h5>{SubItem_data[props.num].tasting.about}</h5>
+                    </div>  
+                    )
+                  }
+                  {/* <div className="tasting-2">
                     <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
                     <h4>Terroir</h4>
                     <h5>Suhum, Ghana</h5>
@@ -95,7 +95,7 @@ function SubItem(props){
                     <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
                     <h4>Terroir</h4>
                     <h5>Suhum, Ghana</h5>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </article>

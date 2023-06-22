@@ -6,7 +6,7 @@ import SubNext from "./modules/Subnext";
 const Sub_Dark = () =>{
   return(
     <>
-      <SubItem />
+      <SubItem num="0"/>
       <SubNext />
     </>
   )

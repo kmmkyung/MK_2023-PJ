@@ -101,12 +101,12 @@ const Layout = () => {
               <ul>
                 <li>
                   <Link to ='/shop'>
-                    <a href="#">SHOP</a>
+                    <h3>SHOP</h3>
                   </Link>
-                  </li>
+                </li>
                 <li>
-                  <a href="#">LEARN</a>
-                  </li>
+                  <h3>LEARN</h3>
+                </li>
               </ul>
             </div>
             <Link to ='/main'>
@@ -134,12 +134,12 @@ const Layout = () => {
                     </li>
                   </ul>
                 </div>
-                <Link to='/main'>
-                  <MainLogo/>
-                </Link>
-                <span className="ir">ZORA</span>
-                <div className="nav-R">
-                  <ul>
+              <Link to='/main'>
+                <MainLogo/>
+              </Link>
+              <span className="ir">ZORA</span>
+              <div className="nav-R">
+                <ul>
                   <li><a href="#">BAG(0)</a></li>
                 </ul>
               </div>

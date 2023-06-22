@@ -9,16 +9,16 @@ const SubItem_data=[
     "Nutrition Facts":`1 oz, Servings: 2, Calories: 170
     Total Fat: 11g (14% DV), Saturated Fat: 7g (35%), Total Carb: 13g (5%), Dietary Fiber: 3g (11% DV), Total Sugars: 9g, Inc. Added Sugars:, 8g (16%DV), Protein: 3g, Calcium: 20mg (2% DV), Iron: 1.3mg (8% DV),
     % Daily Value (DV) based on a 2,000 calorie diet.`,
-    tasting:{
-      src:[
+    tasting:[
+      [
         "./images/Sub_Terrior.jpg",
         "./images/Sub_Roast.jpg",
         "./images/Sub_brownie.jpg",
         "./images/Sub_creamy.jpg"
       ],
-      tit:["Terroir","Roast","Taste","Texture"],
-      about:["Suhum, Ghana","Dark","Almond, Honey, Fruity","Creamy"]
-    },
+      ["Terroir","Roast","Taste","Texture"],
+      ["Suhum, Ghana","Dark","Almond, Honey, Fruity","Creamy"]
+    ],
     next:["Ginger+^Sesame","Fleur de Sel"],
     nextsrc_1:["./images/Ginger_sesame_1.png","./images/Ginger_sesame_2.png"],
     nextsrc_2:["./images/Fleur_de_Sel_1.png","./images/Fleur_de_Sel_2.png"]

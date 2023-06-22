@@ -41,7 +41,8 @@ function SubNext(props){
                       <img class="chocolatepack" src={SubNext_data[props.num].src1_R} alt=""/>
                       <img class="chocolatebreak" src={SubNext_data[props.num].src2_R} alt=""/>
                     </div>
-                    <h3>{SubNext_data[props.num].tit_R}</h3>
+                    <h3 className='tit_RT'>{SubNext_data[props.num].tit_R.split("^")[0]}</h3>
+                    <h3 className='tit_RB'>{SubNext_data[props.num].tit_R.split("^")[1]}</h3>
                     <button class="btn-B">{SubNext_data[props.num].btn_R}</button>
                   </div>
                   <div class="subnext-bg"></div>

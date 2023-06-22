@@ -10,5 +10,5 @@ const Sub_Dark = () =>{
       <SubNext num="0" />
     </>
   )
-}; /////// Shop ///////
+}; /////////////
 export default Sub_Dark;

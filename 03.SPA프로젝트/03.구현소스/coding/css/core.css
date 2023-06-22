@@ -10,6 +10,11 @@ body{
     width: 100%;
 }
 
+#header .fixed{
+    position: fixed;
+    background-color: var(--main);
+}
+
 /* cursor */
 .cursor{
     width: 20px;
@@ -189,7 +194,7 @@ color: var(--white);
 }
 
 /* 모바일 */
-/* 
+
 .Mnav-wrap{
     display: flex;
     width: 100%;
@@ -236,4 +241,4 @@ color: var(--white);
 .Mlogin h3{
     font-size: var(--font-size-M);
     font-family: var(--Atami);
-} */
+}

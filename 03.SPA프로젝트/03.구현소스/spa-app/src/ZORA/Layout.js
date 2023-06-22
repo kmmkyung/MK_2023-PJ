@@ -84,7 +84,9 @@ function Mham(){
     },200)
   })
 }
-});
+
+
+}); /////////////////////////
 
 
 const Layout = () => {
@@ -149,8 +151,12 @@ const Layout = () => {
                 <Link to ='/shop'>
                   <h3>SHOP</h3>
                 </Link>
-                <h3>Our Story</h3>
-                <h3>Our impact</h3>
+                <Link to ='/story'>
+                  <h3>Our Story</h3>
+                </Link>
+                <Link to ='/impact'>
+                  <h3>Our impact</h3>
+                </Link>
               </div>
               <div className="Mlogin">
                 <h3>LOG-IN</h3>

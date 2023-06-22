@@ -10,10 +10,8 @@ body{
     width: 100%;
 }
 
-#header .fixed{
-    position: fixed;
-    background-color: var(--main);
-}
+
+
 
 /* cursor */
 .cursor{

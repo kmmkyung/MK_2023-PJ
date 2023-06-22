@@ -11,6 +11,18 @@ body{
     top: 0;
 }
 
+#header.fixed{
+    position: fixed;
+    background-color: var(--main);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    fill: black;
+}
+#header.fixed a{
+    color: black;
+}
+
 /* cursor */
 .cursor{
     width: 20px;

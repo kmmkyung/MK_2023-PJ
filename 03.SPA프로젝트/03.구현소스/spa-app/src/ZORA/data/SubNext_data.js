@@ -1,4 +1,3 @@
-import SubNext from '../modules/Subnext'
 
 const SubNext_data = [
   {

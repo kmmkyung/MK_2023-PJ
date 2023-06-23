@@ -2,6 +2,7 @@
 
 const SubItem_data=[
   {
+    bg:"./images/Sub_Dark_Bg.jpg",
     tit:"Dark",
     con:`Rich, herbaceous aromas with hints of honey, raisins and sweet caramel notes, for a long finish, reminiscent of warm fudge baked brownies.`,
     item_src:"./images/Sub_Dark_choc.jpg",
@@ -47,6 +48,7 @@ const SubItem_data=[
     ]
   },
   {
+    bg:"./images/Sub_Fleur_de_Sel_Bg.jpg",
     tit:"Fleur de Sel",
     con:`Savory meets sweet in this indulgent blend of rich, smooth chocolate and fleur de sel crystal chunks, enhancing the herbal notes in the profile. A classic favorite.`,
     item_src:"./images/Sub_Fleur_de_Sel_choc.jpg",
@@ -79,6 +81,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"]
   },
   {
+    bg:"./images/Sub_Pecan_cherry_Bg.jpg",
     tit:"Pecan + Cherry",
     con:`Inviting intense, dried cherries - rich in antioxidants - offering a chewy sweetness paired with crunchy roasted pecans.`,
     item_src:"./images/Sub_Pecan_cherry_choc.jpg",
@@ -111,6 +114,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"]
   },
   {
+    bg:"./images/Sub_Ginger_Sesame_choc.jpg",
     tit:"Ginger + Sesame",
     con:`Ginger bits, in a vibrant and uplifting burst of flavor, generously sprinkled with toasted white and black sesame seeds for that crispy crunch.`,
     item_src:"./images/Sub_Ginger_Sesame_choc.jpg",
@@ -143,6 +147,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Pecan_cherry_1.png","./images/Pecan_cherry_2.png"]
   },
   {
+    bg:"./images/Sub_Rose_flower_Bg.jpg",
     tit:"Rose Flower",
     con:`Infused with rose oil for a flora fruitiness interwoven with layers of vanilla for when you need those smooth, melt-in-the-mouth moments.`,
     item_src:"./images/Sub_Rose_flower_chco.jpg",

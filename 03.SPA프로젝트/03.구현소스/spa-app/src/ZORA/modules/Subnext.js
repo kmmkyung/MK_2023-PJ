@@ -35,7 +35,7 @@ function SubNext(props){
                 </div>
               </div>
               <div class="subnext-R">
-                <div class="subnext-R-wrap">
+                <div class="subnext-R-wrap" style={{backgroundColor:SubNext_data[props.num].bgc_L}}>
                   <div class="subnext-R-con">
                     <div class="subnext-img">
                       <img class="chocolatepack" src={SubNext_data[props.num].src1_R} alt=""/>

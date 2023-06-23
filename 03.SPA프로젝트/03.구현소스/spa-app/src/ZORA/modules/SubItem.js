@@ -18,7 +18,7 @@ function SubItem(props){
         <>        
           <section id="subface">
             <div className="subface-wrap">
-              <img src="./images/Sub_Dark_Bg.jpg" alt="이미지"/>
+              <img src={SubItem_data[props.num].bg} alt="이미지"/>
               <div className="subface-bgwrap">
                 <div className="subface-bg">
                   <img src="./images/oneschool.png" alt="one school day"/>
@@ -44,7 +44,7 @@ function SubItem(props){
             <section className="item">
               <div className="item-wrap">
                 <div className="item-L">
-                  <img src="./images/Sub_Dark_choc.jpg" alt="item img" />
+                  <img src={SubItem_data[props.num].item_src} alt="item img" />
                 </div>
                 <div className="item-R">
                   <div className="about about-1">

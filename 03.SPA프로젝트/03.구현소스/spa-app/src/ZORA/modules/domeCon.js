@@ -18,34 +18,37 @@ jqFn();
 // 컴포넌트 출력용
 function DomeCon(props){
 
-  let test = DomeCon_data[props.cat][props.num]
+  let content = DomeCon_data[props.cat][props.num]
 
   return(
     <>
-    {console.log(test.caption1.split("^"))}
+    {console.log(content.caption1.split("^"))}
     
   <section id='domecon'>
     <div className="domecon-wrap">
       <div className="domecon-img">
-        <img src={test.src} alt="img"/>
+        <img src={content.src} alt="img"/>
         <p className="domecon-img__cation">
-              <strong>{test.caption1.split("^")[0]} </strong>
-              <span>{test.caption1.split("^")[1]}</span><br/>
-              <strong>{test.caption2.split("^")[0]} </strong>
-              <span>{test.caption2.split("^")[1]}</span>
+              <strong>{content.caption1.split("^")[0]} </strong>
+              <span>{content.caption1.split("^")[1]}</span><br/>
+              <strong>{content.caption2.split("^")[0]} </strong>
+              <span>{content.caption2.split("^")[1]}</span>
         </p>
       </div>
       <div className="domecon-con">
-        <img className="svg_oneshool" src={test.svg}/>
+        <img className="svg_oneshool" src={content.svg}/>
         <h2 className="domecon-con__tit">
           {
-          test.tit.split("^").map((v,i)=>{
+          content.tit.split("^").map((v,i)=>{
             return <div key={i}>{v}</div>
           })
           }
         </h2>
-        <p className="domecon-con__text">{test.con1}</p>
-        <button className="domecon-con__btn btn-B">{test.btn}</button>
+        <img src={content.src2}/>
+        <p className="domecon-con__text">{content.con1.split("^")[0]}</p>
+        <p className="domecon-con__text">{content.con1.split("^")[1]}</p>
+        <p className="domecon-con__text">{content.con1.split("^")[2]}</p>
+        <button className="domecon-con__btn btn-B">{content.btn}</button>
       </div>
     </div>
   </section>

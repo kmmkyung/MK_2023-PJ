@@ -57,6 +57,7 @@
 .domecon-con__text{
   font-family: var(--Atami);
   font-size: var(--font-size-M);
+  max-width: 600px;
 }
 
 .domecon-con__btn{

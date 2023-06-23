@@ -18,7 +18,7 @@ function SubItem(props){
         <>        
           <section id="subface">
             <div className="subface-wrap">
-              <img src="./images/Sub_Dark_Bg.jpg" />
+              <img src="./images/Sub_Dark_Bg.jpg" alt="이미지"/>
               <div className="subface-bgwrap">
                 <div className="subface-bg">
                   <img src="./images/oneschool.png" alt="one school day"/>
@@ -72,9 +72,9 @@ function SubItem(props){
               <div className="tasting-wrap">
                 <h2>Tasting notes</h2>
                 <div className="tasting-con">
-                  { // 물어볼것 map 
+                  { 
                     SubItem_data[props.num].tasting.map((v,i)=>
-                    <div className={"tasting-"+i}>
+                    <div className={"tasting-"+i} key={i}>
                       <img src={SubItem_data[props.num].tasting[i].src} alt="tasting img"/>
                       <h4>{SubItem_data[props.num].tasting[i].tit}</h4>
                       <h5>{SubItem_data[props.num].tasting[i].about}</h5>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import "./css/root.css";
 import "./css/core.css";
@@ -86,9 +87,9 @@ function Mham(){
       Mbag.style.color="#ffffff"
     },200)
   }
-  close.addEventListener('click',menuClose())
+  close.addEventListener('click',menuClose)
   Mmenu.forEach(v=>{
-    v.addEventListener("click",menuClose())
+    v.addEventListener("click",menuClose)
   })
 
 }

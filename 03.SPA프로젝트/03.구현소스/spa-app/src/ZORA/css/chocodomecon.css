@@ -4,8 +4,22 @@
 }
   .ChocoDomeCon__warp{
     width: 100%;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
   }
   
+  .ChocoDomeCon__warp.on{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  
+
+
+
+
   .ChocoDomeCon__con{
     display: flex;
     align-items: center;
@@ -72,3 +86,5 @@
     height: 80vh;
     overflow: hidden;
   }
+
+

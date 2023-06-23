@@ -21,7 +21,7 @@ $(()=>{
 const DomeSlide = () => {
   return(
     <>
-    <section id="domeslide">
+      <section id="domeslide">
         <div className="domeslide-wrap">
           <ol className="domeslide-con">
             {

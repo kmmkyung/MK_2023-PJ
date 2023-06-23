@@ -9,11 +9,19 @@ import $ from "jquery"
 function jqFn(){
     $(()=>{
         console.log('Subitem로딩')
+
+      // 번호변수
+      // let chocoNum = 0;
+      // function setVal(){
+
+      // }
+
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 jqFn();
 
 function SubItem(props){
+
     return(
         <>        
           <section id="subface">

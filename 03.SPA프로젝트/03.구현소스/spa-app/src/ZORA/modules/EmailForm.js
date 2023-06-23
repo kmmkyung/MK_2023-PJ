@@ -11,8 +11,10 @@ $(()=>{
     inputlabel.style.top="-100%"
     inputlabel.style.color="#cccccc"
   })
-  
-
+  input.addEventListener("blur",function(){
+    inputlabel.style.top="0%"
+    inputlabel.style.color="#000"
+  })
   
 })
 

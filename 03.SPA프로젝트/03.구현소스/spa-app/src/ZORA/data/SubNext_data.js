@@ -9,7 +9,9 @@ const SubNext_data = [
     tit_L:"Recan + ^Cherry",
     tit_R:"Rose^Flower",
     btn_L:"Buy now",
-    btn_R:"Buy now"
+    btn_R:"Buy now",
+    bgc_L:"var(--red)",
+    bgc_R:"var(--pink)",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -19,7 +21,9 @@ const SubNext_data = [
     tit_L:"Rose^Flower",
     tit_R:"Ginger +^Sesame",
     btn_L:"Buy now",
-    btn_R:"Buy now"
+    btn_R:"Buy now",
+    bgc_L:"var(--pink)",
+    bgc_R:"var(--yell)",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -29,7 +33,9 @@ const SubNext_data = [
     tit_L:"Rose^Flower",
     tit_R:"Dark",
     btn_L:"Buy now",
-    btn_R:"Buy now"
+    btn_R:"Buy now",
+    bgc_L:"var(--pink)",
+    bgc_R:"var(--org)",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -39,7 +45,9 @@ const SubNext_data = [
     tit_L:"Rose^Flower",
     tit_R:"Fleur de Sel",
     btn_L:"Buy now",
-    btn_R:"Buy now"
+    btn_R:"Buy now",
+    bgc_L:"var(--pink)",
+    bgc_R:"var(--blue)",
   },
   {
     src1_L:"./images/Pecan_cherry_1.png",
@@ -49,7 +57,9 @@ const SubNext_data = [
     tit_L:"Recan+ Cherry",
     tit_R:"Ginger +^Sesame",
     btn_L:"Buy now",
-    btn_R:"Buy now"
+    btn_R:"Buy now",
+    bgc_L:"var(--red)",
+    bgc_R:"var(--yell)",
   },
 ]
 

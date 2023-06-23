@@ -60,6 +60,7 @@ function Mham(){
   const close = document.querySelector(".close")
   const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg')
   const Mbag = document.querySelector('.Mnav-wrap .nav-R a')
+  const Mmenu = document.querySelectorAll(".Mmenu a")
   
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
@@ -72,7 +73,9 @@ function Mham(){
       Mbag.style.color="#000000"
     },700);
   })
-  close.addEventListener('click',function(){
+  
+
+  function menuClose(){
     close.classList.add('-hidden');
     ham.classList.remove('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
@@ -82,9 +85,26 @@ function Mham(){
     setTimeout(()=>{
       Mbag.style.color="#ffffff"
     },200)
+  }
+  close.addEventListener('click',menuClose())
+  Mmenu.forEach(v=>{
+    v.addEventListener("click",menuClose())
   })
-}
 
+}
+$(window).bind("mousewheel",function(event){
+  if (event.originalEvent.wheelDelta >= 0) {
+    console.log('Scroll up', $(this).scrollTop());
+    if($(this).scrollTop() < 500){
+      $("#header").removeClass("fixed")
+    }else{
+      $("#header").addClass("fixed")
+    }
+  }
+  else {
+    $("#header").removeClass("fixed")
+}
+})
 
 }); /////////////////////////
 
@@ -111,7 +131,7 @@ const Layout = () => {
                 </li>
               </ul>
             </div>
-            <Link to ='/main'>
+            <Link to ='/'>
               <MainLogo/>
             </Link>
             <span className="ir">ZORA</span>
@@ -136,7 +156,7 @@ const Layout = () => {
                     </li>
                   </ul>
                 </div>
-              <Link to='/main'>
+              <Link to='/'>
                 <MainLogo/>
               </Link>
               <span className="ir">ZORA</span>

@@ -73,29 +73,14 @@ function SubItem(props){
                 <h2>Tasting notes</h2>
                 <div className="tasting-con">
                   { // 물어볼것 map 
-                    SubItem_data.map((v,i)=>
-                    <div className="tasting">
-                    <img src={SubItem_data[props.num].tasting.src} alt="tasting img"/>
-                    <h4>{SubItem_data[props.num].tasting.tit}</h4>
-                    <h5>{SubItem_data[props.num].tasting.about}</h5>
+                    SubItem_data[props.num].tasting.map((v,i)=>
+                    <div className={"tasting-"+i}>
+                      <img src={SubItem_data[props.num].tasting[i].src} alt="tasting img"/>
+                      <h4>{SubItem_data[props.num].tasting[i].tit}</h4>
+                      <h5>{SubItem_data[props.num].tasting[i].about}</h5>
                     </div>  
                     )
                   }
-                  {/* <div className="tasting-2">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div>
-                  <div className="tasting-3">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div>
-                  <div className="tasting-4">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div> */}
                 </div>
               </div>
             </article>

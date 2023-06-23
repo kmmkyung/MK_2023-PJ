@@ -31,7 +31,7 @@ function SubNext(props){
                     <h3 className='tit_LB'>{SubNext_data[props.num].tit_L.split("^")[1]}</h3>
                     <button class="btn-B">{SubNext_data[props.num].btn_L}</button>
                   </div>
-                  <div class="subnext-bg"></div>
+                  <div class="subnext-bg" style={{backgroundColor:SubNext_data[props.num].bgc_L}}></div>
                 </div>
               </div>
               <div class="subnext-R">
@@ -45,7 +45,7 @@ function SubNext(props){
                     <h3 className='tit_RB'>{SubNext_data[props.num].tit_R.split("^")[1]}</h3>
                     <button class="btn-B">{SubNext_data[props.num].btn_R}</button>
                   </div>
-                  <div class="subnext-bg"></div>
+                  <div class="subnext-bg" style={{backgroundColor:SubNext_data[props.num].bgc_R}}></div>
                 </div>
               </div>
             </div>

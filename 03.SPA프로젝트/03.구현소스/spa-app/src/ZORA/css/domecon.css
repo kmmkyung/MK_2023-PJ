@@ -8,6 +8,11 @@
   padding: 20px;
 }
 
+.domecon-con .src2{
+  width: min(85vw,600px);
+  height: auto;
+}
+
 .domecon-img {
     margin: 0 auto;
 }
@@ -20,6 +25,7 @@
     object-fit: cover;
 
 }
+
 
 
 .domecon-img__cation{

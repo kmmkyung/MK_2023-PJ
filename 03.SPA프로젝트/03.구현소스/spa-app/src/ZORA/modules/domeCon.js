@@ -5,7 +5,6 @@ import "../css/domecon.css";
 import DomeCon_data from '../data/DomeCon_data';
 // 제이쿼리 
 import $ from "jquery"
-import { useState } from "react";
 
 function jqFn(){
     $(()=>{ 
@@ -27,7 +26,10 @@ function DomeCon(props){
   <section id='domecon'>
     <div className="domecon-wrap">
       <div className="domecon-img">
+        {
+          content.src !== "" &&
         <img src={content.src} alt="img"/>
+        }
         <p className="domecon-img__cation">
               <strong>{content.caption1.split("^")[0]} </strong>
               <span>{content.caption1.split("^")[1]}</span><br/>
@@ -36,7 +38,10 @@ function DomeCon(props){
         </p>
       </div>
       <div className="domecon-con">
-        <img className="svg_oneshool" src={content.svg}/>
+        {
+          content.svg !== "" &&
+        <img className="svg_oneshool" src={content.svg} alt="oneschool"/>
+        }
         <h2 className="domecon-con__tit">
           {
           content.tit.split("^").map((v,i)=>{
@@ -44,7 +49,10 @@ function DomeCon(props){
           })
           }
         </h2>
-        <img src={content.src2}/>
+        {
+          content.src2 !== "" &&
+        <img className="src2" src={content.src2} alt="img"/>
+        }
         <p className="domecon-con__text">{content.con1.split("^")[0]}</p>
         <p className="domecon-con__text">{content.con1.split("^")[1]}</p>
         <p className="domecon-con__text">{content.con1.split("^")[2]}</p>

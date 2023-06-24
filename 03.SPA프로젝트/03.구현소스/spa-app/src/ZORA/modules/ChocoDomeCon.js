@@ -3,7 +3,7 @@ import React from "react";
 // CSS
 import "../css/chocodomecon.css";
 // Data
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ChocoDomeCon_data from "../data/ChocoDomeCon_data";
 // 제이쿼리
 import $ from "jquery";

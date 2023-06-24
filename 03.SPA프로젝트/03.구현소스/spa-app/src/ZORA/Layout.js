@@ -114,7 +114,7 @@ $(window).bind("mousewheel",function(event){
         console.log('scrollCon',scrollCon);
         
         // 화면 높이값 2/3
-        const hv = window.innerHeight/3*2;
+        const hv = window.innerHeight/3*1;
         console.log("hv-2/3",hv);
 
         // 등장액션 대상 위치값 리턴함수/////

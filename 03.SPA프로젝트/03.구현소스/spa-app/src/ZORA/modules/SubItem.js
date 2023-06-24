@@ -22,7 +22,7 @@ function jqFn(){
     
     // 2. 현재값 읽어오기 문자->숫자
     let isV = Number(sumInput.val())
-    // console.log('현재값',isV);
+    console.log('현재값',isV);
     
     // 3. 버튼 분기하기
     if(altbtn === "add"){

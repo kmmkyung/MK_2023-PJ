@@ -22,7 +22,7 @@ function jqFn(){
     
     // 2. 현재값 읽어오기 문자->숫자
     let isV = Number(sumInput.val())
-    console.log('현재값',isV);
+    // console.log('현재값',isV);
     
     // 3. 버튼 분기하기
     if(altbtn === "add"){
@@ -83,7 +83,7 @@ function SubItem(props){
                 <div className="number-btn">
                   <div className="number-btn__1">
                     <span className='number-btn__span' alt='no'>-</span>
-                    <input htmlFor="number" className='input' placeholder="1"/>
+                    <input htmlFor="number" className='number-btn__input' placeholder="1"/>
                     <span className='number-btn__span' alt='add'>+</span>
                   </div>
                   <button className="number-btn__2">BUY NOW - 11.86$</button>

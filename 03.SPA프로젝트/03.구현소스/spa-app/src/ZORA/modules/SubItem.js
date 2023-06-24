@@ -11,12 +11,20 @@ function jqFn(){
         console.log('Subitem로딩')
     // 인풋
     const sumInput = $(".input");
-    console.log('버튼',$(".number-btn__span"));
+    console.log('suminput',sumInput);
+    
     
     // 인풋 버튼
     $(".number-btn__span").click(function(){
-      // 1. 클릭된 버튼 구분
-      console.log('클릭');
+      // 1. 클릭된 버튼 구분하기
+      let addBtn = $(this).attr('alt');
+      console.log('구분버튼',addBtn); // ok
+      
+      // 2. 현재값 읽어오기 문자->숫자
+      let isV = Number(sumInput.val())
+      console.log('현재값',isV);
+      
+      
       
     })
     
@@ -46,9 +54,9 @@ function SubItem(props){
                 <p>{SubItem_data[props.num].con}</p>
                 <div className="number-btn">
                   <div className="number-btn__1">
-                    <span className='number-btn__span'>-</span>
-                    <input htmlFor="number" className='input' placeholder="1"  alt='add'/>
-                    <span className='number-btn__span'>+</span>
+                    <span className='number-btn__span' alt='no'>-</span>
+                    <input htmlFor="number" className='input' placeholder="1"/>
+                    <span className='number-btn__span' alt='add'>+</span>
                   </div>
                   <button className="number-btn__2">BUY NOW - 11.86$</button>
               </div>

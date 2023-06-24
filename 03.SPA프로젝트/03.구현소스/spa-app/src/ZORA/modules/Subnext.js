@@ -31,11 +31,11 @@ function SubNext(props){
                     <h3 className='tit_LB'>{SubNext_data[props.num].tit_L.split("^")[1]}</h3>
                     <button class="btn-B">{SubNext_data[props.num].btn_L}</button>
                   </div>
-                  <div class="subnext-bg"></div>
+                  <div class="subnext-bg" style={{backgroundColor:SubNext_data[props.num].bgc_L}}></div>
                 </div>
               </div>
               <div class="subnext-R">
-                <div class="subnext-R-wrap">
+                <div class="subnext-R-wrap" style={{backgroundColor:SubNext_data[props.num].bgc_L}}>
                   <div class="subnext-R-con">
                     <div class="subnext-img">
                       <img class="chocolatepack" src={SubNext_data[props.num].src1_R} alt=""/>
@@ -45,7 +45,7 @@ function SubNext(props){
                     <h3 className='tit_RB'>{SubNext_data[props.num].tit_R.split("^")[1]}</h3>
                     <button class="btn-B">{SubNext_data[props.num].btn_R}</button>
                   </div>
-                  <div class="subnext-bg"></div>
+                  <div class="subnext-bg" style={{backgroundColor:SubNext_data[props.num].bgc_R}}></div>
                 </div>
               </div>
             </div>

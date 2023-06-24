@@ -3,7 +3,7 @@ import React from "react";
 import SubItem from "./modules/SubItem";
 import SubNext from "./modules/Subnext";
 
-const Sub_Dark = () =>{
+const SubDark = () =>{
   return(
     <>
       <SubItem num="0"/>
@@ -11,4 +11,4 @@ const Sub_Dark = () =>{
     </>
   )
 }; /////////////
-export default Sub_Dark;
+export default SubDark;

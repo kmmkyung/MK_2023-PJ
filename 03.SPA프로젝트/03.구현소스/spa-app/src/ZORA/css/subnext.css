@@ -81,10 +81,8 @@
 .subnext-L .subnext-bg{
   /* height: 1300px; */
   height: 600px;
-  background-color: var(--red);
 }
 
 .subnext-R .subnext-bg{
   height: 600px;
-  background-color: var(--blue);
 }

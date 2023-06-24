@@ -6,27 +6,27 @@ import DomeSlide_data from "../data/DomeSlide_data"
 // 제이쿼리
 import $ from "jquery"
 $(()=>{
-  Slide();
-  function Slide(){
-    // 슬라이드 대상
-  const slider = document.querySelector(".domeslide-con")
-  const slidelist = document.querySelector(".domeslide-con__list")
+  // Slide();
+  // function Slide(){
+  //   // 슬라이드 대상
+  // const slider = document.querySelector(".domeslide-con")
+  // const slidelist = document.querySelector(".domeslide-con__list")
 
-  const chgSeq = () => {
+  // const chgSeq = () => {
 
-  }
-  }
+  // }
+  // }
 })
 
-const DomeSlide = (props) => {
+const DomeSlide = () => {
   return(
     <>
-    <section id="domeslide">
+      <section id="domeslide">
         <div className="domeslide-wrap">
           <ol className="domeslide-con">
             {
               DomeSlide_data.map((v,i)=>
-                <li className="domeslide-con__list" data-seq={i}>
+                <li className="domeslide-con__list" data-seq={i} key={i}>
                 <img src={v.src} alt="coment" />
                 <p>{v.con}</p>
                 <h4>{v.name}</h4>
@@ -38,8 +38,8 @@ const DomeSlide = (props) => {
           <ol className="domeslide-btn">
             {
               DomeSlide_data.map((v,i)=>
-              <li>
-                <div className="btn" key={i}></div>
+              <li key={i}>
+                <div className="btn"></div>
               </li>
               )
             }

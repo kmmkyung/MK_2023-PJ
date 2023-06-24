@@ -8,7 +8,8 @@ const ChocoDomeCon_data={
                 "tit2":"",
                 "cont":"",
                 "btn":"Buy now",
-                "btnclass":"btn-B"
+                "btnclass":"btn-B",
+                "link":"/dark"
             },
             {
                 "src1":"",
@@ -18,7 +19,8 @@ const ChocoDomeCon_data={
                 "tit2":"",
                 "cont":"",
                 "btn":"Buy now",
-                "btnclass":"btn-B"
+                "btnclass":"btn-B",
+                "link":"/fleur"
             },
             {
                 "src1":"",
@@ -28,7 +30,8 @@ const ChocoDomeCon_data={
                 "tit2":"Cherry",
                 "cont":"",
                 "btn":"Buy now",
-                "btnclass":"btn-B"
+                "btnclass":"btn-B",
+                "link":"/ginger"
             },
             {
                 "src1":"",
@@ -38,7 +41,8 @@ const ChocoDomeCon_data={
                 "tit2":"",
                 "cont":"",
                 "btn":"Buy now",
-                "btnclass":"btn-B"
+                "btnclass":"btn-B",
+                "link":"/pecan"
             },
             {
                 "src1":"",
@@ -48,8 +52,9 @@ const ChocoDomeCon_data={
                 "tit2":"",
                 "cont":"",
                 "btn":"Buy now",
-                "btnclass":"btn-B"
-            },
+                "btnclass":"btn-B",
+                "link":"/rose"
+            }
         ]
     }
 

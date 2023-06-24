@@ -31,10 +31,10 @@ const RecCon_data = {
     ],
     "Our_Impact":[
         {
-            "src":"",
+            "src":"./images/bean.png",
             "tit":"From bean to bar",
             "cont":`We source our beans from a USDA organic, fairtrade farmer cooperative in Suhum, Ghana called ABOCFA. With over 900 farmers, ABOCFA produces a rich and wonderfully sweet flavor profile. They are democratically run, and every farmer gets a say in how the co-op’s funds are spent.
-
+            ^
             We are proud to partner with ABOCFA, Uncommon Cacao and 5150 Chocolate to ensure that we can trace the journey of every bean and share it with you in the form of delicious chocolate.`,
             "btn":""
         },
@@ -42,9 +42,9 @@ const RecCon_data = {
             "src":"./images/Our_Impact_2.jpg",
             "tit":"",
             "cont":`While some wonderful initiatives currently exist to improve the live of farmers and their families, the reality is that many girls and young women still lack access to basic education.
-
+            ^
             Education is one of the most effective ways of raising living standards because girls are four times more likely to be out of school than boys from the same background, so we felt compelled to do what we could do to help.
-            
+            ^
             To that end, we are partnering up with the Tarkwa Breman Girl’s School (TBGS), operated by Cocoa360, a non-profit organization, pioneering a self-sustaining model of rural development with both a community school (TBGS) and a clinic.`,
             "btn":""
         }

@@ -8,6 +8,11 @@
   padding: 20px;
 }
 
+.domecon-con .src2{
+  width: min(85vw,600px);
+  height: auto;
+}
+
 .domecon-img {
     margin: 0 auto;
 }
@@ -20,6 +25,7 @@
     object-fit: cover;
 
 }
+
 
 
 .domecon-img__cation{
@@ -51,6 +57,7 @@
 .domecon-con__text{
   font-family: var(--Atami);
   font-size: var(--font-size-M);
+  max-width: 600px;
 }
 
 .domecon-con__btn{

@@ -9,16 +9,24 @@ import $ from "jquery"
 function jqFn(){
     $(()=>{
         console.log('Subitem로딩')
+
+      // 번호변수
+      // let chocoNum = 0;
+      // function setVal(){
+
+      // }
+
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 jqFn();
 
 function SubItem(props){
+
     return(
         <>        
           <section id="subface">
             <div className="subface-wrap">
-              <img src="./images/Sub_Dark_Bg.jpg" />
+              <img src={SubItem_data[props.num].bg} alt="이미지"/>
               <div className="subface-bgwrap">
                 <div className="subface-bg">
                   <img src="./images/oneschool.png" alt="one school day"/>
@@ -44,7 +52,7 @@ function SubItem(props){
             <section className="item">
               <div className="item-wrap">
                 <div className="item-L">
-                  <img src="./images/Sub_Dark_choc.jpg" alt="item img" />
+                  <img src={SubItem_data[props.num].item_src} alt="item img" />
                 </div>
                 <div className="item-R">
                   <div className="about about-1">
@@ -72,30 +80,15 @@ function SubItem(props){
               <div className="tasting-wrap">
                 <h2>Tasting notes</h2>
                 <div className="tasting-con">
-                  { // 물어볼것 map 
-                    SubItem_data.map((v,i)=>
-                    <div className="tasting">
-                    <img src={SubItem_data[props.num].tasting.src} alt="tasting img"/>
-                    <h4>{SubItem_data[props.num].tasting.tit}</h4>
-                    <h5>{SubItem_data[props.num].tasting.about}</h5>
+                  { 
+                    SubItem_data[props.num].tasting.map((v,i)=>
+                    <div className={"tasting-"+i} key={i}>
+                      <img src={SubItem_data[props.num].tasting[i].src} alt="tasting img"/>
+                      <h4>{SubItem_data[props.num].tasting[i].tit}</h4>
+                      <h5>{SubItem_data[props.num].tasting[i].about}</h5>
                     </div>  
                     )
                   }
-                  {/* <div className="tasting-2">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div>
-                  <div className="tasting-3">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div>
-                  <div className="tasting-4">
-                    <img src="./images/Sub_sesame.jpg" alt="tasting img"/>
-                    <h4>Terroir</h4>
-                    <h5>Suhum, Ghana</h5>
-                  </div> */}
                 </div>
               </div>
             </article>

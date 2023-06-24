@@ -91,12 +91,12 @@ function ChocoDomeCon() {
                 <img
                   className="ChocoDomeCon__img-1 chocolatepack"
                   src={v.img1}
-                  alt="이미지"
+                  alt="chocolatepack"
                 />
                 <img
                   className="ChocoDomeCon__img-2  chocolatebreak"
                   src={v.img2}
-                  alt="이미지"
+                  alt="chocolatebreak"
                 />
               </div>
               <div className="ChocoDomeCon__text">
@@ -106,7 +106,7 @@ function ChocoDomeCon() {
                   {v.tit2}
                 </h2>
                 <button className="ChocoDomeCon__text-btn btn-B">
-                <Link to="/dark">{v.btn}</Link>
+                <Link to={v.link}>{v.btn}</Link>
                 </button>
               </div>
             </div>

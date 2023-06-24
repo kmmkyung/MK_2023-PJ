@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import "./css/root.css";
 import "./css/core.css";
@@ -5,6 +6,7 @@ import Logo_W from './data/svg/Logo_W.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
+import ScrollTop from "./common/ScrollTop";
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -60,6 +62,7 @@ function Mham(){
   const close = document.querySelector(".close")
   const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg')
   const Mbag = document.querySelector('.Mnav-wrap .nav-R a')
+  const Mmenu = document.querySelectorAll(".Mmenu a")
   
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
@@ -72,7 +75,9 @@ function Mham(){
       Mbag.style.color="#000000"
     },700);
   })
-  close.addEventListener('click',function(){
+  
+
+  function menuClose(){
     close.classList.add('-hidden');
     ham.classList.remove('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
@@ -82,9 +87,67 @@ function Mham(){
     setTimeout(()=>{
       Mbag.style.color="#ffffff"
     },200)
+  }
+  close.addEventListener('click',menuClose)
+  Mmenu.forEach(v=>{
+    v.addEventListener("click",menuClose)
   })
-}
 
+}
+<<<<<<< HEAD
+  $(".Mmenu a").click((e)=>{
+    e.preventDefault();
+    $(".close").trigger("click");
+  })
+=======
+$(window).bind("mousewheel",function(event){
+  if (event.originalEvent.wheelDelta >= 0) {
+    console.log('Scroll up', $(this).scrollTop());
+    if($(this).scrollTop() < 500){
+      $("#header").removeClass("fixed")
+    }else{
+      $("#header").addClass("fixed")
+    }
+  }
+  else {
+    $("#header").removeClass("fixed")
+}
+})
+
+
+        // 대상선정
+        const scrollCon = document.querySelectorAll('.ChocoDomeCon__warp');
+        console.log('scrollCon',scrollCon);
+        
+        // 화면 높이값 2/3
+        const hv = window.innerHeight/3*2;
+        console.log("hv-2/3",hv);
+
+        // 등장액션 대상 위치값 리턴함수/////
+        const retVal = 
+        ele => ele.getBoundingClientRect().top;
+
+        const showIt = x => { // x - 등장요소
+            // 대상요소의 현재스크롤 위치
+            let xval = retVal(x);
+
+            // 구간적용여부 검사하기
+            // 0보다 크고 화면의 2/3보다 작은 구간!
+            if(xval < hv && xval > 0){
+                console.log("작동!~~~~");
+                // 해당요소에 클래스 넣기!
+                x.classList.add("on");
+            }
+        }; //////////// showIt //////////
+
+        window.addEventListener("scroll",()=>{
+            // cg("스크롤중")
+
+            // 스크롤 등장 요소 개수만큼 for
+            for(let x of scrollCon) showIt(x);
+        })
+
+>>>>>>> a712405d5f945c43dc6be025c7d1908e382c665b
 
 }); /////////////////////////
 
@@ -92,6 +155,7 @@ function Mham(){
 const Layout = () => {
   return (
       <>
+      <ScrollTop />
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
         <header id="header">
@@ -111,7 +175,7 @@ const Layout = () => {
                 </li>
               </ul>
             </div>
-            <Link to ='/main'>
+            <Link to ='/'>
               <MainLogo/>
             </Link>
             <span className="ir">ZORA</span>
@@ -136,7 +200,7 @@ const Layout = () => {
                     </li>
                   </ul>
                 </div>
-              <Link to='/main'>
+              <Link to='/'>
                 <MainLogo/>
               </Link>
               <span className="ir">ZORA</span>

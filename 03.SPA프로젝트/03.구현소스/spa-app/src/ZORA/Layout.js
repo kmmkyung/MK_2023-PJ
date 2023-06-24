@@ -94,12 +94,6 @@ function Mham(){
   })
 
 }
-<<<<<<< HEAD
-  $(".Mmenu a").click((e)=>{
-    e.preventDefault();
-    $(".close").trigger("click");
-  })
-=======
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
     console.log('Scroll up', $(this).scrollTop());
@@ -147,7 +141,6 @@ $(window).bind("mousewheel",function(event){
             for(let x of scrollCon) showIt(x);
         })
 
->>>>>>> a712405d5f945c43dc6be025c7d1908e382c665b
 
 }); /////////////////////////
 

@@ -16,9 +16,13 @@ $(()=>{
 
   // }
   // }
+
 })
 
 const DomeSlide = () => {
+
+  
+
   return(
     <>
       <section id="domeslide">

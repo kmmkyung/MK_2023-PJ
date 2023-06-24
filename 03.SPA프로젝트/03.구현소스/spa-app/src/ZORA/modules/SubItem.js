@@ -9,12 +9,17 @@ import $ from "jquery"
 function jqFn(){
     $(()=>{
         console.log('Subitem로딩')
-
-      // 번호변수
-      // let chocoNum = 0;
-      // function setVal(){
-
-      // }
+    // 인풋
+    const sumInput = $(".input");
+    console.log('버튼',$(".number-btn__span"));
+    
+    // 인풋 버튼
+    $(".number-btn__span").click(function(){
+      // 1. 클릭된 버튼 구분
+      console.log('클릭');
+      
+    })
+    
 
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
@@ -41,9 +46,9 @@ function SubItem(props){
                 <p>{SubItem_data[props.num].con}</p>
                 <div className="number-btn">
                   <div className="number-btn__1">
-                    <span>-</span>
-                    <input htmlFor="number" placeholder="0" />
-                    <span>+</span>
+                    <span className='number-btn__span'>-</span>
+                    <input htmlFor="number" className='input' placeholder="1"  alt='add'/>
+                    <span className='number-btn__span'>+</span>
                   </div>
                   <button className="number-btn__2">BUY NOW - 11.86$</button>
               </div>

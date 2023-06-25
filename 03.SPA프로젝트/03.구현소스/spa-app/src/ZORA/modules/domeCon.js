@@ -21,7 +21,7 @@ function DomeCon(props){
 
   return(
     <>
-    {console.log(content.caption1.split("^"))}
+    {/* {console.log(content.caption1.split("^"))} */}
     
   <section id='domecon'>
     <div className="domecon-wrap">

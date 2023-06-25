@@ -9,7 +9,6 @@ import $ from "jquery"
 function jqFn(){
   $(()=>{
       console.log('Subitem로딩')
-
   // 인풋
   const sumInput = $(".number-btn__input");
   console.log('suminput',sumInput);
@@ -55,11 +54,8 @@ function jqFn(){
     }
   })
   
-
-
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
-jqFn();
 
 function SubItem(props){
 
@@ -134,7 +130,7 @@ function SubItem(props){
               </div>
             </article>
           </main>
-            {/* {jqFn()} */}
+            {jqFn()}
         </>
     )
 } //______________ SubItem _______________//

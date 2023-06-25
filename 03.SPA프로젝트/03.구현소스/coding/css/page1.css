@@ -328,7 +328,7 @@
 /* ------------------------------------------------------------ */
 .domeslide-wrap{
   position: relative;
-
+ overflow: hidden;
 }
 
 .domeslide-con{
@@ -336,6 +336,7 @@
   display: flex;
   position: absolute;
   top: 20%;
+ 
 }
 
 .domeslide-con__list{
@@ -390,7 +391,7 @@
   border-radius: 50%;
 }
 
-.domeslide-btn .btn-on{
+.btn.on{
   background-color: var(--white);
   position: relative;
 }

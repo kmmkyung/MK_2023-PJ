@@ -121,6 +121,6 @@ window.addEventListener("DOMContentLoaded", () => {
   })
   
   
-  
+
   
   })///////////////////////// load /////////////////////////

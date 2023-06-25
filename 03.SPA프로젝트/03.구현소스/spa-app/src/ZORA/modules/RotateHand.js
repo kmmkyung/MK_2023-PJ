@@ -24,7 +24,6 @@ function jqFn(){
 
     }); //--- JQB ---//
 } //_______________ jqFn _______________//
-jqFn();
 
 function RotateHand(){
     return(
@@ -36,7 +35,7 @@ function RotateHand(){
             <img className ="svg__2" src={rounde_hand} alt="logo" />
           </div>
         </aside>
-            {/* {jqFn()} */}
+            {jqFn()}
         </>
     )
 } //______________ RecCon _______________//

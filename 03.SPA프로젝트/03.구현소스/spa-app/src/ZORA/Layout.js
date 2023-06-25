@@ -96,8 +96,8 @@ function Mham(){
 }
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
-    console.log('Scroll up', $(this).scrollTop());
-    if($(this).scrollTop() < 500){
+    // console.log('Scroll up', $(this).scrollTop());
+    if($(this).scrollTop() < 600){
       $("#header").removeClass("fixed")
     }else{
       $("#header").addClass("fixed")
@@ -113,7 +113,7 @@ $(window).bind("mousewheel",function(event){
 const Layout = () => {
   return (
       <>
-      {/* <ScrollTop /> */}
+      <ScrollTop />
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
         <header id="header">

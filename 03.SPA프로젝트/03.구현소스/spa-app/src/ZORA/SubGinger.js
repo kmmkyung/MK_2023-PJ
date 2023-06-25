@@ -6,8 +6,8 @@ import SubNext from "./modules/Subnext";
 const SubGinger = () =>{
   return(
     <>
-      <SubItem num="2"/>
-      <SubNext num="2" />
+      <SubItem num="3"/>
+      <SubNext num="3" />
     </>
   )
 }; /////////////

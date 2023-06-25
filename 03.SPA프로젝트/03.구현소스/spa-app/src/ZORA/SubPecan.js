@@ -6,8 +6,8 @@ import SubNext from "./modules/Subnext";
 const SubPecan = () =>{
   return(
     <>
-      <SubItem num="3"/>
-      <SubNext num="3" />
+      <SubItem num="2"/>
+      <SubNext num="2" />
     </>
   )
 }; /////////////

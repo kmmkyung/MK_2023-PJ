@@ -6,6 +6,7 @@ import Logo_W from './data/svg/Logo_W.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
+import ScrollTop from "./common/ScrollTop";
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -95,8 +96,8 @@ function Mham(){
 }
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
-    // console.log('Scroll up', $(this).scrollTop());
-    if($(this).scrollTop() < 600){
+    console.log('Scroll up', $(this).scrollTop());
+    if($(this).scrollTop() < 500){
       $("#header").removeClass("fixed")
     }else{
       $("#header").addClass("fixed")
@@ -106,12 +107,16 @@ $(window).bind("mousewheel",function(event){
     $("#header").removeClass("fixed")
 }
 })
+
+
+
 }); /////////////////////////
 
 
 const Layout = () => {
   return (
       <>
+      <ScrollTop />
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
         <header id="header">

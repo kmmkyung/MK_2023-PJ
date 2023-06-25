@@ -31,7 +31,7 @@ const ChocoDomeCon_data={
                 "cont":"",
                 "btn":"Buy now",
                 "btnclass":"btn-B",
-                "link":"/ginger"
+                "link":"/pecan"
             },
             {
                 "src1":"",
@@ -42,7 +42,7 @@ const ChocoDomeCon_data={
                 "cont":"",
                 "btn":"Buy now",
                 "btnclass":"btn-B",
-                "link":"/pecan"
+                "link":"/ginger"
             },
             {
                 "src1":"",

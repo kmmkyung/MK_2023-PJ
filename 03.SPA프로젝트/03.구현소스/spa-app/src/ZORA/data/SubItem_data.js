@@ -114,7 +114,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"]
   },
   {
-    bg:"./images/Sub_Ginger_Sesame_choc.jpg",
+    bg:"./images/Sub_Ginge__Sesame_Bg.jpg",
     tit:"Ginger + Sesame",
     con:`Ginger bits, in a vibrant and uplifting burst of flavor, generously sprinkled with toasted white and black sesame seeds for that crispy crunch.`,
     item_src:"./images/Sub_Ginger_Sesame_choc.jpg",

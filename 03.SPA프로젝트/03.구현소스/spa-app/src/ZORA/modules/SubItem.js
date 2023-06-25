@@ -7,54 +7,8 @@ import SubItem_data from "../data/SubItem_data"
 import $ from "jquery"
 
 function jqFn(){
-    $(()=>{
-        console.log('Subitem로딩')
-
-  // 인풋
-  const sumInput = $(".number-btn__input");
-  console.log('suminput',sumInput);
-  
-  // 인풋 버튼
-  $(".number-btn__span").click(function(){
-    // 1. 클릭된 버튼 구분하기
-    let altbtn = $(this).attr('alt');
-    console.log('구분버튼',altbtn); // ok
-    
-    // 2. 현재값 읽어오기 문자->숫자
-    let isV = Number(sumInput.val())
-    console.log('현재값',isV);
-    
-    // 3. 버튼 분기하기
-    if(altbtn === "add"){
-      sumInput.val(++isV)
-    }
-    else{
-      isV = --isV;
-      if(isV===0) isV=1;
-      sumInput.val(isV)
-    }
-  })
-
-  // 직접입력
-  sumInput.keyup(function(){
-    let txt = sumInput.val();
-    if(txt === "") return;
-
-    // 숫자가 아니거나, 1미만이거나, 빈값이거나, 소수점 아닌 -1일 경우
-    if(isNaN(txt) ||
-    txt <1 ||
-    txt === "" ||
-    txt.indexOf(".")!==-1
-    ){
-      sumInput.val(1);
-    }
-    else{
-      if(txt>=100){
-        alert("연락바람")
-      }
-    }
-  })
-  
+  $(()=>{
+      console.log('Subitem로딩')
 
 
   }); //--- JQB ---//
@@ -62,6 +16,13 @@ function jqFn(){
 jqFn();
 
 function SubItem(props){
+
+  // 인풋
+  const sumInput = $(".number-btn__input");
+  console.log('suminput',sumInput);
+  console.log('btn',$(".number-btn__span"));
+  
+
 
     return(
         <>        

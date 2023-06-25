@@ -6,7 +6,6 @@ import Logo_W from './data/svg/Logo_W.svg';
 import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
-import ScrollTop from "./common/ScrollTop";
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -113,7 +112,6 @@ $(window).bind("mousewheel",function(event){
 const Layout = () => {
   return (
       <>
-      <ScrollTop />
         <div className ="cursor"></div>
         {/* 상단영역 네비게이션 */}
         <header id="header">

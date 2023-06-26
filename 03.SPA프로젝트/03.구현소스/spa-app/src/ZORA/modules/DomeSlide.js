@@ -5,8 +5,7 @@ import "../css/domeslide.css";
 import DomeSlide_data from "../data/DomeSlide_data"
 // 제이쿼리
 import $ from "jquery"
-import {draggable} from "jquery-ui"
-
+import 'jquery-ui'
 
 function jqFn(){
   $(()=>{ 

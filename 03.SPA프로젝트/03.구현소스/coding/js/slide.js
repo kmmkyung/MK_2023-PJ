@@ -14,10 +14,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   // 리사이즈 업데이트
   $(window).resize(() => {
     winW = reWin();
+    console.log("reWin:",reWin);
   });
 
   let winW = reWin();
-  // console.log("winW:",winW);
   // console.log("winW*0.9:",winW*0.9);
   // console.log("winW*1.1:",winW*1.1);
   
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
   // 이동함수
   function goSlide(dir) {
-    // dir - 전달변수
+    // dir - 전달변수 
     console.log("방향:", dir);
 
 // 분기하기
@@ -60,28 +60,32 @@ if (dir) {
       // 이동후 맨뒤li 맨앞으로 이동하기
       slide.prepend(slide.find("li").last()).css({ left: "-100%" });
     }
-  ); 
-} 
-// 왼쪽이동 //////////////////
-else {
-  slide.animate(
-    {
-      left: -winW * 2 + "px",
-    },
-  () => {
-      // 이동후 맨앞li 맨뒤이동
-      slide.append(slide.find("li").first()).css({ left: "-100%" });
-    }
-  );
+    ); 
+    addOn(0)
+  } 
+  // 왼쪽이동 //////////////////
+  else {
+    slide.animate(
+      {
+        left: -winW * 2 + "px",
+      },
+      () => {
+        // 이동후 맨앞li 맨뒤이동
+        slide.append(slide.find("li").first()).css({ left: "-100%" });
+      }
+      );
+    addOn(2)
 } /////////// else /////////////
 } //////////////// goSlide함수 ///////////////////
 
-  // 블릿 맞추기 <- 안됌... ㅠㅜ
-  const btn = $('.domeslide-btn li');
-  function addOn(seq){
-    let dseq = slist.eq().attr("data-seq");
-    console.log('dseq',dseq);
+const btn = $('.domeslide-btn li');
+function addOn(seq){
+  let dseq = slide.find('li').eq(seq).attr("data-seq");
+  console.log('dseq',dseq);
 
-  btn.eq(dseq).addClass("on").siblings().removeClass("on");
-  }
+btn.eq(dseq).addClass("on").siblings().removeClass("on");
+}
+
 })// ---------
+
+//dir = 0-f 1-t

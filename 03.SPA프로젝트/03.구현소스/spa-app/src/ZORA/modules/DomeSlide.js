@@ -30,6 +30,16 @@ function jqFn(){
 } //_______________ jqFn _______________//
 
 const DomeSlide = () => {
+
+  const slide = $(".domeslide-con");
+  const slist = slide.find('li');
+
+  // 1. 드래그 설정
+  slide.draggable({
+    axis: "x" 
+});
+
+
   return(
     <>
       <section id="domeslide">

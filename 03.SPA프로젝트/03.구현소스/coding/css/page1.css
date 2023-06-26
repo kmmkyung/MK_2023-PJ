@@ -391,13 +391,15 @@
   border-radius: 50%;
 }
 
-.btn.on{
-  background-color: var(--white);
-  position: relative;
+.domeslide-btn li .btn{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
 }
-.domeslide-btn .btn-noon{
-  background-color: var(--red);
-  position: absolute;
+
+.domeslide-btn li.on .btn{
+  background-color: var(--black);
 }
 
 .domeslide__backwrap{

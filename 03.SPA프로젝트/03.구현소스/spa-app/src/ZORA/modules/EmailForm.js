@@ -4,20 +4,20 @@ import "../css/emailform.css";
 // 제이쿼리
 import $ from "jquery"
 function jqFn(){
-
   $(()=>{
-    const input = document.querySelector('.push-em')
-    const inputlabel = document.querySelector('label')
-    // console.log(input,inputlabel); //ok
-    input.addEventListener('click',function(){
-      inputlabel.style.top="-100%"
-      inputlabel.style.color="#cccccc"
-    })
-    input.addEventListener("blur",function(){
-      inputlabel.style.top="0%"
-      inputlabel.style.color="#000"
-    })
-    
+    function labelclick(params){
+      const input = document.querySelector('.input')
+      const inputlabel = document.querySelector('label')
+      // console.log(input,inputlabel); //ok
+      input.addEventListener('click',function(){
+        inputlabel.style.top="-100%"
+        inputlabel.style.color="#cccccc"
+      })
+      input.addEventListener("blur",function(){
+        inputlabel.style.top="0%"
+        inputlabel.style.color="#000"
+      })
+    }
   })
 }
 

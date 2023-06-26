@@ -26,31 +26,35 @@
 
 .Email-form__push{
   position: relative;
-  font-size: var(--font-size-S);
-  font-family: var(--Atami);
 }
 
 .push-em{
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 5px;
+  padding: 20px;
   border-style: none;
-  background-color: var(--main);
+  background-color: transparent;
   border-bottom: 1px solid var(--black);
 }
 
-.Email-form label{
+label{
+  font-family: var(--Atami);
+  font-size: var(--font-size-S);
   pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
+  line-height: 55px;
 }
 
 .push-btn{
   border-style: none;
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   left: auto;
+  padding: 20px;
+  background-color: transparent;
 }

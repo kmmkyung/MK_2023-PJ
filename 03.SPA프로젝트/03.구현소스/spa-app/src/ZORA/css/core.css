@@ -394,9 +394,16 @@ color: var(--white);
     text-align: center;
 }
 
+.Login-form{
+    margin: 80px 0;
+}
+
 .input input{
     border: none;
     background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
 }
 
 .Login-con__btn{
@@ -407,3 +414,19 @@ color: var(--white);
     font-family: var(--Atami);
 }
 
+.Login-con__name,
+.Login-con__pw{
+    position: relative;
+}
+
+.Login-con__pw{
+    margin: 50px 0;
+}
+
+.input label{
+    font-size: var(--font-size-S);
+    font-family: var(--Atami);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}

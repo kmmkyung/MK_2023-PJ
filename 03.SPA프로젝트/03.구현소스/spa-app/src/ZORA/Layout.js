@@ -8,6 +8,7 @@ import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
 import ScrollTop from "./common/ScrollTop";
 import { inputclick } from './modules/SubItem';
+import { labelclick } from './modules/EmailForm';
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
   inputclick($(".con-btn__input"));
+  labelclick($(".input"))
 // <head> 파비콘 함수 + 호출 _____________________________________
 favicon(); //---- 호출
 function favicon(){
@@ -284,7 +286,7 @@ const Layout = () => {
           </div>
         </aside>
         {/* LOGIN -----------------------------------------------------*/}
-        <aside id='Login'>
+        {/* <aside id='Login'>
           <div className='Login-wrap'>
             <button className="close">
                 <FontAwesomeIcon icon={faXmark} className='Login-close'/>
@@ -307,7 +309,7 @@ const Layout = () => {
             </div>
           </div>
           <div className='Login-bg'></div>
-        </aside>
+        </aside> */}
       {/* MAIN CONTENT -----------------------------------------------------*/}
       <main id="cont">
         <Outlet />

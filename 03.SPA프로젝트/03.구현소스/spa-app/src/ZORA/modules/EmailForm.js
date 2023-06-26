@@ -4,20 +4,22 @@ import "../css/emailform.css";
 // 제이쿼리
 import $ from "jquery"
 function jqFn(){
-
   $(()=>{
-    const input = document.querySelector('.push-em')
-    const inputlabel = document.querySelector('label')
-    // console.log(input,inputlabel); //ok
-    input.addEventListener('click',function(){
-      inputlabel.style.top="-100%"
-      inputlabel.style.color="#cccccc"
-    })
-    input.addEventListener("blur",function(){
-      inputlabel.style.top="0%"
-      inputlabel.style.color="#000"
-    })
-    
+    labelclick($(".push-em"))
+  })
+}
+
+function labelclick(params){
+  const input = ('params')
+  const inputlabel = document.querySelector('label')
+  console.log(params,inputlabel); //ok
+  input.addEventListener('click',function(){
+    inputlabel.style.top="-100%"
+    inputlabel.style.color="#cccccc"
+  })
+  input.addEventListener("blur",function(){
+    inputlabel.style.top="0%"
+    inputlabel.style.color="#000"
   })
 }
 
@@ -45,5 +47,4 @@ const EmailForm = () => {
     </>
   )
 }
-
-export default EmailForm;
+export {EmailForm, labelclick};

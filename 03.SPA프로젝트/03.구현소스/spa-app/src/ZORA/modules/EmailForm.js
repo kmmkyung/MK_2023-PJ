@@ -3,20 +3,23 @@ import React from 'react';
 import "../css/emailform.css";
 // 제이쿼리
 import $ from "jquery"
-$(()=>{
-  const input = document.querySelector('.push-em')
-  const inputlabel = document.querySelector('label')
-  // console.log(input,inputlabel); //ok
-  input.addEventListener('click',function(){
-    inputlabel.style.top="-100%"
-    inputlabel.style.color="#cccccc"
+function jqFn(){
+
+  $(()=>{
+    const input = document.querySelector('.push-em')
+    const inputlabel = document.querySelector('label')
+    // console.log(input,inputlabel); //ok
+    input.addEventListener('click',function(){
+      inputlabel.style.top="-100%"
+      inputlabel.style.color="#cccccc"
+    })
+    input.addEventListener("blur",function(){
+      inputlabel.style.top="0%"
+      inputlabel.style.color="#000"
+    })
+    
   })
-  input.addEventListener("blur",function(){
-    inputlabel.style.top="0%"
-    inputlabel.style.color="#000"
-  })
-  
-})
+}
 
 const EmailForm = () => {
   return(
@@ -38,7 +41,7 @@ const EmailForm = () => {
         </form>
       </div>
     </section>
-    
+    {jqFn()}
     </>
   )
 }

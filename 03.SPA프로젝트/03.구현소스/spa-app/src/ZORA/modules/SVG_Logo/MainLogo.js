@@ -1,6 +1,4 @@
 // Logo Svg
-import Svg_data from '../../data/Svg_data';
-
 const MainLogo = () => {
   const logo = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 74.9" style="enable-background:new 0 0 240 74.9;" xml:space="preserve">
   <path d="M54,1.8H2.7v4.5l43.6,0L0,73.3h54.5v-4.5h-40L54,1.8z"></path>

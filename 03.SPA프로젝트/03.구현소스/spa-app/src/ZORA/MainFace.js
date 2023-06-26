@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import page1 from './data/svg/page1.svg';
 // CSS
 import "./css/mainface.css";
 // 제이쿼리
 import $ from "jquery"
 
+function jqFn(){
+  $(()=>{
+      console.log('MainFace')
+}); //--- JQB ---//
+} //_______________ jqFn _______________//
+jqFn();
 const MainFace = () => {
   return(
     <>

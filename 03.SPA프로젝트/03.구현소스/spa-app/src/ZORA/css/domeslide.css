@@ -1,5 +1,6 @@
 .domeslide-wrap{
   position: relative;
+  overflow: hidden;
 }
 
 .domeslide-con{
@@ -58,7 +59,7 @@
   background-color: #c4c4c4;
 }
 
-.domeslide-btn li .btn.on{
+.domeslide-btn li.on .btn{
   background-color: var(--black);
 }
 

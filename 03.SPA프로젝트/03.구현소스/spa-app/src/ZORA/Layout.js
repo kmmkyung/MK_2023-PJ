@@ -294,12 +294,12 @@ const Layout = () => {
               <div className='Login-form'>
                 <form>
                   <div className='Login-con__name input'>
-                    <label htmlFor="text">USERNAME OR EMAIL</label>
                     <input type="text"/>
+                    <label htmlFor="text">USERNAME OR EMAIL</label>
                   </div>
                   <div className='Login-con__pw input'>
-                    <label htmlFor="password">PASSWORD</label>
                     <input type="password"/>
+                    <label htmlFor="password">PASSWORD</label>
                   </div>
                   <button className="Login-con__btn">Login</button>
                 </form>

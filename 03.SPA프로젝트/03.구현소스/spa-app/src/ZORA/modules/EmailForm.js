@@ -32,7 +32,7 @@ const EmailForm = () => {
         </div>
         <form className="Email-form">
           <div className="Email-form__push">
-            <input className="push-em" type="email" id="email"/>
+            <input className="push-em input" type="email" id="email"/>
             <div>
               <label htmlFor="email">EMAIL</label>
               <input className="push-btn" type="submit" value="→" /> 

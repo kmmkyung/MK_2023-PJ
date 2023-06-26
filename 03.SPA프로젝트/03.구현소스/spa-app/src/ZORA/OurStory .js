@@ -3,10 +3,12 @@ import React from "react";
 import RecBlure from "./modules/RecBlur"
 import DomeCon from './modules/DomeCon';
 import RecCon from './modules/RecCon';
+import OurFace from "./modules/OurFace";
 
 const OurStory = () => {
   return(
     <>
+      <OurFace num='0'/>
       <RecBlure num='1'/>
       <DomeCon cat='Our_Story' num='0'/>
       <RecCon cat='main' num='1'/>

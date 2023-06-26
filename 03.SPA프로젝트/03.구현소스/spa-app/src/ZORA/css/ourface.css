@@ -1,0 +1,45 @@
+.ourface-wrap{
+  width: 100%;
+  height: 100vh;
+}
+
+.ourface-R__bg{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ourface-L{
+  position: absolute;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  background-color: var(--org);
+  width: 100%;
+  height: 500px;
+  bottom: 0;
+}
+
+.ourface-L__con{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: min(80vw,600px);
+}
+
+.ourface-L__con h1{
+  font-size: var(--font-size-L);
+  text-align: center;
+  font-family: var(--Coko);
+}
+
+.ourface-L__con p{
+  margin-top: 20px;
+  font-size: var(--font-size-S);
+  text-align: center;
+  font-family: var(--Atami);
+  line-height: 20px;
+}
+

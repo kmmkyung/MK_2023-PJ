@@ -60,7 +60,6 @@ const setcss_bg = [
 ];
 // jqFn();
 
-// 컴포넌트 출력용
 function ChocoDomeCon() {
 
   // Chocolate 뽀각 _______________________________________________________
@@ -71,7 +70,7 @@ function ChocoDomeCon() {
   chocolateImg2.forEach((ele,idx)=>{
     // console.log('ele',ele);
     // console.log('idx',idx);
-    // 초콜릿에 마우스 오버시! 뽀각
+    // 초콜릿에 마우스 오버시 뽀각
     ele.addEventListener("mouseenter",function(){
       this.style.opacity=1;
       chocolateImg1[idx].style.opacity=0;

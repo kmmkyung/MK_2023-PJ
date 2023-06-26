@@ -5,16 +5,15 @@ import "../css/subitem.css";
 import SubItem_data from "../data/SubItem_data"
 // 제이쿼리
 import $ from "jquery"
-
-function jqFn(){
-  $(()=>{
-      console.log('Subitem로딩')
+function inputclick(params){
   // 인풋
-  const sumInput = $(".number-btn__input");
+  const sumInput = $(params);
   console.log('suminput',sumInput);
   
   // 인풋 버튼
-  $(".number-btn__span").click(function(){
+  $(params).parent().find("span").click(function(){
+    console.log('this', $(this));
+    
     // 1. 클릭된 버튼 구분하기
     let altbtn = $(this).attr('alt');
     console.log('구분버튼',altbtn); // ok
@@ -53,7 +52,13 @@ function jqFn(){
       }
     }
   })
-  
+}
+function jqFn(){
+  $(()=>{
+      console.log('Subitem로딩')
+inputclick($(".number-btn__input"))
+
+
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 
@@ -134,4 +139,4 @@ function SubItem(props){
         </>
     )
 } //______________ SubItem _______________//
-export default SubItem;
+export {SubItem, inputclick};

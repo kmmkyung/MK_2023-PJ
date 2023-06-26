@@ -7,12 +7,14 @@ import { Link, Outlet } from "react-router-dom";
 import $ from 'jquery'
 import MainLogo from './modules/SVG_Logo/MainLogo';
 import ScrollTop from "./common/ScrollTop";
+import { inputclick } from './modules/SubItem';
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
+  inputclick($(".con-btn__input"));
 // <head> 파비콘 함수 + 호출 _____________________________________
 favicon(); //---- 호출
 function favicon(){
@@ -56,14 +58,20 @@ $("body").on("mouseup",function(){
 
 // 네비게이션 ____________________________________________________________
 Mham(); //---- 호출
+
 function Mham(){
   document.querySelector("#DTnav").classList.add('-hidden');
-  const ham = document.querySelector(".ham")
-  const close = document.querySelector(".close")
-  const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg')
-  const Mbag = document.querySelector('.Mnav-wrap .nav-R a')
-  const Mmenu = document.querySelectorAll(".Mmenu a")
+  const ham = document.querySelector(".ham");
+  const close = document.querySelector(".close");
+  const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg');
+  const txtbag = document.querySelector('.Mnav-wrap .nav-R li');
+  const Mmenu = document.querySelectorAll(".Mmenu h3");
+
+  console.log('h3',Mmenu);
   
+  
+  
+  // 메뉴창 열기
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
     ham.classList.add('-hidden');
@@ -72,11 +80,11 @@ function Mham(){
       MLogo.style.fill="#000000"
     },300);
     setTimeout(()=>{
-      Mbag.style.color="#000000"
+      txtbag.style.color="#000000"
     },700);
   })
-  
 
+  // 메뉴창 닫기
   function menuClose(){
     close.classList.add('-hidden');
     ham.classList.remove('-hidden');
@@ -85,15 +93,35 @@ function Mham(){
       MLogo.style.fill="#ffffff"
     },300)
     setTimeout(()=>{
-      Mbag.style.color="#ffffff"
+      txtbag.style.color="#ffffff"
     },200)
   }
+
+  // 메뉴 누르면 메뉴창 닫기
   close.addEventListener('click',menuClose)
   Mmenu.forEach(v=>{
     v.addEventListener("click",menuClose)
   })
-
 }
+
+MBag()
+function MBag(){
+  const Bag = document.querySelectorAll(".Bag")
+  const Bclose = document.querySelector(".Bag-close")
+  const Bagwrap = document.querySelector("#bag")
+  console.log('bag',Bag);
+  
+  Bag.forEach((v)=>{
+    v.addEventListener('click',function(){
+      Bagwrap.style.transform="translateX(0%)"
+    })
+  })
+  Bclose.addEventListener('click',()=>{
+    Bagwrap.style.transform="translateX(100%)"
+  })
+}
+
+// 메뉴 스크롤 올리면 보이기
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
     // console.log('Scroll up', $(this).scrollTop());
@@ -128,7 +156,7 @@ $(window).bind("mousewheel",function(event){
         //     // 구간적용여부 검사하기
         //     // 0보다 크고 화면의 2/3보다 작은 구간!
         //     if(xval < hv && xval > 0){
-        //         console.log("작동!~~~~");
+        //         console.log("작동!");
         //         // 해당요소에 클래스 넣기!
         //         x.classList.add("on");
         //     }
@@ -175,7 +203,7 @@ const Layout = () => {
             <div className="nav-R">
               <ul>
                 <li><a href="#">LOGIN</a></li>
-                <li><a href="#">BAG(0)</a></li>
+                <li className='Bag'>BAG(0)</li>
               </ul>
             </div>
           </nav> 
@@ -199,7 +227,7 @@ const Layout = () => {
               <span className="ir">ZORA</span>
               <div className="nav-R">
                 <ul>
-                  <li><a href="#">BAG(0)</a></li>
+                  <li className='Bag'>BAG(0)</li>
                 </ul>
               </div>
             </div>
@@ -214,9 +242,40 @@ const Layout = () => {
                 <Link to ='/impact'>
                   <h3>Our impact</h3>
                 </Link>
-              </div>
               <div className="Mlogin">
                 <h3>LOG-IN</h3>
+              </div>
+              </div>
+            </div>
+            <div id="bag">
+              <div className="bag-wrap">
+                <div className='bag-top'>
+                  <h3>Bag</h3>
+                  <button className="close">
+                    <FontAwesomeIcon icon={faXmark} className='Bag-close'/>
+                  </button>
+                </div>
+                <div className="bag-items__tit">
+                  <h3>ITEMS(<span>0</span>)</h3>
+                </div>
+                <div className='bag-items__con'>
+                  <img src='./images/Pecan_cherry_cart.jpg' alt='co'/>
+                  <div className='bag-items-txt'>
+                    <h5>Pecan + Cherry</h5>
+                    <div className="con-btn">
+                      <span className='con-btn__span' alt='no'>-</span>
+                      <input htmlFor="number" className='con-btn__input' placeholder="1"/>
+                      <span className='con-btn__span' alt='add'>+</span>
+                    </div>
+                      <p>$11.86</p>
+                      <span className='remove'>remove</span>
+                  </div>
+                </div>
+                <div className="bag-items__total">
+                  <span>TOTAL</span>
+                  <span>$0</span>
+                </div>
+                <button className="con-btn__buy">BUY NOW</button>
               </div>
             </div>
           </nav> 

@@ -29,7 +29,7 @@ const DomeSlide = () => {
     winW = reWin();
     console.log("reWin:",reWin);
   });
-
+  
   let winW = reWin();
 
   // 드래그 끝난 후 이벤트함수

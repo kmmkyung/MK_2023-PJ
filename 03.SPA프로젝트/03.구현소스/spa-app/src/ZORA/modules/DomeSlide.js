@@ -5,27 +5,12 @@ import "../css/domeslide.css";
 import DomeSlide_data from "../data/DomeSlide_data"
 // 제이쿼리
 import $ from "jquery"
+import {draggable} from "jquery-ui"
 
 
 function jqFn(){
   $(()=>{ 
-    console.log('DomeSlide 로딩')
-    
-    //대상 선정
-    const slide = $(".domeslide-con")
-    const winW = $(window).width();
-    console.log('reWin',winW);
-    // slide.draggable({axis='x'})
-    // 드래그 끝난 후 위치
-    slide.on('dragstop',function(){
-      console.log('gg');
-      
-    });
-
-    
-    
-
-      
+    console.log('DomeSlide 로딩')      
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 

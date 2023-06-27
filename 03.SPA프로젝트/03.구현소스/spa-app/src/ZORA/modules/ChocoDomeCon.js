@@ -1,11 +1,8 @@
 //  초콜릿 돔 컴포넌트 - ChocoDomeCon.js
 import React, { useEffect } from "react";
-// CSS
-import "../css/chocodomecon.css";
-// Data
 import { Link } from "react-router-dom";
+import "../css/chocodomecon.css";
 import ChocoDomeCon_data from "../data/ChocoDomeCon_data";
-// 제이쿼리
 import $ from "jquery";
 
 function jqFn() {

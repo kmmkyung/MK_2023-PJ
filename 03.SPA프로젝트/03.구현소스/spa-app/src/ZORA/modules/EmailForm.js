@@ -5,29 +5,28 @@ import "../css/emailform.css";
 import $ from "jquery"
 function jqFn(){
   $(()=>{
-    labelclick((".input"))
+    labelclick((".push-em"))
   })
 }
 
 function labelclick(params){
   const input = $(params)
   const inputlabel = $(params).next()
-
-  // console.log(input,inputlabel);
   
   input.on('click',function(){
     inputlabel.css("top","-50%")
     inputlabel.css("color","#ccc")
-    if(input.val() !== ""){
-      inputlabel.css("top","-50%")
-      inputlabel.css("color","#ccc")
-    }
+    
   })
-  // console.log('dd',input.val());
   
   input.on('blur',function(){
-    inputlabel.css("top","0%")
-    inputlabel.css("color","#000")
+    if(input.val() !=""){
+      inputlabel.css("top","-50%")
+      inputlabel.css("color","#ccc")
+    }else{
+      inputlabel.css("top","0%")
+      inputlabel.css("color","#000")
+    }
   })
 }
 
@@ -42,7 +41,7 @@ const EmailForm = () => {
         </div>
         <form className="Email-form">
           <div className="Email-form__push">
-            <input className="push-em input" type="email" id="email" name='input'/>
+            <input className="push-em" type="email" id="email" name='input'/>
             <label htmlFor="email" className='lable'>EMAIL</label>
             <input className="push-btn" type="submit" value="→" /> 
           </div>

@@ -103,7 +103,9 @@ body{
   margin-top: 10px;
 }
 
-
+.number-btn__2:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .item{
 padding-top: 300px;

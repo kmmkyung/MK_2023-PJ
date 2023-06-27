@@ -1,6 +1,6 @@
 import React from 'react';
 import MainFace from './MainFace';
-import ChocoDomeCon from "./modules/ChocoDomeCon";
+import {ChocoDomeCon} from "./modules/ChocoDomeCon";
 import RecCon from "./modules/RecCon";
 import DomeCon from './modules/DomeCon';
 import { EmailForm } from './modules/EmailForm';

@@ -5,10 +5,12 @@ import "../css/subitem.css";
 import SubItem_data from "../data/SubItem_data"
 // 제이쿼리
 import $ from "jquery"
+import { useState } from "react";
+import Bag_data from "../data/Bag_data";
 function jqFn(){
   $(()=>{
     console.log('Subitem로딩')
-    inputclick($(".number-btn__input"))
+    inputclick(".number-btn__input")
   }); //--- JQB ---//
 } 
 
@@ -62,7 +64,19 @@ function inputclick(params){
 }
 
 function SubItem(props){
-
+  function addCart_data(){
+    if(localStorage.getItem("cart") == null){
+      localStorage.setItem("cart","[]");
+      console.log("cart후", localStorage.getItem("cart"));
+    }else{
+      let org = localStorage.getItem("cart");
+      org = JSON.parse(org);
+      org.push(Bag_data[props.num])
+      localStorage.setItem("cart", JSON.stringify(org));
+      console.log("저장후", localStorage.getItem("cart"));
+    }
+    
+  }
     return(
         <>        
           <section id="subface">
@@ -86,7 +100,7 @@ function SubItem(props){
                     <input htmlFor="number" className='number-btn__input' placeholder="1"/>
                     <span className='number-btn__span' alt='add'>+</span>
                   </div>
-                  <button className="number-btn__2">BUY NOW - 11.86$</button>
+                  <button className="number-btn__2" onClick={addCart_data}>BUY NOW - 11.86$</button>
               </div>
             </div>
             </section>

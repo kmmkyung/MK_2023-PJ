@@ -11,6 +11,8 @@ const SubNext_data = [
     btn_R:"Buy now",
     bgc_L:"var(--red)",
     bgc_R:"var(--pink)",
+    link_L:"/pecan",
+    link_R:"/rose",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -23,6 +25,8 @@ const SubNext_data = [
     btn_R:"Buy now",
     bgc_L:"var(--pink)",
     bgc_R:"var(--yell)",
+    link_L:"/rose",
+    link_R:"/ginger",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -35,6 +39,8 @@ const SubNext_data = [
     btn_R:"Buy now",
     bgc_L:"var(--pink)",
     bgc_R:"var(--org)",
+    link_L:"/rose",
+    link_R:"/dark",
   },
   {
     src1_L:"./images/Rose_Flower_1.png",
@@ -47,6 +53,8 @@ const SubNext_data = [
     btn_R:"Buy now",
     bgc_L:"var(--pink)",
     bgc_R:"var(--blue)",
+    link_L:"/rose",
+    link_R:"/fleur",
   },
   {
     src1_L:"./images/Pecan_cherry_1.png",
@@ -59,6 +67,8 @@ const SubNext_data = [
     btn_R:"Buy now",
     bgc_L:"var(--red)",
     bgc_R:"var(--yell)",
+    link_L:"/pecan",
+    link_R:"/ginger",
   },
 ]
 

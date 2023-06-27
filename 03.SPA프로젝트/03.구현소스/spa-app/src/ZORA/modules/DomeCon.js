@@ -1,7 +1,6 @@
 // 돔 컴포넌트 - domCon.js
-// CSS
+import { Link } from "react-router-dom";
 import "../css/domecon.css";
-// Data
 import DomeCon_data from '../data/DomeCon_data';
 // 제이쿼리 
 import $ from "jquery"
@@ -54,7 +53,9 @@ function DomeCon(props){
         <p className="domecon-con__text">{content.con1.split("^")[0]}</p>
         <p className="domecon-con__text">{content.con1.split("^")[1]}</p>
         <p className="domecon-con__text">{content.con1.split("^")[2]}</p>
-        <button className="domecon-con__btn btn-B">{content.btn}</button>
+        <Link to='/impact'>
+          <button className="domecon-con__btn btn-B">{content.btn}</button>
+        </Link>
       </div>
     </div>
   </section>

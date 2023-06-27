@@ -1,12 +1,12 @@
 /* eslint-disable */
-import React from 'react';
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { json, Link, Outlet } from "react-router-dom";
 import ScrollTop from "./common/ScrollTop";
 import $ from 'jquery'
 
 import MainLogo from './modules/SVG_Logo/MainLogo';
 import Logo_W from './data/svg/Logo_W.svg';
-import Bag_data from './data/Bag_data';
+import Bag from './modules/Bag';
 
 import "./css/root.css";
 import "./css/core.css";
@@ -19,9 +19,9 @@ import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
-  inputclick($(".con-btn__input"));
-  labelclick($(".Login-con__name > input"))
-  labelclick($(".Login-con__pw > input"))
+  inputclick(".con-btn__input");
+  labelclick(".Login-con__name > input")
+  labelclick(".Login-con__pw > input")
 
 // <head> 파비콘 함수 + 호출 _____________________________________
 favicon(); //---- 호출
@@ -86,6 +86,7 @@ function Mham(){
     setTimeout(()=>{
       txtbag.style.color="#000000"
     },700);
+    document.body.style.overflow="hidden"
   })
 
   // 메뉴창 닫기
@@ -99,6 +100,7 @@ function Mham(){
     setTimeout(()=>{
       txtbag.style.color="#ffffff"
     },200)
+    document.body.style.overflow="scroll"
   }
 
   // 메뉴 누르면 메뉴창 닫기
@@ -116,10 +118,12 @@ function MBag(){
   Bag.forEach((v)=>{
     v.addEventListener('click',function(){
       Bagwrap.style.transform="translateX(0%)"
+      document.body.style.overflow="hidden"
     })
   })
   Bclose.addEventListener('click',()=>{
     Bagwrap.style.transform="translateX(100%)"
+    document.body.style.overflow="scroll"
   })
 }
 
@@ -128,17 +132,19 @@ function LoginBtn(){
   const Lopen = document.querySelector(".Mlogin>h3")
   const Lclose = document.querySelector(".Login-close")
   
+  // ​‌‌‍⁡⁣⁢⁣선생님 물어볼것!⁡​
   Lopen.addEventListener('click',function(){
-    setTimeout(()=>{
-      document.querySelector("#Login").style.opacity="1"
-      document.querySelector("#Login").classList.remove("-hidden")
-    },1200)
+    $("#Login").removeClass("-hidden").css({
+      opacity:"1"
+    })
+    document.body.style.overflow="hidden"
   })
   Lclose.addEventListener('click',function(){
+    document.querySelector("#Login").style.opacity="0"
     setTimeout(()=>{
-      document.querySelector("#Login").style.opacity="0"
       document.querySelector("#Login").classList.add("-hidden")
-    },1200)
+    },2000)
+    document.body.style.overflow="scroll"
   })
 }
 
@@ -190,11 +196,12 @@ $(window).bind("mousewheel",function(event){
         //     for(let x of scrollCon) showIt(x);
         // })
 
-
-}); /////////////////////////
-
+      }); /////////////////////////
+      
+let org = JSON.parse(localStorage.getItem("cart"))
 
 const Layout = () => {
+
   return (
     <>
     <ScrollTop />
@@ -219,7 +226,7 @@ const Layout = () => {
             </ul>
           </div>
           <Link to ='/'>
-            <MainLogo/>
+            <MainLogo />
           </Link>
           <span className="ir">ZORA</span>
           <div className="nav-R">
@@ -245,7 +252,7 @@ const Layout = () => {
                 </ul>
               </div>
             <Link to='/'>
-              <MainLogo/>
+              <MainLogo />
             </Link>
             <span className="ir">ZORA</span>
             <div className="nav-R">
@@ -273,37 +280,29 @@ const Layout = () => {
         </nav>
       </header>
         {/* BAG----------------------------------------------------- */}
-        <aside id="bag">
-          <div className="bag-wrap">
-            <div className='bag-top'>
-              <h3>Bag</h3>
-              <button className="close">
-                <FontAwesomeIcon icon={faXmark} className='Bag-close'/>
-              </button>
-            </div>
-            <div className="bag-items__tit">
-              <h3>ITEMS(<span>0</span>)</h3>
-            </div>
-            <div className='bag-items__con'>
-              <img src='./images/Sub_Dark_Bg.jpg' alt='co'/>
-              <div className='bag-items-txt'>
-                <h5>Pecan + Cherry</h5>
-                <div className="con-btn">
-                  <span className='con-btn__span' alt='no'>-</span>
-                  <input htmlFor="number" className='con-btn__input' placeholder="1"/>
-                  <span className='con-btn__span' alt='add'>+</span>
-                </div>
-                  <p>$11.86</p>
-                  <span className='remove'>remove</span>
-              </div>
-            </div>
-            <div className="bag-items__total">
-              <span>TOTAL</span>
-              <span>$0</span>
-            </div>
-            <button className="con-btn__buy">BUY NOW</button>
+      <aside id="bag">
+        <div className="bag-wrap">
+          <div className='bag-top'>
+            <h3>Bag</h3>
+            <button className="close">
+              <FontAwesomeIcon icon={faXmark} className='Bag-close'/>
+            </button>
           </div>
-        </aside>
+          <div className="bag-items__tit">
+            <h3>ITEMS(<span>0</span>)</h3>
+          </div>
+          {
+            console.log('org',org)
+            
+          }
+              <Bag num="1"/>
+          <div className="bag-items__total">
+            <span>TOTAL</span>
+            <span>$0</span>
+          </div>
+          <button className="con-btn__buy">BUY NOW</button>
+        </div>
+      </aside>
         {/* LOGIN -----------------------------------------------------*/}
         <aside id='Login' className='-hidden'>
           <div className='Login-wrap'>

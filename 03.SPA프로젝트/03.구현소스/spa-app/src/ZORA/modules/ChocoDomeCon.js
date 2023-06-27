@@ -1,5 +1,5 @@
 //  초콜릿 돔 컴포넌트 - ChocoDomeCon.js
-import React from "react";
+import React, { useEffect } from "react";
 // CSS
 import "../css/chocodomecon.css";
 // Data
@@ -60,28 +60,32 @@ const setcss_bg = [
 ];
 // jqFn();
 
+
+  const chocobreak = ()=>{
+    // Chocolate 뽀각 _______________________________________________________
+    const chocolateImg1 = document.querySelectorAll(".chocolatepack")
+    const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
+    // console.log(chocolateImg1);
+    
+    chocolateImg2.forEach((ele,idx)=>{
+      // console.log('ele',ele);
+      // console.log('idx',idx);
+      // 초콜릿에 마우스 오버시 뽀각
+      ele.addEventListener("mouseenter",function(){
+        this.style.opacity=1;
+        chocolateImg1[idx].style.opacity=0;
+        // console.log('chocolateImg1배열순번!',chocolateImg1[idx]);
+      })
+      ele.addEventListener("mouseout",function(){
+        this.style.opacity=0;
+        chocolateImg1[idx].style.opacity=1;
+      })
+    }) // forEach
+  };
+
+
 function ChocoDomeCon() {
-
-  // Chocolate 뽀각 _______________________________________________________
-  const chocolateImg1 = document.querySelectorAll(".chocolatepack")
-  const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
-  // console.log(chocolateImg1);
-  
-  chocolateImg2.forEach((ele,idx)=>{
-    // console.log('ele',ele);
-    // console.log('idx',idx);
-    // 초콜릿에 마우스 오버시 뽀각
-    ele.addEventListener("mouseenter",function(){
-      this.style.opacity=1;
-      chocolateImg1[idx].style.opacity=0;
-      // console.log('chocolateImg1배열순번!',chocolateImg1[idx]);
-    })
-    ele.addEventListener("mouseout",function(){
-      this.style.opacity=0;
-      chocolateImg1[idx].style.opacity=1;
-    })
-  }) // forEach
-
+    useEffect(()=> chocobreak(), [])
 
   return (
     <>
@@ -135,4 +139,4 @@ function ChocoDomeCon() {
     </>
   );
 } //______________ domCon_______________//
-export default ChocoDomeCon;
+export {ChocoDomeCon, chocobreak };

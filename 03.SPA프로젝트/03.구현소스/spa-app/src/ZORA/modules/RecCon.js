@@ -1,7 +1,6 @@
 // 사각 컴포넌트 - RecCon.js
-// CSS
+import { Link } from "react-router-dom";
 import "../css/reccon.css";
-// Data
 import RecCon_data from "../data/RecCon_data";
 // 제이쿼리
 import $ from "jquery"
@@ -46,7 +45,9 @@ function RecCon(props){
                         })
                         }
                         <p>{content.cont}</p>
-                        <button className="reccon-text__btn btn-B">{content.btn}</button>
+                        <Link to='/story'>
+                            <button className="reccon-text__btn btn-B">{content.btn}</button>
+                        </Link>
                     </div>
                 </div>
             </section>

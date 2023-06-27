@@ -1,6 +1,6 @@
 // Shop 페이지
 import React from "react";
-import ChocoDomeCon from "./modules/ChocoDomeCon";
+import {ChocoDomeCon} from "./modules/ChocoDomeCon";
 import RecBlur from "./modules/RecBlur";
 
 const Shop = () =>{

@@ -349,7 +349,8 @@ color: var(--white);
     width: 100%;
     background-color: var(--main);
     z-index: 3;
-    transition: transform 1s;
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .Login-bg{
@@ -398,11 +399,11 @@ color: var(--white);
     margin: 80px 0;
 }
 
-.input input{
+.input>input{
     border: none;
     background-color: transparent;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: 1px solid black;
 }
 
@@ -428,5 +429,4 @@ color: var(--white);
     font-family: var(--Atami);
     position: absolute;
     left: 0;
-    top: 10px;
 }

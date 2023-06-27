@@ -16,7 +16,6 @@ function jqFn(){
 const DomeSlide = () => {
 
   const slide = $(".domeslide-con");
-  
   // 1. 드래그 설정
   slide.draggable({
     axis: "x" 
@@ -67,7 +66,7 @@ if (dir) {
     }
     ); 
     addOn(0)
-  } 
+  }
   // 왼쪽이동 //////////////////
   else {
     slide.animate(

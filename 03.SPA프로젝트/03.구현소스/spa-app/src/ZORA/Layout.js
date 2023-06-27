@@ -1,13 +1,18 @@
 /* eslint-disable */
 import React from 'react';
+import { Link, Outlet } from "react-router-dom";
+import ScrollTop from "./common/ScrollTop";
+import $ from 'jquery'
+
+import MainLogo from './modules/SVG_Logo/MainLogo';
+import Logo_W from './data/svg/Logo_W.svg';
+import Bag_data from './data/Bag_data';
+
 import "./css/root.css";
 import "./css/core.css";
-import Logo_W from './data/svg/Logo_W.svg';
-import { Link, Outlet } from "react-router-dom";
-import $ from 'jquery'
-import MainLogo from './modules/SVG_Logo/MainLogo';
-import ScrollTop from "./common/ScrollTop";
+
 import { inputclick } from './modules/SubItem';
+import { labelclick } from './modules/EmailForm';
 
 /* 폰트어썸 임포트 */
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +20,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(()=>{
   inputclick($(".con-btn__input"));
+  labelclick($(".Login-con__name > input"))
+  labelclick($(".Login-con__pw > input"))
+
 // <head> 파비콘 함수 + 호출 _____________________________________
 favicon(); //---- 호출
 function favicon(){
@@ -66,11 +74,7 @@ function Mham(){
   const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg');
   const txtbag = document.querySelector('.Mnav-wrap .nav-R li');
   const Mmenu = document.querySelectorAll(".Mmenu h3");
-
-  console.log('h3',Mmenu);
-  
-  
-  
+    
   // 메뉴창 열기
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
@@ -108,9 +112,7 @@ MBag()
 function MBag(){
   const Bag = document.querySelectorAll(".Bag")
   const Bclose = document.querySelector(".Bag-close")
-  const Bagwrap = document.querySelector("#bag")
-  console.log('bag',Bag);
-  
+  const Bagwrap = document.querySelector("#bag")  
   Bag.forEach((v)=>{
     v.addEventListener('click',function(){
       Bagwrap.style.transform="translateX(0%)"
@@ -118,6 +120,25 @@ function MBag(){
   })
   Bclose.addEventListener('click',()=>{
     Bagwrap.style.transform="translateX(100%)"
+  })
+}
+
+LoginBtn()
+function LoginBtn(){
+  const Lopen = document.querySelector(".Mlogin>h3")
+  const Lclose = document.querySelector(".Login-close")
+  
+  Lopen.addEventListener('click',function(){
+    setTimeout(()=>{
+      document.querySelector("#Login").style.opacity="1"
+      document.querySelector("#Login").classList.remove("-hidden")
+    },1200)
+  })
+  Lclose.addEventListener('click',function(){
+    setTimeout(()=>{
+      document.querySelector("#Login").style.opacity="0"
+      document.querySelector("#Login").classList.add("-hidden")
+    },1200)
   })
 }
 
@@ -264,7 +285,7 @@ const Layout = () => {
               <h3>ITEMS(<span>0</span>)</h3>
             </div>
             <div className='bag-items__con'>
-              <img src='./images/Pecan_cherry_cart.jpg' alt='co'/>
+              <img src='./images/Sub_Dark_Bg.jpg' alt='co'/>
               <div className='bag-items-txt'>
                 <h5>Pecan + Cherry</h5>
                 <div className="con-btn">
@@ -284,7 +305,7 @@ const Layout = () => {
           </div>
         </aside>
         {/* LOGIN -----------------------------------------------------*/}
-        <aside id='Login'>
+        <aside id='Login' className='-hidden'>
           <div className='Login-wrap'>
             <button className="close">
                 <FontAwesomeIcon icon={faXmark} className='Login-close'/>

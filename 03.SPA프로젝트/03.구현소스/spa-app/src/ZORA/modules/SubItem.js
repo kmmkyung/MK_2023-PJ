@@ -5,6 +5,13 @@ import "../css/subitem.css";
 import SubItem_data from "../data/SubItem_data"
 // 제이쿼리
 import $ from "jquery"
+function jqFn(){
+  $(()=>{
+    console.log('Subitem로딩')
+    inputclick($(".number-btn__input"))
+  }); //--- JQB ---//
+} 
+
 function inputclick(params){
   // 인풋
   const sumInput = $(params);
@@ -12,11 +19,11 @@ function inputclick(params){
   
   // 인풋 버튼
   $(params).parent().find("span").click(function(){
-    console.log('this', $(this));
+    // console.log('this', $(this));
     
     // 1. 클릭된 버튼 구분하기
     let altbtn = $(this).attr('alt');
-    console.log('구분버튼',altbtn); // ok
+    // console.log('구분버튼',altbtn); // ok
     
     // 2. 현재값 읽어오기 문자->숫자
     let isV = Number(sumInput.val())
@@ -53,14 +60,6 @@ function inputclick(params){
     }
   })
 }
-function jqFn(){
-  $(()=>{
-      console.log('Subitem로딩')
-inputclick($(".number-btn__input"))
-
-
-  }); //--- JQB ---//
-} //_______________ jqFn _______________//
 
 function SubItem(props){
 

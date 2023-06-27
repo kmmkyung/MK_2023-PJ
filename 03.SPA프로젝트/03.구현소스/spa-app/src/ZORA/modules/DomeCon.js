@@ -20,9 +20,7 @@ function DomeCon(props){
   let content = DomeCon_data[props.cat][props.num]
 
   return(
-    <>
-    {/* {console.log(content.caption1.split("^"))} */}
-    
+    <>    
   <section id='domecon'>
     <div className="domecon-wrap">
       <div className="domecon-img">

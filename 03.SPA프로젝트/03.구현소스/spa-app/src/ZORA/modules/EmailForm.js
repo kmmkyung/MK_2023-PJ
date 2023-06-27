@@ -5,19 +5,29 @@ import "../css/emailform.css";
 import $ from "jquery"
 function jqFn(){
   $(()=>{
-    function labelclick(params){
-      const input = document.querySelector('.input')
-      const inputlabel = document.querySelector('label')
-      // console.log(input,inputlabel); //ok
-      input.addEventListener('click',function(){
-        inputlabel.style.top="-100%"
-        inputlabel.style.color="#cccccc"
-      })
-      input.addEventListener("blur",function(){
-        inputlabel.style.top="0%"
-        inputlabel.style.color="#000"
-      })
+    labelclick((".input"))
+  })
+}
+
+function labelclick(params){
+  const input = $(params)
+  const inputlabel = $(params).next()
+
+  // console.log(input,inputlabel);
+  
+  input.on('click',function(){
+    inputlabel.css("top","-50%")
+    inputlabel.css("color","#ccc")
+    if(input.val() !== ""){
+      inputlabel.css("top","-50%")
+      inputlabel.css("color","#ccc")
     }
+  })
+  // console.log('dd',input.val());
+  
+  input.on('blur',function(){
+    inputlabel.css("top","0%")
+    inputlabel.css("color","#000")
   })
 }
 
@@ -32,11 +42,9 @@ const EmailForm = () => {
         </div>
         <form className="Email-form">
           <div className="Email-form__push">
-            <input className="push-em input" type="email" id="email"/>
-            <div>
-              <label htmlFor="email">EMAIL</label>
-              <input className="push-btn" type="submit" value="→" /> 
-            </div>
+            <input className="push-em input" type="email" id="email" name='input'/>
+            <label htmlFor="email" className='lable'>EMAIL</label>
+            <input className="push-btn" type="submit" value="→" /> 
           </div>
         </form>
       </div>
@@ -45,5 +53,4 @@ const EmailForm = () => {
     </>
   )
 }
-
-export default EmailForm;
+export {EmailForm, labelclick};

@@ -25,11 +25,11 @@ export default function App(){
                     <Route path='shop' element={<Shop />} />
                     <Route path='story' element={<OurStory />} />
                     <Route path='impact' element={<OurImpact />} />
-                    <Route path='dark' element={<SubDark />} />
+                    {/* <Route path='dark' element={<SubDark />} />
                     <Route path='fleur' element={<SubFleur/>} />
                     <Route path='ginger' element={<SubGinger/>} />
                     <Route path='pecan' element={<SubPecan/>} />
-                    <Route path='rose' element={<SubRose/>} />
+                    <Route path='rose' element={<SubRose/>} /> */}
                     <Route path='sub' element={<Sub num={''}/>} />
                 </Route>
             </Routes>

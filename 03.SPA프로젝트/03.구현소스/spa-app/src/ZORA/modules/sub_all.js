@@ -62,7 +62,7 @@ function inputclick(params) {
   });
 }
 
-function Suball(props) {
+function SubAll(props) {
   function addCart_data() {
     // 로컬에 cart가 없으면 배열로 문자 넣기
     if (localStorage.getItem("cart") == null) {
@@ -283,4 +283,4 @@ function Suball(props) {
     </>
   );
 } //______________ SubItem _______________//
-export { Suball, inputclick };
+export { SubAll, inputclick };

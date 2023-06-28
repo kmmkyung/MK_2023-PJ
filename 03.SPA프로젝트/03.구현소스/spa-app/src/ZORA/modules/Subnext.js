@@ -33,7 +33,7 @@ function jqFn(){
                     </div>
                     <h3 className='tit_LT'>{SubNext_data[props.num].tit_L.split("^")[0]}</h3>
                     <h3 className='tit_LB'>{SubNext_data[props.num].tit_L.split("^")[1]}</h3>
-                    <Link to={SubNext_data[props.num].link_L}>
+                    <Link to={SubNext_data[props.num].link_L} state={{idx:(Number(props.num)-1)}}>
                       <button className="btn-B">{SubNext_data[props.num].btn_L}</button>
                     </Link>
                   </div>
@@ -49,7 +49,7 @@ function jqFn(){
                     </div>
                     <h3 className='tit_RT'>{SubNext_data[props.num].tit_R.split("^")[0]}</h3>
                     <h3 className='tit_RB'>{SubNext_data[props.num].tit_R.split("^")[1]}</h3>
-                    <Link to={SubNext_data[props.num].link_R}>
+                    <Link to={SubNext_data[props.num].link_R} state={{idx:(Number(props.num)+1)}}>
                       <button className="btn-B">{SubNext_data[props.num].btn_R}</button>
                     </Link>
                   </div>

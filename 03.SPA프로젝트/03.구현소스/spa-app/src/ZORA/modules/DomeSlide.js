@@ -4,12 +4,14 @@ import "../css/domeslide.css";
 // Data
 import DomeSlide_data from "../data/DomeSlide_data"
 // 제이쿼리
-import $ from "jquery"
+import $, { data } from "jquery"
 import 'jquery-ui-dist/jquery-ui';
 
 function jqFn(){
   $(()=>{ 
-    console.log('DomeSlide 로딩')      
+    console.log('DomeSlide 로딩')
+    $('.domeslide-btn li').eq(0).addClass("on")
+
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 
@@ -88,10 +90,14 @@ const btn = $('.domeslide-btn li');
 function addOn(seq){
   let dseq = slide.find('li').eq(seq).attr("data-seq");
   console.log('dseq',dseq);
-
-btn.eq(dseq).addClass("on").siblings().removeClass("on");
+  let btnone = $('.domeslide-btn li:first-child .btn')
+  console.log('dd',btnone);
+  console.log('btneq',btn.eq(0));
+  console.log('slideep',slide.eq(0));
+  
+  btn.eq(dseq).addClass("on").siblings().removeClass("on");
 }
-
+// slide.eq(dseq) == 0
 
 }; //////// setFn ////////////////
 
@@ -127,6 +133,7 @@ useEffect(setFn,[]);
           </div>
         </div>
       </section>
+      {jqFn()}
     </>
   )
 }

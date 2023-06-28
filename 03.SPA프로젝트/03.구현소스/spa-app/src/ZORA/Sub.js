@@ -3,17 +3,17 @@ import React from "react";
 import {SubItem} from "./modules/SubItem";
 import DomeSlide from "./modules/DomeSlide";
 import SubNext from "./modules/Subnext";
+import SubItem_data from "./data/SubItem_data";
+import { Suball } from "./modules/sub_all";
 import { useLocation } from "react-router-dom";
 
-const SubDark = () =>{
+const Sub = (props) =>{
   const loc = useLocation();
-  const idx = loc.state.idx;
+  const num = loc.state.num;
   return(
     <>
-      <SubItem num="0" idx={idx}/>
-      <DomeSlide />
-      <SubNext num="0" />
+      <Suball num={num}/>
     </>
   )
 }; /////////////
-export default SubDark;
+export default Sub;

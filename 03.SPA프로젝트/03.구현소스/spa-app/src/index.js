@@ -12,6 +12,7 @@ import SubFleur from './ZORA/SubFleur';
 import SubGinger from './ZORA/SubGinger';
 import SubPecan from './ZORA/SubPecan';
 import SubRose from './ZORA/SubRose';
+import Sub from './ZORA/Sub';
 
 export default function App(){
     return(
@@ -29,6 +30,7 @@ export default function App(){
                     <Route path='ginger' element={<SubGinger/>} />
                     <Route path='pecan' element={<SubPecan/>} />
                     <Route path='rose' element={<SubRose/>} />
+                    <Route path='sub' element={<Sub num={''}/>} />
                 </Route>
             </Routes>
         </BrowserRouter>

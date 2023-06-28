@@ -59,6 +59,10 @@
   background-color: #c4c4c4;
 }
 
+/* .domeslide-btn li:first-child .btn{
+  background-color: var(--black);
+} */
+
 .domeslide-btn li.on .btn{
   background-color: var(--black);
 }

@@ -2,6 +2,7 @@
 
 const SubItem_data=[
   {
+    idx:"1",
     bg:"./images/Sub_Dark_Bg.jpg",
     tit:"Dark",
     con:`Rich, herbaceous aromas with hints of honey, raisins and sweet caramel notes, for a long finish, reminiscent of warm fudge baked brownies.`,
@@ -48,6 +49,7 @@ const SubItem_data=[
     ]
   },
   {
+    idx:"2",
     bg:"./images/Sub_Fleur_de_Sel_Bg.jpg",
     tit:"Fleur de Sel",
     con:`Savory meets sweet in this indulgent blend of rich, smooth chocolate and fleur de sel crystal chunks, enhancing the herbal notes in the profile. A classic favorite.`,
@@ -81,6 +83,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"]
   },
   {
+    idx:"3",
     bg:"./images/Sub_Pecan_cherry_Bg.jpg",
     tit:"Pecan + Cherry",
     con:`Inviting intense, dried cherries - rich in antioxidants - offering a chewy sweetness paired with crunchy roasted pecans.`,
@@ -114,6 +117,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Rose_Flower_1.png","./images/Rose_Flower_2.png"]
   },
   {
+    idx:"4",
     bg:"./images/Sub_Ginge__Sesame_Bg.jpg",
     tit:"Ginger + Sesame",
     con:`Ginger bits, in a vibrant and uplifting burst of flavor, generously sprinkled with toasted white and black sesame seeds for that crispy crunch.`,
@@ -147,6 +151,7 @@ const SubItem_data=[
     nextsrc_2:["./images/Pecan_cherry_1.png","./images/Pecan_cherry_2.png"]
   },
   {
+    idx:"5",
     bg:"./images/Sub_Rose_flower_Bg.jpg",
     tit:"Rose Flower",
     con:`Infused with rose oil for a flora fruitiness interwoven with layers of vanilla for when you need those smooth, melt-in-the-mouth moments.`,

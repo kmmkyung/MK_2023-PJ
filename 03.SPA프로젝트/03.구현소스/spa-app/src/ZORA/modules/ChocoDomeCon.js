@@ -109,7 +109,7 @@ function ChocoDomeCon() {
                   {v.tit2}
                 </h2>
                 <button className="ChocoDomeCon__text-btn btn-B">
-                <Link to={v.link}>{v.btn}</Link>
+                <Link to="/sub" state={{num:i}}>{v.btn}</Link>
                 </button>
               </div>
             </div>

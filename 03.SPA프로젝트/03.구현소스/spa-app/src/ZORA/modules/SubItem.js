@@ -68,9 +68,14 @@ function SubItem(props) {
         }
 
         let org = localStorage.getItem("cart");
-        org = JSON.parse(org);
-        console.log(org, $(".subface-con h1").text());
+        org = JSON.parse(org); // 객체화 한 데이터
+
+        // 
+
+        console.log(org, $(".subface-con h1").text(),props.idx);
         let seltit = $(".subface-con h1").text();
+
+
         console.log(seltit);
         console.log(Bag_data);
 
@@ -80,9 +85,9 @@ function SubItem(props) {
             });
             console.log(
                 "있다!",
-                seldt.num,
-                seldt,
-                Number($(".subface-con .number-btn__input").val())
+                seldt.num, // 누르기 전 갯수
+                seldt, // 해당 데이터
+                Number($(".subface-con .number-btn__input").val()) // input 값에 찍히는 갯수
             );
             seldt.num = Number(seldt.num) + Number($(".subface-con .number-btn__input").val());
         } else {
@@ -95,15 +100,10 @@ function SubItem(props) {
                 src: seldt.src,
                 num: Number($(".subface-con .number-btn__input").val()),
             });
-            // org.push(Bag_data[props.num])
-            // 저장하면
-            // let save = true // 저장상태변수
-            // if(save = true){
-            //   Bag_data[props.num]["num"] = $(".number-btn__input").val()
-            // }
-          }
-          localStorage.setItem("cart", JSON.stringify(org));
-          console.log("저장후", localStorage.getItem("cart"));
+
+        }
+        localStorage.setItem("cart", JSON.stringify(org));
+    console.log("저장후", localStorage.getItem("cart"));
     } /// addCart_data ///
 
     useEffect(() => inputclick(".number-btn__input"), []);

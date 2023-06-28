@@ -15,8 +15,6 @@
   }
 
 
-  
-
 
 
 
@@ -37,7 +35,7 @@
   
   .chocolatepack, .chocolatebreak
   {
-    width: min(50vw,450px);
+    width: min(45vw,400px);
   }
   
   .chocolatebreak{

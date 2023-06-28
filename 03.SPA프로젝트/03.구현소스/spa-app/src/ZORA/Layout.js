@@ -96,7 +96,7 @@ function Mham(){
     ham.classList.remove('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
     setTimeout(()=>{
-      MLogo.style.fill="#000000"
+      MLogo.style.fill="#ffffff"
     },300)
     setTimeout(()=>{
       txtbag.style.color="#ffffff"
@@ -133,7 +133,6 @@ function LoginBtn(){
   const Lopen = document.querySelector(".Mlogin>h3")
   const Lclose = document.querySelector(".Login-close")
   
-  // ​‌‌‍⁡⁣⁢⁣선생님 물어볼것!⁡​
   Lopen.addEventListener('click',function(){
     document.querySelector("#Login").classList.remove("-hidden");
     setTimeout(()=>{
@@ -153,17 +152,24 @@ function LoginBtn(){
 
 
 // 메뉴 스크롤 올리면 보이기
+document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
+document.querySelector('#Mnav .nav-R .Bag').style.color="#fff";
+document.querySelector(".ham svg").style.color="#fff";
+
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
     // console.log('Scroll up', $(this).scrollTop());
     let scTop = $(this).scrollTop();
     if(scTop < 800){
       $("#header").removeClass("fixed")
-      document.querySelector('.nav-R .Bag').style.color="#fff";
       document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
+      document.querySelector('#Mnav .nav-R .Bag').style.color="#fff";
+      document.querySelector('.ham svg').style.color="#fff";
     }else{
       $("#header").addClass("fixed")
       document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#000";
+      document.querySelector('#Mnav .nav-R .Bag').style.color="#000";
+      document.querySelector('.ham svg').style.color="#000";
     }
   }
   else {
@@ -171,7 +177,6 @@ $(window).bind("mousewheel",function(event){
   }
 })
 
-document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
 
 
   // 대상선정

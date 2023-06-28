@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import Bag_data from "../data/Bag_data";
 import DomeSlide from "./DomeSlide";
 import { Link } from "react-router-dom";
+import {chocobreak} from './ChocoDomeCon';
+
 function jqFn() {
   $(() => {
     console.log("Subitem로딩");
@@ -109,6 +111,7 @@ function SubAll(props) {
   } /// addCart_data ///
 
   useEffect(() => inputclick(".number-btn__input"), []);
+  useEffect(chocobreak,[]);
 
   return (
     <>
@@ -222,9 +225,8 @@ function SubAll(props) {
                   <h3 className="tit_LB">
                     {SubNext_data[props.num].tit_L.split("^")[1]}
                   </h3>
-                  <Link
-                    to={SubNext_data[props.num].link_L}
-                    state={{ idx: Number(props.num) - 1 }}
+                  <Link to="/sub"
+                    // state={{ idx: Number(props.num) - 1 }}
                   >
                     <button className="btn-B">
                       {SubNext_data[props.num].btn_L}
@@ -261,9 +263,8 @@ function SubAll(props) {
                   <h3 className="tit_RB">
                     {SubNext_data[props.num].tit_R.split("^")[1]}
                   </h3>
-                  <Link
-                    to={SubNext_data[props.num].link_R}
-                    state={{ idx: Number(props.num) + 1 }}
+                  <Link to="/sub"
+                    // state={{ idx: Number(props.num) + 1}}
                   >
                     <button className="btn-B">
                       {SubNext_data[props.num].btn_R}

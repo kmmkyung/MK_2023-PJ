@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 // Logo Svg
 const MainLogo = () => {
   const logo = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 74.9" style="enable-background:new 0 0 240 74.9;" xml:space="preserve">
@@ -13,9 +15,27 @@ const MainLogo = () => {
     c9.8,0,17.8,8.2,17.8,18.1V39.4z"></path>
   </svg>
 `
+
+
+let loc = useLocation();
+console.log(loc.pathname);
+
+const goTop = () => {
+
+  let thtml = document.querySelector('html');
+
+  if(loc.pathname='/'){ 
+    thtml.style.scrollBehavior = "smooth";
+    setTimeout(()=>window.scrollTo(0,0),10);
+    setTimeout(()=>thtml.style.scrollBehavior = "auto",2000);
+  }
+  
+}; ///////// goTop ////////////
+
+
   return(
     <>
-      <div dangerouslySetInnerHTML={ {__html: logo} } className="nav-C nav-logo"></div>
+      <div onClick={goTop} dangerouslySetInnerHTML={ {__html: logo} } className="nav-C nav-logo"></div>
     </>
 
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // CSS
 import "../css/domeslide.css";
 // Data
@@ -15,6 +15,8 @@ function jqFn(){
 
 const DomeSlide = () => {
 
+  const setFn = () => {
+
   const slide = $(".domeslide-con");
   // 1. 드래그 설정
   slide.draggable({
@@ -25,8 +27,8 @@ const DomeSlide = () => {
   const reWin = () => $(window).width();
   // 리사이즈 업데이트
   $(window).resize(() => {
-    winW = reWin();
-    console.log("reWin:",reWin);
+    winW = $(window).width();
+    console.log("reWin:",winW);
   });
   
   let winW = reWin();
@@ -89,6 +91,12 @@ function addOn(seq){
 
 btn.eq(dseq).addClass("on").siblings().removeClass("on");
 }
+
+
+}; //////// setFn ////////////////
+
+useEffect(setFn,[]);
+
   return(
     <>
       <section id="domeslide">
@@ -119,7 +127,6 @@ btn.eq(dseq).addClass("on").siblings().removeClass("on");
           </div>
         </div>
       </section>
-      {jqFn()}
     </>
   )
 }

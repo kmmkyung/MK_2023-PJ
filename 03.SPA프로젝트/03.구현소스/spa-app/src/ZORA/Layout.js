@@ -96,7 +96,7 @@ function Mham(){
     ham.classList.remove('-hidden');
     document.querySelector('#Mheaderbg').style.transform="translateX(-100%)"
     setTimeout(()=>{
-      MLogo.style.fill="#ffffff"
+      MLogo.style.fill="#000000"
     },300)
     setTimeout(()=>{
       txtbag.style.color="#ffffff"
@@ -135,34 +135,47 @@ function LoginBtn(){
   
   // ​‌‌‍⁡⁣⁢⁣선생님 물어볼것!⁡​
   Lopen.addEventListener('click',function(){
-    $("#Login").removeClass("-hidden").css({
-      opacity:"1"
-    })
-    document.body.style.overflow="hidden"
+    document.querySelector("#Login").classList.remove("-hidden");
+    setTimeout(()=>{
+      document.querySelector("#Login").style.opacity="1";
+    },10)
+    document.body.style.overflow="hidden";
   })
   Lclose.addEventListener('click',function(){
-    document.querySelector("#Login").style.opacity="0"
+    document.querySelector("#Login").style.opacity="0";
     setTimeout(()=>{
-      document.querySelector("#Login").classList.add("-hidden")
+      document.querySelector("#Login").classList.add("-hidden");
     },2000)
     document.body.style.overflow="scroll"
   })
 }
 
+
+
 // 메뉴 스크롤 올리면 보이기
 $(window).bind("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
     // console.log('Scroll up', $(this).scrollTop());
-    if($(this).scrollTop() < 800){
+    let scTop = $(this).scrollTop();
+    if(scTop < 800){
       $("#header").removeClass("fixed")
     }else{
       $("#header").addClass("fixed")
     }
+    
+    if(scTop===0) {
+      document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
+    }
+    else{
+      document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#000";
+    }
   }
   else {
     $("#header").removeClass("fixed")
-}
+  }
 })
+
+document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
 
 
   // 대상선정

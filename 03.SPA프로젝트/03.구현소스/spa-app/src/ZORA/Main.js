@@ -19,7 +19,7 @@ const Main = () => {
         <ChocoDomeCon />
         <RecBlur num="0"/>
         <DomeCon cat="main" num="0"/>
-        <RecCon cat="main" num="1"/>
+        <RecCon cat="main" num="1" sty={{position:"absolute",top:"0"}} />
         <DomeSlide/>
         <EmailForm />
       </>

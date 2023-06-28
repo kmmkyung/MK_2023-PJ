@@ -16,6 +16,8 @@ function jqFn(){
     const RC = document.querySelector(".svg__1")
     
     window.addEventListener('scroll' ,function(){
+      if(!document.querySelector(".svg__1")) return;
+      const RC = document.querySelector(".svg__1")
       let WinscrollY = window.scrollY
       // console.log('scrollY',WinscrollY); // ok
       RC.style.transform="rotate("+WinscrollY/10+"deg)";

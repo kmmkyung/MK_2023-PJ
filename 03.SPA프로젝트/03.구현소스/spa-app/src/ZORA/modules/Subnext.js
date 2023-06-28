@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
 import {chocobreak} from './ChocoDomeCon';
 // 제이쿼리 
 import $ from "jquery"
+import { useEffect } from "react";
 
 function jqFn(){
     $(()=>{
         console.log('Subnext로딩')
-        chocobreak()
-  }); //--- JQB ---//
-} //_______________ jqFn _______________//
-jqFn();
+      }); //--- JQB ---//
+    } //_______________ jqFn _______________//
+    // jqFn();
+    
+    function SubNext(props){      
 
-function SubNext(props){
-
+    useEffect(chocobreak,[]);
 
     return(
       <>

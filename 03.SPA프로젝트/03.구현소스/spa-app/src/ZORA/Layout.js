@@ -159,14 +159,10 @@ $(window).bind("mousewheel",function(event){
     let scTop = $(this).scrollTop();
     if(scTop < 800){
       $("#header").removeClass("fixed")
+      document.querySelector('.nav-R .Bag').style.color="#fff";
+      document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
     }else{
       $("#header").addClass("fixed")
-    }
-    
-    if(scTop===0) {
-      document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
-    }
-    else{
       document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#000";
     }
   }

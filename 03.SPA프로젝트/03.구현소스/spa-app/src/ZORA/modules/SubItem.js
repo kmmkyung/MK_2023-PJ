@@ -64,19 +64,28 @@ function inputclick(params){
 }
 
 function SubItem(props){
+
   function addCart_data(){
+    
+    // 로컬에 cart가 없으면 배열로 문자 넣기
     if(localStorage.getItem("cart") == null){
       localStorage.setItem("cart","[]");
-      console.log("cart후", localStorage.getItem("cart"));
-    }else{
+      // console.log("cart후", localStorage.getItem("cart"));
+    }else{ // 있으면 문자-> 객체로 복원
       let org = localStorage.getItem("cart");
       org = JSON.parse(org);
       org.push(Bag_data[props.num])
+    // 저장하면 
+    let save = true // 저장상태변수
+    if(save = true){ 
+      Bag_data[props.num]["num"] = $(".number-btn__input").val()
+    }
       localStorage.setItem("cart", JSON.stringify(org));
-      console.log("저장후", localStorage.getItem("cart"));
+      // console.log("저장후", localStorage.getItem("cart"));
     }
     
-  }
+  }/// addCart_data ///
+
     return(
         <>        
           <section id="subface">

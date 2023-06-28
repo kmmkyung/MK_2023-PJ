@@ -165,37 +165,37 @@ $(window).bind("mousewheel",function(event){
 })
 
 
-        // // 대상선정
-        // const scrollCon = document.querySelectorAll('.ChocoDomeCon__warp');
-        // console.log('scrollCon',scrollCon);
-        
-        // // 화면 높이값 2/3
-        // const hv = window.innerHeight/4*1;
-        // console.log("hv-2/3",hv);
+  // 대상선정
+  const scrollCon = document.querySelectorAll('.ChocoDomeCon__warp');
+  console.log('scrollCon',scrollCon);
+  
+  // 화면 높이값 2/3
+  const hv = window.innerHeight/4*1;
+  console.log("hv-2/3",hv);
 
-        // // 등장액션 대상 위치값 리턴함수/////
-        // const retVal = 
-        // ele => ele.getBoundingClientRect().top;
+  // 등장액션 대상 위치값 리턴함수/////
+  const retVal = 
+  ele => ele.getBoundingClientRect().top;
 
-        // const showIt = x => { // x - 등장요소
-        //     // 대상요소의 현재스크롤 위치
-        //     let xval = retVal(x);
+  const showIt = x => { // x - 등장요소
+      // 대상요소의 현재스크롤 위치
+      let xval = retVal(x);
 
-        //     // 구간적용여부 검사하기
-        //     // 0보다 크고 화면의 2/3보다 작은 구간!
-        //     if(xval < hv && xval > 0){
-        //         console.log("작동!");
-        //         // 해당요소에 클래스 넣기!
-        //         x.classList.add("on");
-        //     }
-        // }; //////////// showIt //////////
+      // 구간적용여부 검사하기
+      // 0보다 크고 화면의 2/3보다 작은 구간!
+      if(xval < hv && xval > 0){
+          console.log("작동!");
+          // 해당요소에 클래스 넣기!
+          x.classList.add("on");
+      }
+  }; //////////// showIt //////////
 
-        // window.addEventListener("scroll",()=>{
-        //     // cg("스크롤중")
+  window.addEventListener("scroll",()=>{
+      // cg("스크롤중")
 
-        //     // 스크롤 등장 요소 개수만큼 for
-        //     for(let x of scrollCon) showIt(x);
-        // })
+      // 스크롤 등장 요소 개수만큼 for
+      for(let x of scrollCon) showIt(x);
+  })
 
       }); /////////////////////////
       
@@ -292,10 +292,6 @@ const Layout = () => {
           <div className="bag-items__tit">
             <h3>ITEMS(<span>0</span>)</h3>
           </div>
-          {
-            console.log('org',org)
-            
-          }
               <Bag num="1"/>
           <div className="bag-items__total">
             <span>TOTAL</span>

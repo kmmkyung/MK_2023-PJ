@@ -79,10 +79,12 @@ function SubItem(props) {
         console.log(seltit);
         console.log(Bag_data);
 
+        // 로컬스 데이터가 있으면...
         if (org.length > 0) {
             let seldt = org.find((v) => {
                 if (v.tit === seltit) return true;
             });
+            // 
             console.log(
                 "있다!",
                 seldt.num, // 누르기 전 갯수

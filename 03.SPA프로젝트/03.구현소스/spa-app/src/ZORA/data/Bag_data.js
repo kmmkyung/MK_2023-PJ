@@ -11,17 +11,17 @@ const Bag_data = [
   },
   {
     idx:'3',
-    tit:'Ginge Sesame',
-    src:'./images/Sub_Ginge__Sesame_Bg.jpg'
-  },
-  {
-    idx:'4',
-    tit:'Pecan + cherry',
+    tit:'Pecan + Cherry',
     src:'./images/Sub_Pecan_cherry_Bg.jpg'
   },
   {
+    idx:'4',
+    tit:'Ginger + Sesame',
+    src:'./images/Sub_Ginge__Sesame_Bg.jpg'
+  },
+  {
     idx:'5',
-    tit:'Rose flower',
+    tit:'Rose Flower',
     src:'./images/Sub_Rose_flower_Bg.jpg'
   },
 ]

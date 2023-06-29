@@ -35,7 +35,7 @@ const SubItem_data=[
     ],
     next:[
       {
-        tit:"Ginger+^Sesame",
+        tit:"Ginger + Sesame",
         src1:"./images/Ginger_sesame_1.png",
         src2:"./images/Ginger_sesame_2.png",
         bgc:""

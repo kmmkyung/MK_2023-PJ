@@ -20,12 +20,13 @@ const Main = () => {
           <RecCon cat="main" num="0"/>  
         </Fade>
           <ChocoDomeCon />
-        
           <RecBlur num="0"/>
+        <Fade bottom>
           <DomeCon cat="main" num="0"/>
           <RecCon cat="main" num="1" sty={{position:"absolute",top:"0"}} />
           <DomeSlide/>
           <EmailForm />
+        </Fade>
       </>
   );
 }; /////////// Main //////////////

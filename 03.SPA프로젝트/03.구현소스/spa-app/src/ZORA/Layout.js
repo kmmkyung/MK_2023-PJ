@@ -274,7 +274,7 @@ const Layout = () => {
           <div className="bag-items__tit">
             <h3>ITEMS(<span>0</span>)</h3>
           </div>
-              <Bag num="1"/>
+              <Bag />
           <div className="bag-items__total">
             <span>TOTAL</span>
             <span>$0</span>

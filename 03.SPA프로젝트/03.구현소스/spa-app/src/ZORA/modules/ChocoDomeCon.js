@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../css/chocodomecon.css";
 import ChocoDomeCon_data from "../data/ChocoDomeCon_data";
 import $ from "jquery";
+import Fade from "react-reveal/Fade"
 
 function jqFn() {
   $(() => {
@@ -102,6 +103,7 @@ function ChocoDomeCon() {
                   alt="chocolatebreak"
                 />
               </div>
+              <Fade bottom>
               <div className="ChocoDomeCon__text">
                 <h2 className="ChocoDomeCon__text-tit">
                   {v.tit}
@@ -112,22 +114,27 @@ function ChocoDomeCon() {
                 <Link to="/sub" state={{num:i}}>{v.btn}</Link>
                 </button>
               </div>
+            </Fade>
             </div>
             {i !== 4 && (
+              <Fade bottom>
               <div
                 className="ChocoDomeCon__back"
                 data-seq={i}
                 style={setcss_bg[i]}
               ></div>
+              </Fade>
             )}
             {i === 4 && (
-              <div className="chocolate-5__backwrap">
+              <Fade bottom>
+                <div className="chocolate-5__backwrap">
                 <div
                   className="ChocoDomeCon__back"
                   data-seq={i}
                   style={setcss_bg[i]}
                 ></div>
               </div>
+              </Fade>
             )}
           </div>
         ))}

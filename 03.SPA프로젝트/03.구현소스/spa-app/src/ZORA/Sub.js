@@ -1,9 +1,9 @@
 // Sub_Dark 페이지
 import React from "react";
-import {SubItem} from "./modules/SubItem";
-import DomeSlide from "./modules/DomeSlide";
-import SubNext from "./modules/Subnext";
-import SubItem_data from "./data/SubItem_data";
+// import {SubItem} from "./modules/SubItem";
+// import DomeSlide from "./modules/DomeSlide";
+// import SubNext from "./modules/Subnext";
+// import SubItem_data from "./data/SubItem_data";
 import { SubAll } from "./modules/Sub_all";
 import { useLocation } from "react-router-dom";
 

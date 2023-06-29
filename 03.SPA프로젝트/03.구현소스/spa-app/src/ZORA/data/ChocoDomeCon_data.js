@@ -1,6 +1,6 @@
 const ChocoDomeCon_data={
         "main":[
-            {
+            {   
                 "src1":"",
                 "img1":"./images/Dark_1.png",
                 "img2":"./images/Dark_2.png",

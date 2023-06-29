@@ -1,3 +1,4 @@
+/* eslint-disable */
 // 사각 컴포넌트 - RecCon.js
 import { Link } from "react-router-dom";
 import "../css/reccon.css";
@@ -21,14 +22,14 @@ function RecCon(props){
     function chgimg(props){
         let chgimgnum=0;
         let img = ['./images/Inspire women_1.jpg','./images/Inspire women_2.jpg','./images/Inspire women_3.jpg']
-        if(document.querySelector(".reccon-con img"))return;
-
+        
         setInterval(()=>{
+            if(!document.querySelector(".reccon-con img"))return;
             document.querySelector(".reccon-con img").setAttribute("src",img[chgimgnum])
-            if(chgimgnum===img.length-1){chgimgnum=0}
-            else{chgimgnum++}
+            chgimgnum++
+            if(chgimgnum===img.length){chgimgnum=0}
             
-        },5000)
+        },800)
     }
 
     useEffect(chgimg,[])

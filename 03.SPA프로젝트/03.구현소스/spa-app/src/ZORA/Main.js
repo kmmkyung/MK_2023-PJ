@@ -7,6 +7,7 @@ import { EmailForm } from './modules/EmailForm';
 import RecBlur from './modules/RecBlur';
 import DomeSlide from './modules/DomeSlide';
 import RotateHand from './modules/RotateHand';
+import Fade from "react-reveal/Fade"
 
 
 const Main = () => {
@@ -15,13 +16,16 @@ const Main = () => {
         {/* 1. 메인 main */}
         <MainFace />
         <RotateHand />
-        <RecCon cat="main" num="0"/>
-        <ChocoDomeCon />
-        <RecBlur num="0"/>
-        <DomeCon cat="main" num="0"/>
-        <RecCon cat="main" num="1" sty={{position:"absolute",top:"0"}} />
-        <DomeSlide/>
-        <EmailForm />
+        <Fade bottom>
+          <RecCon cat="main" num="0"/>  
+        </Fade>
+          <ChocoDomeCon />
+        
+          <RecBlur num="0"/>
+          <DomeCon cat="main" num="0"/>
+          <RecCon cat="main" num="1" sty={{position:"absolute",top:"0"}} />
+          <DomeSlide/>
+          <EmailForm />
       </>
   );
 }; /////////// Main //////////////

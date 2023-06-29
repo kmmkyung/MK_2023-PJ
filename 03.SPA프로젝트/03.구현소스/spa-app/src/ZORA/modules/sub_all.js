@@ -1,15 +1,14 @@
 // 상세페이지 컴포넌트 - SubItem.js
-// CSS
 import "../css/subitem.css";
-// Data
+import "../css/subnext.css";
 import SubItem_data from "../data/SubItem_data";
 import SubNext_data from "../data/SubNext_data";
-// 제이쿼리
-import $ from "jquery";
-import { useEffect } from "react";
 import Bag_data from "../data/Bag_data";
 import DomeSlide from "./DomeSlide";
+
+import $ from "jquery";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import {chocobreak} from './ChocoDomeCon';
 
 function jqFn() {
@@ -64,6 +63,7 @@ function inputclick(params) {
   });
 }
 
+//_____________________________________________________________________________________
 function SubAll(props) {
   function addCart_data() {
     // 로컬에 cart가 없으면 배열로 문자 넣기
@@ -226,7 +226,7 @@ function SubAll(props) {
                     {SubNext_data[props.num].tit_L.split("^")[1]}
                   </h3>
                   <Link to="/sub"
-                    // state={{ idx: Number(props.num) - 1 }}
+                    state={{ num: Number(props.num)-1 ==-1 ? 4 : Number(props.num)-1 }}
                   >
                     <button className="btn-B">
                       {SubNext_data[props.num].btn_L}
@@ -264,7 +264,7 @@ function SubAll(props) {
                     {SubNext_data[props.num].tit_R.split("^")[1]}
                   </h3>
                   <Link to="/sub"
-                    // state={{ idx: Number(props.num) + 1}}
+                    state={{ num: Number(props.num) + 1==5? 0 : Number(props.num) + 1}}
                   >
                     <button className="btn-B">
                       {SubNext_data[props.num].btn_R}

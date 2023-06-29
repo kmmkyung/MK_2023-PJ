@@ -34,8 +34,8 @@ function favicon(){
 
   setInterval(function(){  
     document.querySelector(".icon").setAttribute("href",faviconImg[faviconCounter])
+    faviconCounter++;
     if(faviconCounter == faviconImg.length-1){faviconCounter=0}
-    else{faviconCounter++;}
   },800)
 };
 
@@ -66,7 +66,7 @@ $("body").on("mouseup",function(){
 })
 
 // 네비게이션 ____________________________________________________________
-Mham(); //---- 호출
+
 
 function Mham(){
   document.querySelector("#DTnav").classList.add('-hidden');
@@ -75,7 +75,7 @@ function Mham(){
   const MLogo = document.querySelector('.Mnav-wrap .nav-logo svg');
   const txtbag = document.querySelector('.Mnav-wrap .nav-R li');
   const Mmenu = document.querySelectorAll(".Mmenu h3");
-    
+      
   // 메뉴창 열기
   ham.addEventListener('click',function(){
     close.classList.remove('-hidden');
@@ -110,6 +110,7 @@ function Mham(){
     v.addEventListener("click",menuClose)
   })
 }
+Mham(); //---- 호출
 
 MBag()
 function MBag(){
@@ -177,42 +178,9 @@ $(window).bind("mousewheel",function(event){
   }
 })
 
+});
 
-
-  // 대상선정
-  const scrollCon = document.querySelectorAll('.ChocoDomeCon__warp');
-  console.log('scrollCon',scrollCon);
-  
-  // 화면 높이값 2/3
-  const hv = window.innerHeight/4*1;
-  console.log("hv-2/3",hv);
-
-  // 등장액션 대상 위치값 리턴함수/////
-  const retVal = 
-  ele => ele.getBoundingClientRect().top;
-
-  const showIt = x => { // x - 등장요소
-      // 대상요소의 현재스크롤 위치
-      let xval = retVal(x);
-
-      // 구간적용여부 검사하기
-      // 0보다 크고 화면의 2/3보다 작은 구간!
-      if(xval < hv && xval > 0){
-          console.log("작동!");
-          // 해당요소에 클래스 넣기!
-          x.classList.add("on");
-      }
-  }; //////////// showIt //////////
-
-  window.addEventListener("scroll",()=>{
-      // cg("스크롤중")
-
-      // 스크롤 등장 요소 개수만큼 for
-      for(let x of scrollCon) showIt(x);
-  })
-
-      }); /////////////////////////
-      
+// 장바구니 __________________________________________________________      
 let org = JSON.parse(localStorage.getItem("cart"))
 
 const Layout = () => {

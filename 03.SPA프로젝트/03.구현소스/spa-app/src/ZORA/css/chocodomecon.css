@@ -4,19 +4,8 @@
 }
   .ChocoDomeCon__warp{
     width: 100%;
-    /* transform: translateY(10%); */
-    /* opacity: 0; */
-    transition: all 1.2s ease-in-out;
+
   }
-  
-  .ChocoDomeCon__warp.on{
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-
-
-
 
   .ChocoDomeCon__con{
     display: flex;
@@ -26,7 +15,7 @@
     top: min(-15vw,-150px);
     left: 50%;
     transform: translateX(-50%);
-    
+    z-index: 1;
   }
   
   .ChocoDomeCon__img{
@@ -50,8 +39,9 @@
     font-family: var(--Coko);
     text-align: center;
     margin: 5vh 0;
-  
+    
   }
+
   
   .ChocoDomeCon__text-btn{
     display: block;
@@ -63,12 +53,18 @@
     background-color: var(--black);
   }
   
+
+
+
+
+
   .ChocoDomeCon__back{
     /* margin-top: 300px; */
     width: 100%;
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
   }
+
   .chocolate-5__back{
     margin: 0 auto;
     width: 100%;

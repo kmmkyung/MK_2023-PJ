@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import './index.css';
 import Layout from './ZORA/Layout'
 import Main from './ZORA/Main'
@@ -17,7 +17,7 @@ import Sub from './ZORA/Sub';
 export default function App(){
     return(
       // <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Main />} />
@@ -33,7 +33,7 @@ export default function App(){
                     <Route path='sub' element={<Sub num={''}/>} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 } //////////////// App 컴포넌트 //////////////////
 

@@ -18,7 +18,7 @@
 }
 
 .domecon-img img {
-    width: min(85vw,600px);
+    width: 100%;
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
     aspect-ratio: 1/1;
@@ -29,7 +29,6 @@
   width: 100%;
   font-family: var(--Atami);
   font-size: var(--font-size-S);
-  /* text-align: left; */
 }
 
 .domecon-con{
@@ -50,7 +49,7 @@
   font-size: var(--font-size-L);
   font-family: var(--Coko);
   text-align: center;
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 .domecon-con__text{
@@ -68,14 +67,20 @@
   background-color: var(--black);
 }
 
-/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
 @media screen and (min-width: 768px) {
   .domecon-wrap {
     display: flex;
     flex-direction: row;
   }
+  .domecon-con {
+    margin-left: 20px;
+  }
   .domecon-img img {
-    width: 40vw;
-    aspect-ratio: 0.5/0.6;
+    width: 45vw;
+    aspect-ratio: 0.5/0.9;
+  }
+  .domecon-con__text{
+    font-size: var(--font-size-M);
   }
 }

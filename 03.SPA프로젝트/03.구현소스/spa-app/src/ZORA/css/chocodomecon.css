@@ -1,6 +1,6 @@
-#main{
+#ChocoDomeCon{
   position: relative;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 .ChocoDomeCon__warpAll{
@@ -69,7 +69,6 @@
   
 }
 
-
 .ChocoDomeCon__text-btn{
   display: block;
   margin: 0 auto;
@@ -82,6 +81,7 @@
 
 .ChocoDomeCon__back{
   width: 100%;
+  height: 180vh;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
 }
@@ -104,7 +104,7 @@
 
 /* 180 480 */
 /* 500 550 */
-/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
 @media screen and (min-width: 768px) {
   .ChocoDomeCon__warpAll {
     height: 560vh; 
@@ -124,6 +124,28 @@
 
   .ChocoDomeCon__warp:nth-child(5){
     top: 480vh;
+  }
+}
+
+  @media screen and (min-width: 980px) {
+  .ChocoDomeCon__warp:nth-child(1) .ChocoDomeCon__back{
+    height: 230vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(2) .ChocoDomeCon__back{
+    height: 230vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(3) .ChocoDomeCon__back{
+    height: 230vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(4) .ChocoDomeCon__back{
+    height: 200vh;
+  }
+
+  .chocolate-5__backwrap .ChocoDomeCon__back{
+    height: 80vh;
   }
 }
 

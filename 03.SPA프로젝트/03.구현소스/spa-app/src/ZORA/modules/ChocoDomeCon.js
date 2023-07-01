@@ -15,23 +15,18 @@ function jqFn() {
 
 const setcss_bg = [
   {
-    height: "180vh",
     backgroundColor: "var(--org)",
   },
   {
-    height: "180vh",
     backgroundColor: "var(--blue)",
   },
   {
-    height: "180vh",
     backgroundColor: "var(--red)",
   },
   {
-    height: "180vh",
     backgroundColor: "var(--yell)",
   },
   {
-    height: "100vh",
     backgroundColor: "var(--pink)",
   },
 ];
@@ -66,7 +61,7 @@ function ChocoDomeCon() {
 
   return (
     <>
-      <section id="main">
+      <section id="ChocoDomeCon">
         <div className='ChocoDomeCon__warpAll'>
         {ChocoDomeCon_data.main.map((v, i) => (
           <div className="ChocoDomeCon__warp">

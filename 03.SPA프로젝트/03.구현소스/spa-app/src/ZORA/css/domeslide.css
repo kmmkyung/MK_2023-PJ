@@ -31,10 +31,12 @@
   margin: 5vw 0;
   width: 70%;
 }
+
 .domeslide-con__list h4{
   font-family: var(--Coko);
   font-size: var(--font-size-S);
 }
+
 .domeslide-con__list h5{
   font-family: var(--Atami);
   font-size: var(--font-size-S);
@@ -59,10 +61,6 @@
   background-color: #c4c4c4;
 }
 
-/* .domeslide-btn li:first-child .btn{
-  background-color: var(--black);
-} */
-
 .domeslide-btn li.on .btn{
   background-color: var(--black);
 }
@@ -77,5 +75,11 @@
   background-color: var(--pink);
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
-  
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .domeslide-con__list p{
+    font-size: var(--font-size-M);
+  }
 }

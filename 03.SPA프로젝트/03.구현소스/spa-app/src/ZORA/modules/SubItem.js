@@ -53,7 +53,7 @@ function inputclick(params) {
             sumInput.val(1);
         } else {
             if (txt >= 100) {
-                alert("연락바람");
+                alert("Please call Me 🙏");
             }
         }
     });

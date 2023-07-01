@@ -55,3 +55,10 @@
   aspect-ratio: 1/1.1;
   object-fit: cover;
 }
+
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .reccon-text p{
+    font-size: var(--font-size-M);
+  }
+}

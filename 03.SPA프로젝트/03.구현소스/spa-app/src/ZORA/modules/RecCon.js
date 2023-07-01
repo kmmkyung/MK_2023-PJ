@@ -24,7 +24,7 @@ function RecCon(props){
         let img = ['./images/Inspire women_1.jpg','./images/Inspire women_2.jpg','./images/Inspire women_3.jpg']
         
         setInterval(()=>{
-            if(!document.querySelector(".reccon-con img"))return;
+            // if(!document.querySelector(".reccon-con img"))return;
             document.querySelector(".reccon-con img").setAttribute("src",img[chgimgnum])
             chgimgnum++
             if(chgimgnum===img.length){chgimgnum=0}

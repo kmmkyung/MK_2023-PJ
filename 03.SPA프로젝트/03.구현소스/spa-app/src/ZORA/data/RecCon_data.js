@@ -39,7 +39,7 @@ const RecCon_data = {
             "btn":""
         },
         {
-            "src":"./images/Our_Impact_2.jpg",
+            "src":"./images/Our_Impact_1.jpg",
             "tit":"",
             "cont":`While some wonderful initiatives currently exist to improve the live of farmers and their families, the reality is that many girls and young women still lack access to basic education.
             ^

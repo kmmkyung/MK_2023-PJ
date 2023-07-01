@@ -135,7 +135,6 @@ function SubAll(props) {
 
         window.scrollTo(0, 0);
         $(".subface-con .number-btn__input").val("1");
-       
         
     }; /////////// btnAct ///////////
 

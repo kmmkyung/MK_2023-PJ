@@ -28,14 +28,12 @@ function RecCon(props){
             document.querySelector(".reccon-con img").setAttribute("src",img[chgimgnum])
             chgimgnum++
             if(chgimgnum===img.length){chgimgnum=0}
-            
-        },800)
+        },3000)
     }
 
     useEffect(chgimg,[])
 
     const setVal = (i) => {
-        // return i==0 && props.sty ? props.sty : '';
         if(i==0)
         return props.sty;
     }

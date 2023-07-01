@@ -38,7 +38,7 @@ const DomeSlide = () => {
     function goSlide(dir) {
       // dir - 전달변수
       // console.log("방향:", dir);
-      slide.on("dragstart touchstart", ()=>{ // <- slide.on("dragstart touchstart" 추가
+      // slide.on("dragstart touchstart", ()=>{ // <- slide.on("dragstart touchstart" 추가
         // 오른쪽이동
         if (dir) {
           slide.animate({ left: "0px" }, () => {
@@ -53,7 +53,7 @@ const DomeSlide = () => {
             });
           addOn(2);
         }
-      })
+      // })
     } // goSlide함수
 
     // 드래그 끝난 후 이벤트함수
@@ -84,6 +84,7 @@ const DomeSlide = () => {
       // console.log('slideep',slide.eq(0));
       btn.eq(dseq).addClass("on").siblings().removeClass("on");
     } // addOn 함수
+    
   }; //////// setFn //////////
 
   useEffect(setFn, []);

@@ -107,7 +107,7 @@
 /* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
 @media screen and (min-width: 768px) {
   .ChocoDomeCon__warpAll {
-    height: 560vh; 
+    height: 580vh; 
   }
 
   .ChocoDomeCon__warp:nth-child(2){
@@ -125,6 +125,9 @@
   .ChocoDomeCon__warp:nth-child(5){
     top: 480vh;
   }
+  .chocolate-5__backwrap{
+    height: 100vh;
+  }
 }
 
   @media screen and (min-width: 980px) {
@@ -141,11 +144,15 @@
   }
 
   .ChocoDomeCon__warp:nth-child(4) .ChocoDomeCon__back{
-    height: 200vh;
+    height: 220vh;
   }
 
+  .chocolate-5__backwrap{
+    height: 120vh;
+  }
+  
   .chocolate-5__backwrap .ChocoDomeCon__back{
-    height: 80vh;
+    height: 100vh;
   }
 }
 

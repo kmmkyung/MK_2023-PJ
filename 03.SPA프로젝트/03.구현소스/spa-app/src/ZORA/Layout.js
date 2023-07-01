@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
-import { json, Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import ScrollTop from "./common/ScrollTop";
 import $ from 'jquery'
 
@@ -11,7 +11,7 @@ import Bag from './modules/Bag';
 import "./css/root.css";
 import "./css/core.css";
 
-import { inputclick } from './modules/SubItem';
+import { inputclick } from './modules/Sub_all';
 import { labelclick } from './modules/EmailForm';
 
 /* 폰트어썸 임포트 */

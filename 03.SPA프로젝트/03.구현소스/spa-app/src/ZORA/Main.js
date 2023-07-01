@@ -10,6 +10,7 @@ import RotateHand from './modules/RotateHand';
 import Fade from "react-reveal/Fade"
 
 
+
 const Main = () => {
   return (
       <>

@@ -23,13 +23,10 @@
     border-top-right-radius: 9999px;
     aspect-ratio: 1/1;
     object-fit: cover;
-
 }
 
-
-
 .domecon-img__cation{
-  width: min(85vw,600px);
+  width: 100%;
   font-family: var(--Atami);
   font-size: var(--font-size-S);
   /* text-align: left; */
@@ -69,4 +66,16 @@
 
 .domecon-con__btn::after{
   background-color: var(--black);
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .domecon-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  .domecon-img img {
+    width: 40vw;
+    aspect-ratio: 0.5/0.6;
+  }
 }

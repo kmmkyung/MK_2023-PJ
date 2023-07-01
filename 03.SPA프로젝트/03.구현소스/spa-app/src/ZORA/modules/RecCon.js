@@ -42,13 +42,14 @@ function RecCon(props) {
   const setVal = (i) => {
     // return i==0 && props.sty ? props.sty : '';
     if (i == 0) return props.sty;
+    // if (v == "main" && i == 1) return props.sty
   };
 
   return (
     <>
       <section id="reccon">
         <div className="reccon-con">
-          {content.src !== "" && <img src={content.src} alt="이미지" />}
+          {content.src !== "" && <img src={content.src} alt="reccon" className={content.className}/>}
           <div className="reccon-text">
             {content.tit.split("^").map((v, i) => {
               return (

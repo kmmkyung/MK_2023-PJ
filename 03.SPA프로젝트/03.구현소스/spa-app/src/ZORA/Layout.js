@@ -10,7 +10,6 @@ import Bag from './modules/Bag';
 
 import "./css/root.css";
 import "./css/core.css";
-import "./css/media.css";
 
 import { inputclick } from './modules/SubItem';
 import { labelclick } from './modules/EmailForm';
@@ -157,7 +156,7 @@ document.querySelector('.Mnav-wrap .nav-logo svg').style.fill="#fff";
 document.querySelector('#Mnav .nav-R .Bag').style.color="#fff";
 document.querySelector(".ham svg").style.color="#fff";
 
-$(window).bind("mousewheel",function(event){
+$(window).on("mousewheel",function(event){
   if (event.originalEvent.wheelDelta >= 0) {
     // console.log('Scroll up', $(this).scrollTop());
     let scTop = $(this).scrollTop();

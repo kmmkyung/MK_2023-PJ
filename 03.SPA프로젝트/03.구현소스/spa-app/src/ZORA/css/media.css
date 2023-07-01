@@ -1,26 +1,37 @@
 @charset "utf-8";
-@media screen and (min-width: 320px) {
-    
-}
+
 /* 768px 사이즈 이하 미디어쿼리 시작 */
-@media screen and (min-width: 620px) {
-    
+@media screen and (min-width: 768px) {
+  
+  /* main - rotatehand */
+  aside .svg {
+    position: fixed;
+    top: 120px;
+    left: 12%;
+  }
 
-    /* 돌아가는 손 */
-    aside .svg {
-        position: fixed;
-        top: 120px;
-        left: 10%;
-    }
+  #page1 .page1-warp {
+    background-color: var(--main2);
+    padding-top: 110px;
+  }
 
-    #page1 .page1-warp {
-        background-color: var(--main2);
-        padding-top: 110px;
-    }
+  #page1 .page1-con {                 
+    height: calc(100vh - 110px);
+  }
 
-    #page1 .page1-con {
-        height: calc(100vh - 110px);
-    }
+  /* main - mainface */
+  .page1-con__text .page1-svg {
+    top: auto;
+    bottom: 70px;
+  }
+
+    /* main - domecon */
+    .domecon-wrap {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+  }
+
 }
 
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
@@ -30,4 +41,3 @@
 /* 1360px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (min-width: 1360px) {
 }
-

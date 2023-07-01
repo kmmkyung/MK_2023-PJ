@@ -1,7 +1,7 @@
 
 /* round svg */
 .svg{
-  width: min(12vw,150px);
+  width: min(20vw,150px);
   position: absolute;
   top: 120px;
   left: 50%;
@@ -13,11 +13,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: min(12vw,150px);
+  width: min(20vw,150px);
 }
 
 .roundDT{
-  width: min(12vw,150px);
+  width: min(20vw,150px);
   top: 120px;
   left: 40px;
   z-index: 1;
@@ -46,5 +46,14 @@
   }
   95%{
       transform: rotate(3deg);
+  }
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  aside .svg {
+    position: fixed;
+    top: 120px;
+    left: 12%;
   }
 }

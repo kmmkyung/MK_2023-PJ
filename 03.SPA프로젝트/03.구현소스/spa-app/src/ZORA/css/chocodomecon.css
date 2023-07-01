@@ -2,6 +2,7 @@
   position: relative;
   margin-top: 300px;
 }
+
 .ChocoDomeCon__warpAll{
   position: relative;
   width: 100%;
@@ -12,12 +13,33 @@
   width: 100%;
 }
 
+.ChocoDomeCon__warp:nth-child(2){
+  top: 100vh;
+  position: absolute;
+}
+
+.ChocoDomeCon__warp:nth-child(3){
+  top: 200vh;
+  position: absolute;
+}
+
+.ChocoDomeCon__warp:nth-child(4){
+  top: 300vh;
+  position: absolute;
+}
+
+.ChocoDomeCon__warp:nth-child(5){
+  top: 400vh;
+  position: absolute;
+}
+
+
 .ChocoDomeCon__con{
   display: flex;
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: min(-15vw,-150px);
+  top: min(-15vw,-280px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -59,7 +81,6 @@
 }
 
 .ChocoDomeCon__back{
-  /* margin-top: 300px; */
   width: 100%;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -81,4 +102,28 @@
   overflow: hidden;
 }
 
+/* 180 480 */
+/* 500 550 */
+/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .ChocoDomeCon__warpAll {
+    height: 560vh; 
+  }
+
+  .ChocoDomeCon__warp:nth-child(2){
+    top: 120vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(3){
+    top: 240vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(4){
+    top: 360vh;
+  }
+
+  .ChocoDomeCon__warp:nth-child(5){
+    top: 480vh;
+  }
+}
 

@@ -32,8 +32,26 @@
   background-color: var(--black);
 }
 
-.reccon-con img{
+.reccon-con .main1{
+  aspect-ratio: 1/0.8;
+  object-fit: cover;
+  width: min(85vw,1200px);
+}
+
+.reccon-con .story0{
   width: min(85vw,600px);
   aspect-ratio: 1/0.8;
+  object-fit: cover;
+}
+
+.reccon-con .story1{
+  width: min(85vw,600px);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.reccon-con .impact0{
+  width: min(85vw,600px);
+  aspect-ratio: 1/1.1;
   object-fit: cover;
 }

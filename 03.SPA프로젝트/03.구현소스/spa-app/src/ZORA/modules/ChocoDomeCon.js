@@ -13,27 +13,6 @@ function jqFn() {
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 
-const setcss_wrap = [
-  {
-    position: "absolute",
-  },
-  {
-    top: "100vh",
-    position: "absolute",
-  },
-  {
-    top: "200vh",
-    position: "absolute",
-  },
-  {
-    top: "300vh",
-    position: "absolute",
-  },
-  {
-    top: "400vh",
-    position: "absolute",
-  },
-];
 const setcss_bg = [
   {
     height: "180vh",
@@ -90,7 +69,7 @@ function ChocoDomeCon() {
       <section id="main">
         <div className='ChocoDomeCon__warpAll'>
         {ChocoDomeCon_data.main.map((v, i) => (
-          <div className="ChocoDomeCon__warp" key={i} style={setcss_wrap[i]}>
+          <div className="ChocoDomeCon__warp">
             <div className="ChocoDomeCon__con">
               <Fade bottom>
               <div className="ChocoDomeCon__img">

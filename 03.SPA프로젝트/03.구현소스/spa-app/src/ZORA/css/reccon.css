@@ -33,7 +33,7 @@
 }
 
 .reccon-con img{
-  width: min(80vw,800px);
+  width: min(85vw,600px);
   aspect-ratio: 1/0.8;
   object-fit: cover;
 }

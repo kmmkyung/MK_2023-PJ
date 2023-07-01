@@ -10,7 +10,7 @@ import Bag_data from "../data/Bag_data";
 function jqFn() {
   $(() => {});
 }
-
+// 위에서 리턴이 되던가... 로컬 기능이 뭐가 있을것...? 예상했었다... <- 정찬예상
 const Bag = () => {
   // let localArray=[];
   // function aaa() {
@@ -27,7 +27,7 @@ const Bag = () => {
 
   return (
     <>
-      {/* {JSON.parse(localStorage.getItem("cart")).map((v,i) => {
+      {JSON.parse(localStorage.getItem("cart")).map((v,i) => {
         return (
           <div className="bag-items__con" key={i}>
             <img src={v.src} alt="bag_img" />
@@ -54,7 +54,7 @@ const Bag = () => {
         );
       })}
 
-      {jqFn()} */}
+      {jqFn()}
     </>
   );
 };

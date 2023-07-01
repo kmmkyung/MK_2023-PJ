@@ -45,6 +45,8 @@
 }
 
 .svg_oneshool{
+  width: 95px;
+  height: 100px;
 }
 
 .domecon-con__tit{
@@ -56,7 +58,7 @@
 
 .domecon-con__text{
   font-family: var(--Atami);
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-S);
   max-width: 600px;
 }
 

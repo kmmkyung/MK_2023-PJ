@@ -183,7 +183,7 @@ color: var(--white);
 }
 
 .Mmenu{
-    margin-top: 200px;
+    margin-top: min(35vw,200px);
     padding: 50px;
 }
 
@@ -195,7 +195,7 @@ color: var(--white);
 
 .Mlogin{
     position: absolute;
-    bottom: 100px;
+    bottom: 3vw;
     left: 50px;
 }
 

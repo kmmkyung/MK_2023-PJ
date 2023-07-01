@@ -15,7 +15,7 @@ function jqFn() {
 
 const setcss_wrap = [
   {
-    position: "relative",
+    position: "absolute",
   },
   {
     top: "100vh",
@@ -36,15 +36,15 @@ const setcss_wrap = [
 ];
 const setcss_bg = [
   {
-    height: "480vh",
+    height: "180vh",
     backgroundColor: "var(--org)",
   },
   {
-    height: "200vh",
+    height: "180vh",
     backgroundColor: "var(--blue)",
   },
   {
-    height: "200vh",
+    height: "180vh",
     backgroundColor: "var(--red)",
   },
   {
@@ -88,21 +88,22 @@ function ChocoDomeCon() {
   return (
     <>
       <section id="main">
+        <div className='ChocoDomeCon__warpAll'>
         {ChocoDomeCon_data.main.map((v, i) => (
           <div className="ChocoDomeCon__warp" key={i} style={setcss_wrap[i]}>
             <div className="ChocoDomeCon__con">
+              <Fade bottom>
               <div className="ChocoDomeCon__img">
                 <img
                   className="ChocoDomeCon__img-1 chocolatepack"
                   src={v.img1}
-                  alt="chocolatepack"
-                />
+                  alt="chocolatepack"/>
                 <img
                   className="ChocoDomeCon__img-2  chocolatebreak"
                   src={v.img2}
-                  alt="chocolatebreak"
-                />
+                  alt="chocolatebreak"/>
               </div>
+              </Fade>
               <Fade bottom>
               <div className="ChocoDomeCon__text">
                 <h2 className="ChocoDomeCon__text-tit">
@@ -138,6 +139,7 @@ function ChocoDomeCon() {
             )}
           </div>
         ))}
+        </div>
       </section>
       {jqFn()}
     </>

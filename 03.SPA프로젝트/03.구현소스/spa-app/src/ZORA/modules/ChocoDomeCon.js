@@ -64,7 +64,7 @@ function ChocoDomeCon() {
       <section id="ChocoDomeCon">
         <div className='ChocoDomeCon__warpAll'>
         {ChocoDomeCon_data.main.map((v, i) => (
-          <div className="ChocoDomeCon__warp">
+          <div className="ChocoDomeCon__warp" key={i}>
             <div className="ChocoDomeCon__con">
               <Fade bottom>
               <div className="ChocoDomeCon__img">

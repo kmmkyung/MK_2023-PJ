@@ -56,12 +56,15 @@ body {
 }
 
 /* nav */
-#DTnav {
-  display: flex;
+
+.DTnav-wrap {
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 .nav-L {
@@ -194,13 +197,13 @@ body {
   margin: 50px 0;
 }
 
-.Mlogin {
+#Mnav .login {
   position: absolute;
   bottom: 3vw;
   left: 50px;
 }
 
-.Mlogin h3 {
+#Mnav .login h3 {
   font-size: var(--font-size-M);
   font-family: var(--Atami);
 }

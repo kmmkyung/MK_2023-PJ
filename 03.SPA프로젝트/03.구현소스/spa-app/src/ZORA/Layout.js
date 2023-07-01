@@ -118,48 +118,48 @@ $(() => {
     });
   }
 
-    // 스크롤 올리면 메뉴 보이기
-    document.querySelector(".nav-logo svg").style.fill = "#000";
-    document.querySelector(".Bag").style.color = "#000";
-    document.querySelector(".ham svg").style.color = "#000";
-  
-    $(window).on("mousewheel", function (event) {
-      if (event.originalEvent.wheelDelta >= 0) {
-        // console.log('Scroll up', $(this).scrollTop());
-        let scTop = $(this).scrollTop();
-        if (scTop < 800) {
-          $("#header").removeClass("fixed");
-          document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#fff";
-          document.querySelector("#Mnav .nav-R .Bag").style.color = "#fff";
-          document.querySelector(".ham svg").style.color = "#fff";
-        } else {
-          $("#header").addClass("fixed");
-          document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#000";
-          document.querySelector("#Mnav .nav-R .Bag").style.color = "#000";
-          document.querySelector(".ham svg").style.color = "#000";
-        }
-      } else {
-        $("#header").removeClass("fixed");
-      }
-    });
+  // 스크롤 올리면 메뉴 보이기
+  document.querySelector(".nav-logo svg").style.fill = "#000";
+  document.querySelector(".Bag").style.color = "#000";
+  document.querySelector(".ham svg").style.color = "#000";
 
-    NavChg()
-    function NavChg(){
-      window.addEventListener('resize',function(){
-        const winW = window.innerWidth
-        // console.log('w',winW);
-        // console.log(document.querySelector('#Mnav'));
-        
-        if(winW >= 1024){
-          document.querySelector('#Mnav').classList.add('-hidden');
-          document.querySelector('#DTnav').classList.remove('-hidden');
-        }
-        else{
-          document.querySelector('#Mnav').classList.remove('-hidden');
-          document.querySelector('#DTnav').classList.add('-hidden');
-        }
-      })
+  // 메뉴 스크롤 올리면 보이기
+  $(window).on("mousewheel", function (event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+      // console.log('Scroll up', $(this).scrollTop());
+      let scTop = $(this).scrollTop();
+      if (scTop < 800) {
+        $("#header").removeClass("fixed");
+      } else {
+        $("#header").addClass("fixed");
+      }
+
+      if (scTop === 0) {
+        document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#fff";
+      } else {
+        document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#000";
+      }
+    } else {
+      $("#header").removeClass("fixed");
     }
+  });
+
+  document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#fff";
+
+  NavChg();
+  function NavChg() {
+    const winW = window.innerWidth;
+    // console.log('w',winW);
+    // console.log(document.querySelector('#Mnav'));
+
+    if (winW >= 1024) {
+      document.querySelector("#Mnav").classList.add("-hidden");
+      document.querySelector("#DTnav").classList.remove("-hidden");
+    } else {
+      document.querySelector("#Mnav").classList.remove("-hidden");
+      document.querySelector("#DTnav").classList.add("-hidden");
+    }
+  }
 
   // Bag ____________________________________________________________
   Bag();
@@ -170,7 +170,7 @@ $(() => {
     Bag.forEach((v) => {
       v.addEventListener("click", function () {
         Bagwrap.style.transform = "translateX(0%)";
-        document.body.style.overflow="hidden"
+        document.body.style.overflow = "hidden";
       });
     });
     Bclose.addEventListener("click", () => {
@@ -182,8 +182,9 @@ $(() => {
   // Login ____________________________________________________________
   LoginBtn();
   function LoginBtn() {
-    const Lopen = document.querySelector(".Mlogin>h3");
+    const Lopen = document.querySelector("#Mnav .login>h3");
     const Lclose = document.querySelector(".Login-close");
+    const DTLopen = document.querySelector("#DTnav .login>h3");
 
     Lopen.addEventListener("click", function () {
       document.querySelector("#Login").classList.remove("-hidden");
@@ -199,6 +200,13 @@ $(() => {
       }, 2000);
       document.body.style.overflow = "scroll";
     });
+    DTLopen.addEventListener("click",function(){
+      document.querySelector("#Login").classList.remove("-hidden");
+      setTimeout(() => {
+        document.querySelector("#Login").style.opacity = "1";
+      }, 10);
+      document.body.style.overflow = "hidden"
+    })
   }
 });
 
@@ -217,29 +225,40 @@ const Layout = () => {
         </div>
         {/* DT NAV -----------------------------------------------------*/}
         <nav id="DTnav">
-          <div className="nav-L">
-            <ul>
-              <li>
-                <Link to="/shop">
-                  <h3>SHOP</h3>
-                </Link>
-              </li>
-              <li>
-                <h3>LEARN</h3>
-              </li>
-            </ul>
-          </div>
-          <Link to="/">
-            <MainLogo />
-          </Link>
-          <span className="ir">ZORA</span>
-          <div className="nav-R">
-            <ul>
-              <li>
-                <a href="#">LOGIN</a>
-              </li>
-              <li className="Bag">BAG(0)</li>
-            </ul>
+          <div className="DTnav-wrap">
+            <div className="nav-L">
+              <ul>
+                <li>
+                  <Link to="/shop">
+                    <h3>SHOP</h3>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/story">
+                    <h3>OUR STORY</h3>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/impact">
+                    <h3>OUR IMPACT</h3>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <Link to="/">
+              <MainLogo />
+            </Link>
+            <span className="ir">ZORA</span>
+            <div className="nav-R">
+              <ul>
+                <li className='login'>
+                  <h3>LOG-IN</h3>
+                </li>
+                <li className="Bag">
+                  <h3>BAG(0)</h3>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
         {/* M NAV -----------------------------------------------------*/}
@@ -278,7 +297,7 @@ const Layout = () => {
               <Link to="/impact">
                 <h3>Our impact</h3>
               </Link>
-              <div className="Mlogin">
+              <div className="login">
                 <h3>LOG-IN</h3>
               </div>
             </div>

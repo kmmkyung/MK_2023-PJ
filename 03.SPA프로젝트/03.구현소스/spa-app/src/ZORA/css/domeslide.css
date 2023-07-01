@@ -81,5 +81,6 @@
 @media screen and (min-width: 768px) {
   .domeslide-con__list p{
     font-size: var(--font-size-M);
+    line-height: 28px;
   }
 }

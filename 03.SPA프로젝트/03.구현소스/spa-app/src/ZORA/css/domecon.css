@@ -1,5 +1,5 @@
 #domecon{
-  margin: 8vh 20px;
+  margin: 10vh 20px;
 }
 
 .domecon-wrap{
@@ -48,14 +48,11 @@
 .domecon-con__tit{
   font-size: var(--font-size-L);
   font-family: var(--Coko);
-  text-align: center;
-  white-space: pre-wrap;
 }
 
 .domecon-con__text{
   font-family: var(--Atami);
   font-size: var(--font-size-S);
-  max-width: 600px;
 }
 
 .domecon-con__btn{
@@ -70,17 +67,54 @@
 /* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
 @media screen and (min-width: 768px) {
   .domecon-wrap {
-    display: flex;
     flex-direction: row;
   }
-  .domecon-con {
-    margin-left: 20px;
-  }
+
   .domecon-img img {
-    width: 45vw;
+    width: 50vw;
+    height: 600px;
     aspect-ratio: 0.5/0.9;
   }
+  
   .domecon-con__text{
     font-size: var(--font-size-M);
+    line-height: 28px;
+    max-width: 800px;
+  }
+
+  .domecon-con {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0;
+    gap: 2vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .domecon-img img {
+    width: 600px;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  .domecon-con {
+    justify-content: flex-end;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  .domecon-img {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  .domecon-img img {
+    width: 800px;
+  }
+  .domecon-wrap{
+    justify-content: space-evenly;
+  }
+  .domecon-con {
+    flex-basis: 50%;
+    margin-left: 0px;
+    gap: 4vh;
   }
 }

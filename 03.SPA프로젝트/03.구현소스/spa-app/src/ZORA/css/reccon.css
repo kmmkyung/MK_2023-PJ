@@ -1,5 +1,8 @@
+#reccon{
+  margin: 10vh 20px;
+}
+
 .reccon-con{
-  margin: 8vh 20px;
   position: relative;
   text-align: center;
 }
@@ -60,5 +63,11 @@
 @media screen and (min-width: 768px) {
   .reccon-text p{
     font-size: var(--font-size-M);
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .reccon-text p{
+    max-width: 900px;
   }
 }

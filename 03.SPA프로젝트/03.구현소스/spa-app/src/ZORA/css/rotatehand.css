@@ -57,3 +57,10 @@
     left: 12%;
   }
 }
+@media screen and (min-width: 1000px) {
+  aside .svg {
+    position: fixed;
+    top: 120px;
+    left: 5%;
+  }
+}

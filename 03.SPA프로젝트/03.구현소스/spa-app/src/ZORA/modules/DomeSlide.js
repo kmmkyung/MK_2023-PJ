@@ -33,7 +33,6 @@ const DomeSlide = () => {
     });
     let winW = reWin();
 
-
     // 드래그 이동 함수 : goSlide
     function goSlide(dir) {
       // dir - 전달변수
@@ -84,7 +83,6 @@ const DomeSlide = () => {
       // console.log('slideep',slide.eq(0));
       btn.eq(dseq).addClass("on").siblings().removeClass("on");
     } // addOn 함수
-    
   }; //////// setFn //////////
 
   useEffect(setFn, []);

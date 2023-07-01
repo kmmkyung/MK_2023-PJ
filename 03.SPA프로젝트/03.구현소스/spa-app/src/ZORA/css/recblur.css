@@ -36,5 +36,6 @@
 @media screen and (min-width: 768px) {
   .recblur-text p{
     font-size: var(--font-size-M);
+    line-height: 28px;
   }
 }

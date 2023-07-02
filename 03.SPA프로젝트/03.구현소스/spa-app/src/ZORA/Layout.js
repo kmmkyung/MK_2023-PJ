@@ -75,12 +75,11 @@ $(() => {
   // 네비게이션 ____________________________________________________________
   Mham(); //---- 호출
   function Mham() {
-    document.querySelector("#DTnav").classList.add("-hidden");
     const ham = document.querySelector(".ham");
     const close = document.querySelector(".close");
     const MLogo = document.querySelector(".Mnav-wrap .nav-logo svg");
     const txtbag = document.querySelector(".Mnav-wrap .nav-R li");
-    const Mmenu = document.querySelectorAll(".Mmenu h3");
+    const Mmenu = document.querySelectorAll(".Mmenu li");
 
     // 메뉴창 열기
     ham.addEventListener("click", function () {
@@ -148,17 +147,16 @@ $(() => {
 
   NavChg();
   function NavChg() {
-    const winW = window.innerWidth;
-    // console.log('w',winW);
-    // console.log(document.querySelector('#Mnav'));
-
-    if (winW >= 1024) {
-      document.querySelector("#Mnav").classList.add("-hidden");
-      document.querySelector("#DTnav").classList.remove("-hidden");
-    } else {
-      document.querySelector("#Mnav").classList.remove("-hidden");
-      document.querySelector("#DTnav").classList.add("-hidden");
-    }
+    window.addEventListener("resize", function () {
+      const winW = window.innerWidth;
+      if (winW >= 1024) {
+        document.querySelector("#Mnav").classList.add("-hidden");
+        document.querySelector("#DTnav").classList.remove("-hidden");
+      } else {
+        document.querySelector("#Mnav").classList.remove("-hidden");
+        document.querySelector("#DTnav").classList.add("-hidden");
+      }
+    });
   }
 
   // Bag ____________________________________________________________
@@ -182,9 +180,9 @@ $(() => {
   // Login ____________________________________________________________
   LoginBtn();
   function LoginBtn() {
-    const Lopen = document.querySelector("#Mnav .login>h3");
+    const Lopen = document.querySelector("#Mnav .login");
     const Lclose = document.querySelector(".Login-close");
-    const DTLopen = document.querySelector("#DTnav .login>h3");
+    const DTLopen = document.querySelector("#DTnav .login");
 
     Lopen.addEventListener("click", function () {
       document.querySelector("#Login").classList.remove("-hidden");
@@ -200,13 +198,13 @@ $(() => {
       }, 2000);
       document.body.style.overflow = "scroll";
     });
-    DTLopen.addEventListener("click",function(){
+    DTLopen.addEventListener("click", function () {
       document.querySelector("#Login").classList.remove("-hidden");
       setTimeout(() => {
         document.querySelector("#Login").style.opacity = "1";
       }, 10);
-      document.body.style.overflow = "hidden"
-    })
+      document.body.style.overflow = "hidden";
+    });
   }
 });
 
@@ -221,7 +219,7 @@ const Layout = () => {
       {/* TOP -----------------------------------------------------*/}
       <header id="header">
         <div className="topBar">
-          <p>~~(˘̩̩̩ε˘̩ƪ)~~ 성우야 안나와ㅇㅅ"ㅇ</p>
+          <p>~정성우 김민경 팀 프로젝트!~ 성우:? 어리둥절🙉</p>
         </div>
         {/* DT NAV -----------------------------------------------------*/}
         <nav id="DTnav">
@@ -229,19 +227,13 @@ const Layout = () => {
             <div className="nav-L">
               <ul>
                 <li>
-                  <Link to="/shop">
-                    <h3>SHOP</h3>
-                  </Link>
+                  <Link to="/shop">SHOP</Link>
                 </li>
                 <li>
-                  <Link to="/story">
-                    <h3>OUR STORY</h3>
-                  </Link>
+                  <Link to="/story">OUR STORY</Link>
                 </li>
                 <li>
-                  <Link to="/impact">
-                    <h3>OUR IMPACT</h3>
-                  </Link>
+                  <Link to="/impact">OUR IMPACT</Link>
                 </li>
               </ul>
             </div>
@@ -251,12 +243,8 @@ const Layout = () => {
             <span className="ir">ZORA</span>
             <div className="nav-R">
               <ul>
-                <li className='login'>
-                  <h3>LOG-IN</h3>
-                </li>
-                <li className="Bag">
-                  <h3>BAG(0)</h3>
-                </li>
+                <li className="login">LOG-IN</li>
+                <li className="Bag">BAG<span>(0)</span></li>
               </ul>
             </div>
           </div>
@@ -287,20 +275,18 @@ const Layout = () => {
             </div>
           </div>
           <div id="Mheaderbg">
-            <div className="Mmenu">
-              <Link to="/shop">
-                <h3>SHOP</h3>
-              </Link>
-              <Link to="/story">
-                <h3>Our Story</h3>
-              </Link>
-              <Link to="/impact">
-                <h3>Our impact</h3>
-              </Link>
-              <div className="login">
-                <h3>LOG-IN</h3>
-              </div>
-            </div>
+            <ul className="Mmenu">
+              <li>
+                <Link to="/shop">SHOP</Link>
+              </li>
+              <li>
+                <Link to="/story">Our Story</Link>
+              </li>
+              <li>
+                <Link to="/impact">Our impact</Link>
+              </li>
+              <li className="login">LOG-IN</li>
+            </ul>
           </div>
         </nav>
       </header>

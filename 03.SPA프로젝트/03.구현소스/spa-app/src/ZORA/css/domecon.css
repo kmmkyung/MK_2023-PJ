@@ -114,7 +114,6 @@
   }
   .domecon-con {
     flex-basis: 50%;
-    margin-left: 0px;
     gap: 4vh;
   }
 }

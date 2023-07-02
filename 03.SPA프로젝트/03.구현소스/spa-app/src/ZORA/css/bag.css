@@ -7,13 +7,13 @@
   z-index: 3;
   transform: translateX(100%);
   transition: transform 1s;
-  /* box-shadow: -1px 0px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .bag-wrap{
-  margin: 30px 20px;
-  width: min(100vw,500px);
+  padding: 50px 20px;
+  width: min(100vw,600px);
   height: 150vh;
+  box-sizing: border-box;
 }
 
 .bag-top{

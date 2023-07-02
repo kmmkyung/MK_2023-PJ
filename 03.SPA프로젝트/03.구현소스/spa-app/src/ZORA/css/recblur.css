@@ -38,4 +38,8 @@
     font-size: var(--font-size-M);
     line-height: 28px;
   }
+
+  .recblur-text h2{
+    font-size: var(--font-size-tit);
+  }
 }

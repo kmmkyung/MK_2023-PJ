@@ -103,15 +103,11 @@ body {
   margin: 0 10px;
 }
 
-#DTnav ul li,
-#Mnav ul li {
-  font-size: var(--font-size-menu);
-}
-
-#DTnav ul li,
-#Mnav ul li {
+#DTnav li,
+#Mnav li {
   color: var(--black);
   font-family: var(--Atami);
+  font-size: var(--font-size-menu);
 }
 
 /* footer */
@@ -191,25 +187,21 @@ body {
   padding: 50px;
 }
 
-.Mmenu h3 {
+#Mheaderbg li {
   font-size: var(--font-size-L);
   font-family: var(--Coko);
   margin: 50px 0;
 }
 
-#Mnav .login {
+#Mheaderbg .login {
   position: absolute;
   bottom: 3vw;
   left: 50px;
-}
-
-#Mnav .login h3 {
   font-size: var(--font-size-M);
   font-family: var(--Atami);
 }
 
-.Mmenu h3:hover,
-.Mlogin h3:hover {
+.Mmenu li:hover a{
   color: #f253b9;
   text-decoration: underline;
 }
@@ -302,9 +294,4 @@ body {
   font-family: var(--Atami);
   position: absolute;
   left: 0;
-}
-
-/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
-@media screen and (min-width: 1024px) {
-
 }

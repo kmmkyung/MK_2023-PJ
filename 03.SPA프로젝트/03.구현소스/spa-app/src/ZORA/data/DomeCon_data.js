@@ -35,7 +35,7 @@ const DomeCon_data = {
   ],
   Our_Impact: [
     {
-      src: "./images/One bar_One school day.jpg",
+      src: "./images/Our_Impact_1.jpg",
       src2: "./images/Our_Impact_2.jpg",
       svg: "./images/oneschool.png",
       caption1: "",

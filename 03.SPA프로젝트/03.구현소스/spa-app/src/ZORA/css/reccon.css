@@ -1,25 +1,25 @@
-#reccon{
+#reccon {
   margin: 10vh 20px;
 }
 
-.reccon-con{
+.reccon-con {
   position: relative;
   text-align: center;
 }
 
-.reccon-text{
+.reccon-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.reccon-text h2{
+.reccon-text h2 {
   font-size: var(--font-size-L);
   text-align: center;
   font-family: var(--Coko);
 }
 
-.reccon-text p{
+.reccon-text p {
   font-family: var(--Atami);
   font-size: var(--font-size-S);
   text-align: center;
@@ -27,47 +27,51 @@
   margin: 50px auto;
 }
 
-.reccon-text__btn{
+.reccon-text__btn {
   font-size: var(--font-size-M);
 }
 
-.reccon-text__btn::after{
+.reccon-text__btn::after {
   background-color: var(--black);
 }
 
-.reccon-con .main1{
+.reccon-con .main1 {
   aspect-ratio: 1/0.8;
   object-fit: cover;
-  width: min(85vw,1200px);
+  width: min(85vw, 1200px);
 }
 
-.reccon-con .story0{
-  width: min(85vw,600px);
+.reccon-con .story0 {
+  width: min(85vw, 600px);
   aspect-ratio: 1/0.8;
   object-fit: cover;
 }
 
-.reccon-con .story1{
-  width: min(85vw,600px);
+.reccon-con .story1 {
+  width: min(85vw, 600px);
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
-.reccon-con .impact0{
-  width: min(85vw,600px);
+.reccon-con .impact0 {
+  width: min(85vw, 600px);
   aspect-ratio: 1/1.1;
   object-fit: cover;
 }
 
 /* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
 @media screen and (min-width: 768px) {
-  .reccon-text p{
+  .reccon-text p {
     font-size: var(--font-size-M);
     line-height: 28px;
   }
+  .reccon-con .story0 {
+    width: min(40vw, 600px);
+  }
+
 }
 @media screen and (min-width: 1024px) {
-  .reccon-text p{
+  .reccon-text p {
     max-width: 900px;
   }
 }

@@ -11,7 +11,7 @@ const OurStory = () => {
       <OurFace num='0'/>
       <RecBlure num='1'/>
       <DomeCon cat='Our_Story' num='0'/>
-      <RecCon cat='Our_Story' num='0'/>
+      <RecCon cat='Our_Story' num='0' />
       <DomeCon cat='Our_Story' num='1'/>
       <RecCon cat='Our_Story' num='1'/>
       <DomeCon cat='main' num='0' />

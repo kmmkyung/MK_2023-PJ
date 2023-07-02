@@ -23,6 +23,19 @@ $(() => {
   labelclick(".Login-con__name > input");
   labelclick(".Login-con__pw > input");
 
+  chgNav()
+  function chgNav(){
+    const winW = window.innerWidth;
+    if (winW >= 1024) {
+      document.querySelector("#Mnav").classList.add("-hidden");
+      document.querySelector("#DTnav").classList.remove("-hidden");
+    } else {
+      document.querySelector("#Mnav").classList.remove("-hidden");
+      document.querySelector("#DTnav").classList.add("-hidden");
+    }
+  }
+    
+
   // <head> 파비콘 함수 + 호출 _____________________________________
   favicon(); //---- 호출
   function favicon() {
@@ -117,10 +130,6 @@ $(() => {
     });
   }
 
-  // 스크롤 올리면 메뉴 보이기
-  document.querySelector(".nav-logo svg").style.fill = "#000";
-  document.querySelector(".Bag").style.color = "#000";
-  document.querySelector(".ham svg").style.color = "#000";
 
   // 메뉴 스크롤 올리면 보이기
   $(window).on("mousewheel", function (event) {
@@ -133,29 +142,39 @@ $(() => {
         $("#header").addClass("fixed");
       }
 
-      if (scTop === 0) {
-        document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#fff";
+      if (scTop <800) {
+        // 모바일M
+        document.querySelector("#Mnav .nav-logo svg").style.fill = "#fff";
+        document.querySelector(".ham svg").style.color = "#fff";
+        document.querySelector("#Mnav .Bag").style.color = "#fff";
+        // 데스크탑 DT
+        document.querySelector("#DTnav .nav-logo svg").style.fill = "#fff";
+        document.querySelector("#DTnav .login").style.color = "#fff";
+        document.querySelector("#DTnav .Bag").style.color = "#fff";
+        const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
+        DTnavli.forEach((v)=>{ v.style.color = "#fff"; })
+
       } else {
-        document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#000";
+        // 모바일M
+        document.querySelector("#Mnav .nav-logo svg").style.fill = "#000";
+        document.querySelector(".ham svg").style.color = "#000";
+        document.querySelector("#Mnav .Bag").style.color = "#000";
+        // 데스크탑 DT
+        document.querySelector("#DTnav .nav-logo svg").style.fill = "#000";
+        document.querySelector("#DTnav .login").style.color = "#000";
+        document.querySelector("#DTnav .Bag").style.color = "#000";
+        const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
+        DTnavli.forEach((v)=>{ v.style.color = "#000"; })
       }
     } else {
       $("#header").removeClass("fixed");
     }
   });
 
-  document.querySelector(".Mnav-wrap .nav-logo svg").style.fill = "#fff";
-
   NavChg();
   function NavChg() {
     window.addEventListener("resize", function () {
-      const winW = window.innerWidth;
-      if (winW >= 1024) {
-        document.querySelector("#Mnav").classList.add("-hidden");
-        document.querySelector("#DTnav").classList.remove("-hidden");
-      } else {
-        document.querySelector("#Mnav").classList.remove("-hidden");
-        document.querySelector("#DTnav").classList.add("-hidden");
-      }
+      chgNav()
     });
   }
 
@@ -219,7 +238,7 @@ const Layout = () => {
       {/* TOP -----------------------------------------------------*/}
       <header id="header">
         <div className="topBar">
-          <p>~정성우 김민경 팀 프로젝트!~ 성우:? 어리둥절🙉</p>
+          <p>~정성우 김민경 팀 프로젝트!~ 성우:?어리둥절🙉</p>
         </div>
         {/* DT NAV -----------------------------------------------------*/}
         <nav id="DTnav">

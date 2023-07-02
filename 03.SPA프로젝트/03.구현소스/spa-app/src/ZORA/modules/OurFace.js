@@ -7,29 +7,54 @@ import "../css/ourface.css";
 // 제이쿼리
 import $ from "jquery"
 function jqFn(){
-  $(()=>{
+$(()=>{
+
   })
 }
 
 const OurFace = (props) => {
+
+    // 윈도크기리턴함수
+    const reWin = () => $(window).width();
+    // 리사이즈 업데이트
+    $(window).resize(() => {
+      winW = $(window).width();
+      // console.log("reWin:",winW);
+    });
+    let winW = reWin();
+
   return(
     <>
     <section id="ourface">
       <div className="ourface-wrap">
         {
-          // window.width > 768 && //768보다 크면 코드 실행
-        }
-        <div className="ourface-L" style={{backgroundImage:`url(${OurFace_data[props.num].src})`}}>
+          winW < 768 && <div className="ourface-L" style={{backgroundImage:"none"}}>
           <div className="ourface-L__con">
             <h1>{OurFace_data[props.num].tit}</h1>
             <p>{OurFace_data[props.num].con}</p>
           </div>
         </div>
+        }
+        {
+          winW >= 768 && 
+          <div className='ourface-L__All'>
+            <div className="ourface-L" style={{backgroundImage:`url(${OurFace_data[props.num].src})`}}>
+            </div>
+            <div className="ourface-L__con">
+              <h1>{OurFace_data[props.num].tit}</h1>
+              <p>{OurFace_data[props.num].con}</p>
+            </div>
+          </div>
+        }
         <div className="ourface-R">
           {
-            // window.width < 768 && //768보다 작으면 코드 실행
+            winW >= 768 &&
+          <div className="ourface-R__bg" style={{backgroundImage:"none"}}></div>
           }
+          {
+            winW < 768 &&
           <div className="ourface-R__bg" style={{backgroundImage:`url(${OurFace_data[props.num].src})`}}></div>
+          }
         </div>
       </div>
     </section>

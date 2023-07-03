@@ -104,7 +104,6 @@
 @media screen and (min-width: 1440px) {
   .domecon-img {
     flex-basis: 50%;
-    text-align: center;
   }
   .domecon-img img {
     width: 800px;

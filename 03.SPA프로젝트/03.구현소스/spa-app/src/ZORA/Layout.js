@@ -232,8 +232,6 @@ const Layout = () => {
     document.querySelector("#DTnav .Bag").style.color = "#fff";
     const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
     DTnavli.forEach((v)=>{ v.style.color = "#fff"; })
-
-    // !스타일 컴포넌트를 만들수 있다!
   } else {
     // 모바일M
     document.querySelector("#Mnav .nav-logo svg").style.fill = "#000";

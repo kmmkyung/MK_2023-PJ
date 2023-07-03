@@ -9,7 +9,7 @@ const Shop = () =>{
   return(
     <>
       <ChocoDomeCon/>
-      {/* <RecBlur num="0"/> */}
+      <RecBlur num="0"/>
     </>
   )
 }; /////// Shop ///////

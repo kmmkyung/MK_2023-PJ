@@ -4,7 +4,6 @@
 
 .reccon-con {
   position: relative;
-  text-align: center;
 }
 
 .reccon-text {
@@ -44,9 +43,10 @@
 }
 
 .reccon-con__main1 img,
-.reccon-con__story0 img {
+.reccon-con__story0 img{
   object-fit: cover;
   width: min(85vw, 1200px);
+  aspect-ratio: 1.5;
 }
 
 .reccon-con__story1 img {
@@ -59,10 +59,10 @@
   padding: 20px;
 }
 
-.reccon-con__impact0 .impact0 {
-  width: min(50vw, 600px);
+.reccon-con__impact0 img{
+  width: min(40vw, 500px);
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .reccon-con__impact0 .reccon-text p:first-child {
@@ -98,7 +98,7 @@
     display: flex;
     align-items: flex-end;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .reccon-con__story0 img,
@@ -132,7 +132,7 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
   }
 
@@ -141,8 +141,8 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .reccon-con__story0 .story0,
-  .reccon-con__story1 .story1 {
+  .reccon-con__story0 .img,
+  .reccon-con__story1 .img {
     width: min(50vw,800px);
   }
   
@@ -154,7 +154,7 @@
     max-width: 800px;
   }
   
-  .reccon-con__impact0 .impact0{
+  .reccon-con__impact0 .img{
     width: min(30vw,200px);
     height: auto;
   }

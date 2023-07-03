@@ -50,7 +50,7 @@ function RecCon(props) {
   return (
     <>
       <section id="reccon">
-        <div className={"reccon-con__"+content.className}>
+        <div className={"reccon-con reccon-con__"+content.class}>
           {content.src !== "" && <img src={content.src} alt="reccon" className={content.className}/>}
           <div className="reccon-text">
             {content.tit.split("^").map((v, i) => {

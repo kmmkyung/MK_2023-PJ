@@ -21,16 +21,6 @@ const OurFace = (props) => {
     
   }
 
-
-  // 리사이즈 업데이트
-  // const test = () =>
-  // $(window).resize(() => {
-  //     setWinW($(window).width())
-  //     console.log("리사이즈", winW);
-  //     // console.log("reWin:",winW);
-  //   });
-  // // let [winW, setWinW] = useState(reWin);
-
   useEffect(() => {
     test();
     window.addEventListener("resize",()=>{

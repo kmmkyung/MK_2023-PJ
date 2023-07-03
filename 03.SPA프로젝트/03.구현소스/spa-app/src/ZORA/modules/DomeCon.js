@@ -19,7 +19,7 @@ function DomeCon(props) {
   return (
     <>
       <section id="domecon">
-        <div className="domecon-wrap">
+        <div className={"domecon-wrap domecon-wrap__"+content.class}>
           <div className="domecon-img">
             {content.src !== "" && <img src={content.src} alt="img" />}
             <p className="domecon-img__cation">

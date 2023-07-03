@@ -61,7 +61,11 @@ function RecCon(props) {
               );
             })}
             {content.cont.split("^").map((v,i)=>{
-              return <p key={i}>{v}</p>;
+              if(v){
+                return <p key={i}>{v}</p>
+              }else{
+                return
+              }
             })}
             {
               content.btn != "" && (

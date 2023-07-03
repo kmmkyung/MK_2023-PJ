@@ -6,6 +6,7 @@ import DomeSlide_data from "../data/DomeSlide_data"
 // 제이쿼리
 import $ from "jquery"
 import 'jquery-ui-dist/jquery-ui';
+// import 'jquery-ui-touch-punch';
 
 function jqFn(){
   $(()=>{ 

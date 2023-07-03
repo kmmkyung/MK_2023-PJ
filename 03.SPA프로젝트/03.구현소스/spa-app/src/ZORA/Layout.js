@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import ScrollTop from "./common/ScrollTop";
 import $ from "jquery";
@@ -142,36 +142,17 @@ $(() => {
         $("#header").addClass("fixed");
       }
 
-      if (scTop <800) {
-        // 모바일M
-        document.querySelector("#Mnav .nav-logo svg").style.fill = "#fff";
-        document.querySelector(".ham svg").style.color = "#fff";
-        document.querySelector("#Mnav .Bag").style.color = "#fff";
-        // 데스크탑 DT
-        document.querySelector("#DTnav .nav-logo svg").style.fill = "#fff";
-        document.querySelector("#DTnav .login").style.color = "#fff";
-        document.querySelector("#DTnav .Bag").style.color = "#fff";
-        const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
-        DTnavli.forEach((v)=>{ v.style.color = "#fff"; })
+      // console.log("href", location.href.split("#")[1]);
+      
+      // topWhite();
 
-        // !스타일 컴포넌트를 만들수 있다!
-      } else {
-        // 모바일M
-        document.querySelector("#Mnav .nav-logo svg").style.fill = "#000";
-        document.querySelector(".ham svg").style.color = "#000";
-        document.querySelector("#Mnav .Bag").style.color = "#000";
-        // 데스크탑 DT
-        document.querySelector("#DTnav .nav-logo svg").style.fill = "#000";
-        document.querySelector("#DTnav .login").style.color = "#000";
-        document.querySelector("#DTnav .Bag").style.color = "#000";
-        const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
-        DTnavli.forEach((v)=>{ v.style.color = "#000"; })
-      }
+      
     } else {
       $("#header").removeClass("fixed");
     }
   });
-
+  
+// topWhite()
   NavChg();
   function NavChg() {
     window.addEventListener("resize", function () {
@@ -232,6 +213,51 @@ $(() => {
 let org = JSON.parse(localStorage.getItem("cart"));
 
 const Layout = () => {
+  // 0- main, 1- else
+  let [topCon, setTopCon] = useState(0)
+  const topWhite = () =>{
+    let scTop = $(window).scrollTop();
+    console.log('실행');
+    console.log(scTop);
+    
+    if (scTop <800) {
+      if(topCon) return
+    // 모바일M
+    document.querySelector("#Mnav .nav-logo svg").style.fill = "#fff";
+    document.querySelector(".ham svg").style.color = "#fff";
+    document.querySelector("#Mnav .Bag").style.color = "#fff";
+    // 데스크탑 DT
+    document.querySelector("#DTnav .nav-logo svg").style.fill = "#fff";
+    document.querySelector("#DTnav .login").style.color = "#fff";
+    document.querySelector("#DTnav .Bag").style.color = "#fff";
+    const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
+    DTnavli.forEach((v)=>{ v.style.color = "#fff"; })
+
+    // !스타일 컴포넌트를 만들수 있다!
+  } else {
+    // 모바일M
+    document.querySelector("#Mnav .nav-logo svg").style.fill = "#000";
+    document.querySelector(".ham svg").style.color = "#000";
+    document.querySelector("#Mnav .Bag").style.color = "#000";
+    // 데스크탑 DT
+    document.querySelector("#DTnav .nav-logo svg").style.fill = "#000";
+    document.querySelector("#DTnav .login").style.color = "#000";
+    document.querySelector("#DTnav .Bag").style.color = "#000";
+    const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
+    DTnavli.forEach((v)=>{ v.style.color = "#000"; })
+  }
+}
+const chgTop = () =>{
+  setTopCon(1);
+  topWhite();
+}
+useEffect(()=>{
+  topWhite();
+    $(window).on("mousewheel",()=>{
+      topWhite()
+    });
+})
+
   return (
     <>
       <ScrollTop />
@@ -246,13 +272,13 @@ const Layout = () => {
           <div className="DTnav-wrap">
             <div className="nav-L">
               <ul>
-                <li>
+                <li onClick={chgTop}>
                   <Link to="/shop">SHOP</Link>
                 </li>
-                <li>
+                <li onClick={chgTop}>
                   <Link to="/story">OUR STORY</Link>
                 </li>
-                <li>
+                <li onClick={chgTop}>
                   <Link to="/impact">OUR IMPACT</Link>
                 </li>
               </ul>
@@ -296,13 +322,13 @@ const Layout = () => {
           </div>
           <div id="Mheaderbg">
             <ul className="Mmenu">
-              <li>
+              <li onClick={chgTop}>
                 <Link to="/shop">SHOP</Link>
               </li>
-              <li>
+              <li onClick={chgTop}>
                 <Link to="/story">Our Story</Link>
               </li>
-              <li>
+              <li onClick={chgTop}>
                 <Link to="/impact">Our impact</Link>
               </li>
               <li className="login">LOG-IN</li>

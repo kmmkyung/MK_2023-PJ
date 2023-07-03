@@ -8,7 +8,7 @@ import DomeSlide from "./DomeSlide";
 
 import $ from "jquery";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { chocobreak } from "./ChocoDomeCon";
 
 function jqFn() {
@@ -141,7 +141,24 @@ function SubAll(props) {
 
   useEffect(() => inputclick(".number-btn__input"), []);
   useEffect(chocobreak, []);
+  let [winW, setWinW] = useState(0)
 
+  const test = ()=>{
+    setWinW($(window).width())
+    console.log("test",winW)
+    
+  }
+useEffect(() => {
+    test();
+    window.addEventListener("resize",()=>{
+      test()
+    });
+    return (
+      window.removeEventListener("resize",()=>{
+        test();
+      })
+    )
+    },[winW]);
   return (
     <>
       <section id="subface">
@@ -276,7 +293,7 @@ function SubAll(props) {
             </div>
             <div className="subnext-R">
               {
-                window.width < 768 && //768보다 작으면 코드 실행
+                winW < 768 && //768보다 작으면 코드 실행
               <div className="subnext-R-wrap" style={{ backgroundColor: SubNext_data[props.num].bgc_L }}>
                 <div className="subnext-R-con">
                   <div className="subnext-img">
@@ -317,7 +334,8 @@ function SubAll(props) {
                 ></div>
               </div>
               }
-              {/* <div className="subnext-R-wrap">
+              {winW>= 768 &&
+              <div className="subnext-R-wrap">
                 <div className="subnext-R-con">
                   <div className="subnext-img">
                     <img
@@ -355,7 +373,8 @@ function SubAll(props) {
                     backgroundColor: SubNext_data[props.num].bgc_R,
                   }}
                 ></div>
-              </div> */}
+              </div>
+              }
             </div>
           </div>
         </div>

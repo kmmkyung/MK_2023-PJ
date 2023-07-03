@@ -7,6 +7,7 @@ import DomeSlide_data from "../data/DomeSlide_data"
 import $ from "jquery"
 import 'jquery-ui-dist/jquery-ui';
 // import 'jquery-ui-touch-punch';
+import { Draggable } from 'react-touch'
 
 function jqFn(){
   $(()=>{ 

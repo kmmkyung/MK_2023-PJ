@@ -9,8 +9,10 @@
 }
 
 .domecon-con .src2{
-  width: min(85vw,600px);
+  width: min(85vw, 600px);
   height: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .domecon-img {

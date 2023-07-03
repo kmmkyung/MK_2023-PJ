@@ -37,7 +37,7 @@ const DomeSlide = () => {
     function goSlide(dir) {
       // dir - 전달변수
       // console.log("방향:", dir);
-      // slide.on("dragstart touchstart", ()=>{ // <- slide.on("dragstart touchstart" 추가
+      slide.on("dragstart", function(){ 
         // 오른쪽이동
         if (dir) {
           slide.animate({ left: "0px" }, () => {
@@ -52,11 +52,11 @@ const DomeSlide = () => {
             });
           addOn(2);
         }
-      // })
+      })
     } // goSlide함수
 
     // 드래그 끝난 후 이벤트함수
-    slide.on("dragstop touchend", function () { // <- touchend 추가
+    slide.on("dragstop", function () {
       // 위치값
       let slideL = slide.offset().left;
       // console.log('왼',slideL);

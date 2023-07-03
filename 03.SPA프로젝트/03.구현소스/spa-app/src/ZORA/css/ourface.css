@@ -79,8 +79,8 @@
 
   .ourface-L {
     position: static;
-    width: min(30vw, 530px);
-    height: min(30vw, 530px);
+    width: min(50vw, 500px);
+    height: min(50vw, 500px);
     aspect-ratio: 1.1;
     flex-basis: 50%;
     background-position: 45% 20%;

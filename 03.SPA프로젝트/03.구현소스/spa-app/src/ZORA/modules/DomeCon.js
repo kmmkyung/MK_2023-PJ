@@ -42,12 +42,9 @@ function DomeCon(props) {
             {content.src2 !== "" && (
               <img className="src2" src={content.src2} alt="img" />
             )}
-            {content.con1 !== "" &&  
-              (<div className="domecon-con__text-All">
               <p className="domecon-con__text">{content.con1.split("^")[0]}</p>
               <p className="domecon-con__text">{content.con1.split("^")[1]}</p>
               <p className="domecon-con__text">{content.con1.split("^")[2]}</p>
-            </div>)}
             {content.btn !== "" && (
               <Link to="/impact">
                 <button className="domecon-con__btn btn-B">

@@ -18,26 +18,28 @@ function RecCon(props) {
 
   // console.log(props.sty);
 
-  // function chgimg(props) {
-  //   let chgimgnum = 0;
-  //   let img = [
-  //     "./images/Inspire women_1.jpg",
-  //     "./images/Inspire women_2.jpg",
-  //     "./images/Inspire women_3.jpg",
-  //   ];
-  //   if (document.querySelector(".reccon-con__main1 img")) return;
+  function chgimg() {
+    let chgimgnum = 0;
+    let img = [
+      "./images/Inspire women_1.jpg",
+      "./images/Inspire women_2.jpg",
+      "./images/Inspire women_3.jpg",
+    ];
+    if (document.querySelector(".reccon-con__main1 img")) return;
 
-  //   setInterval(() => {
-  //     document.querySelector(".reccon-con__main1 img").setAttribute("src", img[chgimgnum]);
-  //     if (chgimgnum === img.length - 1) {
-  //       chgimgnum = 0;
-  //     } else {
-  //       chgimgnum++;
-  //     }
-  //   }, 3000);
-  // }
+    setInterval(() => {
+      if(document.querySelector(".reccon-con__main1 img")){
+        document.querySelector(".reccon-con__main1 img").setAttribute("src", img[chgimgnum]);
+        if (chgimgnum === img.length - 1) {
+          chgimgnum = 0;
+        } else {
+          chgimgnum++;
+        }
+      }
+    }, 3000);
+  }
 
-  // useEffect(chgimg, []);
+  useEffect(chgimg, []);
 
   const setVal = (i) => {
     // return i==0 && props.sty ? props.sty : '';
@@ -58,10 +60,16 @@ function RecCon(props) {
                 </h2>
               );
             })}
-            <p>{content.cont}</p>
-            <Link to="/story">
+            {content.cont.split("^").map((v,i)=>{
+              return <p key={i}>{v}</p>;
+            })}
+            {
+              content.btn != "" && (
+                <Link to="/story">
               <button className="reccon-text__btn btn-B">{content.btn}</button>
             </Link>
+              )
+            }
           </div>
         </div>
       </section>

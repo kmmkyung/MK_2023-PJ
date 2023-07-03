@@ -28,33 +28,33 @@ const OurFace = (props) => {
     <section id="ourface">
       <div className="ourface-wrap">
         {
-          winW < 768 && <div className="ourface-L" style={{backgroundImage:"none"}}>
+          winW < 768 && (<div className="ourface-L" style={{backgroundImage:"none"}}>
           <div className="ourface-L__con">
             <h1>{OurFace_data[props.num].tit}</h1>
             <p>{OurFace_data[props.num].con}</p>
           </div>
-        </div>
+        </div>)
         }
         {
           winW >= 768 && 
-          <div className='ourface-L__All'>
+          (<div className='ourface-L__All'>
             <div className="ourface-L" style={{backgroundImage:`url(${OurFace_data[props.num].src})`}}>
             </div>
             <div className="ourface-L__con">
               <h1>{OurFace_data[props.num].tit}</h1>
               <p>{OurFace_data[props.num].con}</p>
             </div>
-          </div>
+          </div>)
         }
         <div className="ourface-R">
           {
-            winW >= 768 &&
+            winW >= 768 && (
           <div className="ourface-R__bg" style={{backgroundImage:"none"}}></div>
-          }
+          )}
           {
-            winW < 768 &&
+            winW < 768 && (
           <div className="ourface-R__bg" style={{backgroundImage:`url(${OurFace_data[props.num].src})`}}></div>
-          }
+          )}
         </div>
       </div>
     </section>

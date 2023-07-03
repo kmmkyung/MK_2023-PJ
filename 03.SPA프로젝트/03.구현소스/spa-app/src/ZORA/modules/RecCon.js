@@ -25,10 +25,10 @@ function RecCon(props) {
   //     "./images/Inspire women_2.jpg",
   //     "./images/Inspire women_3.jpg",
   //   ];
-  //   if (document.querySelector(".reccon-conmain1 img")) return;
+  //   if (document.querySelector(".reccon-con__main1 img")) return;
 
   //   setInterval(() => {
-  //     document.querySelector(".reccon-conmain1 img").setAttribute("src", img[chgimgnum]);
+  //     document.querySelector(".reccon-con__main1 img").setAttribute("src", img[chgimgnum]);
   //     if (chgimgnum === img.length - 1) {
   //       chgimgnum = 0;
   //     } else {
@@ -48,7 +48,7 @@ function RecCon(props) {
   return (
     <>
       <section id="reccon">
-        <div className={"reccon-con"+content.className}>
+        <div className={"reccon-con__"+content.className}>
           {content.src !== "" && <img src={content.src} alt="reccon" className={content.className}/>}
           <div className="reccon-text">
             {content.tit.split("^").map((v, i) => {

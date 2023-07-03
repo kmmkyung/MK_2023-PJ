@@ -1,8 +1,7 @@
 1. subnext 조건문, ourface 조건문
 2. 터치 슬라이드 물어보기(모바일용 조건)
 3. 이미지 바뀌는거 물어보기(안바뀜...)
-4. ourstory always west... 해당만 미디어쿼리 css 바꾸고 싶다면...???
-5. 메뉴바 제이쿼리에 넣었는데 처음 로딩이 이상함
-6.
+4. 없는 태그 안나오게
+5.
  자동 슬라이드가 아니니 리사이즈시 리로드 기능이 없어도 괜찮은지
   window.addEventListener("resize",()=>location.reload());

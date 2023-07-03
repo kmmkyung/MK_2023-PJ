@@ -84,6 +84,8 @@
     aspect-ratio: 1.1;
     flex-basis: 50%;
     background-position: 45% 20%;
+    flex: 1;
+    object-fit: cover;
   }
 
   .ourface-L__con {
@@ -92,6 +94,8 @@
     transform: translate(0);
     padding: 0 20px;
     flex-basis: 50%;
+    flex: 1;
+
   }
 
   .ourface-L__con h1 {

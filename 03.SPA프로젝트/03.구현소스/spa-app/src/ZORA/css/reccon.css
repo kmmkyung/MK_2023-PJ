@@ -35,25 +35,26 @@
   background-color: var(--black);
 }
 
-.reccon-con .main1 {
+.reccon-conmain1,
+.reccon-constory0,
+.reccon-constory1{
+  text-align: center;
+}
+
+.reccon-conmain1 .main1,
+.reccon-constory0 .story0 {
   aspect-ratio: 1/0.8;
   object-fit: cover;
   width: min(85vw, 1200px);
 }
 
-.reccon-con .story0 {
-  width: min(85vw, 600px);
-  aspect-ratio: 1/0.8;
-  object-fit: cover;
-}
-
-.reccon-con .story1 {
+.reccon-constory1 .story1 {
   width: min(85vw, 600px);
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
-.reccon-con .impact0 {
+.reccon-conimpact0 .impact0 {
   width: min(85vw, 600px);
   aspect-ratio: 1/1.1;
   object-fit: cover;

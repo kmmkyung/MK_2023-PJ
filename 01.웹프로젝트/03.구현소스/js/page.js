@@ -20,31 +20,31 @@ window.addEventListener("DOMContentLoaded", () => {
   // 이벤트 종류: onmousemove (마우스가 대상 위에서 움직임)
   ///// EVNET-FN__onmousemove /////
   document.body.onmousemove = function () {
-    //마우스 위치 확인! (pageX,Y는 전체 웹문서에의 위치)
-    // console.log("x",event.pageX,"y",event.pageY);
+  //마우스 위치 확인! (pageX,Y는 전체 웹문서에의 위치)
+  // console.log("x",event.pageX,"y",event.pageY);
 
-    // 위치값 보정 (clientX, clientY는 브라우저 화면에서의 위치)
-    let positionX = event.clientX - Msize;
-    let positionY = event.clientY - Msize;
+  // 위치값 보정 (clientX, clientY는 브라우저 화면에서의 위치)
+  let positionX = event.clientX - Msize;
+  let positionY = event.clientY - Msize;
 
-    // 커서 이미지 위치값 이동(가운데 위치 보정)
-    mouseCursor.style.top = positionY + "px";
-    mouseCursor.style.left = positionX + "px";
-  }; ///// EVNET-FN__onmousemove /////
+  // 커서 이미지 위치값 이동(가운데 위치 보정)
+  mouseCursor.style.top = positionY + "px";
+  mouseCursor.style.left = positionX + "px";
+}; ///// EVNET-FN__onmousemove /////
 
   //_____________지동 페이지 휠 효과_____________
-  console.log("page wheel-JS 로딩완료!");
+console.log("page wheel-JS 로딩완료!");
 
-  // 0. 변수 설정하기
-  // (1) 전체 페이지 변수
-  let pgnum = 0;
-  // (2)전체 페이지 수
-  const pgall = document.querySelectorAll(".page").length + 1;
-  // console.log("페이지 수",pgall);
-  // (3) 광스크롤 금지변수
-  let prot_sc = 0;
-  // (4) 스크롤 금지변수(0-허용,1-금지)
-  let sc_sts = 0;
+// 0. 변수 설정하기
+// (1) 전체 페이지 변수
+let pgnum = 0;
+// (2)전체 페이지 수
+const pgall = document.querySelectorAll(".page").length + 1;
+// console.log("페이지 수",pgall);
+// (3) 광스크롤 금지변수
+let prot_sc = 0;
+// (4) 스크롤 금지변수(0-허용,1-금지)
+let sc_sts = 0;
 
   // 1. 전체 휠 이벤트 설정
   window.addEventListener("wheel", wheelFn, { passive: false });

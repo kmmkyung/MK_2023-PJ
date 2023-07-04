@@ -4,14 +4,6 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-/* html{
-    scroll-behavior: smooth;
-} */
-
-/* html,body{
-    overflow: hidden;
-} */
-
 body{
     font-family: 'Nunito Sans','Noto Sans KR';
 }
@@ -100,7 +92,6 @@ body{
     left: 0%;
     animation: moveP2 30s linear infinite;
 }
-
 
 @keyframes moveP2 {
     to{
@@ -357,7 +348,6 @@ margin-right: min(5vw,128px);
 
 .page_3-con1__title p{
     font-size: min(2vw, 22px);
-    /* font-size: 2.2rem; */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -367,7 +357,6 @@ margin-right: min(5vw,128px);
 .page_3-con1__title span{
     display: block;
     font-size: min(1.7vw, 24px);
-    /* font-size: 2.4rem; */
     margin-top: 4px;
     white-space: nowrap;
 }
@@ -416,9 +405,7 @@ margin-right: min(5vw,128px);
 /*---------- _____page4_____ ----------*/
 #page_4{
     background-color: var(--main-color);
-    /* height: 2500px; */
     height: 200vh;
-    /* height: 316vh; */
     position: relative;
     color: #fff;
 }
@@ -471,7 +458,6 @@ margin-right: min(5vw,128px);
 
 .page_4-con1 h5,
 .page_4-con2 h5{
-    /* white-space: nowrap; */
     font-size: min(3vw,28px);
 }
 
@@ -480,7 +466,6 @@ margin-right: min(5vw,128px);
     font-size: min(2vw,16px);
     word-break: keep-all;
     word-wrap: break-word;
-    /* white-space: nowrap; */
 }
 
 .page_4-con1 img{
@@ -492,8 +477,6 @@ margin-right: min(5vw,128px);
     display: flex;
     align-items: center;
     margin: 18vh 11.2vw 0;
-    /* position: sticky; */
-    /* top: 100px; */
 }
 
 .page_4-con2 img{

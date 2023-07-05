@@ -27,7 +27,7 @@ const Bag = () => {
 
   return (
     <>
-      {JSON.parse(localStorage.getItem("cart")).map((v,i) => {
+      {/* {JSON.parse(localStorage.getItem("cart")).map((v,i) => {
         return (
           <div className="bag-items__con" key={i}>
             <img src={v.src} alt="bag_img" />
@@ -52,7 +52,7 @@ const Bag = () => {
             </div>
           </div>
         );
-      })}
+      })} */}
 
       {jqFn()}
     </>

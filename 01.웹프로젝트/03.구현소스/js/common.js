@@ -126,12 +126,15 @@ window.addEventListener("DOMContentLoaded", () => {
   p3Card()
   function p3Card(){
     const BGfont = document.querySelector(".page_3-con1__wrap");
+    const BGback = document.querySelector(".page_3-con1__wrap-Bg");
     const BGbackClose = document.querySelector(".page_3-con1__wrap-Bg")
     const card = document.querySelector(".page_3-con1-card")
     console.log('BGbackClose',BGbackClose);
     
     BGfont.addEventListener("click",function(){
-      card.style.transform="rotateY(180deg)"
+      card.style.transform="rotateY(-180deg)"
+      BGback.style.zIndex="2"
+      card.style.transform="translateX(-100%)"
     })
     
     BGbackClose.addEventListener("click",function(){

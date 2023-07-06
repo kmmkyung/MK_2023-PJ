@@ -332,28 +332,20 @@ margin-right: min(5vw,128px);
     flex-shrink: 0;
     border: 1px solid #000;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all .5s;
-    backface-visibility: hidden;
-
-}
-
-.page_3-con1__wrap{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
+    
 }
 
 .page_3-con1-card{
-    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform-origin: right center;
     transition: all .5s;
+    transform: rotateY(0deg);
 
 }
 
 .page_3-con1-card:hover{
-    animation: card .3s linear ;
+    animation: card .3s linear 2 ;
 }
 
 @keyframes card {
@@ -366,6 +358,14 @@ margin-right: min(5vw,128px);
     100%{
         transform: scaleX(100%);
     }
+}
+
+.page_3-con1__wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .page_3-con1 .page_3-con1__imgbx{
@@ -455,9 +455,9 @@ margin-right: min(5vw,128px);
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
     border: 1px solid #000;
     box-sizing: border-box;
+    transform: rotateY(180deg);
 }
 
 .Bg-wrap{
@@ -482,7 +482,9 @@ margin-right: min(5vw,128px);
     border: none;
     background: transparent;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .Bg-txt{
@@ -512,7 +514,7 @@ margin-right: min(5vw,128px);
     height: 25%;
     margin-left: 10%;
     color: var(--main-color);
-    font-size: min(1.2vw, 20px);
+    font-size: min(1vw, 16px);
 }
 
 .Bg-tit{

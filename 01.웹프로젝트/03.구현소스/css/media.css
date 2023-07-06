@@ -10,11 +10,6 @@
 }
 /* 1200px 사이즈 이하 미디어쿼리 시작 */
 @media screen and (max-width: 1200px) {
-    /* 가로스크롤 없애기 */
-    /* html,
-    body {
-        overflow-x: hidden;
-    } */
     
     /*---------- _____page1_____ ----------*/
     #p1_logo{
@@ -254,7 +249,7 @@
     }
 
     .con-slide {
-        width: 25vw;
+        width: 35vw;
         height: auto;
     }
 
@@ -298,10 +293,29 @@
         width: 70%;
     }
 
-    .page_3-con1__img {
+    .card-front__img {
         width: 40vw;
         height: auto;
     }
+
+    .back-about__1 {
+        font-size: min(4vw, 24px);
+    }
+
+    .back-about__2 {
+        color: #757575;
+        display: flex;
+        justify-content: space-evenly;
+        height: 25%;
+        font-size: min(1.5vw, 16px);
+    }
+
+.back-about__3 {
+    height: 25%;
+    margin-left: 5%;
+    color: var(--main-color);
+    font-size: min(1vw, 16px);
+}
 
     .page_3-con2__icon {
         right: 50px;

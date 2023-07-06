@@ -329,6 +329,11 @@
         width: 30%;
     }
     /*---------- _____page4_____ ----------*/
+
+    #page_4 {
+        height: 150vh;
+    }
+
     .page_4-top h2 {
         padding-top: 14vh;
     }
@@ -339,7 +344,7 @@
     
     #page_4>img{
         height: 49vh;
-        top: 119vh;
+        top: 95vh;
         }
 
     .page_4-con1 {
@@ -388,7 +393,7 @@
 
     .page_5-listall {
         position: absolute;
-        bottom: 0;
+        bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
     }

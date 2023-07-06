@@ -118,28 +118,24 @@ window.addEventListener("DOMContentLoaded", () => {
   /*-------------------------
         page3 - card 누르면 앞뒷면 바꾸기
         함수명: p3Card
-        대상: page_3-con1__wrap 
-        변경대상: page_3-con1-card
-        대상: page_3-con1__wrap-Bg .Bg-close
-        변경대상: page_3-con1-card
   -------------------------*/
   p3Card()
   function p3Card(){
-    const BGfont = document.querySelector(".page_3-con1__wrap");
-    const BGback = document.querySelector(".page_3-con1__wrap-Bg");
-    const BGbackClose = document.querySelector(".page_3-con1__wrap-Bg")
-    const card = document.querySelector(".page_3-con1-card")
-    console.log('BGbackClose',BGbackClose);
+    const cardfont = document.querySelectorAll(".card-front");
+    const cardback = document.querySelectorAll(".card-back");
+    const cardbackClose = document.querySelectorAll(".back-close")
+    const card = document.querySelectorAll(".card-wrap")
+    console.log('cardfont',cardfont);
     
-    BGfont.addEventListener("click",function(){
-      card.style.transform="rotateY(-180deg)"
-      BGback.style.zIndex="2"
-      card.style.transform="translateX(-100%)"
+    cardfont.forEach((v,i)=>{
+      v.addEventListener("click",function(){
+        card[i].classList.add("active")
+      })
     })
-    
-    BGbackClose.addEventListener("click",function(){
-      console.log('snffj');
-      card.style.transform="rotateY(0deg)"
+    cardbackClose.forEach((v,i)=>{
+      v.addEventListener("click",function(){
+        card[i].classList.remove("active")
+      })
     })
   }
   /*-------------------------

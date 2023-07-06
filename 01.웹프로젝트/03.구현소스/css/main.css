@@ -4,14 +4,6 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-/* html{
-    scroll-behavior: smooth;
-} */
-
-/* html,body{
-    overflow: hidden;
-} */
-
 body{
     font-family: 'Nunito Sans','Noto Sans KR';
 }
@@ -169,9 +161,6 @@ body{
 .con-slide{
     width: 330px;
     height: 330px;
-    /* height: 29.3vh; */
-    /* width: 22vw; */
-    /* aspect-ratio: 1/1; */
     background-color: #eee;
     text-align: center;
     overflow: hidden;
@@ -248,7 +237,6 @@ body{
 }
 
 .R-menu-con4__name{
-    /* font-family: 'Nunito Sans', sans-serif; */
     font-size: min(1.5vw, 22px);
     position: relative;
     top: 50%;
@@ -258,7 +246,6 @@ body{
 .R-menu-con4__name>span{
     display: block;
     font-size: min(1.7vw, 24px);
-    /* font-family: 'Noto Sans KR', sans-serif; */
     margin-top: 4px;
 }
 

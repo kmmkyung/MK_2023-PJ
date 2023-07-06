@@ -1,8 +1,8 @@
 // 새로고침할때 스크롤위치 캐싱 무시하고 맨 위로 이동
 // scrollTo(가로,세로) -> 위치이동 메서드
-// setTimeout(() => {
-//     window.scrollTo(0, 0);
-// }, 100);
+setTimeout(() => {
+    window.scrollTo(0, 0);
+}, 100);
 
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded", () => {
@@ -49,11 +49,9 @@ let sc_sts = 0;
   // 1. 전체 휠 이벤트 설정
   window.addEventListener("wheel", wheelFn, { passive: false });
 
-  let wheelDelta;
-
   // 2. 휠 이벤트 함수
   function wheelFn(e) {
-    console.log("스상:", sc_sts, "/pgnum:", pgnum);
+    // console.log("스상:", sc_sts, "/pgnum:", pgnum);
 
     if (sc_sts && (pgnum === 3 || pgnum === 4)) return;
     // 기본기능 멈추기
@@ -80,7 +78,7 @@ let sc_sts = 0;
       if (pgnum < 0) pgnum = 0;
     }
 
-    console.log("페이지번호", pgnum);
+    // console.log("페이지번호", pgnum);
     updatePg();
   }
   /***********************************************

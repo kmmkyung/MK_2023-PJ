@@ -89,15 +89,20 @@ body *{
     text-align: center;
 }
 
-.nav .icon-search:hover,
-.nav .fran:hover{
+.nav ul.on .nav,
+.nav .fran:hover,
+.nav .icon-search:hover{
     background-color: var(--main-color);
 }
 
 /* 하위메뉴 */
 .submenu{
-    display: none;
+    /* display: none; */
     position: absolute;
+}
+
+.submenu ul{
+    height: 0;
 }
 
 .submenu li{

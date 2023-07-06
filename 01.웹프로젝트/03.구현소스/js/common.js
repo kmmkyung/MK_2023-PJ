@@ -8,17 +8,6 @@ const cg = (x) => console.log(x);
 window.addEventListener("DOMContentLoaded", () => {
   cg("common-JS 로딩완료!");
 
-  // ______________________________footer_____________________________
-  /*-------------------------
-    footer - svg 로고 삽입 
-    대상 : .page_6-vector__logo
-    -------------------------*/
-  const logoSVG = qs(".page_6-vector__logo");
-
-  // svg넣기
-  logoSVG.innerHTML = svgData.logo;
-
-  // ______________________________footer_____________________________
   // ______________________________page2_____________________________
   // 기본셋팅
   let c4 = $(".R-menu-con4");
@@ -119,24 +108,23 @@ window.addEventListener("DOMContentLoaded", () => {
         page3 - card 누르면 앞뒷면 바꾸기
         함수명: p3Card
   -------------------------*/
-  p3Card()
-  function p3Card(){
+  p3Card();
+  function p3Card() {
     const cardfont = document.querySelectorAll(".card-front");
-    const cardback = document.querySelectorAll(".card-back");
-    const cardbackClose = document.querySelectorAll(".back-close")
-    const card = document.querySelectorAll(".card-wrap")
-    console.log('cardfont',cardfont);
-    
-    cardfont.forEach((v,i)=>{
-      v.addEventListener("click",function(){
-        card[i].classList.add("active")
-      })
-    })
-    cardbackClose.forEach((v,i)=>{
-      v.addEventListener("click",function(){
-        card[i].classList.remove("active")
-      })
-    })
+    const cardbackClose = document.querySelectorAll(".back-close");
+    const card = document.querySelectorAll(".card-wrap");
+    console.log("cardfont", cardfont);
+
+    cardfont.forEach((v, i) => {
+      v.addEventListener("click", function () {
+        card[i].classList.add("active");
+      });
+    });
+    cardbackClose.forEach((v, i) => {
+      v.addEventListener("click", function () {
+        card[i].classList.remove("active");
+      });
+    });
   }
   /*-------------------------
         page3 - best menu 슬라이드
@@ -158,10 +146,12 @@ window.addEventListener("DOMContentLoaded", () => {
     // 버튼구분
     let isB = $(this).is(".icon-right");
     // console.log(isB);
+    console.log('p3seq',p3seq);
+    
     // 오른쪽
     if (isB) {
       p3seq++;
-      if (p3seq === 3) p3seq = 2;
+      if (p3seq === 2) p3seq = 1;
     }
     // 왼쪽
     else {
@@ -169,8 +159,8 @@ window.addEventListener("DOMContentLoaded", () => {
       if (p3seq === -1) p3seq = 0;
     }
     // 적용!
-    p3slide.stop().animate({ left: -30 * p3seq + "%" }, 400);
-    p3bar.stop().animate({ left: 20 * p3seq + "%" }, 400);
+    p3slide.stop().animate({ left: -50 * p3seq + "%" }, 400);
+    p3bar.stop().animate({ left: 50 * p3seq + "%" }, 400);
   });
 
   // ______________________________page3_____________________________
@@ -213,4 +203,16 @@ window.addEventListener("DOMContentLoaded", () => {
     // 스크롤 등장 요소 개수만큼 for
     for (let x of scrollCon) showIt(x);
   });
+
+  // ______________________________footer_____________________________
+  /*-------------------------
+    footer - svg 로고 삽입 
+    대상 : .page_6-vector__logo
+    -------------------------*/
+  const logoSVG = qs(".page_6-vector__logo");
+
+  // svg넣기
+  logoSVG.innerHTML = svgData.logo;
+
+  // ______________________________footer_____________________________
 });

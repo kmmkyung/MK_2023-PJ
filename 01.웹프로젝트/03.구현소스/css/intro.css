@@ -37,6 +37,9 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* .container h2의 부모 */
   /* overflow: hidden; */
 }
@@ -52,19 +55,15 @@ body {
   transition: all 0.8s;
 }
 
-.container {
-  padding-top: 25vh;
-}
-
 .container h2 {
   position: absolute;
   top: 120px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Nunito Sans", sans-serif;
-  font-size: 10rem;
+  font-size: min(6vw,10rem);
   font-weight: 900;
-  line-height: 130px;
+  line-height: 110%;
   -webkit-text-stroke: 1px #fff;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   white-space: nowrap;
@@ -75,26 +74,54 @@ body {
 }
 
 .con {
-  width: 600px;
   text-align: center;
-  overflow: hidden;
   margin: 0 auto;
 }
 
 .con p {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 2.6rem;
+  font-size: min(2vw,1.8rem);
   color: #fff;
   padding: 4.5vh 0;
 }
 
 .vid {
-  height: min(50vh, 600px);
+  height: min(50vw, 600px);
   width: min(50vw, 600px);
   object-fit: cover;
 }
 
 .l_vid {
-  height: min(50vh, 600px);
+  height: min(50vw, 600px);
   width: 650px;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 1360px) {
+  .vid {
+    height: min(40vw, 500px);
+    width: min(40vw, 500px);
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 900px) {
+  #intro_all{
+    flex-direction: column;
+  }
+
+  .con p {
+    padding: 5% 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .vid {
+    height: min(50vw, 500px);
+    width: min(50vw, 500px);
+  }
+}
+@media screen and (max-width: 650px) {
+  .vid {
+    height: min(60vw, 500px);
+    width: min(60vw, 500px);
+  }
 }

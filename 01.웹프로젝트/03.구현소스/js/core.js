@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //// gnb 마우스 아웃시 자동초기화 /////
   gnbBx.addEventListener("mouseleave", () => {
-    console.log("아웃~!!");
+    // console.log("아웃~!!");
     autoTgnb = setTimeout(() => {
       moveMenu();
       // 보내는값 없이 호출시 모두 초기화한다!
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //// gnb 마우스 오버시 타임아웃 지우기!(실행쓰나미 방지!) /////
   gnbBx.addEventListener("mouseenter", () => {
-    console.log("오버~!!");
+    // console.log("오버~!!");
     // 타임아웃 지우기
     clearTimeout(autoTgnb);
   }); ////////// mouseout ///////////////
@@ -83,39 +83,31 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const nav = document.querySelector("#gnb .nav");
   const menu = document.querySelectorAll(".nav>ul>li");
-  const submenu = document.querySelectorAll(".submenu");
+  const submenu = document.querySelector(".submenu");
   console.log("nav", nav);
   console.log('menu',menu);
+  console.log('submenu',submenu);
   
-  nav.addEventListener("mouseenter",()=>{
-    submenu.clientHeight + 100;
-    console.log('dd',submenu.clientHeight);
-    
-  })
-  //   nav.forEach((ele) => {
-  //   ele.onmouseenter = () => {
-  //     // 오버시 각 메뉴 다음형제요소의 높이값읽어오기
-  //     // ele.nextElementSibling - 다음형제요소
-  //     // clientHeight - 높이값
-  //     let eleH =
-  //     ele.querySelector(".submenu").nextElementSibling.clientHeight + 100;
-  //     console.log(
-  //       ele.querySelector(".submenu a").nextElementSibling.clientHeight
-  //     );
+  
+    menu.forEach((ele) => {
+    ele.onmouseenter = () => {
+      let eleH = ele.querySelector(".submenu ul").clientHeight + 100;
+      console.log(
+        ele.querySelector(".submenu ul").clientHeight
+      );
 
-  //   nav.classList.add("on");
-  //   nav.style.height = eleH + "px";
-  //   ele.style.height = eleH + "px";
-  //   ele.querySelector(".submenu").style.height = eleH + "px";
-  // };
-  // ele.onmouseleave = () => {
-  //   nav.classList.remove("on");
-  //   nav.style.height = "100px";
-  //   Lnav.style.height = "100px";
-  //   ele.style.height = "100px";
-  //   ele.querySelector(".submenu").style.height = "0px";
-  // };
-  // });
+    document.querySelector(".nav").classList.add("on");
+    nav.style.height = eleH +100+ "px";
+    ele.style.height = eleH + "px";
+    ele.querySelector(".submenu").style.height = eleH + "px";
+  };
+  ele.onmouseleave = () => {
+    nav.classList.remove("on");
+    nav.style.height = "100px";
+    ele.style.height = "100px";
+    ele.querySelector(".submenu").style.height = "0px";
+  };
+  });
   // ______________________________mobile-menu_____________________________
   /*-------------------------
     mobile-menu - menu 보이기

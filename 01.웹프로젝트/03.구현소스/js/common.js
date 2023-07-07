@@ -145,23 +145,49 @@ window.addEventListener("DOMContentLoaded", () => {
   p3btns.click(function () {
     // 버튼구분
     let isB = $(this).is(".icon-right");
+    let winW = window.innerWidth;
     // console.log(isB);
-    console.log('p3seq',p3seq);
-    
+    console.log("p3seq", p3seq);
+
     // 오른쪽
     if (isB) {
       p3seq++;
-      if (p3seq === 2) p3seq = 1;
+      if (winW > 1360) {
+        if (p3seq === 2) p3seq = 1;
+        p3slide.stop().animate({ left: -50 * p3seq + "%" }, 400);
+        p3bar.stop().animate({ left: 50 * p3seq + "%" }, 400);
+        }
+      else if (winW >= 768) {
+        if (p3seq === 3) p3seq = 2;
+        p3slide.stop().animate({ left: -70 * p3seq + "%" }, 400);
+        p3bar.stop().animate({ left: 25 * p3seq + "%" }, 400);
+      }
+      else if(winW < 768){
+        if (p3seq === 3) p3seq = 2;
+          p3slide.stop().animate({ left: -100 * p3seq + "%" }, 400);
+          p3bar.stop().animate({ left: 25 * p3seq + "%" }, 400);
+      }
     }
     // 왼쪽
     else {
       p3seq--;
-      if (p3seq === -1) p3seq = 0;
-    }
-    // 적용!
-    p3slide.stop().animate({ left: -50 * p3seq + "%" }, 400);
-    p3bar.stop().animate({ left: 50 * p3seq + "%" }, 400);
-  });
+      if (winW > 1360) {
+        if (p3seq === -1) {p3seq = 0;}
+        p3slide.stop().animate({ left: 50 * p3seq + "%" }, 400);
+        p3bar.stop().animate({ left: 50 * p3seq + "%" }, 400);
+        }
+        else if (winW >= 768) {
+          if (p3seq === -1) {p3seq = 0;}
+          p3slide.stop().animate({ left: -35 * p3seq + "%" }, 400);
+          p3bar.stop().animate({ left: 25 * p3seq + "%" }, 400);
+        }
+        else if (winW < 768) {
+          if (p3seq === -1) {p3seq = 0;}
+          p3slide.stop().animate({ left: -100 * p3seq + "%" }, 400);
+          p3bar.stop().animate({ left: 25 * p3seq + "%" }, 400);
+        }
+      }
+    });
 
   // ______________________________page3_____________________________
   // ______________________________page4_____________________________

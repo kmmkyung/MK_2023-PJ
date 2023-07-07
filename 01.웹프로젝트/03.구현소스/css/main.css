@@ -150,6 +150,7 @@ body {
   cursor: pointer;
   width: 46px;
   height: 10px;
+  padding: 20px;
 }
 
 .con-btns {
@@ -407,17 +408,26 @@ body {
 
 .card-front__title,
 .card-back__title {
-  margin-left: 1vw;
   height: 20%;
 }
 
-.card-front__title p,
-.card-back__title p {
+.card-front__title p{
+  margin-left: 1vw;
   font-size: min(1.5vw, 22px);
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   white-space: nowrap;
+}
+
+.card-back__title p {
+  margin-left: 1vw;
+  font-size: min(1.5vw, 22px);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  color: #fff;
 }
 
 .card-front__title span,
@@ -504,6 +514,11 @@ body {
 .card-back__title {
   height: 20%;
   font-size: min(1.5vw, 22px);
+  background-color:var(--main-color);
+}
+
+.back__title p{
+  color: #fff;
 }
 
 .page_3-con2 {
@@ -605,7 +620,6 @@ body {
 
 .page_4-con1 h5,
 .page_4-con2 h5 {
-  /* white-space: nowrap; */
   font-size: min(3vw, 28px);
 }
 
@@ -614,7 +628,6 @@ body {
   font-size: min(1.4vw, 14px);
   word-break: keep-all;
   word-wrap: break-word;
-  /* white-space: nowrap; */
 }
 
 .page_4-con1 img {

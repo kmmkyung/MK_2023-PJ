@@ -38,8 +38,8 @@
 
     /*---------- _____page3_____ ----------*/
     .page_3-con1__img {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
 
     /*---------- _____page4_____ ----------*/
@@ -249,7 +249,7 @@
     }
 
     .con-slide {
-        width: 35vw;
+        width: 30vw;
         height: auto;
     }
 
@@ -278,6 +278,11 @@
         font-size: min(2vw, 24px);
         margin-top: 2px;
     }
+
+    .con-btns {
+        text-align: center;
+        width: auto;
+    }
     /*---------- _____page3_____ ----------*/
     .page_3-nav {
         height: 80px;
@@ -290,7 +295,7 @@
     }
 
     .page_3-con1 > ul > li {
-        width: 70%;
+        width: 50%;
     }
 
     .card-front__img {
@@ -325,9 +330,6 @@
         height: 4px;
     }
     
-    .icon-small_bar {
-        width: 30%;
-    }
     /*---------- _____page4_____ ----------*/
 
     #page_4 {
@@ -435,6 +437,5 @@
     /* 하위메뉴 */
 .submenu{
     position: static;
+    }
 }
-}
-

@@ -9,7 +9,7 @@ font-family: 'Nunito Sans', sans-serif;
 */
 
 body *{
-    /* outline: 1px dotted tomato; */
+    outline: 1px dotted tomato;
 }
 
 :root{
@@ -23,7 +23,8 @@ body *{
     height: 100px;
     transition: height .3s;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    /* z-index: 1; */
 }
 
 .nav>ul, .nav>ol{
@@ -53,6 +54,7 @@ body *{
     align-items: center;
     position: absolute;
     top: 16px;
+    pointer-events: none;
 }
 
 #p1_logo a{
@@ -89,7 +91,7 @@ body *{
     text-align: center;
 }
 
-.nav ul.on .nav,
+.nav.on,
 .nav .fran:hover,
 .nav .icon-search:hover{
     background-color: var(--main-color);
@@ -99,9 +101,6 @@ body *{
 .submenu{
     /* display: none; */
     position: absolute;
-}
-
-.submenu ul{
     height: 0;
 }
 

@@ -279,7 +279,8 @@ body {
 .page_3-nav > ul > li:nth-child(2),
 .page_3-nav > ul > li:nth-child(3),
 .page_3-nav > ul > li:nth-child(4),
-.page_3-nav > ul > li:nth-child(5) {
+.page_3-nav > ul > li:nth-child(5),
+.page_3-nav > ul > li:last-child {
   margin-right: min(5vw, 128px);
 }
 
@@ -499,20 +500,20 @@ body {
   color: #757575;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   height: 25%;
   font-size: min(1.2vw, 20px);
 }
 
 .back-about__3 {
   height: 25%;
-  margin-left: 10%;
+  margin-left: 5%;
   color: var(--main-color);
   font-size: min(1vw, 16px);
 }
 
 .card-back__title {
   height: 20%;
-  font-size: min(1.5vw, 22px);
   background-color:var(--main-color);
 }
 

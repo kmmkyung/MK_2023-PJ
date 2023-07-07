@@ -391,7 +391,7 @@ margin-right: min(5vw,128px);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 100px;
+    right: 3vw;
 }
 
 .icon-left{

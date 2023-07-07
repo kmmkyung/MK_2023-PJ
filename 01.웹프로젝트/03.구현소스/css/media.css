@@ -317,14 +317,15 @@
     color: var(--main-color);
     font-size: min(1vw, 16px);
   }
-
-  .page_3-con2__icon {
-    right: 3vw;
+  
+  .page_3-con2 > h2 {
+    font-size: min(6vw, 80px);
   }
 
   .icon-full_bar {
     height: 4px;
-  }
+    width: 48vw;
+    margin: 0 auto;  }
 
   /*---------- _____page4_____ ----------*/
 

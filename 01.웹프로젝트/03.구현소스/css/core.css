@@ -9,7 +9,7 @@ font-family: 'Nunito Sans', sans-serif;
 */
 
 body *{
-    outline: 1px dotted tomato;
+    outline: 1px dotted aquamarine;
 }
 
 :root{
@@ -119,7 +119,7 @@ body *{
     right: 6vw;
     top: 150px;
     font-size: 6rem;
-    display: none;
+    /* display: none; */
 }
 
 .submenu_h2 a{

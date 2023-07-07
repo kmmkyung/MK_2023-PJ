@@ -81,32 +81,33 @@ window.addEventListener("DOMContentLoaded", () => {
   //     $(".r_nav").css({height:"100px"});
   // })
 
-  const nav = document.querySelector("#gnb .nav");
-  const menu = document.querySelectorAll(".nav>ul>li");
-  const submenu = document.querySelector(".submenu");
-  console.log("nav", nav);
-  console.log('menu',menu);
-  console.log('submenu',submenu);
-  
-  
-    menu.forEach((ele) => {
-    ele.onmouseenter = () => {
-      let eleH = ele.querySelector(".submenu ul").clientHeight + 100;
-      console.log(
-        ele.querySelector(".submenu ul").clientHeight
-      );
+  const nav = document.querySelector("#gnb .nav"); // 메뉴 전체
+  const menu = document.querySelectorAll(".nav>ul>li"); // 4가지 메뉴
+  const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브
+  // console.log("nav", nav);
+  // console.log("menu", menu);
+  // console.log("submenu", submenu);
 
-    document.querySelector(".nav").classList.add("on");
-    nav.style.height = eleH +100+ "px";
-    ele.style.height = eleH + "px";
-    ele.querySelector(".submenu").style.height = eleH + "px";
-  };
-  ele.onmouseleave = () => {
-    nav.classList.remove("on");
-    nav.style.height = "100px";
-    ele.style.height = "100px";
-    ele.querySelector(".submenu").style.height = "0px";
-  };
+  menu.forEach((ele) => {
+    console.log('ele',ele);
+    
+    ele.onmouseenter = () => {
+      // 기존 높이 +100 확인
+      let eleH = ele.querySelector(".submenu ul").clientHeight + 100;
+      // console.log(ele.querySelector(".submenu ul").clientHeight);
+      // console.log(eleH);
+
+      document.querySelector(".nav").classList.add("on"); // 메뉴 전체에 배경색 넣어주기
+      nav.style.height = eleH +100+ "px";
+      // ele.style.height = eleH + "px";
+      // ele.querySelector(".submenu").style.height = eleH + "px";
+    };
+    ele.onmouseleave = () => {
+      nav.classList.remove("on");
+      nav.style.height = "100px";
+    //   ele.style.height = "100px";
+    //   ele.querySelector(".submenu").style.height = "0px";
+    };
   });
   // ______________________________mobile-menu_____________________________
   /*-------------------------

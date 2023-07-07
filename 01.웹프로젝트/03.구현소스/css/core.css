@@ -99,9 +99,14 @@ body *{
 
 /* 하위메뉴 */
 .submenu{
-    /* display: none; */
+    display: none;
     position: absolute;
     height: 0;
+}
+
+.nav li:hover .submenu,
+.nav li:hover .submenu_h2{
+    display: block;
 }
 
 .submenu li{
@@ -119,7 +124,7 @@ body *{
     right: 6vw;
     top: 150px;
     font-size: 6rem;
-    /* display: none; */
+    display: none;
 }
 
 .submenu_h2 a{

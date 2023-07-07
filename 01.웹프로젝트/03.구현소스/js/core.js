@@ -84,29 +84,32 @@ window.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("#gnb .nav"); // 메뉴 전체
   const menu = document.querySelectorAll(".nav>ul>li"); // 4가지 메뉴
   const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브
+  const about = document.querySelector(".submenu_h2");
   // console.log("nav", nav);
   // console.log("menu", menu);
   // console.log("submenu", submenu);
+  
 
   menu.forEach((ele) => {
-    console.log('ele',ele);
+    // console.log('ele',ele);
     
     ele.onmouseenter = () => {
       // 기존 높이 +100 확인
-      let eleH = ele.querySelector(".submenu ul").clientHeight + 100;
+      let eleH = ele.querySelector(".submenu ul").clientHeight;
       // console.log(ele.querySelector(".submenu ul").clientHeight);
       // console.log(eleH);
 
-      document.querySelector(".nav").classList.add("on"); // 메뉴 전체에 배경색 넣어주기
-      nav.style.height = eleH +100+ "px";
+      nav.classList.add("on"); // 메뉴 전체에 배경색 넣어주기
+      nav.style.height = eleH +180+ "px";
       // ele.style.height = eleH + "px";
-      // ele.querySelector(".submenu").style.height = eleH + "px";
+      submenu.style.height = eleH + "px";
+      about.style.display = "block";
     };
     ele.onmouseleave = () => {
       nav.classList.remove("on");
       nav.style.height = "100px";
-    //   ele.style.height = "100px";
-    //   ele.querySelector(".submenu").style.height = "0px";
+      ele.style.height = "100px";
+      submenu.style.height = "0px";
     };
   });
   // ______________________________mobile-menu_____________________________

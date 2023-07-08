@@ -21,13 +21,20 @@ const Bag = () => {
   // console.log(typeof(Array.from(aa, x=>x)));
 
   // }
-  useEffect(() => {
-    console.log(localStorage.getItem("cart"));
-  });
+  let [lcData, setLcData] = useState([])
+
+  function aaa(){
+    let temp = JSON.parse(localStorage.getItem("cart"));
+    setLcData(temp);
+  }
+
+
+  useEffect(()=>aaa(),[]);
 
   return (
     <>
-      {/* {JSON.parse(localStorage.getItem("cart")).map((v,i) => {
+      {
+      lcData.map((v,i) => {
         return (
           <div className="bag-items__con" key={i}>
             <img src={v.src} alt="bag_img" />
@@ -52,7 +59,8 @@ const Bag = () => {
             </div>
           </div>
         );
-      })} */}
+      })
+      }
 
       {jqFn()}
     </>

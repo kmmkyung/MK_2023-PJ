@@ -100,8 +100,8 @@ window.addEventListener("DOMContentLoaded", () => {
       // console.log(eleH);
 
       nav.classList.add("on"); // 메뉴 전체에 배경색 넣어주기
-      nav.style.height = eleH +180+ "px";
-      // ele.style.height = eleH + "px";
+      nav.style.height = eleH + 180 + "px";
+      ele.style.height = eleH + "px";
       submenu.style.height = eleH + "px";
       about.style.display = "block";
     };

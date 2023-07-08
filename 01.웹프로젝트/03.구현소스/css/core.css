@@ -55,6 +55,7 @@ body *{
     position: absolute;
     top: 20px;
     pointer-events: none;
+    display: none;
 }
 
 #p1_logo a{
@@ -110,7 +111,7 @@ body *{
 }
 
 .submenu li{
-    margin: 40px 2vw;
+    padding: 20px 2vw;
 }
 
 .submenu li a{

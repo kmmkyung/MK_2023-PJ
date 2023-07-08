@@ -4,50 +4,50 @@ window.addEventListener("DOMContentLoaded", () => {
   /********************************** 
     메뉴 초기화 함수 : 처음상태로 돌림
    **********************************/
-  function moveMenu(seq = 1000) {
-    // console.log("seq", seq);
+  // function moveMenu(seq = 1000) {
+  //   // console.log("seq", seq);
 
-    // 모든 서브메뉴 높이값 0
-    smenu.forEach((ele, idx) => {
-      if (idx === seq) return;
-      // console.log("smenu순번:", idx);
-      // 높이값 0만들기
-      ele.style.height = 0;
-    }); //////// forEach ////////
-    // 2. 서브메뉴있는 li의 클래스 "on"지우기
-    // 대상: .gnb>ul>li:has(.smenu)
-    // ★[-> gnb변수의 부모요소 : ele.parentElement]
-    smenu.forEach((ele, idx) => {
-      // 호출한 순번과 같으면 넘어가!
-      if (idx === seq) return;
-      // console.log("li순번:", idx);
+  //   // 모든 서브메뉴 높이값 0
+  //   smenu.forEach((ele, idx) => {
+  //     if (idx === seq) return;
+  //     // console.log("smenu순번:", idx);
+  //     // 높이값 0만들기
+  //     ele.style.height = 0;
+  //   }); //////// forEach ////////
+  //   // 2. 서브메뉴있는 li의 클래스 "on"지우기
+  //   // 대상: .gnb>ul>li:has(.smenu)
+  //   // ★[-> gnb변수의 부모요소 : ele.parentElement]
+  //   smenu.forEach((ele, idx) => {
+  //     // 호출한 순번과 같으면 넘어가!
+  //     if (idx === seq) return;
+  //     // console.log("li순번:", idx);
 
-      // 클래스 on 빼기 :
-      // ★[gnb변수의 부모요소 : ele.parentElement]
-      ele.parentElement.classList.remove("on");
-    }); /////// forEach //////////
-  }
-  // gnb 요소
-  const gnbBx = document.querySelector("#gnb");
+  //     // 클래스 on 빼기 :
+  //     // ★[gnb변수의 부모요소 : ele.parentElement]
+  //     ele.parentElement.classList.remove("on");
+  //   }); /////// forEach //////////
+  // }
+  // // gnb 요소
+  // const gnbBx = document.querySelector("#gnb");
 
-  // 타임아웃변수
-  let autoTgnb;
+  // // 타임아웃변수
+  // let autoTgnb;
 
-  //// gnb 마우스 아웃시 자동초기화 /////
-  gnbBx.addEventListener("mouseleave", () => {
-    // console.log("아웃~!!");
-    autoTgnb = setTimeout(() => {
-      moveMenu();
-      // 보내는값 없이 호출시 모두 초기화한다!
-    }, 500);
-  }); ////////// mouseout ///////////////
+  // //// gnb 마우스 아웃시 자동초기화 /////
+  // gnbBx.addEventListener("mouseleave", () => {
+  //   // console.log("아웃~!!");
+  //   autoTgnb = setTimeout(() => {
+  //     moveMenu();
+  //     // 보내는값 없이 호출시 모두 초기화한다!
+  //   }, 500);
+  // }); ////////// mouseout ///////////////
 
-  //// gnb 마우스 오버시 타임아웃 지우기!(실행쓰나미 방지!) /////
-  gnbBx.addEventListener("mouseenter", () => {
-    // console.log("오버~!!");
-    // 타임아웃 지우기
-    clearTimeout(autoTgnb);
-  }); ////////// mouseout ///////////////
+  // //// gnb 마우스 오버시 타임아웃 지우기!(실행쓰나미 방지!) /////
+  // gnbBx.addEventListener("mouseenter", () => {
+  //   // console.log("오버~!!");
+  //   // 타임아웃 지우기
+  //   clearTimeout(autoTgnb);
+  // }); ////////// mouseout ///////////////
 
   // ______________________________mobile-menu_____________________________
   // ______________________________page1_____________________________
@@ -59,52 +59,26 @@ window.addEventListener("DOMContentLoaded", () => {
   변경대상: .nav
   변경내용: 높이값 기존100px에서 메뉴 내용만큼
   -------------------------*/
-  //   $(".nav>ul>li").mouseover(function(){
-  //     $(this).find(".submenu").stop().slideDown(300);
-  //     $(".r_nav").css({height:"400px"});
-
-  //     let Ht = $(this).find(".submenu-box").height() + 200;
-  //     $("#all_nav").addClass("on")
-  //     .css({height:Ht+"px"})
-  //     // console.log(Ht);
-  // })
-  // $(".l_nav>ul>li").mouseout(function(){
-  //     $(this).find(".submenu").stop().slideUp(300)
-  //     // $(".r_nav").stop().slideUp(300);
-  // })
-  // let setTT;
-  // $("#all_nav").mouseleave(function(){
-  //     clearTimeout(setTT);
-  //     setTT = setTimeout(() => {
-  //         $(this).removeClass("on")
-  //     }, 300);
-  //     $(".r_nav").css({height:"100px"});
-  // })
-
   const nav = document.querySelector("#gnb .nav"); // 메뉴 전체
   const menu = document.querySelectorAll(".nav>ul>li"); // 4가지 메뉴
   const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브
-  const about = document.querySelector(".submenu_h2");
+  const about = document.querySelector(".submenu_h2"); // about 메뉴
   // console.log("nav", nav);
   // console.log("menu", menu);
   // console.log("submenu", submenu);
   
-
-  menu.forEach((ele) => {
-    // console.log('ele',ele);
-    
+  menu.forEach((ele) => {    
     ele.onmouseenter = () => {
-      // 기존 높이 +100 확인
       let eleH = ele.querySelector(".submenu ul").clientHeight;
-      // console.log(ele.querySelector(".submenu ul").clientHeight);
-      // console.log(eleH);
 
       nav.classList.add("on"); // 메뉴 전체에 배경색 넣어주기
-      nav.style.height = eleH + 180 + "px";
-      ele.style.height = eleH + "px";
-      submenu.style.height = eleH + "px";
-      about.style.display = "block";
+      nav.style.height = eleH + 140 + "px";
+      ele.style.height = eleH + 140 + "px";
+      ele.style.width = window.innerWidth;
+      // submenu.style.height = eleH + "px";
+      // about.style.display = "block";
     };
+
     ele.onmouseleave = () => {
       nav.classList.remove("on");
       nav.style.height = "100px";

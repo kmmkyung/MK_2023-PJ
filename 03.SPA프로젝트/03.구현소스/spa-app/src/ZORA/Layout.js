@@ -217,8 +217,8 @@ const Layout = () => {
   let [topCon, setTopCon] = useState(0)
   const topWhite = () =>{
     let scTop = $(window).scrollTop();
-    console.log('실행');
-    console.log(scTop);
+    // console.log('실행');
+    // console.log(scTop);
     
     if (scTop <800) {
       if(topCon) return

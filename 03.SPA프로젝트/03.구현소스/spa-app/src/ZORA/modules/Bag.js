@@ -21,9 +21,9 @@ const Bag = () => {
   // console.log(typeof(Array.from(aa, x=>x)));
 
   // }
-  // useEffect(() => {
-  //   aaa();
-  // });
+  useEffect(() => {
+    console.log(localStorage.getItem("cart"));
+  });
 
   return (
     <>

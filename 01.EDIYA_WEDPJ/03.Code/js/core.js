@@ -1,7 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("core-JS 로딩완료!");
   // ______________________________(ㅜOㅜ)=o_____________________________
-  // (ㅜOㅜ)=o 왜 오류나는데 허어어엉
+  // (ㅜOㅜ)=o about us 마우스 가져가면 왜 오류나는데 허어어엉
+  // 그리고 submenu 위치에 마우스 가져가도 왜 메뉴 바뀌는거야
   /*-------------------------
   menu - 메뉴 보이기
   기능: 오버시 메뉴보이기
@@ -32,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // 해당 메뉴에 마우스 떨어지면
     v.onmouseleave = () => {
-      submenu[i].style.display = "none"; // 헤딩 메뉴의 서브메뉴 숨겨줘
+      submenu[i].style.display = "none"; // 헤당 메뉴의 서브메뉴 숨겨줘
     };
   });
 
@@ -67,9 +68,9 @@ window.addEventListener("DOMContentLoaded", () => {
     gnb.classList.toggle("on");
   }
 
-  // ______________________________(ㅜOㅜ)=o_____________________________
+  // ______________________________(ㅜOㅜ)=o[이디야파일]_____________________________
   // (ㅜOㅜ)=o 왜 안돼는데 허어어엉 이론은 완벽한데... 흠...
-  // 글구 넘어가는 상세메뉴는 슬라이드하고싶어요ㅠ <- 어떡게...??
+  // 글구 넘어가는 상세메뉴는 숨겨져서... 넘어가면 슬라이드하고싶어요ㅠ <- 어떡게...??
   /*-------------------------
     mobile-menu - 하위메뉴
     함수명: mobileMH
@@ -91,16 +92,26 @@ window.addEventListener("DOMContentLoaded", () => {
     if (tg.clientHeig!= 0){ hv = 0 }
     else{
       tg.querySelector(".submenu").style.height = hv + "px";
+      v.parentElement.classList.toggle("on"); // 해당 li에 클래스 on 주기... 갑자기 on 어디서 나왔는데...
+                                              // 이론적으로 on = hv 만큼 높이값 변경일거같은데 한글로는 잘 말하죠ㅠㅜ
       }
+
+    // .subMenu 클릭시 상위 li로 이벤트 버블링 막기!
+    const smenu = document.querySelectorAll(".submenu")
+    // console.log(smenu)
+    for(let x of smenu){
+    }///// for of ////
+
     };
   });
 
 
 
-
-
-
-
-
-
 }); //////////////////////////////////////////////////////////////////////////////////////
+
+// 원래는 grid사용해서 메뉴바를 만들었는데 (메뉴를 왼쪽, 오른쪽 따로 만들고 따따따 조립)
+// 메뉴에 마우스 오버하면 전체 메뉴배경이 내려와야 하는 구성이기 때문에 (왼쪽만 내려와서 오른쪽 따로 내리고... 복잡해짐)
+// 그래서 한 메뉴바로 다시 만들었다,,,
+
+// 선생님이 해주신 원본 js코드는 header----grid 버전의 core를 보면 될듯한데... 저기서도 됐다 안됐다 거림ㅋㅋ
+// 확인하고 설명 필요없어진 주석은 지워도 ㅇㅋ

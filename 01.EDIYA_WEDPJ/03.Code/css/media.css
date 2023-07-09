@@ -345,6 +345,7 @@
   .page_4-con1__text,
   .page_4-con1 > img {
     width: 80%;
+    margin-right: 0;
   }
 
   .page_4-con1__text > p,

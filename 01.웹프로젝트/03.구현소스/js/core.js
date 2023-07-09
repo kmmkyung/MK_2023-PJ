@@ -4,7 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // ______________________________page1_____________________________
   /*-------------------------
   page1 - 메뉴 보이기
-  함수명: showMenu
   기능: 오버시 메뉴보이기
   대상: .nav>ul>li
   변경대상: .nav
@@ -15,26 +14,27 @@ window.addEventListener("DOMContentLoaded", () => {
   const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브
   const about = document.querySelector(".submenu_h2"); // about 메뉴
   // console.log("nav", nav);
-  console.log("menu", menu);
+  // console.log("menu", menu);
   // console.log("submenu", submenu);
   
-  menu.forEach((ele) => {    
-    ele.onmouseenter = () => {
-      let eleH = ele.querySelector(".submenu ul").clientHeight;
+  menu.forEach((v,i) => {    
+    v.onmouseenter = () => {
+      submenu[i].style.display = "block";
+      let vH = v.querySelector(".submenu ul").clientHeight;      
 
       nav.classList.add("on"); // 메뉴 전체에 배경색 넣어주기
-      nav.style.height = eleH + 140 + "px";
-      ele.style.height = eleH + 140 + "px";
       about.style.display = "block";
+      nav.style.height =  vH + 150 + "px";
     };
-    
-    ele.onmouseleave = () => {
-      nav.classList.remove("on");
-      nav.style.height = "100px";
-      ele.style.height = "100px";
-      about.style.display = "none";
-    };
+    v.onmouseleave = () => {
+      submenu[i].style.display = "none";
+    }
   });
+  nav.onmouseleave = () => {
+    about.style.display = "none";
+    nav.classList.remove("on");
+    nav.style.height = "100px";
+};
   // ______________________________mobile-menu_____________________________
   /*-------------------------
     mobile-menu - menu 보이기

@@ -100,6 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const smenu = document.querySelectorAll(".submenu")
     // console.log(smenu)
     for(let x of smenu){
+      x.addEventListener("click",e=>e.stopPropagation());
     }///// for of ////
 
     };

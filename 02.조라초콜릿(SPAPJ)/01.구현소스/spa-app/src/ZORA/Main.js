@@ -7,7 +7,7 @@ import { EmailForm } from './modules/EmailForm';
 import RecBlur from './modules/RecBlur';
 import DomeSlide from './modules/DomeSlide';
 import RotateHand from './modules/RotateHand';
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 
 
 

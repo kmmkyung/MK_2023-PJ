@@ -1,0 +1,58 @@
+.page1-warp{
+  background-color: var(--main2);
+  padding-top: min(48vw, 300px);
+}
+
+.page1-con{
+  position: relative;
+  width: 100%;
+  height: calc(100vh - min(48vw, 300px));
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  overflow: hidden;
+}
+
+.page1-svg{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(80vw,1000px);
+}
+
+.page1-con__btn{
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-M);
+  color: var(--white);
+}
+
+.page1-con__btn::after{
+  background-color: var(--white);
+}  
+
+.page1-main__img{
+  object-fit:cover;
+  aspect-ratio: 2500 / 1283;
+  width: 100%;
+  height: 100%;
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 768px 사이즈 이하 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .page1-con__text .page1-svg {
+    top: auto;
+    bottom: 70px;
+  }
+
+  .page1-warp {
+    background-color: var(--main2);
+    padding-top: 110px;
+  }
+
+  .page1-con{
+    height: calc(100vh - 110px);
+  }
+}

@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* EDIYA COFFEE PJ 공통 셋팅 CSS - core.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito+Sans&display=swap');
+
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+body *{
+    /* outline: 1px dotted tomato; */
+}
+
+:root{
+    --main-color:#253B82
+}
+
+/* -------헤더-------- */
+
+#all_nav{
+    position: relative;
+    font-family: 'Nunito Sans','Noto Sans KR', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.6vw;
+    height: 100px;
+    transition: height .3s;
+}
+
+.l_nav, .r_nav{
+    position: relative;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.l_nav::after, .r_nav::after{
+    content: '';
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.l_nav>ul{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.l_nav>ul>li{
+    overflow: hidden;
+}
+
+
+/* 메뉴 폰트 */
+.l_nav>ul>li>a, .fran>a{
+    font-size: min(1.5vw, 24px);
+    font-weight: bold;
+    color: #fff;
+    line-height: 100px;
+
+    /* a요소 확장 */
+    padding: 0 2vw;
+    display: block;
+}
+
+#p1_logo img{
+    width: min(15vw,160px);
+    margin-top: calc(100px - 50%);
+}
+
+.r_nav{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.r_nav>.icon-search{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.r_nav>.icon-search i{
+    font-size: 24px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.r_nav>.fran{
+    box-sizing: border-box;
+    width: min(20vw,400px);
+    height: 100px;
+    text-align: center;
+}
+
+.borl{
+    border-left: 1px solid #fff;
+}
+
+#all_nav.on,
+.r_nav>.fran:hover,
+.r_nav>i:hover .icon-search{
+    background-color: var(--main-color);
+}
+
+/* 하위메뉴 */
+.submenu{
+    position: absolute;
+    display: none;
+}
+
+/* 하위메뉴 구조랩핑박스 */
+.submenu_h2{
+    position: absolute;
+    right: 6vw;
+    top: 150px;
+    font-size: 6rem;
+}
+
+.submenu_h2 a{
+    font-weight: bold;
+    color: #fff;
+}
+
+.l_nav>ul>li .submenu-box li{
+    margin: 40px 2vw;
+}
+
+.l_nav>ul>li .submenu-box li a{
+    font-size: min(1.5vw,1.8rem);
+    color: #fff;
+    font-weight: bold;
+}
+
+.l_nav>ul>li .submenu-box li a:hover,
+.submenu_h2 a:hover
+{
+    text-decoration: underline;
+}
+
+/* -------모바일-------- */
+/* 햄버거 버튼, 닫기버튼 */
+.ham, .close{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 38px;
+    left: 36px;
+
+    /* 처음에 숨기기 */
+    display: none;
+}
+

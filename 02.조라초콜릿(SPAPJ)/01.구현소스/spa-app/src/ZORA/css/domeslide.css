@@ -1,0 +1,86 @@
+.domeslide-wrap{
+  position: relative;
+  overflow: hidden;
+}
+
+.domeslide-con{
+  width: 600%;
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+.domeslide-con__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.domeslide-con__list img{
+  width: min(15vw,100px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.domeslide-con__list p{
+  font-family: var(--Coko);
+  font-size: var(--font-size-S);
+  text-align: center;
+  margin: 5vw 0;
+  width: 70%;
+}
+
+.domeslide-con__list h4{
+  font-family: var(--Coko);
+  font-size: var(--font-size-S);
+}
+
+.domeslide-con__list h5{
+  font-family: var(--Atami);
+  font-size: var(--font-size-S);
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.domeslide-btn{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  top: auto;
+  transform: translateX(-50%);
+}
+
+.domeslide-btn li .btn{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.domeslide-btn li.on .btn{
+  background-color: var(--black);
+}
+
+.domeslide__backwrap{
+  height: 80vh;
+  overflow: hidden;
+}
+.domeslide__back{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pink);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .domeslide-con__list p{
+    font-size: var(--font-size-M);
+    line-height: 28px;
+  }
+}

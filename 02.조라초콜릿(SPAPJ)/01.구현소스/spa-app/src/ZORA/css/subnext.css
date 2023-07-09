@@ -1,0 +1,104 @@
+.subnext-L,
+.subnext-R {
+  width: 100%;
+}
+
+.subnext-L-wrap,
+.subnext-R-wrap {
+  position: relative;
+}
+
+.subnext-L-con,
+.subnext-R-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  top: -25%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.subnext-tit {
+  font-size: var(--font-size-L);
+  font-family: var(--Coko);
+  text-align: center;
+  margin: 100px 0 200px;
+}
+
+.subnext-L img,
+.subnext-R img {
+  width: 250px;
+  height: auto;
+}
+
+.subnext-img {
+  position: relative;
+}
+
+.chocolatebreak {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.subnext-L .tit_LT,
+.subnext-R .tit_RT {
+  text-align: center;
+  font-size: var(--font-size-L);
+  font-family: var(--Coko);
+  margin-top: 50px;
+}
+
+.subnext-L .tit_LB,
+.subnext-R .tit_RB {
+  text-align: center;
+  font-size: var(--font-size-L);
+  font-family: var(--Coko);
+  margin-bottom: 50px;
+}
+
+.subnext-L button,
+.subnext-R button {
+  font-size: var(--font-size-M);
+  font-family: var(--Coko);
+}
+
+.subnext-L button::after,
+.subnext-R button::after {
+  background-color: #000;
+}
+
+/* .subnext-R-wrap {
+  background-color: var(--red);
+} */
+
+.subnext-bg {
+  width: 100%;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.subnext-L .subnext-bg {
+  /* height: 1300px; */
+  height: 600px;
+}
+
+.subnext-R .subnext-bg {
+  height: 600px;
+}
+
+/* 👉👉👉👉👉👉👉👉👉👉 미디어쿼리 시작 👈👈👈👈👈👈👈👈👈👈 */
+@media screen and (min-width: 768px) {
+  .subnext-con {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .subnext-R-wrap {
+    background-color: transparent;
+  }
+}

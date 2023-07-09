@@ -16,30 +16,23 @@ window.addEventListener("DOMContentLoaded", () => {
   // console.log("nav", nav);
   // console.log("menu", menu);
   // console.log("submenu", submenu);
-  
-  menu.forEach((v,i) => {    
+
+  menu.forEach((v, i) => {
     v.onmouseenter = () => {
       submenu[i].style.display = "block";
-      let vH = v.querySelector(".submenu ul").clientHeight;      
+      let vH = v.querySelector(".submenu ul").clientHeight;
 
       nav.classList.add("on"); // 메뉴 전체에 배경색 넣어주기
-      about.style.display = "block";
-      nav.style.height =  vH + 150 + "px";
+      nav.style.height = vH + 150 + "px";
     };
     v.onmouseleave = () => {
       submenu[i].style.display = "none";
-    }
+    };
   });
   nav.onmouseleave = () => {
-    if(window.innerWidth <= 786){
-      about.style.display="block"
-    }
-    else{
-      about.style.display = "none";
-    }
     nav.classList.remove("on");
     nav.style.height = "100px";
-};
+  };
 
   // ______________________________mobile-menu_____________________________
   /*-------------------------
@@ -51,9 +44,9 @@ window.addEventListener("DOMContentLoaded", () => {
     -------------------------*/
   const ham = document.querySelector(".ham");
   const close = document.querySelector(".close");
-  
-    ham.onclick = mobileMenu;
-    close.onclick = mobileMenu;
+
+  ham.onclick = mobileMenu;
+  close.onclick = mobileMenu;
   function mobileMenu() {
     const gnb = document.querySelector("#gnb");
     gnb.classList.toggle("on");
@@ -68,23 +61,21 @@ window.addEventListener("DOMContentLoaded", () => {
   const navM = document.querySelectorAll(".nav>ul>li>a");
   // console.log("대상",navM);
 
-  // 이벤트 셋팅
-  navM.forEach((x, idx) => {
-    x.onclick = () => {
-      console.log("메뉴요소", x);
-      moveMenu(idx);
+  // // 이벤트 셋팅
+  // navM.forEach((v, i) => {
+  //   v.onclick = () => {
 
-      let tg = x.nextElementSibling;
-      // console.log("타겟높이값:", tg.clientHeight);
-      // console.log("타겟:", tg);
+  //     let tg = x.nextElementSibling;
+  //     // console.log("타겟높이값:", tg.clientHeight);
+  //     console.log("타겟:", tg);
 
-      let hv = tg.querySelector("ul").clientHeight;
-      // console.log("ul높이값:", hv);
+  //     let hv = tg.querySelector("ul").clientHeight;
+  //     // console.log("ul높이값:", hv);
 
-      // (2)타겟의 높이값이 0이 아니면 0으로 hv값 변경
-      if (tg.clientHeight != 0) hv = 0;
-      tg.querySelector(".submenu").style.height = hv + "px";
-      x.parentElement.classList.toggle("on");
-    }; ///// click /////
-  }); ///// forEach /////
+  //     // (2)타겟의 높이값이 0이 아니면 0으로 hv값 변경
+  //     if (tg.clientHeight != 0) hv = 0;
+  //     // tg.querySelector(".submenu").style.height = hv + "px";
+  //     // x.parentElement.classList.toggle("on");
+  //   }; ///// click /////
+  // }); ///// forEach /////
 }); //////////////////////////////////////////////////////////////////////////////////////

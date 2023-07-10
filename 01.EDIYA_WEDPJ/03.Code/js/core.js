@@ -37,7 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
       submenu[i].style.display = "block"; // 해당 메뉴의 서브메뉴 보여줘
 
       // 서브메뉴 전체 높이값
-      let vH = v.querySelector(".submenu ul").clientHeight;
+      // sw <- about us 부모요소에 submenu클래스 없어서 추가하고 .subemenu ul있으면 ul의 clientHeight구하고 ul없으면 submenu의 clientHeight구하기 ################################
+      let vH = v.querySelector(".submenu ul")? v.querySelector(".submenu ul").clientHeight : v.querySelector(".submenu").clientHeight;
       nav.classList.add("on"); // 메뉴바에 남색 배경색 넣어주기
       about.style.display = "block"; // about us 보여줘
       nav.style.height = vH + 150 + "px"; // 뒷배경(남색) vH+50px정도 늘려주기

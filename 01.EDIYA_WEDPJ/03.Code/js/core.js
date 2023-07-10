@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
   -------------------------*/
   const nav = document.querySelector("#gnb .nav"); // 로고기준 왼쪽 메뉴바 전체
   const menu = document.querySelectorAll(".nav>ul>li"); // 4가지 메뉴(브랜드, 메뉴, 스토어, 뉴스)
-  const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브
+  const submenu = document.querySelectorAll(".submenu"); // 4가지 메뉴의 서브 상세메뉴
   const about = document.querySelector(".submenu_h2"); // about us 메뉴
   // console.log("nav", nav);
   // console.log("menu", menu);
@@ -93,7 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
     else{
       tg.querySelector(".submenu").style.height = hv + "px";
       v.parentElement.classList.toggle("on"); // 해당 li에 클래스 on 주기... 갑자기 on 어디서 나왔는데...
-                                              // 이론적으로 on = hv 만큼 높이값 변경일거같은데 한글로는 잘 말하죠ㅠㅜ
+                                              // 이론적으로 on = hv 만큼 높이값 변경일거같은데 이걸 코드로...?
       }
 
     // .subMenu 클릭시 상위 li로 이벤트 버블링 막기!
@@ -110,7 +110,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 }); //////////////////////////////////////////////////////////////////////////////////////
 
-// 원래는 grid사용해서 메뉴바를 만들었는데 (메뉴를 왼쪽, 오른쪽 따로 만들고 따따따 조립)
+// 원래는 grid사용해서 메뉴바를 만들었는데 (메뉴를 왼쪽, 오른쪽 따로 만들고 그리드로 따따따 조립)
 // 메뉴에 마우스 오버하면 전체 메뉴배경이 내려와야 하는 구성이기 때문에 (왼쪽만 내려와서 오른쪽 따로 내리고... 복잡해짐)
 // 그래서 한 메뉴바로 다시 만들었다,,,
 

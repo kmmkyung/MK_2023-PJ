@@ -7,96 +7,93 @@ import DomeSlide_data from "../data/DomeSlide_data"
 import $ from "jquery"
 import 'jquery-ui-dist/jquery-ui';
 // import 'jquery-ui-touch-punch';
-import { Draggable } from 'react-touch'
+// import { Draggable } from 'react-touch'
+import Hammer from 'react-hammerjs'
 
 function jqFn(){
   $(()=>{ 
-    console.log('DomeSlide 로딩')      
+    console.log('DomeSlide 로딩')
+    document.querySelectorAll(".domeslide-btn li").item(0).classList.add("on")
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 
 const DomeSlide = () => {
-
   const setFn = () => {
+    const slide = $(".domeslide-con");
+    // 1. 드래그 설정
+    slide.draggable({
+      axis: "x" 
+    });
+    
+    // 윈도크기리턴함수
+    const reWin = () => $(window).width();
+    // 리사이즈 업데이트
+    $(window).resize(() => {
+      winW = $(window).width();
+      console.log("reWin:",winW);
+    });
+    
+    let winW = reWin();
 
-  const slide = $(".domeslide-con");
-  // 1. 드래그 설정
-  slide.draggable({
-    axis: "x" 
-  });
-  
-  // 윈도크기리턴함수
-  const reWin = () => $(window).width();
-  // 리사이즈 업데이트
-  $(window).resize(() => {
-    winW = $(window).width();
-    console.log("reWin:",winW);
-  });
-  
-  let winW = reWin();
+    // 드래그 끝난 후 이벤트함수
+    slide.on("dragstop",function(){
+      // 위치값
+      let slideL = slide.offset().left;
+      console.log('왼',slideL);
 
-  // 드래그 끝난 후 이벤트함수
-  slide.on("dragstop",function(){
-    // 위치값
-    let slideL = slide.offset().left;
-    console.log('왼',slideL);
-
-    // 1. 이동제어(왼/오/제자리)
-    if(slideL < -winW*1.1){
-        goSlide(0);
+      // 1. 이동제어(왼/오/제자리)
+      if(slideL < -winW*1.1){
+          goSlide(0);
+        }
+      else if(slideL > -winW*0.9){
+          goSlide(1);
       }
-    else if(slideL > -winW*0.9){
-        goSlide(1);
-    }
-    else{
-      slide.animate({
-        left:-winW+"px"
-      },200)
-    }
-  })
+      else{
+        slide.animate({
+          left:-winW+"px"
+        },200)
+      }
+    })
 
-  // 이동함수
-  function goSlide(dir) {
-    // dir - 전달변수 
-    console.log("방향:", dir);
+    // 이동함수
+    function goSlide(dir) {
+      // dir - 전달변수 
+      console.log("방향:", dir);
 
-// 분기하기
-// 오른쪽이동 //////////////
-if (dir) {
-  slide.animate({left: "0px",},
-    () => {
-      // 이동후 맨뒤li 맨앞으로 이동하기
-      slide.prepend(slide.find("li").last()).css({ left: "-100%" });
-    }
-    ); 
-    addOn(0)
-  }
-  // 왼쪽이동 //////////////////
-  else {
-    slide.animate(
-      {
-        left: -winW * 2 + "px",
-      },
+  // 분기하기
+  // 오른쪽이동 //////////////
+  if (dir) {
+    slide.animate({left: "0px",},
       () => {
-        // 이동후 맨앞li 맨뒤이동
-        slide.append(slide.find("li").first()).css({ left: "-100%" });
+        // 이동후 맨뒤li 맨앞으로 이동하기
+        slide.prepend(slide.find("li").last()).css({ left: "-100%" });
       }
-      );
-    addOn(2)
-  } /////////// else /////////////
-} //////////////// goSlide함수 ///////////////////
+      ); 
+      addOn(0)
+    }
+    // 왼쪽이동 //////////////////
+    else {
+      slide.animate(
+        {
+          left: -winW * 2 + "px",
+        },
+        () => {
+          // 이동후 맨앞li 맨뒤이동
+          slide.append(slide.find("li").first()).css({ left: "-100%" });
+        }
+        );
+      addOn(2)
+    } /////////// else /////////////
+  } //////////////// goSlide함수 ///////////////////
 
-const btn = $('.domeslide-btn li');
-function addOn(seq){
-  let dseq = slide.find('li').eq(seq).attr("data-seq");
-  console.log('dseq',dseq);
+  const btn = $('.domeslide-btn li');
+  function addOn(seq){
+    let dseq = slide.find('li').eq(seq).attr("data-seq");
+    console.log('dseq',dseq);
 
-btn.eq(dseq).addClass("on").siblings().removeClass("on");
-}
-
-
+  btn.eq(dseq).addClass("on").siblings().removeClass("on");
+  }
 }; //////// setFn ////////////////
-
 useEffect(setFn,[]);
 
   return(
@@ -129,6 +126,7 @@ useEffect(setFn,[]);
           </div>
         </div>
       </section>
+      {jqFn()}
     </>
   )
 }

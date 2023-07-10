@@ -1,8 +1,20 @@
+// 원래는 css grid 사용해서 메뉴바를 만들었는데 (메뉴를 왼쪽, 오른쪽 따로 만들고 그리드로 따따따 조립) <- 03.header----grid파일이 그거!
+// 메뉴에 마우스 오버하면 전체 메뉴배경빅스가 내려와야 하는 구성이기 때문에(왼쪽만 내려와서 오른쪽 따로 내리고... 복잡해짐)
+// 그래서 헤더를 한 메뉴바로 다시 만들었다,,,
+
+// 선생님이 해주신 원본 js코드는 header----grid 버전의 core를 보면 될듯한데... 저기서 모바일버전이 됐다 안됐다 거림ㅋㅋ
+// 설명해주려고 주석쓴거니까 확인하고 필요없어진 주석은 지워도 ㅇㅋ
+
+
+// 시작~~
+
+
+
 window.addEventListener("DOMContentLoaded", () => {
   console.log("core-JS 로딩완료!");
   // ______________________________(ㅜOㅜ)=o_____________________________
   // (ㅜOㅜ)=o about us 마우스 가져가면 왜 오류나는데 허어어엉
-  // 그리고 submenu 위치에 마우스 가져가도 왜 메뉴 바뀌는거야
+  // 그리고 submenu 위치에 마우스 가져가도 왜 메뉴 바뀌는거야 와까라나이
   /*-------------------------
   menu - 메뉴 보이기
   기능: 오버시 메뉴보이기
@@ -40,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 그리고 왼쪽 전체 메뉴에 마우스 떨어지면
   nav.onmouseleave = () => {
     if (window.innerWidth <= 786) {
-      // 모바일버전에서 about us는 늘 있어줘
+      // 사이즈 786인 모바일버전에서 about us는 늘 있어줘
       about.style.display = "block";
     } else {
       about.style.display = "none"; // 모바일버전이 아니면 사라져
@@ -75,7 +87,7 @@ window.addEventListener("DOMContentLoaded", () => {
     mobile-menu - 하위메뉴
     함수명: mobileMH
     기능: 메뉴 li클릭시 하위메뉴 열기/닫기
-    대상: . nav>ul>li>a
+    대상: .nav>ul>li>a
     -------------------------*/
   const navM = document.querySelectorAll(".nav>ul>li>a");
   // console.log("대상", navM);
@@ -92,11 +104,11 @@ window.addEventListener("DOMContentLoaded", () => {
     if (tg.clientHeig!= 0){ hv = 0 }
     else{
       tg.querySelector(".submenu").style.height = hv + "px";
-      v.parentElement.classList.toggle("on"); // 해당 li에 클래스 on 주기... 갑자기 on 어디서 나왔는데...
+      v.parentElement.classList.toggle("on"); // 해당 li에 클래스 on 주기...
                                               // 이론적으로 on = hv 만큼 높이값 변경일거같은데 이걸 코드로...?
       }
 
-    // .subMenu 클릭시 상위 li로 이벤트 버블링 막기!
+    // .subMenu 클릭시 상위 li로 이벤트 버블링 막기! <- 탐쌤 아리가또~~
     const smenu = document.querySelectorAll(".submenu")
     // console.log(smenu)
     for(let x of smenu){
@@ -109,10 +121,3 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 }); //////////////////////////////////////////////////////////////////////////////////////
-
-// 원래는 grid사용해서 메뉴바를 만들었는데 (메뉴를 왼쪽, 오른쪽 따로 만들고 그리드로 따따따 조립)
-// 메뉴에 마우스 오버하면 전체 메뉴배경이 내려와야 하는 구성이기 때문에 (왼쪽만 내려와서 오른쪽 따로 내리고... 복잡해짐)
-// 그래서 한 메뉴바로 다시 만들었다,,,
-
-// 선생님이 해주신 원본 js코드는 header----grid 버전의 core를 보면 될듯한데... 저기서도 됐다 안됐다 거림ㅋㅋ
-// 확인하고 설명 필요없어진 주석은 지워도 ㅇㅋ

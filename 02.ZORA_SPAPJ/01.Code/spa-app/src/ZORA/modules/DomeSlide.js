@@ -4,7 +4,7 @@ import "../css/domeslide.css";
 // Data
 import DomeSlide_data from "../data/DomeSlide_data";
 // 제이쿼리
-import $, { event, fx } from "jquery";
+import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 // import 'jquery-ui-touch-punch';
 // import { Draggable } from 'react-touch'
@@ -61,8 +61,6 @@ const DomeSlide = () => {
         goSlide(0);
       } else if (fx > -winW * 0.9) {
         goSlide(1);
-      } else {
-        slide.animate({left: -winW + "px",},200);
       }
     });
 

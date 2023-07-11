@@ -96,10 +96,17 @@ font-family: 'Nunito Sans', sans-serif;
 
 /* 하위메뉴 */
 .submenu{
-    display: none;
     position: absolute;
 }
-
+.desktop .submenu{
+    display: none;
+}
+.mobile_sub{
+    display: none;
+}
+.mobile_sub.on{
+    display: block;
+}
 .submenu li{
     padding: 20px 2vw;
 }

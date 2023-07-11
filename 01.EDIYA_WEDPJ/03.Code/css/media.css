@@ -112,7 +112,15 @@
   .icon-search {
     position: absolute;
     right: 0;
+    top: 0;
     border: none;
+  }
+
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
   }
 
   /* 햄버거 버튼 보이기 */

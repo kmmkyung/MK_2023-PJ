@@ -27,6 +27,12 @@ body {
     transform: rotate(360deg);
   }
 }
+.desktop{
+  display: flex;
+}
+.mobile{
+  display: none;
+}
 
 /*---------- _____page1_____ ----------*/
 

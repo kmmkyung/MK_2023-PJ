@@ -144,7 +144,7 @@
     display: block;
     flex-direction: column;
     margin-top: 15vh;
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
     top: auto;
     overflow: hidden;
@@ -156,16 +156,16 @@
   }
 
   #gnb.on .nav > ul > li > a {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 80px;
   }
 
   #gnb.on .submenu > ul > li {
-    margin: 2vh;
+    margin-left: 2vh;
   }
 
   #gnb.on ul > li > a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     display: block;
   }
 
@@ -175,8 +175,8 @@
     bottom: 8vh;
     left: 0;
     width: 100%;
-    font-size: min(5vh, 3.6rem);
-    padding: 5vh 0;
+    font-size: 2rem;
+    padding: 2vh 0;
     text-align: center;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -195,7 +195,7 @@
 
   #gnb.on .nav .fran > a {
     position: relative;
-    font-size: min(10vh, 2.4rem);
+    font-size: 2rem;
     padding: 0;
     margin-right: 5vh;
     line-height: 8vh;

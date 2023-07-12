@@ -74,9 +74,5 @@ mobileTit.forEach((v,i)=>{
         // 다른 서브메뉴 클래스 없애려고 불가피하게 제이쿼리 사용함
         $(v).parent().siblings().find(".mobile_sub").removeClass("on");
     }
-})
-
-
-
-
+  })
 })

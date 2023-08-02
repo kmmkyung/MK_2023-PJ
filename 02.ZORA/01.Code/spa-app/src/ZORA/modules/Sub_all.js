@@ -66,33 +66,6 @@ function inputclick(params) {
 //_____________________________________________________________________________________
 
 function SubAll(props) {
-
-  const chocobreak = ()=>{
-    // Chocolate 뽀각 _______________________________________________________
-    const chocolateImg1 = document.querySelectorAll(".chocolatepack")
-    const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
-    // console.log(chocolateImg1);
-    
-    chocolateImg2.forEach((ele,idx)=>{
-      // console.log('ele',ele);
-      // console.log('idx',idx);
-      // 초콜릿에 마우스 오버시 뽀각
-      ele.addEventListener("mouseenter",function(){
-        this.style.opacity=1;
-        chocolateImg1[idx].style.opacity=0;
-        // console.log('chocolateImg1배열순번!',chocolateImg1[idx]);
-      })
-      ele.addEventListener("mouseout",function(){
-        this.style.opacity=0;
-        chocolateImg1[idx].style.opacity=1;
-      })
-    }) // forEach
-  };
-
-    useEffect(()=> chocobreak(), [])
-
-
-
   function addCart_data() {
     // 로컬에 cart가 없으면 배열로 문자 넣기
     if (localStorage.getItem("cart") == null) {
@@ -168,24 +141,22 @@ function SubAll(props) {
 
   useEffect(() => inputclick(".number-btn__input"), []);
   useEffect(chocobreak, []);
-  let [winW, setWinW] = useState(0)
+  let [winW, setWinW] = useState(0);
 
-  const test = ()=>{
-    setWinW($(window).width())
-    console.log("test",winW)
-    
-  }
-useEffect(() => {
+  const test = () => {
+    setWinW($(window).width());
+    console.log("test", winW);
+  };
+  useEffect(() => {
     test();
-    window.addEventListener("resize",()=>{
-      test()
+    window.addEventListener("resize", () => {
+      test();
     });
-    return (
-      window.removeEventListener("resize",()=>{
-        test();
-      })
-    )
-    },[winW]);
+    return window.removeEventListener("resize", () => {
+      test();
+    });
+  }, [winW]);
+
   return (
     <>
       <section id="subface">
@@ -319,89 +290,95 @@ useEffect(() => {
               </div>
             </div>
             <div className="subnext-R">
-              {
-                winW < 768 && //768보다 작으면 코드 실행
-              <div className="subnext-R-wrap" style={{ backgroundColor: SubNext_data[props.num].bgc_L }}>
-                <div className="subnext-R-con">
-                  <div className="subnext-img">
-                    <img
-                      className="chocolatepack"
-                      src={SubNext_data[props.num].src1_R}
-                      alt=""
-                    />
-                    <img
-                      className="chocolatebreak"
-                      src={SubNext_data[props.num].src2_R}
-                      alt=""
-                    />
-                  </div>
-                  <h3 className="tit_RT">
-                    {SubNext_data[props.num].tit_R.split("^")[0]}
-                  </h3>
-                  <h3 className="tit_RB">
-                    {SubNext_data[props.num].tit_R.split("^")[1]}
-                  </h3>
-                  <Link
-                    to="/sub"
-                    state={{
-                      num:
-                        Number(props.num) + 1 == 5 ? 0 : Number(props.num) + 1,
-                    }}
-                  >
-                    <button className="btn-B" onClick={btnAct}>
-                      {SubNext_data[props.num].btn_R}
-                    </button>
-                  </Link>
-                </div>
+              {winW < 768 && ( //768보다 작으면 코드 실행
                 <div
-                  className="subnext-bg"
-                  style={{
-                    backgroundColor: SubNext_data[props.num].bgc_R,
-                  }}
-                ></div>
-              </div>
-              }
-              {winW>= 768 &&
-              <div className="subnext-R-wrap">
-                <div className="subnext-R-con">
-                  <div className="subnext-img">
-                    <img
-                      className="chocolatepack"
-                      src={SubNext_data[props.num].src1_R}
-                      alt=""
-                    />
-                    <img
-                      className="chocolatebreak"
-                      src={SubNext_data[props.num].src2_R}
-                      alt=""
-                    />
+                  className="subnext-R-wrap"
+                  style={{ backgroundColor: SubNext_data[props.num].bgc_L }}
+                >
+                  <div className="subnext-R-con">
+                    <div className="subnext-img">
+                      <img
+                        className="chocolatepack"
+                        src={SubNext_data[props.num].src1_R}
+                        alt=""
+                      />
+                      <img
+                        className="chocolatebreak"
+                        src={SubNext_data[props.num].src2_R}
+                        alt=""
+                      />
+                    </div>
+                    <h3 className="tit_RT">
+                      {SubNext_data[props.num].tit_R.split("^")[0]}
+                    </h3>
+                    <h3 className="tit_RB">
+                      {SubNext_data[props.num].tit_R.split("^")[1]}
+                    </h3>
+                    <Link
+                      to="/sub"
+                      state={{
+                        num:
+                          Number(props.num) + 1 == 5
+                            ? 0
+                            : Number(props.num) + 1,
+                      }}
+                    >
+                      <button className="btn-B" onClick={btnAct}>
+                        {SubNext_data[props.num].btn_R}
+                      </button>
+                    </Link>
                   </div>
-                  <h3 className="tit_RT">
-                    {SubNext_data[props.num].tit_R.split("^")[0]}
-                  </h3>
-                  <h3 className="tit_RB">
-                    {SubNext_data[props.num].tit_R.split("^")[1]}
-                  </h3>
-                  <Link
-                    to="/sub"
-                    state={{
-                      num:
-                        Number(props.num) + 1 == 5 ? 0 : Number(props.num) + 1,
+                  <div
+                    className="subnext-bg"
+                    style={{
+                      backgroundColor: SubNext_data[props.num].bgc_R,
                     }}
-                  >
-                    <button className="btn-B" onClick={btnAct}>
-                      {SubNext_data[props.num].btn_R}
-                    </button>
-                  </Link>
+                  ></div>
                 </div>
-                <div
-                  className="subnext-bg"
-                  style={{
-                    backgroundColor: SubNext_data[props.num].bgc_R,
-                  }}
-                ></div>
-              </div>
-              }
+              )}
+              {winW >= 768 && (
+                <div className="subnext-R-wrap">
+                  <div className="subnext-R-con">
+                    <div className="subnext-img">
+                      <img
+                        className="chocolatepack"
+                        src={SubNext_data[props.num].src1_R}
+                        alt=""
+                      />
+                      <img
+                        className="chocolatebreak"
+                        src={SubNext_data[props.num].src2_R}
+                        alt=""
+                      />
+                    </div>
+                    <h3 className="tit_RT">
+                      {SubNext_data[props.num].tit_R.split("^")[0]}
+                    </h3>
+                    <h3 className="tit_RB">
+                      {SubNext_data[props.num].tit_R.split("^")[1]}
+                    </h3>
+                    <Link
+                      to="/sub"
+                      state={{
+                        num:
+                          Number(props.num) + 1 == 5
+                            ? 0
+                            : Number(props.num) + 1,
+                      }}
+                    >
+                      <button className="btn-B" onClick={btnAct}>
+                        {SubNext_data[props.num].btn_R}
+                      </button>
+                    </Link>
+                  </div>
+                  <div
+                    className="subnext-bg"
+                    style={{
+                      backgroundColor: SubNext_data[props.num].bgc_R,
+                    }}
+                  ></div>
+                </div>
+              )}
             </div>
           </div>
         </div>

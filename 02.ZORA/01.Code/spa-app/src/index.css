@@ -73,3 +73,12 @@ button:focus {
 input:focus {
   outline: none;
 }
+/* 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+} */

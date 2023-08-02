@@ -129,8 +129,7 @@ $(() => {
       v.addEventListener("click", menuClose);
     });
   }
-
-
+  
   // 메뉴 스크롤 올리면 보이기
   $(window).on("mousewheel", function (event) {
     if (event.originalEvent.wheelDelta >= 0) {
@@ -143,9 +142,7 @@ $(() => {
       }
 
       // console.log("href", location.href.split("#")[1]);
-      
       // topWhite();
-
       
     } else {
       $("#header").removeClass("fixed");
@@ -163,18 +160,28 @@ $(() => {
   // Bag ____________________________________________________________
   Bag();
   function Bag() {
-    const Bag = document.querySelectorAll(".Bag");
+    const BagBtn = document.querySelectorAll(".Bag"); // 데스크탑, 모바일 버튼
     const Bclose = document.querySelector(".Bag-close");
     const Bagwrap = document.querySelector("#bag");
-    Bag.forEach((v) => {
+    const Bag = document.querySelector(".bag-wrap");
+
+    BagBtn.forEach((v) => {
       v.addEventListener("click", function () {
         Bagwrap.style.transform = "translateX(0%)";
+        Bagwrap.style.overflow = "hidden";
         document.body.style.overflow = "hidden";
+        Bag.style.overflow = "auto";
+        setTimeout(()=>{
+          Bagwrap.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        },500)
       });
     });
     Bclose.addEventListener("click", () => {
-      Bagwrap.style.transform = "translateX(100%)";
-      document.body.style.overflow = "scroll";
+      Bagwrap.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      document.body.style.overflow = "auto";
+      setTimeout(()=>{
+        Bagwrap.style.transform = "translateX(100%)";
+      },800)
     });
   }
 
@@ -197,7 +204,7 @@ $(() => {
       setTimeout(() => {
         document.querySelector("#Login").classList.add("-hidden");
       }, 2000);
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "auto";
     });
     DTLopen.addEventListener("click", function () {
       document.querySelector("#Login").classList.remove("-hidden");

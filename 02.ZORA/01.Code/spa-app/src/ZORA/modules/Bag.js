@@ -16,7 +16,7 @@ const Bag = () => {
   // function aaa() {
   // let localData = JSON.parse(localStorage.getItem("cart"))
 
-  // let aa = Object.keys(localData);
+  // let aa = Obzject.keys(localData);
   // aa = aa.map(v=>localData[v])
   // console.log(typeof(Array.from(aa, x=>x)));
 

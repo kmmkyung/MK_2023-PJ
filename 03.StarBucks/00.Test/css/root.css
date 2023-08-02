@@ -1,0 +1,39 @@
+* {
+  /* outline: 1px dotted turquoise; */
+  /* outline: 1px dotted tomato; */
+}
+
+:root {
+  /* COLOR */
+  --black: #000000;
+  --white: #ffffff;
+  --lightgray: #cccccc;
+  --gray: #656565;
+  --darkgray: #333333;
+  --main: #669900;
+  /* FONTSIZE */
+  --font-size-S: 1.2rem;
+  --font-size-M: 1.6rem;
+  --font-size-L: min(8vw, 6rem);
+}
+/*----------*/
+/*-- CSS CLASS --*/
+.-hidden {
+  display: none;
+}
+
+.-show {
+  display: block;
+}
+
+.-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.-opacity {
+  opacity: 0;
+}
+
+/*----- CSS -----*/

@@ -66,6 +66,33 @@ function inputclick(params) {
 //_____________________________________________________________________________________
 
 function SubAll(props) {
+
+  const chocobreak = ()=>{
+    // Chocolate 뽀각 _______________________________________________________
+    const chocolateImg1 = document.querySelectorAll(".chocolatepack")
+    const chocolateImg2 = document.querySelectorAll(".chocolatebreak")
+    // console.log(chocolateImg1);
+    
+    chocolateImg2.forEach((ele,idx)=>{
+      // console.log('ele',ele);
+      // console.log('idx',idx);
+      // 초콜릿에 마우스 오버시 뽀각
+      ele.addEventListener("mouseenter",function(){
+        this.style.opacity=1;
+        chocolateImg1[idx].style.opacity=0;
+        // console.log('chocolateImg1배열순번!',chocolateImg1[idx]);
+      })
+      ele.addEventListener("mouseout",function(){
+        this.style.opacity=0;
+        chocolateImg1[idx].style.opacity=1;
+      })
+    }) // forEach
+  };
+
+    useEffect(()=> chocobreak(), [])
+
+
+
   function addCart_data() {
     // 로컬에 cart가 없으면 배열로 문자 넣기
     if (localStorage.getItem("cart") == null) {

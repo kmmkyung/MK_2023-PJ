@@ -9,7 +9,6 @@ import Fade from "react-reveal/Fade"
 function jqFn() {
   $(() => {
     console.log("chocodomecon로딩");
-
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 

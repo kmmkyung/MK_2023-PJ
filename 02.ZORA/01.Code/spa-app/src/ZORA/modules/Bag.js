@@ -33,7 +33,7 @@ const Bag = () => {
 
   return (
     <>
-      {/* {
+      {
       lcData.map((v,i) => {
         return (
           <div className="bag-items__con" key={i}>
@@ -60,7 +60,7 @@ const Bag = () => {
           </div>
         );
       })
-      } */}
+      }
 
       {jqFn()}
     </>

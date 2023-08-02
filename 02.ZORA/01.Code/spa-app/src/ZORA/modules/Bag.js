@@ -29,7 +29,7 @@ const Bag = () => {
   }
 
 
-  useEffect(()=>aaa(),[]);
+  // useEffect(()=>aaa(),[]);
 
   return (
     <>

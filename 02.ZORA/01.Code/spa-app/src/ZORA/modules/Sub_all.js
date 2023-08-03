@@ -351,7 +351,7 @@ useEffect(() => {
                       alt=""
                     />
                   </div>
-                  <h3 className="tit_RT">
+                  <h3 className="tit_RT">₩
                     {SubNext_data[props.num].tit_R.split("^")[0]}
                   </h3>
                   <h3 className="tit_RB">

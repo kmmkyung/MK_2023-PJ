@@ -16,9 +16,15 @@ jqFn();
 function RecCon(props) {
   let content = RecCon_data[props.cat][props.num];
 
+  // 프롭스값을 받는다 슬라이드 기능이 되냐 안되냐로 구분할 0 1 
+  // 본문에서는 슬라이드가 되게하는 프롭스보내고
+  // 다른데서는 슬라이드 안되는 프롭스보내고
+  //  html 을 그에 맞게 구성
+
   // console.log(props.sty);
 
   function chgimg() {
+    // 받아온 프롭스값이 안실행하는거면 리턴 실행하는거면 그냥 되게 삼항연산자씀ㅕㄴ될듯 
     let chgimgnum = 0;
     let img = [
       "./images/Inspire women_1.jpg",

@@ -49,8 +49,6 @@ const setcss_bg = [
       })
     }) // forEach
   };
-
-
 function ChocoDomeCon() {
     useEffect(()=> chocobreak(), [])
 

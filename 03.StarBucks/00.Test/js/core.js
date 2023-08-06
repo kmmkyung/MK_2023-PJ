@@ -41,6 +41,23 @@ window.addEventListener('DOMContentLoaded',function(){
   mainMenuCode += `</ul>`
   nav.innerHTML = mainMenuCode;
   
+  //
+  const title = document.querySelectorAll('.menu-item')
+  const menuContainer = document.querySelectorAll('.menu-item__contents')
+  const menuUl =  document.querySelectorAll('.contents-menu')
+  title.forEach((v,i)=>{
+    v.onmouseenter = () =>{
+      menuContainer[i].classList.remove('-hidden') 
+      let vH = menuUl[i].clientHeight;
+      menuContainer[i].style.height = vH + "px";
+    }
+    v.onmouseleave = () =>{
+      menuContainer[i].classList.add('-hidden')
+      menuContainer[i].style.height = 0;
+    }
+  })
+  
+
   // 서브메뉴 서치아이콘
   const searchInput = document.querySelector('.search input') 
   const searchIcon = document.querySelector('.search i')

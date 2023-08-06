@@ -144,12 +144,9 @@ header .sub-menu .search i{
   width: 100%;
   position: fixed;
   left: 0;
+  height: 0;
   background: var(--menubg);
-  transition: all .4s;
-}
-
-.main-menu .menu-item:hover .menu-item__contents{
-  display: block;
+  transition: all 1s;
 }
 
 .main-menu .contents-menu{

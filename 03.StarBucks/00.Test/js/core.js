@@ -17,9 +17,9 @@ window.addEventListener('DOMContentLoaded',function(){
     // 서브메뉴타이틀
     for(let sTitle in navData[title]){
       mainMenuCode += `
-          <li class="contents-menu__list ">
+          <li class="contents-menu__list">
             <h4>${sTitle}</h4>
-            <ol>
+            <ul>
       `
       // 하위메뉴
         for(let list of navData[title][sTitle]){
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded',function(){
               `
             }
             mainMenuCode += `
-            </ol>
+            </ul>
           </li>
             `
           }
@@ -43,17 +43,21 @@ window.addEventListener('DOMContentLoaded',function(){
   
   //
   const title = document.querySelectorAll('.menu-item')
-  const menuContainer = document.querySelectorAll('.menu-item__contents')
-  const menuUl =  document.querySelectorAll('.contents-menu')
   title.forEach((v,i)=>{
-    v.onmouseenter = () =>{
+    const menuContainer = document.querySelectorAll('.menu-item__contents');
+    const menuUl =  document.querySelectorAll('.contents-menu')
+    v.onmouseenter = () => {
       menuContainer[i].classList.remove('-hidden') 
       let vH = menuUl[i].clientHeight;
-      menuContainer[i].style.height = vH + "px";
+      menuContainer[i].style.height = vH + 'px';
+      setTimeout(function(){
+        menuUl[i].style.opacity=1;
+      },500)
     }
     v.onmouseleave = () =>{
       menuContainer[i].classList.add('-hidden')
       menuContainer[i].style.height = 0;
+      menuUl[i].style.opacity=0;
     }
   })
   

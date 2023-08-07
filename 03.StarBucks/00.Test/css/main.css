@@ -2,8 +2,10 @@ body{
   padding-top: 120px;
 }
 
-.badg{
+.badge{
   position: fixed;
   right: 10px;
-  top: 150px;
+  top: 140px;
+  transition: opacity .6s;
+  cursor: pointer;
 }

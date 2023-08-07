@@ -131,7 +131,6 @@ header .sub-menu .search i{
   font-size: var(--font-size-M);
   height: 100%;
   line-height: 60px;
-  transition: all .4s;
 }
 
 .main-menu .menu-item:hover .menu-item__name{
@@ -145,7 +144,7 @@ header .sub-menu .search i{
   position: fixed;
   left: 0;
   background: var(--menubg);
-  transition: all .8s;
+  transition: all 0.4s;
 }
 
 .main-menu .contents-menu{

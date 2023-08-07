@@ -46,19 +46,19 @@ window.addEventListener('DOMContentLoaded',function(){
   title.forEach((v,i)=>{
     const menuContainer = document.querySelectorAll('.menu-item__contents');
     const menuUl =  document.querySelectorAll('.contents-menu')
-    v.onmouseenter = () => {
+    v.addEventListener('mouseenter',function(){
       menuContainer[i].classList.remove('-hidden') 
       let vH = menuUl[i].clientHeight;
       menuContainer[i].style.height = vH + 'px';
       setTimeout(function(){
         menuUl[i].style.opacity=1;
-      },500)
-    }
-    v.onmouseleave = () =>{
+      },1200)
+    })
+    v.addEventListener('mouseleave',function(){
+      menuUl[i].style.opacity=0;
       menuContainer[i].classList.add('-hidden')
       menuContainer[i].style.height = 0;
-      menuUl[i].style.opacity=0;
-    }
+    })
   })
   
 

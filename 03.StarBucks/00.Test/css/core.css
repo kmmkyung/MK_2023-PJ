@@ -6,15 +6,13 @@ body{
   color: var(--darkgray);
   font-weight: normal;
   line-height: 1.2;
-}
-
-img{
-  display: block;
+  height: 300vh;
 }
 
 header{
   background-color: #f6f5ef;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -30,7 +28,6 @@ header .logo{
   height: 75px;
   top: 0;
   bottom: 0;
-  left: 20px;
   margin: auto;
 }
 

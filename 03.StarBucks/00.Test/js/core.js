@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded',function(){
 
-  // [ 메인메뉴 메뉴리스트 적용 ]
+  // [ 메인메뉴 - 메뉴리스트 적용 ]
   const nav = document.querySelector('.main-menu')
   let mainMenuCode = '';
   mainMenuCode += `<ul class="menu">`
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded',function(){
   mainMenuCode += `</ul>`
   nav.innerHTML = mainMenuCode;
   
-  //
+  // [ 메인메뉴 - 오버시 보이게 하기 ]
   const title = document.querySelectorAll('.menu-item')
   title.forEach((v,i)=>{
     const menuContainer = document.querySelectorAll('.menu-item__contents');
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded',function(){
   })
   
 
-  // 서브메뉴 서치아이콘
+  // [ 서브메뉴 - 서치아이콘 ]
   const searchInput = document.querySelector('.search input') 
   const searchIcon = document.querySelector('.search i')
   searchInput.addEventListener('focus',function(){
@@ -69,4 +69,9 @@ window.addEventListener('DOMContentLoaded',function(){
     searchIcon.classList.remove('-opacity')
     searchInput.setAttribute('placeholder','');
   })
+  // enter시 내용 삭제
+  searchInput.addEventListener('keypress',function(e){
+    if(e.keyCode == 13){searchInput.value = "";}
+  })
+
 })

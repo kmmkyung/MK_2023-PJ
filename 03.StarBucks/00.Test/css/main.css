@@ -1,0 +1,9 @@
+body{
+  padding-top: 120px;
+}
+
+.badg{
+  position: fixed;
+  right: 10px;
+  top: 150px;
+}

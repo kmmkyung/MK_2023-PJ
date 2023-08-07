@@ -50,12 +50,8 @@ window.addEventListener('DOMContentLoaded',function(){
       menuContainer[i].classList.remove('-hidden') 
       let vH = menuUl[i].clientHeight;
       menuContainer[i].style.height = vH + 'px';
-      setTimeout(function(){
-        menuUl[i].style.opacity=1;
-      },1200)
     })
     v.addEventListener('mouseleave',function(){
-      menuUl[i].style.opacity=0;
       menuContainer[i].classList.add('-hidden')
       menuContainer[i].style.height = 0;
     })

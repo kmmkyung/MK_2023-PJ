@@ -1,7 +1,46 @@
+/* aside */
 .badge{
   position: fixed;
-  right: 10px;
+  right: 5vw;
   top: 140px;
   transition: opacity .6s;
   cursor: pointer;
+  z-index: 1;
 }
+
+.DTtop-banner{
+  width: 100%;
+  height: 32vw;
+}
+
+.DTtop-banner .banner-bg{
+  height: 100%;
+  background-image: url(../images/DT_top_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.DTtop-banner .banner-title{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.DTtop-banner .banner-title img{
+  width: 25vw;
+}
+
+.DTtop-banner .banner-title a{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.DTtop-banner .banner-drink{}

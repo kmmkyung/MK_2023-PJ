@@ -1,6 +1,6 @@
 * {
   /* outline: 1px dotted turquoise; */
-  /* outline: 1px dotted tomato; */
+  outline: 1px dotted tomato;
 }
 
 :root {
@@ -10,8 +10,10 @@
   --lightgray: #cccccc;
   --gray: #656565;
   --darkgray: #333333;
-  --main: #669900;
+  --menufont: #669900;
   --menubg:#2c2a29;
+  --darkgreen:#1e3932;
+  --green:#00704a;
   /* FONTSIZE */
   --font-size-S: 1.2rem;
   --font-size-M: 1.4rem;
@@ -38,3 +40,39 @@
 }
 
 /*----- CSS -----*/
+.btn{
+  font-size: var(--font-size-S);
+  padding: 15px;
+  width: 100px;
+  border-radius: 4px;
+  transition: all .4s;
+}
+
+.btn:hover{
+  text-decoration: underline;
+}
+
+.btn-darkgreen{
+  border: 2px solid var(--darkgreen);
+  color: var(--darkgreen);
+}
+
+.btn-darkgreen:hover{
+  background-color: var(--darkgreen);
+  color: var(--white);
+}
+
+.btn-white{
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-white:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn-transparent{
+  border: 2px solid var(--white);
+  color: var(--white);
+}

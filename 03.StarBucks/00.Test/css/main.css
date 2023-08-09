@@ -43,4 +43,29 @@
   margin-top: 30px;
 }
 
-.DTtop-banner .banner-drink{}
+.drinkimg{
+  width: 13%;
+}
+
+.drinkimg img{
+  width: 100%;
+}
+
+.banner-drink .drink1{
+  position: absolute;
+  left: 56%;
+  top: 16%;
+}
+
+.banner-drink .drink2{
+  position: absolute;
+  left: 50%;
+  top: 16%;
+  transform: translateX(-50%);
+}
+
+.banner-drink .drink3{
+  position: absolute;
+  left: 69%;
+  top: 16%;
+}

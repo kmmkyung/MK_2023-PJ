@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded',function(){
         <div class="menu-item__contents -hidden">
         <ul class="contents-menu">
         `
-    // 서브메뉴타이틀
+    // 서브메뉴타이틀 sTitle=커피,커피이야기,스타벅스 리저브...
     for(let sTitle in navData[title]){
       mainMenuCode += `
           <li class="contents-menu__list">

@@ -6,7 +6,6 @@ body{
   color: var(--darkgray);
   font-weight: normal;
   line-height: 1.2;
-  height: 300vh;
 }
 
 header{
@@ -14,7 +13,7 @@ header{
 }
 
 header .DTheader-wrap{
-  background-color: #f6f5ef;
+  background-color: var(--beige);
   position: fixed;
   top: 0;
   width: 100%;

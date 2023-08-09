@@ -8,12 +8,13 @@
   z-index: 1;
 }
 
-.DTtop-banner{
+/* banner */
+#DTtop-banner{
   width: 100%;
   height: 32vw;
 }
 
-.DTtop-banner .banner-bg{
+#DTtop-banner .banner-bg{
   height: 100%;
   background-image: url(../images/DT_top_bg.jpg);
   background-size: cover;
@@ -22,7 +23,7 @@
   position: relative;
 }
 
-.DTtop-banner .banner-title{
+#DTtop-banner .banner-title{
   width: 30%;
   height: 100%;
   display: flex;
@@ -32,15 +33,17 @@
   margin-left: 100px;
 }
 
-.DTtop-banner .banner-title img{
+#DTtop-banner .banner-title img{
   width: 25vw;
+  animation: opacityAni 1s forwards;
 }
 
-.DTtop-banner .banner-title a{
+#DTtop-banner .banner-title a{
   display: block;
   margin: 0 auto;
   text-align: center;
   margin-top: 30px;
+  animation: opacityAni 1s 4s forwards;
 }
 
 .drinkimg{
@@ -52,6 +55,7 @@
 }
 
 .banner-drink .drink1{
+  animation: drinkAni 3s 2s forwards;
   position: absolute;
   left: 56%;
   top: 16%;
@@ -68,4 +72,105 @@
   position: absolute;
   left: 69%;
   top: 16%;
+}
+
+.banner-drink .drink1 img:first-child{
+  animation: opacityAni 2.5s 1s forwards;
+}
+
+.banner-drink .drink2 img:first-child{
+  animation: opacityAni 2.5s 2s forwards;
+}
+
+.banner-drink .drink3 img:first-child{
+  animation: opacityAni 2.5s 3s forwards;
+}
+
+@keyframes opacityAni {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* notice */
+#notice{
+  width: 100%;
+  height: 62px;
+}
+
+.notice-line{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.notice-line__notice,
+.notice-line__promotion{
+  flex: 1;  
+}
+
+.notice-line__notice h4,
+.notice-line__promotion h4{
+  font-size: var(--font-size-L);
+  font-weight: bold;
+}
+
+.notice-line__notice i,
+.notice-line__promotion i{
+  font-size: var(--font-size-L);
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  border: 1px solid var(--darkgray);
+  border-radius: 50%;
+  margin: 0 20px 0 40px;
+}
+
+.notice-line__notice{
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: baseline;
+}
+
+.notice-line__notice h4{
+  width: 25%;
+  text-align: right;
+}
+
+.notice-line__notice ul{
+  margin-left: 20px;
+  width: 55%;
+}
+
+.notice-line__notice ul li{
+  font-size: var(--font-size-M);
+  margin:  0;
+  box-sizing: border-box;
+  height: 62px;
+  line-height: 62px;
+}
+
+.notice-line__notice ul li:hover{
+  text-decoration: underline;
+}
+
+.notice-line__promotion{
+  background-color: var(--beige); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice-promotionBanner{
+  width: 100%;
+  height: 658px;
+  background-color: var(--beige);
+}
+
+.notice-promotionBanner img{
+  height: 533px;
 }

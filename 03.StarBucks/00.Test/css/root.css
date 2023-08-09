@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px dotted turquoise; */
+  outline: 1px dotted turquoise;
   /* outline: 1px dotted tomato; */
 }
 
@@ -12,6 +12,7 @@
   --darkgray: #333333;
   --menufont: #669900;
   --menubg:#2c2a29;
+  --beige:#f6f5ef;
   --darkgreen:#1e3932;
   --green:#00704a;
   /* FONTSIZE */

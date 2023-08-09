@@ -10,4 +10,6 @@ window.addEventListener('DOMContentLoaded',function(){
       badge.style.pointerEvents='all';
     }
   })
+
+  
 })

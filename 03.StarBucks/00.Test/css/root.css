@@ -73,6 +73,16 @@
   color: var(--black);
 }
 
+.btn-black{
+  border: 2px solid var(--black);
+  color: black;
+}
+
+.btn-black:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .btn-transparent{
   border: 2px solid var(--white);
   color: var(--white);

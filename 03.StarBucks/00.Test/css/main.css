@@ -133,7 +133,8 @@
   background-color: var(--black);
   color: var(--white);
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  overflow: hidden;
 }
 
 .notice-line__notice h4{
@@ -148,10 +149,7 @@
 
 .notice-line__notice ul li{
   font-size: var(--font-size-M);
-  margin:  0;
-  box-sizing: border-box;
-  height: 62px;
-  line-height: 62px;
+  line-height: 40px;
 }
 
 .notice-line__notice ul li:hover{
@@ -171,6 +169,11 @@
   background-color: var(--beige);
 }
 
-.notice-promotionBanner img{
+.promotionBanner-wrap{
+  padding-top: 50px;
+  display: flex;
+}
+
+.promotionBanner img{
   height: 533px;
 }

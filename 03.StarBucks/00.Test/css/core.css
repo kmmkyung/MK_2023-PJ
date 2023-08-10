@@ -6,6 +6,7 @@ body{
   color: var(--darkgray);
   font-weight: normal;
   line-height: 1.2;
+  height: 400vh;
 }
 
 header{

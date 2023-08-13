@@ -42,53 +42,56 @@ window.addEventListener('DOMContentLoaded',function(){
   promotionAccordion()
   
   
-  
   // [ 공지사항 - 프로모션 가로 슬라이드 ]
-  function promotionSlide(){
-    const slideUl = document.querySelector('.promotionBanner-box');
-    const arrowLeft = document.querySelector('.fa-circle-chevron-left');
-    const arrowRight = document.querySelector('.fa-circle-chevron-right');
-
+  const arrowBtn = document.querySelectorAll('.promotionBanner-arrow i');
+  const slideUl = document.querySelector('.promotionBanner-box');
+  
+  // 1. 대상에 이벤트 설정 및 분기(L-0 / R-1)
+  arrowBtn.forEach(function(v,i){
+    v.addEventListener('click',function(){
+      promotionSlide(i)
+    })
+  })
+  
+  // 2. 슬라이드 이동 함수
+  function promotionSlide(i){
+    // li 재수집
+    const slideLl = document.querySelectorAll('.promotionBanner');
     // 광클금지
     let clickClick = 0;
-  
-      arrowRight.addEventListener('click',()=>{
-        if(clickClick) return;
-        clickClick = 1;
-        setTimeout(()=>{
-          clickClick = 0
-        },400)
-        const slideLl = document.querySelectorAll('.promotionBanner');
-        slideUl.style.left = '-102%';
-        slideUl.style.transition = "all .4s ease-in-out";
-        setTimeout(function(){
-            slideUl.appendChild(slideLl[0]);
-            slideUl.style.left = '0';
-            slideUl.style.transition = "none";
-          },400)
-      })
+    if(clickClick) return;
+    clickClick = 1;
+    setTimeout(()=>{
+      clickClick = 0
+    },400)
 
-      arrowLeft.addEventListener('click',()=>{
-        if(clickClick) return;
-        clickClick = 1;
-        setTimeout(()=>{
-          clickClick = 0
-        },400)
-        const slideLl = document.querySelectorAll('.promotionBanner');
-        slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0])
-        slideUl.style.left = '-102%';
+    if(i){
+      slideUl.style.left = -102 +'%';
+      slideUl.style.transition = 'left .4s ease-in-out';
+      setTimeout(function(){
+        slideUl.appendChild(slideLl[0]);
+        slideUl.style.left = '0';
         slideUl.style.transition = "none";
-        setTimeout(function(){
-          slideUl.style.left = '0';
-          slideUl.style.transition = "all .4s ease-in-out";
-        },1)
-      })
+      },400)
     }
-  promotionSlide()
+    else{
+      slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
+      slideUl.style.left = '-102%';
+      slideUl.style.transition = "none";
+      setTimeout(function(){
+        slideUl.style.left = '0';
+        slideUl.style.transition = "left .4s ease-in-out";
+      },1)
+    }
 
-  const pause = document.querySelector('.fa-pause');
-  const bullet = document.querySelectorAll('.fa-circle');
-  bullet.forEach((v,i),function(){
-    v.addEventListener('click',promotionSlide())
-  })
+    // [ 공지사항 - 프로모션 가로 슬라이드 블릿 ]
+    slideLl.forEach((v,i)=>{
+      v.setAttribute('data-seq',i)
+    })
+
+    const pause = document.querySelector('.fa-pause');
+    const bullet = document.querySelectorAll('.fa-circle');
+    nowList = document.querySelectorAll('.promotionBanner');
+  }
+
 })

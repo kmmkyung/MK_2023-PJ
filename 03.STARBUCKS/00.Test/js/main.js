@@ -48,8 +48,7 @@ window.addEventListener('DOMContentLoaded',function(){
     const slideUl = document.querySelector('.promotionBanner-box');
     const arrowLeft = document.querySelector('.fa-circle-chevron-left');
     const arrowRight = document.querySelector('.fa-circle-chevron-right');
-    const pause = document.querySelector('.fa-pause');
-    const bullet = document.querySelectorAll('.fa-circle');
+
     // 광클금지
     let clickClick = 0;
   
@@ -86,4 +85,10 @@ window.addEventListener('DOMContentLoaded',function(){
       })
     }
   promotionSlide()
+
+  const pause = document.querySelector('.fa-pause');
+  const bullet = document.querySelectorAll('.fa-circle');
+  bullet.forEach((v,i),function(){
+    v.addEventListener('click',promotionSlide())
+  })
 })

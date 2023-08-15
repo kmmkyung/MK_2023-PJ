@@ -124,6 +124,7 @@ flex-basis: 40%;
 .notice-line__notice h4,
 .notice-line__promotion h4{
   font-size: var(--font-size-L);
+  line-height: 62px;
   font-weight: bold;
 }
 
@@ -135,14 +136,14 @@ flex-basis: 40%;
   padding: 10px;
   border: 1px solid var(--darkgray);
   border-radius: 50%;
-  margin: 0 10px;
+  margin: auto 10px;
 }
 
 .notice-line__notice{
   background-color: var(--black);
   color: var(--white);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
   position: relative;
 }
@@ -155,7 +156,6 @@ flex-basis: 40%;
   margin-left: 20px;
   width: 70%;
   position: relative;
-  top: 100%;
 }
 
 .notice-line__notice ul li{
@@ -179,8 +179,8 @@ flex-basis: 40%;
 #notice-promotionBanner{
   width: 100%;
   box-sizing: border-box;
-  height: 658px;
-  /* height: 0px; */
+  /* height: 658px; */
+  height: 0px;
   background-color: var(--beige);
   position: relative;
   overflow: hidden;

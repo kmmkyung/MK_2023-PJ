@@ -45,25 +45,26 @@ window.addEventListener('DOMContentLoaded',function(){
   // [ 공지사항 - 프로모션 가로 슬라이드 ]
   const arrowBtn = document.querySelectorAll('.promotionBanner-arrow i');
   const slideUl = document.querySelector('.promotionBanner-box');
+  let clickClick = 0;
   
-  // 1. 대상에 이벤트 설정 및 분기(L-0 / R-1)
+  // 버튼 이벤트 설정 및 분기(L-0 / R-1)
   arrowBtn.forEach(function(v,i){
     v.addEventListener('click',function(){
       promotionSlide(i)
+      promotionBullet(i)
     })
   })
-  
-  // 2. 슬라이드 이동 함수
+
+  // 슬라이드 이동 함수
   function promotionSlide(i){
-    // li 재수집
+    // li 수집
     const slideLl = document.querySelectorAll('.promotionBanner');
     // 광클금지
-    let clickClick = 0;
     if(clickClick) return;
     clickClick = 1;
     setTimeout(()=>{
       clickClick = 0
-    },400)
+    },400);
 
     if(i){
       slideUl.style.left = -102 +'%';
@@ -76,22 +77,34 @@ window.addEventListener('DOMContentLoaded',function(){
     }
     else{
       slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
-      slideUl.style.left = '-102%';
+      slideUl.style.left = -102 +'%';
       slideUl.style.transition = "none";
       setTimeout(function(){
         slideUl.style.left = '0';
         slideUl.style.transition = "left .4s ease-in-out";
       },1)
     }
-
-    // [ 공지사항 - 프로모션 가로 슬라이드 블릿 ]
-    slideLl.forEach((v,i)=>{
-      v.setAttribute('data-seq',i)
-    })
-
-    const pause = document.querySelector('.fa-pause');
-    const bullet = document.querySelectorAll('.fa-circle');
-    nowList = document.querySelectorAll('.promotionBanner');
   }
 
+  // 프로모션 가로 슬라이드 블릿 함수
+  function promotionBullet(i){
+    const slideLl = document.querySelectorAll('.promotionBanner');
+    const bullet = document.querySelectorAll('.fa-circle');
+    let bulletseq = slideLl[i].getAttribute('data-seq');
+    for(let x of bullet){x.classList.remove('on')};
+    bullet[bulletseq].classList.add('on');
+  }
+
+  // 프로모션 가로 슬라이드 자동 이동
+  function autoSlide(){
+    let autoSlideInterval = setInterval(function(){
+      promotionSlide(1)
+      promotionBullet(1)
+    },4000)
+    return autoSlideInterval;
+  }
+  autoSlide()
+
+  // 
 })
+// const pause = document.querySelector('.fa-pause');

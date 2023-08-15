@@ -263,8 +263,8 @@ flex-basis: 40%;
   color: var(--green);
 }
 
-/* #rewards{
+#rewards{
   background-color: royalblue;
   width: 100%;
   height: 30vh;
-} */
+}

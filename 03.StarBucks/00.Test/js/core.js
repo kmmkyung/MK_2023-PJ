@@ -68,6 +68,7 @@ window.addEventListener('DOMContentLoaded',function(){
   searchInput.addEventListener('blur',function(){
     searchIcon.classList.remove('-opacity')
     searchInput.setAttribute('placeholder','');
+    searchInput.value = "";
   })
   // enter시 내용 삭제
   searchInput.addEventListener('keypress',function(e){

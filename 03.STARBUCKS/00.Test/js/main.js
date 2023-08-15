@@ -45,13 +45,16 @@ window.addEventListener('DOMContentLoaded',function(){
   // [ 공지사항 - 프로모션 가로 슬라이드 ]
   const arrowBtn = document.querySelectorAll('.promotionBanner-arrow i');
   const slideUl = document.querySelector('.promotionBanner-box');
+  const slideLl = document.querySelectorAll('.promotionBanner');
+  const bullet = document.querySelectorAll('.fa-circle');
   let clickClick = 0;
   
   // 버튼 이벤트 설정 및 분기(L-0 / R-1)
   arrowBtn.forEach(function(v,i){
     v.addEventListener('click',function(){
       promotionSlide(i)
-      promotionBullet(i)
+      promotionchange(bullet)
+      promotionchange(slideLl)
     })
   })
 
@@ -86,25 +89,40 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   }
 
-  // 프로모션 가로 슬라이드 블릿 함수
-  function promotionBullet(i){
-    const slideLl = document.querySelectorAll('.promotionBanner');
-    const bullet = document.querySelectorAll('.fa-circle');
-    let bulletseq = slideLl[i].getAttribute('data-seq');
-    for(let x of bullet){x.classList.remove('on')};
-    bullet[bulletseq].classList.add('on');
+  // 프로모션 가로 슬라이드 슬라이드 opacity / 블릿 색상 함수
+  function promotionchange(obj){
+    obj.forEach((v,i)=>{
+      let objsum = obj[i].getAttribute('data-seq'); // 0,1,2
+      v.classList.remove('on');
+    })
+    // 오른쪽 버튼을 누르면 2->0->1 순으로 클래스 on 주기
+    // 왼쪽 버튼을 누르면 0->2->1 순으로 클래스 on 주기
   }
 
   // 프로모션 가로 슬라이드 자동 이동
   function autoSlide(){
-    let autoSlideInterval = setInterval(function(){
+    autoSlideInterval = setInterval(function(){
       promotionSlide(1)
-      promotionBullet(1)
+      promotionchange(1)
     },4000)
     return autoSlideInterval;
   }
-  autoSlide()
+  // autoSlide()
 
-  // 
+  // 프로모션 가로 슬라이드 멈춤
+  function autoSlideStop(){
+    const pause = document.querySelector('.fa-pause');
+    const play = document.querySelector('.fa-play');
+    pause.addEventListener('click',()=>{
+      clearInterval(autoSlideInterval);
+      pause.classList.add('-hidden');
+      play.classList.remove('-hidden')
+    })
+    play.addEventListener('click',()=>{
+      autoSlide();
+      play.classList.add('-hidden');
+      pause.classList.remove('-hidden')
+    })
+  }
+  autoSlideStop()
 })
-// const pause = document.querySelector('.fa-pause');

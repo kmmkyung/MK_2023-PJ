@@ -208,6 +208,11 @@ flex-basis: 40%;
 .promotionBanner{
   position: relative;
   flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.promotionBanner.on{
+  opacity: 1;
 }
 
 .promotionBanner img{
@@ -230,7 +235,9 @@ flex-basis: 40%;
 }
 
 .promotionBanner-arrow .left:hover,
-.promotionBanner-arrow .right:hover{
+.promotionBanner-arrow .right:hover,
+.promotionBanner-btn .fa-pause:hover,
+.promotionBanner-btn .fa-play:hover{
   color: var(--black);
 }
 
@@ -253,6 +260,10 @@ flex-basis: 40%;
   left: 50%;
   top: 621px;
   transform: translateX(-50%);
+}
+
+.promotionBanner-btn i{
+  transition: all 0.4s;
 }
 
 .promotionBanner-btn .fa-circle{

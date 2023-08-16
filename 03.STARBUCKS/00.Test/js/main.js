@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded',function(){
   promotionAccordion()
   
 
-  // [ 공지사항 - 프로모션 가로 슬라이드 ]
+  // [ 공지사항 - 프로모션 가로 슬라이드 ]________________________________________________________________________________
   const arrowBtn = document.querySelectorAll('.promotionBanner-arrow i');
   const slideUl = document.querySelector('.promotionBanner-box');
   const pause = document.querySelector('.fa-pause');
@@ -109,17 +109,24 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   }
   
-  // 프로모션 가로 슬라이드 On 함수
+  // 프로모션 가로 슬라이드 On 함수________________________________________
+  // 문제 1. 현재순번은 맞는데 슬라이드 클래스 on(opacity:1)이 안맞는중
+  // 문제 2. 블릿을 화살표 누르면 한번 순서 먹었다가 움직임
+  // 함수를 호출할때마다 슬라이드랑 블릿을 다시 수집하는데 왜일까요
+  // 확인하기 쉽게 아코디언은 기본높이로 꺼내놨습니당~
+  // 이 함수는 자동이동(autoSlide), 화살표 누를때 호출하게 해놨음!
+
   function promotionOn(){
-    const slideLl = document.querySelectorAll('.promotionBanner');
-    const bullet = document.querySelectorAll('.fa-circle');
+    // 함수 실행될때마다 재수집
+    const slideLl = document.querySelectorAll('.promotionBanner'); // li 슬리이드 3개
+    const bullet = document.querySelectorAll('.fa-circle'); // 블릿 3개
 
     let nowseq = slideLl[2].getAttribute('data-seq');
     console.log('현재순번',nowseq);
     for(let x of slideLl){x.classList.remove('on')};
-    slideLl[nowseq].classList.add('on');
+    slideLl[nowseq].classList.add('on'); //<- 문제 1
     for(let x of bullet){x.classList.remove('on')};
-    bullet[nowseq].classList.add('on');
+    bullet[nowseq].classList.add('on'); //<- 문제 2
   }
 
   // 프로모션 가로 슬라이드 자동 이동

@@ -22,6 +22,7 @@ font-family: 'Nunito Sans', sans-serif;
     height: 100px;
     transition: height .3s;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav>ul, .nav>ol{

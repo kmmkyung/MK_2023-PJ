@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+body{
+  font-family: 'Noto Sans','Nanum Gothic', sans-serif;
+  color: var(--darkgray);
+  font-weight: normal;
+  line-height: 1.2;
+  height: 400vh;
+}
+
+header{
+  height: 120px;
+}
+
+header .DTheader-wrap{
+  background-color: var(--beige);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header .inner{
+  max-width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px 10px;
+
+}
+
+header .logo{
+  position: absolute;
+  height: 75px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 서브메뉴 */
+header .sub-menu{
+  display: flex;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+header .sub-menu ul.menu{
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+header .sub-menu ul.menu li{
+  position: relative;
+}
+
+header .sub-menu ul.menu li::before{
+  content: '|';
+  width: 1px;
+  height: 12px;
+  color: var(--gray);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .sub-menu ul.menu li:first-child::before{
+  display: none;
+}
+
+.sub-menu ul.menu li a{
+  font-size: var(--font-size-S);
+  display: block;
+  padding: 12px 16px;
+  color: var(--gray);
+}
+
+.sub-menu ul.menu li a:hover{
+  text-decoration: underline;
+}
+
+header .sub-menu .search{
+  position: relative;
+}
+
+header .sub-menu .search input{
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  padding-left: 10px;
+  border: 1px solid var(--lightgray);
+  color: var(--gray);
+  background-color: var(--white);
+  border-radius: 5px;
+  font-size: var(--font-size-S);
+  transition: width 0,4s;
+}
+
+header .sub-menu .search input:focus{
+  width: 190px;
+  border-color: var(--menufont);
+}
+
+header .sub-menu .search i{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  margin: auto;
+  height: var(--font-size-M);
+  font-size: var(--font-size-M);
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+/* 메인메뉴 */
+.main-menu{
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.main-menu .menu{
+  display: flex;
+}
+
+.main-menu .menu-item .menu-item__name{
+  padding: 0px 20px;
+  font-size: var(--font-size-M);
+  height: 100%;
+  line-height: 60px;
+}
+
+.main-menu .menu-item:hover .menu-item__name{
+  background-color: var(--menubg);
+  color: var(--menufont);
+  text-decoration: underline;
+}
+
+.main-menu .menu-item__contents{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background: var(--menubg);
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.main-menu .contents-menu{
+  max-width: 1100px;
+  margin: 0 auto;ㄷ
+  padding: 20px 10px;
+  display: flex;
+}
+
+.main-menu .contents-menu .contents-menu__list{
+  width: 220px;
+  padding-bottom: 40px;
+}
+
+.main-menu .contents-menu .contents-menu__list h4{
+  font-size: var(--font-size-M);
+  padding: 20px 0px 10px;
+  color: var(--white);
+}
+
+.main-menu .contents-menu .contents-menu__list ul>li{
+  font-size: var(--font-size-S);
+  padding: 5px 0px;
+  color: var(--gray);
+}
+
+.main-menu .contents-menu .contents-menu__list h4:hover,
+.main-menu .contents-menu .contents-menu__list ul>li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

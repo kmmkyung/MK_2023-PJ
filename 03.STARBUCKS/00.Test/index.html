@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Coffee Korea</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/starbucks_logo.png"/>
+    <script src="https://kit.fontawesome.com/77fc3db515.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- JS -->
+    <script src="./js/data/menuData.js"></script>
+    <script src="./js/core.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="DTheader-wrap">
+        <div class="inner">
+          <a href="/" class="logo">
+            <img src="./images/starbucks_logo.png" alt="Starbucks" />
+          </a>
+          <!-- 서브메뉴 -->
+          <div class="sub-menu">
+            <ul class="menu">
+              <li>
+                <a href="#">Sign In</a>
+              </li>
+              <li>
+                <a href="#">My Starbucks</a>
+              </li>
+              <li>
+                <a href="#">Customer Service & Ideas</a>
+              </li>
+              <li>
+                <a href="#">Find a Store</a>
+              </li>
+            </ul>
+            <div class="search">
+              <input type="text" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <!-- 메인메뉴 -->
+          <nav class="main-menu">
+            <!-- 메뉴 -->
+            <!-- <ul class="menu"> -->
+            <!-- 메뉴 타이틀
+              <li class="menu-item">
+                <a href="#">
+                  <div class="menu-item__name">MENU</div>
+                </a>
+            -->
+              <!-- 서브메뉴타이틀
+                <div class="menu-item__contents">
+                  <ul class="contents-menu">
+                    <li class="contents-menu__list">
+                      <h4>SUBTITLE</h4>
+              -->
+              <!-- 하위메뉴
+                      <ol>
+                        <li>list</li>
+                      </ol>
+                    -->
+                    <!-- </li>
+                  </ul>
+                </div> -->
+              <!-- </li> -->
+            <!-- </ul> -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <aside class="badge">
+      <img src="./images/badg.png" alt="badge">
+    </aside>
+    <section id="container">
+      <section id="DTtop-banner">
+        <div class="banner-bg">
+          <div class="banner-title">
+            <img class="-opacitpromotiony" src="./images/DT_top_title.png" alt="TURN UP YOUR SUMMER">
+            <a class="btn btn-darkgreen -opacity" href="#">자세히 보기</a>
+          </div>
+          <div class="banner-drink">
+            <div class="drink2 drinkimg">
+              <img class="-opacity" src="./images/DT_top_drink2.png" alt="drink">
+              <img class="-hidden" src="./images/M_top_drink2.png" alt="drink">
+            </div>
+            <div class="drink1 drinkimg">
+              <img class="-opacity" src="./images/DT_top_drink1.png" alt="drink">
+              <img class="-hidden" src="./images/M_top_drink1.png" alt="drink">
+            </div>
+            <div class="drink3 drinkimg">
+              <img class="-opacity" src="./images/DT_top_drink3.png" alt="drink">
+              <img class="-hidden" src="./images/M_top_drink3.png" alt="drink">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="notice">
+        <div class="notice-line inner">
+          <div class="notice-line__notice">
+            <h4>공지사항</h4>
+            <ul>
+              <li>시스템 개선 및 서비스 점검 안내</li>
+              <li>개인정보처리방침 개정 안내</li>
+              <li>스타벅스 사칭 피싱 문자 및 SNS(카카오톡 오픈채팅, 페이스북 등) 이용 주의 안내</li>
+            </ul>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="notice-line__promotion">
+            <h4>스타벅스 프로모션</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+        <div id="notice-promotionBanner">
+          <div class="promotionBanner-wrap">
+            <ul class="promotionBanner-box">
+              <li class="promotionBanner" data-seq="0">
+                <img src="./images/DT_promotion_banner_3.jpg" alt="promotion3">
+                <a class="btn btn-black" href="#">자세히 보기</a>
+              </li>
+              <li class="promotionBanner on" data-seq="1">
+                <img src="./images/DT_promotion_banner_1.jpg" alt="promotion1">
+                <a class="btn btn-black" href="#">자세히 보기</a>
+              </li>
+              <li class="promotionBanner" data-seq="2">
+                <img src="./images/DT_promotion_banner_2.jpg" alt="promotion2">
+                <a class="btn btn-black" href="#">자세히 보기</a>
+              </li>
+            </ul>
+          </div>
+          <div class="promotionBanner-arrow">
+            <i class="fa-solid fa-circle-chevron-left left"></i>
+            <i class="fa-solid fa-circle-chevron-right right"></i>
+          </div>
+          <div class="promotionBanner-btn">
+            <i class="fa-solid fa-pause"></i>
+            <i class="fa-solid fa-play -hidden"></i>
+            <i class="fa-solid fa-circle" data-seq="0"></i>
+            <i class="fa-solid fa-circle on" data-seq="1"></i>
+            <i class="fa-solid fa-circle" data-seq="2"></i>
+          </div>
+        </div>
+      </section>
+      <section id="rewards"></section>
+      <section id="bean"></section>
+      <section id="reserve"></section>
+      <section id="favorite"></section>
+      <section id="magazine"></section>
+      <section id="store"></section>
+    </section>
+    <footer></footer>
+  </body>
+</html>

@@ -69,7 +69,6 @@ const cover = document.querySelector(".page3-vidbox__cover")
 const retVal = x => x.getBoundingClientRect().top;
 
 window.addEventListener("scroll",()=>{
-    // console.log("스크롤중",retVal(pg3))
     if(retVal(pg3)<0) {
         vid.style.position="relative";
         vid.style.top="0";
@@ -80,6 +79,7 @@ window.addEventListener("scroll",()=>{
         vid.style.top="0";
         vid.pause();
     }
+    // console.log("스크롤중",retVal(pg3))
 })
 
 // let scrollTop = 0;

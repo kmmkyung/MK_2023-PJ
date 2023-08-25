@@ -47,6 +47,7 @@
   width: 100px;
   border-radius: 4px;
   transition: all .4s;
+  text-align: center;
 }
 
 .btn:hover{
@@ -54,12 +55,8 @@
 }
 
 .btn-darkgreen{
-  border: 2px solid var(--darkgreen);
-  color: var(--darkgreen);
-}
-
-.btn-darkgreen:hover{
-  background-color: var(--darkgreen);
+  background-color: var(--green);
+  border: 2px solid var(--green);
   color: var(--white);
 }
 

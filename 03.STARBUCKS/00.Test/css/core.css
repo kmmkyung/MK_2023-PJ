@@ -5,8 +5,6 @@ body{
   font-family: 'Noto Sans','Nanum Gothic', sans-serif;
   color: var(--darkgray);
   font-weight: normal;
-  line-height: 1.2;
-  height: 400vh;
 }
 
 header{

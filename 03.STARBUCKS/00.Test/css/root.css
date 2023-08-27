@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px dotted turquoise; */
+  outline: 1px dotted turquoise;
   /* outline: 1px dotted tomato; */
 }
 
@@ -15,6 +15,7 @@
   --beige:#f6f5ef;
   --darkgreen:#1e3932;
   --green:#00704a;
+  --gold:#b68341;
   /* FONTSIZE */
   --font-size-S: 1.2rem;
   --font-size-M: 1.4rem;
@@ -67,6 +68,16 @@
 
 .btn-white:hover{
   background-color: var(--white);
+  color: var(--black);
+}
+
+.btn-gold{
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-gold:hover{
+  background-color: var(--gold);
   color: var(--black);
 }
 

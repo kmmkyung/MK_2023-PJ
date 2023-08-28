@@ -55,9 +55,20 @@
   text-decoration: underline;
 }
 
-.btn-darkgreen{
+.btn-green{
   background-color: var(--green);
   border: 2px solid var(--green);
+  color: var(--white);
+}
+
+
+.btn-darkgreen{
+  border: 2px solid var(--darkgreen);
+  color: var(--darkgreen);
+}
+
+.btn-darkgreen:hover{
+  background-color: var(--darkgreen);
   color: var(--white);
 }
 

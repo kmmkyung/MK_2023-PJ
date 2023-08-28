@@ -367,10 +367,9 @@ flex-basis: 40%;
 
 .bean-container{
   height: 100%;
-  gap: 20vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .bean-content{
@@ -445,40 +444,44 @@ flex-basis: 40%;
 #favorite{
   width: 100%;
   height: 800px;
-  overflow: hidden;
 }
 
 #favorite .favorite-wrap{
-  background: url(../images/DT_favorite_bg.jpg) no-repeat;
-  width: 100%;
+  background: url(../images/DT_favorite_bg.jpg) no-repeat center;
   height: 100%;
   background-attachment: fixed;
-  position: relative;
+  background-position: center 120px;
 }
 
-#favorite img{
-  position: absolute;
-  width: 50vw;
-  top: 80px;
-  right: 100px;
-}
 
 #favorite .inner{
   max-width: 1100px;
   margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
 }
 
 .favorite-content{
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+  align-items: flex-end;
 }
 
-.favorite-content__title{
-  width: 300px;
-  line-height: 1.6;
+.favorite-content a{
+  display: block;
 }
 
-.favorite-content__title h3{
-  font-size: 10rem;
-  column-width: 100px;
-  /* width: 100%; */
+.favorite-img{
+  width: 50vw;
+  aspect-ratio: 59/38;
+}
+
+#magazine{
+  height: 400px;
 }

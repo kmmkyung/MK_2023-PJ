@@ -285,7 +285,6 @@ flex-basis: 40%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 5vw;
 }
 
 #rewards .inner{
@@ -297,21 +296,24 @@ flex-basis: 40%;
   height: 100%;
 }
 
+.rewards-content{
+  width: 80%;
+}
+
 .rewards-wrap h2{
   color: var(--white);
-  font-size: var(--font-size-L);
-  height: 20%;
+  font-size: var(--font-size-Title);
 }
 
 .rewards-login,
 .rewards-gift{
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 40%;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 .rewards-login{
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -319,19 +321,22 @@ flex-basis: 40%;
   font-size: var(--font-size-M);
 }
 
-.rewards-login a{
-  width: 100px;
-  box-sizing: border-box;
+.rewards-login__btn{
+  display: flex;
 }
 
-.rewards-login :nth-child(2){
+.rewards-login a{
+  display: block;
+  width: 50px;
+}
+
+.rewards-login__btn :nth-child(1){
   margin-right: 20px;
 }
 
 .rewards-login p,
 .rewards-gift p{
   color: var(--white);
-  width: min(50vw,600px);
   line-height: 20px;
 }
 
@@ -340,8 +345,7 @@ flex-basis: 40%;
 }
 
 .rewards-gift a{
-  box-sizing: border-box;
-  width: 220px;
+  width: 144px;
 }
 
 #bean{
@@ -377,12 +381,12 @@ flex-basis: 40%;
 }
 
 .bean-content h4{
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-L);
   opacity: 0.8;
 }
 
 .bean-content h2{
-  font-size: var(--font-size-L);
+  font-size: var(--font-size-Title);
   margin: 10px 0;
 }
 
@@ -454,26 +458,43 @@ flex-basis: 40%;
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 
 #favorite .inner{
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 60px;
 }
 
 .favorite-content{
   color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 400px;
-  gap: 20px;
+  width: 360px;
+  height: 100%;
+  justify-content: center;
   align-items: flex-end;
+  gap: 20px;
+}
+
+.favorite-content img{
+  width: 300px;
+}
+
+.favorite-content__text{
+  text-align: right;
+}
+
+.favorite-content__text h2{
+  font-size: var(--font-size-Title);
+  font-weight: normal;
+}
+
+.favorite-content__text p{
+  margin-top: 20px;
+  font-size: var(--font-size-M);
 }
 
 .favorite-content a{
@@ -481,7 +502,11 @@ flex-basis: 40%;
 }
 
 .favorite-img{
-  width: 50vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5vw;
+  width: 45vw;
   aspect-ratio: 59/38;
 }
 
@@ -526,7 +551,8 @@ flex-basis: 40%;
 }
 
 .magazine-img{
+  display: block;
   position: absolute;
   top: 0;
-  right: 470px;
+  left: min(60vw,1080px);
 }

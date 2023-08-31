@@ -75,4 +75,27 @@ window.addEventListener('DOMContentLoaded',function(){
     if(e.keyCode == 13){searchInput.value = "";}
   })
 
+
+  // [푸터 메뉴리스트 적용]
+  const footerNav = document.querySelector('.footer-menu');
+  let footerMenuCode = '';
+  footerMenuCode+=`<ul class="menu">`
+  for(let title in footerData){
+    footerMenuCode+=`
+    <li class="menu-item">
+    <h4><a href="#">${title}</a></h4>
+      <ol> 
+    `
+    for(let list of footerData[title]){
+      footerMenuCode+=`
+        <li><a href="#">${list}</a></li>
+      `
+    }
+    footerMenuCode+=`
+      </ol>
+    </li>
+    `
+  }
+  footerMenuCode+=`</ul>`
+  footerNav.innerHTML=footerMenuCode;
 })

@@ -472,7 +472,7 @@ flex-basis: 40%;
   color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 400px;
   height: 100%;
   justify-content: center;
   align-items: flex-end;
@@ -525,16 +525,16 @@ flex-basis: 40%;
 .magazine-content{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  left: min(10vw,500px);
+  transform: translate(-50%,-50%);
+  left: 50%;
   z-index: 1;
 
 }
 
 .magazine-content__title{
   background: url(../images/DT_magazine_title.png) no-repeat top/100%;
-  width: 600px;
-  height: 100px;
+  width: min(60vw,600px);
+  aspect-ratio: 6/1;
 }
 
 .magazine-content__title span{

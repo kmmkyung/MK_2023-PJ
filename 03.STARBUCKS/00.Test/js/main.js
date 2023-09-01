@@ -14,6 +14,34 @@ window.addEventListener('DOMContentLoaded',function(){
   })
 
 
+  // [ 배너 - 모바일 사이즈]
+  // -윈도우 가로사이즈가 930px 이하라면 #banner의 DT이미지 M이미지로 바꾸기
+  window.addEventListener('resize',function(){
+    const winWidth = window.innerWidth;
+    const bannerDT = document.querySelectorAll('.banner-DT')    
+    const bannerM = document.querySelectorAll('.banner-M')
+    if(winWidth<=930){
+      bannerDT.forEach(function(v){
+        v.classList.remove('-opacity')
+        v.classList.add('-hidden')
+      })
+      bannerM.forEach(function(v){
+        v.classList.add('-opacity')
+        v.classList.remove('-hidden')
+      })
+    }
+    else{
+      bannerM.forEach(function(v){
+        v.classList.remove('-opacity')
+        v.classList.add('-hidden')
+      })
+      bannerDT.forEach(function(v){
+        v.classList.add('-opacity')
+        v.classList.remove('-hidden')
+      })
+    }
+  })
+  
   // [ 공지사항 - 공지 세로 슬라이드 ]
   function noticeSlide(){
     const noticeUl = document.querySelector('.notice-line__notice ul');

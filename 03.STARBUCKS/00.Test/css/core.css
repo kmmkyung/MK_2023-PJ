@@ -308,3 +308,20 @@ footer .button a{
 footer a:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width: 930px) {
+  .footer-menu .menu .menu-item {
+    flex-basis: 33.333%;
+    margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 670px){
+  .copy-menu{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

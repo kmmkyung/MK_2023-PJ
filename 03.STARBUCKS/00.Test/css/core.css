@@ -11,7 +11,7 @@ header{
   height: 120px;
 }
 
-header .DTheader-wrap{
+header .DT-header{
   background-color: var(--beige);
   position: fixed;
   top: 0;
@@ -19,7 +19,7 @@ header .DTheader-wrap{
   z-index: 999;
 }
 
-header .inner{
+.DT-header .inner{
   max-width: 1100px;
   height: 120px;
   margin: 0 auto;
@@ -28,7 +28,7 @@ header .inner{
 
 }
 
-header .logo{
+.DT-header .logo{
   position: absolute;
   height: 75px;
   top: 0;
@@ -37,24 +37,24 @@ header .logo{
 }
 
 /* 서브메뉴 */
-header .sub-menu{
+.DT-header .sub-menu{
   display: flex;
   position: absolute;
   right: 40px;
   top: 10px;
 }
 
-header .sub-menu ul.menu{
+.sub-menu ul.menu{
   display: flex;
   height: 40px;
   align-items: center;
 }
 
-header .sub-menu ul.menu li{
+.sub-menu ul.menu li{
   position: relative;
 }
 
-header .sub-menu ul.menu li::before{
+.sub-menu ul.menu li::before{
   content: '|';
   width: 1px;
   height: 12px;
@@ -65,7 +65,7 @@ header .sub-menu ul.menu li::before{
   margin: auto;
 }
 
-header .sub-menu ul.menu li:first-child::before{
+.sub-menu ul.menu li:first-child::before{
   display: none;
 }
 
@@ -324,4 +324,105 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* 모바일용 */
+header .M-header{
+  background-color: var(--beige);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.M-header .M-logo{
+  margin-left: 20px;
+}
+
+.M-header .M-logo img{
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.M-header .icon{
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.M-header .icon i{
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.M-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+}
+
+.M-menu-bg{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.M-menu-wrap{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(80vw,400px);
+  height: 100vh;
+  background: var(--darkgray);
+}
+
+.M-menu-wrap .close{
+  position: absolute;
+  top: 5%;
+  left: -15%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.M-menu-wrap .search{
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.M-menu-wrap .search input{
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.M-menu-wrap .search label{
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+  background-color: var(--gray);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 2vw;
+  font-size: var(--font-size-M);
+  line-height: 40px;
+  vertical-align: top;
+}
+
+/* ______________________미디어쿼리 ______________________*/
+@media screen and (max-width: 970px) {
+  header{
+    height: 70px;
+  }
+  
 }

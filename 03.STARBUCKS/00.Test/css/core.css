@@ -126,6 +126,10 @@ header .sub-menu .search i{
   display: flex;
 }
 
+.main-menu .menu-item:first-child{
+  display: none;
+}
+
 .main-menu .menu-item .menu-item__name{
   padding: 0px 20px;
   font-size: var(--font-size-M);
@@ -367,6 +371,10 @@ header .M-header{
   right: 0;
   width: 100%;
   height: 100vh;
+  transition: all 2s;
+}
+
+.M-menu a{
   color: var(--white);
 }
 
@@ -382,7 +390,8 @@ header .M-header{
   right: 0;
   width: min(80vw,400px);
   height: 100vh;
-  background: var(--darkgray);
+  background: var(--menubg);
+  transform: translateX(120%);
 }
 
 .M-menu-wrap .close{
@@ -390,13 +399,16 @@ header .M-header{
   top: 5%;
   left: -15%;
   font-size: 30px;
+  padding: 10px;
   cursor: pointer;
+  color: var(--white);
 }
 
 .M-menu-wrap .search{
   width: 100%;
-  margin: 20px 0;
+  padding:  40px 0;
   text-align: center;
+  background-color: var(--gray);
 }
 
 .M-menu-wrap .search input{
@@ -410,19 +422,69 @@ header .M-header{
   display: inline-block;
   width: 20%;
   height: 40px;
-  background-color: var(--gray);
+  background-color: var(--darkgray);
+  color: var(--white);
   border-radius: 10px;
   text-align: center;
-  margin-left: 2vw;
+  margin-left: 5px;
   font-size: var(--font-size-M);
   line-height: 40px;
-  vertical-align: top;
 }
 
+.M-nav{
+  width: 100%;
+  height: 100%;
+}
+
+.M-nav-menu-item{
+  padding: 0 20px;
+  position: relative;
+}
+
+.M-nav-menu-item:first-child{
+  background-color: var(--gray);
+}
+
+.M-nav-menu-item > a{
+  font-size: var(--font-size-Title);
+  display: block;
+  padding: 20px 0;
+  position: relative;
+}
+
+.M-nav-menu-item i{
+  color: var(--white);
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  top: 0;
+  cursor: pointer;
+}
+
+.M-nav-menu-item__content a{
+  display: block;
+  font-size: var(--font-size-L);
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.M-nav-menu-item__content i{
+  color: var(--white);
+  font-size: 30px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+}
 /* ______________________미디어쿼리 ______________________*/
 @media screen and (max-width: 970px) {
   header{
     height: 70px;
   }
-  
 }

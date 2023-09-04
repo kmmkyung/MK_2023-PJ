@@ -408,7 +408,7 @@ header .M-header{
 
 .M-menu-wrap .search label{
   display: inline-block;
-  width: 30%;
+  width: 20%;
   height: 40px;
   background-color: var(--gray);
   border-radius: 10px;

@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
   // [ 배너 - 모바일 사이즈]
   // -윈도우 가로사이즈가 930px 이하라면 #banner의 DT이미지 M이미지로 바꾸기
-  window.addEventListener('resize',function(){
+  function bannerChg(){
     const winWidth = window.innerWidth;
     const bannerDT = document.querySelectorAll('.banner-DT')    
     const bannerM = document.querySelectorAll('.banner-M')
@@ -40,8 +40,10 @@ window.addEventListener('DOMContentLoaded',function(){
         v.classList.remove('-hidden')
       })
     }
-  })
-  
+  }
+  bannerChg()
+  window.addEventListener('resize',bannerChg)
+
   // [ 공지사항 - 공지 세로 슬라이드 ]
   function noticeSlide(){
     const noticeUl = document.querySelector('.notice-line__notice ul');

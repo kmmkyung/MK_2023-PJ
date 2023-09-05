@@ -371,7 +371,7 @@ header .M-header{
   right: 0;
   width: 100%;
   height: 100vh;
-  transition: all 2s;
+  z-index: 1;
 }
 
 .M-menu a{
@@ -379,9 +379,12 @@ header .M-header{
 }
 
 .M-menu-bg{
-  width: 100%;
-  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
 }
 
 .M-menu-wrap{
@@ -392,6 +395,7 @@ header .M-header{
   height: 100vh;
   background: var(--menubg);
   transform: translateX(120%);
+  transition: all 1s;
 }
 
 .M-menu-wrap .close{

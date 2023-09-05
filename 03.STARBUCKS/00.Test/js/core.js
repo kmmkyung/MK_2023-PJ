@@ -67,7 +67,8 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   window.addEventListener("resize", menuChg);
-
+  menuChg()
+  
   // [ 메인메뉴 - 모바일 메뉴리스트 적용 ]
   const mobileNav = document.querySelector(".M-nav");
   let mobileMenuCode = "";
@@ -117,17 +118,16 @@ window.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.querySelector('.M-menu');
     const close = document.querySelector('.fa-xmark');
     bar.addEventListener('click',()=>{
-      mobileMenu.classList.remove('-hidden')
-      mobileMenu.classList.add('-show')
-      // mobileMenu.style.transform='translateX(0%)';
+      // mobileMenu.classList.remove('-hidden');
+      document.querySelector('.M-menu-bg').style.visibility='visible';
+      document.querySelector('.M-menu-bg').style.opacity='1';
       document.querySelector('.M-menu-wrap').style.transform='translateX(0%)';
     })
     close.addEventListener('click',()=>{
-      // mobileMenu.style.transform='translateX(100%)';
-      // mobileMenu.classList.remove('-show')
-      // mobileMenu.classList.add('-hidden')
+      // mobileMenu.classList.add('-hidden');
       document.querySelector('.M-menu-wrap').style.transform='translateX(120%)';
-
+      document.querySelector('.M-menu-bg').style.visibility='hidden';
+      document.querySelector('.M-menu-bg').style.opacity='0';
     })
   }
   mobileMenuShow()

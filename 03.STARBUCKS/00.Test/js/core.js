@@ -150,6 +150,8 @@ window.addEventListener("DOMContentLoaded", function () {
       v.addEventListener('click',function(){
         StitleWrap[i].classList.toggle('on')
         document.querySelector('.M-menu-content').classList.toggle('on')
+        titleIcon[i].classList.toggle('fa-chevron-up')
+        titleIcon[i].classList.toggle('fa-chevron-down')
       })
     })
   }

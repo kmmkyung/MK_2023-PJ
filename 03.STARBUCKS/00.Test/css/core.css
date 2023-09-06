@@ -460,7 +460,7 @@ header .M-header{
 }
 
 .M-nav-menu-item > a{
-  font-size: var(--font-size-Title);
+  font-size: var(--font-size-L);
   display: block;
   padding: 20px 0;
   position: relative;
@@ -519,4 +519,14 @@ header .M-header{
   header{
     height: 70px;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-menu .menu .menu-item {
+    flex-basis: 50%;
+  }
+  .footer-award {
+    flex-direction: column;
+    align-items: center;
+}
 }

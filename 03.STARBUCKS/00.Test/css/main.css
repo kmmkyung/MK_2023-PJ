@@ -504,6 +504,7 @@
 .favorite-content__text p {
   margin-top: 20px;
   font-size: var(--font-size-M);
+  word-break: keep-all;
 }
 
 .favorite-content a {

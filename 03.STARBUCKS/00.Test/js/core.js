@@ -112,14 +112,18 @@ window.addEventListener("DOMContentLoaded", function () {
   mobileMenuCode += `</ul>`;
   mobileNav.innerHTML = mobileMenuCode;
   
-  // const menuItemContent = document.querySelectorAll('.M-nav-menu-item__content ul');
-  // const menuItemContentLI = document.querySelectorAll('.M-nav-menu-item__content ul li');
-  // menuItemContentLI.forEach(function(v){
-    
-  //   if(  === 0){
-  //     document.querySelector('.sTitle-icon').style.display='none'
-  //   }
-  // })
+  const menuItemContent = document.querySelectorAll('.M-nav-menu-item__content ul');
+  const sTitleIcon = document.querySelectorAll('.sTitle-icon');
+  menuItemContent.forEach(function(v,i){
+    // console.log(v.children.length);
+    // console.log(sTitleIcon[i]);
+    if( v.children.length !== 0){
+      return
+    }
+    else{
+      sTitleIcon[i].style.display='none'
+    }
+  })
 
 
   // [ 메인메뉴 - 모바일 bar 클릭시 메뉴보임]

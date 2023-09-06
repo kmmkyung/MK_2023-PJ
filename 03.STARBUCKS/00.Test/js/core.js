@@ -77,9 +77,9 @@ window.addEventListener("DOMContentLoaded", function () {
     mobileMenuCode += `
     <li class="M-nav-menu-item">
       <a href="#">${Title}
-        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down title-icon"></i>
       </a>
-      <div class="M-nav-menu-item-wrap -hidden">
+      <div class="M-nav-menu-item-wrap">
         <ul class="M-nav-menu__content">
           <li class="M-nav-menu-item__content">
             <a href="#">한눈에보기</a>
@@ -89,9 +89,9 @@ window.addEventListener("DOMContentLoaded", function () {
           </li>
           <li class="M-nav-menu-item__content">
             <a href="#">${sTitle}
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down sTitle-icon"></i>
             </a>
-            <ul>
+            <ul class="-hidden">
       `;
       for (let list of navData[Title][sTitle]) {
         mobileMenuCode += `
@@ -111,6 +111,16 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   mobileMenuCode += `</ul>`;
   mobileNav.innerHTML = mobileMenuCode;
+  
+  // const menuItemContent = document.querySelectorAll('.M-nav-menu-item__content ul');
+  // const menuItemContentLI = document.querySelectorAll('.M-nav-menu-item__content ul li');
+  // menuItemContentLI.forEach(function(v){
+    
+  //   if(  === 0){
+  //     document.querySelector('.sTitle-icon').style.display='none'
+  //   }
+  // })
+
 
   // [ 메인메뉴 - 모바일 bar 클릭시 메뉴보임]
   function mobileMenuShow(){
@@ -118,19 +128,32 @@ window.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.querySelector('.M-menu');
     const close = document.querySelector('.fa-xmark');
     bar.addEventListener('click',()=>{
-      // mobileMenu.classList.remove('-hidden');
       document.querySelector('.M-menu-bg').style.visibility='visible';
       document.querySelector('.M-menu-bg').style.opacity='1';
       document.querySelector('.M-menu-wrap').style.transform='translateX(0%)';
     })
     close.addEventListener('click',()=>{
-      // mobileMenu.classList.add('-hidden');
       document.querySelector('.M-menu-wrap').style.transform='translateX(120%)';
       document.querySelector('.M-menu-bg').style.visibility='hidden';
       document.querySelector('.M-menu-bg').style.opacity='0';
     })
   }
   mobileMenuShow()
+
+    // [ 메인메뉴 - 모바일 메뉴 아코디언 ]
+  function mobileMenuAccordion(){
+    const title = document.querySelectorAll('.M-nav-menu-item')
+    const StitleWrap = document.querySelectorAll('.M-nav-menu-item-wrap')
+    const titleIcon = document.querySelectorAll('.title-icon')
+    
+    title.forEach(function(v,i){
+      v.addEventListener('click',function(){
+        StitleWrap[i].classList.toggle('on')
+        document.querySelector('.M-menu-content').classList.toggle('on')
+      })
+    })
+  }
+  mobileMenuAccordion()
 
   // [ 서브메뉴 - 서치아이콘 ]
   const searchInput = document.querySelector(".search input");

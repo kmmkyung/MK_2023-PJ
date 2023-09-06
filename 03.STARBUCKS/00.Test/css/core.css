@@ -357,6 +357,8 @@ header .M-header{
   display: flex;
   gap: 20px;
   margin-right: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .M-header .icon i{
@@ -371,7 +373,6 @@ header .M-header{
   right: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
 }
 
 .M-menu a{
@@ -392,10 +393,19 @@ header .M-header{
   top: 0;
   right: 0;
   width: min(80vw,400px);
-  height: 100vh;
+  height: 100%;
   background: var(--menubg);
   transform: translateX(120%);
   transition: all 1s;
+  z-index: 2;
+}
+
+.M-menu-content{
+  height: 100%;
+}
+
+.M-menu-content.on{
+  overflow: auto;
 }
 
 .M-menu-wrap .close{
@@ -464,6 +474,24 @@ header .M-header{
   padding: 20px;
   top: 0;
   cursor: pointer;
+}
+
+.M-nav-menu-item-wrap{
+  height: 0;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.M-nav-menu-item-wrap.on{
+  height: auto;
+}
+
+.M-nav-menu__content{
+  height: 100%;
+}
+
+.M-nav-menu-item__content{
+  padding-left: 20px;
 }
 
 .M-nav-menu-item__content a{

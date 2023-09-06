@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   menu.forEach((v, i) => {
     v.onmouseenter = () => {
-      submenu[i].style.display = "block"; 
+      submenu[i].style.display = "block";
 
       // 서브메뉴 전체 높이값
       // sw <- about us 부모요소에 submenu클래스 없어서 추가하고

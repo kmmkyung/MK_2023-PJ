@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", function () {
             <a href="#">${sTitle}
               <i class="fa-solid fa-chevron-down sTitle-icon"></i>
             </a>
-            <ul class="-hidden">
+            <ul>
       `;
       for (let list of navData[Title][sTitle]) {
         mobileMenuCode += `
@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", function () {
   menuItemContent.forEach(function(v,i){
     // console.log(v.children.length);
     // console.log(sTitleIcon[i]);
-    if( v.children.length !== 0){
+    if( v.children.length !== 0 ){
       return
     }
     else{
@@ -149,13 +149,23 @@ window.addEventListener("DOMContentLoaded", function () {
     const title = document.querySelectorAll('.M-nav-menu-item')
     const StitleWrap = document.querySelectorAll('.M-nav-menu-item-wrap')
     const titleIcon = document.querySelectorAll('.title-icon')
+    const Stitle = document.querySelectorAll('.M-nav-menu-item__content')
+    const listWrap = document.querySelectorAll('.M-nav-menu-item__content ul')
+    const StitleIcon = document.querySelectorAll('.sTitle-icon')
     
     title.forEach(function(v,i){
-      v.addEventListener('click',function(){
-        StitleWrap[i].classList.toggle('on')
-        document.querySelector('.M-menu-content').classList.toggle('on')
+      v.addEventListener('click',function(e){
+        e.target.classList.toggle('on')
         titleIcon[i].classList.toggle('fa-chevron-up')
         titleIcon[i].classList.toggle('fa-chevron-down')
+      })
+    })
+
+    Stitle.forEach(function(v,i){
+      v.addEventListener('click',function(){
+        listWrap[i].classList.toggle('on')
+        StitleIcon[i].classList.toggle('fa-chevron-up')
+        StitleIcon[i].classList.toggle('fa-chevron-down')
       })
     })
   }

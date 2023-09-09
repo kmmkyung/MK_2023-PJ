@@ -494,6 +494,16 @@ header .M-header{
   padding-left: 20px;
 }
 
+.M-nav-menu-item__content ul{
+  height: 0;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.M-nav-menu-item__content ul.on{
+  height: auto;
+}
+
 .M-nav-menu-item__content a{
   display: block;
   font-size: var(--font-size-L);

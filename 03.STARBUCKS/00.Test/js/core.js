@@ -126,7 +126,7 @@ window.addEventListener("DOMContentLoaded", function () {
   })
 
 
-  // [ 메인메뉴 - 모바일 bar 클릭시 메뉴보임]
+  // [ 메인메뉴 - 모바일 s 클릭시 메뉴보임 ]
   function mobileMenuShow(){
     const bar = document.querySelector('.fa-bars');
     const mobileMenu = document.querySelector('.M-menu');
@@ -146,23 +146,25 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // [ 메인메뉴 - 모바일 메뉴 아코디언 ]
   function mobileMenuAccordion(){
-    const title = document.querySelectorAll('.M-nav-menu-item')
+    const title = document.querySelectorAll('.M-nav-menu-item > a')
     const StitleWrap = document.querySelectorAll('.M-nav-menu-item-wrap')
     const titleIcon = document.querySelectorAll('.title-icon')
-    const Stitle = document.querySelectorAll('.M-nav-menu-item__content')
+    const Stitle = document.querySelectorAll('.M-nav-menu-item__content > a')
     const listWrap = document.querySelectorAll('.M-nav-menu-item__content ul')
     const StitleIcon = document.querySelectorAll('.sTitle-icon')
     
     title.forEach(function(v,i){
       v.addEventListener('click',function(e){
-        e.target.classList.toggle('on')
+        e.preventDefault;
+        StitleWrap[i].classList.toggle('on')
         titleIcon[i].classList.toggle('fa-chevron-up')
         titleIcon[i].classList.toggle('fa-chevron-down')
       })
     })
 
     Stitle.forEach(function(v,i){
-      v.addEventListener('click',function(){
+      v.addEventListener('click',function(e){
+        e.preventDefault;
         listWrap[i].classList.toggle('on')
         StitleIcon[i].classList.toggle('fa-chevron-up')
         StitleIcon[i].classList.toggle('fa-chevron-down')

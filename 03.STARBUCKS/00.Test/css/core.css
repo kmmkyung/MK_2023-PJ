@@ -480,7 +480,7 @@ header .M-header{
 .M-nav-menu-item-wrap{
   height: 0;
   overflow: hidden;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .M-nav-menu-item-wrap.on{
@@ -498,11 +498,15 @@ header .M-header{
 .M-nav-menu-item__content ul{
   height: 0;
   overflow: hidden;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .M-nav-menu-item__content ul.on{
   height: auto;
+}
+
+.M-nav-menu-item__content li{
+  padding-left: 20px;
 }
 
 .M-nav-menu-item__content a{
@@ -515,7 +519,7 @@ header .M-header{
 }
 
 .M-nav-menu-item__content i{
-  color: var(--white);
+  color: var(--lightgray);
   font-size: 30px;
   line-height: 20px;
   position: absolute;

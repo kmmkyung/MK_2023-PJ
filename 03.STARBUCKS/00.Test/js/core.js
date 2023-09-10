@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const Mtitle = document.querySelectorAll('.M-nav-menu-item')
     Mtitle.forEach(function(v,i){
       v.addEventListener('click',function(){
-        const MStitleWrap = this.lastElementChild;
+        const MStitleWrap = v.lastElementChild;
         const MtitleIcon = document.querySelectorAll('.title-icon')
         MtitleIcon[i].classList.toggle('fa-chevron-up')
         MtitleIcon[i].classList.toggle('fa-chevron-down')
@@ -160,15 +160,20 @@ window.addEventListener("DOMContentLoaded", function () {
         }
       })
     })
+    
     const Mstitle = document.querySelectorAll('.M-nav-menu-item__content')
-    const listWrap = document.querySelectorAll('.M-nav-menu-item__content ul')
-    const StitleIcon = document.querySelectorAll('.sTitle-icon')
-    Mstitle.forEach(function(v,i){
+    Mstitle.forEach(function(v){
       v.addEventListener('click',function(e){
         e.stopPropagation();
-        let vH = listWrap? listWrap.clientHeight : listWrap.Mstitle;
-        console.log(vH);
-
+        let vH = v.querySelector('.M-nav-menu-item__content ul') ? v.querySelector('.M-nav-menu-item__content ul').scrollHeight : null;
+        if(v.querySelector('.M-nav-menu-item__content ul').style.height){
+          v.querySelector('.M-nav-menu-item__content ul').style.height = null;
+        }
+        else{
+          v.querySelector('.M-nav-menu-item__content ul').style.height = vH + 'px'
+        }
+        v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-up')
+        v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-down')
       })
     })
 

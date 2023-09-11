@@ -75,21 +75,21 @@ window.addEventListener("DOMContentLoaded", function () {
   mobileMenuCode += `<ul class="M-nav-menu">`;
   for (let Title in navData) {
     mobileMenuCode += `
-    <li class="M-nav-menu-item">
+    <li class="M-nav-menu-item accordion">
       <a href="#">${Title}
         <i class="fa-solid fa-chevron-down title-icon"></i>
       </a>
       <div class="M-nav-menu-item-wrap">
         <ul class="M-nav-menu__content">
-          <li class="M-nav-menu-item__content">
+          <li class="M-nav-menu-item__content accordion">
             <a href="#">한눈에보기</a>
     `;
     for (let sTitle in navData[Title]) {
       mobileMenuCode += `
           </li>
-          <li class="M-nav-menu-item__content">
+          <li class="M-nav-menu-item__content accordion">
             <a href="#">${sTitle}
-              <i class="fa-solid fa-chevron-down sTitle-icon"></i>
+              <i class="fa-solid fa-chevron-down sTitle-icon title-icon"></i>
             </a>
             <ul>
       `;
@@ -145,37 +145,33 @@ window.addEventListener("DOMContentLoaded", function () {
   mobileMenuShow()
 
     // [ 메인메뉴 - 모바일 메뉴 아코디언 ]
-    const Mtitle = document.querySelectorAll('.M-nav-menu-item')
-    Mtitle.forEach(function(v,i){
-      v.addEventListener('click',function(){
-        const MStitleWrap = v.lastElementChild;
-        const MtitleIcon = document.querySelectorAll('.title-icon')
-        MtitleIcon[i].classList.toggle('fa-chevron-up')
-        MtitleIcon[i].classList.toggle('fa-chevron-down')
-        if(MStitleWrap.style.height){
-          MStitleWrap.style.height = null;
-        }
-        else{
-          MStitleWrap.style.height = MStitleWrap.scrollHeight + 'px'
-        }
-      })
-    })
+    const acc = document.querySelectorAll('.accordion')
+    console.log(acc);
     
-    const Mstitle = document.querySelectorAll('.M-nav-menu-item__content')
-    Mstitle.forEach(function(v){
-      v.addEventListener('click',function(e){
+    for(i=0; i < acc.length; i++){
+      acc[i].onclick = function(e){
         e.stopPropagation();
-        let vH = v.querySelector('.M-nav-menu-item__content ul') ? v.querySelector('.M-nav-menu-item__content ul').scrollHeight : null;
-        if(v.querySelector('.M-nav-menu-item__content ul').style.height){
-          v.querySelector('.M-nav-menu-item__content ul').style.height = null;
-        }
-        else{
-          v.querySelector('.M-nav-menu-item__content ul').style.height = vH + 'px'
-        }
-        v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-up')
-        v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-down')
-      })
-    })
+        this.lastElementChild.classList.toggle('on')
+        this.querySelector('.title-icon').classList.toggle('fa-chevron-up')
+        this.querySelector('.title-icon').classList.toggle('fa-chevron-down')
+      }
+    }
+    
+    // const Mstitle = document.querySelectorAll('.M-nav-menu-item__content')
+    // Mstitle.forEach(function(v){
+    //   v.addEventListener('click',function(e){
+    //     e.stopPropagation();
+    //     let vH = v.querySelector('.M-nav-menu-item__content ul') ? v.querySelector('.M-nav-menu-item__content ul').scrollHeight : null;
+    //     if(v.querySelector('.M-nav-menu-item__content ul').style.height){
+    //       v.querySelector('.M-nav-menu-item__content ul').style.height = null;
+    //     }
+    //     else{
+    //       v.querySelector('.M-nav-menu-item__content ul').style.height = vH + 'px'
+    //     }
+    //     v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-up')
+    //     v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-down')
+    //   })
+    // })
 
   // [ 서브메뉴 - 서치아이콘 ]
   const searchInput = document.querySelector(".search input");

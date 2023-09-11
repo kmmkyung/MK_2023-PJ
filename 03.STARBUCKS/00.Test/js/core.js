@@ -146,7 +146,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // [ 메인메뉴 - 모바일 메뉴 아코디언 ] // 클래스 on넣는건 메뉴가 되나 트렌지션 안먹음...
     const acc = document.querySelectorAll('.accordion')
-    console.log(acc);
+    // console.log(acc);
     
     for( i=0; i < acc.length; i++ ){
       acc[i].onclick = function(e){

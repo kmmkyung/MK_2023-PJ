@@ -111,6 +111,8 @@ window.addEventListener('DOMContentLoaded',function(){
   // 슬라이드 이동 함수
   function promotionSlide(i){
     const slideLl = document.querySelectorAll('.promotionBanner');
+    const bullet = document.querySelectorAll('.fa-circle'); // 블릿 3개
+    let nowSeq = slideLl[1].getAttribute('data-seq');
     
     // 광클금지
     if(clickClick) return;
@@ -122,6 +124,9 @@ window.addEventListener('DOMContentLoaded',function(){
     if(i){
       slideUl.style.left = -102 +'%';
       slideUl.style.transition = 'left .4s ease-in-out';
+      
+      bulletOn()
+
       setTimeout(function(){
         slideUl.appendChild(slideLl[0]);
         slideUl.style.left = '0';
@@ -132,6 +137,15 @@ window.addEventListener('DOMContentLoaded',function(){
       slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
       slideUl.style.left = -102 +'%';
       slideUl.style.transition = "none";
+      
+      for(let x of slideLl){x.classList.remove('on')};
+      slideLl[0].classList.add('on');
+
+      for(let x of bullet){x.classList.remove('on')};
+      if(nowSeq-1 == -1){
+        nowSeq = 3
+      }
+      bullet[nowSeq-1].classList.add('on');
       setTimeout(function(){
         slideUl.style.left = '0';
         slideUl.style.transition = "left .4s ease-in-out";
@@ -140,32 +154,32 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   
   // 프로모션 가로 슬라이드 On 함수________________________________________
-  // 문제 1. 현재순번은 맞는데 슬라이드 클래스 on(opacity:1)이 안맞는중
-  // 문제 2. 블릿을 화살표 누르면 한번 순서 먹었다가 움직임
-  // 함수를 호출할때마다 슬라이드랑 블릿을 다시 수집하는데 왜일까요
-  // 확인하기 쉽게 아코디언은 기본높이로 꺼내놨습니당~
-  // 이 함수는 자동이동(autoSlide), 화살표 누를때 호출하게 해놨음!
-
   function promotionOn(){
-    // 함수 실행될때마다 재수집
     const slideLl = document.querySelectorAll('.promotionBanner'); // li 슬리이드 3개
-    const bullet = document.querySelectorAll('.fa-circle'); // 블릿 3개
-
-    let nowseq = slideLl[2].getAttribute('data-seq');
-    console.log('현재순번',nowseq);
     for(let x of slideLl){x.classList.remove('on')};
-    slideLl[nowseq].classList.add('on'); //<- 문제 1
-    for(let x of bullet){x.classList.remove('on')};
-    bullet[nowseq].classList.add('on'); //<- 문제 2
+    slideLl[2].classList.add('on');
   }
+
+  function bulletOn(){
+    const bullet = document.querySelectorAll('.fa-circle');
+    const slideLl = document.querySelectorAll('.promotionBanner');
+    let nowSeq = slideLl[1].getAttribute('data-seq');
+
+    for(let x of bullet){x.classList.remove('on')};
+      if(nowSeq == 3){nowSeq = 0}
+      bullet[nowSeq+1].classList.add('on');
+  }
+
 
   // 프로모션 가로 슬라이드 자동 이동
   function autoSlide(){
     autoSlideInterval = setInterval(function(){
-      promotionSlide(1)
       promotionOn()
+      promotionSlide(1)
+      bulletOn()
     },4000)
   }
+  autoSlide()
   
   // 프로모션 가로 슬라이드 멈춤버튼
   function pauseBtn(){
@@ -190,9 +204,4 @@ window.addEventListener('DOMContentLoaded',function(){
   }
 
 
-
-
-
-
-  
 })

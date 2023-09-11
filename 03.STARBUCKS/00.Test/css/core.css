@@ -479,15 +479,11 @@ header .M-header{
 .M-nav-menu-item-wrap{
   height: 0;
   overflow: hidden;
-  transition: all 1s;
+  transition: height 1s;
 }
 
 .M-nav-menu-item-wrap.on{
-  height: auto;
-}
-
-.M-nav-menu__content{
-  /* height: 100%; */
+  height: 100%;
 }
 
 .M-nav-menu-item__content{
@@ -497,11 +493,12 @@ header .M-header{
 .M-nav-menu-item__content ul{
   height: 0;
   overflow: hidden;
-  transition: all 1s;
+  /* transition: height 1s; */
 }
 
 .M-nav-menu-item__content ul.on{
-  height: auto;
+  height: 100%;
+
 }
 
 .M-nav-menu-item__content li{

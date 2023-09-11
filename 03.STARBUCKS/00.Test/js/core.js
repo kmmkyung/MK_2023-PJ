@@ -144,34 +144,25 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   mobileMenuShow()
 
-    // [ 메인메뉴 - 모바일 메뉴 아코디언 ]
+    // [ 메인메뉴 - 모바일 메뉴 아코디언 ] // 클래스 on넣는건 메뉴가 되나 트렌지션 안먹음...
     const acc = document.querySelectorAll('.accordion')
     console.log(acc);
     
-    for(i=0; i < acc.length; i++){
+    for( i=0; i < acc.length; i++ ){
       acc[i].onclick = function(e){
         e.stopPropagation();
-        this.lastElementChild.classList.toggle('on')
+        panel = this.lastElementChild;
+        // if(panel.style.height){
+        //   panel.style.height = null;
+        // }
+        // else{
+        //   panel.style.height = panel.scrollHeight + 'px'
+        // }
+        panel.classList.toggle('on')
         this.querySelector('.title-icon').classList.toggle('fa-chevron-up')
         this.querySelector('.title-icon').classList.toggle('fa-chevron-down')
       }
     }
-    
-    // const Mstitle = document.querySelectorAll('.M-nav-menu-item__content')
-    // Mstitle.forEach(function(v){
-    //   v.addEventListener('click',function(e){
-    //     e.stopPropagation();
-    //     let vH = v.querySelector('.M-nav-menu-item__content ul') ? v.querySelector('.M-nav-menu-item__content ul').scrollHeight : null;
-    //     if(v.querySelector('.M-nav-menu-item__content ul').style.height){
-    //       v.querySelector('.M-nav-menu-item__content ul').style.height = null;
-    //     }
-    //     else{
-    //       v.querySelector('.M-nav-menu-item__content ul').style.height = vH + 'px'
-    //     }
-    //     v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-up')
-    //     v.querySelector('.sTitle-icon').classList.toggle('fa-chevron-down')
-    //   })
-    // })
 
   // [ 서브메뉴 - 서치아이콘 ]
   const searchInput = document.querySelector(".search input");

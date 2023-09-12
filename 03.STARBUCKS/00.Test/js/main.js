@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded',function(){
     v.addEventListener('click',function(){
       clearAuto()
       promotionSlide(i)
-      promotionOn()
+      promotionOn(2)
       if(play.classList!=='-hidden'){
         play.classList.add('-hidden');
         pause.classList.remove('-hidden')
@@ -124,9 +124,7 @@ window.addEventListener('DOMContentLoaded',function(){
     if(i){
       slideUl.style.left = -102 +'%';
       slideUl.style.transition = 'left .4s ease-in-out';
-      
       bulletOn()
-
       setTimeout(function(){
         slideUl.appendChild(slideLl[0]);
         slideUl.style.left = '0';
@@ -137,16 +135,13 @@ window.addEventListener('DOMContentLoaded',function(){
       slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
       slideUl.style.left = -102 +'%';
       slideUl.style.transition = "none";
-      
-      for(let x of slideLl){x.classList.remove('on')};
-      slideLl[0].classList.add('on');
-
-      for(let x of bullet){x.classList.remove('on')};
-      if(nowSeq-1 == -1){
-        nowSeq = 3
-      }
-      bullet[nowSeq-1].classList.add('on');
       setTimeout(function(){
+        promotionOn(1)
+
+        for(let x of bullet){x.classList.remove('on')};
+        if(nowSeq -1 == -1){nowSeq = 3}
+        bullet[nowSeq-1].classList.add('on');
+        
         slideUl.style.left = '0';
         slideUl.style.transition = "left .4s ease-in-out";
       },1)
@@ -154,29 +149,29 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   
   // 프로모션 가로 슬라이드 On 함수________________________________________
-  function promotionOn(){
+  function promotionOn(ele){
     const slideLl = document.querySelectorAll('.promotionBanner'); // li 슬리이드 3개
     for(let x of slideLl){x.classList.remove('on')};
-    slideLl[2].classList.add('on');
+    slideLl[ele].classList.add('on');
   }
 
   function bulletOn(){
     const bullet = document.querySelectorAll('.fa-circle');
     const slideLl = document.querySelectorAll('.promotionBanner');
-    let nowSeq = slideLl[1].getAttribute('data-seq');
-
+    let nowSeq = slideLl[1+1].getAttribute('data-seq');
+    
     for(let x of bullet){x.classList.remove('on')};
       if(nowSeq == 3){nowSeq = 0}
-      bullet[nowSeq+1].classList.add('on');
+      bullet[nowSeq].classList.add('on');
   }
 
 
   // 프로모션 가로 슬라이드 자동 이동
   function autoSlide(){
     autoSlideInterval = setInterval(function(){
-      promotionOn()
-      promotionSlide(1)
       bulletOn()
+      promotionSlide(1)
+      promotionOn(2)
     },4000)
   }
   autoSlide()

@@ -184,8 +184,8 @@
 #notice-promotionBanner {
   width: 100%;
   box-sizing: border-box;
-  height: 658px;
-  /* height: 0px; */
+  /* height: 658px; */
+  height: 0px;
   background-color: var(--beige);
   position: relative;
   overflow: hidden;

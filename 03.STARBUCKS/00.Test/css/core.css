@@ -5,6 +5,7 @@ body{
   font-family: 'Noto Sans','Nanum Gothic', sans-serif;
   color: var(--darkgray);
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 header{

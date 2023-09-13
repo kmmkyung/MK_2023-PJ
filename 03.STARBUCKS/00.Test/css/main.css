@@ -359,6 +359,7 @@
 #bean {
   height: 570px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 #bean .bean-wrap {

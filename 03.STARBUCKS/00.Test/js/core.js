@@ -132,11 +132,13 @@ window.addEventListener("DOMContentLoaded", function () {
     const mobileMenu = document.querySelector('.M-menu');
     const close = document.querySelector('.fa-xmark');
     bar.addEventListener('click',()=>{
+      mobileMenu.style.visibility='visible';
       document.querySelector('.M-menu-bg').style.visibility='visible';
       document.querySelector('.M-menu-bg').style.opacity='1';
       document.querySelector('.M-menu-wrap').style.transform='translateX(0%)';
     })
     close.addEventListener('click',()=>{
+      mobileMenu.style.visibility='hidden';
       document.querySelector('.M-menu-wrap').style.transform='translateX(120%)';
       document.querySelector('.M-menu-bg').style.visibility='hidden';
       document.querySelector('.M-menu-bg').style.opacity='0';

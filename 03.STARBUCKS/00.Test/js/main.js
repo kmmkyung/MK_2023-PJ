@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded',function(){
       if(promotionBanner){
         promotionAccBtn.classList.toggle('fa-chevron-up');
         promotionAccBtn.classList.toggle('fa-chevron-down');
-        promotioncontent.style.height = 658+'px';
+        promotioncontent.style.height = 100+'%';
         clearAuto()
       }
       else{
@@ -100,7 +100,6 @@ window.addEventListener('DOMContentLoaded',function(){
     v.addEventListener('click',function(){
       clearAuto()
       promotionSlide(i)
-      promotionOn(2)
       if(play.classList!=='-hidden'){
         play.classList.add('-hidden');
         pause.classList.remove('-hidden')
@@ -122,18 +121,19 @@ window.addEventListener('DOMContentLoaded',function(){
     },400);
 
     if(i){
-      slideUl.style.left = -102 +'%';
-      slideUl.style.transition = 'left .4s ease-in-out';
+      slideUl.style.left = -100 +'%';
+      slideUl.style.transition = 'left .5s ease-in-out';
       bulletOn()
       setTimeout(function(){
+        promotionOn(2)
         slideUl.appendChild(slideLl[0]);
         slideUl.style.left = '0';
         slideUl.style.transition = "none";
-      },400)
+      },500)
     }
     else{
       slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
-      slideUl.style.left = -102 +'%';
+      slideUl.style.left = 100 +'%';
       slideUl.style.transition = "none";
       setTimeout(function(){
         promotionOn(1)
@@ -143,14 +143,14 @@ window.addEventListener('DOMContentLoaded',function(){
         bullet[nowSeq-1].classList.add('on');
         
         slideUl.style.left = '0';
-        slideUl.style.transition = "left .4s ease-in-out";
+        slideUl.style.transition = "left .5s ease-in-out";
       },1)
     }
   }
   
   // 프로모션 가로 슬라이드 On 함수________________________________________
   function promotionOn(ele){
-    const slideLl = document.querySelectorAll('.promotionBanner'); // li 슬리이드 3개
+    const slideLl = document.querySelectorAll('.promotionBanner');
     for(let x of slideLl){x.classList.remove('on')};
     slideLl[ele].classList.add('on');
   }
@@ -169,9 +169,7 @@ window.addEventListener('DOMContentLoaded',function(){
   // 프로모션 가로 슬라이드 자동 이동
   function autoSlide(){
     autoSlideInterval = setInterval(function(){
-      bulletOn()
       promotionSlide(1)
-      promotionOn(2)
     },4000)
   }
   autoSlide()
@@ -195,8 +193,6 @@ window.addEventListener('DOMContentLoaded',function(){
   function clearAuto(){
     clearInterval(autoSlideInterval);
     clearTimeout(autoSlideTimeout);
-    autoSlideTimeout = setTimeout(autoSlide,4500)
+    autoSlideTimeout = setTimeout(autoSlide,4000)
   }
-
-
 })

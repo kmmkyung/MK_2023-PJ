@@ -184,7 +184,6 @@
 #notice-promotionBanner {
   width: 100%;
   box-sizing: border-box;
-  /* height: 658px; */
   height: 0px;
   background-color: var(--beige);
   position: relative;
@@ -193,27 +192,25 @@
 }
 
 .promotionBanner-wrap {
-  width: 819px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 50px;
-}
+  height: 100%;
+  width: 100%;
+  padding: 100px 0;
+} 
 
 .promotionBanner-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0 2%;
-  position: relative;
-  left: 0%;
-  top: 0;
+  height: 100%;
   width: 100%;
-  transform: translateX(-102%);
 }
 
 .promotionBanner {
   position: relative;
   flex-shrink: 0;
   opacity: 0.5;
+  transition: all .5s;
 }
 
 .promotionBanner.on {
@@ -229,7 +226,7 @@
 .promotionBanner a {
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -245,6 +242,7 @@
 .promotionBanner-btn .fa-pause:hover,
 .promotionBanner-btn .fa-play:hover {
   color: var(--black);
+  transition: all .3s;
 }
 
 .promotionBanner-arrow .left {
@@ -264,12 +262,12 @@
   font-size: var(--font-size-M);
   position: absolute;
   left: 50%;
-  top: 621px;
+  bottom: 1vw;
   transform: translateX(-50%);
 }
 
 .promotionBanner-btn i {
-  transition: all 0.4s;
+  transition: all .5s;
 }
 
 .promotionBanner-btn .fa-circle {
@@ -733,8 +731,29 @@ img.bean {
     top: 68%;
     left: 50%;
     transform: translateX(-50%);
+  }  
+
+  /* #notice-promotionBanner{
+    height: 600px;
+  } */
+
+  .promotionBanner {
+    width: 80vw;
   }
-  
+
+  .promotionBanner img{
+    object-fit: contain;
+  }
+
+  .promotionBanner-arrow .left {
+    left: 10%;
+  }
+
+  .promotionBanner-arrow .right{
+    right: 10%;
+  }
+
+
   #bean,
   #reserve,
   #favorite,
@@ -896,9 +915,17 @@ img.bean {
     justify-content: space-between;
   }
 
+  /* #notice-promotionBanner{
+    height: 500px;
+  } */
+
   .notice-line__notice {
     padding-left: 0;
     padding: 0 20px;
+  }
+
+  .promotionBanner a {
+    bottom: -10%;
   }
 }
 

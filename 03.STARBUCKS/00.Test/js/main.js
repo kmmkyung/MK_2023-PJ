@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded',function(){
       if(promotionBanner){
         promotionAccBtn.classList.toggle('fa-chevron-up');
         promotionAccBtn.classList.toggle('fa-chevron-down');
-        promotioncontent.style.height = 100+'%';
+        window.innerWidth>670 ? promotioncontent.style.height = 650+'px' : promotioncontent.style.height = 500+'px';
         clearAuto()
       }
       else{
@@ -84,7 +84,15 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   }
   promotionAccordion()
-  
+
+  // 프로모션 아코디언 리사이즈 크기
+  function promotionAccordionSize(){
+    window.addEventListener('resize',function(){
+      const promotioncontent = document.querySelector('#notice-promotionBanner');
+      window.innerWidth>670 ? promotioncontent.style.height = 650+'px' : promotioncontent.style.height = 500+'px';
+    })
+  }
+  promotionAccordionSize()
 
   // [ 공지사항 - 프로모션 가로 슬라이드 ]________________________________________________________________________________
   const arrowBtn = document.querySelectorAll('.promotionBanner-arrow i');

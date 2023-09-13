@@ -475,7 +475,7 @@
   height: 100%;
 }
 
-.favorite-content {
+.favorite-container {
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -486,26 +486,26 @@
   gap: 20px;
 }
 
-.favorite-content img {
+.favorite-container img {
   width: 300px;
 }
 
-.favorite-content__text {
+.favorite-container__content {
   text-align: right;
 }
 
-.favorite-content__text h2 {
+.favorite-container__content h2 {
   font-size: var(--font-size-Title);
   font-weight: normal;
 }
 
-.favorite-content__text p {
+.favorite-container__content p {
   margin-top: 20px;
   font-size: var(--font-size-M);
   word-break: keep-all;
 }
 
-.favorite-content a {
+.favorite-container a {
   display: block;
 }
 

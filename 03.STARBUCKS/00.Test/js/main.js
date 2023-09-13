@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   }
   
-  // 프로모션 가로 슬라이드 On 함수________________________________________
+  // 프로모션 가로 슬라이드 On 함수
   function promotionOn(ele){
     const slideLl = document.querySelectorAll('.promotionBanner');
     for(let x of slideLl){x.classList.remove('on')};
@@ -195,4 +195,22 @@ window.addEventListener('DOMContentLoaded',function(){
     clearTimeout(autoSlideTimeout);
     autoSlideTimeout = setTimeout(autoSlide,4000)
   }
+
+  // [ 가시성 관찰 ]
+  const io = new IntersectionObserver(function(entry){
+    entry.forEach(function(ele){
+      if(ele.isIntersecting){
+        ele.target.classList.add('show')
+      }
+      else{
+        ele.target.classList.remove('show')
+      }
+    })
+  })
+
+  const entryEle = document.querySelectorAll('.entry')
+  entryEle.forEach(function(v){
+    io.observe(v)
+  })
 })
+

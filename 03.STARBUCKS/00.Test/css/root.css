@@ -107,3 +107,25 @@
   border: 2px solid var(--white);
   color: var(--white);
 }
+
+.entry-left{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 4s;
+}
+
+.entry-left.show{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.entry-right{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 4s;
+}
+
+.entry-right.show{
+  transform: translateX(0%);
+  opacity: 1;
+}

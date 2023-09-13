@@ -125,6 +125,7 @@
   font-size: var(--font-size-L);
   line-height: 62px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .notice-line__notice i,
@@ -168,6 +169,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .notice-line__notice ul li:hover {

@@ -159,6 +159,7 @@ window.addEventListener("DOMContentLoaded", function () {
         // }
         // else{
         //   panel.style.height = panel.scrollHeight + 'px'
+            
         // }
         panel.classList.toggle('on')
         this.querySelector('.title-icon').classList.toggle('fa-chevron-up')

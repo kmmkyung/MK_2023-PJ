@@ -86,6 +86,7 @@ header .sub-menu .search{
 }
 
 header .sub-menu .search input{
+  cursor: pointer;
   box-sizing: border-box;
   width: 36px;
   height: 36px;
@@ -95,12 +96,13 @@ header .sub-menu .search input{
   background-color: var(--white);
   border-radius: 5px;
   font-size: var(--font-size-S);
-  transition: width 0,4s;
+  transition: width 0.4s;
 }
 
 header .sub-menu .search input:focus{
   width: 190px;
   border-color: var(--menufont);
+  cursor: text
 }
 
 header .sub-menu .search i{
@@ -146,6 +148,7 @@ header .sub-menu .search i{
 
 .main-menu .menu-item__contents{
   width: 100%;
+  height: 0;
   position: fixed;
   left: 0;
   background: var(--menubg);

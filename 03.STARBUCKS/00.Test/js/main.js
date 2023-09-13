@@ -63,10 +63,11 @@ window.addEventListener('DOMContentLoaded',function(){
 
   // [ 공지사항 - 프로모션 아코디언 ]
   function promotionAccordion(){
+    const promotionTitie =  document.querySelector('.notice-line__promotion');
     const promotionAccBtn = document.querySelector('.notice-line__promotion i');
     const promotioncontent = document.querySelector('#notice-promotionBanner');
     let promotionBanner = false;
-    promotionAccBtn.addEventListener('click',function(){
+    promotionTitie.addEventListener('click',function(){
       promotionBanner = !promotionBanner
       if(promotionBanner){
         promotionAccBtn.classList.toggle('fa-chevron-up');
@@ -130,19 +131,19 @@ window.addEventListener('DOMContentLoaded',function(){
 
     if(i){
       slideUl.style.left = -100 +'%';
-      slideUl.style.transition = 'left .5s ease-in-out';
+      slideUl.style.transition = 'all 1s ease-in-out';
       bulletOn()
       setTimeout(function(){
         promotionOn(2)
         slideUl.appendChild(slideLl[0]);
         slideUl.style.left = '0';
-        slideUl.style.transition = "none";
-      },500)
+        // slideUl.style.transition = "none";
+      },100)
     }
     else{
       slideUl.insertBefore(slideLl[slideLl.length-1],slideLl[0]);
       slideUl.style.left = 100 +'%';
-      slideUl.style.transition = "none";
+      // slideUl.style.transition = "none";
       setTimeout(function(){
         promotionOn(1)
 
@@ -151,8 +152,8 @@ window.addEventListener('DOMContentLoaded',function(){
         bullet[nowSeq-1].classList.add('on');
         
         slideUl.style.left = '0';
-        slideUl.style.transition = "left .5s ease-in-out";
-      },1)
+        slideUl.style.transition = "all 1s ease-in-out";
+      },100)
     }
   }
   

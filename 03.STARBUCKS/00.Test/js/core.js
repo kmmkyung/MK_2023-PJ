@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
   mainMenuCode += `<ul class="menu">`;
   // 메뉴 타이틀 title=COFFEE,MENU,STORE...
   for (let title in navData) {
-    mainMenuCode += `
+    mainMenuCode += /*html*/`
       <li class="menu-item">
         <a href="#">
           <div class="menu-item__name">${title}</div>
@@ -15,29 +15,29 @@ window.addEventListener("DOMContentLoaded", function () {
         `;
     // 서브메뉴타이틀 sTitle=커피,커피이야기,스타벅스 리저브...
     for (let sTitle in navData[title]) {
-      mainMenuCode += `
+      mainMenuCode += /*html*/`
           <li class="contents-menu__list">
             <h4>${sTitle}</h4>
             <ul>
       `;
       // 하위메뉴
       for (let list of navData[title][sTitle]) {
-        mainMenuCode += `
+        mainMenuCode += /*html*/`
               <li>${list}</li>
               `;
       }
-      mainMenuCode += `
+      mainMenuCode += /*html*/`
             </ul>
           </li>
             `;
     }
-    mainMenuCode += `
+    mainMenuCode += /*html*/`
         </ul>
       </div>
     </li>
     `;
   }
-  mainMenuCode += `</ul>`;
+  mainMenuCode += /*html*/ `</ul>`;
   nav.innerHTML = mainMenuCode;
 
   // [ 메인메뉴 - 오버시 보이게 하기 ]
@@ -72,9 +72,9 @@ window.addEventListener("DOMContentLoaded", function () {
   // [ 메인메뉴 - 모바일 메뉴리스트 적용 ]
   const mobileNav = document.querySelector(".M-nav");
   let mobileMenuCode = "";
-  mobileMenuCode += `<ul class="M-nav-menu">`;
+  mobileMenuCode += /*html*/ `<ul class="M-nav-menu">`;
   for (let Title in navData) {
-    mobileMenuCode += `
+    mobileMenuCode += /*html*/`
     <li class="M-nav-menu-item accordion">
       <a href="#">${Title}
         <i class="fa-solid fa-chevron-down title-icon"></i>
@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", function () {
             <a href="#">한눈에보기</a>
     `;
     for (let sTitle in navData[Title]) {
-      mobileMenuCode += `
+      mobileMenuCode += /*html*/`
           </li>
           <li class="M-nav-menu-item__content accordion">
             <a href="#">${sTitle}
@@ -94,22 +94,22 @@ window.addEventListener("DOMContentLoaded", function () {
             <ul>
       `;
       for (let list of navData[Title][sTitle]) {
-        mobileMenuCode += `
+        mobileMenuCode += /*html*/`
             <li><a href="#">${list}</a></li>
           `;
       }
-      mobileMenuCode += `
+      mobileMenuCode += /*html*/`
             </ul>
         `;
     }
-    mobileMenuCode += `
+    mobileMenuCode += /*html*/`
           </li>
         </ul>
       </div>
     </li>
 `;
   }
-  mobileMenuCode += `</ul>`;
+  mobileMenuCode += /*html*/ `</ul>`;
   mobileNav.innerHTML = mobileMenuCode;
   
   const menuItemContent = document.querySelectorAll('.M-nav-menu-item__content ul');

@@ -136,12 +136,14 @@ window.addEventListener("DOMContentLoaded", function () {
       document.querySelector('.M-menu-bg').style.visibility='visible';
       document.querySelector('.M-menu-bg').style.opacity='1';
       document.querySelector('.M-menu-wrap').style.transform='translateX(0%)';
+      document.documentElement.classList.add('-fixed')
     })
     close.addEventListener('click',()=>{
       mobileMenu.style.visibility='hidden';
       document.querySelector('.M-menu-wrap').style.transform='translateX(120%)';
       document.querySelector('.M-menu-bg').style.visibility='hidden';
       document.querySelector('.M-menu-bg').style.opacity='0';
+      document.documentElement.classList.remove('-fixed')
     })
   }
   mobileMenuShow()
@@ -193,7 +195,7 @@ window.addEventListener("DOMContentLoaded", function () {
   for (let title in footerData) {
     footerMenuCode += `
     <li class="menu-item">
-    <h4><a href="#">${title}</a></h4>
+    <h4>${title}</h4>
       <ol> 
     `;
     for (let list of footerData[title]) {
@@ -208,4 +210,18 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   footerMenuCode += `</ul>`;
   footerNav.innerHTML = footerMenuCode;
+  
+  
+  // [푸터 메뉴리스트 적용 - 아코디언]
+  function footerNavShow(){
+    const footerNav = document.querySelectorAll('.footer-menu .menu-item')
+    console.log(footerNav);
+    
+    footerNav.forEach(function(v){
+      v.addEventListener('click',()=>{
+        v.classList.toggle('on')
+      })
+    })
+  }
+  footerNavShow()
 });

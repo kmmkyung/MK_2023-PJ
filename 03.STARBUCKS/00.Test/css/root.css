@@ -42,6 +42,11 @@
   opacity: 0;
 }
 
+.-fixed{
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
 /*----- CSS -----*/
 .btn{
   font-size: var(--font-size-S);

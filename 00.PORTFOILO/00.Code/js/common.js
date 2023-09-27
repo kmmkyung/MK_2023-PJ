@@ -1,3 +1,13 @@
-window.addEventListener('DOMContentLoaded'()=>{
+window.addEventListener('DOMContentLoaded',function(){
 
-})// DOMContentLoaded
+
+// [ header - logo ]
+const headerLogo = $('.logo_W');
+headerLogo.html(svgLogo.logo_w);
+
+
+
+
+
+
+}) // DOMContentLoaded

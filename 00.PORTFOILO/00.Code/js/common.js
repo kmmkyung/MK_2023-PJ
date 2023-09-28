@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded',function(){
+console.log('common 로딩');
 
 
 // [ header - logo ]

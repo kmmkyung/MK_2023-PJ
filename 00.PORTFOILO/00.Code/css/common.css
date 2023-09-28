@@ -57,6 +57,7 @@ footer{
   background-color: var(--black);
   position: sticky;
   bottom: 0;
+  z-index: -1;
 }
 
 .footer-content{

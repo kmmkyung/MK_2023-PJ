@@ -27,7 +27,7 @@
   margin: 20px 0;
   position: relative;
   border-radius: 50px;
-  background: linear-gradient(#ffffff, #ffffff00);
+  background: linear-gradient(#ffffff, #00000000);
 }
 
 .main-project__imgBox img{

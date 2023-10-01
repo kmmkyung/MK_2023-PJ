@@ -37,10 +37,14 @@ header nav{
   margin-right: min(16vw,300px);
 }
 
-header nav a{
-  display: block;
+header .menu{
   color: var(--white);
   font-size: var(--font-size-M);
+  cursor: pointer;
+}
+
+header .menu span{
+  display: inline-block;
 }
 
 /* main */
@@ -82,4 +86,8 @@ footer a{
   display: block;
   color: var(--white);
   font-size: var(--font-size-M);
+}
+
+footer a:hover{
+  text-decoration: underline;
 }

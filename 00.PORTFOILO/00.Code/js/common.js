@@ -1,14 +1,13 @@
 window.addEventListener('DOMContentLoaded',function(){
 
 // [ header - logo ]
-const headerLogo = $('.logo_W');
-headerLogo.html(svgLogo.logo_w);
-console.log(window.scrollTop);
+// const headerLogo = $('.logo_W');
+// headerLogo.html(svgLogo.logo_w);
+let pageNum = 0 // 전체페이지수
+function updataPage(){
 
-if($("#sec-works").offset().top > window.scrollTop){
-  console.log('dafadf');
-  
 }
+
 
 // [ header - contact]
 const workBtn = $('.works-btn');

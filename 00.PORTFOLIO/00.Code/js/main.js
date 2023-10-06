@@ -30,11 +30,10 @@ projectTl.to(project,{
 .from(hiddenPj,{
   opacity:.2,
   y:100,
-  // duration:2,
-  // stagger:{
-  //   amount:1,
-  //   each:0.5
-  // }
+  duration:0.5,
+  stagger:{
+  amount:0.5
+  }
 },'same');
 
 gsap.from(firstPj,{

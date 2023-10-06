@@ -16,4 +16,4 @@ const hiddenPj = gsap.utils.toArry('.hiddenPj');
 const firstPj = document.querySelector('.firstPj');
 
 
-})// DOMContentLoaded
+})// DOMContentLoadeds

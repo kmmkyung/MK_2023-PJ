@@ -12,30 +12,41 @@ tl.from($('.main-project__imgBox'),{
 
 // [프로젝트 페이지 가로 스크롤]
 const projectPage = document.querySelector('#sec-works');
-const project = gsap.utils.toArray('.project');
 const hiddenPj = gsap.utils.toArray('.hiddenPj');
+const project = gsap.utils.toArray('.project');
 const firstPj = document.querySelector('.firstPj');
 
-let secWork = gsap.to(projectPage,{
-  // defaults: { ease: 'none', duration: 1 },
-  ease: 'none',
-  duration: 1,
+let projectTl = gsap.timeline({
   scrollTrigger:{
     trigger: projectPage,
     pin:true,
     scrub:1,
-    end: () => projectPage.scrollWidth - document.documentElement.clientWidth,
-  }
-});
-
-
-let projectTl = gsap.timeline({})
-projectTl.to(project,{
-  scrollTrigger:{
-    containerAnimation: secWork
-  }
+  },
+  defaults: { ease: 'none', duration: 1 }
 })
 
+projectTl.to(project,{
+  x: () => -(projectPage.scrollWidth - document.documentElement.clientWidth+200)},'same')
+.from(hiddenPj,{
+  opacity:.2,
+  y:100,
+  // duration:2,
+  // stagger:{
+  //   amount:1,
+  //   each:0.5
+  // }
+},'same');
+
+gsap.from(firstPj,{
+  duration:1,
+  opacity:0,
+  scrollTrigger:{
+    trigger:projectPage,
+    start:'top 40%',
+    end:'bottom 10%',
+    toggleActions: "play none none reverse"
+  }  
+});
 
 
 

@@ -38,7 +38,7 @@ projectTl.to(project,{
 
 gsap.from(firstPj,{
   duration:1,
-  opacity:0,
+  opacity:0.2,
   scrollTrigger:{
     trigger:projectPage,
     start:'top 40%',

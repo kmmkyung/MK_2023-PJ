@@ -3,11 +3,11 @@ window.addEventListener('DOMContentLoaded',function(){
 // [ header - logo ]
 // const headerLogo = $('.logo_W');
 // headerLogo.html(svgLogo.logo_w);
-// let pageNum = 0 // 전체페이지수
-// function updataPage(){
+let pageNum= 0 // 전체 페이지 변수
+let pageAll = 0 // 전체페이지수
+function updataPage(){
 
-// }
-
+}
 
 // [ header - contact]
 const workBtn = $('.works-btn');

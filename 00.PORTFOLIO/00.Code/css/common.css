@@ -52,6 +52,7 @@ main{
   position: relative;
   z-index: 2;
   background-color: var(--white);
+  border-radius: 20px;
 }
 
 /* footer */

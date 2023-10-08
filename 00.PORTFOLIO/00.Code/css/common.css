@@ -59,10 +59,23 @@ main{
   border-radius: 20px;
 }
 
+.sec-main__container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .main-title h1,
 .main-title h2{
   font-size: var(--font-size-S);
   color: var(--gray_a);
+}
+
+.main-title{
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
 }
 
 /* footer */

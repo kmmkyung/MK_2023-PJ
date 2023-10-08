@@ -1,5 +1,19 @@
 window.addEventListener('DOMContentLoaded',function(){
 
+// [ header - contact]
+const workBtn = $('.works-btn');
+const aboutBtn = $('.about-btn');
+const footerBtn = $('.footer-btn');
+workBtn.on('click',function(){
+  $('html').animate({scrollTop:$("#sec-works").offset().top},300)
+});
+aboutBtn.on('click',function(){
+  $('html').animate({scrollTop:$("#sec-me").offset().top},300)
+});
+footerBtn.on('click',function(){
+  $('html').animate({scrollTop:document.body.scrollHeight},300)
+});
+
 // [ 메인페이지 마지막 프로젝트 ]
 let tl = gsap.timeline();
 tl.from($('.main-project__imgBox'),{

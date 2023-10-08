@@ -59,6 +59,12 @@ main{
   border-radius: 20px;
 }
 
+.main-title h1,
+.main-title h2{
+  font-size: var(--font-size-S);
+  color: var(--gray_a);
+}
+
 /* footer */
 footer{
   width: 100%;

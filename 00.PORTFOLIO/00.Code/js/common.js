@@ -4,34 +4,30 @@ window.addEventListener('DOMContentLoaded',function(){
 const headerLogoW = $('.logo_W');
 headerLogoW.html(svgLogo.logo_w);
 
-let pageW = $('.pageW')
-let pageB = $('.pageB')
+const svgW = $('svg .white')
+let pageW = $('.pageW');
+let pageB = $('.pageB');
+let scrollBg = 0;
+const winH = window.innerHeight; // 윈도우 높이값
+const documentH = document.body.clientHeight; // 전체문서 높이값
 
-$(window).on('scroll',function(){
-  winT = $(window).scrollTop()
-  console.log($(window).innerHeight());
-  if(winT >= pageW.eq(0).offset().top && winT <= pageW.eq(0).offset().top || winT >= pageW.eq(1).offset().top ){
-    headerLogoW.html(svgLogo.logo_b)
-  }
-  else if( winT + ($(window).innerHeight()) == document.body.scrollHeight ){
-    headerLogoW.html(svgLogo.logo_w);
-  }
-})
+// const retVal = ele => ele.getBoundingClientRect().top;
+// let scTop = window.scrollY;
+
+// $(window).on('scroll',function(){
+//   let bgB1 = retVal(pageB[0]);
+//   let bgB2 = retVal(pageB[1]);
+//   let bgB3 = retVal(pageB[2]);
+// console.log(scTop < bgB1);
+
+//   if(scTop == bgB1,bgB2){
+
+//   }
 
 
-// [ header - contact]
-const workBtn = $('.works-btn');
-const aboutBtn = $('.about-btn');
-const footerBtn = $('.footer-btn');
-workBtn.on('click',function(){
-  $('html').animate({scrollTop:$("#sec-works").offset().top},300)
-});
-aboutBtn.on('click',function(){
-  $('html').animate({scrollTop:$("#sec-me").offset().top},300)
-});
-footerBtn.on('click',function(){
-  $('html').animate({scrollTop:document.body.scrollHeight},300)
-});
+// })
+
+
 
 // [ header - menu ]
 const menu = $('.menu');

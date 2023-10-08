@@ -56,12 +56,6 @@ body{
   bottom: 50px;
 }
 
-.main-title h1,
-.main-title h2{
-  font-size: var(--font-size-S);
-  color: var(--gray_a);
-}
-
 /* sec-works */
 #sec-works{
   width: 100%;

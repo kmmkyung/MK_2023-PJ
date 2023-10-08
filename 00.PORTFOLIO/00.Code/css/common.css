@@ -30,6 +30,10 @@ header{
   z-index: 999;
 }
 
+.logo_B{
+  fill: black;
+}
+
 header nav{
   display: flex;
   justify-content: space-between;

@@ -3,10 +3,8 @@
 setTimeout(() => {
     window.scrollTo(0, 0);
 }, 100);
-
 ///////////////////////// load /////////////////////////
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("mouse-JS 로딩완료!");
   //_____________마우스 따라다니는 로고_____________//
   // 대상: #cursor
   const mouseCursor = document.querySelector("#cursor");
@@ -32,9 +30,8 @@ window.addEventListener("DOMContentLoaded", () => {
   mouseCursor.style.left = positionX + "px";
 }; ///// EVNET-FN__onmousemove /////
 
-  //_____________지동 페이지 휠 효과_____________
-console.log("page wheel-JS 로딩완료!");
 
+//_____________지동 페이지 휠 효과_____________
 // 0. 변수 설정하기
 // (1) 전체 페이지 변수
 let pgnum = 0;
@@ -79,7 +76,7 @@ let sc_sts = 0;
     }
 
     // console.log("페이지번호", pgnum);
-    updatePg();
+    // updatePg();
   }
   /***********************************************
       함수명: updatePg
@@ -139,16 +136,16 @@ let sc_sts = 0;
     if (scTop < pg4pos || scTop >= mvHt) {
       sc_sts = 0;
       one_sts = 1; // 한번실행 초기화
-      console.log("대상외구역:", sc_sts, one_sts);
+      // console.log("대상외구역:", sc_sts, one_sts);
     }
 
     // 해당구역 하단부분 처리
     if (scTop >= mvHt && scTop <= mvHt + 1 && sc_sts === 0 && one_sts === 1) {
       one_sts = 0; // 한번실행잠금!
-      console.log("한번실행:", sc_sts, one_sts);
+      // console.log("한번실행:", sc_sts, one_sts);
 
       updatePg();
-      console.log("페이지번호:", pgnum);
+      // console.log("페이지번호:", pgnum);
     }
 
     // 스크롤 내부에서 pgnum 3,4 분기하기

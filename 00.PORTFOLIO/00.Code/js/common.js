@@ -28,6 +28,9 @@ const documentH = document.body.clientHeight; // 전체문서 높이값
 
 // })
 
+// 필요한거
+// 윝ㅗㅜ 맨
+
 
 
 // [ header - menu ]

@@ -70,22 +70,11 @@
   height: 120vh;
 }
 
+.story-code img{
+  width: 50%;
+}
+/* 
 .code-part1{
   display: flex;
-}
+} */
 
-.part1-intro{
-  width: 50%;
-  height: 450px;
-  background-image: url(../images/ediya_1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.part1-main{
-  width: 50%;
-  height: 450px;
-  background-image: url(../images/ediya_2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}

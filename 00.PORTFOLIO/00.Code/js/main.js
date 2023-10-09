@@ -14,6 +14,76 @@ footerBtn.on('click',function(){
   $('html').animate({scrollTop:document.body.scrollHeight},300)
 });
 
+
+
+const svgW = $('svg .white'); // svg 변해야 하는 것
+let page = $('.page'); // 페이지 전체
+const logo = $('.logo_W');
+// console.log(logo);
+
+let logoH = logo.offset().top + logo.height()
+// console.log('logo offset',logo.offset().top);
+// console.log('logo height',logo.height());
+
+// ################################### page 1
+let pageWork = $('#sec-works')
+let page1 = pageWork.offset().top
+// console.log(page1);
+let trigger1 = page1 - logoH
+// console.log(trigger1);
+// ################################### page 2
+let pageAbout = $('.about');
+let page2 = pageAbout.offset().top
+// console.log(page2);
+let trigger2 = page2 - logoH
+// console.log(trigger2);
+// ################################### page 3
+let pageStack = $('.stack');
+let page3 = pageStack.offset().top
+// console.log(page3);
+let trigger3 = page3 - logoH
+// console.log(trigger3);
+// ################################### page 3
+let pageFooter = $('#footer');
+let page4 = pageFooter.offset().top
+// console.log(page3);
+let trigger4 = page4 - logoH
+// console.log(trigger3);
+
+
+$(window).on('scroll',function(){
+  let winTop = $(window).scrollTop()
+  // console.log(winTop);
+  if(winTop < trigger1 ){
+    // console.log('흰페이지 1');
+    svgW.css({'fill':'white'})
+  }
+  if(winTop >= trigger1 ){
+    // console.log('흰페이지 1');
+    svgW.css({'fill':'black'})
+  }
+  if(winTop >= trigger2 ){
+    // console.log('검정페이지 1');
+    svgW.css({'fill':'white'})
+
+  }
+  if(winTop >= trigger3) {
+    // console.log('흰페이지 2');
+    svgW.css({'fill':'black'})
+  }
+  if(winTop > 5500){
+    svgW.css({'fill':'white'})
+  }
+})
+
+
+
+// 스크롤 이벤트
+// let 윈도우 높이값.scrollTop <- 소수점 나오면 -> math 함수
+
+
+
+
 // [ 메인페이지 마지막 프로젝트 ]
 let tl = gsap.timeline();
 tl.from($('.main-project__imgBox'),{

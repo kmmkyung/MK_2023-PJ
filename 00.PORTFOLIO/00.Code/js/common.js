@@ -3,11 +3,11 @@ window.addEventListener('DOMContentLoaded',function(){
 // [ header - logo ]
 const headerLogoW = $('.logo_W');
 headerLogoW.html(svgLogo.logo_w);
-headerLogoW.on('click',function(){
-  setTimeout(()=>{
-    scrollTo(0,0);
-  },50)
-})
+// headerLogoW.on('click',function(){
+//   setTimeout(()=>{
+//     scrollTo(0,0);
+//   },50)
+// })
 
 // [ header - menu ]
 const menu = $('.menu');
@@ -54,6 +54,14 @@ $(window).on('scroll',function(){
     footer.css({zIndex:'-1'})
   }
 })
+
+
+
+
+
+
+
+
 
 
 

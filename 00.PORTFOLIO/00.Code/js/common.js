@@ -4,11 +4,6 @@ window.addEventListener('DOMContentLoaded',function(){
 const headerLogoW = $('.logo_W');
 headerLogoW.html(svgLogo.logo_w);
 
-
-
-
-
-
 // [ header - menu ]
 const menu = $('.menu');
 for(let i=0; i<menu.length; i++){

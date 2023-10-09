@@ -67,14 +67,20 @@
 
 /* story-code */
 .story-code{
-  height: 120vh;
+  padding-bottom: 120px;
 }
 
 .story-code img{
   width: 50%;
 }
-/* 
-.code-part1{
-  display: flex;
-} */
 
+
+.code-part2{
+  display: flex;
+}
+
+.code-part2 img{
+  width: 100%;
+}
+
+/* code-part3 */

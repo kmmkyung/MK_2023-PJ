@@ -14,8 +14,7 @@ footerBtn.on('click',function(){
   $('html').animate({scrollTop:document.body.scrollHeight},300)
 });
 
-
-
+// [ header - logo ]
 const svgW = $('svg .white'); // svg 변해야 하는 것
 let page = $('.page'); // 페이지 전체
 const logo = $('.logo_W');
@@ -76,14 +75,6 @@ $(window).on('scroll',function(){
   }
 })
 
-
-
-// 스크롤 이벤트
-// let 윈도우 높이값.scrollTop <- 소수점 나오면 -> math 함수
-
-
-
-
 // [ 메인페이지 마지막 프로젝트 ]
 let tl = gsap.timeline();
 tl.from($('.main-project__imgBox'),{
@@ -133,4 +124,4 @@ gsap.from(firstPj,{
 
 
 
-})// DOMContentLoadeds
+})// DOMContentLoaded

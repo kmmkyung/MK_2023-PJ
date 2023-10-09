@@ -4,10 +4,11 @@ window.addEventListener('DOMContentLoaded',function(){
 const headerLogoW = $('.logo_W');
 headerLogoW.html(svgLogo.logo_w);
 
-const svgW = $('svg .white')
-let pageW = $('.pageW');
-let pageB = $('.pageB');
-let scrollBg = 0;
+const svgW = $('svg .white'); // svg 변해야 하는 것
+let page = $('.page'); // 페이지 전체
+let pageW = $('.pageW'); // 배경 흰색 페이지
+let pageB = $('.pageB'); // 배경 검은색 페이지
+let scrollBg = 0; // 스크롤 변수
 const winH = window.innerHeight; // 윈도우 높이값
 const documentH = document.body.clientHeight; // 전체문서 높이값
 
@@ -20,7 +21,7 @@ const documentH = document.body.clientHeight; // 전체문서 높이값
 //   let bgB3 = retVal(pageB[2]);
 // console.log(scTop < bgB1);
 
-//   if(scTop == bgB1,bgB2){
+//   if(scTop > bgB1,bgB2){
 
 //   }
 

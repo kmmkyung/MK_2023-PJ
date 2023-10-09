@@ -18,7 +18,7 @@ footerBtn.on('click',function(){
 const svgW = $('svg .white'); // svg 변해야 하는 것
 let page = $('.page'); // 페이지 전체
 const logo = $('.logo_W');
-// console.log(logo);
+console.log(logo);
 
 let logoH = logo.offset().top + logo.height()
 // console.log('logo offset',logo.offset().top);

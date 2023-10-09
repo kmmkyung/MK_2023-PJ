@@ -28,10 +28,11 @@ header{
   position: fixed;
   top: 0;
   z-index: 999;
+  cursor: pointer;
 }
 
-.logo_B{
-  fill: black;
+svg .white{
+  transition: all 1s;
 }
 
 header nav{

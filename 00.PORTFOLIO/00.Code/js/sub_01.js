@@ -14,10 +14,4 @@ window.addEventListener('DOMContentLoaded',function(){
   footerBtn.on('click',function(){
     $('html').animate({scrollTop:document.body.scrollHeight},300)
   });
-
-
-
-
-
-
 })

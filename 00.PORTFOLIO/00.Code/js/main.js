@@ -94,12 +94,6 @@ window.addEventListener("DOMContentLoaded", function () {
   // console.log(page3);
   let trigger3 = page3 - logoH;
   // console.log(trigger3);
-  // ################################### page 3
-  let pageFooter = $("#footer");
-  let page4 = pageFooter.offset().top;
-  // console.log(page3);
-  let trigger4 = page4 - logoH;
-  // console.log(trigger3);
 
   $(window).on("scroll", function () {
     let winTop = $(window).scrollTop();

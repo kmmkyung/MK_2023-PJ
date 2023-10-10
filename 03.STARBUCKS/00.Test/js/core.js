@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   mobileMenuShow()
 
-    // [ 메인메뉴 - 모바일 메뉴 아코디언 ] // 클래스 on넣는건 메뉴가 되나 트렌지션 안먹음...
+    // [ 메인메뉴 - 모바일 메뉴 아코디언 ]
     const acc = document.querySelectorAll('.accordion')
     // console.log(acc);
     
@@ -156,13 +156,6 @@ window.addEventListener("DOMContentLoaded", function () {
       acc[i].onclick = function(e){
         e.stopPropagation();
         panel = this.lastElementChild;
-        // if(panel.style.height){
-        //   panel.style.height = null;
-        // }
-        // else{
-        //   panel.style.height = panel.scrollHeight + 'px'
-            
-        // }
         panel.classList.toggle('on')
         this.querySelector('.title-icon').classList.toggle('fa-chevron-up')
         this.querySelector('.title-icon').classList.toggle('fa-chevron-down')

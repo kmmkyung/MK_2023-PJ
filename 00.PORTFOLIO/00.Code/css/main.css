@@ -38,7 +38,7 @@ body{
 }
 
 .main-project p{
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-S);
   color: var(--white);
   margin-top: 20px;
 }

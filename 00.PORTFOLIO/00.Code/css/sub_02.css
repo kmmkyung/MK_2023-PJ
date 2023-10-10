@@ -1,0 +1,12 @@
+/* sec-main */
+.main-img{
+  position: absolute;
+  width: 60vw;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_f5);
+  margin: 120px 0;
+}

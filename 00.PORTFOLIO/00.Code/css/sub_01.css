@@ -134,7 +134,8 @@
 /* code-part3 */
 .code-part3{
   margin-top: 120px;
-  height: 1528px;
+  height: 1355px;
+  width: 100%;
   position: relative;
 }
 
@@ -144,25 +145,10 @@
   left: 50%;
   margin-left: 40px;
 }
-.part3-event{
-  position: relative;
-}
-.part3-event img{
-  transform: translate(50%,-50%);
-  position: absolute;
-}
-.part3-event__text{
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-}
-.part3-footer img{
-  position: absolute;
-  bottom: 0;
-  transform: translate(50%,-50%);
-}
-.part3-footer__text{
-  position: absolute;
-}
 
-
+.part3-event,
+.part3-footer{
+  display: flex;
+  gap: 40px;
+  transform: translate(25%,-50%);
+}

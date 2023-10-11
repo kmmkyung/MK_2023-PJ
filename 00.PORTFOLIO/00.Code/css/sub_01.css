@@ -34,7 +34,6 @@
 
 .ediya-plan p{
   font-size: var(--font-size-S);
-
 }
 
 .ediya-plan h5{
@@ -133,10 +132,13 @@
 
 /* code-part3 */
 .code-part3{
-  margin-top: 120px;
-  height: 1355px;
   width: 100%;
   position: relative;
+}
+
+.part3-company{
+  position: relative;
+  top: 120px;
 }
 
 .part3-company__text{
@@ -150,5 +152,6 @@
 .part3-footer{
   display: flex;
   gap: 40px;
-  transform: translate(25%,-50%);
+  position: relative;
+  left: 25%;
 }

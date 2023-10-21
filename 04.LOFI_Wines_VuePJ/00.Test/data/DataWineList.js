@@ -1,4 +1,4 @@
-const wineList = [
+const WineList = [
   'AUSTRALIA' = [
     'Ada Wines' = {
       COMPANY_ID : 0,

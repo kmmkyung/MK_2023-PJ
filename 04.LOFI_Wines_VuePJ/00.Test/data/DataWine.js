@@ -1,4 +1,4 @@
-const wine = [
+const Wine = [
   'AUSTRALIA' = [
     'Ada Wines',
     'ARC Wines',

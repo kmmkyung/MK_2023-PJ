@@ -5,7 +5,7 @@ const wineList = [
       `Now James has purchased a house in the Barossa and will continue to work in the hills while sourcing precious small parcels from across South Australia. He crafts wines that are truly expressive of the regions they come from whilst also being produced from the grapes that he loves to drink. Skinsy Eden Riesling, McLaren Vale Grenache, Piccadilly Valley Chardonnay, Basket Range Pinot Noir and Barossa Grenache with more to come as James finds his groove and grows. All Ada grapes are from small growers who farm the land respectively and organically. While winemaking is fairly hands off with the only additions being minimal amounts of SO2 when it is necessary.`,
       `James’ 2021 release is stellar. All five wines are looking great and will continue to evolve across the year. We are thrilled to be working together and cant wait to watch Ada grow into one of the regions most exciting producers.`,
       {
-        ID : 00,
+        ID : 0,
         WINE : 'Cheeky Charlie',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -16,7 +16,7 @@ const wineList = [
         IMG:'./images/Ada Wines/Cheeky Charlie.jpg'
       },
       {
-        ID : 01,
+        ID : 1,
         WINE : 'The Rift',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -27,7 +27,7 @@ const wineList = [
         IMG:'./images/Ada Wines/The Rift.jpg'
       },
       {
-        ID : 02,
+        ID : 2,
         WINE : 'Clique',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -38,7 +38,7 @@ const wineList = [
         IMG:'./images/Ada Wines/Clique.jpg'
       },
       {
-        ID : 03,
+        ID : 3,
         WINE : 'Mad Hattie',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -49,7 +49,7 @@ const wineList = [
         IMG:'./images/Ada Wines/Mad Hattie.jpg'
       },
       {
-        ID : 04,
+        ID : 4,
         WINE : 'Celui',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -60,7 +60,7 @@ const wineList = [
         IMG:'./images/Ada Wines/Celui.jpg'
       },
       {
-        ID : 05,
+        ID : 5,
         WINE : 'The Nudist',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : 'Australia',  
@@ -72,7 +72,7 @@ const wineList = [
       }],
     'ARC Wines' =
       {
-        ID : 00,
+        ID : 0,
         WINE : '',  
         PRODUCER : 'Ada Wines',  
         COUNTRY : '',  

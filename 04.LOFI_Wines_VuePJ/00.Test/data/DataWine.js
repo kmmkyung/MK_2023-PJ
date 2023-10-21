@@ -1,4 +1,4 @@
-const wineList = [
+const wine = [
   'AUSTRALIA' = [
     'Ada Wines',
     'ARC Wines',

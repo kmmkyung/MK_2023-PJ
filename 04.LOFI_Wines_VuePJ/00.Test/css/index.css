@@ -48,7 +48,7 @@ main{
 }
 
 .right .right-img{
-  background-image: url(../images/index.jpg);
+  background-image: url(../assets/images/index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;

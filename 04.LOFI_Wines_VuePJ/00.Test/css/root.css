@@ -1,11 +1,11 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto:wght@300&display=swap');
 /* FONT-FAMILY */
-/* font-family: 'Domine', serif; */
+/* font-family: 'Nanum Myeongjo', serif; */
 /* font-family: 'Roboto', sans-serif; */
 
 *{
-    outline: 1px dotted turquoise;
+    /* outline: 1px dotted turquoise; */
     /* outline: 1px dotted tomato; */
 }
 
@@ -40,26 +40,12 @@
 }
 
 /*----- CSS -----*/
-
-/* .btn-W::after, .btn-B::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    transition: all .4s;
-  }  
-
-  .btn-W:hover::after, .btn-B:hover::after{
-    width: 0%;
-    height: 1px;  
-  } */
-
-  .btn{
-    display: block;
-    font-size: var(--font-size-M);
+.btn-line{
+  display: block;
+  font-size: var(--font-size-M);
   }
 
-  .btn::after{
+  .btn-line::after{
     content: '';
     display: block;
     width: 100%;
@@ -68,8 +54,25 @@
     transition: all .4s;
   }
 
-  .btn:hover::after{
+  .btn-line:hover::after{
     width: 0%;
     height: 1px;
+  }
+
+  .btn-underline{
+    display: block;
+  }
+
+  .btn-underline::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--black);
+    transition: all .4s;
+  }
+
+  .btn-underline:hover::after{
+    width: 100%;
   }
 

@@ -20,9 +20,9 @@ window.addEventListener('DOMContentLoaded',function(){
     hamburger.classList.toggle('on');
     nav.classList.toggle('on');
     if(nav.classList.contains('on')){
-      menuItemFn(0,400)
-      menuItemFn(1,600)
-      menuItemFn(2,800)
+      menuItemFn(0,600)
+      menuItemFn(1,800)
+      menuItemFn(2,1000)
       setTimeout(()=>{
         asideLink.style.transform='translateY(0%)'
         asideLink.style.opacity='1'

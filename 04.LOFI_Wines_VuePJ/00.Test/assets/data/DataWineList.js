@@ -363,8 +363,46 @@ const WineList = [
         }
       ]
     },
-    'Bizzarro',
-    'Das Juice',
+    'Bizzarro' = {
+      COMPANY_ID: 3,
+      COMPANY_IMG : './images/Bizzarro/company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/Bizzarro/.jpg' 
+        },
+      ]
+    },
+    'Das Juice' = {
+      COMPANY_ID: 4,
+      COMPANY_IMG : './images/Das Juice/company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/Das Juice/.jpg' 
+        },
+      ]
+    },
     'Delinquente',
     'Ephemera',
     'Good Intentions Wine Co.',
@@ -442,22 +480,24 @@ const WineList = [
 
 
 /*
-COMPANY_ID: 2,
-COMPANY_IMG : './images/Architects of Wine/company.jpg',
-STORY_1 : ``,
-STORY_2 : ``,
-STORY_3 : ``,
-LIST : [
-  {
-  ID : 0,
-    WINE : '',  
-    PRODUCER : '',  
-    COUNTRY : '',  
-    REGION : '',  
-    VARIETY : '',  
-    STYLE : '',
-    ABOUT : ``,
-    IMG:'./images/.jpg' 
-  },
-]
+{
+  COMPANY_ID: ,
+  COMPANY_IMG : './images//company.jpg',
+  STORY_1 : ``,
+  STORY_2 : ``,
+  STORY_3 : ``,
+  LIST : [
+    {
+      ID : 0,
+      WINE : '',  
+      PRODUCER : '',  
+      COUNTRY : '',  
+      REGION : '',  
+      VARIETY : '',  
+      STYLE : '',
+      ABOUT : ``,
+      IMG:'./images/.jpg' 
+    },
+  ]
+}
 */ 

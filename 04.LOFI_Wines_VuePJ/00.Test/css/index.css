@@ -25,7 +25,7 @@ main{
 .left-content h1{
   position: absolute;
   font-size: var(--font-size-L);
-  font-family: 'Domine', serif;
+  font-family: 'Nanum Myeongjo', serif;
   font-weight: normal;
   text-align: center;
   width: min(40vw,600px);
@@ -35,7 +35,6 @@ main{
   width: min(40vw,500px);
   font-size: var(--font-size-S);
   text-align: center;
-  font-weight: normal;
 }
 
 .left-content a{

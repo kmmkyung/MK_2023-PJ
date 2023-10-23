@@ -19,6 +19,8 @@ header{
   justify-content: space-between;
   border-bottom: 1px solid var(--black);
   padding-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .logo-All{
@@ -28,6 +30,13 @@ header{
 .logo{
   width: 100px;
   height: auto;
+}
+
+.title h2{
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: normal;
+  font-size: var(--font-size-M);
+  letter-spacing: 4px;
 }
 
 .menu-Icon{
@@ -59,8 +68,19 @@ header{
   transition: transform 0.2s;
 }
 
+.headerBG{
+  width: 50%;
+  position: absolute;
+  height: 69px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
 /* nav */
 nav{
+  z-index: 99;
   width: 50%;
   height: 100%;
   position: fixed;

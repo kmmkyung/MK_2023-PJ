@@ -17,7 +17,7 @@
   --nav:#eebc32;
   --gray: #eeeae1;
   --beige: #fef9ef;
-  --content: #6f7560;
+  --contact: #6f7560;
   
   /* FONTSIZE */
   --font-size-S: 1.4rem;
@@ -26,6 +26,11 @@
 
 }
 /*----------*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*-- CSS CLASS --*/
 
 .-hidden{

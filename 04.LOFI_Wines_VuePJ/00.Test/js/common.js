@@ -2,6 +2,9 @@ window.addEventListener('DOMContentLoaded',function(){
   // [로고]
   const logo = document.querySelector('.logo')
   logo.innerHTML=logoData
+  logo.addEventListener('click',function(){
+    location.href= 'index.html';
+  })
 
   // [메뉴]
   const nav = document.querySelector('nav');

@@ -40,4 +40,14 @@ window.addEventListener('DOMContentLoaded',function(){
       asideLink.style.transform='translateY(100%)'
     }
   })
+
+  // [메뉴배경]
+  function headerBg(){
+    const bg = document.querySelector('.headerBG')
+    const header = document.querySelector('header')
+    if(header.classList.contains('contact')){
+      bg.style.backgroundColor = 'var(--contact)' 
+    }
+  }
+  headerBg()
 })

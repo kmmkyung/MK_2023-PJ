@@ -16,4 +16,5 @@ window.addEventListener('DOMContentLoaded',function(){
     `;
   }
   people.innerHTML = peopleCode;
+
 })

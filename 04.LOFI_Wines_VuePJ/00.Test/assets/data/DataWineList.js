@@ -366,20 +366,56 @@ const WineList = [
     'Bizzarro' = {
       COMPANY_ID: 3,
       COMPANY_IMG : './images/Bizzarro/company.jpg',
-      STORY_1 : ``,
-      STORY_2 : ``,
-      STORY_3 : ``,
+      STORY_1 : `Bizzarro Aperitivo is the newest addition to the Delinquente Wine Co family. It’s a take on an all natural, Australian bitter aperitivo, made in the classic Delinquente way with scant regard for tradition, respect for nature and a product all about deliciousness.`,
+      STORY_2 : `Bizzarro is made by taking super aromatic organic and biodynamic skin contact Vermentino from the Basham family in the heart of the Riverland and infusing it with traditional aperitivo ingredients such as rhubarb and gentian root providing bitterness. From here Greg’s has upped the ante, using organically grown Riverland oranges and lemons to create an intoxicating citrus hit. Finally he fortifies this blend adding neutral grape spirit which has been infused with a secret array of fruits, herbs and other botanicals.`,
+      STORY_3 : `Bizzarro is a local aperitivo that perfectly balances sweet and bitter, making it incredibly versatile. Its less sweet than Aperol and less bitter than Campari giving endless options for your summer cocktail list. We recommend pouring it into pet nat for a delightful Spritz, or mixing it with local gin and vermouth for an all Aussie Negroni. We are excited to finally be able to bring to you an Australian interpretation of a much loved spirit, now finally made by hand and backed with great farming.`,
       LIST : [
         {
           ID : 0,
-          WINE : '',  
-          PRODUCER : '',  
-          COUNTRY : '',  
-          REGION : '',  
-          VARIETY : '',  
-          STYLE : '',
-          ABOUT : ``,
-          IMG:'./images/Bizzarro/.jpg' 
+          WINE : 'Bizzarro Aperitivo',  
+          PRODUCER : 'Bizzarro',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Spirit',  
+          STYLE : 'Aperitivo',
+          ABOUT : `
+          Bizzarro Aperitivo is the newest addition to the Delinquente Wine Co family. It's a take on an all natural, Australian bitter aperitivo, made in the classic Delinquente way with scant regard for tradition, respect for nature and a product all about deliciousness. Bizzarro is made by taking super aromatic organic and biodynamic skin contact Vermentino from the Basham family in the heart of the Riverland and infusing it with traditional aperitivo ingredients such as rhubarb and gentian root providing bitterness. From here Greg's has upped the ante, using organically grown Riverland oranges and lemons to create an intoxicating citrus hit. Finally he fortifies this blend adding neutral grape spirit which has been infused with a secret array of fruits, herbs and other botanicals. Bizzarro is a local aperitivo that perfectly balances sweet and bitter, making it incredibly versatile. Its less sweet than Aperol and less bitter than Campari giving endless options for your summer cocktail list. We recommend pouring it into pet nat for a delightful Spritz, or mixing it with local gin and vermouth for an all Aussie Negroni.`,
+          IMG:'./images/Bizzarro/Bizzarro-Aperitivo.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Bizzarro Tonic',  
+          PRODUCER : 'Bizzarro',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Tonic',  
+          STYLE : 'Can',
+          ABOUT : `Made in collaboration with the team from Mischief Brew Sodas, this is a mix of Bizzarro and their all natural, small batch Bengal Tonic water. Grapefruit twang with an earthy, herbaceous edge, the heady citrus aromas and interwoven bitter botanical vibe makes this drink feel both really well put together and just straight up gluggable. Made for go anywhere, straight from the can drinking – an entirely unique proposition that just feels like the drink of Summer.`,
+          IMG:'./images/Bizzarro/Bizzarro-Tonic.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Bizzarro Spritz',  
+          PRODUCER : 'Bizzarro',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Spritz',  
+          STYLE : 'Can',
+          ABOUT : `
+          The Bizzarro Spritz is an artfully formulated blend of Bizzarro, natural white wine, water and bubbles. Dry and refreshing yet approachable and lush, this is a meticulously crafted canned cocktail that highlights the both the bitter complexity and orange blossom freshness of Bizzarro. Perfectly carbonated, low sugar and ready to drink either from the can, or poured over ice with all the accoutrements.`,
+          IMG:'./images/Bizzarro/Bizzarro-Spritz.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Yuzu Strawberry Spritz',  
+          PRODUCER : 'Bizzarro',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Yuzu Strawberry',  
+          STYLE : 'Can',
+          ABOUT : `
+          A beloved partnership between Bizzarro and Michael “MC" Chiem from Sydney cocktail institution PS40 on this bright yellow can. House made strawberry shrub, fresh Riverland yuzu, SA verjuice and of course Bizzarro combine for the most easy of drinking, and very fancy, spritzes. Lush and sweet with that characteristic yuzu twang, these cans are a part of a limited release.`,
+          IMG:'./images/Bizzarro/Yuzu-Strawberry-Spritz.jpg' 
         },
       ]
     },

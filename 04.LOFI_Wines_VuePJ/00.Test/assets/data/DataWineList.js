@@ -422,6 +422,319 @@ const WineList = [
     'Das Juice' = {
       COMPANY_ID: 4,
       COMPANY_IMG : './images/Das Juice/company.jpg',
+      STORY_1 : `We are very proud to be able to offer you the wines that we make ourselves, Das Juice. Das Juice was a project born of necessity, having noticed many of you who needed well-made, well-farmed wines at a sharper price point. After 3 vintages and much trial and error we have finally managed to put together our full range of Das Juice wines, with one Pet-Nat style Prosecco from Victoria and four still wines farmed from organic and biodynamic vineyards across South Australia.`,
+      STORY_2 : `This project wouldn’t be possible without the help of our great winemaking friends and family. For the Prosecco we instilled the help of Rhen Dodd from Ephemera Wines who helped us source and process the Glera grapes. For all of the still wines we worked closely with viticulturist Dave Gartleman who put us in contact with some amazing vineyards across South Australia. The wines are made in the Barossa alongside those from Delinquente and Greg has been wonderful in keeping an eye on our baby’s during the winter months.`,
+      STORY_3 : `When it comes to the technical’s of the wines; in the cellar they are made with as little tinkering as possible, especially during fermentation. All the wines are fermented naturally and spend 5-6 months on full solids in tank. We didn’t plunge or pump the wines preferring to respect the grapes that the season gave to us. All wines remain unfiltered and un-fined with a small dose of sulphur at bottling the only addition.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Prosecco Pet Nat',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Prosecco',  
+          STYLE : 'Sparkling',
+          ABOUT : `100% Glera from the Alpine Valleys. The grapes were cold soaked for two days to build texture and then were pressed, fermented dry in tank and kept on full solids for three months. A small portion of juice was frozen and added back to the blend prior to bottling. It is full of texture with a lovely crisp pear note and heaps of citrus. Fresh and summery.`,
+          IMG:'./images/Das Juice/Prosecco-Pet-Nat.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Pink Pet Nat',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Pinot Gris Blend',  
+          STYLE : 'Pet Nat',
+          ABOUT : `The Pink Pet Nat is a savoury blend from the Mornington Peninsula of skin macerated Pinot Gris (40%), Sauvignon Blanc (30%) and Tempranillo (30%). The Gris was picked early and fermented on skins, once pressed it was joined by sauvignon blanc and fermented dry. The Tempranillo then came into the blend and was added to the wine as partially fermented juice and sealed up. The resulting wine has a lovely element of grip, bright fruit and crunchy red apple characters.`,
+          IMG:'./images/Das Juice/Pink-Pet-Nat.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'White',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Semillon/Sauvignon Blanc Blend',  
+          STYLE : 'White',
+          ABOUT : `Our 2021 Das Juice White is 40% Sauvignon Blanc (Brackenwood & Magpie Springs), 45% Riesling (Brackenwood) and 15% Semillon (Magpie Springs) from a selection of vineyards from the Adelaide Hills. These are all picked over a period of a week and are fermented together in tank. They spent almost 6 months on full solids before being racked twice and a small sulphur addition prior to bottling. It's got a wicked punch of acidity and lots of lime cordial and orange blossom.`,
+          IMG:'./images/Das Juice/White.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Maceration',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Arneis Blend',  
+          STYLE : 'Skin Contact',
+          ABOUT : `The 2021 Maceration is a bit of a different beast to past maceration wines with a more tropical and floral approach. This years wine is composed of Muscat 40% (Zirella), Arneis (Peters Creek), 10% Sauvignon Blanc (Top Range) and 10% Chardonnay (Magpie Springs). All were fermented separately for 2-3 weeks with daily plunge downs. Once pressed it spent 5 months on full solids in tank before racking and a small sulphur addition prior to bottling. Its resulted in lots of grip and heaps of juicy floral notes.`,
+          IMG:'./images/Das Juice/Maceration.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Rosé',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Tempranillo',  
+          STYLE : 'Rosé',
+          ABOUT : `The Rose is 80% Tempranillo (Peters Creek), 10% Cabernet (Zirella) and 10% Pinot Noir (Peters Creek). All fruit was picked nice and early and was directly pressed to tank where it underwent a long cool ferment. Kept on full solids for 5 months before racking and a small sulphur addition prior to bottling. Its really fresh with notes of unripe strawberry and sour cherry and rosehip.`,
+          IMG:'./images/Das Juice/Rosé.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Red',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Cabernet Sauvignon Blend',  
+          STYLE : 'Red',
+          ABOUT : `65% Cabernet Sauvignon (Yangarra), 20% Merlot (Zirella) and 15% Cabernet Franc (Zirella) from the vibrant sandy soils of Mclaren Vale. This years wine is a modern take on the Cabernets blend with lots of whole bunch and full carbonic taking this wine to the next level. All grapes were fermented whole bunch for 2 weeks before being pressed to tank for a cool ferment. 5 months on full solids in tank before racking and a small sulphur addition prior to bottling. Its full of cassis and blueberry with a noticeable bunchy green note adding to the varietal complexity.`,
+          IMG:'./images/Das Juice/Red.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Le Juice',  
+          PRODUCER : 'Das Juice',  
+          COUNTRY : 'Australia',  
+          REGION : 'Multi-Regional',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Le Juice is 100% Gamay and comes from a small single site called ‘La Cabane’ on the hill of the famed 'La Madonne' in the high reaches of Fleurie, Beaujolais. The 35 year old old bush vines are planted on coarse sand with speckles of bright pink granite dotted throughout. The wine is carbonic macerated for 9 days as whole bunches in concrete and aged for 6 months in tank. We bottled it young with a small sulphur addition. It is juicy and bright with a fleshy mid palette and opens beautifully over the course of a few days.`,
+          IMG:'./images/Das Juice/Le-Juice.jpg' 
+        },
+      ]
+    },
+    'Delinquente'= {
+      COMPANY_ID: 5,
+      COMPANY_IMG : './images/Delinquente/company.jpg',
+      STORY_1 : `Con-Greg Grigoriou grew up on a vineyard in the Riverland, South Australia, where his father has managed wineries for over 35 years. A few years ago, while working for an advertising agency in Melbourne, he tasted his first truly interesting Riverland wine and something clicked - why weren’t people producing high-quality wines in his home region?`,
+      STORY_2 : `Greg’s idea for Delinquente Wine Co was to take advantage of the Riverland’s small vineyards planted with Southern Italian varieties, which are suited to the region’s dry Mediterranean climate. He sources grapes from trusted growers many of whom he has know his whole life, who work organically. In the cellar Greg takes this organic philosophy forward, all his wines are small-batch and single-vineyard, fermented in stainless steel with wild yeast and without acid adjustments. His aim is to make wine that is pure, drinkable and delicious - or as he would put it, “smashable”. To complete his vision he recruited local Adelaide street artist Ankles to design the edgy, eye-catching labels.`,
+      STORY_3 : `Amid a sea of “Big Wine”, Delinquente has managed to convey a unique aesthetic and clear point of view: fun, uncomplicated and terroir-driven wines that will challenge people’s perception of the Riverland.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Tuff Nutt Bianco Pet Nat',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : "Bianco d'Alessano",  
+          STYLE : 'Pet Nat',
+          ABOUT : `Originally from Puglia, the boot heel of Italy, Bianco d'Alessano has made its new home on the sun drenched banks of the River Murray and is the only planting of the variety in Australia. Easy drinking, packed with tropical fruits - and a little spritz to make you smile - pop the top and embrace the sunshine.`,
+          IMG:'./images/Delinquente/Tuff-Nutt-Bianco-Pet-Nat.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Weeping Juan Pink Pet Nat',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : "Vermentino'Montepulciano",  
+          STYLE : 'Pet Nat',
+          ABOUT : `90% dry, finished Vermentino with a 10% Lagrein top up to give it bubbles and pink lift. Light, delicious and so much fun. Bracing acidity bouncing off sweet dark plums and berries, a ragtag blend of grapes from The Riverland that is sure to bless your palate and your summer bar fridge.`,
+          IMG:'./images/Delinquente/Weeping-Juan-Pink-Pet-Nat.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Amava Pet Nat',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Negroamaro',  
+          STYLE : 'Pet Nat',
+          ABOUT : `The Negroamaro for this wine was sourced from the Sherwood Estate in Loxton North, owned by the Proud family – third generation grape growers who have introduced Southern Italian varieties into their vineyards with great success. Dark pink in the glass with heady bubbles, the nose leads you into that dark fruit zone – blackberry, boysenberry, with a touch of savoury herb – aniseed, fennel seed. On the mouth though, it’s all broad, mouth puckering acidity, fresh and piercing. Black cherry fruitiness really playing second fiddle to the bright crunch, the slightly bitter saltiness of marjoram/tarragon herb characters providing more length and interest.`,
+          IMG:'./images/Delinquente/Amaya-Pet-Nat.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Screaming Betty Vermentino',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Vermentino',  
+          STYLE : 'White',
+          ABOUT : `Fermented using the natural yeasts present in the vineyard, the wine spent 6 weeks on fine lees, giving it a beautiful, textural edge not often found in Australian Vermentino’s. Tracing their origins to the island of Sardinia in the south of Italy, these grapes have completely embedded themselves in the warm, dry climate of the Riverland. Salty, saline and super fresh.`,
+          IMG:'./images/Delinquente/Screaming-Betty-Vermentino.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'High Crimes White',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : "Arinto'Albarino",  
+          STYLE : 'White',
+          ABOUT : `While the Delinquente wines focus on Southern and Central Italian varieties, the grapes native to the warmer parts of Spain and Portugal and equally as at home in the sun-drenched Riverland. To this end, the Bassham family have planted a portion of their vineyard to an amalgam of hardy Iberian varieties formed to make the 1.5ltr 'High Crimes' white blend. Arinto and Albarino are the pick of the Iberian whites and complement each other incredibly well in a blend. Arinto maintains its highwire acidity through the most glaring of heatwaves, whilst always bringing a structured, layered, complex stone fruit and orchard fruit profile. The Albarino benefitted most from the cooler season, really showcasing its bright lemon/grapefruit citrus and mineral characters, and brings a lovely pop to this blend.`,
+          IMG:'./images/Delinquente/High-Crimes-White.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Pretty Boy Rosato',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : "Nero d'Avola",  
+          STYLE : 'Rosé',
+          ABOUT : `Nero D'Avola, the famous black grape of Sicily, is just at home in the hot, dry climate of the Riverland as it is in the land of Don Corleone. The Rosato truly is a unique wine. Planted in the comparable climate of the Riverland, it produces a wine that's full of fruit flavour that retain natural acidity. After crushing, the fruit was left to soak on skins for 12 hours, giving the wine it’s bright, almost fluorescent pale pink colour. Dry, lifted and driven by acid.`,
+          IMG:'./images/Delinquente/Pretty-Boy-Rosato.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Roxanne The Razor NND',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : "Negroamaro'Nero d'Avola",  
+          STYLE : 'Red',
+          ABOUT : `Wild fermented in stainless steel, The Negroamaro and Nero d’Avola were picked on the same day, crushed and fermented together with wild yeast in small open stainless-steel fermenters, with a touch of Lagrein added prior to bottling. This wine is our attempt at essentially trying to emulate a light, cool climate red, with Negroamaro and Nero d’Avola being the perfect varieties for the task.`,
+          IMG:'./images/Delinquente/Roxanne-The-Razor-NND.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Bullet Dodger Montepulciano',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Montepulciano',  
+          STYLE : 'Red',
+          ABOUT : `Not exactly the most common grape to the Riverland, Greg spins on magic on what might be the funnest 'pizza wine' around. Picked for flavour and acidity - packed full of flavour.`,
+          IMG:'./images/Delinquente/Bullet-Dodger-Montepulciano.jpg' 
+        },
+        {
+          ID : 8,
+          WINE : 'High Crimes Red',  
+          PRODUCER : 'Delinquente',  
+          COUNTRY : 'Australia',  
+          REGION : 'Riverland',  
+          VARIETY : 'Graciano',  
+          STYLE : 'Red',
+          ABOUT : `While the Delinquente wines focus on Southern and Central Italian varieties, the grapes native to the warmer parts of Spain and Portugal and equally as at home in the sun-drenched Riverland. To this end, the Bassham family have planted a portion of their vineyard to an amalgam of hardy Iberian varieties formed to make the 1.5ltr 'High Crimes' red blend. Graciano may seem like a weird variety for the Riverland - predominantly planted in Rioja and Navarra, cooler regions in the north of Spain – but its late ripening, holds acidity well and produces plush, aromatic fruit that stands up well in the heat. And in a cooler year, it really comes into its own, so Greg jumped at the chance to have a crack at the variety. Herbaceous, almost menthol aromatics jump out the glass, while the palate is all easy-going red berry fruits.`,
+          IMG:'./images/Delinquente/High-Crimes-Red.jpg' 
+        },
+      ]
+    },
+    'Ephemera'= {
+      COMPANY_ID: 6,
+      COMPANY_IMG : './images/Ephemera/company.jpg',
+      STORY_1 : `Rhen Dodd and Janelle De Gabriele make invigorating wines under the aptly named ‘Ephemera’ moniker. Based out of the Yarra Valley, together Rhen and Janelle explore ‘snapshot’ winemaking, focusing their energy on their organically grown vineyard in the Yarra alongside their love for the Chalmers vineyard in Heathcote.`,
+      STORY_2 : `With Italian varieties coming out of Heathcote and the other half on their home block, Rhen and Janelle are producing compelling and addictive wines as they further define their Ephemera identity.`,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Ephemera Vermentino',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Vermentino',  
+          STYLE : 'White',
+          ABOUT : `Destemmed fruit is fermented on its skins for 6 days, with no plunging or pumping over. The ferment was then pressed to aged barriques and hogsheads to complete natural primary and malolactic fermentation, and rested on full lees for 3 months. Prior to bottling the wine is racked once with a small amount of sulphur added before bottling.`,
+          IMG:'' 
+        },
+        {
+          ID : 1,
+          WINE : 'Ephemera Sauvignon Blanc',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Sauvignon Blanc',  
+          STYLE : 'White',
+          ABOUT : `An experiment into oxidative winemaking, the the fruit was destemmed and left on skins for 2 days before pressing to barrel. Post ferment the barrels were slightly topped then left for 18 months. The barrels developed a natural film. After 18 months the wine was racked with a small sulphur addition prior to bottling. The wine has rested in bottle for 7 months.`,
+          IMG:'./images/Ephemera/Ephemera-Sauvignon-Blanc.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Ephemera Negroamaro',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Negroamaro',  
+          STYLE : 'White',
+          ABOUT : `Whole bunch pressed directly to aged barrels to ferment on full solids. Natural primary and malolactic fermentation, rested on full lees for 3 months. Prior to bottling the wine is racked once, and sulphur dioxide added, this being the only addition made. No fining or filtration.`,
+          IMG:'./images/Ephemera/Ephemera-Negroamaro.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Ephemera Chardonnay',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `From the Yarraloch vineyard in Gruyere, grown on a south facing slope on clay loam and ironstone. Whole bunch pressed with 6 months on full lees. Minimal sulphur added at bottling.`,
+          IMG:'./images/Ephemera/Ephemera-Chardonnay.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Ephemera Pinot Noir',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `From the Yarraloch vineyard in Gruyere, grown on a very steep north east facing slope on clay loam and ironstone. 50% Whole bunch with a 18 day maceration. 6 months on full lees, minimal sulphur added at bottling.`,
+          IMG:'./images/Ephemera/Ephemera-Pinot-Noir.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : "Ephemera Nero d'Avola",  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : "Nero d'Avola",  
+          STYLE : 'Red',
+          ABOUT : `Sourced from the Chalmers vineyard in Northern Heathcote, on ancient cambrian clay. East facing, organic viticulture. 65% whole bunch, 3 weeks maceration with no pumping over or plunging. The wine was rested in old large format oak for 6 months, before being sulphured once, and bottled without fining or filtration.`,
+          IMG:"./imagesEphemera/Ephemera-Nero-d'Avola.jpg" 
+        },
+        {
+          ID : 6,
+          WINE : 'Ephemera Nebbiolo',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Nebbiolo',  
+          STYLE : 'Red',
+          ABOUT : `From the Malakoff vineyard in the Pyrenees. North east facing slope of granite and pink quartz. 100% de-stemmed and macerated for 85 days before a 14 month elevage in old puncheon, minimal sulphur added at bottling.`,
+          IMG:'./images/Ephemera/Ephemera-Nebbiolo.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Ephemera Sangiovese',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Sangiovese',  
+          STYLE : 'Red',
+          ABOUT : `50% whole cluster fermentation for 7 days, with no plunging or pumping over. The wine was rested in old hogsheads for 3 months. Prior to bottling the wine is racked once, and sulphur dioxide added, this being the only addition made. No fining or filtration.`,
+          IMG:'' 
+        },
+        {
+          ID : 8,
+          WINE : 'Lagrein',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Lagrein',  
+          STYLE : 'Red',
+          ABOUT : `A brand new cuvee from Rhen. From the sustainably farmed Chalmers vineyard in northern Heathcote on dark red volcanic soils. De-stemmed and macerated in tank for 6 days. Pressed to old barrels to finish fermentation and spends three months on full solids. Racked twice and a small 20ppm sulphur addition prior to bottling. Bright and crunchy on the palette with a dark savoury finish.`,
+          IMG:'./images/Ephemera/Lagrein.jpg' 
+        },
+        {
+          ID : 9,
+          WINE : 'Ephemera Svrah',  
+          PRODUCER : 'Ephemera',  
+          COUNTRY : 'Australia',  
+          REGION : 'Yarra Valley, Heathcote',  
+          VARIETY : 'Shiraz',  
+          STYLE : 'Red',
+          ABOUT : `Organically farmed vineyard which Rhen & Janelle have been managing since 2015. North east facing slope of loamy clay over ironstone. 70% whole bunch with a 3 week maceration. 6 months on full lees, minimal sulphur added at bottling.`,
+          IMG:'./images/Ephemera/Ephemera-Svrah.jpg' 
+        },
+      ]
+    },
+    'Good Intentions Wine Co.'= {
+      COMPANY_ID: 7,
+      COMPANY_IMG : './images//company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
       STORY_3 : ``,
@@ -435,17 +748,90 @@ const WineList = [
           VARIETY : '',  
           STYLE : '',
           ABOUT : ``,
-          IMG:'./images/Das Juice/.jpg' 
+          IMG:'./images/.jpg' 
         },
       ]
     },
-    'Delinquente',
-    'Ephemera',
-    'Good Intentions Wine Co.',
-    'Maison Soleil',
-    'Saep',
-    'Sigurd',
-    'Sonnen'
+    'Maison Soleil'= {
+      COMPANY_ID: 8,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Saep'= {
+      COMPANY_ID: 9,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Sigurd'= {
+      COMPANY_ID: 10,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Sonnen'= {
+      COMPANY_ID: 11,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    }
   ],
   'AUSTRIA' = [
     'Christian Tschida',

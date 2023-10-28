@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded',function(){
   function headerBg(){
     const bg = document.querySelector('.headerBG')
     const header = document.querySelector('header')
-    if(header.classList.contains('contact')){
+    if(header.className == 'contact'){
       bg.style.backgroundColor = 'var(--contact)' 
     }
   }

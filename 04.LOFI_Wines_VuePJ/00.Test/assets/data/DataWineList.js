@@ -1268,7 +1268,7 @@ const WineList = [
     },
     'Claus Preisinger' = {
       COMPANY_ID: 1,
-      COMPANY_IMG : './images//company.jpg',
+      COMPANY_IMG : './images/Claus Preisinger/company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
       STORY_3 : ``,
@@ -1282,13 +1282,13 @@ const WineList = [
           VARIETY : '',  
           STYLE : '',
           ABOUT : ``,
-          IMG:'./images/.jpg' 
+          IMG:'./images/Claus Preisinger/.jpg' 
         },
       ]
     },
     'Gut Oggau' = {
       COMPANY_ID: 2,
-      COMPANY_IMG : './images//company.jpg',
+      COMPANY_IMG : './images/Gut Oggau/company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
       STORY_3 : ``,
@@ -1302,13 +1302,13 @@ const WineList = [
           VARIETY : '',  
           STYLE : '',
           ABOUT : ``,
-          IMG:'./images/.jpg' 
+          IMG:'./images/Gut Oggau/.jpg' 
         },
       ]
     },
     'Michael Gindl' = {
       COMPANY_ID: 3,
-      COMPANY_IMG : './images//company.jpg',
+      COMPANY_IMG : './images/Michael Gindl/company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
       STORY_3 : ``,
@@ -1322,7 +1322,7 @@ const WineList = [
           VARIETY : '',  
           STYLE : '',
           ABOUT : ``,
-          IMG:'./images/.jpg' 
+          IMG:'./images/Michael Gindl/.jpg' 
         },
       ]
     }

@@ -734,66 +734,540 @@ const WineList = [
     },
     'Good Intentions Wine Co.'= {
       COMPANY_ID: 7,
-      COMPANY_IMG : './images//company.jpg',
-      STORY_1 : ``,
-      STORY_2 : ``,
-      STORY_3 : ``,
+      COMPANY_IMG : './images/Good Intentions Wine Co./company.jpg',
+      STORY_1 : `Andrew (farmer) and Louise (Musician) Burchell are a husband and wife team who moved back to Mount Gambier (Andrew’s childhood town) to start a family and a wine label. They wanted to grip the earth with their toes and use their knowledge of organic farming and permaculture to create their very own wine label. Creating a sense of community was a deep part of this plan, a place to call home and where they could raise their daughter Frankie around home grown food, great music and with a love and appreciation for the land.`,
+      STORY_2 : `They lease three vineyards and are planning the planting of two more on their farm, which is located on the outskirts of Mt Gambier, SA. The property and all of the leased vineyards are located on the south side of one of Australia’s youngest volcanoes. Erupting less than 6000 years ago it is filled with water that changes colour with the seasons. Arising from an ancient inland sea made into limestone and now receiving water from underground caves added with our generous rainfall all contributes to the abundance of water stored in underground limestone caves with pockets of flint rock spread below the nearby soils. The limestone filters the water naturally and the result is a pure water thriving with minerality. All this helps make for incredible soil complexity and their cool climate makes for perfect growing conditions and in turn beautiful, elegant and totally unique wines like no other.`,
+      STORY_3 : `They make wines that reflect the eccentricities of their own personalities as well as deeply reflecting place and terroir with a minimalistic approach. They use old world wine methods; preferring the challenges of hand picking fruit, open fermenting with indigenous yeast and only adding sulphur when required by the wine. They do not filter or fine wines and they are all bottled on site in their small winery.
+      Mount Gambier is a truly unique wine growing region and one that over the next few years is due likely to grow in understanding and popularity. Over the last few years these wines have gone from strength to strength as cuvees have tightened and become more precise. We are very excited to share these wines with you as we welcome Andrew, Louise & Frankie to our Lo-fi family.`,
       LIST : [
         {
           ID : 0,
-          WINE : '',  
-          PRODUCER : '',  
-          COUNTRY : '',  
-          REGION : '',  
-          VARIETY : '',  
-          STYLE : '',
-          ABOUT : ``,
-          IMG:'./images/.jpg' 
+          WINE : 'Petillant Pop!',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Pet Nat',
+          ABOUT : `100% Pinot Noir from Mv6 clone, organically farmed in Mount Gambier by Good Intentions since 2015 on a site consisting of volcanic ash, clay and limestone soils. The grapes go through carbonic maceration for 7 days to give its juiciness and confectionary characters then de-stemmed to increase colour. This 'Pet Nat' is a dark style sparkling Pinot Noir with insane drinkability. 15 months in bottle and each bottle hand disgorged allowing for lees contact to improve the wine and for each bottle to be a clean, fresh, well-balanced pet nat that has structure and stability.`,
+          IMG:'./images/Good Intentions Wine Co./Petillant-Pop!.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Gris Diddly Pop!',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Gris',  
+          STYLE : 'Sparkling',
+          ABOUT : `Organically grown Pinot Gris, carbonically macerated and thrown in with Pinot Noir Rosé to make a Pet Nat. Soft and delicate with earthy undertones and beautiful natural acidity. Fruit driven with a savoury edge. In our mind it's Andrew's best Pet Nat to date`,
+          IMG:'./images/Good Intentions Wine Co./Gris-Diddly-Pop!.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Floppy Giggle',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Semillon/ Sauvignon Blanc',  
+          STYLE : 'White',
+          ABOUT : `Grown on limestone over flint rock, a blend of Semillon and Sauvignon Blanc around 60% Semillon and 40% Sauvignon Blanc in no order parcels are either de-stemmed and left to macerate on skins or locked down for carbonic maceration after 4-5 days remaining while bunches are de-stemmed and all pressed together to co-ferment stored on lees for 8 months in old hog’s heads barrels. Racked once only to bottle without any additional sulphites.`,
+          IMG:'./images/Good Intentions Wine Co./Floppy-Giggle.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Loubediedo',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Noir/Pinot Gris',  
+          STYLE : 'Rosé',
+          ABOUT : `Rose of pinot noir a blend of D5V12 and MV6 from our organically farmed vineyards. direct pressed with an oxidative approach and hard pressings taken with all the lees for colour and body. Open fermented in stainless and locked down on full lees for 8 months. Bottled and rested for an additional 6 months to open up and evolve. This juicy slightly darker rose straddles the edge of Rose/Light Red. A great winter pouring rose.`,
+          IMG:'./images/Good Intentions Wine Co./Loubediedo.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Gris Diddly Dee',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Gris',  
+          STYLE : 'Rosé',
+          ABOUT : `A relatively long, 2 week maceration of Pinot Gris with a part carbonic maceration blended in with pressings of Pinot Noir Rosé aged in old oak.`,
+          IMG:'./images/Good Intentions Wine Co./Gris-Diddly-Dee.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Charmeleon',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Direct press Chardonnay grown on limestone soils. Aged on full lees in barriques for 12 months , bottled with minimal sulphur`,
+          IMG:'./images/Good Intentions Wine Co./Charmeleon.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Cape Jaffa Chardonnay',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Cape Jaffa is situated just out of the town of Robe in SA. Chardonnay grown over sandy soils over limestone only a few kilometres from the ocean. Cool sea breezes and cooling temps each night lend to great ripening flavours in Cape Jaffa fruit. What I love about this wine is how the chardonnay expresses its site, climate and soils. A wine so different to our Volcanic Lakes Chardonnay and unique in itself. This wine is de-stemmed and left on skins for a couple of hours to enhance texture and give it a beautiful golden colour. This texture matched with the natural acidity and our earlier pick make this a refreshing chardonnay perfect for those warm days.`,
+          IMG:'./images/Good Intentions Wine Co./Cape-Jaffa-Chardonnay.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Single Vineyard Chardonnay',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Single site Chardonnay organically farmed by us for the last 5 years and painstakingly brought back to life. This unique Mount Gambier vineyard sits right at the base of the volcanic slope of Mount Gambier and the region's major volcanic crater, “Blue Lake” (Waawor). Direct pressed Chardonnay, with key aims of terroir expression. 12 months in bottle resting lets the wine evolve and expose its uniqueness.`,
+          IMG:'./images/Good Intentions Wine Co./Single-Vineyard-Chardonnay.jpg' 
+        },
+        {
+          ID : 8,
+          WINE : 'Artesian Lava',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Riesling Blend',  
+          STYLE : 'Skin Contact',
+          ABOUT : `This year saw a co-ferment of Riesling and Pinot Gris. All grapes come from the Coola vineyard in Kongorong, Mount Gambier on limestone and flint rock. The vineyard is conventionally farmed with swings towards more sustainable growing in the future. The grapes were thrown into tanks and carbonic macerated for a week before being foot stomped and sealer for three months. Once pressed barrels were kept un topped for 9 months before bottling. What resulted was a unique orange wine perhaps never to be made again unless the season allows. Full of bruised stone fruit characters, ripe pineapple, lengthy tannins and huge amounts of structure and complexity but still with our mineral driven edge and acidity from the Mount Gambier soils.`,
+          IMG:'' 
+        },
+        {
+          ID : 9,
+          WINE : 'Ridiculously White',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Semillon',  
+          STYLE : 'White',
+          ABOUT : `Certified biodynamic Semillon grapes grown on sandy soils over limestone near the sea. this rewards the wine with a see breeze freshness and a pillowy texture. The balanced acidity combined with white sherbet on the palette makes this a perfect park, beach or any place in the sun wine really, share with friends and let the good times roll!`,
+          IMG:'./images/Good Intentions Wine Co./Ridiculously-White.jpg'
+        },
+        {
+          ID : 10,
+          WINE : 'Relatively White',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Semillon/Sauvignon Blanc',  
+          STYLE : 'Skin',
+          ABOUT : `Due to low yields of 2020 it had Andrew looking outside Mount Gambier to find grapes. They landed with Semillon and Sauvignon Blanc from Cape Jaffa's certified biodynamic vineyard just near Robe, SA, grown on sandy soils over limestone. This wine is dominant Semillon 80%, 20% Sauvignon Blanc and the grapes were co picked and co fermented and went through the exact same process as the artesian lava being kept on skins for 3 months, pressed to barrel and bottled just before the 2021 harvest. Being from Robe its richer with a mouth filling texture and depth. This orange wine is oxidative in its style with long tannins yet still holding freshness and expressing tropical fruit flavours.`,
+          IMG:'./images/Good Intentions Wine Co./Relatively-White.jpg' 
+        },
+        {
+          ID : 11,
+          WINE : 'Ridiculouslv Red',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Cabernet Blend',  
+          STYLE : 'Red',
+          ABOUT : `The Ridiculously Red is a co-ferment of certified biodynamic Cabernet Sauvignon and Petit Verdot grapes grown on sandy maritime soils over limestone near the ocean. We leave the grapes on skins for just 1 day to retain high sugar levels before it goes to the press. This results in juicy and fresh characters. A light electric coloured jubey style red wine with bitter and sour cherries on the palette like an enjoyable punch in the face`,
+          IMG:'./images/Good Intentions Wine Co./Ridiculouslv-Red.jpg' 
+        },
+        {
+          ID : 12,
+          WINE : 'Relativelv Red',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Shiraz/Semillon',  
+          STYLE : 'Red/White Blend',
+          ABOUT : `Farmed on limestone and flint rock 6 kilometres from the ocean, this fruit comes from the only Shiraz plantings in the region. Light, crunchy Shiraz that's slightly lower in alcohol. Carbonically macerated for 5 days, destemmed and left on skins for 24 hours. Drink chilled.`,
+          IMG:'./images/Good Intentions Wine Co./Relativelv-Red.jpg' 
+        },
+        {
+          ID : 13,
+          WINE : 'Ooh La La',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Noir/Chardonnav',  
+          STYLE : 'Red/White Blend',
+          ABOUT : `A mix of both of Andrew's Boxer's and Volcanic Lake vineyards. A small portion of Boxer Pinot was poured and fermented over reductive Chardonnay lees, making this wine drink on the lighter side. Fun yet still structured with red fruit beaming from the glass this red/white blend is in true Good Intentions style. A different take on Pinot Noir. One puncheon produced.`,
+          IMG:'./images/Good Intentions Wine Co./Ooh-La-La.jpg' 
+        },
+        {
+          ID : 14,
+          WINE : 'Noir De Do Da',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `The Pinot Noir is off the organically run Boxer's vineyard on the youngest volcanic soils in the country over heavy limestone. Andrew spray's his own fermented sea weed (sourced locally from our nearby beach) and worm castings via the lunar calendar. A blend of D5V12 and MV6, this wine gets some carbonic treatment, some whole bunch and majority de-stemmed parcels all for around a week. It is then pressed off and fermented dry in stainless before being racked to old puncheons of french oak. A bright, clean and delicious example from Andrew.`,
+          IMG:'./images/Good Intentions Wine Co./Noir-De-Do-Da.jpg' 
+        },
+        {
+          ID : 15,
+          WINE : 'Single Vineyard Pinot Noir',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `Single site Pinot noir (Mv6) farmed by Andrew since the start of Good Intentions. A 2019 cuvée left to rest in bottle for 12 months. Selected barrels of carbonic, de-stem, whole bunch to show the true terroir of Mount Gambier. Aggressive, edgy and unique this wine is full of excitement.`,
+          IMG:'./images/Good Intentions Wine Co./Single-Vineyard-Pinot-Noir.jpg' 
+        },
+        {
+          ID : 16,
+          WINE : 'Frankie',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Cabernet Franc',  
+          STYLE : 'Red',
+          ABOUT : `Cabernet Franc from Robe located approx. 120 kms from Mount Gambier on the coast with a mix of red terra rossa and sandy soils over shallow limestone. The Franc is partly carbonic macerated and partly de-stemmed and then left on skins until desired fruit flavours are reached (approx. 10 days). Pressed off stored in old oak on lees. This variety is late picked, cold soaked naturally and fermented long and slowly in our cool climate winery. After 8 months the wines were racked and minimal sulphur added at bottling.`,
+          IMG:'./images/Good Intentions Wine Co./Frankie.jpg' 
+        },
+        {
+          ID : 17,
+          WINE : 'Merlin',  
+          PRODUCER : 'Good Intentions Wine Co.',  
+          COUNTRY : 'Australia',  
+          REGION : 'Mount Gambier',  
+          VARIETY : 'Merlot/Petit Verdot',  
+          STYLE : 'Red',
+          ABOUT : `A co-ferment of Merlot and Petit Verdot from Cape Jaffa’s certified bio dynamic vineyard near robe. Andrew had to branch out of Mount Gambier in 2020 due to a shortage in fruit and what a result. Cab Mac, whole bunch in tank locked down jumped on then pressed off within the week to hold fruit. It shows a different take on these varieties, truely drinkability at its best.`,
+          IMG:'./images/Good Intentions Wine Co./Merlin.jpg' 
         },
       ]
     },
     'Maison Soleil'= {
       COMPANY_ID: 8,
-      COMPANY_IMG : './images//company.jpg',
-      STORY_1 : ``,
-      STORY_2 : ``,
+      COMPANY_IMG : './images/Maison Soleil/company.jpg',
+      STORY_1 : `Maison Soleil was born out of our desire to continue to support our Das Juice growers by taking some small parcels of excess fruit and alternative varieties starting from the bountiful 2021 South Australian harvest. As with Das Juice the ideas of organic viticulture, minimal intervention in the cellar and experimentation were at the forefront and with that we are delighted to introduce you to our first release. Maison Soleil is likely to be a series of one off wines, adapting as growers approach us with small parcels outside of our normal growing agreements, with Pinot Noir, Shiraz and Prosecco filling the 2022 release.`,
+      STORY_2 : `This years series sees a Prosecco made from the Alpine Valleys, our classic Das Juice site we have taken fruit from for almost 5 years now. A Pinot Noir from the Peters Creek Vineyard in McLaren Vale, grown at altitude and punching well above its weight. Finally Syrah, McLaren Vale again from the organic certified Aramis vineyard, lots of dark fruit and spice. As mentioned above all wines are wild ferment, unfiltered and made with no additions other than 40ppm sulphur maximum.`,
       STORY_3 : ``,
       LIST : [
         {
           ID : 0,
-          WINE : '',  
-          PRODUCER : '',  
-          COUNTRY : '',  
-          REGION : '',  
-          VARIETY : '',  
-          STYLE : '',
-          ABOUT : ``,
-          IMG:'./images/.jpg' 
+          WINE : 'Prosecco',  
+          PRODUCER : 'Maison Soleil',  
+          COUNTRY : 'Australia',  
+          REGION : 'South Australia',  
+          VARIETY : 'Glera',  
+          STYLE : 'Pet Nat',
+          ABOUT : `Alpine Valleys Glera, Wild ferment, long lees contact, full of citrus flavours and loads of fun. Perfect first drink for your family get-together. Not filtered or fined and minimal S02.`,
+          IMG:'./images/Maison Soleil/Prosecco.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Pinot Noir',  
+          PRODUCER : 'Maison Soleil',  
+          COUNTRY : 'Australia',  
+          REGION : 'South Australia',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `Pinot Noir from the Peters creek vineyard, one of the highest in the McLaren Vale GI. This vineyard straddles the Adelaide Hills and McLaren GI and is extremely cool and windy. A mixture of clones. It produces Pinot Noir of great depth. A mixture of de-stemmed and whole bunches, on skins for 2 weeks. Aged in a mixture of old french barrels and tank for 9 months. Not filtered or fined and minimal S02.`,
+          IMG:'./images/Maison Soleil/Pinot-Noir.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Syrah',  
+          PRODUCER : 'Maison Soleil',  
+          COUNTRY : 'Australia',  
+          REGION : 'South Australia',  
+          VARIETY : 'Shiraz',  
+          STYLE : 'Red',
+          ABOUT : `Shiraz from the certified organic Aramis vineyard in McLaren Vale. 100% Shiraz, 20 year old vines. All fruit de-stemmed and kept on skins for a short 9 day maceration, with a small amount of direct pressed juice to keep the cap wet. Kept in tank for 9 months, not filtered or fined and minimal S02.`,
+          IMG:'./images/Maison Soleil/Syrah.jpg' 
         },
       ]
     },
     'Saep'= {
       COMPANY_ID: 9,
-      COMPANY_IMG : './images//company.jpg',
-      STORY_1 : ``,
-      STORY_2 : ``,
-      STORY_3 : ``,
+      COMPANY_IMG : './images/Saep/company.jpg',
+      STORY_1 : `Saep Wines is the Adelaide Hills-based project of longtime wine-grower Dave Gartelmann. Dave is a great farmer that embraces all things organic and biodynamic and the wines he makes have superbly detailed finesse coupled with inherent drinkability. Alongside his own winemaking project Dave grows fruit for winemakers such as Gentle Folk, Jauma, Brackenwood and Das Juice. Having worked alongside Dave for our Das Juice project since 2019 we can attest that few are as committed to the conversion of vineyards from conventional to organic viticulture. He is deeply passionate about telling the story of terroir through his wines and his love for the Adelaide Hills streams through this release. All vineyards in Saep are organic, sustainable and respected with Dave using techniques such as grazing sheep over winter and compost addition to his approach.`,
+      STORY_2 : `The Saep project started for Dave in the early 2000’s where he would make small amounts of exciting plots from his own and managed vineyard sites. He took great influence in the early days from longtime friend Abel Gibson from Ruggabellus, where his shiraz releases see a great deal of familiarity. These days Dave makes several micro-cuvees each year out of the shed at Brackenwood Vineyard in Hope Forrest. All wines are wild fermented with nothing added other than a pre bottling sulphur in small amounts.`,
+      STORY_3 : `We are delighted to bring Dave’s release to you which includes two Shiraz cuvees and a wonderfully fun Basket Range Pinot Noir. Over the coming months we will welcome Riesling and Chardonnay to the mix.`,
       LIST : [
         {
           ID : 0,
-          WINE : '',  
-          PRODUCER : '',  
-          COUNTRY : '',  
-          REGION : '',  
-          VARIETY : '',  
+          WINE : 'Moni',  
+          PRODUCER : 'Saep',  
+          COUNTRY : 'Australia',  
+          REGION : 'Adelaide Hills',  
+          VARIETY : 'Pinot Noir',  
           STYLE : '',
-          ABOUT : ``,
-          IMG:'./images/.jpg' 
+          ABOUT : `Moni is a balancing point. Pinot Noir vines at Basket Range, a 25 year old vineyard Dave worked three seasons to recover, old yet neglected, making a new start in life. The site sits at 400m above sea level at a NE aspect with a mix of clones. Tight clay loam over basket range sandstone. 2 picks, 35% whole bunch, some extended maceration, barrelled in old French oak bottled in its 2nd spring. Tension – resolution. Bottled with minimal so2 and rested for 6 months before release.`,
+          IMG:'./images/Saep/Moni.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Eddy',  
+          PRODUCER : 'Saep',  
+          COUNTRY : 'Australia',  
+          REGION : 'Adelaide Hills',  
+          VARIETY : 'Shiraz',  
+          STYLE : 'Red Wine',
+          ABOUT : `The Eddy Shiraz comes from a vineyard planted by Dave's family over 30 years ago in Hope Forrest, making it one of the southern most vineyards in the Adelaide hills. The vines sit at 390 metres above sea level and are planted on a SE aspect on gravelly silty loam over some clay before weathered pre Cambrian sandstone and quartzite. Eddy is the fruit above and below the ridge, deeper soils, bigger berries, a beautiful perfume and a brambly-ness but not the phenolic ripeness.Aiming to capture perfume and acid, it's a short time on skins (12 days), mostly kept in tank. Planted amongst the vineyard remains the odd semillon vine, which continues to add a wonderfull freshness to this wine. Bottled with minimal so2 and rested for over a year before release.`,
+          IMG:'./images/Saep/Eddy.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Sapere',  
+          PRODUCER : 'Saep',  
+          COUNTRY : 'Australia',  
+          REGION : 'Adelaide Hills',  
+          VARIETY : 'Shiraz',  
+          STYLE : 'Red Wine',
+          ABOUT : `The Sapere Shiraz comes from a vineyard planted by Dave's family over 30 years ago in Hope Forrest, making it one of the southern most vineyards in the Adelaide hills. The vines sit at 390 metres above sea level and are planted on a SE aspect on gravelly silty loam over some clay before weathered pre Cambrian sandstone and quartzite. Sapere is a examination of phenolic ripeness, 2 picks each split between press at dryness (20 days) and 45 days extended maceration. He aims to find savouriness and a shape that reflects the rocky ridge it comes from. Bottled with minimal so2 and rested for a 6 months before release.`,
+          IMG:'./images/Saep/Sapere.jpg' 
         },
       ]
     },
     'Sigurd'= {
       COMPANY_ID: 10,
+      COMPANY_IMG : './images/Sigurd/company.jpg',
+      STORY_1 : `Sigurd is the story based around Daniel Grahams great grandfather who spawned from Norway. Despite only meeting his great grandfather as a two year old Dan feels an incredible connection to him and his nordic heritage. His middle name is Sigurd and despite copping a small amount of grief through high school he proudly uses it his brand name.`,
+      STORY_2 : `His grandfather travelled from Norway to find work in Australia back in the early days (he was 19, so around 1914) and found the quickest way to become a citizen was to join the army, so he was sent over to Europe fight for Australia. A larrikin at heart he was caught AWOL after being shot early into his service and then sent back to the front lines in France as punishment, where he was shot again…. This time in the elbow which made him useless at holding a gun, luckily this time he was sent back to Australia. His stories amongst the family were legendary and his constant smile and mischievous behaviour was always something Daniel related to. For any of you who have met Dan you will of course know this to be true.`,
+      STORY_3 : `Daniel grew up in central western New South Wales and from a young age was immersed in grape growing and winemaking. During school holidays he would pick up work with large wineries picking fruit or pruning vines. This led him to Charles Sturt University where he completed his double Wine/Viticulture degree at Wagga Wagga. His desire to understand different regions led him to vintages in New Zealand (Central Otago), Canada (Okanagan Valley), Portugal (Alentejo), France (Hermitage) and Italy (Barolo). After spending some time back in Australia working for Jacobs Creek his desire to start a small label focusing on organically grown grapes stated to burgeon. He knew that the mechanical, conventional way of doing things wasn’t for him and so in 2012 Sigurd was born. He moved to a smaller winery RedHeads studio wines, which he was given the task of re-invigorating. This also allowed Dan to explore his own label on the side. The first wine under Sigurd was a quirky single hogshead of Riesling fermented with Gewürztraminer skins just labeled as the white. From here a red GSM (now GSMN), Rose, Chenin, Syrah and now Carignan have joined the range with fleeting appearances of Adelaide Hills Pinot Noir and Chardonnay.
+      Every vintage of Sigurd is subtly different, be it a change in the blend or style to best show off that years conditions. For the most part Dan’s grapes are sourced or grown under organic principles, something he is working hard to have across the board. Once in the cellar his wines are as hands off as possible with only indigenous yeasts used, no adjustments of acid or tannin and minimal sulphur added at bottling (max 30ppm). He is proud of the Barossa Valley and his reds in particular speak of the richness of the terroir while still harbouring an immense freshness and drinkability, not always an easy task in one of Australia’s warmest regions. Dan is one of the most exciting winemakers coming out of the Barossa and we are so thrilled with his evolution over the last few years.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Sigurd Riesling',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `A mixture of 90% high Eden Valley fruit from the white blend vineyard and 10% Clare Valley fruit from the Chenin Blanc vineyard, this Riesling was fermented in a separate 1600L Foudre and Barrique, pressed as whole bunches straight to oak, left for around 7 months and then racked off solids and in to tank where a small amount of sulphur was added before bottling. Lush, minerally and with a ton of drive.`,
+          IMG:'./images/Sigurd/Sigurd-Riesling.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Sigurd White Blend',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Riesling Maceration Blend',  
+          STYLE : 'Skin Contact',
+          ABOUT : `Riesling (27%), Vermentino (27%), Sauvignon Blanc (15%), Gewurtztraminer (15%), Semillon (11%), Chardonnay (5%). The 2019 Sigurd White started early February with the picking of Gewurtztraminer and Vermentino, which was then fermented on skins for 5 days before being pressed off and into old French oak puncheons (500L). The Sauvignon Blanc and Semillon were fermented in stainless steel tank separately and were whole bunch pressed. The Riesling was the last fruit to come in and was whole bunch pressed to a re-conditioned 100 yr old oak foudre (1600L) where it stayed until bottling in December. All wines were left on their lees until late November before being racked off lees and bottled weeks later with a small addition of sulphur.`,
+          IMG:'./images/Sigurd/Sigurd-White-Blend.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Sigurd Chenin',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'White',
+          ABOUT : `Sourced from one of the most northern blocks in Clare Valley, this Chenin vineyard is around 55 years old. It was picked around 11.5 baume and half is then destemmed and pressed while the other is whole bunch fermented in an open tank for 13 days. The juice was transferred into an old 500L French oak puncheons and a couple new Russian oak Puncheons. Left to ferment in oak to dryness for about 5 months, racked from oak once and a small amount of sulphur added before bottling.`,
+          IMG:'./images/Sigurd/Sigurd-Chenin.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Hoyde',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Hand-picked, whole bunch pressed for one parcel. The wine was then pressed off into a new French oak barrel for 6 months. Racked out of oak with a small amount of sulphur added before bottling. Hand bottled and corked. ‘Hoyde’ represents the hills that this fruit comes from and also the word being of Nordic origin for ‘Hill’, part of Dan's heritage.`,
+          IMG:'./images/Sigurd/Hoyde.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Joan Chardonnay',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `It was a warm and dry year, even up in Piccadilly Valley in the Adelaide Hills. The fruit was hand picked over two occasions, one to retain acid and direction, the other for a fuller flavoured profile of pears, apple skins and preserved lemon peel. Coming to the winery it was whole bunch pressed to tank, and racked off the heavy lees into a mixture of new and old french puncheons (500 ltr) for fermentation. Fermentation took about 6 weeks to finish before going through full malolactic fermentation. Elevage of the Chardonnay was approximately 16 months in oak and then racked carefully to a stainless steel tank for a further 6 months, with a small addition of sulphur to tank before bottling. This wine shows power and drive with some great flavours of preserved lemon and quince and, firm acid and phenolic texture to make this a very long living wine.`,
+          IMG:'./images/Sigurd/Joan-Chardonnay.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Sigurd Rosé',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'GSM Blend',  
+          STYLE : 'Rosé',
+          ABOUT : `Grenache (45%), Sauvignon Blanc (28%), Syrah (17%), Pinot Gris (5%), Gewurtztraminer (5%). All sourced from around the southern part of the Barossa, the fruit is picked early for the Rose. All varieties are fermented separately and pressed straight away except for the Gewurztraminer and Pinot Gris which are fermented on skins for 10 days. A small amount of sulphur was added before bottling.`,
+          IMG:'./images/Sigurd/Sigurd-Rosé.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Lila Rosé',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Carignan',  
+          STYLE : 'Rosé',
+          ABOUT : `Whole bunch pressed Carignan, picked early, then solely tank fermented and left in peace through malolactic fermentation. A small addition of sulphur (30ppm) is added before the wine is left to settle for a month or so until it's introduced to magnum.`,
+          IMG:'./images/Sigurd/Lila-Rosé.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Joan Pinot Noir',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `The Pinot Noir was picked from the same block a week earlier than the Chardonnay, from a cool protected area in a gully which protects the fruit and retains natural acidity. The fruit was hand picked, all at once, across 3 parts of the blocks with 3 different clones, 114/115 and MV6 all offering a different layer to the wine. In the winery, all the fruit is destemmed to retain whole berries, and then some of the stalks were added back to the ferment (around 10%) to create some stalk tannin for structure. Fermented in 1000L wooden vats with a wooden board on top to keep the skins submerged during the fermentation. Pressed off to stainless steel and then racked to 50% new french hogshead and 50% old french hogsheads for elevage. This is racked off lees after 16 months in barrel to tank for another 6 months. A small addition of sulphur is added to the tank before being bottled. This wine delivers wild mushroom and forest berries on the nose with well integrated cedary oak, long soft tannins on the palate with the wild forest berries coming through, a long flavour profile which opens up even more after being decanted and left for an hour before drinking.
+          `,
+          IMG:'./images/Sigurd/Joan-Pinot-Noir.jpg' 
+        },
+        {
+          ID : 8,
+          WINE : 'Lila Red',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Carignan',  
+          STYLE : 'Red',
+          ABOUT : `Whole bunch fermented 100% Carignan is left to bubble away in a type of fermentation called intracellular fermentation - a process specific to whole bunches. This is pressed off after about 3 weeks and then left to settle in stainless steel, a small amount of sulphur (30ppm) is added, and then we wait about another month before bottling.`,
+          IMG:'./images/Sigurd/Lila-Red.jpg' 
+        },
+        {
+          ID : 9,
+          WINE : 'Sigurd Red Blend',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'GSM Blend',  
+          STYLE : 'Red',
+          ABOUT : `Grenache (37%), Carignan (29%), Syrah (19%), Mourvedre (9%), Lagrein (6%), all the components were fermented separately with around 10 to 14 day ferments with about 40% whole bunch through carbonic maceration. Fermented in 1000L wooden vats with heading down boards using native yeast, pressed to a mixture of 1000L vats, old large format foudre and 300L used French oak barrels for about 15 months of elevage, left to settle in tank for a week and then bottled. A small amount of sulphur just before bottling. The young 8 year old Carignan out of Ebenezer in Northern Barossa, the 26 year old Syrah from around Williamstown which is managed organically. Grenache from 46 and 85 year old vines in Ebenezer and Vine vale, the young vine Lagrein out of the same block as the Carignan, Ebenezer. Mourvedre from 25 yr old block near the Grenache.`,
+          IMG:'./images/Sigurd/Sigurd-Red-Blend.jpg' 
+        },
+        {
+          ID : 10,
+          WINE : 'Sigurd Grenache',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Grenache',  
+          STYLE : 'Red',
+          ABOUT : `Grenache (95%) and Cinsault (5%) from the Northern Barossa, the ferment took about 12 days to finish and was 40% whole bunch fermented in open stainless-steel tanks with no punch downs, treated like a carbonic fermentation and a part fermented in wooden vats with heading down boards to submerse the cap, pressed to a mixture of barrique (225L) oak and 1000L wooden vat for 15 months, after the elevage in oak it was racked clean from lees and then bottled. A small amount of sulphur just before bottling. The block of Grenache is grown in Ebenezer in the Northern Barossa on sandy soils with a small amount from Light Pass which is more on clay loams.`,
+          IMG:'./images/Sigurd/Sigurd-Grenache.jpg' 
+        },
+        {
+          ID : 11,
+          WINE : 'Sigurd Carignan',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Carignan',  
+          STYLE : 'Red',
+          ABOUT : `Carignan (100%) from the Northern Barossa, the ferment took about 16 days to finish and was 50% whole bunch fermented in open stainless-steel tanks with no punch downs, treated like a carbonic fermentation, pressed to a 80-year-old 1,900L Italian made wooden foudre for 15 months, after the elevage in oak it was racked clean from lees and then bottled. A small amount of sulphur just before bottling. The block of Carignan is grown in Ebenezer in the Northern Barossa.`,
+          IMG:'./images/Sigurd/Sigurd-Carignan.jpg' 
+        },
+        {
+          ID : 12,
+          WINE : 'Sigurd Syrah',  
+          PRODUCER : 'Sigurd',  
+          COUNTRY : 'Australia',  
+          REGION : 'Eden Valley, Barossa Valley',  
+          VARIETY : 'Svrah',  
+          STYLE : 'Red',
+          ABOUT : `Syrah (100%) about a 14 day ferment with around 30% whole bunch with a small addition of whole bunch Viognier (around 5%). Fermented in 1000L vats, pressed to a mix of used French oak hogsheads and 20% new french oak from Cognac forests with a very light toast as to not impact the fruit, elevage was for about 14 months and then bottled. A small amount of sulphur just before bottling. The block of Syrah is just outside of Williamstown and Dan has been leasing and running it organically since 2014. There was also a small addition of a new Syrah block from Ebenezer which is on sand and clay which always shows brightness of fruit with soft delicate tannin profile.`,
+          IMG:'./images/Sigurd/Sigurd-Syrah.jpg' 
+        },
+      ]
+    },
+    'Sonnen'= {
+      COMPANY_ID: 11,
+      COMPANY_IMG : './images/Sonnen/company.jpg',
+      STORY_1 : `Sonnen is the side project of talented Tasmanian viticulturist Luke Andree who makes these small batch wines alongside his day job at Mewstone Wines.`,
+      STORY_2 : `The journey into wine for Luke was not an obvious one. After moving to Melbourne in 2010 to pursue a physiotherapy degree and chase his dream of playing representative cricket he got a job working at his local Dan Murphy’s. Bit by bit over his two years at Dan’s he began to feel more intrigued and comfortable around wine and so after finishing his degree he decided to enrol back into university but this time at Charles Sturt for Viticulture and Winemaking. Whist studying he returned to Tasmania and spent a season pruning in the vines at Stefano Lubaina and a year working the wine bar and cellar door at Moorilla.
+      It was by chance at one of the first editions of Bottletops that he met Pat Underwood from Little Reddie and was struck by the world of minimal intervention wine. In late 2016 following this meeting he moved up to Victoria and completed his first vintage at the Boomtown Cooperative winery followed by a full season working at both Oakridge and then Mac Forbes where he spent most of his time helping to manage the vineyards. Post the 2019 harvest with Mac he jetted over to his father’s homeland of Germany to complete vintage with fellow Lo-Fi winery Melshimer. Here he pursued his love of Riesling and worked closely with Thorsten in both the vines and cellar.`,
+      STORY_3 : `It was however, the time with Mac that really made him fall in love with the viticultural side of things and what led him back to Tasmania in late 2019 to head up the vineyard and cellar at the very ambitious Mewstone Wines. Here Luke manages almost 6 hectares under vine with the vineyard recently becoming certified organic and he helps make both the Mewstone and Hughes & Hughes wines in their new cellar at the home vineyard in Flowerpot. This is where he makes his Sonnen Wines.
+      Sonnen for Luke is the exploration of all he has learnt across his short journey in wine. He wants the wines to speak deeply of Tasmania and the vineyards they are sourced from but have an experimental edge when it comes to winemaking. His release from 2021 wowed us, with his Jannis Riesling a particular highlight, almost reminiscent of the orange wines of Melsheimer. Luke is helping to forge a new path of minimal intervention wines in Tasmania and we cant wait to see Sonnen shine in the years to come.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Blume',  
+          PRODUCER : 'Sonnen',  
+          COUNTRY : 'Australia',  
+          REGION : 'Tasmania',  
+          VARIETY : 'Riesling Blend',  
+          STYLE : 'White',
+          ABOUT : `kanamaluka / Tamar River & Coal Valley A pseudo-Alsatian style blend of 75% Riesling from the Coal and 25% Gewurztraminer from the Upper Tamar. The Gewurz was fermented on skins for 2 weeks bringing a slight pink tinge and a bit of grip. Aromatic and bright for springtime picnic drinking.`,
+          IMG:'./images/Sonnen/Blume.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Jannis',  
+          PRODUCER : 'Sonnen',  
+          COUNTRY : 'Australia',  
+          REGION : 'Tasmania',  
+          VARIETY : 'Riesling',  
+          STYLE : 'Skin Contact',
+          ABOUT : `Jannis is the name of my son and also of Jannis Melsheimer, the son of Thorsten. Jannis makes orange wine from his family’s fruit in the Mosel, so I felt like it was appropriate to name this wine after both of them. The Riesling from the St. Matthias Vineyard, Rosevears (kanamaluka/Tamar Valley) is grown on fertile clay loam with some granite outcrops. It was destemmed to a fermenter where it stayed for 90 days on skins. Luke's handing was pretty oxidative but the result was a pretty wine with a lovely savoury saline edge.`,
+          IMG:'./images/Sonnen/Jannis.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Plenty White',  
+          PRODUCER : 'Sonnen',  
+          COUNTRY : 'Australia',  
+          REGION : 'Tasmania',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Chardonnay from Kinvarra Vineyard, Plenty (timtumili minanya/ Upper Derwent Valley) grown on South East Tasmanian dolerite with traces of limestone. Whole bunch pressed to tank and settled overnight before racking off the heavy sediment to a mixture of old puncheons and barriques. The wine is a long slow ferment with sugars often taking till late spring to finish primary. Some battonage to enhance texture and bottled in March. Crisp, linear expression with a great feel.`,
+          IMG:'./images/Sonnen/Plenty-White.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Plenty Red',  
+          PRODUCER : 'Sonnen',  
+          COUNTRY : 'Australia',  
+          REGION : 'Tasmania',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `Pinot Noir (93%) and Riesling (7%) from Kinvarra Vineyard, Plenty (timtumili minanya/ Upper Derwent Valley) grown on South East Tasmanian dolerite with traces of limestone. This wine was 2 ferments all de-stemmed. One from the newer plantings and an the other from the original home block planted in the late 1980's. All of the newer plantings are MV6, with the home block a massale of sorts. Out of the home block we also de-stemmed 100kg of Riesling into each ferment. They were both on skins for about 2 weeks and only plunged. Pressed separately to old puncheons before being racked up together and bottled in January. Delicate with notes of cherry and berry. The riesling component really gives a drive and freshness to the pallet.`,
+          IMG:'./images/Sonnen/Plenty-Red.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Light Dry Red',  
+          PRODUCER : 'Sonnen',  
+          COUNTRY : 'Australia',  
+          REGION : 'Tasmania',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : `100% Pinot Noir from the St. Matthias Vineyard, Rosevears (kanamaluka/Tamar Valley), grown on fertile clay loam with some granite outcrops. The fruit is all destemmed and kept on skins for 7 days. A few plungings to keep the cap moist but really not much in the way of working the ferment. Pressed to all old oak barriques to finish ferment. Both wild primary and malolactic. Racked and bottled in September with 25ppm SO2.`,
+          IMG:'./images/Sonnen/Light-Dry-Red.jpg' 
+        },
+      ]
+    }
+  ],
+  'AUSTRIA' = [
+    'Christian Tschida' = {
+      COMPANY_ID: 0,
+      COMPANY_IMG : './images/Christian Tschida/company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : 'Christian Tschida',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/Christian Tschida/.jpg' 
+        },
+      ]
+    },
+    'Claus Preisinger' = {
+      COMPANY_ID: 1,
       COMPANY_IMG : './images//company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
@@ -812,8 +1286,28 @@ const WineList = [
         },
       ]
     },
-    'Sonnen'= {
-      COMPANY_ID: 11,
+    'Gut Oggau' = {
+      COMPANY_ID: 2,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Michael Gindl' = {
+      COMPANY_ID: 3,
       COMPANY_IMG : './images//company.jpg',
       STORY_1 : ``,
       STORY_2 : ``,
@@ -832,12 +1326,6 @@ const WineList = [
         },
       ]
     }
-  ],
-  'AUSTRIA' = [
-    'Christian Tschida',
-    'Claus Preisinger',
-    'Gut Oggau',
-    'Michael Gindl'
   ],
   'FRANCE' = [
     'Alexandre Jouveaux',

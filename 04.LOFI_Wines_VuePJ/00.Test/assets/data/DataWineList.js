@@ -1,6 +1,6 @@
-const WineList = [
-  'AUSTRALIA' = [
-    'Ada Wines' = {
+const DataWineList = {
+  'AUSTRALIA' : {
+    'Ada Wines' : {
       COMPANY_ID : 0,
       COMPANY_IMG : './images/Ada Wines/company.jpg',
       STORY_1 : `Ada is the passion project for James Ellis, who also works full time with Gareth Belton of Gentle Folk in the Adelaide Hills. Ada is a relative newcomer to the South Australian wine scene with their first release being born of the 2018 vintage. A viticulturist at heart James is firmly of the belief that all of his wines are made in the vineyard and he is meticulous with his approach to organics across the sites he manages for Ada and Gareth. Before starting Ada, James had worked his way through many of the nations iconic regions with time spent in vineyard and cellar in the Barossa Valley working for Penfolds, Hunter Valley and McLaren Vale where he met James Erskine of Jauma who introduced him to Gareth.`,
@@ -75,7 +75,7 @@ const WineList = [
         }
       ]
     },
-    'ARC Wines' = {
+    'ARC Wines' : {
       COMPANY_ID : 1,
       COMPANY_IMG : './images/ARC Wines/company.jpg',
       STORY_1 : `A.R.C or A Random Collection was founded in 2017 after musings and dreams from a previous life working restaurant floors. For James and Jessica Audas the vision of working the land, being in touch with nature and living within their means came to life a few years ago when they made the leap from Sydney and ended up with an off grid permaculture farm in West Gippsland Victoria. Many of you have no doubt shared Jess and James journey and it was very exciting a few months ago when we decided that the time was right to take on this exciting brand and let Jess and James dedicate a greater portion of time to growing the grapes they make.`,
@@ -206,7 +206,7 @@ const WineList = [
         }
       ]
     },
-    'Architects of Wine' = {
+    'Architects of Wine' : {
       COMPANY_ID: 2,
       COMPANY_IMG : './images/Architects of Wine/company.jpg',
       STORY_1 : `Architects Of Wine is the passion project of architect turned winemaker David Caporaletti. David’s dream came to fruition in early 2013 after a backyard hobby quickly became an obsession. With no formal training he has only his palate, an aptitude for precise execution and a sense of experimentation to guide him in his winemaking exploits. It’s this experimentation that allows every release and vintage to be completely different and truly reflective of the years conditions. Over the last few years we have seen AOW develop into a unique, micro batch release of wines that have a distinct personality.`,
@@ -363,7 +363,7 @@ const WineList = [
         }
       ]
     },
-    'Bizzarro' = {
+    'Bizzarro' : {
       COMPANY_ID: 3,
       COMPANY_IMG : './images/Bizzarro/company.jpg',
       STORY_1 : `Bizzarro Aperitivo is the newest addition to the Delinquente Wine Co family. It’s a take on an all natural, Australian bitter aperitivo, made in the classic Delinquente way with scant regard for tradition, respect for nature and a product all about deliciousness.`,
@@ -419,7 +419,7 @@ const WineList = [
         },
       ]
     },
-    'Das Juice' = {
+    'Das Juice' : {
       COMPANY_ID: 4,
       COMPANY_IMG : './images/Das Juice/company.jpg',
       STORY_1 : `We are very proud to be able to offer you the wines that we make ourselves, Das Juice. Das Juice was a project born of necessity, having noticed many of you who needed well-made, well-farmed wines at a sharper price point. After 3 vintages and much trial and error we have finally managed to put together our full range of Das Juice wines, with one Pet-Nat style Prosecco from Victoria and four still wines farmed from organic and biodynamic vineyards across South Australia.`,
@@ -505,7 +505,7 @@ const WineList = [
         },
       ]
     },
-    'Delinquente'= {
+    'Delinquente' : {
       COMPANY_ID: 5,
       COMPANY_IMG : './images/Delinquente/company.jpg',
       STORY_1 : `Con-Greg Grigoriou grew up on a vineyard in the Riverland, South Australia, where his father has managed wineries for over 35 years. A few years ago, while working for an advertising agency in Melbourne, he tasted his first truly interesting Riverland wine and something clicked - why weren’t people producing high-quality wines in his home region?`,
@@ -613,7 +613,7 @@ const WineList = [
         },
       ]
     },
-    'Ephemera'= {
+    'Ephemera' : {
       COMPANY_ID: 6,
       COMPANY_IMG : './images/Ephemera/company.jpg',
       STORY_1 : `Rhen Dodd and Janelle De Gabriele make invigorating wines under the aptly named ‘Ephemera’ moniker. Based out of the Yarra Valley, together Rhen and Janelle explore ‘snapshot’ winemaking, focusing their energy on their organically grown vineyard in the Yarra alongside their love for the Chalmers vineyard in Heathcote.`,
@@ -732,7 +732,7 @@ const WineList = [
         },
       ]
     },
-    'Good Intentions Wine Co.'= {
+    'Good Intentions Wine Co.': {
       COMPANY_ID: 7,
       COMPANY_IMG : './images/Good Intentions Wine Co./company.jpg',
       STORY_1 : `Andrew (farmer) and Louise (Musician) Burchell are a husband and wife team who moved back to Mount Gambier (Andrew’s childhood town) to start a family and a wine label. They wanted to grip the earth with their toes and use their knowledge of organic farming and permaculture to create their very own wine label. Creating a sense of community was a deep part of this plan, a place to call home and where they could raise their daughter Frankie around home grown food, great music and with a love and appreciation for the land.`,
@@ -940,7 +940,7 @@ const WineList = [
         },
       ]
     },
-    'Maison Soleil'= {
+    'Maison Soleil' : {
       COMPANY_ID: 8,
       COMPANY_IMG : './images/Maison Soleil/company.jpg',
       STORY_1 : `Maison Soleil was born out of our desire to continue to support our Das Juice growers by taking some small parcels of excess fruit and alternative varieties starting from the bountiful 2021 South Australian harvest. As with Das Juice the ideas of organic viticulture, minimal intervention in the cellar and experimentation were at the forefront and with that we are delighted to introduce you to our first release. Maison Soleil is likely to be a series of one off wines, adapting as growers approach us with small parcels outside of our normal growing agreements, with Pinot Noir, Shiraz and Prosecco filling the 2022 release.`,
@@ -982,7 +982,7 @@ const WineList = [
         },
       ]
     },
-    'Saep'= {
+    'Saep' : {
       COMPANY_ID: 9,
       COMPANY_IMG : './images/Saep/company.jpg',
       STORY_1 : `Saep Wines is the Adelaide Hills-based project of longtime wine-grower Dave Gartelmann. Dave is a great farmer that embraces all things organic and biodynamic and the wines he makes have superbly detailed finesse coupled with inherent drinkability. Alongside his own winemaking project Dave grows fruit for winemakers such as Gentle Folk, Jauma, Brackenwood and Das Juice. Having worked alongside Dave for our Das Juice project since 2019 we can attest that few are as committed to the conversion of vineyards from conventional to organic viticulture. He is deeply passionate about telling the story of terroir through his wines and his love for the Adelaide Hills streams through this release. All vineyards in Saep are organic, sustainable and respected with Dave using techniques such as grazing sheep over winter and compost addition to his approach.`,
@@ -1024,7 +1024,7 @@ const WineList = [
         },
       ]
     },
-    'Sigurd'= {
+    'Sigurd' : {
       COMPANY_ID: 10,
       COMPANY_IMG : './images/Sigurd/company.jpg',
       STORY_1 : `Sigurd is the story based around Daniel Grahams great grandfather who spawned from Norway. Despite only meeting his great grandfather as a two year old Dan feels an incredible connection to him and his nordic heritage. His middle name is Sigurd and despite copping a small amount of grief through high school he proudly uses it his brand name.`,
@@ -1178,7 +1178,7 @@ const WineList = [
         },
       ]
     },
-    'Sonnen'= {
+    'Sonnen' : {
       COMPANY_ID: 11,
       COMPANY_IMG : './images/Sonnen/company.jpg',
       STORY_1 : `Sonnen is the side project of talented Tasmanian viticulturist Luke Andree who makes these small batch wines alongside his day job at Mewstone Wines.`,
@@ -1244,9 +1244,9 @@ const WineList = [
         },
       ]
     }
-  ],
-  'AUSTRIA' = [
-    'Christian Tschida' = {
+  },
+  'AUSTRIA' : {
+    'Christian Tschida' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Christian Tschida/company.jpg',
       STORY_1 : `Christian Tschida cultivates 10 hectares of old vines in the Neusiedlersee region of Burgenland. His vineyards are planted on sandy gravel, schist, and limestone soils and have been in the family for 4 generations. This area of Burgenland has a unique microclimate due to the moderating influence of the vast Lake Neusiedlersee nearby.`,
@@ -1410,7 +1410,7 @@ const WineList = [
         },
       ]
     },
-    'Claus Preisinger' = {
+    'Claus Preisinger' : {
       COMPANY_ID: 1,
       COMPANY_IMG : './images/Claus Preisinger/company.jpg',
       STORY_1 : `Claus Preisinger’s winery is nestled in the village of Gols by Lake Neusiedlersee in Burgenland. Claus first started making wine with this father as a hobby, but after working with Hans Nittnaus, a neighbouring winemaker for a few years, decided that wine was his true calling. In 2004 he was one of the founding members of the Pannobile group of winemakers, a group that uses respect for the land and terroir to preserve traditions in Burgenland. His first vintage was in 2000, and since then he has expanded his father’s 3 hectares to the 17 hectares of vines he cultivates today. His vineyard work is meticulous and he is deeply in touch with his land. He uses a mixture of techniques including homeopathic teas, compost from cattle and horses and works strictly from Steiner philosophies. His vines are spread across 58 parcels and are largely planted to indigenous varieties such as Zweigelt, Blaufränkisch and St. Laurent.`,
@@ -1520,7 +1520,7 @@ const WineList = [
         },
       ]
     },
-    'Gut Oggau' = {
+    'Gut Oggau' : {
       COMPANY_ID: 2,
       COMPANY_IMG : './images/Gut Oggau/company.jpg',
       STORY_1 : `In 2007, husband and wife Stephanie and Eduard Tscheppe-Eselbock took over one of the oldest properties in the region, with the manors oldest walls dating back to the 17th century. It is there where the couple produce single plot, distinctive wines from native varietals that are separated by character and personality rather than hillside location. For the vines a 20-year period of neglect was fortunate, as this allowed for all pesticide and chemical treatments to be washed away.`,
@@ -1628,7 +1628,7 @@ const WineList = [
         },
       ]
     },
-    'Michael Gindl' = {
+    'Michael Gindl' : {
       COMPANY_ID: 3,
       COMPANY_IMG : './images/Michael Gindl/company.jpg',
       STORY_1 : `In just his early 30’s, Michael Gindl is one of the most exciting young winemakers helping to lead Austria’s resurgence on the modern wine scene. When Michael finished agricultural school in 2002 it was clear that he wanted to run the farm that his family had owned since 1807. This farm has always practiced mixed agriculture with crops, livestock, forestry and wine. Michael was fascinated with fermentation and took over the responsibility for vinification during his school years. He followed the common doctrine but was never happy with his early wines. It was only through stepping back and looking at the wines of his grandfather, a man who worked much more simply, with nearly no manipulation or intervention that Michael found his style and mantra. In 2012 Inspired by this he converted his winery and vineyards to Demeter bio-dynamics and began experimenting. Now Michael takes holistic farming to new heights with what he calls ‘close-circuit bio-dynamics’ - nothing comes into the winery, nothing comes out. This includes his barrels, which he makes himself from Acacia wood from the nearby forest.`,
@@ -1748,9 +1748,9 @@ const WineList = [
         },
       ]
     }
-  ],
-  'FRANCE' = [
-    'Alexandre Jouveaux' = {
+  },
+  'FRANCE' : {
+    'Alexandre Jouveaux' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Alexandre Jouveaux/company.jpg',
       STORY_1 : `After moving to Burgundy from Paris in the mid 90’, Alexandre Jouveaux officially started producing wine in 2001 alongside his wife Maryse Chatelain, an accomplished winemaker in her own right under the moniker Domaine des Fauvettes. The vineyards from which the two grow their fruit are farmed without chemicals and all harvesting is done by hand. The cellar is located in the town of Uchizy and all of the fruit is pressed in a hand-driven press and no additions are made at any point. The same barrels are used for the same wine each year as they believe that the yeast & bacteria’s are in symbiosis with the fruit from the vineyards. All wines are bottled without sulphur and total production is minuscule with less than 5,000 bottles in a fruitful year`,
@@ -1781,7 +1781,7 @@ const WineList = [
         },
       ]
     },
-    'Amaury Beaufort' = {
+    'Amaury Beaufort' : {
       COMPANY_ID: 1,
       COMPANY_IMG : '',
       STORY_1 : `We are thrilled to introduce many of you to the wonderful wines of Amaury Beaufort. Some will know the Beaufort name here in Australia and after making the wines of his family estate for many years he recently broke away from the family business to focus on his own Champagne project. In late 2021 Amaury Beaufort released his first champagne under his own name, from a 0.88ha champagne parcel called Le Jardinot in Polisy and we are delighted to have just received a small top up of stock just in time for Christmas.`,
@@ -1825,7 +1825,7 @@ const WineList = [
         },
       ]
     },
-    'Chateau de Beru' = {
+    'Chateau de Beru' : {
       COMPANY_ID: 2,
       COMPANY_IMG : './images/Chateau de Beru/company.jpg',
       STORY_1 : `The Béru family have owned the historical Château de Béru domain for 400 years. At the beginning of the 20th century when the phylloxera crisis hit all the vines were uprooted leaving the estate without its source of income. It was only in 1987, that the Comte Éric de Béru, out of passion for wine, undertook to replant the entire vineyard, and in particular, the famous monopole vineyard Clos Béru. His wife, Laurence and their daughter Athénaïs are now running the domain. Athénaïs was living in Paris as an insurance broker until 2004 when her father passed away, and she decided to move back to Béru to reclaim the vineyard, which included the painstaking task of converting it to organic, and then biodynamic (now Demeter certified). Her first vintage was 2005 and in the years that have followed she has become one of the most revered and influential winemakers in Chablis.`,
@@ -1956,7 +1956,7 @@ const WineList = [
         },
       ]
     },
-    'Domaine Bobinet' = {
+    'Domaine Bobinet' : {
       COMPANY_ID: 3,
       COMPANY_IMG : './images//company.jpg',
       STORY_1 : ``,
@@ -2001,15 +2001,15 @@ const WineList = [
     'Raphaëlle Guyot',
     'Thomas Boutin',
     'Val de Combres'
-  ],
-  'GERMANY'=[
+  },
+  'GERMANY' : {
     'Kühling-Gillot',
     'Melsheimer'
-  ],
-  'HUNGARY'=[
+  },
+  'HUNGARY' : {
     'Peter Wetzer'
-  ],
-  'ITALY' = [
+  },
+  'ITALY' : {
     'Al di là del Fiume',
     'Alessandro Viola',
     'Cantina Margo',
@@ -2022,14 +2022,14 @@ const WineList = [
     'Indomiti',
     'Lammidia',
     'Pranzegg'
-  ],
-  'NEW ZEALAND' = [
+  },
+  'NEW ZEALAND' : {
     'Tincan Wines'
-  ],
-  'UNITED STATES' = [
+  },
+  'UNITED STATES' : {
     'Hermann J. Wiemer'
-  ]
-]
+  }
+}
 
 
 

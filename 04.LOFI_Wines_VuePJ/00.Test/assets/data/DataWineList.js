@@ -1750,10 +1750,232 @@ const WineList = [
     }
   ],
   'FRANCE' = [
-    'Alexandre Jouveaux',
-    'Amaury Beaufort',
-    'Chateau de Beru',
-    'Domaine Bobinet',
+    'Alexandre Jouveaux' = {
+      COMPANY_ID: 0,
+      COMPANY_IMG : './images/Alexandre Jouveaux/company.jpg',
+      STORY_1 : `After moving to Burgundy from Paris in the mid 90’, Alexandre Jouveaux officially started producing wine in 2001 alongside his wife Maryse Chatelain, an accomplished winemaker in her own right under the moniker Domaine des Fauvettes. The vineyards from which the two grow their fruit are farmed without chemicals and all harvesting is done by hand. The cellar is located in the town of Uchizy and all of the fruit is pressed in a hand-driven press and no additions are made at any point. The same barrels are used for the same wine each year as they believe that the yeast & bacteria’s are in symbiosis with the fruit from the vineyards. All wines are bottled without sulphur and total production is minuscule with less than 5,000 bottles in a fruitful year`,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'La Vigne du Clou Chardonnay',  
+          PRODUCER : 'Alexandre Jouveaux',  
+          COUNTRY : 'France',  
+          REGION : 'Mâcon',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : ``,
+          IMG:'./images/Alexandre Jouveaux/La-Vigne-du-Clou-Chardonnay.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Combarnier',  
+          PRODUCER : 'Alexandre Jouveaux',  
+          COUNTRY : 'France',  
+          REGION : 'Mâcon',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `A beautiful Chardonnay from a parcel of thirty year old vines planted over clay and limestone some 320 metres above sea level at the top of Uchizy. The grapes were pressed directly and aged in old foudres for a year. Whistle clean, it is all citrus and stones, with plenty of acid and drive.`,
+          IMG:'./images/Alexandre Jouveaux/Combarnier.jpg' 
+        },
+      ]
+    },
+    'Amaury Beaufort' = {
+      COMPANY_ID: 1,
+      COMPANY_IMG : '',
+      STORY_1 : `We are thrilled to introduce many of you to the wonderful wines of Amaury Beaufort. Some will know the Beaufort name here in Australia and after making the wines of his family estate for many years he recently broke away from the family business to focus on his own Champagne project. In late 2021 Amaury Beaufort released his first champagne under his own name, from a 0.88ha champagne parcel called Le Jardinot in Polisy and we are delighted to have just received a small top up of stock just in time for Christmas.`,
+      STORY_2 : `After completing viticultural studies in Beaune in 2005, he worked many years for his family estate, Champagne André Beaufort, helping ensure the succession to his own generation. In parallel with the projects of his family, he planted 5ha near Tonnère, and produced still wine from 2007 until 2017 as Les Larmes de Divona. By 2018, Amaury sought a clean break. He split off from his work with the family, and began farming his own 0.88ha parcel in Polisy the way he liked. A gentle, mostly east-facing slope of pinot noir on kimmeridgian clay-limestone, capped with a section of chardonnay on portlandian clay limestone, Le Jardinot (as the parcel and the resultant champagne are called) is bordered on two sides by woodland. Planted in 1972, right after Amaury’s father Jacques Beaufort’s conversion to organics, the parcel has never seen synthetic treatments. It comprised part of Champagne André Beaufort until 2018, when Amaury broke off from the family enterprise to pursue his own champagne production.`,
+      STORY_3 : `Beaufort takes care to understate the differences that led him to break from the family estate and his négociant work with his brothers. But it doesn’t take much reading between the lines to see where Amaury’s priorities lie in viticulture. “For me the system is there always needs to be life in the soil,” he says. “Practically all the vignerons who work organically, they farm the vines, but they don’t farm the soil. They plow, they remove all the grass. Then it’s all naked. But there are a lot of microorganisms that need grass cover. I want my soil to play the role of a sponge. So when it rains, it absorbs it, and when it’s dry, only the surface dries out.” Here the under-emphasized issue is that maintaining grass cover entails a drop in yields, and the financial loss is all the more significant in regions where land is astronomically expensive. Beaufort also prefers to avoid vine trimming, finding it encourages root expansion and a greater resistance to pests and problems. Beaufort also credits late, careful pruning, in successive stages, with allowing him to avoid 2021’s catastrophic frosts.
+      In the cellar Beaufort ages his vin clairs for up to 21 months, this is extraordinarily long for Champagne vignerons working at his scale. With his close proximity to Burgundy, Amaury’s vinification techniques are more similar to Burgundy than classic Champagne. Fermentation begins in large 15hl oval casks. He doesn’t do battonage by hand, the shape of his casks allows for natural battonage. The wines are then transferred to Demi-muids for settling and further ageing. Wines are full natural fermentation with secondary fermentation from a selection natural yeast cultures the family have been using for over 20 years. No sulphur is added through the process and all wines remain unfiltered and unfined.
+      For us this is the most striking Champagne we have come across. It has a remarkable purity and linearity, something commonly seen in the past still wines he has produced. We are immensely proud to be brining these to Australia in extremely small amounts and look forward to expanding his range with a Rose and Coteaux Champenoise in the coming months.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Jardinot',  
+          PRODUCER : 'Amaury Beaufort',  
+          COUNTRY : 'France',  
+          REGION : 'Champagne',  
+          VARIETY : 'Pinot Noir Blend',  
+          STYLE : 'Sparkling',
+          ABOUT : `The first iteration of Jaridnot, spontaneous fermentation in barrels with no added sulphites, Aged for 17 months in barrels and thick-stave casks, bottled with harvest yeasts, disgorged without dosage 10/14/21. For us this is the most striking Champagne we have come across. It has a remarkable purity and linearity, something commonly seen in the past still wines he has produced.`,
+          IMG:'./images/Amaury Beaufort/Jardinot.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Jardinot Rose',  
+          PRODUCER : 'Amaury Beaufort',  
+          COUNTRY : 'France',  
+          REGION : 'Champagne',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Sparkling',
+          ABOUT : ``,
+          IMG:'./images/Amaury Beaufort/Jardinot Rose.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Chablis',  
+          PRODUCER : 'Amaury Beaufort',  
+          COUNTRY : 'France',  
+          REGION : 'Champagne',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'Sparkling',
+          ABOUT : `In 2020 Amaury suffered small losses in Champagne and embarked upon his first negociant wines under his new label. Having spent many years with his Le Larmes di Divona label working around Chablis he made many friends and was adamant on making his first AC Chablis. Fruit here is from good friends at Domaine Dauvissat, aged in old Champagne barrels and given plenty of oxygen this sits somewhere between Chablis, Jura & Coteaux Champenoise in style. Brilliantly mineral with nutty overtones its a great and unique snapshot of Chablis.`,
+          IMG:'./images/Amaury Beaufort/Chablis.jpg' 
+        },
+      ]
+    },
+    'Chateau de Beru' = {
+      COMPANY_ID: 2,
+      COMPANY_IMG : './images/Chateau de Beru/company.jpg',
+      STORY_1 : `The Béru family have owned the historical Château de Béru domain for 400 years. At the beginning of the 20th century when the phylloxera crisis hit all the vines were uprooted leaving the estate without its source of income. It was only in 1987, that the Comte Éric de Béru, out of passion for wine, undertook to replant the entire vineyard, and in particular, the famous monopole vineyard Clos Béru. His wife, Laurence and their daughter Athénaïs are now running the domain. Athénaïs was living in Paris as an insurance broker until 2004 when her father passed away, and she decided to move back to Béru to reclaim the vineyard, which included the painstaking task of converting it to organic, and then biodynamic (now Demeter certified). Her first vintage was 2005 and in the years that have followed she has become one of the most revered and influential winemakers in Chablis.`,
+      STORY_2 : `She manages almost 15 hectares on the classic soils of Chablis, kimmeridgian clay and stones, as well as having a small negociant allowing her to play with varieties outside of burgundy during challenging vintages. The Chablis of the domain is produced in a vineyard located on the top of the hill of Béru, above 300 meters. Its terroir was formed during the Kimmeridgian era and is mainly composed of crushed limestone and marine fossils. The vines are approximately 30 years old. The pruning system is guyot double shape and approximately 6500 vines are planted per hectare.`,
+      STORY_3 : `Grapes are handpicked at maturity in 10kg crates. The harvest is directly pressed – in a pneumatic press at low pressure. The juice is directly transferred to stainless steel tanks for fermentations. All wines are aged for 14 to 16 months and are bottled without any fining or filtration. The close attention brought at each step of the winemaking process is the key element, which allows for low sulphur vinification or in the case of the single site wines no addition at all.
+      Athénaïs wines are with truly inspirational. She leads an amazing team producing wines of incredibly purity and virtue.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Aligoté Bourgogne',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Aligote',  
+          STYLE : 'White',
+          ABOUT : `From organic vines just outside Tonnerre AOC, this wine is everything we love about Aligote. Piercing acidity mirrored with lovely tree fruit notes, you still very much get the sense you are in northern Burgundy here. Aged in old barriques for 10 months before bottling with minimal sulphur.`,
+          IMG:'./images/Chateau de Beru/Aligoté-Bourgogne.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Chardonnay Bourgogne',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `From organic vines near the village of St-Bris, this has ripe fruit and bracing acidity. You very much get the sense you are in northern Burgundy here. Aged in old barriques for 12 months before bottling with minimal sulphur.`,
+          IMG:'./images/Chateau de Beru/Chardonnay-Bourgogne.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Terroirs de Beru',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `The Terroirs de Beru cuvée is a blend of different plots. It reflects the distinctive identity of Béru, within the Chablis Appellation. As the vines are planted on top of the hill of Béru, they benefit from a unique micro-climate, influenced by a wide daily temperature variation and strong winds, which contribute to the specific balance of the wine. Aged for 12-18 months in old wood and bottled with minimal sulphur.`,
+          IMG:'./images/Chateau de Beru/Terroirs-de-Beru.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Cote aux Pretes sans souf',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `Translating to 'Hill of the Priests' this name refers to the nearby paths followed by pilgrims on their way from Vézelay to Santiago de Compostela. This spectacular vineyard, perched on the top of the hill of Béru, forms a dome beautifully exposed to sunlight and to the wine.The Côte aux Prêtres Chablis is a very nervous, sapid wine, with salty iodine mineral notes. Aged for 18 months in old barrels and bottled with no sulphur.`,
+          IMG:'./images/Chateau de Beru/Cote-aux-Pretes-sans-souf.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Orangeier',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `This cuvée is named after an old Renaissance building, in which trees and plants were put away in winter. This small patch of vine, planted near the Clos Béru, is surrounded by ancient fig , apple and pear trees. It is an orchard, set in the heart of Chablis. The top soil of l’Orangerie is unusually rich in clay. It brings appealing fruity notes of orange marmalade to the wine. Yet, because the vine roots plunge deeper into the lime subsoil, the wine keeps its typical complex Chablis nervous and mineral characteristics. Aged for 19 months in old wood.`,
+          IMG:'./images/Chateau de Beru/Orangeier.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Orangeier sans souf',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `This cuvée is named after an old Renaissance building, in which trees and plants were put away in winter. This small patch of vine, planted near the Clos Béru, is surrounded by ancient fig , apple and pear trees. It is an orchard, set in the heart of Chablis. The top soil of l’Orangerie is atypically rich in clay. It brings appealing fruity notes of orange marmalade to the wine. Yet, because the vine roots plunge deeper into the lime subsoil, the wine keeps its typical complex Chablis nervous and mineral characteristics. Aged for 19 months in old wood and bottled with no sulphur.`,
+          IMG:'' 
+        },
+        {
+          ID : 6,
+          WINE : 'Montserre',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `This is the highest point in the hill of Béru. The name Montserre literally means the mount of the Serres, the Serres being a typical geological conformation made from piled up fossilised sharp lime layers. Wines from this terroir express a strong personality, marked by its texture and concentration, mineral, salty, smoky notes and hints of iodine. Aged for 18 months in old wood.`,
+          IMG:'./images/Chateau de Beru/Montserre.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Montserre sans souf',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `This is the highest point in the hill of Béru. The name Montserre literally means the mount of the Serres, the Serres being a typical geological conformation made from piled up fossilised sharp lime layers. Wines from this terroir express a strong personality, marked by its texture and concentration, mineral, salty, smoky notes and hints of iodine. Aged for 18 months in old wood and bottled with no sulphur.`,
+          IMG:'' 
+        },
+        {
+          ID : 8,
+          WINE : 'Amphora',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `The first example of skin macerated Chablis from Athénaïs and boy is it stunning. A blend of vineyards that spends 17 days macerating in skin in the open air allowing for a lovely texture and mouthfeel. Still the bones of Chablis but imagined differently. Aged for 12 months in old wood and bottled with no sulphur.`,
+          IMG:'./images/Chateau de Beru/Amphora.jpg' 
+        },
+        {
+          ID : 9,
+          WINE : 'Vaucoupin 1er Cru',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `The Premier Cru Vaucoupin consists of a narrow strip of clay and lime localised on the south east slope of the Chichée plateau. It is renowned for the delicacy of its wines. In 2006 Béru took over a small parcel located in the centre of the Premier Cru Vaucoupin. The vines average 30 years of age. The steepness of the slope prevents the use of tractors. In order to improve the soils' quality, they are now plowed with a horse or manually worked. Aged for 18 months in predominantly old wood with a small sulphur addition at bottling.`,
+          IMG:'./images/Chateau de Beru/Vaucoupin-1er-Cru.jpg' 
+        },
+        {
+          ID : 10,
+          WINE : 'Clos Beru Monopole',  
+          PRODUCER : 'Chateau de Beru',  
+          COUNTRY : 'France',  
+          REGION : 'Chablis',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `A wall has singled out the Clos Béru for its very unique qualities, since the 13th Century. Year after year, the Clos keeps providing typical brilliant, powerful, round and mineral wines. As is the case in all the great Burgundy terroirs, it only takes a few steps in the parcel to notice significant changes in the nature of the soil, the inclination of the slope or the vigour of the vines. There is more clay here, more lime there, but the soil is mainly calcareous. Further up, a marly streak may emerge. Aged for 24 months in old wood.`,
+          IMG:'./images/Chateau de Beru/Clos-Beru-Monopole.jpg' 
+        },
+      ]
+    },
+    'Domaine Bobinet' = {
+      COMPANY_ID: 3,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
     'Domaine Dame Jeanne',
     'Domaine David-Beaupère',
     'Domaine des Fauvettes',

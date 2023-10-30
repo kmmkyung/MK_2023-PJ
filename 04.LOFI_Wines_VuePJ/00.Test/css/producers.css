@@ -1,0 +1,22 @@
+.list-container{
+  padding-top: 120px;
+  text-align: center;
+}
+
+.list{
+  font-size: var(--font-size-S);
+  margin: 40px 0;
+}
+
+.item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item{
+  margin: 5px 0;
+  font-size: var(--font-size-L);
+  font-family: 'Nanum Myeongjo', serif;
+}

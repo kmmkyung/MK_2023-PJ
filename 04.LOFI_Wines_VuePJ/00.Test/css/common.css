@@ -69,8 +69,8 @@ header{
 }
 
 .headerBG{
-  width: 50%;
-  position: absolute;
+  width: 100%;
+  position: fixed;
   height: 69px;
   top: 0;
   left: 0;

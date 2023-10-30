@@ -48,6 +48,9 @@ window.addEventListener('DOMContentLoaded',function(){
     if(header.className == 'contact'){
       bg.style.backgroundColor = 'var(--contact)' 
     }
+    if(header.className == 'producers'){
+      bg.style.backgroundColor = 'var(--main)'
+    }
   }
   headerBg()
 })

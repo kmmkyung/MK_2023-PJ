@@ -2689,21 +2689,835 @@ const DataWineList = {
         },
       ]
     },
-    // 'Jérôme Balmet',
-    // 'Joe Chandellier',
-    // 'Laurent Saillard',
-    // 'Le Batossay',
-    // 'Le Facteur',  
-    // 'Les Errances',
-    // 'Les Grangeons de l’Albarine',
-    // 'Les Vignes de Paradis',
-    // 'Louis Terral',
-    // 'Lulu Vigneron',
-    // 'Mai & Kenji Hodgson',
-    // 'Matassa',
-    // 'Raphaëlle Guyot',
-    // 'Thomas Boutin',
-    // 'Val de Combres'
+    'Jérôme Balmet' : {
+      COMPANY_ID: 14,
+      COMPANY_IMG : './images/Jérôme Balmet/company.jpg',
+      STORY_1 : `Jérôme Balmet learned his craft working with both Jean-Claude Lapalu and Mathieu Lapierre and produced his first vintage in 2012. He has just 3.5ha of vines split between Vaux-en-beaujolais and Saint-Etienne-des-Oullières just south of Brouilly. His site in Vaux consists of 50-year-old vines planted on blue granite on a steep hillside vineyard, while his Saint-Etienne-des-Oullières site is heavier soil down on the valley floor producing wines of greater density.`,
+      STORY_2 : `Jérôme farms organically with some biodynamic practices applied during the season. The grapes are transported a short distance to his tiny cellar in Vaux, where they undergo a light maceration in his handful of old concrete tanks and foudres and are bottled with no additions whatsoever.`,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Red Beard',  
+          PRODUCER : 'Jérôme Balmet',  
+          COUNTRY : 'France',  
+          REGION : 'Beaujolais',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `From the flatter plains of St-Etienne, short maceration Gamay fermented in tank and pressed to 1 concrete vessel and a handful of small barrels. More lush and up front than the steeper slopes of it's 'White Beard' cousin.`,
+          IMG:'./images/Jérôme Balmet/Red-Beard.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'White Beard',  
+          PRODUCER : 'Jérôme Balmet',  
+          COUNTRY : 'France',  
+          REGION : 'Beaujolais',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Jerome's steep site in Vaux-en-Beaujolais planted on blue granite. 6-8 maceration in concrete and pressed to barrel. Mineral and full of drive.`,
+          IMG:'./images/Jérôme Balmet/White-Beard.jpg' 
+        },
+      ]
+    },
+    'Joe Chandellier' : {
+      COMPANY_ID: 15,
+      COMPANY_IMG : './images/Joe Chandellier/company.jpg',
+      STORY_1 : `Joe started his small label in 2019 and his wines are already poured in some of the great wine bars across Paris. He is located at the foothills of the Cévennes mountains between Languedoc and Rhône valley. Prior to returning home to the Languedoc and post com pleteing his university studies, Joe travelled the world with vintages in Australia (Moss Wood & Turkey Flat), Spain & Italy. It was during this travel that he realised organic farming and working in a small winery where he could impact every bottle was the only way forward for him.`,
+      STORY_2 : `Joé farms 5.5 hectares by himself in Souvignargues (Languedoc, France), organically tending to Carignan, Aramon, Grenache and Syrah . Most of the vines are individual bush vines, ranging from 20 to 70 years of age, and are planted on sandy loam on sandstone soils. Its these vineyards where he has taken great influence from good friend Thierry Forestier who has helped Joe in the early stages of viticultural management.`,
+      STORY_3 : `He also has another smaller plot and his cellar a 15 minute drive away in St.Côme et Maruejols. Here he takes direct influence from Eric Pfifferling who has a plot that sits next to Joe. In the cellar Joé is working with mentor Alain Allier (who’s been making wine for about 15 years) to make wines in a low-interventionist manner. All wines see a small 10-20 part so2 addition.
+      For us Joé embraces the spirit of true vigneron culture in France which is to say he is a fierce ambassador for organic farming, making wines naturally, limiting additions to just sulphur (if at all), and making sure the wines are beautiful and well-made. His wines are true to variety, region and type and testament to all the effort he puts into his vineyard and winery.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Rosé',  
+          PRODUCER : 'Joe Chandellier',  
+          COUNTRY : 'France',  
+          REGION : 'Languedoc',  
+          VARIETY : 'Carignan/Syrah',  
+          STYLE : 'Rosé',
+          ABOUT : `60% Carignan 40% Syrah from bush vines aged 90 years old, planted on deep silt soils. The fruit was harvested together, direct pressed together, and then aged in a neutral fibreglass vat. Organic, wild fermented, unfiltered, unfined, minimal sulphites added at bottling.`,
+          IMG:'./images/Joe Chandellier/Rosé.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Le Ribieral',  
+          PRODUCER : 'Joe Chandellier',  
+          COUNTRY : 'France',  
+          REGION : 'Languedoc',  
+          VARIETY : 'Grenache',  
+          STYLE : 'Red',
+          ABOUT : `2021 Le Ribieral is 100% Grenache from bush vines aged 90 years old, planted on deep silt soils. The fruit was co-fermented and carbonic macerated for 5 days, then aged in a neutral fibreglass vat. Organic, wild fermented, unfiltered, unfined, minimal sulphites added at bottling.`,
+          IMG:'./images/Joe Chandellier/Le-Ribieral.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Alluvions',  
+          PRODUCER : 'Joe Chandellier',  
+          COUNTRY : 'France',  
+          REGION : 'Languedoc',  
+          VARIETY : 'Carignan/Aramon',  
+          STYLE : 'Red',
+          ABOUT : `Alluvions is 60% Carignan and 40% Aramon from bush vines aged 90 years old planted on deep silt soils. The fruit was co-fermented and carbonic macerated for 5 days, then aged in a neutral fibreglass vat. Organic, wild fermented, unfiltered, unfined, 25mg/L sulphites added at bottling. 12.5% alc/vol.`,
+          IMG:'./images/Joe Chandellier/Alluvions.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Costal',  
+          PRODUCER : 'Joe Chandellier',  
+          COUNTRY : 'France',  
+          REGION : 'Languedoc',  
+          VARIETY : 'Syrah',  
+          STYLE : 'Red',
+          ABOUT : `100% Syrah from bush vines aged 90 years old, planted on deep silt soils. The fruit was hand harvested, macerated for one week, wild fermented and then matured in a neutral fibreglass vat. Organic, wild fermented, unfiltered, unfined, minimal sulphites added at bottling.`,
+          IMG:'./images/Joe ChandellierCostal.jpg' 
+        },
+      ]
+    },
+    'Laurent Saillard' : {
+      COMPANY_ID: 16,
+      COMPANY_IMG : './images/Laurent Saillard/company.jpg',
+      STORY_1 : `Laurent Saillard, an ex-chef, in a way rediscovered himself as a winemaker after years of working in the restaurant scene in Brooklyn, New York, only to come back and learn how to make the beautiful wines he had once drunk and poured at his restaurants in NYC.`,
+      STORY_2 : `After moving back to France, Laurent now tends organically to several small plots of Sauvignon Blanc, Gamay and Pineau d’Aunis in Pouillé in the Loire Valley. After several years of working under Clos Roche Blanche and Noella Morantin, Laurent developed his own footprint in winemaking and started making wines on his own with his first vintage in 2012. He considers himself lucky to have been able to find vines with such maturity and relative rarity, as Pineau d’Aunis is not that easy to come by in these parts of the Loire. Laurent’s meticulous habits from his days in the kitchen and his advocacy of farm-to-table are apparent both in the vineyard and in his cellar, from pruning to grass and soil rejuvenation to picking and fermenting. Patience and quality are of the highest priority - with everything done by hand, his vines see no sprays and instead obsessive observation and constant care. Only indigenous yeast is used, neutral ageing is achieved in either fiberglass vats or old oak and the wines see no additions bar minuscule quantities of sulphur right before bottling.`,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Lucky You',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : 'Sauvignon Blanc',  
+          STYLE : 'White',
+          ABOUT : `Grown on clay and flint stones, 'Lucky You' is 100% Sauvignon Blanc from Laurent's 45 year old vines. Directly pressed and straight into old wooden vats for fermentation and 5 months of ageing, entirely untouched until bottled. With zero sulphur in the wine, this is as straight-forward and fresh as Sauvignon Blanc gets. A more appropriate name for this wine cannot be.`,
+          IMG:'./images/Laurent Saillard/Lucky-You.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Blank',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : 'Sauvignon Blanc',  
+          STYLE : 'White',
+          ABOUT : `A new cuvée from Laurent made from 100% old-vine Sauvignon Blanc. Done entirely in wood, it is fermented in tronconic vat before élevage in neutral demi-muid. Structured and elegant this is the most serious wine we have seen from Laurent and due to its limited quantities a cuvee not to be missed.`,
+          IMG:'./images/Laurent Saillard/Blank.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'La Valse',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : "Pineau d'Aunis",
+          STYLE : 'Rosé',
+          ABOUT : `‘La Valse’ is made from direct pressed Pineau d'Aunis (extra than what Laurent could take for this years Scarlette) from 28 year old vines grown on clay and flint stones. All the grapes are direct pressed and fermentation takes place in stainless steel. This rose is dry and perfect for the spring time.`,
+          IMG:'./images/Laurent Saillard/La-Valse.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'La Pause',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `‘La Pause’ is made from 100% Gamay taken from 38 year old vines grown on clay and flint stones, labelled as table wine. The maceration consists of leaving whole bunches of grapes to ferment in an oxygen free environment for 3 weeks, after which fermentation is finished and aged half in stainless steel and half old wooden vats for 6 months. As the name suggests 'La Pause' is a refreshing, casual approach to Gamay – "a wine to be drunk during a break at work or after a long day".`,
+          IMG:'./images/Laurent Saillard/La-Pause.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Scarlette',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : "Pineau d'Aunis/Gamay",  
+          STYLE : 'Red',
+          ABOUT : `Pineau d'Aunis takes centre stage in 'Scarlette', making two thirds of the wine while the remaining third is made up of Gamay taken from 'La Pause'. Taken off 50 year old vines, the Pineau d'Aunis gets a relatively quick maceration of 1 week and is then fermented in fiberglass before being blended with Gamay 1 month before bottling.`,
+          IMG:'./images/Laurent Saillard/Scarlette.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'La Paire',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : 'Gamay/Grolleau',  
+          STYLE : 'Red',
+          ABOUT : `Due to incredibly small yields thanks to extreme frost damage in 2020 Laurent sourced fruit from his friend Julien Moreau of Domaine de Cambalu. His vineyards are located next to Le Cher, a tributary of the Loire just east of Tours, on clay-limestone and are grown organically. A delightful co-fermentation of whole clusters of Gamay and Grolleau, roughly even amounts. Fermentation is a carbonic style is fiberglass. No added sulphur.`,
+          IMG:'./images/Laurent Saillard/La-Paire.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Un Éte Partage',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : 'Grolleau',  
+          STYLE : 'Red',
+          ABOUT : `Due to incredibly small yields thanks to extreme frost damage in 2020 Laurent sourced fruit from his friend Julien Moreau of Domaine de Cambalu. His vineyards are located next to Le Cher, a tributary of the Loire just east of Tours, on clay-limestone and are grown organically. 100% de-stemmed grolleau, macerated for 2 weeks in stainless, with a small buckets of juice wetting the cap each day. No added sulphur.`,
+          IMG:'./images/Laurent Saillard/Un-Éte-Partage.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Ça Se Discute',  
+          PRODUCER : 'Laurent Saillard',  
+          COUNTRY : 'France',  
+          REGION : 'PouilléLoire Valley',  
+          VARIETY : "Pineau d'Aunis",  
+          STYLE : 'Red',
+          ABOUT : `Due to incredibly small yields thanks to extreme frost damage in 2020 Laurent sourced fruit from his friend Julien Moreau of Domaine de Cambalu. His vineyards are located next to Le Cher, a tributary of the Loire just east of Tours, on clay-limestone and are grown organically. Whole clusters of Pineau d'Aunis, kept in tank for six weeks. No added sulphur.`,
+          IMG:'./images/Laurent Saillard/Ça-Se-Discute.jpg' 
+        },
+      ]
+    },
+    'Le Batossay' : {
+      COMPANY_ID: 17,
+      COMPANY_IMG : './images/Le Batossay/company.jpg',
+      STORY_1 : `Son of the famed natural winemaker Olivier Cousin, Baptiste is a young renegade in all senses of the word. With thanks to his fathers influence and guidance, Baptiste has truly come into his own as a winemaker and taken creative charge of his vision for Le Batossay. Armed with only a horse and plough, Baptiste symbolises everything that gets us excited about Loire Valley wines.`,
+      STORY_2 : `In 2012 Baptiste was given a small plot of Chenin and Grolleau from his fathers vineyard holdings in the small village of Martigne Briand, Loire Valley. Since that point he has grown and now cultivates just under 10 ha of Chenin Blanc, Grolleau Gris, Grolleau, Gamay, Cabernet Franc and Pinot Noir, mostly vines taken over from his father. The Black loam soils infused with deep beds of limestone produce wines of concentration, flinty minerality and purity. He is committed to working the land by hand, truly respecting the challenges of what nature gives him. In the cellar he is as hands off as can be, never manipulating the wines and no sulphur is added at any point. His hard work and understanding of his surrounds translates into truly expressive and instinctual wines.`,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Puppet Nat Pet Nat',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Grolleau Gris',  
+          STYLE : 'Pet Nat',
+          ABOUT : `Grolleau Gris kept on skins in tank for 5 days before being pressed. The wine finishes fermentation in bottle and is hand disgorged. A lively fresh Petillant Naturel Rosé. Enjoy it as this is the final vintage of Puppet Nat.`,
+          IMG:'./images/Le Batossay/Puppet-Nat-Pet-Nat.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Pied',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'White',
+          ABOUT : `The 2020 Pied is one of the more remarkable Chenin's we have seen from Baptiste. Fermented on skins for 14 days then pressed to old wood for the end of fermentation and 6 months of ageing. From his 1.3ha Pied Flond site on the northern outskirts of MartigneiBriand. Planted in 1956 these old goblets are incredibly low yielding, giving small concentrated bunches. This wine is lively, with acidity to burn, a delightful rendition of this electric cuvee. No added sulphur as always.`,
+          IMG:'./images/Le Batossay/Pied.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'GRGR',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Grolleau Gris',  
+          STYLE : 'White Wine',
+          ABOUT : `GRGR is a new cuvee for Baptiste who welcomed a larger than usual crop of Grolleau Gris in 2020. This allowed him to make two barrels of direct pressed Grolleau Gris which was aged in old cognac barrels for 6 months. Fruit from his 0.9ha site on the Southern outskirts of Martigne-Briand on silty clay soils. Planted in 1992 these vines are beautifully balanced giving a nice crop of fruit with zippy acidity. Textural and deep this wine is full of complexity. No added sulphur as always.`,
+          IMG:'./images/Le Batossay/GRGR.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Canine',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Chenin Blanc/Grolleau Noir',  
+          STYLE : 'White',
+          ABOUT : `Canine has undergone quite the transformation. Just over half the wine is Chenin Blanc from 1955 vines. Unfortunately the vines had a tough year with early season frosts reducing yields. So as it was Baptiste took his oldest black Grolleau and pressed it directly to barrel where it stayed for fermentation. This wine is lively, with acidity to burn, a delightful rendition of this electric cuvee.`,
+          IMG:'./images/Le Batossay/Canine.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Marie Rose Rosé',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Grolleau Gris',  
+          STYLE : 'Rosé',
+          ABOUT : `Named after Baptiste's grandmother Marie Rose is Grolleau Gris macerated as whole bunches for 15 days before being pressed to a combination of old puncheons and tank. Fruit from his 0.9ha site on the Southern outskirts of Martigne-Briand on silty clay soils. Planted in 1992 these vines are beautifully balanced giving a nice crop of fruit with zippy acidity. Its clear with a luminous pink colour, grippy tannin and a ripe, floral aroma. A joy to drink.`,
+          IMG:'./images/Le Batossay/Marie-Rose-Rosé.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Vendangeureuse',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : "Pineau d'Aunis",  
+          STYLE : 'Red',
+          ABOUT : `Vendangereuse is young vine Pineau d'Aunis from the Sous le Chateau vineyard on clay over limestone soil. Whole bunches kept on skins for almost 9 days before pressing to a mixture of barrels. Savoury, gamey meets unripe red currants, open it up and watch this beauty evolve for hours.`,
+          IMG:'./images/Le Batossay/Vendangeureuse.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Ouech Cousin',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Grolleau Noir',  
+          STYLE : 'Red',
+          ABOUT : `Back to the good old days of Ouech Cousin, an earlier picked and fresher example of this popular cuvee. Old vines of Grolleau macerated for 14 days and aged for 6 months in large format wood. Bottled in the spring with no adds.`,
+          IMG:'./images/Le Batossay/Ouech-Cousin.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Dynamitage',  
+          PRODUCER : 'Le Batossay',  
+          COUNTRY : 'France',  
+          REGION : 'Martigne-BriandLoire Valley',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Dynamitage has always been one of our favourite cuvees. This is Gamay but not as you know it. Whole bunches kept on skins for almost four weeks before pressing to a mixture of barrels. Lifted, ripe aromatics with a touch of rustic spice. Open it up and watch this beauty evolve for hours.`,
+          IMG:'./images/Le Batossay/Dynamitage.jpg' 
+        },
+      ]
+    },
+    'Le Facteur' : {
+      COMPANY_ID: 18,
+      COMPANY_IMG : './images/Le Facteur/company.jpg',
+      STORY_1 : `Le Facteur, translating to ‘The Postman’, is a dynamic partnership between Mathieu Cosme, an established biodynamic Loire producer working under the moniker ‘Domaine de Beaumont’ who has already gained a strong following in his own right, and his once-importer Fabien Brutout. Fabien first joined Mathieu back in 2008 to help in the vineyards and after the two quickly become fond of one another the duo decided to start Le Facteur, a pursuit for making unadulterated Pet-Nat from Vouvray and following their passion for hands-off winemaking.`,
+      STORY_2 : `Based in Vouvray the two nowadays manage 10 hectares of Chenin planted on clay and limestone at 121 meters above sea-level, much of which sits at 90 years old and is all managed biodynamically. Picking is all done by hand, wines are fermented with indigenous yeast along with zero additions bar minimal sulphur inputs at bottling for some of the wines.`,
+      STORY_3 : `When asked how ‘The Postman’ came about as an idea for their wines, Fabien explains; “back in the day it was common for the postman, a usually well-liked member of the community, to ride on his bike from house to house and from farm to farm delivering mail, often invited in for a drink at each house. By the end of his mail run he would be so drunk that some of the parcels never got delivered to the fortunate few still waiting on their mail”.
+      What is on face-value a light hearted nostalgic tale from the olden days actually provided for us a pretty relevant analogy as to what attracts as so much to Mathieu and Fabiens’ wines. These wines harness the classic and elegant power that Vouvray is so famed for providing to Chenin Blanc’s but are married in with the idea that wine should be a playful and jovial pursuit, made to be relatable and drunk with pleasure.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Vouvray Extra Brut',  
+          PRODUCER : 'Le Facteur',  
+          COUNTRY : 'France',  
+          REGION : 'VouvrayLoire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'Sparkling',
+          ABOUT : `This Vouvray Extra Brut sparkling is half fermented in stainless steel and then finishes second fermentation in bottle. A pied de cuve and grape must is added for the secondary fermentation and then it sits in bottle sure lie for 19 months. Once disgorged it is bottled unfiltered and with about 30mg of sulfur. This wine from Mathieu and Fabien is classic Chenin sparkling with acidic drive and a creamy autolytic mouthfeel.`,
+          IMG:'./images/Le Facteur/Vouvray-Extra-Brut.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'La Bulle du Facteur Pet Nat',  
+          PRODUCER : 'Le Facteur',  
+          COUNTRY : 'France',  
+          REGION : 'VouvrayLoire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'Pet Nat',
+          ABOUT : `Off the 2 hectare clay and limestone vineyard clocking 90 years old, Chenin is direct press and barrel fermented then left for 12 months in barriques, allowing second fermentation to occur in bottle on indigenous yeasts.`,
+          IMG:'./images/Le Facteur/La-Bulle-du-Facteur-Pet-Nat.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : "Su'L'Velo",  
+          PRODUCER : 'Le Facteur',  
+          COUNTRY : 'France',  
+          REGION : 'VouvrayLoire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'White',
+          ABOUT : `Dry Chenin from Le Facteur's 90+ year old vines. Gentle press follows ageing in old french barriques and bottled with minimal sulphur. A tone of drive behind this one.`,
+          IMG:'./images/Le Facteur/Su-L-Velo.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : "Pineau d'Aunis",  
+          PRODUCER : 'Le Facteur',  
+          COUNTRY : 'France',  
+          REGION : 'VouvrayLoire Valley',  
+          VARIETY : "Pineau d'Aunis",  
+          STYLE : 'Rosé',
+          ABOUT : `
+          A new wine for Fabian & Mathieu, Pineau d'Aunis and a small amount of Gamay from old vines on pure limestone soils from Touraine. Grapes are kept whole bunch for 10 days before pressing to tank. Aged on lees for 8 months before bottling with a small sulphur addition. Crunchy and herbal its everything we love about Pineau d'Aunis.`,
+          IMG:'./images/Le Facteur/Pineau-d-Aunis.jpg' 
+        },
+      ]
+    },  
+    'Les Errances' : {
+      COMPANY_ID: 19,
+      COMPANY_IMG : './images/Les Errances/company.jpg',
+      STORY_1 : `Les Errances or “Wanderings” is a winery owned by Warren and Maïté Perrocheau who met in 2009 in business school. After travelling the world living in Mexico and Sweden they finally ended up in France and after a few years in the corporate world they decided to move to the Loire Valley for a slower lifestyle. After completing their viticultural studies and working with some of the region’s greats they founded Les Errances in 2018.`,
+      STORY_2 : `They now farm 6 ha of mixed varietals in the small village of Rablay sur Layon, while buying small amounts of fruit from organic producers such as Alain Bore & David Landron. Their farming is meticulous and they take a permaculture approach encouraging diversity of plants and trees in and around the vines. In the cellar they are as hands off as possible, with long wild ferments and a mixture of fermenting vessels. All wines enjoy long elevage and are remarkably stable, with minimal sulphur added only when needed. Their wines are immensely enjoyable, clean natural wines and some of our favourites tasted over the last few years.`,
+      STORY_3 : `The wines of Les Errances are as wholesome as they come. They speak deeply of Rablay and show absolute purity through each cuvee.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Tohu Bohu Petillant Naturel',  
+          PRODUCER : 'Les Errances',  
+          COUNTRY : 'France',  
+          REGION : 'Loire Valley',  
+          VARIETY : 'Chenin Blanc Blend',  
+          STYLE : 'Pet Nat',
+          ABOUT : `Chenin blanc, Grolleau and Cabernet Franc from the limestone soils of Rablay. Pressed straight to tank where the wine partially fermented before being put to bottle in the early winter. Bright, crunchy Pet Nat, perfect for the oncoming spring weather.`,
+          IMG:'./images/Les Errances/Tohu-Bohu-Petillant-Naturel.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Topette',  
+          PRODUCER : 'Les Errances',  
+          COUNTRY : 'France',  
+          REGION : 'Loire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'White',
+          ABOUT : `Chenin blanc from the limestone soils of Château de Plaisance in Rochefort-sur-Loire. Pressed straight to old barrels where the wine was on full solids for 11 months. Beautiful oxidative note on this one while still remaining lovely and fresh.`,
+          IMG:'./images/Les Errances/Topette.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Boomerang',  
+          PRODUCER : 'Les Errances',  
+          COUNTRY : 'France',  
+          REGION : 'Loire Valley',  
+          VARIETY : 'Melon de Bourgogne',  
+          STYLE : 'White',
+          ABOUT : `100% Melon de Bourgogne farmed by David Landron in the heart of Muscadet in the town of Vallet. They are direct pressed straight to old wood where they remain for 1 year. No added sulphur leaves this wine incredibly pure.`,
+          IMG:'./images/Les Errances/Boomerang.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Quand Fond La Neige',  
+          PRODUCER : 'Les Errances',  
+          COUNTRY : 'France',  
+          REGION : 'Loire Valley',  
+          VARIETY : 'Chenin Blanc',  
+          STYLE : 'White',
+          ABOUT : `Chenin Blanc from the limestone soils of Rablay. Pressed straight to old barrels where the wine was on full solids for 11 months. Beautiful oxidative note on this one.`,
+          IMG:'./images/Les Errances/Quand-Fond-La-Neige.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Cartouche',  
+          PRODUCER : 'Les Errances',  
+          COUNTRY : 'France',  
+          REGION : 'Loire Valley',  
+          VARIETY : 'Grolleau/Cab Franc',  
+          STYLE : 'Red',
+          ABOUT : `70% Grolleau and 30% Cabernet Franc grown on the limestone soils of Rablay. Early pick on the Grolleau and light 7 day maceration on both varieties before pressing and ageing in the tank.`,
+          IMG:'./images/Les Errances/Cartouche.jpg' 
+        },
+      ]
+    },
+    'Les Grangeons de l’Albarine' : {
+      COMPANY_ID: 20,
+      COMPANY_IMG : './images/Les Grangeons de l’Albarine/company.jpg',
+      STORY_1 : `Based out on the famed slopes of Bugey, perhaps best known for the dry and semi sweet ‘Bugey Cordon’ sparkling wines is Luc Bauer, residing in the tiny village of Argis in Bugey. Interestingly enough there isn’t a sparkling wine in sight in Luc’s cellar.`,
+      STORY_2 : `Luc is deeply committed to biodynamics and farming. He was trained as an agricultural engineer but over time found his love for vines and a career in winemaking took over. Before settling in Bugey he worked with the likes of Domaine de la Soufrandière (Bret Brothers), Philippe Jambon in Beaujolais as well as in Canada. In his spare time he also works for the Association des Producteurs Bio du Rhône et de la Loire whose aim is to help winegrowers to convert to organic farming and viticulture, a goal he is deeply passionate about.
+      The estate of Grangeons de l’Albarine consists of nearly 2.5 ha of vineyards spread over several sites. 1.2 ha are worked on the incredibly steep slope of Argis (pictured above) and divided into two parcels, the Chateau, and Paradis. These vines are nearly 50 years old on a limestone base and planted to Chardonnay, Rousette and Monduse. In addition, a 0.5 ha 50 year old plot called Combernand, “La Cluse des Peintres” was taken over in 2014 in nearby Rossillon, with three grape varieties: Gamay, Chardonnay and Aligoté. This site has a gentler east-facing slope and is planted to pebbly soils. In 2015 Luc added what he now regards as his most prized site 0.4 ha of vines in St Sorlin en Bugey. The site named “Clos de Beauregard” sits on a hillside overlooking the Rhone, with 60-year-old vines of Gamay and Altesse planted over rocky shards of limestone. Finally a small plot of Mondeuse and Chasselas was also taken again in 2015, with 0.5 ha of 20-year-old vines that have a denser limestone over clay soils.`,
+      STORY_3 : `The array of vineyards that Luc has assembled is all worked by hand. They are very tough sites and we were in awe of how hard he works and how challenging the site must be to manage. All of these sites have been converted to organic farming and are certified. Luc employs biodynamic principles to his vineyards and hopes to certify over the next few seasons. In the cellar Luc’s desire is to produce wines that speak of the terroir of Bugey. As such his winemaking style is very neutral. He direct presses his whites to old wooden vessels, his reds he keeps on skin in stainless tanks for a short time before pressing to the same old wooden barrels. All wines are wild fermented and remain unfiltered and unfined, instead being racked a few times before bottling for purity and clarity. He adds small amounts of sulphur for each cuvee where he sees a need for it.
+      The wines of Les Grangeons de l’Albarine are as wholesome as they come. They speak deeply of the forgotten region of Bugey and show absolute purity through each cuvee. We have not been as excited about a new producer for a while.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Le Grangeon Mano',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `15 year old Chardonnay vines grown at 320m in elevation on an extremely steep south facing slope on exposed limestone and grey marl. The vines have been worked biodynamic since 2015. Pressed to a combination of sandstone jars and old demi-muids. Small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Le-Grangeon-Mano.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Combernand La Cluse des Peintres',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Aligote',  
+          STYLE : 'White',
+          ABOUT : `
+          50 year old Aligoté vines grown at 350m in elevation on an east facing slope on pebbly limestone soil. The vines have been worked biodynamic since 2014. Fermentation in tank and once dry transferred to old wood and aged for 10 months. small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Combernand-La-Cluse-des-Peintres.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Combernand La Cluse des Peintres',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `
+          50 year old Chardonnay vines grown at 350m in elevation on an east facing slope on pebbly limestone soil. The vines have been worked biodynamic since 2014. Pressed to old cask for fermentation and ageing for 11 months. small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Combernand-La-Cluse-des-Peintres.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Tutti Frutti',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Altesse Blend',  
+          STYLE : 'White',
+          ABOUT : `Blend of 70 year old Altesse, Jacquère, Chardonnay, Chasselas, Aligote all grown at 300m in elevation on an extremely steep south facing slope on the exposed limestone soils of Argis. The vines have been worked biodynamic since 2015. Fermentation and ageing in sandstone Gres jars with elevage on full solids for 13 months. Small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Tutti-Frutti.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'De Beauregard',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Altesse',  
+          STYLE : 'White',
+          ABOUT : `70 year old Altesse vines grown at 300m in elevation on a south facing slope on limestone soils. The vines have been worked biodynamic since 2015. Fermentation in small old wooden barrels and aged for 11 months. small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/De-Beauregard.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Miss Mondeuse',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Mondeuse',  
+          STYLE : 'Red',
+          ABOUT : `20 year old Mondeuse vines grown at 300m in elevation on a south facing slope on clay/limestone soils. The vines have been worked biodynamic since 2015.Whole bunches kept in tank for 15 days and aged for 11 months in barrel. No sulphur addition.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Miss-Mondeuse.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Monday Mondouze-gama',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Mondeuse Blend',  
+          STYLE : 'Red',
+          ABOUT : `A really exciting new wine for Luc. 75% Mondeuse from a blend of free run and lightly macerated juice from his home plot is Argis. This is blended with 25% Gamay from his Beauregard site which was foot stomped and left for a week on skins. Aged in tank and sandstone its crunchy, bright and perfect for a light chill. No added sulphur, pure juice.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Monday-Mondouze-gama.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Le Chateau',  
+          PRODUCER : 'Les Grangeons de l’Albarine',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Mondeuse',  
+          STYLE : 'France',
+          ABOUT : `60 year old Mondeuse vines grown at 350m in elevation on a south east facing slope on pebbly/limestone soils. The vines have been worked biodynamic since 2010. Whole bunches kept in tank for 12 days and aged for 13 months in barrel. small sulphur addition before bottling.`,
+          IMG:'./images/Les Grangeons de l’Albarine/Le-Chateau.jpg' 
+        },
+      ]
+    },
+    'Les Vignes de Paradis' : {
+      COMPANY_ID: 21,
+      COMPANY_IMG : './images/Les Vignes de Paradis/company.jpg',
+      STORY_1 : `Dominique Lucas has chosen what many would seem an idealistic pursuit, to make Chasselas in the Savoie that stands with the best white wines of France. Despite the grapes low reputation Dominique has been planting the on serious terroirs overlooking Lac Leman (Lake Geneva) and farming them biodynamically since day one. Lucas is a 5th generation winemaker who migrated from his native Burgundy, frustrated with the region’s reliance on chemicals. He landed at a small local winery at Ballaison, on the shore of Lake Geneva. Here, he founded Les Vignes de Paradis, where he trains vines in a chaotic, unpruned method reminiscent of Burgundy’s Lalou Bize-Leroy.`,
+      STORY_2 : `His vines are separated into 27 parcels of different soil composition (rich yellow marl and granite soils with a limestone base, and some silex stones), each of which is harvested by hand (he says it takes 2.5 months to harvest here as Chasselas takes so long to ripen), and vinified separately. He is deeply committed to Chasselas, and has also added tiny parcels of Savagnin, Pinot Gris, Gamay, and Chardonnay. These are not old vines, but in the hands of this careful winemaker they are capable of producing wines of depth and complexity.`,
+      STORY_3 : `Though his family’s history is steeped in Burgundian ways, you won’t find much of this influence in his cellar. Dominique vinifies his grapes in an array of different amphorae, barrels, and concrete eggs – no doubt a hint at his close friendship with Dominique Belluard who lives about an hour away in Ayse. Fermentations occur naturally and the only addition to the wines is a small amount of sulphur at bottling. His commitment to experimentation is key, such as his recent project of building concrete pyramids out of sand, rocks and water all found on his small property for future fermentations.
+      Lucas’ wines are full of tension and intrigue. They are a benchmark of the region and quite simply some of Savoie’s most animated, boundless and thrilling whites.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Quintessence',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Chasselas',  
+          STYLE : 'White',
+          ABOUT : `'Quintessence' is a result of Dominique's recent négociant project, a wine from his former Crépy AOC near Lake Geneva, as a pursuit for well crafted, more approachable Chasselas compared with some of the other examples in neighbouring AOC's. Since this does not share the AOC of the rest of his wines, he has decided to label it under a seperate name - 'Les Vins du Leman', named after the neighbouring Lake. A lemony bright and refreshing white, and at 11% alcohol, this stony cut Chasselas is like mountain Muscadet that empties from the glass quickly`,
+          IMG:'./images/Les Vignes de Paradis/Quintessence.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'IGP Pinot Gris',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Pinot Gris',  
+          STYLE : 'White',
+          ABOUT : `This was a real stand out moment for us while tasting Dominique's Pinot Gris - smokey, full and fresh. A wine that far overshadows some of it's Alsatian counterparts, seeing this wine showed us how much Dominique can amaze and ignite excitement. Pinot Gris as elegant as we've known Pinot Gris to be.`,
+          IMG:'./images/Les Vignes de Paradis/IGP-Pinot-Gris.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'IGP Savagnin',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Savagnin',  
+          STYLE : 'White',
+          ABOUT : `Savagnin in the Savoie, true to the spirit on Dominique's work and in the end a very different interpretation to his neighbours in the Jura. Aged in concrete eggs and demi-muids. Aromatic, nutty and full of drive.`,
+          IMG:'./images/Les Vignes de Paradis/IGP-Savagnin.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'IGP Chardonnay',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `
+          Taken from vines planted on the banks of Lake Geneva, Dominique's 'IGP' Chardonnay is both precise and expressive and very much encapsulates the Savoie and all its character. Grown on loamy soils and aged in both barrel and concrete egg, Dominique's Chardonnay is crystalline, floral, rich and somewhat rare with only 2000 bottles produced.`,
+          IMG:'./images/Les Vignes de Paradis/IGP-Chardonnay.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : '1515',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Chasselas',  
+          STYLE : 'White',
+          ABOUT : `Dominique's top selection from his older vines. Aged in amphora.`,
+          IMG:'./images/Les Vignes de Paradis/1515.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Marin',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Chasselas',  
+          STYLE : 'White',
+          ABOUT : `The Les Vignes de Paradis 'D de Marin' really exemplifies what Dominique is able to do with such an underrated grape variety. Taken off 50 year old vines from glacial morasses and rich granite soils, 'Marin' is a wine of deep yellow fruits, saline and mineral, finishing long and textural. Aged in both barrels and concrete eggs, a truly remarkable example of Chasselas.`,
+          IMG:'./images/Les Vignes de Paradis/Marin.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : 'Keops(Pyramid Wine)',  
+          PRODUCER : 'Les Vignes de Paradis',  
+          COUNTRY : 'France',  
+          REGION : 'Savoie',  
+          VARIETY : 'Chasselas',  
+          STYLE : 'White',
+          ABOUT : `An ingenious experiment from Dominique to make his own ageing vessels from the soils of his vines. Limestone and gravel mixed with water from the local spring to form his very own pyramid-shaped amphora, to the exact proportional dimensions of the famed Cheops pyramid in Giza. It's effect on the wine? Hard to say - correlation doesn't always equal causality, but it does sometimes equal something extraordinary. A wine with precision and finesse.`,
+          IMG:'./images/Les Vignes de Paradis/Keops(Pyramid Wine).jpg' 
+        },
+      ]
+    },
+    'Louis Terral' : {
+      COMPANY_ID: 22,
+      COMPANY_IMG : '',
+      STORY_1 : `There is new blood in Bugey and he comes by the name Louis Terral. Louis recently settled in the historic stronghold of Mérignat making wines that are truly unique for the region. There is not a sweet nor sparkling wine in sight instead, Louis is making enigmatic examples of still dry Gamay from a selection of steep vineyards in the hills surrounding. He draws upon his years of experience working for the likes of Julie Balagny, Jean Louis Dutraive and Philippe Valette to make wines that truly stand out. Louis is a superstar in the making, doing everything by hand and not taking a single short cut resulting in pure, ethereal examples of mountain Gamay.`,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Marianne',  
+          PRODUCER : 'Louis Terral',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Named after Marianne, a female figure of the French republic. Old vine Gamay at an altitude of 600m, this is the most special of Louis wines. This wine sees carbonic maceration using only the CO2 from fermentation. The wine then goes to barrel for 6 months. A very special light Gamay with an almost Poulsard feel.`,
+          IMG:'./images/Louis Terral/Marianne.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Vera',  
+          PRODUCER : 'Louis Terral',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Named after Vera Rubin, the second female astronomer. Louis' Beaujolais training at work here with a semi carbonic, 15-20 day long maceration. This would be the most 'wild' of his 3 wines, a combination of 80yr old vines and 40yr old vines, both playing a key role.`,
+          IMG:'./images/Louis Terral/Vera.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Lucie',  
+          PRODUCER : 'Louis Terral',  
+          COUNTRY : 'France',  
+          REGION : 'Bugey',  
+          VARIETY : 'Gamay',  
+          STYLE : 'Red',
+          ABOUT : `Named after Lucie Aubrac, a member of the French resistance. Woah! Pure, ethereal Gamay with rustic red fruits, a balanced savoury edge, and distinct cool climate mountain-like feel. This wine is the iron fist in a velvet glove, with understated intensity. From 50 year old vines in an almost unworkably steep site.`,
+          IMG:'./images/Louis Terral/Lucie.jpg' 
+        },
+      ]
+    },
+    'Lulu Vigneron' : {
+      COMPANY_ID: 23,
+      COMPANY_IMG : './images/Lulu Vigneron/company.jpg',
+      STORY_1 : `Previously known as Les Chais du Vieux Bourg, Lulu Vigneron is introducing a new look for Ludwig’s wines. The winery has completed a full conversion to 100% organic viticulture and believes the occasion deserves a modern name and label. Ludwig Bindernagel is know to his friends and colleagues as Lulu, so this affectionate nickname was the natural choice for the winery.`,
+      STORY_2 : `Ludwig Bindernagel, from Bavaria, and Nathalie Eigenschenck, from Paris, started their journey into wine in 2000. Neither of them had any experience or formal education as winemakers prior to opening their own winery, nor did they come from vigneron families. Ludwig studied viticulture remotely while working as an architect in Paris, and ultimately decided to leave to pursue his passion for viticulture and wine production. Ludwig had fallen in love with Burgundy, and completed time working with a good friend in Saint Aubin. He had initially hoped to purchase land there, however due to financial constraints, the family found that the Jura proved significantly better suited for them. This led to the purchase of Les Chais du Vieux Bourg (now Lulu Vigneron) in 2000. Their first vintage came shortly after in 2002.`,
+      STORY_3 : `The original vineyard is about 2.5 hectares in Arlay, in the centre of the Jura, and Ludwig has since expanded the estate to include vineyards in Poligny, l’Etoile and the legendary Château-Chalon. Their vineyards are all organic and they do not use any insecticides, chemical fertilizers or machinery. They are currently going through biodynamic conversion for all vineyards and hope to achieve certification by the 2019 vintage. The soil is very unique, with two marly layers and a calcareous stratus, which is rich in fossilized oysters. Vine age varies from new vines of Trousseau that replaced his previous holdings of Pinot Noir to 55-year-old vines of Savignan.
+      Ludwig’s motto “the wine is made in the vineyard” is exemplified by the fact Ludwig works with the vines every day. He has a completely natural approach to wine making with a dedication to a non-interventionism and an affinity for making wine in a traditional style. He only takes the best clusters during selections, and uses almost mad pruning techniques to keep yields as low as possible. Ludwig’s fermentations are done at very low temperatures, lengthening the process for up to two years. This helps create very complex wines with depth and layers.
+      These have always been some of our favourite wines. We get a small allocation each year and are delighted to share these mineral beauties with you.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'BB1',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Chardonnay/Savagnin',  
+          STYLE : 'White',
+          ABOUT : `BB1 is 90% Chardonnay and 10% Savignan from southern exposed sited in Poligny and Arlay, part of the Côtes du Jura AOC. Whole bunch pressed to old wood for ferment and then aged in old barrels for three years and topped up. A fresh lively example of the region.`,
+          IMG:'./images/Lulu Vigneron/BB1.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Savagnin',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Savagnin',  
+          STYLE : 'White',
+          ABOUT : `100% Savagnin grown on marl and calcareous soils in Poligny, part of the Côtes du Jura AOC. 8 hours of maceration followed by racking into barrels at the beginning of fermentation. A textured, supple and bright white wine.`,
+          IMG:'./images/Lulu Vigneron/Savagnin.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Sous Le Cerisier',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Chardonnay',  
+          STYLE : 'White',
+          ABOUT : `100% Chardonnay from southern exposed sited in Poligny and Arlay. The wine is matured in old barrels for 13 months before bottling and barrels are topped the whole time. A fresh lively example. 15 g/l total sulphur.`,
+          IMG:'./images/Lulu Vigneron/Sous-Le-Cerisier.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : "L'Etoile",  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Chardonnay/Savagnin',  
+          STYLE : 'White',
+          ABOUT : `
+          This blend of Chardonnay 70% and Savignan 30% is all from the l’Etoile AOC. The vineyards are west facing and vines are 35 years old. The wine is matured for almost two years and wine is allowed to undergo subtle oxidisation. This wine is textural and rich. 5 g/l total sulphur.`,
+          IMG:'./images/Lulu Vigneron/L-Etoile.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Poulsard',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Poulsard',  
+          STYLE : 'Red',
+          ABOUT : `This 100% Poulsard is from three small vineyards, two with a southerly aspect and one with a westerly. The vine age is mixed between 25 - 55 years of age. Whole bunch ferment for 8 days before a gentle press. Aged in old wood for 8 months. This is very light almost rose colour with a vibrant palate of red berries.`,
+          IMG:'./images/Lulu Vigneron/Poulsard.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Pinot Noir',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Pinot Noir',  
+          STYLE : 'Red',
+          ABOUT : ``,
+          IMG:'./images/Lulu Vigneron/Pinot-Noir.jpg' 
+        },
+        {
+          ID : 6,
+          WINE : "L'Etoile Vin Jaune",  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Savagnin',  
+          STYLE : 'Dessert',
+          ABOUT : `In 2005 Ludwig made two separate examples of Vin Jaune. One from his Savignan in Arlay and a very special single barrel from l'Etoile. This 100% Savignan spent 11 years under voile and is from 35 year old west facing vines. As it was a single barrel it was labeled under the same label as AOC Cotes du Jura. This is the most special Vin Jaune we have seen from Ludwig and it blew us away when we tasted earlier in the year.`,
+          IMG:'./images/Lulu Vigneron/L-Etoile-Vin-Jaune.jpg' 
+        },
+        {
+          ID : 7,
+          WINE : 'Vin Jaune',  
+          PRODUCER : 'Lulu Vigneron',  
+          COUNTRY : 'France',  
+          REGION : 'Jura',  
+          VARIETY : 'Savagnin',  
+          STYLE : 'White Wine',
+          ABOUT : `Ludwig's arguably most accomplished wine, the 2011 Vin Jaune. A natural ferment of 100% Savagnin with zero additions, eight years under voile (yeast layer). Six years is the minimum required for Vin Jaune within the appellation.`,
+          IMG:'./images/Lulu Vigneron/Vin-Jaune.jpg' 
+        },
+      ]
+    },
+    'Mai & Kenji Hodgson' : {
+      COMPANY_ID: 24,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Matassa' : {
+      COMPANY_ID: 25,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Raphaëlle Guyot' : {
+      COMPANY_ID: 26,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Thomas Boutin' : {
+      COMPANY_ID: 27,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    },
+    'Val de Combres' : {
+      COMPANY_ID: 28,
+      COMPANY_IMG : './images//company.jpg',
+      STORY_1 : ``,
+      STORY_2 : ``,
+      STORY_3 : ``,
+      LIST : [
+        {
+          ID : 0,
+          WINE : '',  
+          PRODUCER : '',  
+          COUNTRY : '',  
+          REGION : '',  
+          VARIETY : '',  
+          STYLE : '',
+          ABOUT : ``,
+          IMG:'./images/.jpg' 
+        },
+      ]
+    }
   },
   // 'GERMANY' : {
   //   'Kühling-Gillot',

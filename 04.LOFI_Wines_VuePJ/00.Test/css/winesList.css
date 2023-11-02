@@ -14,11 +14,11 @@
 .company-left,
 .company-right{
   width: 50%;
-  height: 100%;
 }
 
 .wines-left{
   position: relative;
+  margin-top: 59px;
 }
 
 .wines-wrap{
@@ -93,6 +93,8 @@
 
 .wines-right{
   background-color: var(--gray);
+  padding-top: 59px;
+  box-sizing: border-box;
 }
 
 .wines-imgBox,
@@ -107,7 +109,7 @@
 .wines-imgBox>img,
 .company-imgBox>img{
   object-fit: contain;
-  width: 60%;
+  width: 55%;
 }
 
 .company-left{
@@ -158,6 +160,9 @@
   text-align: center;
   font-size: var(--font-size-M);
   font-family: 'Nanum Myeongjo', serif;
-  margin-bottom: 10px;
   line-height: 1.3;
+}
+
+.company-text p{
+  margin-top: 10px;
 }

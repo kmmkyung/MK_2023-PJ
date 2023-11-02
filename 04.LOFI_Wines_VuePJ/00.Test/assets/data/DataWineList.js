@@ -3874,13 +3874,226 @@ const DataWineList = {
       ]
     }
   },
-  // 'GERMANY' : {
-  //   'Kühling-Gillot',
-  //   'Melsheimer'
-  // },
-  // 'HUNGARY' : {
-  //   'Peter Wetzer'
-  // },
+  'GERMANY' : {
+    'Kühling-Gillot' : {
+      COMPANY_ID: 0,
+      COMPANY_IMG : './images/Kühling-Gillot/company.jpg',
+      STORY_1 : `Kuhling Gillot is located in the town of Bodenheim in the Nierstien area of the Rheinhessen wine-growing region of Germany. In its present form, it came about by marriage in 1970 when two of the regions oldest and most established wineries Kuhling and Gillot joined forces. Carolin Spanier-Gillot who has been responsible for winemaking since 2002 is regarded both at home and internationally as one of Germanys most talented winemakers and viticulturalists. In 2014 she took out Germanys winemaker of the year becoming the first female to take out this prestigious prize. What has made Caroline’s work so special is her dedication in the vineyard and experimentation in the cellar.`,
+      STORY_2 : `Her family has 11 hectares of wonderful vineyards overlooking the Rhine on Rheinhessen’s eastern flank in the legendary villages of Oppenheim, Nackenheim and Nierstein. Many of their vineyards are on the Roter Hang (the red cliffs), thick with iron oxide which imparts the wines with an almost tropical spice and intensity. She makes some incredible wines from esteemed GG sites such as Ölberg, Pettental, Hipping and Rothenberg, as well as beautiful more approachable village wines. The majority of the estates holdings are planted to Riesling and although she has some Pinot noir, Chardonnay and Weissburgunder planted, particular attention is paid to the regions most famous varietal. Her work in the vineyard is meticulous, with full biodynamic principles applied and certified since 2006. Since making the decision to employ these principles she has found her work in the cellar, mainly fermentation to be much easier, an added and unexpected bonus. At Kühling-Gillot, the usual late harvest, painstaking selection, and spontaneous fermentation in large oak casks enable the terroir to be perceptible in the wines. In their youth, the wines are charming and smooth; with time, they reveal their origin.`,
+      STORY_3 : `Carolin has become a force to take note amongst the German winemaking community. With extensive time on lees, slow maturations and complete commitment to the preservation of unadulterated, terroir driven wines, her entire range from Village to GG’s remains both addictive and precise. Her dry Rieslings are benchmarks for the region and we are proud to be representing one the countries most exciting leading women.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Qvinterra Trocken',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `Five different wine villages and five different soil types inspired the creation of the Latin term Qvinterra. The name indicates that our estate owns vineyards in the five famous villages on the Rhine Terrace: Oppenheim, Nierstein, Nackenheim, Bodenheim, and Laubenheim.`,
+          IMG:'./images/Kühling-Gillot/Qvinterra-Trocken.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Oppenheim',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `The vineyards around Oppenheim are not influenced directly from the Rhine, here the heat stays and brings with it balanced ripeness. In comparison to Nierstein where the red slate is dominant, in Oppenheim the soil is very chalky. The cooler underground with the heat of the days brings a pretty damn near perfect suspense. The salty minerality of the chalky underground brings a vibrant feeling to the wine. This is the taste of Oppenheim Riesling when left to nature.`,
+          IMG:'' 
+        },
+        {
+          ID : 2,
+          WINE : 'Ölberg Grosse Gewächs Grand Cru',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `The name Ölberg comes from a monastery and has biblical references - The Mount of Olives. The vineyard is in central of the Red Slope portion of Carolin's holdings and has an expansion to the south. It is 60 % in steep on porous soil, a perfect thermal store where the grapes get to perfect ripeness. Given the name, Ölberg is oily and has a lot of viscosity. Matured in 1200L barrels, 3.5 g/L RS at 12.5% abv.`,
+          IMG:'./images/Kühling-Gillot/Ölberg-Grosse-Gewächs-Grand-Cru.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Hipping Grosse Gewächs Grand Cru',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `The steep Hipping site has a 53% to 80% slope that descends towards the Rhine (which is quite wide in this section) with a southeast exposition. The lake-like broadening of the Rhine, the intense morning sun, and the highly weathered red slate strongly influences the microclimate. Matured in 1200L barrels, 2.7 g/L RS and 12.7% alc.`,
+          IMG:'./images/Kühling-Gillot/Hipping-Grosse-Gewächs-Grand-Cru.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Pettenthal Grosse Gewächs Grand Cru',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. Matured is 1200L barrels, 2.8 g/L and 12.5% abv.`,
+          IMG:'./images/Kühling-Gillot/Pettenthal-Grosse-Gewächs-Grand-Cru.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Pettenthal Spätlese Grosse Gewächs Grand Cru',  
+          PRODUCER : 'Kühling-Gillot',  
+          COUNTRY : 'Germany',  
+          REGION : 'Rheinhessen',  
+          VARIETY : 'Riesling',  
+          STYLE : 'Dessert',
+          ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. 60.1 g/L RS, 9.5% alc.`,
+          IMG:'./images/Kühling-Gillot/Pettenthal-Spätlese-Grosse-Gewächs-Grand-Cru.jpg' 
+        },
+      ]
+    },
+    'Melsheimer' : {
+      COMPANY_ID: 1,
+      COMPANY_IMG : './images/Melsheimer/company.jpg',
+      STORY_1 : `Weingut Melsheimer is probably less well known to wine lovers outside of Germany, due to the fact that almost all of their production is sold at home. Thorsten Melsheimer took over the 200 year old family estate in 1994 and immediately began cultivating his vineyards organically. Since 2009 all the vineyard work has been done according to biodynamic principles, receiving its Demeter certification in 2013. The estate consists of 11 hectares, 8 of which grow on the steep hill of the Mullay-Hofberg in Reil, a renowned winemaking village in the Mosel. The weathered slate and quartzite soils of the Mullay-Hofberg hillside have been home to vines since the 12th century. This undulating vineyard sits below a forest and plateau - helping the plants retain water and preventing excessive vine stress even in the hottest vintages.`,
+      STORY_2 : `The Mosel is known for its many steep slopes. Among them, only 5% are categorised as very steep slopes and thus particularly valuable cultural assets. What helps to make Melsheimer so special is that almost half of Thorsten’s vines are in these 5% and grow in some of the least accessible and most vertiginous parcels of the Mullay-Hofberg. The family also has vines growing in the Goldlay vineyard, situated just opposite the village of Reil, as well as some parcels in the Pündericher Marienburg, Burger Hahenschrittchen, Thomasberg and Reiler Falklay. The microclimate and terroir around Reil guarantee a long ripening period, creating the perfect conditions for Riesling. Despite the challenges of working on these steep slopes, Thorsten tirelessly rebuilds old terraces and nurse’s old vines back to life. He is passionate about building biodiversity in his vines and has seen dramatic changes to the ecosystem since taking over the estate just over 20 years ago. The family recently introduced goats to the vineyards to help maintain the ever encroaching forest and to provide manure for the vines.`,
+      STORY_3 : `In the cellar Thorsten prefers to take a more hands off approach. He makes no additions or manipulations to the wines preferring to express what nature has given him in each vintage. All village wines undergo a long fermentation in old oak barrels - the dry Rieslings can take up to 18 months to complete fermentation. He is forever experimenting using techniques such as skin contact to try and add a different element to his wines. His sulphur regime is also very low adding less than 30 parts through all of his wines with his top wine Vade Retro remaining unsulphured.
+      Thorsten remains one of the most hands-on and experimental winemakers in the area and receiving his wines are always a rare treat for us.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Trocken',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `This dry Riesling comes from the weathered slate soils near the village of Reil including the renowned plots of Reiler Goldlay, Pündericher Marienburg, Burger Hahnenschrittchen and Reiler Falklay. The grapes were hand harvested and and transported to the winery in small batches in order to keep the grapes intact. The fruit was then spontaneously fermented in large neutral oak casks.`,
+          IMG:'./images/Melsheimer/Trocken.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Feinherb',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `This dry Riesling comes from selected plots near Reil in the Mosel including the renowned plots of Reiler Goldlay, Pündericher Marienburg, Burger Hahnenschrittchen and Reiler Falklay. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit was then spontaneously fermented in large neutral oak casks. Bottled with 17g/l of residual sugar.`,
+          IMG:'./images/Melsheimer/Feinherb.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Mullay-Hofberg Kabinett',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `The grapes come from the weathered slate soils of the Mullay-Hofberg slope. The long ripening period creates ideal conditions for of dry and sweet expressions of Riesling. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit is then spontaneously fermented in large neutral oak casks and bottled with 37 g/l of residual sugar.`,
+          IMG:'./images/Melsheimer/Mullay-Hofberg-Kabinett.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Mullay-Hofberg Schaf Spätlese',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `The grapes come from the weathered slate soils of the Mullay-Hofberg slope. The long ripening period creates ideal conditions for of dry and sweet expressions of Riesling. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit is then spontaneously fermented in large neutral oak casks and bottled with 79 grams of residual sugar.`,
+          IMG:'./images/Melsheimer/Mullay-Hofberg-Schaf-Spätlese.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Vade Retro',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `This Riesling is Thorsten Melsheimer’s flagship wine, vinified with zero intervention in the cellar. The grapes come from some of the steepest plots in the Reil area and are hand picked with meticulous care. The fruit is spontaneously fermented on the skins in large oak casks without pumping or filtration. No sulphur is added to the wine, signalling a very natural style of winemaking rarely seen in the Mosel. For Thorsten, the Vade Retro is the pinnacle of the minimal intervention style, intended to express the potential of this grape variety at its purest and most natural.`,
+          IMG:'./images/Melsheimer/Vade-Retro.jpg' 
+        },
+        {
+          ID : 5,
+          WINE : 'Lentum',  
+          PRODUCER : 'Melsheimer',  
+          COUNTRY : 'Germany',  
+          REGION : 'Mosel',  
+          VARIETY : 'Riesling',  
+          STYLE : 'White',
+          ABOUT : `Sometimes wines don't behave like you thought they would in the cellar. This is Lentum. Lentum is a small plot on the Mullay-Hofberg slope. It is one of the oldest un-trellaced sections and some years struggles with fermentation. In 2013 as in 2010 the wine was left in oak for 34 months to ferment. The resulting wine finally went dry but has the most incredible bouquet of honey, blossom and a rich creamy palette. A completely unique example of Mosel Riesling.`,
+          IMG:'./images/Melsheimer/Lentum.jpg' 
+        },
+      ]
+    }
+  },
+  'HUNGARY' : {
+    'Peter Wetzer' : {
+      COMPANY_ID: 0,
+      COMPANY_IMG : './images/Peter Wetzer/company.jpg',
+      STORY_1 : `Working out of Sopron in the very north-western corner of Hungary is one of the nations leading lights in minimal intervention winemaking. The city of Sopron, once capital of Burgenland is an area steeped in winemaking traditions, with many of Burgenland’s stars coming from Hungarian heritage.`,
+      STORY_2 : `With the dominating geographical influence of the region being Lake Ferto (aka Lake Neusiedlersee of Burgenland), the area is well protected from extreme weather while also encouraging botrytis in select exposures. Sopron is known for producing wonderful examples of red and dessert wines, with the once predominant white Furmint grape nearly all but gone since Phylloxera set in. Peter’s passion for both both Furmint and Kekfrankos (Blaufrankisch) is clear. He now farms three different Furmint sites across western Hungary exposing the different and unique terroir that it can express. He has painstakingly resurected one of the only local Sopron furmint vineyards as well as farming on an extinct volcano named Sag. In the summer of 2015 he added a small site 1.3 acre site from Tokaji which we have been eagerly anticipating. He has just over 2.5 hectares of Kekfrankos across seven different sites all located close to Sopron with some small holdings in famous local vineyards such as Silverberg, Leithaberg and Spern Stiener.`,
+      STORY_3 : `Peter is the 5th generation living in his house with a 120+ year old attached cellar. In 2007 he purched 2.5 hectares and has steadily grown to the now 3.5 hectares he farms spread over 8 different terroirs. Peter says it was a long hunt for healthy soils that hadn’t been affected from the industrial farming that was commonplace during Communism. He found sites that were alive with flora and fauna, healthy cover crops and with exposures that only require 1-2 sprays of sulphur per season. Everything is done by hand in the vineyard, while all sites are picked and fermented separately. The 120+ year old cellar is ripe with of native microbiological flora and the grapes arrive with extremely healthy yeast populations, allowing for fermentation to take place with only native yeasts and no additives. Wines are fermented in open topped containers before being barrelled down into old Hungarian oak barrels. Wines are neither fined nor filtered and bottled by gravity with minimal sulphur levels.
+      Peter Wetzer is considered by many as one of Hungary’s leading minimal intervention winemakers and a champion of native varietals and olden day techniques. His wines are extremely limited and are an exceptional example of what often under-appreciated Hungarian wines can achieve.`,
+      LIST : [
+        {
+          ID : 0,
+          WINE : 'Somló Furmint',  
+          PRODUCER : 'Peter Wetzer',  
+          COUNTRY : 'Hungary',  
+          REGION : 'Sopron',  
+          VARIETY : 'Furmint',  
+          STYLE : 'White',
+          ABOUT : `45 year old vines of Furmint from the amazing volcanic terroir of Somló. Whole bunches are foot stomped, crushed in vat, then basket pressed and barrel fermented on full lees in old Hungarian oak. Aged without racking and on its lees for 9 months and bottled by gravity without fining or filtration. A wonderfully expressive dry white with plenty of natural acidity and texture to boot.`,
+          IMG:'./images/Peter Wetzer/Somló-Furmint.jpg' 
+        },
+        {
+          ID : 1,
+          WINE : 'Tokaj Furmint',  
+          PRODUCER : 'Peter Wetzer',  
+          COUNTRY : 'Hungary',  
+          REGION : 'Sopron',  
+          VARIETY : 'Furmint',  
+          STYLE : 'White',
+          ABOUT : `A new vineyard for Peter that he started leasing in the summer of 2015. 25 year old vines of Furmint from chocolate clay soil on volcanic subsoil. Whole bunches are foot stomped, crushed in vat, then basket pressed and barrel fermented on full lees in old Hungarian oak. Aged without racking and on its lees for 7 months and bottled by gravity without fining or filtration. Bottled with a slight spritz which lifts the drive through this mineral beast.`,
+          IMG:'./images/Peter Wetzer/Tokaj-Furmint.jpg' 
+        },
+        {
+          ID : 2,
+          WINE : 'Kekfrankos Rose',  
+          PRODUCER : 'Peter Wetzer',  
+          COUNTRY : 'Hungary',  
+          REGION : 'Sopron',  
+          VARIETY : 'Blaufrankisch',  
+          STYLE : 'Rosé',
+          ABOUT : `Based off the small 35 year old vineyard of Harmler and grown on clay, red gravel and limestone, the Kekfrankos (Blaufrankisch) Rose is a curiosity usually reserved just for drinking by Peter and his extended family. It spends 2 days on skins before being pressed straight to an old Hungarian puncheon. Dark juicy example of Rose with a wicked lick of acidity to boot.`,
+          IMG:'./images/Peter Wetzer/Kekfrankos-Rose.jpg' 
+        },
+        {
+          ID : 3,
+          WINE : 'Kekfrankos',  
+          PRODUCER : 'Peter Wetzer',  
+          COUNTRY : 'Hungary',  
+          REGION : 'Sopron',  
+          VARIETY : 'Blaufrankisch',  
+          STYLE : 'Red',
+          ABOUT : `Based off the small 35 year old vineyards of Kohlenberg and Harmler and grown on clay, red gravel and limestone, the Kekfrankos (Blaufrankisch) spends 16 months on lees without batonnage and is then bottled by gravity without fining or filtration. Expect a focused, fresh and raw medium bodied Blaufrankisch that's both lively and lifted.`,
+          IMG:'./images/Peter Wetzer/Kekfrankos.jpg' 
+        },
+        {
+          ID : 4,
+          WINE : 'Silverberg Kekfrankos',  
+          PRODUCER : 'Peter Wetzer',  
+          COUNTRY : 'Hungary',  
+          REGION : 'Sopron',  
+          VARIETY : 'Blaufrankisch',  
+          STYLE : 'Red',
+          ABOUT : `A very special vineyard - Silverberg is a 40 year old vineyard grown on Schist and boy does it express that. It spends 12 months on lees without batonnage and is then bottled by gravity without fining or filtration. It is fines than the estate Kekfrankos with fine chewy tannins. One of the most exciting wines peter has made to date.`,
+          IMG:'./images/Peter Wetzer/Silverberg-Kekfrankos.jpg' 
+        },
+      ]
+    }
+  },
   // 'ITALY' : {
   //   'Al di là del Fiume',
   //   'Alessandro Viola',

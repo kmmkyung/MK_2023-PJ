@@ -54,10 +54,15 @@
 
 .item{
   margin-bottom: 10px;
+  transition: all .5s;
 }
 
-.item:last-child{
-  /* margin-bottom: 100%; */
+.item.colorB{
+  color: var(--block);
+}
+
+.item.colorGray{
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .item:hover span{

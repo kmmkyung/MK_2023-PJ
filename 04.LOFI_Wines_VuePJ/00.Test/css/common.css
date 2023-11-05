@@ -37,6 +37,7 @@ header{
   font-weight: normal;
   font-size: var(--font-size-M);
   letter-spacing: 4px;
+  text-wrap: nowrap;
 }
 
 .menu-Icon{

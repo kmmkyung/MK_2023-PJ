@@ -2428,7 +2428,7 @@ const DataWineList = {
           STYLE : 'Dessert',
           ABOUT : `According to the hefty Wine Grapes book (Robinson/Harding/Vouillamoz), there were a total of about 2 hectares (5 acres) of Verdesse in the world as of 2008. A grape that, according to Thomas, is green for a long time, and typically ripens late, gaining a golden colour at the "very last moment". 8 grams RS behind a wall of delicacy, a fascinating white and a great opportunity to taste a truly obscure and rare variety.`,
           IMG:'./images/Domaine Finot/Domaine-Finot-Verdesse.jpg' 
-        }
+        },
         {
           ID : 2,
           WINE : 'Crozes-Hermitage',  
@@ -5036,6 +5036,7 @@ const DataWineList = {
   }
 }
 
+export default DataWineList;
 
 
 /*

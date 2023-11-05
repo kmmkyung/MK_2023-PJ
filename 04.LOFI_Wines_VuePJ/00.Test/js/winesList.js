@@ -1,6 +1,9 @@
 import DataWineList from "../assets/data/DataWineList.js"
 window.addEventListener('DOMContentLoaded',function(){
 
+  const itemImg = document.querySelector('.wines-imgBox');
+  itemImg.style.backgroundImage = 'url(./assets/images/Ada Wines/Clique.jpg)';
+
   // title
   const title = document.querySelector('.title>h2');
   title.textContent = Object.keys(DataWineList.AUSTRALIA)[0]
@@ -25,9 +28,7 @@ window.addEventListener('DOMContentLoaded',function(){
   // wines list effect
   const itemList = document.querySelector('.item-list');
   const item = document.querySelectorAll('.item');
-  const itemImg = document.querySelector('.wines-imgBox')
-  
-  itemImg.style.backgroundImage = `url(../assets/images/Ada Wines/Celui.jpg)`;
+
 
   if(itemList.scrollHeight >= 360){
     item[item.length-1].style.marginBottom = '100%'

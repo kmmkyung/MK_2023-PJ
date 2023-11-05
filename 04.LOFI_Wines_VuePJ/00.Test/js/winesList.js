@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded',function(){
   // title
   const title = document.querySelector('.title>h2');
   title.textContent = Object.keys(DataWineList.AUSTRALIA)[0]
-
+  
   // wines list 
   // wines list sort
   let winesList = '';
@@ -15,22 +15,24 @@ window.addEventListener('DOMContentLoaded',function(){
   for(let wines of DataWineList.AUSTRALIA['Ada Wines']['LIST']){
     winesList += `
     <li class="item">
-      <h3>${wines.WINE}</h3>
-      <h4>${wines.VARIETY}</h4>
-      <span>MORE INFO</span>
+    <h3>${wines.WINE}</h3>
+    <h4>${wines.VARIETY}</h4>
+    <span>MORE INFO</span>
     </li>`
   }
   document.querySelector('.item-list').innerHTML = winesList;
-
-  // wines list eff
+  
+  // wines list effect
   const itemList = document.querySelector('.item-list');
   const item = document.querySelectorAll('.item');
-  const itemImg = document.querySelector('.wines-imgBox>img')
-  itemImg.setAttribute('src',`./assets/${wines[0].IMG}`)
+  const itemImg = document.querySelector('.wines-imgBox')
+  
+  itemImg.style.backgroundImage = `url(../assets/images/Ada Wines/Celui.jpg)`;
 
   if(itemList.scrollHeight >= 360){
     item[item.length-1].style.marginBottom = '100%'
   }
+
   item.forEach(function(ele,idx){
     ele.addEventListener('mouseenter',function(){
       ele.classList.add('colorB');
@@ -38,7 +40,7 @@ window.addEventListener('DOMContentLoaded',function(){
       notEle.forEach(function(ele){
         ele.classList.add('colorGray');
       })
-      itemImg.setAttribute('src',`./assets/${wines[idx].IMG}`)
+      itemImg.style.backgroundImage = `url(../assets/${wines[idx].IMG})`
     })
     ele.addEventListener('mouseleave',function(){
       let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
@@ -46,7 +48,7 @@ window.addEventListener('DOMContentLoaded',function(){
       notEle.forEach(function(ele){
         ele.classList.remove('colorGray');
       })
-      itemImg.setAttribute('src',`./assets/${wines[0].IMG}`)
+
     })
   })
 

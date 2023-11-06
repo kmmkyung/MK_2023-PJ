@@ -152,7 +152,7 @@
 
 .company-text .story-2,
 .company-text .story-3{
-  transition: all 2s;
+  transition: all 1s;
   height: 0;
   opacity: 0;
   visibility: hidden;
@@ -162,7 +162,6 @@
 .story-2.active,
 .story-3.active{
   overflow: auto;
-  height: auto;
   visibility: visible;
   opacity: 1;
 }

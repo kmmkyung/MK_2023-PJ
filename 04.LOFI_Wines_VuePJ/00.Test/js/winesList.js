@@ -23,10 +23,12 @@ window.addEventListener('DOMContentLoaded',function(){
   const readBtn = document.querySelector('.readBtn');
   story1.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_1;
   story2.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_2;
-  // story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
+  story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
   readBtn.addEventListener('click',function(){
-    story2.classList.toggle('active')
-    story3.classList.toggle('active')
+    story2.classList.toggle('active');
+    story3.classList.toggle('active');
+    story2.classList.contains('active')? story2.style.height=story2.scrollHeight+'px' : story2.style.height=0
+    story3.classList.contains('active')? story3.style.height=story3.scrollHeight+'px' : story3.style.height=0
   })
 // wines list HTML
   wines.sort(function(a,b){

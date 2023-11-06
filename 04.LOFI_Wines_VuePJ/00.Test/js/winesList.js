@@ -1,21 +1,35 @@
 import DataWineList from "../assets/data/DataWineList.js"
 window.addEventListener('DOMContentLoaded',function(){
 
-  // title
+// [title]
   const title = document.querySelector('.title>h2');
   title.textContent = Object.keys(DataWineList.AUSTRALIA)[0]
   
-  // wines list 
-  // wines list sort
+// [wines list]
+// wines list sort
   let winesList = '';
   let wines = DataWineList.AUSTRALIA['Ada Wines']['LIST'];
-
   
+// wines list img
+  const itemImg = document.querySelector('.wines-imgBox');
+  const companyImg = document.querySelector('.company-imgBox>img')
+  itemImg.style.backgroundImage = "url('./assets/"+wines[0].IMG+"')";
+  companyImg.src = `./assets/${DataWineList.AUSTRALIA['Ada Wines'].COMPANY_IMG}`
+
+// wines list company p
+  const story1 = document.querySelector('.story-1');
+  const story2 = document.querySelector('.story-2');
+  const story3 = document.querySelector('.story-3');
+  story1.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_1;
+  story2.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_2;
+  story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
+
+// wines list HTML
   wines.sort(function(a,b){
     return a.WINE<b.WINE ? -1 : 1
   })
   for(let wines of DataWineList.AUSTRALIA['Ada Wines']['LIST']){
-    winesList += `
+    winesList += /* html */`
     <li class="item">
     <h3>${wines.WINE}</h3>
     <h4>${wines.VARIETY}</h4>
@@ -24,20 +38,15 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   document.querySelector('.item-list').innerHTML = winesList;
   
-  const itemImg = document.querySelector('.wines-imgBox');
-  itemImg.style.backgroundImage = "url('./assets/"+wines[0].IMG+"')";
-  
-  // wines list effect
+// wines list effect
   const itemList = document.querySelector('.item-list');
   const item = document.querySelectorAll('.item');
-  
   
   if(itemList.scrollHeight >= 360){
     item[item.length-1].style.marginBottom = '100%'
   }
   
   item.forEach(function(ele,idx){
-    
     ele.addEventListener('mouseenter',function(){
       itemImg.style.backgroundImage = "url('./assets/"+wines[idx].IMG+"')";
       ele.classList.add('colorB');
@@ -56,6 +65,10 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
-  // Btn
-
+// Btn
+  const infoBtn = document.querySelector('.info a');
+  const readBtn = document.querySelector('.readBtn')
+  infoBtn.addEventListener('click',function(event){
+    event.
+  })
 })

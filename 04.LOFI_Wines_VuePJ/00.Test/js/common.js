@@ -45,12 +45,23 @@ window.addEventListener('DOMContentLoaded',function(){
   function headerBg(){
     const bg = document.querySelector('.headerBG')
     const header = document.querySelector('header')
+    const companyPageRight = document.querySelector('.company-right')
+
     if(header.className == 'contact'){
       bg.style.backgroundColor = 'var(--contact)' 
     }
     if(header.className == 'producers'){
       bg.style.backgroundColor = 'var(--main)'
     }
+    window.addEventListener('scroll',function(){
+      if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight ){
+        bg.style.backgroundColor = 'var(--beige)'
+      }
+      else{
+        bg.style.backgroundColor = 'transparent'
+      }
+    })
+    
   }
   headerBg()
 })

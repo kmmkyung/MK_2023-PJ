@@ -20,10 +20,14 @@ window.addEventListener('DOMContentLoaded',function(){
   const story1 = document.querySelector('.story-1');
   const story2 = document.querySelector('.story-2');
   const story3 = document.querySelector('.story-3');
+  const readBtn = document.querySelector('.readBtn');
   story1.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_1;
   story2.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_2;
-  story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
-
+  // story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
+  readBtn.addEventListener('click',function(){
+    story2.classList.toggle('active')
+    story3.classList.toggle('active')
+  })
 // wines list HTML
   wines.sort(function(a,b){
     return a.WINE<b.WINE ? -1 : 1
@@ -66,9 +70,17 @@ window.addEventListener('DOMContentLoaded',function(){
   })
 
 // Btn
-  const infoBtn = document.querySelector('.info a');
-  const readBtn = document.querySelector('.readBtn')
-  infoBtn.addEventListener('click',function(event){
-    event.
+  const infoBtn = document.querySelector('.infoBtn');
+  const topBtn = document.querySelector('.topBtn')
+  const companyPage =  document.querySelector('#company')  
+  const winesPage =  document.querySelector('#wines')  
+  
+  infoBtn.addEventListener('click',function(){
+    companyPage.scrollIntoView({ behavior: "smooth", block: "start"});
   })
+
+  topBtn.addEventListener('click',function(){
+    winesPage.scrollIntoView({ behavior: "smooth", block: "start"});
+  })
+
 })

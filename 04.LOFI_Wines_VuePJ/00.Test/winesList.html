@@ -15,7 +15,7 @@
   <script type="module" src="./js/winesList.js"></script>
 </head>
 <body>
-  <header>
+  <header class="winesList">
     <div class="header-container">
       <div class="logo-All">
         <div class="logo"></div>
@@ -52,7 +52,7 @@
   </nav>
   <main id="main">
     <div class="headerBG"></div>
-    <section class="wines">
+    <section id="wines" class="wines">
       <div class="wines-left">
         <div class="wines-wrap">
           <div class="wines-list">
@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="info">
-          <a class="btn-line" href="#">PRODUCER INFO</a>
+          <span class="btn-line infoBtn">PRODUCER INFO</span>
         </div>
       </div>
       <div class="wines-right">
@@ -100,7 +100,7 @@
     </section>
     <div class="btn">
       <a class="btn-line" href="#">PREV</a>
-      <span class="btn-line">TOP</span>
+      <span class="btn-line topBtn">TOP</span>
       <a class="btn-line" href="#">NEXT</a>
     </div>
   </main>

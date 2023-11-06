@@ -2,8 +2,7 @@
   position: relative;
 }
 
-.wines,
-.company{
+.wines{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -123,18 +122,18 @@
 }
 
 .company{
-  position: sticky;
-  top: 0;
+  display: flex;
 }
 
 .btn{
   position: absolute;
   bottom: 0;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 0 20px 20px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 2;
 }
 
 .btn a,
@@ -144,20 +143,28 @@
 
 .company-left{
   box-sizing: border-box;
-  padding: 100px;
+  padding: 65px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.company-text{
-  overflow-y: auto;
-}
-
 .company-text .story-2,
 .company-text .story-3{
-  display: none;
+  transition: all 2s;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.story-2.active,
+.story-3.active{
+  overflow: auto;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
 }
 
 .company-text h2,
@@ -171,6 +178,19 @@
 
 .company-text p{
   margin-top: 10px;
+}
+
+.readBtn{
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.company-right{
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: var(--main);
+  z-index: 2;
 }
 
 .company-imgBox{

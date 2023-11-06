@@ -54,15 +54,4 @@ $(window).on('scroll',function(){
     footer.css({zIndex:'-1'})
   }
 })
-
-
-
-
-
-
-
-
-
-
-
 }) // DOMContentLoaded

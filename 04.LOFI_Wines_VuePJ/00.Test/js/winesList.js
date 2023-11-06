@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded',function(){
   const story3 = document.querySelector('.story-3');
   const readBtn = document.querySelector('.readBtn');
   story1.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_1;
-  story2.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_2;
+  // story2.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_2;
   story3.textContent = DataWineList.AUSTRALIA['Ada Wines'].STORY_3;
   readBtn.addEventListener('click',function(){
     story2.classList.toggle('active');

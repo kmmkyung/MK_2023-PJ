@@ -57,11 +57,10 @@ window.addEventListener('DOMContentLoaded',function(){
       if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight ){
         bg.style.backgroundColor = 'var(--beige)'
       }
-      else{
+      if(header.className == 'winesList' && window.scrollY <= companyPageRight.scrollHeight ){
         bg.style.backgroundColor = 'transparent'
       }
     })
-    
   }
   headerBg()
 })

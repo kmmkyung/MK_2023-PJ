@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded',function(){
   let WineL = tableTdWine.length
   for(let winesTdNum = 0; winesTdNum < WineL-1; winesTdNum++){
     let tableTdLine = `
-    <tr class="content" seq-id=${winesTdNum}>
+    <tr class="content">
     <td>${tableTdWine[winesTdNum]}</td>
     <td>${tableTdProducer[winesTdNum]}</td>
     <td>${tableTdCountry[winesTdNum]}</td>
@@ -52,22 +52,25 @@ window.addEventListener('DOMContentLoaded',function(){
 
   // sort
   const thWine = document.querySelector('.wine');
-  let click = 0;
-  thWine.addEventListener('click',function(){
-    click ++;
-    tableTbody.innerHTML = ``
-    if(click%2 == 1){ // 홀수이면
-      let wineSort =  tableTdWine.sort(function(a,b){
-        return a > b ? -1 : 1
-      })
-      
-
-    }
-    if(click%2 == 0){ // 짝수이면
-      let wineSort =  tableTdWine.sort(function(a,b){
-        return a < b ? -1 : 1
-      })
-
-    }
+  let tbody = document.querySelector('tbody')
+  let rows = Array.from(tbody.rows)  
+  let nameA
+  
+  thWine.addEventListener('click',function(e){
+    let th = e.target;
+    rowsArr(th.cellIndex,th.dataset.type);
   })
+
+  function rowsArr(index,type){
+    switch(type){
+      case 'name' :
+        nameA = function(rowA,rowB){
+        return rowA.cells[index].innerHTML - rowB.cells[index].innerHTML;
+      };
+      break;
+    }
+    rows.sort(nameA)
+    tableTbody.append(...rows);
+
+  }
 })

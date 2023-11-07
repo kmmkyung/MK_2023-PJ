@@ -9,20 +9,21 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/winesListAll.css">
   <!-- js -->
   <script src="./js/svg.js"></script>
   <script src="./js/common.js"></script>
+  <script type="module" src="./js/winesListAll.js"></script>
 </head>
 <body>
-  <header>
+  <header class="list">
     <div class="header-container">
       <div class="logo-All">
         <div class="logo"></div>
         <h1 class="ir">LOFI Wines</h1>
       </div>
       <div class="title">
-        <h2></h2>
+        <h2>The wine List</h2>
       </div>
       <div class="menu-Icon">
         <div class="hamburger">
@@ -53,30 +54,36 @@
   <main>
     <div class="headerBG"></div>
     <section>
-      <div>
-        <label for="search">SEARCH</label>
-        <input name="search" type="text">
+      <div class="container">
+        <div class="searchInput">
+          <label class="search-label" for="search">SEARCH</label>
+          <input id="search" class="search-input" type="text">
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="wine">WINE</th>
+                <th class="producer">PRODUCER</th>
+                <th class="country">COUNTRY</th>
+                <th class="region">REGION</th>
+                <th class="variety">VARIETY</th>
+                <th class="style">STYLE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr class="content">
+                <td>L’Aurore</td>
+                <td>Raphaëlle Guyot</td>
+                <td>France</td>
+                <td>Bourgogne Côtes d'Auxerre</td>
+                <td>Chardonnay</td>
+                <td>White</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>WINE</th>
-            <th>PRODUCER</th>
-            <th>COUNTRY</th>
-            <th>REGION</th>
-            <th>VARIETY</th>
-            <th>STYLE</th>
-          </tr>
-          <tr>
-            <td>L’Aurore</td>
-            <td>Raphaëlle Guyot</td>
-            <td>France</td>
-            <td>Bourgogne Côtes d'Auxerre</td>
-            <td>Chardonnay</td>
-            <td>White</td>
-          </tr>
-        </thead>
-      </table>
     </section>
   </main>
 </body>

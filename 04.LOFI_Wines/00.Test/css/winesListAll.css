@@ -1,0 +1,107 @@
+.container{
+  padding-top: 120px;
+}
+
+.container::after{
+  content: '';
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgba(255, 255, 255, 0),var(--main))
+}
+
+.searchInput{
+  text-align: center;
+  margin: 50px auto;
+}
+
+.search-label{
+  display: block;
+  font-size: var(--font-size-S);
+  transition: all 0.4s;
+}
+
+.search-input{
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-size-M);
+  width: 30%;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: center;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+.table-wrap{
+  box-sizing: border-box;
+  padding: 0 20px 300px;
+}
+
+.table{
+  width: 100%;
+  margin-top: 120px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table thead{
+  position: sticky;
+  top: 69px;
+  left: 0;
+  background-color: var(--main);
+}
+
+.table>thead::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.table th{
+  text-align: start;
+  font-size: var(--font-size-S);
+  padding-bottom: 10px;
+}
+
+.table th::after{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all .2s;
+}
+
+.table th:hover::after{
+  background-color: black;
+}
+
+.table tr{
+  border-bottom: 1px solid var(--black);
+  transition: all .2s;
+}
+
+.table tr.content:hover{
+  font-style: italic;
+}
+
+.table td{
+  height: auto;
+  font-size: var(--font-size-M);
+  font-family: 'Nanum Myeongjo', serif;
+  word-wrap: break-word;
+  padding: 15px 0;
+}

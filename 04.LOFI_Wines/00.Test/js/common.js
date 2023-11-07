@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded',function(){
     if(header.className == 'contact'){
       bg.style.backgroundColor = 'var(--contact)' 
     }
-    if(header.className == 'producers'){
+    if(header.className == 'producers' || header.className == 'list' ){
       bg.style.backgroundColor = 'var(--main)'
     }
     window.addEventListener('scroll',function(){

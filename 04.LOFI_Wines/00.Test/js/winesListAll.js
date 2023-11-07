@@ -35,17 +35,17 @@ window.addEventListener('DOMContentLoaded',function(){
     }    
   }
   let WineL = tableTdWine.length
-  for(let winesTd = 0; winesTd < WineL-1; winesTd++){
+  for(let winesTdNum = 0; winesTdNum < WineL-1; winesTdNum++){
     let tableTdLine = `
-    <tr class="content">
-      <td>${tableTdWine[winesTd]}</td>
-      <td>${tableTdProducer[winesTd]}</td>
-      <td>${tableTdCountry[winesTd]}</td>
-      <td>${tableTdRegion[winesTd]}</td>
-      <td>${tableTdVariety[winesTd]}</td>
-      <td>${tableTdStyle[winesTd]}</td>
+    <tr class="content" seq-id=${winesTdNum}>
+    <td>${tableTdWine[winesTdNum]}</td>
+    <td>${tableTdProducer[winesTdNum]}</td>
+    <td>${tableTdCountry[winesTdNum]}</td>
+    <td>${tableTdRegion[winesTdNum]}</td>
+    <td>${tableTdVariety[winesTdNum]}</td>
+    <td>${tableTdStyle[winesTdNum]}</td>
     </tr>`;
-
+    
     tableTd += tableTdLine;
     tableTbody.innerHTML = tableTd;
   }
@@ -54,11 +54,20 @@ window.addEventListener('DOMContentLoaded',function(){
   const thWine = document.querySelector('.wine');
   let click = 0;
   thWine.addEventListener('click',function(){
-    // if(click = 0){
-      tableTdWine.sort(function(a,b){
+    click ++;
+    tableTbody.innerHTML = ``
+    if(click%2 == 1){ // 홀수이면
+      let wineSort =  tableTdWine.sort(function(a,b){
         return a > b ? -1 : 1
       })
-    // }
       
+
+    }
+    if(click%2 == 0){ // 짝수이면
+      let wineSort =  tableTdWine.sort(function(a,b){
+        return a < b ? -1 : 1
+      })
+
+    }
   })
 })

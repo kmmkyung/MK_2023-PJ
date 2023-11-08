@@ -1,15 +1,28 @@
 import DataWineList from "../assets/data/DataWineList.js"
 window.addEventListener('DOMContentLoaded',function(){
 
-  // search
-  const searchInput = document.querySelector('.search-input')
-  const searchLabel = document.querySelector('.search-label')
+// search
+  const searchInput = document.querySelector('.search-input');
+  const searchLabel = document.querySelector('.search-label');
   searchInput.addEventListener('focus',function(){
     searchLabel.style.transform = 'translateY(-20px)'
-  })
+  });
   searchInput.addEventListener('blur',function(){
     searchLabel.style.transform = 'translateY(0)'
-  })
+  });
+  
+  let rowsHtmlArr = []
+  let td = this.document.querySelectorAll('td')
+  console.log(td);
+  
+  // let searchInputValue = searchInput.value;  
+  // let rowsTd = Array.from();
+    // rowsTd.forEach(function(ele){
+    //   let rowsHtml = ele.innerHTML;
+    //   rowsHtmlArr.push(rowsHtml);
+    // })
+    // console.log(rowsHtmlArr);
+
 
   // table Data
   const tableTbody = document.querySelector('.table tbody');
@@ -84,5 +97,4 @@ window.addEventListener('DOMContentLoaded',function(){
     };
   }
 
-  
 })

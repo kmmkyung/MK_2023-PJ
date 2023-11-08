@@ -89,14 +89,17 @@ window.addEventListener('DOMContentLoaded',function(){
     let filter = event.target.value.toUpperCase()
     let rows = document.querySelector(".table tbody").rows;    
 
-    for(let i=0; i<rows.length; i++){
-        let Col = rows[i].cells[0].textContent.toUpperCase()
-        if(Col.indexOf(filter) > -1){
+    for(let i = 0; i < rows.length; i++){
+      for(let v = 0; v <= 5; v++){
+        const Col = rows[i].cells[v].innerHTML
+        const ColUpper = Col.toUpperCase()
+        if(ColUpper.indexOf(filter) > -1){
           rows[i].style.display = ''
         }
         else{
           rows[i].style.display = 'none'
         }
+      }
     }
   }
   searchInput.addEventListener('keyup',filterTable)

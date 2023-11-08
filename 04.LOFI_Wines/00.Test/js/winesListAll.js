@@ -1,29 +1,6 @@
 import DataWineList from "../assets/data/DataWineList.js"
 window.addEventListener('DOMContentLoaded',function(){
 
-// search
-  const searchInput = document.querySelector('.search-input');
-  const searchLabel = document.querySelector('.search-label');
-  searchInput.addEventListener('focus',function(){
-    searchLabel.style.transform = 'translateY(-20px)'
-  });
-  searchInput.addEventListener('blur',function(){
-    searchLabel.style.transform = 'translateY(0)'
-  });
-  
-  let rowsHtmlArr = []
-  let td = this.document.querySelectorAll('td')
-  console.log(td);
-  
-  // let searchInputValue = searchInput.value;  
-  // let rowsTd = Array.from();
-    // rowsTd.forEach(function(ele){
-    //   let rowsHtml = ele.innerHTML;
-    //   rowsHtmlArr.push(rowsHtml);
-    // })
-    // console.log(rowsHtmlArr);
-
-
   // table Data
   const tableTbody = document.querySelector('.table tbody');
   const country = Object.keys(DataWineList);
@@ -97,4 +74,30 @@ window.addEventListener('DOMContentLoaded',function(){
     };
   }
 
+// search
+  const searchInput = document.querySelector('.search-input');
+  const searchLabel = document.querySelector('.search-label');
+  searchInput.addEventListener('focus',function(){
+    searchLabel.style.transform = 'translateY(-20px)'
+  });
+  searchInput.addEventListener('blur',function(){
+    searchLabel.style.transform = 'translateY(0)'
+  });
+
+// filter
+  function filterTable(event){
+    let filter = event.target.value.toUpperCase()
+    let rows = document.querySelector(".table tbody").rows;    
+
+    for(let i=0; i<rows.length; i++){
+        let Col = rows[i].cells[0].textContent.toUpperCase()
+        if(Col.indexOf(filter) > -1){
+          rows[i].style.display = ''
+        }
+        else{
+          rows[i].style.display = 'none'
+        }
+    }
+  }
+  searchInput.addEventListener('keyup',filterTable)
 })

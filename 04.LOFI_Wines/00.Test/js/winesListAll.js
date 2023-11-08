@@ -51,26 +51,38 @@ window.addEventListener('DOMContentLoaded',function(){
   }
 
   // sort
-  const thWine = document.querySelector('.wine');
-  let tbody = document.querySelector('tbody')
-  let rows = Array.from(tbody.rows)  
-  let nameA
-  
-  thWine.addEventListener('click',function(e){
-    let th = e.target;
-    rowsArr(th.cellIndex,th.dataset.type);
+  let click =[0,0,0,0,0,0]
+  const tbody = document.querySelector('tbody');
+  const rows = Array.from(tbody.rows);    
+  let wineSort;
+  const th = document.querySelectorAll('th')
+  th.forEach(function(ele,idx){
+    ele.addEventListener('click',function(e){ // 홀수이면
+      click[idx]++;
+      let thTarget = e.target;    
+      if(click[idx]%2 == 1){
+        rowsArr1(thTarget.cellIndex);
+        rows.sort(wineSort);
+        tbody.append(...rows);
+      }
+      if(click[idx]%2 == 0){
+        rowsArr2(thTarget.cellIndex);
+        rows.sort(wineSort);
+        tbody.append(...rows);
+      }
+    })
   })
 
-  function rowsArr(index,type){
-    switch(type){
-      case 'name' :
-        nameA = function(rowA,rowB){
-        return rowA.cells[index].innerHTML - rowB.cells[index].innerHTML;
-      };
-      break;
-    }
-    rows.sort(nameA)
-    tableTbody.append(...rows);
-
+  function rowsArr1(index){
+    wineSort = function(rowA,rowB){
+      return rowA.cells[index].innerHTML > rowB.cells[index].innerHTML ? 1 : -1;          
+    };
   }
+  function rowsArr2(index){
+    wineSort = function(rowA,rowB){
+      return rowA.cells[index].innerHTML < rowB.cells[index].innerHTML ? 1 : -1;          
+    };
+  }
+
+  
 })

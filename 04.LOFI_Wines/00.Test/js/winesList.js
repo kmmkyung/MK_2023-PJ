@@ -27,9 +27,11 @@ window.addEventListener('DOMContentLoaded',function(){
   readBtn.addEventListener('click',function(){
     story2.classList.toggle('active');
     story3.classList.toggle('active');
-    story2.classList.contains('active')? story2.style.height=story2.scrollHeight+'px' : story2.style.height=0
-    story3.classList.contains('active')? story3.style.height=story3.scrollHeight+'px' : story3.style.height=0
+    story2.classList.contains('active')? story2.style.height=story2.scrollHeight+'px' : story2.style.height=0;
+    story3.classList.contains('active')? story3.style.height=story3.scrollHeight+'px' : story3.style.height=0;
+    story2.classList.contains('active')? readBtn.innerHTML='READ LESS' : readBtn.innerHTML='READ MORE';
   })
+
 // wines list HTML
   wines.sort(function(a,b){
     return a.WINE<b.WINE ? -1 : 1

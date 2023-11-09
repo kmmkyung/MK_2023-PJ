@@ -86,21 +86,28 @@ window.addEventListener('DOMContentLoaded',function(){
 
 // filter
   function filterTable(event){
-    let filter = event.target.value.toUpperCase()
-    let rows = document.querySelector(".table tbody").rows;    
 
+    let filter = event.target.value.toUpperCase()
+    let rows = document.querySelector(".table tbody").rows;
     for(let i = 0; i < rows.length; i++){
-      for(let v = 0; v <= 5; v++){
-        const Col = rows[i].cells[v].innerHTML
-        const ColUpper = Col.toUpperCase()
-        if(ColUpper.indexOf(filter) > -1){
-          rows[i].style.display = ''
-        }
-        else{
-          rows[i].style.display = 'none'
-        }
-      }
+      let Col0 = rows[i].cells[0].innerHTML.toUpperCase();        
+      let Col1 = rows[i].cells[1].innerHTML.toUpperCase();        
+      let Col2 = rows[i].cells[2].innerHTML.toUpperCase();        
+      let Col3 = rows[i].cells[3].innerHTML.toUpperCase();        
+      let Col4 = rows[i].cells[4].innerHTML.toUpperCase();        
+      let Col5 = rows[i].cells[5].innerHTML.toUpperCase();        
+
+      if(Col0.indexOf(filter) > -1 ||
+      Col1.indexOf(filter) > -1 ||
+      Col2.indexOf(filter) > -1 ||
+      Col3.indexOf(filter) > -1 ||
+      Col4.indexOf(filter) > -1 ||
+      Col5.indexOf(filter) > -1
+      ){rows[i].style.display = ''}
+      else{rows[i].style.display = 'none'}
     }
   }
+
+
   searchInput.addEventListener('keyup',filterTable)
 })

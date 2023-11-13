@@ -7,7 +7,7 @@
           <h1 class="ir">LOFI Wines</h1>
         </div>
         <div class="title">
-          <h2>The wine List</h2>
+          <h2></h2>
         </div>
         <div class="menu-Icon">
           <div class="hamburger">
@@ -21,13 +21,13 @@
     <nav>
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="producers.html" class="btn-underline">Producers</a>
+          <a href="#" class="btn-underline">Producers</a>
         </li>
         <li class="menu-item">
           <a href="#" class="btn-underline">The Wine List</a>
         </li>
         <li class="menu-item">
-          <a href="contact.html" class="btn-underline">Contact</a>
+          <a href="#" class="btn-underline">Contact</a>
         </li>
       </ul>
       <aside>
@@ -40,17 +40,19 @@
 
 <script>
 export default {
-  
+  data(){
+    return{
+
+    }
+  },
+  components :{
+  },
+  props:{
+  }
 }
 </script>
 
 <style>
-  body{
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--main);
-    font-weight: 300;
-  }
-
   /* header */
   header{
     position: fixed;

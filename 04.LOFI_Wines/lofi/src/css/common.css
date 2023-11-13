@@ -112,10 +112,7 @@ nav.on{
   transform: translateY(100%);
   opacity: 0;
   transition: all 0.4s;
-}
-
-.menu-item > .btn-underline{
-  font-size: var(--font-size-L);
+  font-size: min(7vw,var(--font-size-L));
 }
 
 aside{
@@ -130,3 +127,4 @@ aside{
   opacity: 0;
   transition: all 0.4s;
 }
+

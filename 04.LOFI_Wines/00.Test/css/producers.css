@@ -17,6 +17,6 @@
 
 .item{
   margin: 5px 0;
-  font-size: var(--font-size-L);
+  font-size: min(7vw,var(--font-size-L));
   font-family: 'Nanum Myeongjo', serif;
 }

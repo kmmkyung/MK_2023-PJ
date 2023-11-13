@@ -73,7 +73,7 @@
   padding-bottom: 10px;
 }
 
-.table th::after{
+.table tr:last-child th::after{
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -102,6 +102,55 @@
   height: auto;
   font-size: var(--font-size-M);
   font-family: 'Nanum Myeongjo', serif;
-  word-wrap: break-word;
   padding: 15px 0;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:990px){
+  .mobile-filter th{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 10px 0;
+    box-sizing: border-box;
+  }
+
+  .table thead tr:last-child th{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    box-sizing: border-box;
+  }
+
+  .table thead tr{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-dot{
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: all .2s;
+  }
+
+  .table thead tr:first-child:hover .filter-dot{
+    background-color: black;
+  }
+  
+  .table tbody tr{
+    margin: 10px 0;
+  }
+
+  .table td {
+    padding: 5px 0;
+    display: block;
+}
 }

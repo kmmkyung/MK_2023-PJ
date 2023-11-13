@@ -24,7 +24,7 @@ main{
 
 .left-content h1{
   position: absolute;
-  font-size: var(--font-size-L);
+  font-size: min(7vw,var(--font-size-L));
   font-family: 'Nanum Myeongjo', serif;
   font-weight: normal;
   text-align: center;
@@ -52,4 +52,25 @@ main{
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:990px){
+  .left{
+    width: 100%;
+  }
+
+  .left-content h1,
+  .left-content p {
+    width: min(80vw,600px);
+  }
+
+  .right{
+    display: none;
+  }
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:780px){
+
 }

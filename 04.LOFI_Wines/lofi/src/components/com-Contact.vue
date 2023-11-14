@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  
+  import contact from '@/js/contact';
   export default {
     name:'comContact',
     components:{
@@ -26,6 +26,7 @@
     props:{
     },
     methods:{
+      contact
     }
   }
 </script>

@@ -1,5 +1,5 @@
 import DataContact from '../assets/data/DataContact.js'
-
+const contact = [
 window.addEventListener('DOMContentLoaded',function(){
 
   // [ people 등록 ]
@@ -24,5 +24,8 @@ window.addEventListener('DOMContentLoaded',function(){
     else{
       document.querySelector('.title h2').textContent = ''
     }
-  })
+  }) 
 })
+]
+
+export default contact

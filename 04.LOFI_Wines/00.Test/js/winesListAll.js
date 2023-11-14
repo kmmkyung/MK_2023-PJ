@@ -28,12 +28,12 @@ window.addEventListener('DOMContentLoaded',function(){
   for(let winesTdNum = 0; winesTdNum < WineL-1; winesTdNum++){
     let tableTdLine = `
     <tr class="content">
-    <td>${tableTdWine[winesTdNum]}</td>
-    <td>${tableTdProducer[winesTdNum]}</td>
-    <td>${tableTdCountry[winesTdNum]}</td>
-    <td>${tableTdRegion[winesTdNum]}</td>
-    <td>${tableTdVariety[winesTdNum]}</td>
-    <td>${tableTdStyle[winesTdNum]}</td>
+    <td>${tableTdWine[winesTdNum]}<span class="mobile-title">(WINE)</span></td>
+    <td>${tableTdProducer[winesTdNum]}<span class="mobile-title">(PRODUCER)</span></td>
+    <td>${tableTdCountry[winesTdNum]}<span class="mobile-title">(COUNTRY)</span></td>
+    <td>${tableTdRegion[winesTdNum]}<span class="mobile-title">(REGION)</span></td>
+    <td>${tableTdVariety[winesTdNum]}<span class="mobile-title">(VARIETY)</span></td>
+    <td>${tableTdStyle[winesTdNum]}<span class="mobile-title">(STYLE)</span></td>
     </tr>`;
     
     tableTd += tableTdLine;
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded',function(){
   const tbody = document.querySelector('tbody');
   const rows = Array.from(tbody.rows);    
   let wineSort;
-  const th = document.querySelectorAll('th')
+  const th = document.querySelectorAll('.filter th')
   th.forEach(function(ele,idx){
     ele.addEventListener('click',function(e){ // 홀수이면
       click[idx]++;
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded',function(){
     searchLabel.style.transform = 'translateY(0)'
   });
 
-// filter
+// search filter
   function filterTable(event){
 
     let filter = event.target.value.toUpperCase()
@@ -108,6 +108,43 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   }
 
-
   searchInput.addEventListener('keyup',filterTable)
+
+  // Mobile menu
+  const mobileFilter = document.querySelector('.mobile-filter');
+  const mobileFilterDot = document.querySelector('.filter-dot');
+  const filter = document.querySelector('.filter');
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>990){
+      document.querySelector('.title h2').textContent = 'The wine List'
+      mobileFilter.classList.add('-hidden');
+      mobileFilterDot.style.backgroundColor = '';
+      filter.style.height = 0 + 'px';
+      filter.style.overflow = 'hidden';
+      document.querySelectorAll('.mobile-title').forEach(function(ele){
+        ele.style.display='none';
+      })
+    }
+    else{
+      document.querySelector('.title h2').textContent = ''
+      mobileFilter.classList.remove('-hidden');
+      document.querySelectorAll('.mobile-title').forEach(function(ele){
+        ele.style.display='inline';
+      })
+
+    }
+  })
+  mobileFilter.addEventListener('click',function(){
+    mobileFilter.classList.toggle('active');
+    if(mobileFilter.classList.contains('active')){
+      mobileFilterDot.style.backgroundColor = 'black';
+      filter.style.height = filter.scrollHeight + 'px';
+      filter.style.overflow = 'auto';
+    }
+    else{
+      mobileFilterDot.style.backgroundColor = '';
+      filter.style.height = 0 + 'px';
+      filter.style.overflow = 'hidden';
+    }
+  })
 })

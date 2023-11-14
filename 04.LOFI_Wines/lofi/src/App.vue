@@ -1,36 +1,34 @@
 <template>
   <div>
 
-    <comMenu></comMenu>
+    <comMenu :headerClass="headerClass"></comMenu>
+    <router-view></router-view>
     
-    <main>
-      <div class="headerBG"></div>
-      <section class="left">
-        <div class="left-content">
-          <h1 class="-center">Bringing together the small and the wonderful from around the world.</h1>
-          <p>
-            Lo-Fi Wines is an Australian based wine importer and distributor of local and international producers with a strong commitment to sustainability in the vineyard, a focus on low-intervention in the cellar and a passion for good drinking in the glass.
-          </p>
-          <a class="btn-line" href="#">VIEW OUR PRODUCERS</a>
-        </div>
-      </section>
-      <section class="right">
-        <div class="right-img"></div>
-      </section>
-    </main>
   </div>
 </template>
 
 <script>
-import comMenu from './components/com-Menu.vue';
+import DataWineList from './assets/data/DataWineList';
+import DataWine from './assets/data/DataWine';
+import DataContact from './assets/data/DataContact';
+import comMenu from './components/com-Menu.vue'
+
 export default {
   name: 'App',
   data(){
     return{
+      headerClass : ['producers','winesList','contact','about'],
+      DataWineList:DataWineList,
+      DataWine:DataWine,
+      DataContact:DataContact,
+
     }
   },
   components: {
     comMenu:comMenu
+  },
+  props: {
+
   }
 }
 </script>
@@ -38,86 +36,6 @@ export default {
 <style>
 @import url(./css/reset.css);
 @import url(./css/root.css);
+@import url(./css/common.css);
 
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--main);
-  font-weight: 300;
-}
-
-main{
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.left{
-  width: 50%;
-  height: 100vh;
-}
-
-.left-content{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  box-sizing: border-box;
-  padding: 50px;
-}
-
-.left-content h1{
-  position: absolute;
-  font-size: var(--font-size-L);
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: normal;
-  text-align: center;
-  width: min(40vw,600px);
-}
-
-.left-content p{
-  width: min(40vw,500px);
-  font-size: var(--font-size-S);
-  text-align: center;
-}
-
-.left-content a{
-  margin-top: 80px;
-}
-
-.right{
-  width: 50%;
-  height: 100vh;
-}
-
-.right .right-img{
-  background-image: url(./assets/images/index.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:990px){
-  .left{
-    width: 100%;
-  }
-
-  .left-content h1,
-  .left-content p {
-    width: min(80vw,600px);
-  }
-
-  .right{
-    display: none;
-  }
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:780px){
-
-}
 </style>

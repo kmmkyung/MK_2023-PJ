@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded',function(){
   const logo = document.querySelector('.logo')
   logo.innerHTML=logoData
   logo.addEventListener('click',function(){
-    location.href= 'index.html';
+    location.href= '/';
   })
 
   // [메뉴]

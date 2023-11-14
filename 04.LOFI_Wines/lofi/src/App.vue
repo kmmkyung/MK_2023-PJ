@@ -1,6 +1,8 @@
 <template>
   <div>
+
     <comMenu></comMenu>
+    
     <main>
       <div class="headerBG"></div>
       <section class="left">
@@ -36,7 +38,12 @@ export default {
 <style>
 @import url(./css/reset.css);
 @import url(./css/root.css);
-@import url(./css/common.css);
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main);
+  font-weight: 300;
+}
 
 main{
   width: 100%;
@@ -91,5 +98,26 @@ main{
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:990px){
+  .left{
+    width: 100%;
+  }
+
+  .left-content h1,
+  .left-content p {
+    width: min(80vw,600px);
+  }
+
+  .right{
+    display: none;
+  }
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:780px){
+
 }
 </style>

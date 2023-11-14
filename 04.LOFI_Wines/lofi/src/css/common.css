@@ -128,3 +128,9 @@ aside{
   transition: all 0.4s;
 }
 
+/* 미디어쿼리 */
+@media screen and (max-width:780px){
+  nav {
+    width: 100%;
+  }
+}

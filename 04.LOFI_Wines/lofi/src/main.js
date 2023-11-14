@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import logoData from './js/svg'
-import common from './js/common'
+import logoData from './js/svg.js'
+import common from './js/common.js'
 
 
 const app = createApp(App)

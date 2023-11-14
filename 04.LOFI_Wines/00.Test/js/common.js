@@ -54,6 +54,9 @@ window.addEventListener('DOMContentLoaded',function(){
     if(header.className == 'producers' || header.className == 'list' ){
       bg.style.backgroundColor = 'var(--main)'
     }
+    else{
+      bg.style.backgroundColor = 'transparent'
+    }
     window.addEventListener('scroll',function(){
       if( window.innerWidth > 990 ){
         if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight){

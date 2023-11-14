@@ -21,4 +21,13 @@ window.addEventListener('DOMContentLoaded',function(){
   producersData += /* html */`
   </ul>`
   content.innerHTML = producersData;
+
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>990){
+      document.querySelector('.title h2').textContent = 'Producers'
+    }
+    else{
+      document.querySelector('.title h2').textContent = ''
+    }
+  })
 })

@@ -127,6 +127,7 @@
     height: 0;
     overflow: hidden;
     border: none;
+    transition: all 1s;
   }
 
   .filter th{
@@ -165,7 +166,4 @@
     padding: 5px 0;
     display: block;
   }
-
-
-
 }

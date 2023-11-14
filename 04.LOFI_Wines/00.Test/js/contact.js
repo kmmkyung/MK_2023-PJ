@@ -17,4 +17,13 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   people.innerHTML = peopleCode;
 
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>990){
+      document.querySelector('.title h2').textContent = 'Contact'
+    }
+    else{
+      document.querySelector('.title h2').textContent = ''
+    }
+  })
+  
 })

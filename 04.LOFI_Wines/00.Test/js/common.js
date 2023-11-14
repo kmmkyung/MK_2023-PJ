@@ -46,6 +46,7 @@ window.addEventListener('DOMContentLoaded',function(){
     const bg = document.querySelector('.headerBG')
     const header = document.querySelector('header')
     const companyPageRight = document.querySelector('.company-right')
+    const companyPage = document.querySelector('.company')
 
     if(header.className == 'contact'){
       bg.style.backgroundColor = 'var(--contact)' 
@@ -54,11 +55,21 @@ window.addEventListener('DOMContentLoaded',function(){
       bg.style.backgroundColor = 'var(--main)'
     }
     window.addEventListener('scroll',function(){
-      if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight ){
-        bg.style.backgroundColor = 'var(--beige)'
+      if( window.innerWidth > 990 ){
+        if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight){
+          bg.style.backgroundColor = 'var(--beige)'
+        }
+        if(header.className == 'winesList' && window.scrollY < companyPageRight.scrollHeight){
+          bg.style.backgroundColor = 'transparent'
+        }
       }
-      if(header.className == 'winesList' && window.scrollY <= companyPageRight.scrollHeight ){
-        bg.style.backgroundColor = 'transparent'
+      if( window.innerWidth <= 990 ){
+        if(header.className == 'winesList' && companyPage.getBoundingClientRect().top <= 0){
+          bg.style.backgroundColor = 'var(--beige)'
+        }
+        if(header.className == 'winesList' && companyPage.getBoundingClientRect().top > 0){
+          bg.style.backgroundColor = 'transparent'
+        }
       }
     })
   }

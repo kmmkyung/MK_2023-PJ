@@ -2,8 +2,15 @@ import DataWineList from "../assets/data/DataWineList.js"
 window.addEventListener('DOMContentLoaded',function(){
 
 // [title]
+window.addEventListener('resize',function(){
   const title = document.querySelector('.title>h2');
-  title.textContent = Object.keys(DataWineList.AUSTRALIA)[0]
+  if(window.innerWidth>990){
+    title.textContent = Object.keys(DataWineList.AUSTRALIA)[0]
+  }
+  else{
+    title.textContent = ''
+  }
+})
   
 // [wines list]
 // wines list sort
@@ -86,5 +93,6 @@ window.addEventListener('DOMContentLoaded',function(){
   topBtn.addEventListener('click',function(){
     winesPage.scrollIntoView({ behavior: "smooth", block: "start"});
   })
+
 
 })

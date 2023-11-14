@@ -62,6 +62,9 @@ window.addEventListener('DOMContentLoaded',function(){
         if(header.className == 'winesList' && window.scrollY < companyPageRight.scrollHeight){
           bg.style.backgroundColor = 'transparent'
         }
+        if(header.className == 'about'){
+          bg.style.backgroundColor = 'transparent'
+        }
       }
       if( window.innerWidth <= 990 ){
         if(header.className == 'winesList' && companyPage.getBoundingClientRect().top <= 0){
@@ -69,6 +72,9 @@ window.addEventListener('DOMContentLoaded',function(){
         }
         if(header.className == 'winesList' && companyPage.getBoundingClientRect().top > 0){
           bg.style.backgroundColor = 'transparent'
+        }
+        if(header.className == 'about'){
+          bg.style.backgroundColor = 'var(--main)'
         }
       }
     })

@@ -22,7 +22,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import url(../css/main.css);
+<style scoped src="../css/main.css">
 
 </style>

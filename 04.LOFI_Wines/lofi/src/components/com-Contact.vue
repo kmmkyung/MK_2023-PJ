@@ -1,6 +1,6 @@
 
 <template>
-  <main class="contact">
+  <main>
     <div class="headerBG"></div>
     <section class="left">
       <p class="content-text">
@@ -31,7 +31,6 @@
   }
 </script>
 
-<style>
-@import url(../css/contact.css);
+<style lang="css" scoped src="../css/contact.css">
 
 </style>

@@ -1,39 +1,33 @@
-.contact .left{
+.left{
   background-color: var(--contact);
   width: 50%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
-
-.contact .content-text{
+.content-text{
   padding-top: 65px;
   margin-bottom: 65px;
   width: 80%;
   font-family: 'Nanum Myeongjo', serif;
   font-size: var(--font-size-M);
 }
-
-.contact .people-ele{
+.people-ele{
   margin-bottom: 20px;
 }
-
-.contact .people-ele h5,
-.contact .people-ele p{
+.people-ele h5,.people-ele p{
   font-size: var(--font-size-S);
   line-height: 20px;
   letter-spacing: 2px;
 }
-
-.contact .right{
+.right{
   width: 50%;
   height: 100%;
   position: fixed;
   right: 0;
   z-index: 1;
 }
-
-.contact .right .right-img{
+.right .right-img{
   background-image: url(../assets/images/contact.jpg);
   background-size: cover;
   background-position: center;
@@ -44,11 +38,11 @@
 
 /* 미디어쿼리 */
 @media screen and (max-width:990px){
-  .contact .left{
+.left{
     width: 100%;
   }
 
-  .contact .right{
+.right{
     display: none;
   }
 }

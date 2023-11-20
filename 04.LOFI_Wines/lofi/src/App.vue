@@ -2,7 +2,7 @@
   <div>
 
     <comMenu :headerClass="headerClass"></comMenu>
-    <router-view></router-view>
+    <router-view :DataWineList="DataWineList" :DataWine="DataWine" :DataContact="DataContact"></router-view>
     
   </div>
 </template>
@@ -21,7 +21,6 @@ export default {
       DataWineList:DataWineList,
       DataWine:DataWine,
       DataContact:DataContact,
-
     }
   },
   components: {

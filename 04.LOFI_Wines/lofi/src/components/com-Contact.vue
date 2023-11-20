@@ -1,4 +1,3 @@
-
 <template>
   <main>
     <div class="headerBG"></div>
@@ -8,7 +7,8 @@
         Our portfolio pays homage to small, passion-driven wineries that create lively wines with honesty and care. Our aim is to provide exposure to what we think are some of the most exciting and interesting wines currently made. We hope that you fall in love with these wines as much as we have.
       </p>
       <div class="content-people">
-        <div class="people-ele"></div>
+        <div class="people-ele">
+        </div>
       </div>
     </section>
     <section class="right">
@@ -18,19 +18,110 @@
 </template>
 
 <script>
-  import contact from '@/js/contact';
   export default {
     name:'comContact',
+    data(){
+      return{
+        peopleCode : ``,
+      }
+    },
     components:{
     },
     props:{
+      DataContact:Array
     },
     methods:{
-      contact
+    },
+    mounted(){
+      const people = document.querySelector('.content-people');
+      for(let ele of this.DataContact){
+        this.peopleCode += /* html */`
+        <div class="people-ele">
+          <h5 class="name">${ele.name}</h5>
+          <p class="number">${ele.number}</p>
+          <p class="email">${ele.email}</p>
+        </div>
+        `;
+      }
+      people.innerHTML = this.peopleCode;
+      // --------------------------------------------
+    },
+    created(){
+      if(window.innerWidth>990){
+        document.querySelector('.title h2').textContent = 'Contact';
+      }
+      else{
+        document.querySelector('.title h2').textContent = '';
+      }
     }
   }
 </script>
 
-<style lang="css" scoped src="../css/contact.css">
+<style scoped>
+/* main */
+main{
+  background-color: var(--contact);
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+}
 
+.left{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-text{
+  padding-top: 65px;
+  margin-bottom: 65px;
+  width: 80%;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: var(--font-size-M);
+}
+
+.right{
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.right .right-img{
+  background-image: url(../assets/images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:990px){
+  .left{
+    width: 100%;
+  }
+
+  .right{
+    display: none;
+  }
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:780px){
+
+}
+</style>
+<style>
+.people-ele{
+  margin-bottom: 20px;
+}
+
+.people-ele h5,.people-ele p{
+  font-size: var(--font-size-S);
+  line-height: 20px;
+  letter-spacing: 2px;
+}
 </style>

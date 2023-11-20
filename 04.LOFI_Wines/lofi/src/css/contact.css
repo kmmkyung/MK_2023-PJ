@@ -1,10 +1,22 @@
-.left{
+body{
+  font-family: 'Roboto', sans-serif;
   background-color: var(--contact);
+  font-weight: 300;
+}
+
+/* main */
+main{
+  width: 100%;
+  display: flex;
+}
+
+.left{
   width: 50%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
+
 .content-text{
   padding-top: 65px;
   margin-bottom: 65px;
@@ -12,14 +24,17 @@
   font-family: 'Nanum Myeongjo', serif;
   font-size: var(--font-size-M);
 }
+
 .people-ele{
   margin-bottom: 20px;
 }
+
 .people-ele h5,.people-ele p{
   font-size: var(--font-size-S);
   line-height: 20px;
   letter-spacing: 2px;
 }
+
 .right{
   width: 50%;
   height: 100%;
@@ -27,6 +42,7 @@
   right: 0;
   z-index: 1;
 }
+
 .right .right-img{
   background-image: url(../assets/images/contact.jpg);
   background-size: cover;
@@ -38,11 +54,11 @@
 
 /* 미디어쿼리 */
 @media screen and (max-width:990px){
-.left{
+  .left{
     width: 100%;
   }
 
-.right{
+  .right{
     display: none;
   }
 }

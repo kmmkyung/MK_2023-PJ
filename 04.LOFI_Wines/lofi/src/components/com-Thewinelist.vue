@@ -60,6 +60,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      
+    }
+  },
   props : {
     DataWineList : Object
   },
@@ -132,7 +137,15 @@ export default {
         return rowA.cells[index].innerHTML < rowB.cells[index].innerHTML ? 1 : -1;          
       };
     }
-  }
+  },
+  created() {
+    let country = ['AUSTRALIA','AUSTRIA','FRANCE','GERMANY','HUNGARY','ITALY','NEW ZEALAND','UNITED STATES']
+    for(let i=0; i<country.length-1; i++){
+      for(let winesCompany in DataWineList[country[i]]){
+  
+      }
+    }
+  },
 }
 </script>
 

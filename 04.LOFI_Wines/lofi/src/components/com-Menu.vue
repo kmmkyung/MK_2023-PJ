@@ -71,7 +71,7 @@ export default {
         menuItem[ele].style.opacity='1'
       },time)
     }
-    
+
     hamburger.addEventListener('click',function(){
       hamburger.classList.toggle('on');
       nav.classList.toggle('on');
@@ -94,6 +94,12 @@ export default {
       }
     })
 
+    menuItem.forEach((ele) => {
+      ele.addEventListener('click',function(){
+        nav.classList.remove('on')
+        hamburger.classList.remove('on')
+      })
+    })
     
   }
 }

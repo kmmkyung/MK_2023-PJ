@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .list-container{
   padding-top: 120px;
   text-align: center;

@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="contact">
     <div class="headerBG"></div>
     <section class="left">
       <p class="content-text">
@@ -26,6 +26,7 @@
     data(){
       return{
         peopleCode : ``,
+        width: 0
       }
     },
     components:{
@@ -34,14 +35,18 @@
       DataContact:Array
     },
     methods:{
+      titleText(){
+        this.width = window.innerWidth;
+        if(this.width>990){
+        document.querySelector('.title h2').textContent = 'Contact';
+        }
+        else{
+          document.querySelector('.title h2').textContent = '';
+        }
+      },
     },
     mounted(){
-      if(window.innerWidth>990){
-        document.querySelector('.title h2').textContent = 'Contact';
-      }
-      else{
-        document.querySelector('.title h2').textContent = '';
-      }
+      window.addEventListener("resize", this.titleText);
     }
   }
 </script>

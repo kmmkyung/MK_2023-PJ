@@ -25,7 +25,7 @@
               </tr>
             </thead>
             <tbody>
-<!-- 
+
               <template  v-for="country in DataWineList">
                 <template v-for="company in country">
                   <tr class="content" v-for="(ele,idx) in company.LIST" :key="idx">
@@ -37,17 +37,6 @@
                     <td>{{ ele.STYLE }}</td>
                   </tr>
                 </template>
-              </template> -->
-
-              <template v-for="country in DataWineList">
-                <tr class="content" v-for="(ele,idx) in country" :key="idx">
-                  <td>{{ ele.WINE }}</td>
-                  <td>{{ ele.PRODUCER }}</td>
-                  <td>{{ ele.COUNTRY }}</td>
-                  <td>{{ ele.REGION }}</td>
-                  <td>{{ ele.VARIETY }}</td>
-                  <td>{{ ele.STYLE }}</td>
-                </tr>
               </template>
 
             </tbody>
@@ -139,12 +128,12 @@ export default {
     }
   },
   created() {
-    let country = ['AUSTRALIA','AUSTRIA','FRANCE','GERMANY','HUNGARY','ITALY','NEW ZEALAND','UNITED STATES']
-    for(let i=0; i<country.length-1; i++){
-      for(let winesCompany in DataWineList[country[i]]){
+    // let country = ['AUSTRALIA','AUSTRIA','FRANCE','GERMANY','HUNGARY','ITALY','NEW ZEALAND','UNITED STATES']
+    // for(let i=0; i<country.length-1; i++){
+    //   for(let winesCompany in DataWineList[country[i]]){
   
-      }
-    }
+    //   }
+    // }
   },
 }
 </script>

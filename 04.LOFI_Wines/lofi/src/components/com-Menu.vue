@@ -1,6 +1,6 @@
 <template>
   <div class="Menu">
-    <header>
+    <header :class="headerClass">
       <div class="header-container">
         <div class="logo-All">
           <div class="logo" v-on:click=" home() "></div>
@@ -55,6 +55,7 @@ export default {
     home(){
       location.href = '/';
     }
+    
   },
   mounted(){
     const logo = document.querySelector('.logo')

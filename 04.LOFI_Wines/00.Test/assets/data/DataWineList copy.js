@@ -7,7 +7,6 @@ let eva = [
     REGION : 'Adelaide Hills',  
     VARIETY : 'Riesling',  
     STYLE : 'White',
-    ABOUT : `100% Riesling from a single dry grown vineyard in Springton, Eden Valley (organic). The fruit was handpicked and de-stemmed to stainless steel. The ferment was hand plunged twice daily and the tank sealed once fermentation was complete. The fruit was allowed to stay on skins for 95 days and then gently basket pressed to neutral french oak barriques. The extended skin contact has enabled every last bit of flavour and texture to be extracted for the beautiful skins. The texture is prolific but not overpowering or detrimental to the balance of the wine. Racked and settled before bottling and contains approx 40ppm total sulphur.`,
     IMG:'./images/Ada Wines/Cheeky-Charlie.jpg'
   },
   {

@@ -53,7 +53,7 @@ export default {
   },
   methods :{
     home(){
-      location.href = '/';
+      this.$router.push('/')
     }
     
   },

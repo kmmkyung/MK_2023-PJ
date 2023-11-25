@@ -15,9 +15,7 @@ const routes = [
   {path: "/", component: main},
   {path: "/contact", component: contact},
   {path: "/producers", component: producers},
-  {path: "/company", component: company, children:[
-
-  ]},
+  {path: "/:company", component: company},
   {path: "/thewinelist", component: thewinelist},
 ];
 

@@ -4,6 +4,7 @@
     <div class="content">
       <ul class="list-container">
 
+        
         <li class="list" v-for="(ele,idx) in DataWine" :key="idx">
           <ol class="item-container">{{ idx }}
             <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx"><a class="btn-underline" href="#">{{ ele }}</a></li>
@@ -25,6 +26,9 @@ export default {
   },
   props:{
     DataWine:Object
+  },
+  methods:{
+
   }
 }
 </script>

@@ -1,5 +1,5 @@
-const DataWineList = {
-  'AUSTRALIA' : {
+const DataWineList = [
+  {'AUSTRALIA' : {
     'Ada Wines' : {
       COMPANY_ID : 0,
       COMPANY_IMG : './images/Ada Wines/company.jpg',
@@ -1244,8 +1244,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'AUSTRIA' : {
+  }},
+  {'AUSTRIA' : {
     'Christian Tschida' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Christian Tschida/company.jpg',
@@ -1748,8 +1748,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'FRANCE' : {
+  }},
+  {'FRANCE' : {
     'Alexandre Jouveaux' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Alexandre Jouveaux/company.jpg',
@@ -3873,8 +3873,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'GERMANY' : {
+  }},
+  {'GERMANY' : {
     'Kühling-Gillot' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Kühling-Gillot/company.jpg',
@@ -4026,8 +4026,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'HUNGARY' : {
+  }},
+  {'HUNGARY' : {
     'Peter Wetzer' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Peter Wetzer/company.jpg',
@@ -4093,8 +4093,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'ITALY' : {
+  }},
+  {'ITALY' : {
     'Al di là del Fiume' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Al di là del Fiume/company.jpg',
@@ -4911,8 +4911,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'NEW ZEALAND' : {
+  }},
+  {'NEW ZEALAND' : {
     'Tincan Wines' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Tincan Wines/company.jpg',
@@ -4978,8 +4978,8 @@ const DataWineList = {
         },
       ]
     }
-  },
-  'UNITED STATES' : {
+  }},
+  {'UNITED STATES' : {
     'Hermann J. Wiemer' : {
       COMPANY_ID: 0,
       COMPANY_IMG : './images/Hermann J. Wiemer/company.jpg',
@@ -5033,8 +5033,8 @@ const DataWineList = {
         },
       ]
     }
-  }
-}
+  }}
+]
 
 export default DataWineList;
 

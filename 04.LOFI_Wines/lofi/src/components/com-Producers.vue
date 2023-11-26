@@ -1,29 +1,35 @@
 <template>
-  <main>
-    <div class="headerBG"></div>
-    <div class="content">
-      <ul class="list-container">
-
-        <li class="list" v-for="(ele,idx) in DataWine" :key="idx">
-          <ol class="item-container">{{ idx }}
-            <router-link to="/company">
-              <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx"><a class="btn-underline" href="#">{{ ele }}</a></li>
-            </router-link>
+  <div>
+    <com-menu :headerClass="headerClass"></com-menu>
+    <main>
+      <div class="headerBG"></div>
+      <div class="content">
+        <ul class="list-container">
+          
+          <li class="list" v-for="(ele,idx) in DataWine" :key="idx">
+            <ol class="item-container">{{ idx }}
+              <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx">
+                <router-link :to="`/producers/company/${ele}`" class="btn-underline" href="#">{{ ele }}</router-link>
+              </li>
             </ol>
           </li>
-          
-      </ul>
-    </div>
-  </main>
+        </ul>
+      </div>
+    </main>
+  </div>
 </template>
 
 <script>
+import ComMenu from './com-Menu.vue'
 export default {
   name : 'comProducers',
   data(){
-    return{}
+    return{
+      headerClass:'producers'
+    }
   },
   components :{
+    ComMenu
   },
   props:{
     DataWine:Object

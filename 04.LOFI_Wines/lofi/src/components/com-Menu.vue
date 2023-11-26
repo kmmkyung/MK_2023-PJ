@@ -44,20 +44,76 @@ import logoData from '../js/svg.js'
 export default {
   data(){
     return{
+      bgColor : 'var(--contact)'
     }
   },
   components :{
   },
   props:{
-    headerClass:Array
+    headerClass:String
   },
   methods :{
     home(){
       this.$router.push('/')
+    },
+
+    headerBg(){
+    const bg = document.querySelector('.headerBG')
+    const header = document.querySelector('header')
+    const companyPageRight = document.querySelector('.company-right')
+    // const companyPage = document.querySelector('.company')    
+      
+    if(header.className == 'contact'){
+      console.log('contact');
+      
+      bg.style.backgroundColor = this.bgColor 
     }
+    if(header.className == 'producers' || header.className == 'list' ){
+      bg.style.backgroundColor = 'var(--main)'
+    }
+    if((header.className == '')){
+      bg.style.backgroundColor = 'transparent'
+    }
+    window.addEventListener('scroll',function(){
+      if( window.innerWidth > 990 ){
+        if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight){
+          bg.style.backgroundColor = 'var(--beige)'
+        }
+        if(header.className == 'winesList' && window.scrollY < companyPageRight.scrollHeight){
+          bg.style.backgroundColor = 'transparent'
+        }
+        if(header.className == 'about'){
+          bg.style.backgroundColor = 'transparent'
+        }
+      }
+      // if( window.innerWidth <= 990 ){
+      //   if(header.className == 'winesList' && companyPage.getBoundingClientRect().top <= 0){
+      //     bg.style.backgroundColor = 'var(--beige)'
+      //   }
+      //   if(header.className == 'winesList' && companyPage.getBoundingClientRect().top > 0){
+      //     bg.style.backgroundColor = 'transparent'
+      //   }
+      //   if(header.className == 'about'){
+      //     bg.style.backgroundColor = 'var(--main)'
+      //   }
+      // }
+    })
+  }
     
   },
   mounted(){
+    this.headerBg()
+
+    // 그냥 여기에 요소가 있는지 없는지 체크해서
+    // 스크롤이벤트 분기
+    //근데 스크롤이벤트가 비슷한 코드가 많으니까
+    // 이걸 메소드에 파라미터받는걸로 해서 만들어놓으면 좋을듯
+    // 벗! 처음엔 하드코딩으로하고 축약하는걸 추천 
+    
+
+
+
+
     const logo = document.querySelector('.logo')
     logo.innerHTML=logoData
 
@@ -100,8 +156,7 @@ export default {
         nav.classList.remove('on')
         hamburger.classList.remove('on')
       })
-    })
-    
+    }) 
   }
 }
 </script>

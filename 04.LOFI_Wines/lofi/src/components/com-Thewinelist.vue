@@ -1,61 +1,67 @@
 <template>
-  <main>
-    <div class="headerBG"></div>
-    <section>
-      <div class="container">
-        <div class="searchInput">
-          <label class="search-label" for="search" v-on:click="searchClick()">SEARCH</label>
-          <input id="search" class="search-input" type="text"  v-on:keyup="filterTable()">
-        </div>
-        <div class="table-wrap">
-          <table class="table">
-            <thead>
-              <tr class="mobile-filter -hidden">
-                <th>FILTER WINES
-                  <div class="filter-dot"></div>
-                </th>
-              </tr>
-              <tr class="filter">
-                <th class="wine" data-type="typeWine">WINE</th>
-                <th class="producer" data-type="typePro">PRODUCER</th>
-                <th class="country">COUNTRY</th>
-                <th class="region">REGION</th>
-                <th class="variety">VARIETY</th>
-                <th class="style">STYLE</th>
-              </tr>
-            </thead>
-            <tbody>
-
-              <template  v-for="country in DataWineList">
-                <template v-for="company in country">
-                  <tr class="content" v-for="(ele,idx) in company.LIST" :key="idx">
-                    <td>{{ ele.WINE }}</td>
-                    <td>{{ ele.PRODUCER }}</td>
-                    <td>{{ ele.COUNTRY }}</td>
-                    <td>{{ ele.REGION }}</td>
-                    <td>{{ ele.VARIETY }}</td>
-                    <td>{{ ele.STYLE }}</td>
-                  </tr>
+  <div>
+    <com-menu :headerClass="headerClass"></com-menu>
+    <main>
+      <div class="headerBG"></div>
+      <section>
+        <div class="container">
+          <div class="searchInput">
+            <label class="search-label" for="search" v-on:click="searchClick()">SEARCH</label>
+            <input id="search" class="search-input" type="text"  v-on:keyup="filterTable()">
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr class="mobile-filter -hidden">
+                  <th>FILTER WINES
+                    <div class="filter-dot"></div>
+                  </th>
+                </tr>
+                <tr class="filter">
+                  <th class="wine" data-type="typeWine">WINE</th>
+                  <th class="producer" data-type="typePro">PRODUCER</th>
+                  <th class="country">COUNTRY</th>
+                  <th class="region">REGION</th>
+                  <th class="variety">VARIETY</th>
+                  <th class="style">STYLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template  v-for="country in DataWineList">
+                  <template v-for="company in country">
+                    <tr class="content" v-for="(ele,idx) in company.LIST" :key="idx">
+                      <td>{{ ele.WINE }}</td>
+                      <td>{{ ele.PRODUCER }}</td>
+                      <td>{{ ele.COUNTRY }}</td>
+                      <td>{{ ele.REGION }}</td>
+                      <td>{{ ele.VARIETY }}</td>
+                      <td>{{ ele.STYLE }}</td>
+                    </tr>
+                  </template>
                 </template>
-              </template>
-
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 </template>
 
 <script>
+import comMenu from './com-Menu.vue';
 export default {
+  components: { comMenu },
   data(){
     return{
-      
+      headerClass:'list',
+      country:null,
+      company:null,
+      wine:null
     }
   },
   props : {
-    DataWineList : Object
+    DataWineList : Array
   },
   methods : {
     searchClick(){
@@ -126,14 +132,14 @@ export default {
         return rowA.cells[index].innerHTML < rowB.cells[index].innerHTML ? 1 : -1;          
       };
     }
+    
   },
   created() {
-    // let country = ['AUSTRALIA','AUSTRIA','FRANCE','GERMANY','HUNGARY','ITALY','NEW ZEALAND','UNITED STATES']
-    // for(let i=0; i<country.length-1; i++){
-    //   for(let winesCompany in DataWineList[country[i]]){
-  
-    //   }
-    // }
+    // console.log(this.DataWineList.length);
+
+    // this.DataWineList.forEach((ele)=>{
+    //   console.log(ele);
+    // })
   },
 }
 </script>

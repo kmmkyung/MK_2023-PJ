@@ -44,7 +44,6 @@ import logoData from '../js/svg.js'
 export default {
   data(){
     return{
-      bgColor : 'var(--contact)'
     }
   },
   components :{
@@ -56,45 +55,45 @@ export default {
     home(){
       this.$router.push('/')
     },
-
+    headerColor(header,color){
+      return header.style.backgroundColor = color
+    },
     headerBg(){
-    const bg = document.querySelector('.headerBG')
-    const header = document.querySelector('header')
-    const companyPageRight = document.querySelector('.company-right')
-    const companyPage = document.querySelector('.company')    
+      const bg = document.querySelector('.headerBG')
+      const header = document.querySelector('header')
+      const companyPageRight = document.querySelector('.company-right')
+      const companyPage = document.querySelector('.company') 
       
     if(header.className == 'contact'){
-      console.log('contact');
-      
-      bg.style.backgroundColor = this.bgColor 
+      this.headerColor(bg,'var(--contact)')
     }
     if(header.className == 'producers' || header.className == 'list' ){
-      bg.style.backgroundColor = 'var(--main)'
+      this.headerColor(bg,'var(--main)')
     }
     if((header.className == '')){
-      bg.style.backgroundColor = 'transparent'
+      this.headerColor(bg,'transparent')
     }
     window.addEventListener('scroll',function(){
       if( window.innerWidth > 990 ){
         if(header.className == 'winesList' && window.scrollY >= companyPageRight.scrollHeight){
-          bg.style.backgroundColor = 'var(--beige)'
+          this.headerColor(bg,'var(--beige)')
         }
         if(header.className == 'winesList' && window.scrollY < companyPageRight.scrollHeight){
-          bg.style.backgroundColor = 'transparent'
+          this.headerColor(bg,'transparent')
         }
         if(header.className == 'about'){
-          bg.style.backgroundColor = 'transparent'
+          this.headerColor(bg,'transparent')
         }
       }
       if( window.innerWidth <= 990 ){
         if(header.className == 'winesList' && companyPage.getBoundingClientRect().top <= 0){
-          bg.style.backgroundColor = 'var(--beige)'
+          this.headerColor(bg,'var(--beige)')
         }
         if(header.className == 'winesList' && companyPage.getBoundingClientRect().top > 0){
-          bg.style.backgroundColor = 'transparent'
+          this.headerColor(bg,'transparent')
         }
         if(header.className == 'about'){
-          bg.style.backgroundColor = 'var(--main)'
+          this.headerColor(bg,'var(--main)')
         }
       }
     })

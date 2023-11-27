@@ -1,6 +1,8 @@
 const DataWineList = {
-  'AUSTRALIA' : {
-    'Ada Wines' : {
+  COUNTRY : 'AUSTRALIA',
+  DATA : {
+    COMPANY: 'Ada Wines',
+    COMPANY_DATA : {
       COMPANY_ID : 0,
       COMPANY_IMG : './images/Ada Wines/company.jpg',
       STORY_1 : `Ada is the passion project for James Ellis, who also works full time with Gareth Belton of Gentle Folk in the Adelaide Hills. Ada is a relative newcomer to the South Australian wine scene with their first release being born of the 2018 vintage. A viticulturist at heart James is firmly of the belief that all of his wines are made in the vineyard and he is meticulous with his approach to organics across the sites he manages for Ada and Gareth. Before starting Ada, James had worked his way through many of the nations iconic regions with time spent in vineyard and cellar in the Barossa Valley working for Penfolds, Hunter Valley and McLaren Vale where he met James Erskine of Jauma who introduced him to Gareth.`,
@@ -75,7 +77,8 @@ const DataWineList = {
         }
       ]
     },
-    'ARC Wines' : {
+    COMPANY: 'ARC Wines',
+    COMPANY_DATA : {
       COMPANY_ID : 1,
       COMPANY_IMG : './images/ARC Wines/company.jpg',
       STORY_1 : `A.R.C or A Random Collection was founded in 2017 after musings and dreams from a previous life working restaurant floors. For James and Jessica Audas the vision of working the land, being in touch with nature and living within their means came to life a few years ago when they made the leap from Sydney and ended up with an off grid permaculture farm in West Gippsland Victoria. Many of you have no doubt shared Jess and James journey and it was very exciting a few months ago when we decided that the time was right to take on this exciting brand and let Jess and James dedicate a greater portion of time to growing the grapes they make.`,
@@ -206,7 +209,8 @@ const DataWineList = {
         }
       ]
     },
-    'Architects of Wine' : {
+    COMPANY: 'Architects of Wine',
+    COMPANY_DATA: {
       COMPANY_ID: 2,
       COMPANY_IMG : './images/Architects of Wine/company.jpg',
       STORY_1 : `Architects Of Wine is the passion project of architect turned winemaker David Caporaletti. David’s dream came to fruition in early 2013 after a backyard hobby quickly became an obsession. With no formal training he has only his palate, an aptitude for precise execution and a sense of experimentation to guide him in his winemaking exploits. It’s this experimentation that allows every release and vintage to be completely different and truly reflective of the years conditions. Over the last few years we have seen AOW develop into a unique, micro batch release of wines that have a distinct personality.`,

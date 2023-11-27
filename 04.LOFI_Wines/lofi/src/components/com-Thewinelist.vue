@@ -145,6 +145,11 @@ export default {
 </script>
 
 <style>
+main{
+  position: relative;
+  flex-direction: column;
+}
+
 .container{
   padding-top: 120px;
 }

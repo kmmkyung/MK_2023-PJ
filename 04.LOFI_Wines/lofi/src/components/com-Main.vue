@@ -28,7 +28,5 @@ export default {
 }
 </script>
 
-<style scop
-ComMenued src="../css/main.css">
-
+<style scoped src="../css/main.css">
 </style>

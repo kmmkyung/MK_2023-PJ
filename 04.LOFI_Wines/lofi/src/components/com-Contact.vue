@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass" ></com-menu>
+    <com-menu :headerClass="headerClass" :title="title" ></com-menu>
     <main>
       <div class="headerBG"></div>
       <section class="left">
@@ -30,7 +30,7 @@ import ComMenu from './com-Menu.vue';
     data(){
       return{
         peopleCode : ``,
-        width: 0,
+        title:'Contact',
         headerClass:'contact'
       }
     },
@@ -41,18 +41,8 @@ import ComMenu from './com-Menu.vue';
       DataContact:Array
     },
     methods:{
-      titleText(){
-        this.width = window.innerWidth;
-        if(this.width>990){
-        document.querySelector('.title h2').textContent = 'Contact';
-        }
-        else{
-          document.querySelector('.title h2').textContent = '';
-        }
-      },
     },
     mounted(){
-      window.addEventListener("resize", this.titleText);
     }
   }
 </script>

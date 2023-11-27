@@ -63,17 +63,23 @@ import ComMenu from './com-Menu.vue'
 export default {
   data(){
     return{
-      headerClass:'winesList'
+      headerClass:'company'
     }
   },
-  components:{ComMenu},
+  components:{
+    ComMenu
+  },
   props:{
-    DataWineList:Object
+    DataWineList:Array
   }
 }
 </script>
 
 <style scoped>
+main{
+  position: relative;
+}
+
 .wines{
   width: 100%;
   height: 100vh;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass"></com-menu>
+    <com-menu :headerClass="headerClass" :title="title"></com-menu>
     <main>
       <div class="headerBG"></div>
       <div class="content">
@@ -26,7 +26,8 @@ export default {
   name : 'comProducers',
   data(){
     return{
-      headerClass:'producers'
+      headerClass:'producers',
+      title:'Producers'
     }
   },
   components :{

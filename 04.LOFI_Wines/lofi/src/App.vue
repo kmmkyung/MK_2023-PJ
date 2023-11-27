@@ -1,8 +1,6 @@
 <template>
-  <div>
-    
+  <div>    
     <router-view :DataWineList="DataWineList" :DataWine="DataWine" :DataContact="DataContact"></router-view>
-    
   </div>
 </template>
 
@@ -10,7 +8,6 @@
 import DataWineList from './assets/data/DataWineList';
 import DataWine from './assets/data/DataWine';
 import DataContact from './assets/data/DataContact';
-// import comMenu from './components/com-Menu.vue'
 
 export default {
   name: 'App',
@@ -19,11 +16,9 @@ export default {
       DataWineList:DataWineList,
       DataWine:DataWine,
       DataContact:DataContact,
-      // headerClass : ['producers','winesList','contact','about'],
     }
   },
   components: {
-    // comMenu:comMenu
   },
   methods:{
 

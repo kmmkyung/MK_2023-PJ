@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass"></com-menu>
+    <com-menu :headerClass="headerClass" :title="title"></com-menu>
     <main>
       <div class="headerBG"></div>
       <section>
@@ -27,18 +27,13 @@
                 </tr>
               </thead>
               <tbody>
-                <template  v-for="country in DataWineList">
-                  <template v-for="company in country">
-                    <tr class="content" v-for="(ele,idx) in company.LIST" :key="idx">
-                      <td>{{ ele.WINE }}</td>
-                      <td>{{ ele.PRODUCER }}</td>
-                      <td>{{ ele.COUNTRY }}</td>
-                      <td>{{ ele.REGION }}</td>
-                      <td>{{ ele.VARIETY }}</td>
-                      <td>{{ ele.STYLE }}</td>
-                    </tr>
-                  </template>
+
+                <template v-for=" (a) in DataWineList" :key="a">
+                  <tr v-for="(ele,idx) in a.DATA" :key="idx">               
+                    <td>{{ ele }}</td>
+                  </tr>
                 </template>
+
               </tbody>
             </table>
           </div>
@@ -55,9 +50,8 @@ export default {
   data(){
     return{
       headerClass:'list',
-      country:null,
-      company:null,
-      wine:null
+      title:'The Wine List',
+      num: [0,1,2,3,4,5,6,7,8,9]
     }
   },
   props : {
@@ -135,16 +129,11 @@ export default {
     
   },
   created() {
-    // console.log(this.DataWineList.length);
-
-    // this.DataWineList.forEach((ele)=>{
-    //   console.log(ele);
-    // })
   },
 }
 </script>
 
-<style>
+<style scoped>
 main{
   position: relative;
   flex-direction: column;

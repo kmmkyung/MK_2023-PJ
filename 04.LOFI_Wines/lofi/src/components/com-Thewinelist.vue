@@ -28,9 +28,9 @@
               </thead>
               <tbody>
 
-                <template v-for=" (a) in DataWineList" :key="a">
-                  <tr v-for="(ele,idx) in a.DATA" :key="idx">               
-                    <td>{{ ele }}</td>
+                <template v-for=" wines in DataWineList">
+                  <tr v-for="(ele,idx) in wines.DATA" :key="idx">
+                    <td>{{ ele.LIST[0].WINE }}</td> 
                   </tr>
                 </template>
 
@@ -51,7 +51,6 @@ export default {
     return{
       headerClass:'list',
       title:'The Wine List',
-      num: [0,1,2,3,4,5,6,7,8,9]
     }
   },
   props : {

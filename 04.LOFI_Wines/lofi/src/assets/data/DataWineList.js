@@ -3927,6 +3927,1198 @@ const DataWineList = [
         ]
       }
     ],
+  },
+  {
+    COUNTRY: 'GERMANY',
+    DATA : [
+      {
+        COMPANY:'Kühling-Gillot',
+        COMPANY_ID: 0,
+        COMPANY_IMG : './images/Kühling-Gillot/company.jpg',
+        STORY_1 : `Kuhling Gillot is located in the town of Bodenheim in the Nierstien area of the Rheinhessen wine-growing region of Germany. In its present form, it came about by marriage in 1970 when two of the regions oldest and most established wineries Kuhling and Gillot joined forces. Carolin Spanier-Gillot who has been responsible for winemaking since 2002 is regarded both at home and internationally as one of Germanys most talented winemakers and viticulturalists. In 2014 she took out Germanys winemaker of the year becoming the first female to take out this prestigious prize. What has made Caroline’s work so special is her dedication in the vineyard and experimentation in the cellar.`,
+        STORY_2 : `Her family has 11 hectares of wonderful vineyards overlooking the Rhine on Rheinhessen’s eastern flank in the legendary villages of Oppenheim, Nackenheim and Nierstein. Many of their vineyards are on the Roter Hang (the red cliffs), thick with iron oxide which imparts the wines with an almost tropical spice and intensity. She makes some incredible wines from esteemed GG sites such as Ölberg, Pettental, Hipping and Rothenberg, as well as beautiful more approachable village wines. The majority of the estates holdings are planted to Riesling and although she has some Pinot noir, Chardonnay and Weissburgunder planted, particular attention is paid to the regions most famous varietal. Her work in the vineyard is meticulous, with full biodynamic principles applied and certified since 2006. Since making the decision to employ these principles she has found her work in the cellar, mainly fermentation to be much easier, an added and unexpected bonus. At Kühling-Gillot, the usual late harvest, painstaking selection, and spontaneous fermentation in large oak casks enable the terroir to be perceptible in the wines. In their youth, the wines are charming and smooth; with time, they reveal their origin.`,
+        STORY_3 : `Carolin has become a force to take note amongst the German winemaking community. With extensive time on lees, slow maturations and complete commitment to the preservation of unadulterated, terroir driven wines, her entire range from Village to GG’s remains both addictive and precise. Her dry Rieslings are benchmarks for the region and we are proud to be representing one the countries most exciting leading women.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Qvinterra Trocken',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Five different wine villages and five different soil types inspired the creation of the Latin term Qvinterra. The name indicates that our estate owns vineyards in the five famous villages on the Rhine Terrace: Oppenheim, Nierstein, Nackenheim, Bodenheim, and Laubenheim.`,
+            IMG:'./images/Kühling-Gillot/Qvinterra-Trocken.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Oppenheim',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The vineyards around Oppenheim are not influenced directly from the Rhine, here the heat stays and brings with it balanced ripeness. In comparison to Nierstein where the red slate is dominant, in Oppenheim the soil is very chalky. The cooler underground with the heat of the days brings a pretty damn near perfect suspense. The salty minerality of the chalky underground brings a vibrant feeling to the wine. This is the taste of Oppenheim Riesling when left to nature.`,
+            IMG:'' 
+          },
+          {
+            ID : 2,
+            WINE : 'Ölberg Grosse Gewächs Grand Cru',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The name Ölberg comes from a monastery and has biblical references - The Mount of Olives. The vineyard is in central of the Red Slope portion of Carolin's holdings and has an expansion to the south. It is 60 % in steep on porous soil, a perfect thermal store where the grapes get to perfect ripeness. Given the name, Ölberg is oily and has a lot of viscosity. Matured in 1200L barrels, 3.5 g/L RS at 12.5% abv.`,
+            IMG:'./images/Kühling-Gillot/Ölberg-Grosse-Gewächs-Grand-Cru.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Hipping Grosse Gewächs Grand Cru',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The steep Hipping site has a 53% to 80% slope that descends towards the Rhine (which is quite wide in this section) with a southeast exposition. The lake-like broadening of the Rhine, the intense morning sun, and the highly weathered red slate strongly influences the microclimate. Matured in 1200L barrels, 2.7 g/L RS and 12.7% alc.`,
+            IMG:'./images/Kühling-Gillot/Hipping-Grosse-Gewächs-Grand-Cru.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Pettenthal Grosse Gewächs Grand Cru',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. Matured is 1200L barrels, 2.8 g/L and 12.5% abv.`,
+            IMG:'./images/Kühling-Gillot/Pettenthal-Grosse-Gewächs-Grand-Cru.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Pettenthal Spätlese Grosse Gewächs Grand Cru',  
+            PRODUCER : 'Kühling-Gillot',  
+            COUNTRY : 'Germany',  
+            REGION : 'Rheinhessen',  
+            VARIETY : 'Riesling',  
+            STYLE : 'Dessert',
+            ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. 60.1 g/L RS, 9.5% alc.`,
+            IMG:'./images/Kühling-Gillot/Pettenthal-Spätlese-Grosse-Gewächs-Grand-Cru.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Melsheimer',
+        COMPANY_ID: 1,
+        COMPANY_IMG : './images/Melsheimer/company.jpg',
+        STORY_1 : `Weingut Melsheimer is probably less well known to wine lovers outside of Germany, due to the fact that almost all of their production is sold at home. Thorsten Melsheimer took over the 200 year old family estate in 1994 and immediately began cultivating his vineyards organically. Since 2009 all the vineyard work has been done according to biodynamic principles, receiving its Demeter certification in 2013. The estate consists of 11 hectares, 8 of which grow on the steep hill of the Mullay-Hofberg in Reil, a renowned winemaking village in the Mosel. The weathered slate and quartzite soils of the Mullay-Hofberg hillside have been home to vines since the 12th century. This undulating vineyard sits below a forest and plateau - helping the plants retain water and preventing excessive vine stress even in the hottest vintages.`,
+        STORY_2 : `The Mosel is known for its many steep slopes. Among them, only 5% are categorised as very steep slopes and thus particularly valuable cultural assets. What helps to make Melsheimer so special is that almost half of Thorsten’s vines are in these 5% and grow in some of the least accessible and most vertiginous parcels of the Mullay-Hofberg. The family also has vines growing in the Goldlay vineyard, situated just opposite the village of Reil, as well as some parcels in the Pündericher Marienburg, Burger Hahenschrittchen, Thomasberg and Reiler Falklay. The microclimate and terroir around Reil guarantee a long ripening period, creating the perfect conditions for Riesling. Despite the challenges of working on these steep slopes, Thorsten tirelessly rebuilds old terraces and nurse’s old vines back to life. He is passionate about building biodiversity in his vines and has seen dramatic changes to the ecosystem since taking over the estate just over 20 years ago. The family recently introduced goats to the vineyards to help maintain the ever encroaching forest and to provide manure for the vines.`,
+        STORY_3 : `In the cellar Thorsten prefers to take a more hands off approach. He makes no additions or manipulations to the wines preferring to express what nature has given him in each vintage. All village wines undergo a long fermentation in old oak barrels - the dry Rieslings can take up to 18 months to complete fermentation. He is forever experimenting using techniques such as skin contact to try and add a different element to his wines. His sulphur regime is also very low adding less than 30 parts through all of his wines with his top wine Vade Retro remaining unsulphured.
+        Thorsten remains one of the most hands-on and experimental winemakers in the area and receiving his wines are always a rare treat for us.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Trocken',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `This dry Riesling comes from the weathered slate soils near the village of Reil including the renowned plots of Reiler Goldlay, Pündericher Marienburg, Burger Hahnenschrittchen and Reiler Falklay. The grapes were hand harvested and and transported to the winery in small batches in order to keep the grapes intact. The fruit was then spontaneously fermented in large neutral oak casks.`,
+            IMG:'./images/Melsheimer/Trocken.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Feinherb',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `This dry Riesling comes from selected plots near Reil in the Mosel including the renowned plots of Reiler Goldlay, Pündericher Marienburg, Burger Hahnenschrittchen and Reiler Falklay. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit was then spontaneously fermented in large neutral oak casks. Bottled with 17g/l of residual sugar.`,
+            IMG:'./images/Melsheimer/Feinherb.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Mullay-Hofberg Kabinett',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The grapes come from the weathered slate soils of the Mullay-Hofberg slope. The long ripening period creates ideal conditions for of dry and sweet expressions of Riesling. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit is then spontaneously fermented in large neutral oak casks and bottled with 37 g/l of residual sugar.`,
+            IMG:'./images/Melsheimer/Mullay-Hofberg-Kabinett.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Mullay-Hofberg Schaf Spätlese',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The grapes come from the weathered slate soils of the Mullay-Hofberg slope. The long ripening period creates ideal conditions for of dry and sweet expressions of Riesling. The grapes were hand harvested and transported to the winery in small batches in order to keep the grapes intact. The fruit is then spontaneously fermented in large neutral oak casks and bottled with 79 grams of residual sugar.`,
+            IMG:'./images/Melsheimer/Mullay-Hofberg-Schaf-Spätlese.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Vade Retro',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `This Riesling is Thorsten Melsheimer’s flagship wine, vinified with zero intervention in the cellar. The grapes come from some of the steepest plots in the Reil area and are hand picked with meticulous care. The fruit is spontaneously fermented on the skins in large oak casks without pumping or filtration. No sulphur is added to the wine, signalling a very natural style of winemaking rarely seen in the Mosel. For Thorsten, the Vade Retro is the pinnacle of the minimal intervention style, intended to express the potential of this grape variety at its purest and most natural.`,
+            IMG:'./images/Melsheimer/Vade-Retro.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Lentum',  
+            PRODUCER : 'Melsheimer',  
+            COUNTRY : 'Germany',  
+            REGION : 'Mosel',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Sometimes wines don't behave like you thought they would in the cellar. This is Lentum. Lentum is a small plot on the Mullay-Hofberg slope. It is one of the oldest un-trellaced sections and some years struggles with fermentation. In 2013 as in 2010 the wine was left in oak for 34 months to ferment. The resulting wine finally went dry but has the most incredible bouquet of honey, blossom and a rich creamy palette. A completely unique example of Mosel Riesling.`,
+            IMG:'./images/Melsheimer/Lentum.jpg' 
+          },
+        ]
+      }
+    ]
+  },
+  {
+    COUNTRY: 'HUNGARY',
+    DATA: [
+      {
+        COMPANY: 'Peter Wetzer',
+        COMPANY_ID: 0,
+        COMPANY_IMG : './images/Peter Wetzer/company.jpg',
+        STORY_1 : `Working out of Sopron in the very north-western corner of Hungary is one of the nations leading lights in minimal intervention winemaking. The city of Sopron, once capital of Burgenland is an area steeped in winemaking traditions, with many of Burgenland’s stars coming from Hungarian heritage.`,
+        STORY_2 : `With the dominating geographical influence of the region being Lake Ferto (aka Lake Neusiedlersee of Burgenland), the area is well protected from extreme weather while also encouraging botrytis in select exposures. Sopron is known for producing wonderful examples of red and dessert wines, with the once predominant white Furmint grape nearly all but gone since Phylloxera set in. Peter’s passion for both both Furmint and Kekfrankos (Blaufrankisch) is clear. He now farms three different Furmint sites across western Hungary exposing the different and unique terroir that it can express. He has painstakingly resurected one of the only local Sopron furmint vineyards as well as farming on an extinct volcano named Sag. In the summer of 2015 he added a small site 1.3 acre site from Tokaji which we have been eagerly anticipating. He has just over 2.5 hectares of Kekfrankos across seven different sites all located close to Sopron with some small holdings in famous local vineyards such as Silverberg, Leithaberg and Spern Stiener.`,
+        STORY_3 : `Peter is the 5th generation living in his house with a 120+ year old attached cellar. In 2007 he purched 2.5 hectares and has steadily grown to the now 3.5 hectares he farms spread over 8 different terroirs. Peter says it was a long hunt for healthy soils that hadn’t been affected from the industrial farming that was commonplace during Communism. He found sites that were alive with flora and fauna, healthy cover crops and with exposures that only require 1-2 sprays of sulphur per season. Everything is done by hand in the vineyard, while all sites are picked and fermented separately. The 120+ year old cellar is ripe with of native microbiological flora and the grapes arrive with extremely healthy yeast populations, allowing for fermentation to take place with only native yeasts and no additives. Wines are fermented in open topped containers before being barrelled down into old Hungarian oak barrels. Wines are neither fined nor filtered and bottled by gravity with minimal sulphur levels.
+        Peter Wetzer is considered by many as one of Hungary’s leading minimal intervention winemakers and a champion of native varietals and olden day techniques. His wines are extremely limited and are an exceptional example of what often under-appreciated Hungarian wines can achieve.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Somló Furmint',  
+            PRODUCER : 'Peter Wetzer',  
+            COUNTRY : 'Hungary',  
+            REGION : 'Sopron',  
+            VARIETY : 'Furmint',  
+            STYLE : 'White',
+            ABOUT : `45 year old vines of Furmint from the amazing volcanic terroir of Somló. Whole bunches are foot stomped, crushed in vat, then basket pressed and barrel fermented on full lees in old Hungarian oak. Aged without racking and on its lees for 9 months and bottled by gravity without fining or filtration. A wonderfully expressive dry white with plenty of natural acidity and texture to boot.`,
+            IMG:'./images/Peter Wetzer/Somló-Furmint.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Tokaj Furmint',  
+            PRODUCER : 'Peter Wetzer',  
+            COUNTRY : 'Hungary',  
+            REGION : 'Sopron',  
+            VARIETY : 'Furmint',  
+            STYLE : 'White',
+            ABOUT : `A new vineyard for Peter that he started leasing in the summer of 2015. 25 year old vines of Furmint from chocolate clay soil on volcanic subsoil. Whole bunches are foot stomped, crushed in vat, then basket pressed and barrel fermented on full lees in old Hungarian oak. Aged without racking and on its lees for 7 months and bottled by gravity without fining or filtration. Bottled with a slight spritz which lifts the drive through this mineral beast.`,
+            IMG:'./images/Peter Wetzer/Tokaj-Furmint.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Kekfrankos Rose',  
+            PRODUCER : 'Peter Wetzer',  
+            COUNTRY : 'Hungary',  
+            REGION : 'Sopron',  
+            VARIETY : 'Blaufrankisch',  
+            STYLE : 'Rosé',
+            ABOUT : `Based off the small 35 year old vineyard of Harmler and grown on clay, red gravel and limestone, the Kekfrankos (Blaufrankisch) Rose is a curiosity usually reserved just for drinking by Peter and his extended family. It spends 2 days on skins before being pressed straight to an old Hungarian puncheon. Dark juicy example of Rose with a wicked lick of acidity to boot.`,
+            IMG:'./images/Peter Wetzer/Kekfrankos-Rose.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Kekfrankos',  
+            PRODUCER : 'Peter Wetzer',  
+            COUNTRY : 'Hungary',  
+            REGION : 'Sopron',  
+            VARIETY : 'Blaufrankisch',  
+            STYLE : 'Red',
+            ABOUT : `Based off the small 35 year old vineyards of Kohlenberg and Harmler and grown on clay, red gravel and limestone, the Kekfrankos (Blaufrankisch) spends 16 months on lees without batonnage and is then bottled by gravity without fining or filtration. Expect a focused, fresh and raw medium bodied Blaufrankisch that's both lively and lifted.`,
+            IMG:'./images/Peter Wetzer/Kekfrankos.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Silverberg Kekfrankos',  
+            PRODUCER : 'Peter Wetzer',  
+            COUNTRY : 'Hungary',  
+            REGION : 'Sopron',  
+            VARIETY : 'Blaufrankisch',  
+            STYLE : 'Red',
+            ABOUT : `A very special vineyard - Silverberg is a 40 year old vineyard grown on Schist and boy does it express that. It spends 12 months on lees without batonnage and is then bottled by gravity without fining or filtration. It is fines than the estate Kekfrankos with fine chewy tannins. One of the most exciting wines peter has made to date.`,
+            IMG:'./images/Peter Wetzer/Silverberg-Kekfrankos.jpg' 
+          },
+        ]
+      }
+    ]
+  },
+  {
+    COUNTRY: 'ITALY',
+    DATA: [
+      {
+        COMPANY: 'Al di là del Fiume',
+        COMPANY_ID: 0,
+        COMPANY_IMG : './images/Al di là del Fiume/company.jpg',
+        STORY_1 : `Al di là del Fiume (beyond the river) started in 2006 as the brainchild of husband and wife Danila Mongardi & Gabriele Monti. Their farm is located in the area in front of the Monte Sole Regional Park in Marzabotto, just outside of Bologna, Emilia Romagna. They created a multifunctional biodynamic agricultural organism with productive, educational, recreational, artistic and therapeutic activities aimed at the wellbeing of man and the environment. The farm consists of three hectares of vineyards, one hectare of vegetable garden, half a hectare of ancient fruits, one hectare of ancient cereals and half a hectare of traditional medicinal plants.`,
+        STORY_2 : `They run their 27 hectares of land as a cultural and spiritual escape, offering biodynamic farming classes, art tuition, cooking classes, a sanctuary for ideas and those wanting to slow down and reconnect with nature.`,
+        STORY_3 : `The first vineyard was planted to Barbera and Albana with newer plantings of Grechetto Gentile and Montuni yielding their first wines in 2016. It was imperative to use only native local varieties to best express their terrior. They work everything in the vineyard by hand with minimal use of machinery and modern technology. All of their wines are produced with natural vinification techniques. In the cellar they use traditional clay Amphora for most wines to enhance purity, depth of flavour and texture. All wines are made with no added sulphites and fermented with natural yeasts, just grapes allowed to express who they are.
+        These wines come from a diverse and rich farm where wine is just a part of the balance of what they do. Each wine we have seen from this incredible cosmic team has been simply breathtaking, pure and energetic.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Birichen',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Grechetto',  
+            STYLE : 'Pet Nat',
+            ABOUT : `Method Ancestral Grechetto Gentile from the highest vineyard in the hills of their property. Aged for seven months on lees before disgorgement.`,
+            IMG:'./images/Al di là del Fiume/Birichen.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Birichen Rosato',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Pet Nat',
+            ABOUT : `
+            Method Ancestral Barbera from young vines planted in 2016. Direct pressed and aged for seven months on lees before disgorgement.`,
+            IMG:'./images/Al di là del Fiume/Birichen-Rosato.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Zirudela',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Albana Blend',  
+            STYLE : 'White',
+            ABOUT : `This blend of Albana and Montuni is something completely different and wild. It is 100% whole bunches carbonic macerated in amphore for 8 weeks. The result is lifted, bright and truly unique.`,
+            IMG:'./images/Al di là del Fiume/Zirudela.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Fricando',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Albana',  
+            STYLE : 'Skin Contact',
+            ABOUT : `100% Albana macerated on skins in Milanese terracotta amphora for three months. Textural and rich it is a delightful example of skin contact white wine.`,
+            IMG:'./images/Al di là del Fiume/Fricando.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Saramat',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Red',
+            ABOUT : `100% Barbera de-stemmed and macerated on skins for 20 days in stainless steel tank. After pressing the wine is aged in tank for 6 months. Bright joyful example of Barbera.`,
+            IMG:'./images/Al di là del Fiume/Saramat.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Dagamo',  
+            PRODUCER : 'Al di là del Fiume',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Red',
+            ABOUT : `Dagamo is the most esteemed wine made in the winery. 100% Barbera from the oldest parcel of vines. The grapes macerate on skins for 3 months in milanese terracotta amphora, giving the wine depth, elegance and concentration.`,
+            IMG:'./images/Al di là del Fiume/Dagamo.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Alessandro Viola',
+        COMPANY_ID: 1,
+        COMPANY_IMG : './images/Alessandro Viola/company.jpg',
+        STORY_1 : `Alessandro Viola father’s was a vine grower although other than a few bottles of homemade wine he never saw the fruit of his hard work in the vineyard into bottle. Alessandro was fascinated in grape growing from an early age and after a few vintages of self-teaching he decided to get a formal education and study oenology. During his university studies he steered away from the mechanical side of winemaking he was being taught and decided to study the science. The idea that nothing needed to be added or taken away from the wine if the grapes, soil and winemaking were all working together became his mantra. After his university degree he worked in the north of Italy and then for a larger winemaker on Mt Etna, however he had never forgotten the wines he had made before, without anything added and made by hand.`,
+        STORY_2 : `So he started making wine for himself, first with a friend Uva Tantum, and now alone using his name Alessandro Viola. He cultivates 7 hectares of organically managed vines worked strictly by hand. The vineyards are located in 2 areas, the first in Pietra Rinosa close to Alcamo in the north-western tip of Sicily, the soil is made of clay and the vineyards sit at 200m above sea level taking a large influence from the ocean. The second vineyards in Fastuchera are higher at 400 meters; the soil is calcareous producing more minerals driven and finer wines.`,
+        STORY_3 : `He is strictly committed to growing and championing local varieties. Catarratto, Grillo, Nero D’avola and Nerello Mascalesse make up his repertoire. We are delighted to be bringing Alessandro’s hand made wines to Australia. His style is unique and his commitment to organic practices and no additions is something to behold.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Blanc de Blanc',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : 'Catarratto',  
+            STYLE : 'Sparkling',
+            ABOUT : `This 100% Catarratto Blanc de Blancs sparkling is based off the 2015 vintage and made zero dosage. The wine spends 20 months on lees before being carefully discorged. The vineyards are from the Fastuchera site grown on white soils and produce a sparkling of finesse that is truly world class.`,
+            IMG:'./images/Alessandro Viola/Blanc-de-Blanc.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Note di Bianco',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : 'Grillo',  
+            STYLE : 'White',
+            ABOUT : `This lesser known white varietal was truly a revelation for us. It is made from 100% Grillo from the Vineyards in Pietra Rinosa. This clay based soil and proximity to the ocean gives the Grillo a distinct salty and fresh finish.`,
+            IMG:'./images/Alessandro Viola/Note-di-Bianco.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Alessandro Viola Rose',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : "Nero d'Avola",  
+            STYLE : 'Rosé',
+            ABOUT : `Grapes are from younger vines are in clay and sandy soils 250 meters in elevation. Spontaneous fermentation at uncontrolled temperature, with native yeasts in steel, ageing in steel tank for 6 months, bright and joyful rose.`,
+            IMG:'./images/Alessandro Viola/Alessandro-Viola-Rose.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Simphona',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : 'Grillo',  
+            STYLE : 'Skin Contact',
+            ABOUT : `Simphona is a wonderful and different example of Grillo. Aged on skins in Chestnut barrels for seven months its pallet is deep and ripe with herbaceous high tones. It is made from 100% Grillo from the Vineyards in Pietra Rinosa. This clay based soil and proximity to the ocean gives the Grillo a distinct salty finish.`,
+            IMG:'./images/Alessandro Viola/Simphona.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Note di Rosso',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : "Nero d'Avola Blend",  
+            STYLE : 'Red',
+            ABOUT : `This blend of Nero D'Avola 80%, Syrah 10%, Nerello Mascalese 10%. Vineyards is made up from both vineyard sites in Fastuchera and Pietra Rinosa. The grapes see a short 10 day maceration on skins and spend 6 months in barrel before being bottled unfiltered and unsulphured. To drink this is pure joy in a glass, Bright, juicy and seriously slurp-able.`,
+            IMG:'./images/Alessandro Viola/Note-di-Rosso.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Vendemmia Tardiva',  
+            PRODUCER : 'Alessandro Viola',  
+            COUNTRY : 'Italy',  
+            REGION : 'Sicily',  
+            VARIETY : 'Grillo',  
+            STYLE : 'Dessert',
+            ABOUT : `The 2017 Vintage was a very hot and dry one in Sicily. Alessandro's missed picking one of his favourite plots and decided to make his first sweet wine. The grapes were picked at around 16 beaume and before heavy botrytis set it. It has amazing acidity and drive.`,
+            IMG:'./images/Alessandro Viola/Vendemmia-Tardiva.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Cantina Margo',
+        COMPANY_ID: 2,
+        COMPANY_IMG : './images/Cantina Margo/company.jpg',
+        STORY_1 : `When Carlo Tabarrini was four, his father and grandfather would bring him into the vineyards (where he was sometimes allowed to drive the tractor). They made wine for family consumption and grew grapes to sell. He always held fond memories of his childhood amongst the vines and so after he finished school he gave up on his life working in a chocolate factory to focus on vineyards. In 2008, he started Cantina Margo, and from 2016 until now it has been his sole focus. He began with 0.5 hectares from abandoned or neglected vineyards in the town of Sant’Enea (Umbria), and has grown to now manage close to 3 hectares. Using natural and biodynamic practices, Carlo began to improve his land, which seemed to have extraordinary potential. His careful work restoring these precious sites has given him the reputation of one of the most dedicated farmers in the inland region of Umbria.`,
+        STORY_2 : `The vineyards Carlo tends are between 25 and 45 years old, planted in limestone and clay soils. Machinery is used as little as possible and no pesticides or chemicals are used. Instead, he uses biodynamic preparations made with manure and herbs and works in line with the astronomical calendar. He loves working in a traditional way with the use of modern winemaking equipment and technology kept to a minimum. No wines have any additions or manipulations of any sort. For him the wines are truly expressions of site and vintage. We fell in love with Carlo’s expressions that are simply honest, delicious wines from the heart of Umbria.`,
+        STORY_3 : ``,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Regio Bianco',  
+            PRODUCER : 'Cantina Margo',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'Skin Contact',
+            ABOUT : `100% Trebbiano from 20 - 45 year old vines on , marl and limestone over clay. 6 days skin contact with fermentation in stainless steel and fiberglass. No sulphur added, unfined, unfiltered.`,
+            IMG:'./images/Cantina Margo/Regio-Bianco.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Fiero Bianco',  
+            PRODUCER : 'Cantina Margo',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Grechetto',  
+            STYLE : 'Skin Contact',
+            ABOUT : `100% Grechetto from 25 - 30 year old vines on limestone soils over clay. 2 days open skin contact with fermentation in stainless steel and fiberglass. No sulphur added, unfined, unfiltered.`,
+            IMG:'./images/Cantina Margo/Fiero-Bianco.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Fiero Rosato',  
+            PRODUCER : 'Cantina Margo',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Rosé',
+            ABOUT : `Early harvest of the Sangiovese grapes. Hand destemmed and kept as whole berries for three days. Pressed gently with ferment in stainless tanks and elevage in old barrels. No sulphur added, un-fined, unfiltered.`,
+            IMG:'./images/Cantina Margo/Fiero-Rosato.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Margo Rosso',  
+            PRODUCER : 'Cantina Margo',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `100% Sangiovese from 20 - 45 year old vines on marl and limestone over clay. 25 days skin contact with fermentation in stainless steel and fiberglass. 6 month elevage in neutral oak. No sulphur added, unfined, unfiltered`,
+            IMG:'./images/Cantina Margo/Margo-Rosso.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Casè',
+        COMPANY_ID: 3,
+        COMPANY_IMG : './images/Casè/company.jpg',
+        STORY_1 : `Casè is a small, independent winery born in 1998 in the hills of Val Trebbia, an area of great natural beauty in the hills of Piacenza in the southern part of Emilia Romagna. Alberto Anguissola planted the first vineyards in 1998 after a careful analysis of the characteristics of the soil and the climate. He started with 1ha of Pinot Nero planted around his grandparents country house. Since that point he has planted several more small sites and also recovered old, abandoned vineyards in the valley, in order to preserve the local, traditional varieties. Over the last two decades he has worked closely with other local natural winemakers like Giulio Armani (La Stoppa) whose whites can at times have a brilliant resemblance.`,
+        STORY_2 : `Today, Casè is configured as a small business partnership between Alberto and his old mate from high school, Diego. Alberto supervises all the activities from the vineyard to the cellar, while Diego works part-time mainly in marketing and company governance. They are helped by a few stable co-workers and interestingly by a network of local farmers exchanging services between them. The primary objective of Case primary objective is to produce wines that are different from the “standard taste”, wines indeed with a different taste each year, according to the characteristics of the territory and the climate.`,
+        STORY_3 : `The work in the vineyard is carried out without chemical fertilisers and herbicides. Harvesting is done manually by selecting the best grapes directly on the vine. In the cantina (cellar), they do not use commercial yeast, but only native yeasts. They do not perform chemical or physical interventions before or during the fermentation nor through to bottle. What we have here is pure juice as Alberto has imagined it.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Bianco',  
+            PRODUCER : 'Casè',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Field Blend',  
+            STYLE : 'Skin Contact',
+            ABOUT : `CasèBianco is made from four different white grapevines growing in the same vineyard, intermixed with other red varieties. This arrangement was common in the past across the region, and the vineyard itself is quite old (40-50 years). Macerated on the skins for 4 weeks and aged in a mixture of tank and barrel. Nothing added or taken away.`,
+            IMG:'./images/Casè/Bianco.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Calcerot',  
+            PRODUCER : 'Casè',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Field Blend',  
+            STYLE : 'Red',
+            ABOUT : `Calcaròt is a wine the follows local tradition, with two varieties of indigenous red grapes grown side by side and combined to ensure an ideal balance. It comes from the recovery of an old vineyard, with rustic, charcuterie-like gaminess`,
+            IMG:'./images/Casè/Calcerot.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Nero',  
+            PRODUCER : 'Casè',  
+            COUNTRY : 'Italy',  
+            REGION : 'Emilia-Romagna',  
+            VARIETY : 'Pinot Noir',  
+            STYLE : 'Red',
+            ABOUT : `Made from Pinot Noir grapes coming from younger vines. The reduced maceration period, and the ageing in steel tanks produces a fresher, lighter wine to be enjoyed soon after bottling.`,
+            IMG:'' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Col Tamarie',
+        COMPANY_ID: 4,
+        COMPANY_IMG : './images/Col Tamarie/company.jpg',
+        STORY_1 : `From the hills above Vittorio Veneto, in San Lorenzo, comes some of the most addictive Prosecco making we’ve seen. Alberto and Marta lead 4.5 hectares of vineyards facing south, south-east. The vineyards sit at 450 m above sea level (just outside the Prosecco DOCG area but in the Prosecco DOC territory), completely surrounded by woods, and grow from limestone and rocky soils of morainic origin. They treat the plants with unicist homeopathy, use biodynamic preparations, and are certified organic.`,
+        STORY_2 : `Alberto and Marta take care of the vineyards and the territory to enhance the energies of nature, resorting only to tiny uses of sulphur and reduced quantities of copper. They cultivate native grapes — Glera, Bianchetta, Boschera, Grapariol, Perera and Verdiso — to produce one wine - Col Fondo sparkling white wine, spontaneously fermented with their own indigenous yeasts, unfiltered, unfined and without the addition sulphur.`,
+        STORY_3 : `Alberto and Marta are true pioneers in their region and in the world for Col Fondo Pet Nat, leading the way with some of the most committed farming we’ve seen to date.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Prosecco',  
+            PRODUCER : 'Col Tamarie',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Glera Blend',  
+            STYLE : 'Sparkling',
+            ABOUT : `Harvested at the end of September, no addition of sulphur, no inoculation. Short maceration on skins. Soft pressing and then ancestral method with a minimum of 10 months before sale. Glera dominant blend of Glera, Boschera, Grapariol, Bianchetta, Perera, Verdiso. Straw yellow, a fine foam and a lot of citrus notes. 11.5% and highly addictive.`,
+            IMG:'./images/Col Tamarie/Prosecco.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Milu',  
+            PRODUCER : 'Col Tamarie',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Glera Blend',  
+            STYLE : 'Skin Contact',
+            ABOUT : `Milu is made from the same grape varieties as the Col Tamarie Prosecco, including Glera (at least 85%), Perera, Bianchetta, Verdiso, Boshera and Grapariol. The grapes are grown at an altitude of 450-500 meters above sea level, here the yield per hectare is much lower than in the rest of the Prosecco region. The soil of moraine origin with a lot of limestone gives the wines an expressive minerality and citrus aromas. The vineyard and the cellar adhere to organic practices with minimal interference with the natural process. The grapes are harvested by hand in October, when they are fully ripe. Maceration on the skin for almost two weeks allows the wine to acquire a dark golden hue. Spontaneous fermentation takes place in stainless steel tanks with natural yeast. At the end of the ageing of the wine on the lees, it is bottled without filtration.`,
+            IMG:'./images/Col Tamarie/Milu.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Collecapretta',
+        COMPANY_ID: 5,
+        COMPANY_IMG : './images/Collecapretta/company.jpg',
+        STORY_1 : `The Mattioli family has been in the tiny hamlet the Roman’s once called Collecapretta (hill of the goats) since the 1100’s. For generations the Mattioli have been cultivating the rugged hillsides of southern most Umbria. Located just outside of Spoleto, today’s farm is a scant 8 hectares in total; 2 planted to a mixture of local olives trees, 2 ha of farro and other ancient grains and ~ 4 ha of indigenous old vines. Vittorio Mattioli, his wife Anna and their daughter Annalisa live together with 3 generations of their family inside the tiny village overlooking the valley below with the high Apennine Mountains and Gran Sasso looming in the background. The elevation is some 500+ meters and the soils are a mixture of calcium and iron rich clay with outcroppings of tufo and travertine limestone. Though the total production of Collecapretta is only some 8000 bottles in a good year, the family chooses to vinify many different cuvee’s in hopes of expressing the vineyard and grape varieties at their best.`,
+        STORY_2 : `All the wines are made in much the same fashion: natural fermentation takes place in open-top cement containers without temperature control or sulphur additions. The wines then age for various amounts of time in glass-lined cement vats or fiberglass tank before bottling in synchrony with the waning lunar cycle. There is no sulphur used at any point in the winemaking process. All farming in the vineyards is completely natural, only composts made from their own animals are used to aid vine health. We are truly humbled to be working with this gracious family in the heart of Umbria.`,
+        STORY_3 : ``,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Pigro delle Sorbe Bianco',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Greco',  
+            STYLE : 'White',
+            ABOUT : `Direct-press white wine made from 100% Greco grown in the hills and grown on trellises in the Umbrian peasant tradition. Wild fermentation takes place without temperature control in open-top vats. Aged in a combination of cement, stainless steel or fiberglass. No added sulphur and no filtering or fining.`,
+            IMG:'./images/Collecapretta/Pigro-delle-Sorbe-Bianco.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Buscaia',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Malvasia',  
+            STYLE : 'White',
+            ABOUT : `Direct-press white wine obtained from two different strains of Malvasia; the traditional strain with a tight bunch and thick skin, and the “Candia” strain with a loose bunch, and a large and delicate grape. Both are harvested at the beginning of October and are vinified through spontaneous fermentation in stainless steel tanks without temperature control for 10 days. Wine goes through first racking with the February moon, with a further racking at the end of March to prepare the wine for bottling in early April. No sulphur is added at any stage. “Buscaia” was the nickname of Annalisa’s Grandfather, who worked as a minatore (miner).`,
+            IMG:'./images/Collecapretta/Buscaia.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Vigna Vecchia',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'White',
+            ABOUT : `Direct-press white wine made from old-vine (“Vigna Vecchia”) Trebbiano Spoletino grown in the hills and grown on trellises in the Umbrian peasant tradition. Wild fermentation takes place without temperature control in open-top vats. Aged in cement. No added sulfur and no filtering or fining.`,
+            IMG:'./images/Collecapretta/Vigna-Vecchia.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Terra dei Preti',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'Skin Contact',
+            ABOUT : `“Terra dei Preti” or “Hill of the Priests”, is 100% old vine Trebbiano Spoletino. Spontaneous fermentation with 10 days of skin maceration, as in the traditional ancient practice - "Ribollito". The work in the vineyard and in the cellar is inspired by principles of absolute naturalness and the influences of the lunar cycles. No artificial yeasts are used, no sulphur is added, and no filtering or fining. The wine ages in cement tanks before bottling.`,
+            IMG:'./images/Collecapretta/Terra-dei-Preti.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Il Rosato',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Rose',
+            ABOUT : `The Mattioli’s rosato is made from all Barbera, direct press. Spontaneous fermentation without temperature control.. Aged in cement tanks with two rackings, one in December and one at the end of February following the waning moon. until bottling in the Spring. No added sulphur and no filtering or fining.`,
+            IMG:'./images/Collecapretta/Il-Rosato.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Lautizio',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Ciliegiolo',  
+            STYLE : 'Red',
+            ABOUT : `Red wine made from 100% Ciliegiolo from vineyards ranging from 15 to 50 years old. The must ferments for 10 days on the skins with indigenous yeasts in open conical trunk vats without temperature control; then it is drawn off and placed in cement tanks where it rests all winter. No sulphur is added at any stage, and there is no filtering or fining.`,
+            IMG:'./images/Collecapretta/Lautizio.jpg' 
+          },
+          {
+            ID : 6,
+            WINE : 'Rosso da Tavola',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `The Mattioli’s beloved red “table wine”, made from 100% Sangiovese with 8 days skin maceration. Spontaneous fermentation without temperature control. Aged in cement/stainless/fiberglass until bottling. No added sulphur and no filtering or fining.`,
+            IMG:'./images/Collecapretta/Rosso-da-Tavola.jpg' 
+          },
+          {
+            ID : 7,
+            WINE : 'Le Cese',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `Red wine made from Sangiovese vines grown in the hills and grown on trellises as typical in the Umbrian peasant tradition. Spontaneous fermentation occurs without temperature control, with 8 days maceration on the skins. The wine is aged in either cement/fiberglass/stainless steel. No sulphur is added and there is no filtering or fining.`,
+            IMG:'./images/Collecapretta/Le-Cese.jpg' 
+          },
+          {
+            ID : 8,
+            WINE : 'Le Cese Selezione',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `One of the Mattioli’s most precious wines, the Selezione Le Cese is 100% Sangiovese from fruit selected and separated only in the very best vintages. Spontaneous fermentation without temperature control, with 8 days skin maceration. Aged in a single old barrel. 200-300 bottles per year made, no sulfur is added and there is no filtering or fining.`,
+            IMG:'./images/Collecapretta/Le-Cese-Selezione.jpg' 
+          },
+          {
+            ID : 9,
+            WINE : 'Il Galantuomo',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Red',
+            ABOUT : `100% Barbera with 6 days of maceration in steel tank, then aged for 8 months in the same containers. No sulphur is added and there is no filtering or fining.`,
+            IMG:'' 
+          },
+          {
+            ID : 10,
+            WINE : 'Il Forestiero',  
+            PRODUCER : 'Collecapretta',  
+            COUNTRY : 'Italy',  
+            REGION : 'Umbria',  
+            VARIETY : 'Sagrantino',  
+            STYLE : 'Red',
+            ABOUT : `This is 100% Sagrantino — named ‘The Stranger’ in reference to the fact the grape hails from a more famous nearby wine appellation — from one single row of old vines (yes, one row!). An 8-10 day maceration makes for a less tannic, more forthcoming expression of Sagrantino, but still a wholly powerful and elegant red wine. 200-300 bottles per year, no sulfur is added and there is no filtering or fining.`,
+            IMG:'./images/Collecapretta/Il-Forestiero.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Colombaia',
+        COMPANY_ID: 6,
+        COMPANY_IMG : './images/Colombaia/company.jpg',
+        STORY_1 : `On our recent trip to Europe we visited dozens of wineries and vineyards. None were more impressive than the afternoon we spent at Colombaia. Away from the populous subregions Tuscany is know for, this little farm operates in a truly humble and understated way. We were taken a back by the immense quality of the wines Dante and Helena have produced as well as their welcoming nature. Below is a little about the story of Colombaia and what makes this tiny farm so special.`,
+        STORY_2 : `The Colombaia farm in Colle Val d‘Elsa in the hamlet of Mensanello, has been in Dante Lomazzi’s family for several generations. The vineyard was planted in 1970 and after a promising career outside of winemaking Dante decided to return to his family farm with his wife Helena in 1999. They immediately got stuck into converting the farm to organic viticulture and from there certified in biodynamics in 2003. The idea was to treat this very special 4ha plot like a big garden, with fruit trees, vegetable gardens and flowers surrounding the vines. The now 45+ year old vineyards are planted to Tuscany’s native grapes of Sangiovese, Colorino, Malvasia Nera and Canaiolo. They also planted a small additional hectare to denser plantings of Sangiovese 10 years ago, which is maturing into a beautiful site in which they make their Neuva cuvee.`,
+        STORY_3 : `They have a simple cellar, set up to use the flow of gravity and to not need mechanical pumps. Grapes are hand picked and only have to travel about 50 metres to the cellar. Fermentation takes place predominantly in concrete and undergoes the traditional “a capello sommerso” (submerged cap) for fermentation. Wines are aged in Slavonian oak for extended periods of time and many cuvees have several bottling dates. The idea behind this to show how the wines age during different vintage conditions. Sulphur is only used in warmer vintages and very sparingly if at all.
+        The wines from Colombaia reflect the very special farm they are from. They age beautifully and are an absolute joy to drink from the electric Ancestral through to the almost 10 year old cuvees of sangiovese. We are delighted to share these rare and special wines with you and show off the amazing work of this dedicated couple.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Ancestral Rose',  
+            PRODUCER : 'Colombaia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Tuscany',  
+            VARIETY : 'Sangiovese Blend',  
+            STYLE : 'Pet Nat',
+            ABOUT : `Soil : Rich clay in fossil shells Grapes : Sangiovese, Colorino, Malvasia Nera and Canaiolo Age of Vines: 40 years`,
+            IMG:'./images/Colombaia/Ancestral-Rose.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Bianco',  
+            PRODUCER : 'Colombaia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Tuscany',  
+            VARIETY : 'Trebbiano/Malvasia',  
+            STYLE : 'Skin Contact',
+            ABOUT : `Soil : Rich clay in fossil shells Grapes : Trebbiano 70%, Malvasia 30% Age of vines: 45 years Vinification: 4 month long skin maceration`,
+            IMG:'./images/Colombaia/Bianco.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Vigna Nuova',  
+            PRODUCER : 'Colombaia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Tuscany',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `Soil: clay rich in fossil shells, Grapes: Sangiovese 97% , Colorino 3% Vine Age: 9 years Vinification: Natural fermentation on skins for 2 months in tank and aged in tank for 15 months.`,
+            IMG:'./images/Colombaia/Vigna-Nuova.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Rosso Toscana',  
+            PRODUCER : 'Colombaia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Tuscany',  
+            VARIETY : 'Sangiovese',  
+            STYLE : 'Red',
+            ABOUT : `With the great practice of multiple bottling's off the one vintage our access to back vintages constantly revolve and change. These are the top wines from Colombaia and will come off their oldest parcels on rich clay and fossil shells. Natural ferment occurs in concrete vats with long maceration times. Ageing times in Slovenian oak varies from 2-3 years, similarly in bottle. True patience, true reward.`,
+            IMG:'./images/Colombaia/Rosso-Toscana.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Fabio Gea',
+        COMPANY_ID: 7,
+        COMPANY_IMG : './images/Fabio Gea/company.jpg',
+        STORY_1 : `Fabio is a young winemaker whose grandfather bequeathed him a few tiny plots around the Bricco in Barbaresco. When we say small, we mean small. His few rows of Nebbiolo, Dolcetto, Barbera, and Grignolino amount to less than one hectare. To put that in perspective, if you put all of his land together it wouldn’t even cover the field in Yankee Stadium. He makes such little wine he is able to hand number each bottle with a pen. His wines are unknown to the point that Googling one returns almost no results about the wine.`,
+        STORY_2 : `Everything about Fabio’s wines is unique. Firstly the bottles themselves; His Barbaresco bottlings are labeled with hand-pressed pulp paper. Another is a bottled so oddly shaped you’d think it was unearthed from an ancient tomb or it was hand blown by an ogre on acid.`,
+        STORY_3 : `But what’s in the bottle is far, far, more interesting.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Barbisca',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Pet Nat',
+            ABOUT : ``,
+            IMG:'./images/Fabio Gea/Barbisca.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Back Grin',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Gringnolino',  
+            STYLE : 'Red',
+            ABOUT : `100% Grignolino, bottled as "Back Grin". A late night drunken joke based on Fabio's logo. One of the few lighters styles of Grignolino around with incredible drive to it.`,
+            IMG:'./images/Fabio Gea/Back-Grin.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'DNAss',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Nebbiolo',  
+            STYLE : 'Red Wine',
+            ABOUT : `“DNAss” marks the third and final (and wildest) wine of Gea’s “rear end” series. Aside from the blatantly obvious and bawdy wordplay, you’ll also notice blue font throughout the front label and a ripple running across the sickle-and-rake/buttocks logo, which now also looks like a wine glass submerged underwater. That’s because Fabio Gea literally vinifies it underwater—he calls it “water and wine making love.” Reportedly, it is all destemmed Nebbiolo that macerated for 2-3 weeks before ageing in sandstone amphora submerged in a pool of water. It was bottled unfined and unfiltered in June of 2020.`,
+            IMG:'./images/Fabio Gea/DNAss.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Pinotto',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Dolcetto',  
+            STYLE : 'Red',
+            ABOUT : `100% Dolcetto from a 25 year old vineyard with a “royal” SW exposure (typically SW exposure produces the best Barbaresco vineyards), with the traditional familiar architecture of plantation: 2 near vines every three meters hand-destemmed, one year in porcelain.`,
+            IMG:'./images/Fabio Gea/Pinotto.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Mushroom Panda',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Nebbiolo Blend',  
+            STYLE : 'Red',
+            ABOUT : `Nebbiolo and Dolcetto, aged in porcelain. We have no idea what the hell Mushroom Panda means but we love this wine.`,
+            IMG:'./images/Fabio Gea/Mushroom-Panda.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Green Palma',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Barbera',  
+            STYLE : 'Red',
+            ABOUT : `A knock out Barbera aged for 24 months in old barrels. Structure and tension in all the right places, proper Barbera.`,
+            IMG:'./images/Fabio Gea/Green-Palma.jpg' 
+          },
+          {
+            ID : 6,
+            WINE : 'Onde Gravitazionale 33-66-1',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Barbera/Nebbiolo',  
+            STYLE : 'Red',
+            ABOUT : `33% Barbera, 66% Nebbiolo and 1% wild varieties. Aged in porcelain and demijohn. Deeply satisfying.`,
+            IMG:'./images/Fabio Gea/Onde-Gravitazionale-33-66-1.jpg' 
+          },
+          {
+            ID : 7,
+            WINE : 'Veja Dota',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Barbera/Nebbiolo',  
+            STYLE : 'Red',
+            ABOUT : `Fabio's Langhe Rosso. A blend of porcelain and barrel aged selections for which a few hundred bottles are made. Clean and precise.`,
+            IMG:'./images/Fabio Gea/Veja-Dota.jpg' 
+          },
+          {
+            ID : 8,
+            WINE : 'Nòtu Seguiva le Gocce Barbaresco',  
+            PRODUCER : 'Fabio Gea',  
+            COUNTRY : 'Italy',  
+            REGION : 'Barbaresco,Piedmonte',  
+            VARIETY : 'Nebbiolo',  
+            STYLE : 'Red',
+            ABOUT : `Fabio's top wine. Depending on vintage this will spend anywhere between 48 and 60 months in the most unique oak barrels. Rather than roasting the insides of the staves Fabio exposes the oak to hot volcanic rocks that vaporizes the staves and alters starches and tannins in similar but different ways to pure fire. This process provides a unique influence on the barrels, perhaps its source of purity. After barrel the wines spend 6 months in porcelain urns that Fabio designed himself and then bottled unfined, unfiltered. Only several hundred bottles made.`,
+            IMG:'./images/Fabio Gea/Nòtu-Seguiva-le-Gocce-Barbaresco.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Il Roccolo di Monticelli',
+        COMPANY_ID: 8,
+        COMPANY_IMG : './images/Il Roccolo di Monticelli/company.jpg',
+        STORY_1 : `Located in the hills of Vallata di Mezzane, near Verona, in Veneto, Silvia has taken over her family’s abandoned vineyards and revived them to produce the natural wines as was done in the past without any additives or invasive farming methods. After studying agricultural science this became her passion, tending to the vineyards planted in the 1960’s and 1970’s to Garganega and Trebbiano di Soave, doing everything from vineyard to cellar in order to know intimately the entire process.`,
+        STORY_2 : `The Garganega and Trebbiano were planted in 1970 in mixed soils with predominant limestone deposits, while the Corvina as planted more recently in 2017. Silvia works tenaciously to produce the best that the land will give them each year, harvesting only by hand so as not to harm the vines and eschewing any treatments or fertilisers, only minimal amounts of copper and sulphur to protect the vines when needed. They allow the land to speak to them and be reflected in the wine, allowing nature take its course in order to preserve the natural biodiversity of the area which is of utmost importance: cultivating olive trees, bee colonies, allowing local vegetation to grow between the vines, nurture the soils and attract local flora to create a long-lasting and healthy environment.`,
+        STORY_3 : `In the cellar, Silvia uses extended maceration time and leaves her wines unfined and unfiltered, just as her ancestors would have done with the only addition a small amount of sulphur as peace of mind for the wines travels.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Molina Rosa',  
+            PRODUCER : 'Il Roccolo di Monticelli',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Molinara',  
+            STYLE : 'Pet Nat',
+            ABOUT : `100% Molinara from plantings in 1980. 5 day carbonic maceration in fiberglass then gently pressed to stainless tank where the wine fermented slowly. Racked and then a juice addition to bottle where the wine finishes ferment.`,
+            IMG:'./images/Il Roccolo di Monticelli/Molina-Rosa.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Monticelli Bianco',  
+            PRODUCER : 'Il Roccolo di Monticelli',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Trebbiano Blend',  
+            STYLE : 'White Wine',
+            ABOUT : `Selection of Garganega and Trebbiano di Soave from plantings between 1960 - 1990. Wild ferment on skins for 1 month and then gently pressed to tank where it remains on full lees for 10 months.`,
+            IMG:'./images/Il Roccolo di Monticelli/Monticelli-Bianco.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Di Rado',  
+            PRODUCER : 'Il Roccolo di Monticelli',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Garganega Blend',  
+            STYLE : 'Skin Contact',
+            ABOUT : `1970 plantings of Garganega and Trebbiano di Soave. Grapes are selected on the vine and macerate on skins for 4 months before being racked off the skins to tank.`,
+            IMG:'./images/Il Roccolo di Monticelli/Di-Rado.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Indomiti',
+        COMPANY_ID: 9,
+        COMPANY_IMG : './images/Indomiti/company.jpg',
+        STORY_1 : `We are delighted to welcome a new Italian producer to our Lo-Fi family. Indomiti Vini is the brainchild of Simone Ambrosini, a young vigneron based in Veneto. His wines are precise and joyful and we are so excited to share them and his story with you. Simone Ambrosini studied enology and viticulture at the University of Trento e Udine, simultaneously starting some notable stints with the likes of Corte Pavone in Montalcino in 2015 and Domaine Chevrot in 2017.`,
+        STORY_2 : `For Simone working alongside winemaker in Tuscany really gave him an eye opening understanding of biodynamic farming and the concept of single grape, single parcel winemaking. Later in Burgundy the Chevrot family taught him a lot about the concept of precision and balance in wines and that often this would be a result of precise work in the vineyard rather than interventions in the cellar. In 2018 Simone returned back to his home town Vincenza where he was able to agree to a long-term rent for a vineyard completely surrounded by the forest of Arcugnano above Lake Fimon - and planted with local varieties such as Garganega, Tai Rosso plus some obscure and unknown varieties as well as Pinot Blanc and Sauvignon.`,
+        STORY_3 : `To this day Simone doesn’t own any winery or place, but instead keeps his modest tanks and concrete vats and equipment to the minimum. Since 2021, he is joined by a young oenology student Camilla, who is helping him to become even more focused on the vineyard (manual palissage work and rolling the apex by hand is just one of many steps) - something Simone believes will have even more positive impact on the grapes. We are excited to follow the journey of the young Simone, and cannot wait to share more updates from Veneto.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Oppla',  
+            PRODUCER : 'Indomiti',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Garganega',  
+            STYLE : 'Pet Nat',
+            ABOUT : `The must, made from second selection Garganega grapes, remains on the skins for about 4 days before being combined with a small amount of Tai rosso. Grown on red clay and limestone, ferment in fiberglass. Bottled with 15 grams and fermentation finishes in the bottle.`,
+            IMG:'./images/Indomiti/Oppla.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Osai',  
+            PRODUCER : 'Indomiti',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Tai Rosso',  
+            STYLE : 'Pet Nat',
+            ABOUT : `Two day maceration of Tai Rosso grown on red clay and limestone. Aged in fiberglass.`,
+            IMG:'./images/Indomiti/Osai.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Lottai',  
+            PRODUCER : 'Indomiti',  
+            COUNTRY : 'Italy',  
+            REGION : 'Veneto',  
+            VARIETY : 'Tai Rosso',  
+            STYLE : 'Red Wine',
+            ABOUT : `Tai Rosso fermented on skins as whole clusters for 10 days. Two separate picks for acidity and finesse. Aged in ceramic amphora.`,
+            IMG:'./images/Indomiti/Lottai.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Lammidia',
+        COMPANY_ID: 10,
+        COMPANY_IMG : './images/Lammidia/company.jpg',
+        STORY_1 : `We are really excited and thrilled to have started working with Marco and Davide of Lammidia. They are two of Italy’s most exciting your winemakers whom both have deep understanding and respect for their grapes.`,
+        STORY_2 : `Lammidia was started in 2010 by two good friends, Marco Giuliani and Davide Gentile who grew up in the Hills of Pescara Colli in eastern Abruzzo. These two young Abruzzese have been friends since they were three years old. After university they took different career paths and eventually reunited with a common passion for viticulture, vinification and drinking. They spent time learning from some of the biggest names of the ‘Natural’ wine world throughout both France and Italy. The influence of harvests with Jean Foillard and La Coste where they learned respect for soils, grapes and nature deeply shows both through their wines and overall philosophy. And so, without any degrees or diplomas they started to attack the vineyard work and fermentation in a very experimental spirit, but with the same desire to work with respect and without heavy-handed intervention. Despite both still working full time with other jobs they have managed to dedicate every spare minute to Lammidia, and the results continue to blossom.`,
+        STORY_3 : `They have around 5 hectares of vines 700 metre above sea level in the hills above Pescara in the small village of Villa Celiera. They also farm two ½ hectare sites nearer the coast, with a focus more on white varietals. Last year they planted a further 2 hectares to more experimental Italian and Western varietals. The majority of their vines are planted to Montepulciano and Trebbiano d’Abruzzo but they also have a little Pinot Noir, Barbera, Pecorino and Moscato. They do not move the earth in the vineyards at all but cut surrounding plant life and leave it as mulch on the soil to keep in moisture and to protect the surface. In the cellar they work predominantly with cement tanks but also use mediums such as Anfora and Fibreglass for some cuvees.
+        There is a great diversity throughout their range of wines as they work with different methods, such as white with skin maceration, Carbonique and whole bunch. It’s just a part of their philosophy and mission, constantly testing new ways in cultivation, fermentation and storage. All wines are made with zero additions or manipulation including no sulphur additions at bottling. Their wines are constantly evolving and their slogan Uva e Basta (100% grape) reigns true with every vintage and micro cuvee.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Sciambagn Pet Nat',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'Pet Nat',
+            ABOUT : `A pet nat given by the fruit from their Bianchetto cuvee, refermented in bottle thanks to the addition of fresh must from Bianco Anfora.`,
+            IMG:'./images/Lammidia/Sciambagn-Pet-Nat.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Bianchetto',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'White',
+            ABOUT : `Crushed and destemmed, one night skin contact and aged in fiberglass and steel. 9.5% alc. Come on.`,
+            IMG:'./images/Lammidia/Bianchetto.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Pep & Ov',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Pecorino',  
+            STYLE : 'White',
+            ABOUT : `Full carbonic maceration in terracotta for one week, then pressed and aged in amphora.`,
+            IMG:'./images/Lammidia/Pep-&-Ov.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Bianco Anfora',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Trebbiano',  
+            STYLE : 'White',
+            ABOUT : `Crushed, destemmed and left on skins for 1 day then aged in terracotta amphora. All things sun in the sky.`,
+            IMG:'./images/Lammidia/Bianco-Anfora.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Frekt',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Pecorino',  
+            STYLE : 'White',
+            ABOUT : `100% Pecorino. Half the grapes are directly pressed and half fermented with skin maceration in concrete vats for a week, then aged in stainless steel. Textural savoury and rich.`,
+            IMG:'./images/Lammidia/Frekt.jpg' 
+          },
+          {
+            ID : 5,
+            WINE : 'Rosato',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Montepulciano',  
+            STYLE : 'Rosé',
+            ABOUT : `100% Montepulciano. Montepulciano grapes pressed and destemed, left in contact with the skins for one night and aged in fibreglass.`,
+            IMG:'./images/Lammidia/Rosato.jpg' 
+          },
+          {
+            ID : 6,
+            WINE : 'Rosso Carbo',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Montepulciano',  
+            STYLE : 'Red',
+            ABOUT : `100% Montepulciano. Full carbonic maceration for 3 weeks concrete vats, aged in fiberglass. Crunchy and only 10.8% alc, perfect with a light chill.`,
+            IMG:'./images/Lammidia/Rosso-Carbo.jpg' 
+          },
+          {
+            ID : 7,
+            WINE : 'Rosh',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Montepulciano Blend',  
+            STYLE : 'Red',
+            ABOUT : `95% Montepulciano lifted with 5% Trebbiano. Semi carbonic vinification, with the half the fruit destemmed then pressed and the other half as whole bunches., fermented in concrete vats for two weeks with submerged cap, finishing ageing in concrete. 11.9% alc, 100% satisfaction.`,
+            IMG:'./images/Lammidia/Rosh.jpg' 
+          },
+          {
+            ID : 8,
+            WINE : 'Rosso Anfora',  
+            PRODUCER : 'Lammidia',  
+            COUNTRY : 'Italy',  
+            REGION : 'Abruzzo',  
+            VARIETY : 'Montepulciano',  
+            STYLE : 'Red',
+            ABOUT : `Foot crushed and left in contact with the skins under a submerged cap for 1 week then aged in terracotta amphora.`,
+            IMG:'./images/Lammidia/Rosso-Anfora.jpg' 
+          },
+        ]
+      },
+      {
+        COMPANY: 'Pranzegg',
+        COMPANY_ID: 11,
+        COMPANY_IMG : './images/Pranzegg/company.jpg',
+        STORY_1 : `Weingut Pranzegg is a small 3.5 hectare family estate nestled in the surrounding mountain foothills of the town of Bozen in Südtirol (or more commonly known as Alto Adige), just 50 km south of the Austrian border. The winery has been in the hands of the Gojer family for three generations. Martin took over the estate in 2008 and started the conversion to biodynamic farming straight away. Everything is done by hand here, and the wines are bottled without fining or filtration, and with minimal doses of sulphur. For Martin, the most important thing is to make ‘living wines’ that are able to express a sense of place.`,
+        STORY_2 : `Contrary to the areas largely spread cooperative system (over 90% of all grapes are bottled by cooperatives and associated winemaker structures), Martin and his partner Marion continue to preserve the small-structured farm set-up that always rooted in the philosophy of seeing a farm as a closed and sustainable eco-system. Naturally, Martin and Marion grow varieties most suited and native to the region including Lagrein, Schiava/Vernatsch - but also mixed white field blends including Müller Thurgau, Sylvaner, Pinot Blanc as well as Chardonnay, Viognier, Sauvignon and Manzoni Bianco. His vines grow on terraces with a raised pergola system typical of the region.`,
+        STORY_3 : `In the cellar, Martin allows his wines to take their time - often two or even three years on the full lees before bottling. There are no additions other than small amounts of sulphur at bottling. The wines of Pranzegg carry a real finesse with them, often only showing their potential at second glance. For Martin, it is about focus. ‘As a winegrower, it is primarily my intention to narrate the region, the scene, the year and our way of living. Working biodynamically helps us not to blur the narration.’`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Tonsur',  
+            PRODUCER : 'Pranzegg',  
+            COUNTRY : 'Italy',  
+            REGION : 'Alto Adige',  
+            VARIETY : 'Muller-Thurgau Blend',  
+            STYLE : 'White',
+            ABOUT : `A blend of Müller-Thurgau, Pinot Bianco, Sylvaner and Chardonnay, grown biodynamically on steep hillside vineyards above the town of Bolzano, 2020 is a sensational vintage of Tonsur, both compelling and a joy to drink. An aromatic and floral nose gives way to an energetic palate, showing notes of stone fruit and citrus, citrus peel, and white flowers. The wine has vibrant, zippy acidity, and a great mineral character of crushed stones, balanced by great texture from a bit of skin contact.`,
+            IMG:'./images/Pranzegg/Tonsur.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Caroline',  
+            PRODUCER : 'Pranzegg',  
+            COUNTRY : 'Italy',  
+            REGION : 'Alto Adige',  
+            VARIETY : 'Sauvignon Blanc Blend',  
+            STYLE : 'White',
+            ABOUT : `Caroline is a so-called "gemischter satz" of a vineyard with a co-plantation of Sauvignon Blanc, Chardonnay, Viognier and Manzoni Bianco. These grapes are macerated for two weeks, creating a light orange wine. Aged for 20 months in old wood. Spicy and mineral with light blossoms, tarragon, bergamot, and a perfect balance. Flawless.`,
+            IMG:'./images/Pranzegg/Caroline.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Leggero',  
+            PRODUCER : 'Pranzegg',  
+            COUNTRY : 'Italy',  
+            REGION : 'Alto Adige',  
+            VARIETY : 'Lagrein Blend',  
+            STYLE : 'Red',
+            ABOUT : `‘Rosso Leggero' is made from a blend of the two most distinctive Tyrolean grapes Vernatsch (35%) and Lagrein (65%). The interesting thing about this wine is that during the vinification, the grape skins of the white grapes of the "Caroline" cuvée were added to the fermenting wine. This gives the wine a hint of an orange wine and some extra depth without losing its fresh fruity playfulness. Kept in tank from start to finish its bright and juicy with a lovely herbal finish.`,
+            IMG:'./images/Pranzegg/Leggero.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Laurenc',  
+            PRODUCER : 'Pranzegg',  
+            COUNTRY : 'Italy',  
+            REGION : 'Alto Adige',  
+            VARIETY : 'Lagrein',  
+            STYLE : 'Red',
+            ABOUT : `"Laurenc" by Pranzegg is Martins finest example of straight Lagrein. It is silky powerful and deep. Grapes vinified in tank before ageing for two years in reasonably new barrels. 70% whole bunches adds to the crunchy texture while on the nose it smells of violet, black berries.`,
+            IMG:'./images/Pranzegg/Laurenc.jpg' 
+          },
+        ]
+      }
+    ]
+  },
+  {
+    COUNTRY: 'NEW ZEALAND',
+    DATA: [
+      {
+        COMPANY: 'Tincan Wines',
+        COMPANY_ID: 0,
+        COMPANY_IMG : './images/Tincan Wines/company.jpg',
+        STORY_1 : `We’ve long wondered how on earth there are comparatively so little organically farmed, low intervention wines to be found in New Zealand. The country seems primed on paper for winemaking full of promise; great terroir, cold and diverse micro-climates and a general level of sensibility to the people that should by all means yield boundless excitement. Enter Tincan, the brain child of Laura Tinnelly (TIN) and Nick Candy (CAN). After many years spent working in New Zealand, Australia and travelling around the world growing and making wine they decided to settle in Nelson and start a brand. Nick is the winemaker and viticulturist, while Laura manages the marketing and back of house side of the winery as well as traveling between New Zealand and the USA for work.`,
+        STORY_2 : `Nick has spent the last 18 years slowly crafting his own philosophy about wine and vines. His winemaking journey began with a degree at Lincoln University, before he went on to work at Felton Road and Peregrine in Central Otago, Riversun nursery in Marlborough, Mcwilliams in Australia and Domaine Stephane Montez in the Rhone Valley. The call to return home to be with family became too strong and Nick decided to settle in Nelson. The 2016 Vintage was somewhat of a collaboration with good friend and likeminded winemaker Alex Craighead of Kindeli. After a successful first vintage in 2016 Nick decided to lease a small 6 ha vineyard in Nelson. Nick is a Viticulturist first and foremost and a winemaker second. He is passionate about getting the vineyards to his exacting standards through hard work and dedication. He is firmly committed to minimal intervention organic farming and his 6 ha of vineyards will be certified by the 2019 vintage. He makes minimal passes through the vines with tractor preferring to do all of his vineyard work by hand to avoid soil compaction where possible.`,
+        STORY_3 : `In the cellar he carries this same minimal intervention organic principle. He makes his wines with absolutely no additions including no sulphur and all wines are fermented from wild yeasts in the vines and cellar. He loves dividing his varietals into several techniques playing around with carbonic maceration, barrel ferments and skin maceration giving him a better understanding of his vineyards potential.
+        Nick & Laura have just recently released their 2017 cuvees and they are very special. The wines are some of the most distinctive and terroir driven we have seen from New Zealand and its finally great to see some exciting minimal intervention wines emerging from our closest neighbours.`,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Persuasive Pet Nat',  
+            PRODUCER : 'Tincan Wines',  
+            COUNTRY : 'New Zealand',  
+            REGION : 'Nelson',  
+            VARIETY : 'Sauvignon Blanc',  
+            STYLE : 'Pet Nat',
+            ABOUT : `900 bottles made of this juicy fizz. Predominately Sauvignon blanc selected from three different cuvées. Barrel fermented, skin fermented and carbonic fermented. A small amount of Riesling juice was added for the secondary in-bottle ferment. 11.5% alc.`,
+            IMG:'./images/Tincan Wines/Persuasive-Pet-Nat.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Wilful White',  
+            PRODUCER : 'Tincan Wines',  
+            COUNTRY : 'New Zealand',  
+            REGION : 'Nelson',  
+            VARIETY : 'White Field Blend',  
+            STYLE : 'White',
+            ABOUT : `A field blend of Nick's main varieties; Sauvignon Blanc, Chardonnay, Pinot Gris and Riesling - all barrel fermented and aged in old oak. Zero additions at bottling.`,
+            IMG:'./images/Tincan Wines/Wilful-White.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'Sassy Sauvignon Blanc',  
+            PRODUCER : 'Tincan Wines',  
+            COUNTRY : 'New Zealand',  
+            REGION : 'Nelson',  
+            VARIETY : 'Sauvignon Blanc',  
+            STYLE : 'Skin Contact',
+            ABOUT : `A very different spin on New Zealand Sauvignon blanc. Approximately; 30% is neutral barrel-fermented with full juice solids, 30% is fermented 28 days on skins, 30% is carbonic fermented and pressed to amphora, and 8% is barrel-fermented Chardonnay with 4% Gewurztraminer. 11% alc.`,
+            IMG:'./images/Tincan Wines/Sassy-Sauvignon-Blanc.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Practically Pinot',  
+            PRODUCER : 'Tincan Wines',  
+            COUNTRY : 'New Zealand',  
+            REGION : 'Nelson',  
+            VARIETY : 'Pinot Noir',  
+            STYLE : 'Red',
+            ABOUT : `Pinot noir made up of Pinot noir co-fermented with a splash of Chardonnay. A mix of semi-carbonic and full whole-bunch stems, giving a delicate acid driven Pinot. 11.5% alc.`,
+            IMG:'./images/Tincan Wines/Practically-Pinot.jpg' 
+          },
+          {
+            ID : 4,
+            WINE : 'Cult Crimson',  
+            PRODUCER : 'Tincan Wines',  
+            COUNTRY : 'New Zealand',  
+            REGION : 'Nelson',  
+            VARIETY : 'Pinot Noir',  
+            STYLE : 'Red',
+            ABOUT : `100% Pinot Noir (667 clone) from the old Mahana vineyard in Nelson, a well known organically certified site. 50% destemmed in the fermenter on top of the remaining carbonically treated half. Stomped and kept on the stems left from the carbonic treatment. Pressed to and left in amphora for 10 months.`,
+            IMG:'./images/Tincan Wines/Cult-Crimson.jpg' 
+          },
+        ]
+      }
+    ]
+  },
+  {
+    COUNTRY: 'UNITED STATES',
+    DATA: [
+      {
+        COMPANY: 'Hermann J. Wiemer',
+        COMPANY_ID: 0,
+        COMPANY_IMG : './images/Hermann J. Wiemer/company.jpg',
+        STORY_1 : `Hermann Wiemer has been a viticulture and winemaking pioneer in New York since he emigrated from Bernkastel, Germany in the 1960s, and the winery today remains a leader in the Finger Lakes for both wine production and vine propagation.`,
+        STORY_2 : `With a family history of over 300 years of winemaking experience in the Mosel, and his father being responsible for restoring vines in that region after World War II, HJW seemed destined to make a mark. Hermann grew up learning to graft vines by hand with his father before attending prestigious German winemaking and viticultural institutions. When Hermann moved to New York he discovered that the western shore of Seneca Lake was quite similar to the cool climate and gravelly soils of the Mosel. Using his grafting skills, Wiemer planted one of the first successful vinifera vineyards on Seneca Lake in 1976. His dedication and attention to detail allowed the project to thrive, and Hermann J. Wiemer has become known as one of the leading Riesling producers in all of the US.`,
+        STORY_3 : ``,
+        LIST : [
+          {
+            ID : 0,
+            WINE : 'Dry Riesling',  
+            PRODUCER : 'Hermann J. Wiemer',  
+            COUNTRY : 'United States',  
+            REGION : 'Fingerlakes',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Exceptional grapes are chosen from each of the three vineyard locations, 65% HJW Vineyard, 23% Josef Vineyard, and 12% Magdalena Vineyard, and then fermented in small lots and blended to ensure texture and balance. This wine is crafted to serve as an emblem of the standard of quality that has become tradition at Hermann J. Wiemer Vineyard. The wine is harvested at a Spätlese level of ripeness and then whole cluster pressed, cold fermented for 3+ months until dry, unfined and unfiltered, and finishes with a 0.9% RS and 12% abv.`,
+            IMG:'./images/Hermann J. Wiemer/Dry-Riesling.jpg' 
+          },
+          {
+            ID : 1,
+            WINE : 'Magdalena Dry Riesling',  
+            PRODUCER : 'Hermann J. Wiemer',  
+            COUNTRY : 'United States',  
+            REGION : 'Fingerlakes',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `The unique traits of Wiemer’s Magdalena Vineyard are featured in this lush Riesling. A beneficial air exchange with Seneca Lake moderates the temperatures with airflow keeping the vineyard dry. The lime silt, loam soils that the site is celebrated for is crucial to the development of flavour intensity in the grapes. Whole-cluster pressed, cold fermentation for 7+ months, no fining or filtration. 8 g/L RS, 12.5% abv. Magdalena is striking and powerful, something to celebrate.`,
+            IMG:'./images/Hermann J. Wiemer/Magdalena-Dry-Riesling.jpg' 
+          },
+          {
+            ID : 2,
+            WINE : 'HJW Dry Riesling',  
+            PRODUCER : 'Hermann J. Wiemer',  
+            COUNTRY : 'United States',  
+            REGION : 'Fingerlakes',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Planted in 1976, the HJW Vineyard features Hermann’s original plantings on Seneca Lake. Mature vines combined with the site’s shallow topsoil and shale bedrock produce lower yields resulting in expressively vibrant flavours. Higher elevation and a greater distance from Seneca Lake contribute to a cooler growing season, resulting in a leaner, more austere wine with intense flavour and an excellent ageing potential. This wine finishes with a 0.8% RS and 12.3% abv. Only 185 cases produced.`,
+            IMG:'./images/Hermann J. Wiemer/HJW-Dry-Riesling.jpg' 
+          },
+          {
+            ID : 3,
+            WINE : 'Late Harvest Riesling',  
+            PRODUCER : 'Hermann J. Wiemer',  
+            COUNTRY : 'United States',  
+            REGION : 'Fingerlakes',  
+            VARIETY : 'Riesling',  
+            STYLE : 'White',
+            ABOUT : `Crafted in the traditional German Spätlese style; with moderate natural sweetness counterpoised by a bright, invigorating liveliness. In a yearly gamble of Russian-roulette against the weather, grapes for Spätlese wines are left to hang for a longer time on the vines, allowing them to develop riper flavour profiles. 60% from the Josef Vineyard, 35% from Magdalena, and 5% from HJW. 5.2% RS and 8.5% abv. Something to revel.`,
+            IMG:'./images/Hermann J. Wiemer/Late-Harvest-Riesling.jpg' 
+          },
+        ]
+      }
+    ]
   }
 ]
 

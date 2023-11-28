@@ -27,12 +27,12 @@
                 </tr>
               </thead>
               <tbody>
-
-                <template v-for=" wines in DataWineList">
-                  <tr v-for="(ele,idx) in wines.DATA" :key="idx">
-                    <td>{{ ele.LIST[0].WINE }}</td> 
+              
+                  <tr class="content" v-for="(a) in this.companyArr" :key="a">
+                    <td>{{ a.WINE }}</td>
                   </tr>
-                </template>
+
+
 
               </tbody>
             </table>
@@ -51,6 +51,8 @@ export default {
     return{
       headerClass:'list',
       title:'The Wine List',
+      countryArr: [],
+      companyArr: []
     }
   },
   props : {
@@ -69,7 +71,6 @@ export default {
     },
     filterTable(){
       let filter = event.target.value.toUpperCase();
-      console.log(filter);
       
       let rows = document.querySelector(".table tbody").rows;
       for(let i = 0; i < rows.length; i++){
@@ -92,6 +93,7 @@ export default {
     }
   },
   mounted(){
+
     // sort
     let click =[0,0,0,0,0,0]
     const tbody = document.querySelector('tbody');
@@ -114,7 +116,6 @@ export default {
         }
       })
     })
-
     function rowsArr1(index){
       wineSort = function(rowA,rowB){
         return rowA.cells[index].innerHTML > rowB.cells[index].innerHTML ? 1 : -1;          
@@ -125,10 +126,18 @@ export default {
         return rowA.cells[index].innerHTML < rowB.cells[index].innerHTML ? 1 : -1;          
       };
     }
-    
   },
-  created() {
-  },
+  created(){
+    // DataWineList[국가갯수].DATA[데이터갯수].LIST
+    this.DataWineList.forEach((ele)=>{
+      for(let a of ele.DATA){
+        this.countryArr.push(a)
+        for(let b of a.LIST){
+          this.companyArr.push(b)
+        }
+      }
+    })
+  }
 }
 </script>
 

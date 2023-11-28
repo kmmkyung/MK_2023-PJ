@@ -1771,7 +1771,6 @@ const DataWineList = [
       }
     ]
   },
-
   {
     COUNTRY: 'FRANCE',
     DATA : [
@@ -3011,7 +3010,8 @@ const DataWineList = [
           },
         ]
       },
-      'Le Facteur' : {
+      {
+        COMPANY: 'Le Facteur',
         COMPANY_ID: 18,
         COMPANY_IMG : './images/Le Facteur/company.jpg',
         STORY_1 : `Le Facteur, translating to ‘The Postman’, is a dynamic partnership between Mathieu Cosme, an established biodynamic Loire producer working under the moniker ‘Domaine de Beaumont’ who has already gained a strong following in his own right, and his once-importer Fabien Brutout. Fabien first joined Mathieu back in 2008 to help in the vineyards and after the two quickly become fond of one another the duo decided to start Le Facteur, a pursuit for making unadulterated Pet-Nat from Vouvray and following their passion for hands-off winemaking.`,
@@ -3065,8 +3065,9 @@ const DataWineList = [
             IMG:'./images/Le Facteur/Pineau-d-Aunis.jpg' 
           },
         ]
-      },  
-      'Les Errances' : {
+      },
+      {
+        COMPANY: 'Les Errances',
         COMPANY_ID: 19,
         COMPANY_IMG : './images/Les Errances/company.jpg',
         STORY_1 : `Les Errances or “Wanderings” is a winery owned by Warren and Maïté Perrocheau who met in 2009 in business school. After travelling the world living in Mexico and Sweden they finally ended up in France and after a few years in the corporate world they decided to move to the Loire Valley for a slower lifestyle. After completing their viticultural studies and working with some of the region’s greats they founded Les Errances in 2018.`,
@@ -3130,7 +3131,8 @@ const DataWineList = [
           },
         ]
       },
-      'Les Grangeons de l’Albarine' : {
+      {
+        COMPANY: 'Les Grangeons de l’Albarine',
         COMPANY_ID: 20,
         COMPANY_IMG : './images/Les Grangeons de l’Albarine/company.jpg',
         STORY_1 : `Based out on the famed slopes of Bugey, perhaps best known for the dry and semi sweet ‘Bugey Cordon’ sparkling wines is Luc Bauer, residing in the tiny village of Argis in Bugey. Interestingly enough there isn’t a sparkling wine in sight in Luc’s cellar.`,
@@ -3231,7 +3233,8 @@ const DataWineList = [
           },
         ]
       },
-      'Les Vignes de Paradis' : {
+      {
+        COMPANY: 'Les Vignes de Paradis',
         COMPANY_ID: 21,
         COMPANY_IMG : './images/Les Vignes de Paradis/company.jpg',
         STORY_1 : `Dominique Lucas has chosen what many would seem an idealistic pursuit, to make Chasselas in the Savoie that stands with the best white wines of France. Despite the grapes low reputation Dominique has been planting the on serious terroirs overlooking Lac Leman (Lake Geneva) and farming them biodynamically since day one. Lucas is a 5th generation winemaker who migrated from his native Burgundy, frustrated with the region’s reliance on chemicals. He landed at a small local winery at Ballaison, on the shore of Lake Geneva. Here, he founded Les Vignes de Paradis, where he trains vines in a chaotic, unpruned method reminiscent of Burgundy’s Lalou Bize-Leroy.`,
@@ -3319,7 +3322,8 @@ const DataWineList = [
           },
         ]
       },
-      'Louis Terral' : {
+      {
+        COMPANY: 'Louis Terral',
         COMPANY_ID: 22,
         COMPANY_IMG : '',
         STORY_1 : `There is new blood in Bugey and he comes by the name Louis Terral. Louis recently settled in the historic stronghold of Mérignat making wines that are truly unique for the region. There is not a sweet nor sparkling wine in sight instead, Louis is making enigmatic examples of still dry Gamay from a selection of steep vineyards in the hills surrounding. He draws upon his years of experience working for the likes of Julie Balagny, Jean Louis Dutraive and Philippe Valette to make wines that truly stand out. Louis is a superstar in the making, doing everything by hand and not taking a single short cut resulting in pure, ethereal examples of mountain Gamay.`,
@@ -3361,7 +3365,8 @@ const DataWineList = [
           },
         ]
       },
-      'Lulu Vigneron' : {
+      {
+        COMPANY: 'Lulu Vigneron',
         COMPANY_ID: 23,
         COMPANY_IMG : './images/Lulu Vigneron/company.jpg',
         STORY_1 : `Previously known as Les Chais du Vieux Bourg, Lulu Vigneron is introducing a new look for Ludwig’s wines. The winery has completed a full conversion to 100% organic viticulture and believes the occasion deserves a modern name and label. Ludwig Bindernagel is know to his friends and colleagues as Lulu, so this affectionate nickname was the natural choice for the winery.`,
@@ -3461,7 +3466,8 @@ const DataWineList = [
           },
         ]
       },
-      'Mai & Kenji Hodgson' : {
+      {
+        COMPANY: 'Mai & Kenji Hodgson',
         COMPANY_ID: 24,
         COMPANY_IMG : './images/Mai & Kenji Hodgson/company.jpg',
         STORY_1 : `Japanese-Canadians Mai & Kenji Hodgson made the jump from Vancouver to the Loire back in 2009 after their years of wine loving turned eventually forced it’s hand into wine making. Born and raised in the outskirts of Vancouver, Kenji studied mechanical engineering at British Columbia University and alongside his studies discovered his love for wine. Shortly after meeting Mai the two travelled to Japan where their affection for minimal intervention wine grew and eventually found themselves in the heart of the Loire.`,
@@ -3514,7 +3520,8 @@ const DataWineList = [
           },
         ]
       },
-      'Matassa' : {
+      {
+        COMPANY: 'Matassa',
         COMPANY_ID: 25,
         COMPANY_IMG : './images/Matassa/company.jpg',
         STORY_1 : `Since founding Lo-Fi 4 years ago we have had the privilege of meeting some incredible winemakers and growers. We have learnt and been able to grow from all of these people whom we regard as part of our family. None have quite captured and guided our minds to the extent that Tom Lubbe from Matassa has. Tom is a true gentleman with an incredible view of the world. His kind sensibility and nurturing personality has not only helped guide us but has had an incredible impact on winemakers across the globe.`,
@@ -3701,7 +3708,8 @@ const DataWineList = [
           },
         ]
       },
-      'Raphaëlle Guyot' : {
+      {
+        COMPANY: 'Raphaëlle Guyot',
         COMPANY_ID: 26,
         COMPANY_IMG : './images/Raphaëlle Guyot/company.jpg',
         STORY_1 : `Raphaëlle Guyot is one of France’s most exciting young winemakers. In just her late 20’s she has established her winery in her home region of Yonne. The winery sits on the periphery of what is still considered Burgundy, being geographically almost closer to the Loire than it is to the heart of Burgundian production. After obtaining a BTS viticulture-oenology diploma in Beaune in 2015, she trained in different domains across France (Domaine Thibault Liger Belair at Nuits Saint-Georges, Domaine de la Grange Tiphaine in Amboise, Vincent Pinard at Sancerre, Clos du Rouge Gorge in Latour-de-France).`,
@@ -3765,7 +3773,8 @@ const DataWineList = [
           },
         ]
       },
-      'Thomas Boutin' : {
+      {
+        COMPANY: 'Thomas Boutin',
         COMPANY_ID: 27,
         COMPANY_IMG : './images/Thomas Boutin/company.jpg',
         STORY_1 : `Thomas Boutin is based in the mid-part of the Loire where he started exploring winemaking in 2008, with only 1.8 hectares. By 2011, he secured a winery and vines from his mentor and has progressively built up to a humble, small-scale operation. Thomas farms 2 hectares in Rochefort-sur-Loire and 1 hectare in Saint Aubin and to our eyes is constantly evolving as a winemaker, experimenting in styles whilst learning and finding his own rhythm. His wines are made without any use of chemicals, are unfined and unfiltered and little use of sulphur.`,
@@ -3807,7 +3816,8 @@ const DataWineList = [
           },
         ]
       },
-      'Val de Combres' : {
+      {
+        COMPANY: 'Val de Combres',
         COMPANY_ID: 28,
         COMPANY_IMG : './images/Val de Combres/company.jpg',
         STORY_1 : `Valentin Létoquart is one of the southern Rhone’s most exciting young producers. Disillusioned by seeing his hard work in the vineyard lost in the bottle Val decided to break away from the Cooperative he was growing for and in 2013 Val de Combrès was born. Valentin now manages 7ha of certified biodynamic vines in Oppède and Ménerbes, in the heart of Luberon southeastern Rhone Valley.`,
@@ -3916,11 +3926,8 @@ const DataWineList = [
           },
         ]
       }
-    },
-  ]
+    ],
   }
-  
-
 ]
 
 export default DataWineList;

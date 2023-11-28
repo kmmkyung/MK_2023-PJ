@@ -8,9 +8,10 @@
           <div class="wines-wrap">
             <div class="wines-list">
               <ul class="item-list">
-                <li class="item" v-for="(ele,idx) in DataWineList" :key="idx">
-                  <h3>{{ idx }}</h3>
-                  <h4></h4>
+                <!-- {{ $route.params.id }} -->
+                <li class="item" v-for="(ele,idx) in countryArr" :key="idx">
+                  <h3>{{ ele }}</h3>
+                  <!-- <h4>{{ ele.VARIETY }}</h4> -->
                   <span>more</span>
                 </li>
               </ul>
@@ -63,14 +64,27 @@ import ComMenu from './com-Menu.vue'
 export default {
   data(){
     return{
-      headerClass:'company'
+      headerClass:'company',
+      countryArr:[],
+      companyArr:[]
     }
   },
   components:{
     ComMenu
   },
   props:{
-    DataWineList:Array
+    DataWineList:Array,
+    idx:Number
+  },
+  created(){
+    this.DataWineList.forEach((ele)=>{
+      this.countryArr.push(...ele.DATA)
+      console.log(this.countryArr[this.idx]);
+      
+      // this.countryArr.forEach((ele)=>{
+        // this.companyArr.push(ele.LIST)
+      // })
+    })
   }
 }
 </script>

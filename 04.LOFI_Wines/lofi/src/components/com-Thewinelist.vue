@@ -27,13 +27,14 @@
                 </tr>
               </thead>
               <tbody>
-              
-                  <tr class="content" v-for="(a) in this.companyArr" :key="a">
-                    <td>{{ a.WINE }}</td>
-                  </tr>
-
-
-
+                <tr class="content" v-for="(ele) in this.companyArr" :key="ele">
+                  <td>{{ ele.WINE }}</td>
+                  <td>{{ ele.PRODUCER }}</td>
+                  <td>{{ ele.COUNTRY }}</td>
+                  <td>{{ ele.REGION }}</td>
+                  <td>{{ ele.VARIETY }}</td>
+                  <td>{{ ele.STYLE }}</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -128,14 +129,11 @@ export default {
     }
   },
   created(){
-    // DataWineList[국가갯수].DATA[데이터갯수].LIST
     this.DataWineList.forEach((ele)=>{
-      for(let a of ele.DATA){
-        this.countryArr.push(a)
-        for(let b of a.LIST){
-          this.companyArr.push(b)
-        }
-      }
+      this.countryArr.push(...ele.DATA)
+      this.countryArr.forEach((ele)=>{
+        this.companyArr.push(...ele.LIST)
+      })
     })
   }
 }

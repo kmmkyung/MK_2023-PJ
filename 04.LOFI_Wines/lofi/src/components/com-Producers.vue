@@ -8,7 +8,7 @@
           
           <li class="list" v-for="(ele,idx) in DataWine" :key="idx">
             <ol class="item-container">{{ idx }}
-              <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx">
+              <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx" :ele="ele">
                 <router-link :to="`/company/${ele}`" class="btn-underline" :idx="idx">{{ ele }}</router-link>
               </li>
             </ol>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass"></com-menu>
+    <com-menu :headerClass="headerClass" :title="ele"></com-menu>
     <main id="main">
       <div class="headerBG"></div>
       <section id="wines" class="wines">
@@ -8,10 +8,12 @@
           <div class="wines-wrap">
             <div class="wines-list">
               <ul class="item-list">
-                <li class="item" v-for="(ele,idx) in findListArr" :key="idx">
-                  <h3>{{ ele.WINE }}</h3>
-                  <h4>{{ ele.VARIETY }}</h4>
-                  <span>more</span>
+                <li class="item" v-for="(wine,idx) in findListArr" :key="idx">
+                  <router-link :to="`/company/${wine.PRODUCER}/${wine.WINE}`">
+                    <h3>{{ wine.WINE }}</h3>
+                    <h4>{{ wine.VARIETY }}</h4>
+                    <span>more</span>
+                  </router-link>
                 </li>
               </ul>
             </div>
@@ -42,15 +44,15 @@
           <span v-on:click="storyRead()" class="btn-line readBtn">READ MORE</span>
         </div>
         <div class="company-right">
-          <div class="company-imgBox" v-if="findArr.COMPANY_IMG !==''">
+          <div class="company-imgBox" v-if="findArr.COMPANY_IMG !=='' ">
             <img :src="require(`../${findArr.COMPANY_IMG}`)" alt="company" >
           </div>
         </div>
       </section>
       <div class="btn">
-        <a class="btn-line" href="#">PREV</a>
+        <span class="btn-line" v-on:click="prevClick()">PREV</span>
         <span class="btn-line topBtn" v-on:click="topClick()">TOP</span>
-        <a class="btn-line" href="#" v-on:click="nextClick()">NEXT</a>
+        <span class="btn-line" v-on:click="nextClick()">NEXT</span>
       </div>
     </main>
   </div>
@@ -76,7 +78,7 @@ export default {
     DataWine:Object,
     DataWineList:Array,
     idx:Number,
-    ele:String
+    title:String
   },
   methods:{
     storyRead(){
@@ -107,6 +109,13 @@ export default {
           this.$router.push(`${this.DataWine[ele][idx+1]}`)
         }})
       })
+    },
+    prevClick(){
+      this.$store.state.country.forEach((ele)=>{
+        this.DataWine[ele].findIndex((company,idx) => { if(company == this.routeID){
+          this.$router.push(`${this.DataWine[ele][idx-1]}`)
+        }})
+      })
     }
   },
   created(){    
@@ -133,8 +142,10 @@ export default {
     
     item.forEach((ele,idx)=>{
       ele.addEventListener('mouseenter',()=>{
-        if(this.findListArr[idx].IMG == ''){itemImg.style.backgroundImage = ''}
-        itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[idx].IMG}`) + ')'
+        if(this.findListArr[idx].IMG == ''){itemImg.style.backgroundImage = 'none'}
+        else{
+          itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[idx].IMG}`) + ')'
+        }
         
         ele.classList.add('colorB');
         let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')

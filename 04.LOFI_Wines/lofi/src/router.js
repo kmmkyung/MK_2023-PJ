@@ -8,6 +8,7 @@ import contact from './components/com-Contact.vue'
 import producers from './components/com-Producers.vue'
 import thewinelist from './components/com-Thewinelist.vue'
 import company from './components/com-Company.vue'
+import about from './components/com-About.vue'
 
 // 3. 경로를 정의하고, 각 경로를 컴포넌트와 매핑.
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
   {path: "/contact", component: contact},
   {path: "/producers", component: producers},
   {path: "/company/:id", component: company},
+  {path: "/company/:id/:about", component: about},
   {path: "/thewinelist", component: thewinelist},
 ];
 

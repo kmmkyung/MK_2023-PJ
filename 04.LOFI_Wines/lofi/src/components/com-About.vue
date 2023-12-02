@@ -1,5 +1,6 @@
 <template>
   <div>
+    <com-menu></com-menu>
     <main>
       <div class="headerBG"></div>
       <section class="wines">
@@ -10,7 +11,7 @@
             <p class="about"></p>
           </div>
           <div class="info">
-            <router-link class="btn-line">VIEW ALL WINES</router-link>
+            <!-- <router-link class="btn-line" >VIEW ALL WINES</router-link> -->
           </div>
         </div>
         <div class="wines-right">
@@ -24,7 +25,7 @@
 </template>
 
 <script>
-// import ComMenu from './com-Menu.vue';
+import ComMenu from './com-Menu.vue';
 
 export default {
   data(){
@@ -33,7 +34,7 @@ export default {
     }
   },
   components :{
-    // ComMenu
+    ComMenu
   },
 }
 </script>

@@ -9,7 +9,7 @@
             <div class="wines-list">
               <ul class="item-list">
                 <li class="item" v-for="(wine,idx) in findListArr" :key="idx">
-                  <router-link :to="`/company/${wine.PRODUCER}/${wine.WINE}`">
+                  <router-link :to="`/company/${routeID}/${wine.WINE}`">
                     <h3>{{ wine.WINE }}</h3>
                     <h4>{{ wine.VARIETY }}</h4>
                     <span>more</span>

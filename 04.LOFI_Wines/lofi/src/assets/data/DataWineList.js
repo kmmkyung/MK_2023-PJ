@@ -693,7 +693,7 @@ const DataWineList = [
             VARIETY : "Nero d'Avola",  
             STYLE : 'Red',
             ABOUT : `Sourced from the Chalmers vineyard in Northern Heathcote, on ancient cambrian clay. East facing, organic viticulture. 65% whole bunch, 3 weeks maceration with no pumping over or plunging. The wine was rested in old large format oak for 6 months, before being sulphured once, and bottled without fining or filtration.`,
-            IMG:"./imagesEphemera/Ephemera-Nero-d'Avola.jpg" 
+            IMG: "assets/images/Ephemera/Ephemera-Nero-d'Avola.jpg" 
           },
           {
             ID : 6,
@@ -2428,7 +2428,7 @@ const DataWineList = [
             VARIETY : 'Pinot Noir/Gamay',  
             STYLE : 'Red',
             ABOUT : `A blend of Pinot noir and Gamay from purchased organic vineyards in the lower part of Meursault. Spontaneous fermentation of whole bunches in a fiberglass tank, with ten-day skin maceration. After pressing, the wine was fully fermented and rested for nine months in older burgundy barrels. No additives.`,
-            IMG: 'assets/images/Domaine Didon/VDF-Pinot/Gamay.jpg' 
+            IMG: 'assets/images/Domaine Didon/VDF-Pinot-Gamay.jpg' 
           },
         ]
       },
@@ -2526,7 +2526,7 @@ const DataWineList = [
             VARIETY : 'Grenache/Syrah',  
             STYLE : 'Red',
             ABOUT : `70% Grenache, 30% Syrah, a maceration of 10 weeks aged in old barrels for 8 months. Gravity fed throughout the winery and bottled with zero additions.`,
-            IMG: 'assets/images/Domaine Houillon/Grenache/Syrah.jpg' 
+            IMG: 'assets/images/Domaine Houillon/Grenache-Syrah.jpg' 
           },
           {
             ID : 4,
@@ -2537,7 +2537,7 @@ const DataWineList = [
             VARIETY : 'Grenache/Syrah/Cinsault',  
             STYLE : 'Red',
             ABOUT : `70% Grenache, 20% Syrah, 10% Cinsault, co-fermented maceration was for 10 weeks, this wine is free run juice only and all in tank.. Gravity fed throughout the winery and bottled with zero additions.`,
-            IMG: 'assets/images/Domaine Houillon/Grenache/Syrah/Cinsault.jpg' 
+            IMG: 'assets/images/Domaine Houillon/Grenache-Syrah-Cinsault.jpg' 
           },
           {
             ID : 5,
@@ -2810,7 +2810,7 @@ const DataWineList = [
             VARIETY : 'Syrah',  
             STYLE : 'Red',
             ABOUT : `100% Syrah from bush vines aged 90 years old, planted on deep silt soils. The fruit was hand harvested, macerated for one week, wild fermented and then matured in a neutral fibreglass vat. Organic, wild fermented, unfiltered, unfined, minimal sulphites added at bottling.`,
-            IMG: 'assets/images/Joe ChandellierCostal.jpg' 
+            IMG: 'assets/images/Joe Chandellier/Costal.jpg' 
           },
         ]
       },
@@ -3948,7 +3948,7 @@ const DataWineList = [
             VARIETY : 'Riesling',  
             STYLE : 'White',
             ABOUT : `Five different wine villages and five different soil types inspired the creation of the Latin term Qvinterra. The name indicates that our estate owns vineyards in the five famous villages on the Rhine Terrace: Oppenheim, Nierstein, Nackenheim, Bodenheim, and Laubenheim.`,
-            IMG: 'assets/images/Kühling-Gillot/Qvinterra-Trocken.jpg' 
+            IMG: 'assets/images/Kühling-Gillot/Qvinterra-Trocken.jpg' 
           },
           {
             ID : 1,
@@ -3970,7 +3970,7 @@ const DataWineList = [
             VARIETY : 'Riesling',  
             STYLE : 'White',
             ABOUT : `The name Ölberg comes from a monastery and has biblical references - The Mount of Olives. The vineyard is in central of the Red Slope portion of Carolin's holdings and has an expansion to the south. It is 60 % in steep on porous soil, a perfect thermal store where the grapes get to perfect ripeness. Given the name, Ölberg is oily and has a lot of viscosity. Matured in 1200L barrels, 3.5 g/L RS at 12.5% abv.`,
-            IMG: 'assets/images/Kühling-Gillot/Ölberg-Grosse-Gewächs-Grand-Cru.jpg' 
+            IMG: 'assets/images/Kühling-Gillot/Ölberg-Grosse-Gewächs-Grand-Cru.jpg' 
           },
           {
             ID : 3,
@@ -3981,7 +3981,7 @@ const DataWineList = [
             VARIETY : 'Riesling',  
             STYLE : 'White',
             ABOUT : `The steep Hipping site has a 53% to 80% slope that descends towards the Rhine (which is quite wide in this section) with a southeast exposition. The lake-like broadening of the Rhine, the intense morning sun, and the highly weathered red slate strongly influences the microclimate. Matured in 1200L barrels, 2.7 g/L RS and 12.7% alc.`,
-            IMG: 'assets/images/Kühling-Gillot/Hipping-Grosse-Gewächs-Grand-Cru.jpg' 
+            IMG: 'assets/images/Kühling-Gillot/Hipping-Grosse-Gewächs-Grand-Cru.jpg' 
           },
           {
             ID : 4,
@@ -3992,7 +3992,7 @@ const DataWineList = [
             VARIETY : 'Riesling',  
             STYLE : 'White',
             ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. Matured is 1200L barrels, 2.8 g/L and 12.5% abv.`,
-            IMG: 'assets/images/Kühling-Gillot/Pettenthal-Grosse-Gewächs-Grand-Cru.jpg' 
+            IMG: 'assets/images/Kühling-Gillot/Pettenthal-Grosse-Gewächs-Grand-Cru.jpg' 
           },
           {
             ID : 5,
@@ -4003,7 +4003,7 @@ const DataWineList = [
             VARIETY : 'Riesling',  
             STYLE : 'Dessert',
             ABOUT : `Pettenthal lies in the famous 'Red Slope' of Rheinhessen, the steepest site in all of Rheinhessen. Its steep gradient and southeasterly exposure ensure that the grapes profit from the morning sunlight, which is also reflected by the Rhine River. Nightly dew can dry quickly, helping grapes remain healthy on the vines well into November. The Riesling grows on red shale on ground so soft and porous the roots can practically eat their way through the stone. 60.1 g/L RS, 9.5% alc.`,
-            IMG: 'assets/images/Kühling-Gillot/Pettenthal-Spätlese-Grosse-Gewächs-Grand-Cru.jpg' 
+            IMG: 'assets/images/Kühling-Gillot/Pettenthal-Spätlese-Grosse-Gewächs-Grand-Cru.jpg' 
           },
         ]
       },

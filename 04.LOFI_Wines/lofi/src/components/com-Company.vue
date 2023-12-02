@@ -152,7 +152,7 @@ export default {
     this.findListArr[0].IMG !==''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
     
     if(itemList.scrollHeight >= 360){
-      item[item.length-1].style.marginBottom = '100%'
+      item[item.length-1].style.marginBottom = '10rem'
     }
     
     item.forEach((ele,idx)=>{

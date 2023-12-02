@@ -6,7 +6,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import main from './components/com-Main.vue'
 import contact from './components/com-Contact.vue'
 import producers from './components/com-Producers.vue'
-import thewinelist from './components/com-Thewinelist.vue'
+import theWineList from './components/com-Thewinelist.vue'
 import company from './components/com-Company.vue'
 import about from './components/com-About.vue'
 
@@ -18,7 +18,7 @@ const routes = [
   {path: "/producers", component: producers},
   {path: "/company/:id", component: company},
   {path: "/company/:id/:about", component: about},
-  {path: "/thewinelist", component: thewinelist},
+  {path: "/theWineList", component: theWineList},
 ];
 
 // 4. 위에 만든 `routes`변수를 전달해 라우터 인스턴스를 생성.

@@ -1,5 +1,5 @@
-const DataWine = {
-  'AUSTRALIA' : [
+const DataWine = [
+  [
     'Ada Wines',
     'ARC Wines',
     'Architects of Wine',
@@ -13,13 +13,13 @@ const DataWine = {
     'Sigurd',
     'Sonnen'
   ],
-  'AUSTRIA' : [
+  [
     'Christian Tschida',
     'Claus Preisinger',
     'Gut Oggau',
     'Michael Gindl'
   ],
-  'FRANCE' : [
+  [
     'Alexandre Jouveaux',
     'Amaury Beaufort',
     'Chateau de Beru',
@@ -50,14 +50,14 @@ const DataWine = {
     'Thomas Boutin',
     'Val de Combres'
   ],
-  'GERMANY' : [
+  [
     'Kühling-Gillot',
     'Melsheimer'
   ],
-  'HUNGARY' : [
+  [
     'Peter Wetzer'
   ],
-  'ITALY' : [
+  [
     'Al di là del Fiume',
     'Alessandro Viola',
     'Cantina Margo',
@@ -71,12 +71,12 @@ const DataWine = {
     'Lammidia',
     'Pranzegg'
   ],
-  'NEW ZEALAND' : [
+  [
     'Tincan Wines'
   ],
-  'UNITED STATES' : [
+  [
     'Hermann J. Wiemer'
   ]
-}
+]
 
 export default DataWine

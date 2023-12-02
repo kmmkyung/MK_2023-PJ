@@ -6,10 +6,10 @@
       <div class="content">
         <ul class="list-container">
           
-          <li class="list" v-for="(ele,idx) in DataWine" :key="idx">
+          <li class="list" v-for="(country,idx) in DataWine" :key="idx">
             <ol class="item-container">{{ idx }}
-              <li class="item" v-for="(ele,idx) in DataWine[idx]" :key="idx" :ele="ele">
-                <router-link :to="`/company/${ele}`" class="btn-underline" :idx="idx" :title="ele ">{{ ele }}</router-link>
+              <li class="item" v-for="(companyItem,idx) in DataWine[idx]" :key="idx">
+                <router-link :to="`/company/${companyItem}`" class="btn-underline" :idx="idx" :title="companyItem ">{{ companyItem }}</router-link>
               </li>
             </ol>
           </li>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass" :title="ele"></com-menu>
+    <com-menu :headerClass="headerClass"></com-menu>
     <main id="main">
       <div class="headerBG"></div>
       <section id="wines" class="wines">
@@ -69,16 +69,17 @@ export default {
       routeID : this.$route.params.id,
       findArr:[],
       findListArr:[],
+      companyArrItem : []
     }
   },
   components:{
     ComMenu
   },
   props:{
-    DataWine:Object,
+    DataWine:Array,
     DataWineList:Array,
     idx:Number,
-    title:String
+    title:String,
   },
   methods:{
     storyRead(){
@@ -104,17 +105,16 @@ export default {
       winesPage.scrollIntoView({ behavior: "smooth", block: "start"});
     },
     nextClick(){
-      this.$store.state.country.forEach((ele)=>{
-        this.DataWine[ele].findIndex((company,idx) => { if(company == this.routeID){
-          this.$router.push(`${this.DataWine[ele][idx+1]}`)
-        }})
-      })
+      this.companyArrItem.findIndex((company,idx) => {
+        if(company == this.routeID && idx !== this.companyArrItem.length-1){
+        this.$router.push(`${this.companyArrItem[idx+1]}`)
+      }})
     },
     prevClick(){
-      this.$store.state.country.forEach((ele)=>{
-        this.DataWine[ele].findIndex((company,idx) => { if(company == this.routeID){
-          this.$router.push(`${this.DataWine[ele][idx-1]}`)
-        }})
+      this.companyArrItem.findIndex((company,idx) => {
+        if(company == this.routeID && idx !== 0){
+          this.$router.push(`${this.companyArrItem[idx-1]}`)
+        }
       })
     }
   },
@@ -129,6 +129,13 @@ export default {
       }
     })
     
+    this.companyArr = this.DataWine;
+    let companyArrValues = [...this.companyArr];
+    companyArrValues.forEach((ele)=>{
+      ele.forEach((item)=>{
+        this.companyArrItem.push(item)
+      })
+    })
   },
   mounted(){
     const itemList = document.querySelector('.item-list');
@@ -140,25 +147,24 @@ export default {
       item[item.length-1].style.marginBottom = '100%'
     }
     
-    item.forEach((ele,idx)=>{
-      ele.addEventListener('mouseenter',()=>{
+    item.forEach((item,idx)=>{
+      item.addEventListener('mouseenter',()=>{
         if(this.findListArr[idx].IMG == ''){itemImg.style.backgroundImage = 'none'}
         else{
           itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[idx].IMG}`) + ')'
         }
-        
-        ele.classList.add('colorB');
-        let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
-        notEle.forEach(function(ele){
-          ele.classList.add('colorGray');
-        })
+    item.classList.add('colorB');
+      let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
+      notEle.forEach(function(item){
+        item.classList.add('colorGray');
       })
-      ele.addEventListener('mouseleave',()=>{
+    })
+    item.addEventListener('mouseleave',()=>{
         this.findListArr[0].IMG !==''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
         let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
-        ele.classList.remove('colorB');
-        notEle.forEach(function(ele){
-          ele.classList.remove('colorGray');
+        item.classList.remove('colorB');
+        notEle.forEach(function(item){
+        item.classList.remove('colorGray');
         })
       })
     })

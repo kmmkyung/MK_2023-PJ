@@ -147,24 +147,22 @@ export default {
       item[item.length-1].style.marginBottom = '100%'
     }
     
-    item.forEach((item,idx)=>{
-      item.addEventListener('mouseenter',()=>{
+    item.forEach((ele,idx)=>{
+      ele.addEventListener('mouseenter',()=>{
         if(this.findListArr[idx].IMG == ''){itemImg.style.backgroundImage = 'none'}
-        else{
-          itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[idx].IMG}`) + ')'
-        }
-    item.classList.add('colorB');
-      let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
-      notEle.forEach(function(item){
-        item.classList.add('colorGray');
-      })
-    })
-    item.addEventListener('mouseleave',()=>{
-        this.findListArr[0].IMG !==''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
+        else{itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[idx].IMG}`) + ')'}
+        ele.classList.add('colorB');
         let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
-        item.classList.remove('colorB');
-        notEle.forEach(function(item){
-        item.classList.remove('colorGray');
+        notEle.forEach(function(ele){
+          ele.classList.add('colorGray');
+        })
+      })
+      ele.addEventListener('mouseleave',()=>{
+        this.findListArr[0].IMG !==''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
+        ele.classList.remove('colorB');
+        let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
+        notEle.forEach(function(ele){
+          ele.classList.remove('colorGray');
         })
       })
     })

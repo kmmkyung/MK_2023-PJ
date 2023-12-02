@@ -1,6 +1,6 @@
 <template>
   <div>    
-    <router-view :DataWineList="DataWineList" :DataWine="DataWine" :DataContact="DataContact"></router-view>
+    <router-view :DataWineList="DataWineList" :DataWine="DataWine" :DataContact="DataContact" :key="$route.fullPath"></router-view>
   </div>
 </template>
 

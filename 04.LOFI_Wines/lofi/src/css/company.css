@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.item a{
+  color: inherit;
+}
+
 .item.colorB{
   color: var(--block);
 }
@@ -95,6 +99,7 @@
   bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .info a{
@@ -141,9 +146,9 @@
   z-index: 2;
 }
 
-.btn a,
 .btn span{
   font-size: var(--font-size-M);
+  cursor: pointer;
 }
 
 .company-left{

@@ -81,6 +81,9 @@ export default {
     idx:Number,
     title:String,
   },
+  watch:{
+
+  },
   methods:{
     storyRead(){
       const story2 = document.querySelector('.story-2');
@@ -105,15 +108,17 @@ export default {
       winesPage.scrollIntoView({ behavior: "smooth", block: "start"});
     },
     nextClick(){
+      window.scrollTo(0,0)
       this.companyArrItem.findIndex((company,idx) => {
         if(company == this.routeID && idx !== this.companyArrItem.length-1){
-        this.$router.push(`${this.companyArrItem[idx+1]}`)
+        this.$router.push({path:`${this.companyArrItem[idx+1]}`})
       }})
     },
     prevClick(){
+      window.scrollTo(0,0)
       this.companyArrItem.findIndex((company,idx) => {
         if(company == this.routeID && idx !== 0){
-          this.$router.push(`${this.companyArrItem[idx-1]}`)
+          this.$router.push({path:`${this.companyArrItem[idx-1]}`})
         }
       })
     }
@@ -136,6 +141,9 @@ export default {
         this.companyArrItem.push(item)
       })
     })
+
+    window.scrollTo(0,0)
+
   },
   mounted(){
     const itemList = document.querySelector('.item-list');

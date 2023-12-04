@@ -18,7 +18,7 @@ const routes = [
   {path: "/producers", component: producers},
   {path: "/company/:id", component: company},
   {path: "/theWineList", component: theWineList},
-  {path: "/company/:id/:wineName", component: about},
+  {path: "/company/:id/:wineName", component: about, props: true},
 ];
 
 // 4. 위에 만든 `routes`변수를 전달해 라우터 인스턴스를 생성.

@@ -28,12 +28,14 @@
               </thead>
               <tbody>
                 <tr class="content" v-for="(ele) in this.companyArr" :key="ele">
-                  <td>{{ ele.WINE }}</td>
-                  <td>{{ ele.PRODUCER }}</td>
-                  <td>{{ ele.COUNTRY }}</td>
-                  <td>{{ ele.REGION }}</td>
-                  <td>{{ ele.VARIETY }}</td>
-                  <td>{{ ele.STYLE }}</td>
+                  <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                    <td>{{ ele.WINE }}</td>
+                    <td>{{ ele.PRODUCER }}</td>
+                    <td>{{ ele.COUNTRY }}</td>
+                    <td>{{ ele.REGION }}</td>
+                    <td>{{ ele.VARIETY }}</td>
+                    <td>{{ ele.STYLE }}</td>
+                  </router-link>
                 </tr>
               </tbody>
             </table>

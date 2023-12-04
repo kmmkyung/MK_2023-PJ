@@ -7,7 +7,9 @@
           <h1 class="ir">LOFI Wines</h1>
         </div>
         <div class="title">
-          <h2>{{title}}</h2>
+          <h2 v-if="title">{{title}}</h2>
+          <h2 v-if="companyName">{{ companyName }}</h2>
+          <h2 v-if="wineName">{{ wineName }}</h2>
         </div>
         <div class="menu-Icon">
           <div class="hamburger">
@@ -51,7 +53,9 @@ export default {
   },
   props:{
     headerClass:String,
-    title:String
+    title:String,
+    companyName:String,
+    wineName:String
   },
   methods :{
     home(){

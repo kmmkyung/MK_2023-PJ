@@ -1,6 +1,6 @@
 <template>
   <div>
-    <com-menu :headerClass="headerClass"></com-menu>
+    <com-menu :headerClass="headerClass" :companyName="routeID"></com-menu>
     <main id="main">
       <div class="headerBG"></div>
       <section id="wines" class="wines">
@@ -9,7 +9,7 @@
             <div class="wines-list">
               <ul class="item-list">
                 <li class="item" v-for="(wine,idx) in findListArr" :key="idx">
-                  <router-link :to="`/company/${routeID}/${wine.WINE}`">
+                  <router-link :to="`/company/${routeID}/${wine.WINE}`" :itemIdx="wine.ID">
                     <h3>{{ wine.WINE }}</h3>
                     <h4>{{ wine.VARIETY }}</h4>
                     <span>more</span>
@@ -141,9 +141,6 @@ export default {
         this.companyArrItem.push(item)
       })
     })
-
-    window.scrollTo(0,0)
-
   },
   mounted(){
     const itemList = document.querySelector('.item-list');

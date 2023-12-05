@@ -11,7 +11,7 @@
               <li class="item" v-for="(companyItem,idx) in DataWine[countryIdx]" :key="idx">
                 <router-link :to="`/company/${companyItem}`" class="btn-underline" :idx="idx" :title="companyItem ">{{ companyItem }}</router-link>
               </li>
-            </ol>ㅋㅋㅋ
+            </ol>
           </li>
           
         </ul>

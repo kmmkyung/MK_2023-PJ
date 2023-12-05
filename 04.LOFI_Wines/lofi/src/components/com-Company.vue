@@ -8,12 +8,10 @@
           <div class="wines-wrap">
             <div class="wines-list">
               <ul class="item-list">
-                <li class="item" v-for="(wine,idx) in findListArr" :key="idx">
-                  <router-link :to="{name:'aboutPage', params:{wineName: wine.WINE}}">
-                    <h3>{{ wine.WINE }}</h3>
-                    <h4>{{ wine.VARIETY }}</h4>
-                    <span>more</span>
-                  </router-link>
+                <li class="item" v-for="(wine,idx) in findListArr" :key="idx" v-on:click="aboutPage(wine)">
+                  <h3>{{ wine.WINE }}</h3>
+                  <h4>{{ wine.VARIETY }}</h4>
+                  <span>more</span>
                 </li>
               </ul>
             </div>
@@ -81,16 +79,18 @@ export default {
     idx:Number,
     title:String,
   },
-  watch:{
-
-  },
   methods:{
-    // goItem(){
-    //   this.$router.push({
-    //     path: "`/company/${routeID}/${wine.WINE}`",
-    //     params:{wineItem:this.idx}
-    //   })
-    // },
+    aboutPage(wine){
+      this.$router.push({
+        name: "aboutPage",
+        params:{
+          wineName: wine.WINE,
+        },
+        state:{
+          wineItem:wine.ID
+        }
+      })
+    },
     storyRead(){
       const story2 = document.querySelector('.story-2');
       const story3 = document.querySelector('.story-3');

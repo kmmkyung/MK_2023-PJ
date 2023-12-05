@@ -7,8 +7,8 @@
         <div class="wines-left">
           <div class="wines-content">
             <h3>{{$route.params.wineName}}</h3>
-            <h4>{{$route.params.idx}}</h4>
-            <p class="about">ㅁㅁㅁㅁㅁ</p>
+            <h4>{{findListArr[wineItem].VARIETY}}</h4>
+            <p class="about">{{findListArr[wineItem].ABOUT}}</p>
           </div>
           <div class="info">
             <span v-on:click="companyPage()" class="btn-line" >VIEW ALL WINES</span>
@@ -16,7 +16,7 @@
         </div>
         <div class="wines-right">
           <div class="wines-imgBox">
-            <!-- <img src="" alt="wines"> -->
+            <img :src="require(`../${findListArr[wineItem].IMG}`)" alt="wines">
           </div>
         </div>
       </section>
@@ -24,14 +24,19 @@
   </div>
 </template>
 
+<script setup>
+const { wineItem } = history.state;
+const { wineName } = history.state;
+</script>
+
 <script>
 import ComMenu from './com-Menu.vue';
 
 export default {
+  name:'comAbout',
   data(){
     return{
       headerClass:'about',
-      wineName:this.$route.params.wineName,
       routeID:this.$route.params.id,
       countryArr:[],
       findArr:[],
@@ -41,7 +46,6 @@ export default {
   props:{
     DataWine:Array,
     DataWineList:Array,
-    idx:Number
   },
   components :{
     ComMenu
@@ -52,18 +56,17 @@ export default {
     }
   },
   created(){
-    console.log(this.$route.params.wineIdx);
-    
-    // this.DataWineList.forEach((ele)=>{
-    //   this.countryArr.push(...ele.DATA)
-    // })
-    // this.countryArr.find((ele)=>{
-    //   if(ele.COMPANY == this.routeID){
-    //     this.findArr = ele
-    //     this.findListArr = ele.LIST
-    //   }
-    // })
-  }
+    this.DataWineList.forEach((ele)=>{
+      this.countryArr.push(...ele.DATA)
+    })
+    this.countryArr.find((ele)=>{
+      if(ele.COMPANY == this.routeID){
+        this.findArr = ele
+        this.findListArr = ele.LIST
+      }
+    })
+  },
+
 }
 </script>
 

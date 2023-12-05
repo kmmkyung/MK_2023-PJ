@@ -18,8 +18,8 @@
                   </th>
                 </tr>
                 <tr class="filter">
-                  <th class="wine" data-type="typeWine">WINE</th>
-                  <th class="producer" data-type="typePro">PRODUCER</th>
+                  <th class="wine">WINE</th>
+                  <th class="producer">PRODUCER</th>
                   <th class="country">COUNTRY</th>
                   <th class="region">REGION</th>
                   <th class="variety">VARIETY</th>
@@ -27,15 +27,16 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="content" v-for="(ele) in this.companyArr" :key="ele">
+                <tr class="content" v-for="ele in this.companyArr" :key="ele">
                   <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
                     <td>{{ ele.WINE }}</td>
+                  </router-link>
+                  
                     <td>{{ ele.PRODUCER }}</td>
                     <td>{{ ele.COUNTRY }}</td>
                     <td>{{ ele.REGION }}</td>
                     <td>{{ ele.VARIETY }}</td>
                     <td>{{ ele.STYLE }}</td>
-                  </router-link>
                 </tr>
               </tbody>
             </table>

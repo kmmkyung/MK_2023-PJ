@@ -6,8 +6,8 @@
       <section class="wines">
         <div class="wines-left">
           <div class="wines-content">
-            <h3>{{this.itemIdx}}</h3>
-            <h4>ㅁㅁ</h4>
+            <h3>{{$route.params.wineName}}</h3>
+            <h4>{{$route.params.idx}}</h4>
             <p class="about">ㅁㅁㅁㅁㅁ</p>
           </div>
           <div class="info">
@@ -36,13 +36,12 @@ export default {
       countryArr:[],
       findArr:[],
       findListArr:[],
-
     }
   },
   props:{
     DataWine:Array,
     DataWineList:Array,
-    itemIdx:Number
+    idx:Number
   },
   components :{
     ComMenu
@@ -53,7 +52,8 @@ export default {
     }
   },
   created(){
-
+    console.log(this.$route.params.wineIdx);
+    
     // this.DataWineList.forEach((ele)=>{
     //   this.countryArr.push(...ele.DATA)
     // })

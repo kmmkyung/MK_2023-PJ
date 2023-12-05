@@ -14,11 +14,11 @@ import about from './components/com-About.vue'
 const routes = [
   // {path: "/경로", component: import해온 컴포넌트명},
   {path: "/", component: main},
-  {path: "/contact", component: contact},
-  {path: "/producers", component: producers},
-  {path: "/company/:id", component: company},
-  {path: "/theWineList", component: theWineList},
-  {path: "/company/:id/:wineName", component: about, props: true},
+  {path: "/contact", component: contact, name:'contactPage'},
+  {path: "/producers", component: producers, name:'producersPage'},
+  {path: "/company/:id", component: company, name:'companyPage'},
+  {path: "/theWineList", component: theWineList, name:'theWineListPage'},
+  {path: "/company/:id/:wineName", component: about, name:'aboutPage', props:true},
 ];
 
 // 4. 위에 만든 `routes`변수를 전달해 라우터 인스턴스를 생성.

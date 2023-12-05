@@ -68,7 +68,7 @@ export default {
       const bg = document.querySelector('.headerBG')
       const header = document.querySelector('header')
       const companyPageRight = document.querySelector('.company-right')
-      const companyPage = document.querySelector('.company') 
+      const companyPage = document.querySelector('#company') 
       if(header.className == 'contact'){
         this.headerColor(bg,'var(--contact)')
       }

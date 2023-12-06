@@ -14,6 +14,7 @@ import about from './components/com-About.vue'
 const routes = [
   // {path: "/경로", component: import해온 컴포넌트명},
   {path: "/", component: main},
+  {path: "/index.html",redirect: "/" },
   {path: "/producers", component: producers, name:'producersPage'},
   {path: "/company/:id", component: company, name:'companyPage'},
   {path: "/company/:id/:wineName/", component: about, name:'aboutPage'},

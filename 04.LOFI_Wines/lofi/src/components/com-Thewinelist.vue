@@ -28,35 +28,23 @@
               </thead>
               <tbody>
                 <tr class="content" v-for="ele in this.companyArr" :key="ele">
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.WINE }}
-                    </router-link>
                   </td>
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.PRODUCER }}
-                    </router-link>
                   </td>
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.COUNTRY }}
-                    </router-link>
                   </td>
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.REGION }}
-                    </router-link>
                   </td>
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.VARIETY }}
-                    </router-link>
                   </td>
-                  <td>
-                    <router-link :to="`./company/${ele.COUNTRY}/${ele.WINE}`">
+                  <td v-on:click="aboutPage(ele)">
                       {{ ele.STYLE }}
-                    </router-link>
                   </td>
                 </tr>
               </tbody>
@@ -84,6 +72,18 @@ export default {
     DataWineList : Array
   },
   methods : {
+    aboutPage(wine){
+      this.$router.push({
+        name: "aboutPage",
+        params:{
+          id:wine.PRODUCER,
+          wineName: wine.WINE,
+        },
+        state:{
+          wineItem:wine.ID
+        }
+      })
+    },
     searchClick(){
       const searchInput = document.querySelector('.search-input');
       const searchLabel = document.querySelector('.search-label');
@@ -153,6 +153,8 @@ export default {
     }
   },
   created(){
+    window.scrollTo(0,0)
+
     this.DataWineList.forEach((ele)=>{
       this.countryArr.push(...ele.DATA)
       this.countryArr.forEach((ele)=>{

@@ -1,11 +1,5 @@
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--contact);
-  font-weight: 300;
-}
-
-/* main */
 main{
+  background-color: var(--contact);
   width: 100%;
   display: flex;
 }

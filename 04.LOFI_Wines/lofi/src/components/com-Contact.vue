@@ -42,70 +42,12 @@ import ComMenu from './com-Menu.vue';
     },
     methods:{
     },
-    mounted(){
+    created(){
+      window.scrollTo(0,0)
     }
   }
 </script>
 
-<style scoped>
-/* main */
-main{
-  background-color: var(--contact);
-  font-weight: 300;
-  width: 100%;
-  display: flex;
-}
-
-.left{
-  width: 50%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.content-text{
-  padding-top: 65px;
-  margin-bottom: 65px;
-  width: 80%;
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: var(--font-size-M);
-}
-.people-ele{
-  margin-bottom: 20px;
-}
-
-.people-ele h5,.people-ele p{
-  font-size: var(--font-size-S);
-  line-height: 20px;
-  letter-spacing: 2px;
-}
-
-.right{
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  right: 0;
-  z-index: 1;
-}
-
-.right .right-img{
-  background-image: url(../assets/images/contact.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:990px){
-  .left{
-    width: 100%;
-  }
-
-  .right{
-    display: none;
-  }
-}
+<style scoped src="../css/contact.css">
 
 </style>

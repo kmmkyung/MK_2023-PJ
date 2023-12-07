@@ -59,7 +59,7 @@ export default {
   },
   methods :{
     home(){
-      this.$router.push('/')
+      this.$router.push('/PJ-LOFI')
     },
     headerColor(header,color){
       header.style.backgroundColor = color

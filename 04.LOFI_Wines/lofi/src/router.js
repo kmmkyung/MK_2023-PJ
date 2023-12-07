@@ -13,7 +13,7 @@ import about from './components/com-About.vue'
 // 3. 경로를 정의하고, 각 경로를 컴포넌트와 매핑.
 const routes = [
   // {path: "/경로", component: import해온 컴포넌트명},
-  {path: "/", component: main},
+  {path: "/PJ-LOFI", component: main},
   {path: "/producers", component: producers, name:'producersPage'},
   {path: "/company/:id", component: company, name:'companyPage'},
   {path: "/company/:id/:wineName/", component: about, name:'aboutPage'},

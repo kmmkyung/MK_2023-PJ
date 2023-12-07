@@ -60,17 +60,21 @@ main{
     width: 100%;
   }
 
+  .left-content h1{
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
   .left-content h1,
   .left-content p {
-    width: min(80vw,600px);
+    width: min(90vw,600px);
   }
+
+  .left-content a {
+    margin-top: 6vw;
+}
 
   .right{
     display: none;
   }
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:780px){
-
 }

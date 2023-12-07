@@ -23,13 +23,13 @@
     <nav>
       <ul class="menu-list">
         <li class="menu-item">
-          <router-link to="/producers" class="btn-underline">Producers</router-link>
+          <router-link to="/producers" class="btn-underline" v-on:click="menuHam">Producers</router-link>
         </li>
         <li class="menu-item">
-          <router-link to="/thewinelist" class="btn-underline">The Wine List</router-link>
+          <router-link to="/thewinelist" class="btn-underline" v-on:click="menuHam">The Wine List</router-link>
         </li>
         <li class="menu-item">
-          <router-link to="/contact" class="btn-underline">Contact</router-link>
+          <router-link to="/contact" class="btn-underline" v-on:click="menuHam">Contact</router-link>
         </li>
       </ul>
       <aside>
@@ -102,6 +102,12 @@ export default {
           }
         }
       })
+    },
+    menuHam(){
+      const nav = document.querySelector('nav');
+      const hamburger = document.querySelector('.hamburger');
+        nav.classList.remove('on')
+        hamburger.classList.remove('on')
     }
   },
   mounted(){
@@ -140,13 +146,6 @@ export default {
         asideLink.style.opacity='0'
         asideLink.style.transform='translateY(100%)'
       }
-    })
-
-    menuItem.forEach((ele) => {
-      ele.addEventListener('click',function(){
-        nav.classList.remove('on')
-        hamburger.classList.remove('on')
-      })
     })
   }
 }

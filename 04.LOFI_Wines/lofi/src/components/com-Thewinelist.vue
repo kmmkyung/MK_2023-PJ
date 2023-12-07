@@ -12,7 +12,7 @@
           <div class="table-wrap">
             <table class="table">
               <thead>
-                <tr class="mobile-filter -hidden">
+                <tr class="mobile-filter -hidden" v-on:click="filterOn">
                   <th>FILTER WINES
                     <div class="filter-dot"></div>
                   </th>
@@ -115,6 +115,11 @@ export default {
         ){rows[i].style.display = ''}
         else{rows[i].style.display = 'none'}
       }
+    },
+    filterOn(){
+      const filterMenu = document.querySelector('.filter');
+      filterMenu.classList.toggle('on')
+      filterMenu.classList.contains('on')? filterMenu.style.height=filterMenu.scrollHeight+'px' : filterMenu.style.height=0;
     }
   },
   mounted(){

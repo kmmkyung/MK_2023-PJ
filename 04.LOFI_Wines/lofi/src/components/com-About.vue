@@ -73,5 +73,4 @@ export default {
 </script>
 
 <style scoped src="../css/about.css">
-
 </style>

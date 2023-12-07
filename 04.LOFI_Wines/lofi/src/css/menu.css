@@ -15,6 +15,7 @@ header{
   padding-bottom: 5px;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .logo-All{

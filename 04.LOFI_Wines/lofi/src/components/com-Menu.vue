@@ -152,6 +152,5 @@ export default {
 }
 </script>
 
-<style>
-@import url(../css/menu.css);
+<style scoped src="../css/menu.css">
 </style>

@@ -3,19 +3,19 @@
     <com-menu :wineName="wineName"></com-menu>
     <main>
       <div class="headerBG"></div>
-      <section class="wines">
-        <div class="wines-left">
-          <div class="wines-content">
+      <section class="about">
+        <div class="about-left">
+          <div class="about-content">
             <h3>{{$route.params.wineName}}</h3>
             <h4>{{findListArr[wineItem].VARIETY}}</h4>
-            <p class="about">{{findListArr[wineItem].ABOUT}}</p>
+            <p class="about-text">{{findListArr[wineItem].ABOUT}}</p>
           </div>
-          <div class="info">
+          <div class="about-info">
             <span v-on:click="companyPage()" class="btn-line" >VIEW ALL WINES</span>
           </div>
         </div>
-        <div class="wines-right">
-          <div class="wines-imgBox">
+        <div class="about-right">
+          <div class="about-imgBox">
             <img :src="require(`../${findListArr[wineItem].IMG}`)" alt="wines">
           </div>
         </div>

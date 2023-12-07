@@ -2,23 +2,23 @@ main{
   position: relative;
 }
 
-.wines{
+.about{
   width: 100%;
   height: 100vh;
   display: flex;
 }
 
-.wines-left,
-.wines-right{
+.about-left,
+.about-right{
   width: 50%;
 }
 
-.wines-left{
+.about-left{
   position: relative;
   margin-top: 59px;
 }
 
-.wines-content{
+.about-content{
   width: 100%;
   height: 100%;
   padding: 100px;
@@ -29,39 +29,39 @@ main{
   justify-content: center;
 }
 
-.wines-content h3,
-.wines-content h4{
+.about-content h3,
+.about-content h4{
   font-size: var(--font-size-M);
   font-family: 'Nanum Myeongjo', serif;
   line-height: 1.3;
   text-align: center;
 }
 
-.wines-content p{
+.about-content p{
   font-size: var(--font-size-S);
   margin-top: 20px;
   line-height: 1.3;
   text-align: center;
 }
 
-.info{
+.about-info{
   position: absolute;
   bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.info a{
+.about-info a{
   font-size: var(--font-size-M);
 }
 
-.wines-right{
+.about-right{
   background-color: var(--gray);
   padding-top: 59px;
   box-sizing: border-box;
 }
 
-.wines-imgBox{
+.about-imgBox{
   display: flex;
   width: 100%;
   height: 100%;
@@ -69,7 +69,7 @@ main{
   justify-content: center;
 }
 
-.wines-imgBox>img{
+.about-imgBox>img{
   object-fit: cover;
   width: 50%;
   height: 80%;
@@ -77,41 +77,36 @@ main{
 
 /* 미디어쿼리 */
 @media screen and (max-width:990px){
-  .wines {
+  .about {
     height: 100%;
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .wines-left, .wines-right {
+  .about-left, .about-right {
     width: 100%;
   }
   
-  .wines-right {
+  .about-right {
     background-color: var(--main);
     padding: 159px 0 100px 0;
     box-sizing: content-box;
   }
 
-  .wines-left {
+  .about-left {
     margin-top: 0px;
   }
   
-  .wines-content {
+  .about-content {
     padding: 0 20vw;
     box-sizing: border-box;
     margin-bottom: 59px;
   }
 
-  .info {
+  .about-info {
     position: relative;
     margin-bottom: 60px;
     display: inline-block;
     bottom: auto;
   }
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:780px){
-
 }

@@ -22,7 +22,6 @@ export default {
   },
   methods:{
 
-  
   },
   mounted(){
   }

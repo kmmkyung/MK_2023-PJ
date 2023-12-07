@@ -6,6 +6,6 @@ module.exports = {
     maxAssetSize: 10000000
     }
 	},
-	// publicPath: '/PJ-LOFI'
-	transpileDependencies:true
+	publicPath: '/PJ-lofi'
+	// transpileDependencies:true
 }

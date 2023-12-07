@@ -1,10 +1,4 @@
 const { defineConfig } = require('@vue/cli-service')
-// module.exports = defineConfig({
-//     transpileDependencies:true,
-// 	publicPath: process.env.NODE_ENV === 'production'
-//     ? '/test/'
-//     : '/'
-// })
 module.exports = {
 	configureWebpack: {
     performance: {
@@ -12,7 +6,6 @@ module.exports = {
     maxAssetSize: 10000000
     }
 	},
-	publicPath: '/PJ-LOFI'
-		
+	// publicPath: '/PJ-LOFI'
+	transpileDependencies:true
 }
-

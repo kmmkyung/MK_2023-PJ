@@ -32,5 +32,16 @@ export default {
 @import url(./css/reset.css);
 @import url(./css/root.css);
 @import url(./css/common.css);
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main);
+  font-weight: 300;
+}
 
+/* 미디어쿼리 */
+@media screen and (max-width:780px){
+  nav {
+    width: 100%;
+  }
+}
 </style>

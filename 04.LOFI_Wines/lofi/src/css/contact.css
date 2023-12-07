@@ -1,14 +1,9 @@
-main{
-  width: 100%;
-  display: flex;
-}
-
-.left{
-  background-color: var(--contact);
+.content-left{
   width: 50%;
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
+  background-color: var(--contact);
 }
 
 .content-text{
@@ -29,7 +24,7 @@ main{
   letter-spacing: 2px;
 }
 
-.right{
+.content-right{
   width: 50%;
   height: 100%;
   position: fixed;
@@ -37,7 +32,7 @@ main{
   z-index: 1;
 }
 
-.right .right-img{
+.content-right .right-img{
   background-image: url(../assets/images/contact.jpg);
   background-size: cover;
   background-position: center;
@@ -48,16 +43,11 @@ main{
 
 /* 미디어쿼리 */
 @media screen and (max-width:990px){
-  .left{
+  .content-left{
     width: 100%;
   }
 
-  .right{
+  .content-right{
     display: none;
   }
-}
-
-/* 미디어쿼리 */
-@media screen and (max-width:780px){
-
 }

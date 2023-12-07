@@ -9,7 +9,7 @@
           <p>
             Lo-Fi Wines is an Australian based wine importer and distributor of local and international producers with a strong commitment to sustainability in the vineyard, a focus on low-intervention in the cellar and a passion for good drinking in the glass.
           </p>
-          <a class="btn-line" href="#">VIEW OUR PRODUCERS</a>
+          <router-link to="/producers" class="btn-line">VIEW OUR PRODUCERS</router-link>
         </div>
       </section>
       <section class="right">

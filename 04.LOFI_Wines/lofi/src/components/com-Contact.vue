@@ -49,5 +49,4 @@ import ComMenu from './com-Menu.vue';
 </script>
 
 <style scoped src="../css/contact.css">
-
 </style>

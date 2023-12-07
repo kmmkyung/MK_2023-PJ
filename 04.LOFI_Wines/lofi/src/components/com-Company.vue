@@ -1,7 +1,7 @@
 <template>
   <div>
     <com-menu :headerClass="headerClass" :companyName="routeID"></com-menu>
-    <main id="main">
+    <main>
       <div class="headerBG"></div>
       <section id="wines" class="wines">
         <div class="wines-left">

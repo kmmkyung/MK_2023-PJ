@@ -5,7 +5,7 @@
 font-family: 'Noto Sans KR', sans-serif; */
 
 * {
-  /* outline: 1px dotted turquoise; */
+  outline: 1px dotted turquoise;
   /* outline: 1px dotted tomato; */
 }
 
@@ -16,11 +16,11 @@ font-family: 'Noto Sans KR', sans-serif; */
   --gray: #0d0d0d;
 
   /* FONTSIZE */
-  --font-size-S: 2rem;
-  --font-size-M: 3.2rem;
-  --font-size-L: 5.8rem;
-  --font-size-Title: 14.5rem;
-  --font-size-Collection: 20rem;
+  --font-size-S: 1.3rem;
+  --font-size-M: 1.6rem;
+  --font-size-L: 2.0rem;
+  --font-size-Title: 8rem;
+  --font-size-Collection: 16rem;
 }
 /*----------*/
 

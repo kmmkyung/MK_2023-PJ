@@ -6,14 +6,14 @@
   top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .pc-header .logo{
-  width: 150px;
+  width: 180px;
   height: auto;
-  margin-left: 50px;
+  margin: 0 100px 0 50px;
 }
 
 .pc-header .logo svg{
@@ -22,16 +22,29 @@
   vertical-align: middle;
 }
 
-#header .gnb{
+.gnb-all{
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb-all .gnb{
+  display: flex;
+  gap: 50px;
+}
+
+.gnb .gnb-menu{
+  font-size: var(--font-size-M);
 }
 
 .gnb .gnb-menu__area{
+  width: 0;
   height: 0;
   overflow: hidden;
 }
 
-#header .etc-gnb{
+.gnb-all .etc-gnb{
   display: flex;
   margin-right: 50px;
 }

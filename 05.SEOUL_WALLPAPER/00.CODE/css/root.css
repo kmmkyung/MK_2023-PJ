@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Noto+Sans+KR&display=swap');
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+*{
+    /* outline: 1px dotted turquoise; */
+    /* outline: 1px dotted tomato; */
+}
+
+:root{
+  /* COLOR */
+  --black:#000000;
+  --white:#ffffff;
+
+  
+  /* FONTSIZE */
+  --font-size-S: 1.4rem;
+  --font-size-M: 1.8rem;
+  --font-size-L: 4.5rem;
+
+}
+/*----------*/
+
+/*-- CSS CLASS --*/
+
+.-hidden{
+    display: none;
+}
+
+.-show{
+    display: block;
+}
+
+.-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----- CSS -----*/

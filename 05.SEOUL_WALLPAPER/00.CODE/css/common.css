@@ -1,0 +1,37 @@
+/* header */
+.pc-header{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pc-header .logo{
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+}
+
+.pc-header .logo svg{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#header .gnb{
+  display: flex;
+}
+
+.gnb .gnb-menu__area{
+  height: 0;
+  overflow: hidden;
+}
+
+#header .etc-gnb{
+  display: flex;
+  margin-right: 50px;
+}

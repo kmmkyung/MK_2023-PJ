@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
   mainMenuCode += `<ul class="menu">`;
   // 메뉴 타이틀 title=COFFEE,MENU,STORE...
   for (let title in navData) {
-    mainMenuCode +e= /*html*/`
+    mainMenuCode += /*html*/`
       <li class="menu-item">
         <a href="#">
           <div class="menu-item__name">${title}</div>

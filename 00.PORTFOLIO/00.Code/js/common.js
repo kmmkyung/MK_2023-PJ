@@ -23,8 +23,8 @@ for(let i=0; i<menu.length; i++){
 }
 
 const tl = gsap.timeline({defaults: { ease: "power4.inOut"},
-repeat: -1, 
-yoyo: true, 
+  repeat: -1, 
+  yoyo: true, 
 });
 
 tl.from($('span'),{

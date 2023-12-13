@@ -5,19 +5,21 @@
 font-family: 'Noto Sans KR', sans-serif; */
 
 * {
-  outline: 1px dotted turquoise;
-  /* outline: 1px dotted tomato; */
+  /* outline: 1px dotted turquoise; */
+  outline: 1px dotted tomato;
 }
 
 :root {
   /* COLOR */
   --black: #000000;
   --white: #ffffff;
-  --gray: #0d0d0d;
+  --fontBlack: #0d0d0d;
+  --gray: #adb4b5;
+  --grayf5: #f5f5f5;
 
   /* FONTSIZE */
-  --font-size-S: 1.3rem;
-  --font-size-M: 1.6rem;
+  --font-size-S: 1.2rem;
+  --font-size-M: 1.4rem;
   --font-size-L: 2.0rem;
   --font-size-Title: 8rem;
   --font-size-Collection: 16rem;

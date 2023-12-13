@@ -4,9 +4,13 @@
 /* font-family: 'Crimson Text', serif;
 font-family: 'Noto Sans KR', sans-serif; */
 
+body{
+  font-family: 'Crimson Text', Noto Sans KR;
+}
+
 * {
   /* outline: 1px dotted turquoise; */
-  outline: 1px dotted tomato;
+  /* outline: 1px dotted tomato; */
 }
 
 :root {

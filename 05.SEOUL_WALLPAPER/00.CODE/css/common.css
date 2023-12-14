@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  transition: all .2s;
 }
 
 .pc-header .logo{
@@ -125,5 +126,105 @@
 
 .gnb-all .etc-gnb{
   display: flex;
+  align-items: center;
   margin-right: 50px;
+  gap: 30px;
+}
+
+.etc-gnb .lang-box{
+  width: 40px;
+  height: var(--font-size-L);
+  overflow: hidden;
+  font-size: var(--font-size-M);
+  font-family: Noto Sans KR;
+  background-image: url(../assets/svg/lang-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right top 8px;
+}
+
+.etc-gnb .lang-box.on{
+  color: var(--white);
+  background-image: url(../assets/svg/lang-arrow-downW.svg);
+}
+
+.etc-gnb .lang-box.hover{
+  overflow:  visible;
+}
+
+.etc-gnb .wish-box{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-image: url(../assets/svg/header-wish_B.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.etc-gnb .wish-box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.etc-gnb .wish-box.on{
+  background-image: url(../assets/svg/header-wish_W.svg);
+}
+
+.etc-gnb .wish-box.on span{
+  color: var(--white);
+}
+
+.etc-gnb .wish-box span{
+  font-size: var(--font-size-S);
+}
+
+.etc-gnb .search-box{
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.etc-gnb .search-box .search-box__icon{
+  background-image: url(../assets/svg/search_black_24dp.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.etc-gnb .search-box .search-box__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  
+}
+
+.etc-gnb .mobile-menu .mobile-menu__line{
+  display: block;
+  height: 1.5px;
+  width: 25px;
+  margin: 10px 0;
+  background-color: var(--black);
+  transition: transform 1s;
+}
+
+.etc-gnb .mobile-menu.on .mobile-menu__line:first-child{
+  transform: rotateZ(45deg) translateY(550%);
+  transform-origin: center;
+  background-color: var(--white);
+}
+
+.etc-gnb .mobile-menu.on .mobile-menu__line:last-child{
+  transform: rotateZ(-45deg) translateY(-550%);
+  transform-origin: center;
+  background-color: var(--white);
 }

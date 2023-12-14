@@ -51,4 +51,25 @@ window.addEventListener('DOMContentLoaded',function(){
     `;
   }
   gnb.innerHTML = gnbDataCode;
+
+  //// gnd hover
+  const pcHeader = document.querySelector('.pc-header');
+  const gnbMenu = document.querySelectorAll('.gnb-menu');
+
+  gnbMenu.forEach((ele)=>[
+    ele.addEventListener('mouseenter',function(){
+      pcHeader.style.backgroundColor = 'white'
+    })
+  ])
+  
+  gnbMenu.forEach((ele)=>[
+    ele.addEventListener('mouseleave',function(){
+      pcHeader.style.backgroundColor = 'transparent'
+    })
+  ])
+
+
+
+
+
 })

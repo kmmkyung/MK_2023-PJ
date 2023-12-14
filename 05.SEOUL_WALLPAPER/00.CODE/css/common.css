@@ -9,6 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   transition: all .2s;
+  z-index: 999;
 }
 
 .pc-header .logo{
@@ -23,6 +24,10 @@
   vertical-align: middle;
 }
 
+.pc-header .logo.mobileOn svg path{
+  fill: #999999;
+}
+
 .gnb-all{
   display: flex;
   width: 100%;
@@ -34,6 +39,11 @@
   display: flex;
   gap: 50px;
   color: var(--fontBlack);
+}
+
+.gnb-all .gnb.mobileOn{
+  pointer-events: none;
+  color: #999999;
 }
 
 .gnb .gnb-menu{
@@ -147,6 +157,10 @@
   background-image: url(../assets/svg/lang-arrow-downW.svg);
 }
 
+.etc-gnb .lang-box.on span a{
+  color: var(--white);
+}
+
 .etc-gnb .lang-box.hover{
   overflow:  visible;
 }
@@ -180,32 +194,44 @@
 }
 
 .etc-gnb .search-box{
+  display: flex;
+  justify-content: flex-end;
   position: relative;
-  width: 40px;
   height: 40px;
 }
 
 .etc-gnb .search-box .search-box__icon{
-  background-image: url(../assets/svg/search_black_24dp.svg);
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  height: 24px;
+  width: 24px;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 1;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  background-image: url(../assets/svg/header-search_B.svg);
+  background-repeat: no-repeat;
+}
+
+.etc-gnb .search-box .search-box__icon.on{
+  background-image: url(../assets/svg/header-search_W.svg);
+
 }
 
 .etc-gnb .search-box .search-box__input{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
+  width: 40px;
   height: 40px;
   border-radius: 40px;
   border: none;
-  
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.etc-gnb .search-box .search-box__input:focus{
+  opacity: 0.5;
+  width: 300px
 }
 
 .etc-gnb .mobile-menu .mobile-menu__line{
@@ -218,13 +244,49 @@
 }
 
 .etc-gnb .mobile-menu.on .mobile-menu__line:first-child{
-  transform: rotateZ(45deg) translateY(550%);
+  transform: rotateZ(45deg) translateY(500%);
   transform-origin: center;
   background-color: var(--white);
 }
 
 .etc-gnb .mobile-menu.on .mobile-menu__line:last-child{
-  transform: rotateZ(-45deg) translateY(-550%);
+  transform: rotateZ(-45deg) translateY(-500%);
   transform-origin: center;
   background-color: var(--white);
+}
+
+.pc-header__bg{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mobile-header__bg{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .2s;
+  z-index: 1;
+}
+
+.mobile-header{
+  position: fixed;
+  right: 0;
+  width: 595px;
+  height: 100vh;
+  background-color: var(--main);
+  transform: translateX(595px);
+  transition: all .2s;
+  z-index: 2;
+}
+
+.mobile-header.on{
+  transform: translateX(0px);
 }

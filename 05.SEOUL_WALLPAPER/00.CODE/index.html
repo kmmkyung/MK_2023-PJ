@@ -50,15 +50,17 @@
         </ul>
         <ul class="etc-gnb">
           <li class="lang-box">
-            <span>KO</span> 
-            <span>EN</span>
+            <span><a href="#">KO</a></span> 
+            <span><a href="#">EN</a></span>
           </li>
           <li class="wish-box">
             <span class="wish-number">0</span>
           </li>
           <li class="search-box">
-            <button class="search-box__icon"></button>
-            <input class="search-box__input" type="text">
+            <label id="search-box__input" class="search-box__icon">
+              <img src="./assets/svg/search_black_24dp.svg" alt="">
+            </label>
+            <input name="search-box__input" class="search-box__input" type="text" placeholder="제품번호/컬렉션">
           </li>
           <li class="mobile-menu">
             <span class="mobile-menu__line"></span>
@@ -69,6 +71,8 @@
     </div>
     <div class="mobile-header">
     </div>
+    <div class="pc-header__bg -hidden"></div>
+    <div class="mobile-header__bg -hidden"></div>
   </header>
   <main>
     <section id="section-1">

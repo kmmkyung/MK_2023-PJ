@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded',function(){
   const logo = document.querySelector('.pc-header .logo');
   logo.innerHTML = svgData.logoSvg_b;
 
-  //// gnb
+  //// main-gnb
   const gnb = document.querySelector('.gnb-all .gnb');
   let gnbDataCode = '';  
 
@@ -55,21 +55,55 @@ window.addEventListener('DOMContentLoaded',function(){
   //// gnd hover
   const pcHeader = document.querySelector('.pc-header');
   const gnbMenu = document.querySelectorAll('.gnb-menu');
+  const pcGnbBg = document.querySelector('.pc-header__bg');
 
-  gnbMenu.forEach((ele)=>[
+  gnbMenu.forEach((ele)=>{
     ele.addEventListener('mouseenter',function(){
       pcHeader.style.backgroundColor = 'white'
+      pcGnbBg.classList.remove('-hidden')
     })
-  ])
+  })
   
-  gnbMenu.forEach((ele)=>[
+  gnbMenu.forEach((ele)=>{
     ele.addEventListener('mouseleave',function(){
       pcHeader.style.backgroundColor = 'transparent'
+      pcGnbBg.classList.add('-hidden')
     })
-  ])
+  })
 
-
-
-
-
+  //// etc-gnb
+  const langBox = document.querySelector('.lang-box');
+  const wishBox = document.querySelector('.wish-box');
+  const searchBoxIcon = document.querySelector('.search-box__icon');
+  const mobileBox = document.querySelector('.mobile-menu');
+  const mobileHeader = document.querySelector('.mobile-header');
+  const mobileGnbBg = document.querySelector('.mobile-header__bg');
+  langBox.addEventListener('mouseenter',function(){
+    langBox.classList.add('hover')
+  })
+  langBox.addEventListener('mouseleave',function(){
+    langBox.classList.remove('hover')
+  })
+  mobileBox.addEventListener('click',function(){
+    mobileBox.classList.toggle('on')
+    if(mobileBox.classList.contains('on')){
+      document.querySelector('.search-box__input').focus();
+      langBox.classList.add('on')
+      wishBox.classList.add('on')
+      searchBoxIcon.classList.add('on')
+      mobileHeader.classList.add('on')
+      mobileGnbBg.classList.remove('-hidden')
+      document.querySelector('.gnb').classList.add('mobileOn')
+      document.querySelector('.logo').classList.add('mobileOn')
+    }
+    else{
+      langBox.classList.remove('on')
+      wishBox.classList.remove('on')
+      searchBoxIcon.classList.remove('on')
+      mobileHeader.classList.remove('on')
+      mobileGnbBg.classList.add('-hidden')
+      document.querySelector('.gnb').classList.remove('mobileOn')
+      document.querySelector('.logo').classList.remove('mobileOn')
+    }
+  })
 })

@@ -8,10 +8,9 @@ window.addEventListener('DOMContentLoaded',function(){
   logo.innerHTML = svgData.logoSvg_b;
 
   //// gnb
-  const gnbAll = document.querySelector('.gnb-all');
+  const gnb = document.querySelector('.gnb-all .gnb');
   let gnbDataCode = '';  
 
-  gnbDataCode += `<ul class="gnb">`
   for(let title in gnbData){
     gnbDataCode += /* html */`
       <li class="gnb-menu">${title}
@@ -51,6 +50,5 @@ window.addEventListener('DOMContentLoaded',function(){
     </li>
     `;
   }
-  gnbDataCode +=  /*html*/`</ul>`
-  gnbAll.innerHTML = gnbDataCode;
+  gnb.innerHTML = gnbDataCode;
 })

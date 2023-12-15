@@ -1,0 +1,88 @@
+/* sec-main */
+.main-img{
+  position: absolute;
+  width: 60vw;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_f5);
+  margin: 120px 0;
+}
+
+/* story-lofi */
+.story-lofi{
+  padding-top: 120px;
+}
+
+/* --lofi-plan */
+.lofi-plan{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lofi-plan h1{
+  font-size: var(--font-size-L);
+  font-weight: bold;
+}
+
+.lofi-plan div{
+  display: flex;
+  flex-direction: column;
+}
+
+.lofi-plan p{
+  font-size: var(--font-size-S);
+}
+
+.lofi-plan h5{
+  font-size: var(--font-size-S);
+  font-weight: bold;
+  color: var(--gray_a);
+  margin-top: 60px;
+}
+
+/* story-code */
+.story-code{
+  width: 100%;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.story-code img{
+  width: 100%;
+  height: auto;
+}
+
+.story-code .img1{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+width: 700px;
+}
+
+.story-code .img-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transform: translateY(400px);
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.story-code .img-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.story-code .img6{
+  width: 700px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 200px;
+}

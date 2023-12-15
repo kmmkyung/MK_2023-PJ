@@ -48,6 +48,7 @@
 
 .gnb .gnb-menu{
   font-size: var(--font-size-M);
+  font-weight: bold;
   height: 100px;
   line-height: 100px;
 }
@@ -244,14 +245,12 @@
 }
 
 .etc-gnb .mobile-menu.on .mobile-menu__line:first-child{
-  transform: rotateZ(45deg) translateY(500%);
-  transform-origin: center;
   background-color: var(--white);
+  transform: translateY(5px) rotate(45deg);
 }
 
 .etc-gnb .mobile-menu.on .mobile-menu__line:last-child{
-  transform: rotateZ(-45deg) translateY(-500%);
-  transform-origin: center;
+  transform: translateY(-5px) rotate(-45deg);
   background-color: var(--white);
 }
 

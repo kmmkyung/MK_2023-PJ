@@ -106,4 +106,14 @@ window.addEventListener('DOMContentLoaded',function(){
       document.querySelector('.logo').classList.remove('mobileOn')
     }
   })
+  document.querySelector('.mobile-header__bg').addEventListener('click',function(){
+    mobileBox.classList.remove('on')
+    langBox.classList.remove('on')
+    wishBox.classList.remove('on')
+    searchBoxIcon.classList.remove('on')
+    mobileHeader.classList.remove('on')
+    mobileGnbBg.classList.add('-hidden')
+    document.querySelector('.gnb').classList.remove('mobileOn')
+    document.querySelector('.logo').classList.remove('mobileOn')
+  })
 })

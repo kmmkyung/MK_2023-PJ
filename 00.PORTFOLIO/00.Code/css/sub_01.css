@@ -1,0 +1,157 @@
+/* sec-main */
+.main-img{
+  position: absolute;
+  width: 60vw;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_f5);
+  margin: 120px 0;
+}
+
+/* story-ediya */
+.story-ediya{
+  padding-top: 120px;
+}
+
+/* --ediya-plan */
+.ediya-plan{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ediya-plan h1{
+  font-size: var(--font-size-L);
+  font-weight: bold;
+}
+
+.ediya-plan div{
+  display: flex;
+  flex-direction: column;
+}
+
+.ediya-plan p{
+  font-size: var(--font-size-S);
+}
+
+.ediya-plan h5{
+  font-size: var(--font-size-S);
+  font-weight: bold;
+  color: var(--gray_a);
+  margin-top: 60px;
+}
+
+/* --ediya-design */
+.ediya-design{
+  margin-top: 120px;
+}
+
+.ediya-design h2{
+  font-size: var(--font-size-L);
+  font-weight: bold;
+}
+
+.ediya-design div{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ediya-design div img:last-child{
+  height: 150px;
+  width: auto;
+}
+
+/* story-code */
+.story-code{
+  padding-bottom: 120px;
+}
+
+.story-code img{
+  width: 50%;
+}
+
+.story-code h5{
+  font-size: var(--font-size-M);
+  font-weight: bold;
+}
+
+.story-code p{
+  font-size: var(--font-size-S);
+}
+
+/* --code-part1 */
+.code-part1{
+  width: 100%;
+  height: min(40vw,600px);
+  position: relative;
+}
+
+.part1-intro img{
+  transform: translateX(min(5vw,100px));
+}
+
+.part1-intro__text{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(min(5vw,100px));
+  margin-left: 40px;
+}
+
+.part1-main img{
+  position: absolute;
+  right: min(5vw,100px);
+  bottom: 0;
+}
+
+.part1-main__text{
+  transform: translateX(min(-5vw,-100px));
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: 40px;
+}
+
+/* --code-part2 */
+.code-part2{
+  display: flex;
+  margin-top: 120px;
+}
+
+.code-part2 img{
+  width: 100%;
+}
+
+.part2-new__text,
+.part2-best__text{
+  margin-top: 40px;
+}
+
+/* code-part3 */
+.code-part3{
+  width: 100%;
+  position: relative;
+}
+
+.part3-company{
+  position: relative;
+  top: 120px;
+}
+
+.part3-company__text{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: 40px;
+}
+
+.part3-event,
+.part3-footer{
+  display: flex;
+  gap: 40px;
+  position: relative;
+  left: 25%;
+}

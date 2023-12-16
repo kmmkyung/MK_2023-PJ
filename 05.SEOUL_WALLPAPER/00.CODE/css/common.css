@@ -106,6 +106,7 @@
 
 .gnb-menu__title .title-content .title-en{
   font-size: var(--font-size-L);
+  width: 150px;
 }
 
 .gnb .gnb-menu__area ol .gnb-menu__item{
@@ -314,6 +315,7 @@
   flex-wrap: wrap;
   height: 0;
   overflow: hidden;
+  transition: all .4s;
 }
 
 .mobile-header .mobileGnb-menu__item{

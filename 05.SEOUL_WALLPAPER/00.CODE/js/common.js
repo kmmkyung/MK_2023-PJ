@@ -116,4 +116,50 @@ window.addEventListener('DOMContentLoaded',function(){
     document.querySelector('.gnb').classList.remove('mobileOn')
     document.querySelector('.logo').classList.remove('mobileOn')
   })
+
+  //// mobile gnb
+  const mobileGnb = document.querySelector('.mobile-gnb');
+  let mobileGnbDataCode = '';
+  for(let title in gnbData){
+    mobileGnbDataCode += /* html */`
+      <li class="mobileGnb-menu">
+      <span class="mobileGnb-menu__title">${title}</span>
+        <ol>
+    `
+    for(let enTitle in gnbData[title]){
+      for(let subTitle in gnbData[title][enTitle]){
+        mobileGnbDataCode += /* html */`
+        <li class="mobileGnb-menu__item">
+          <a href="#">${subTitle}</a>
+        </li>
+        `
+      }
+    }
+    mobileGnbDataCode += /* html */`
+      </ol>
+    </li>
+  `
+  }
+  mobileGnb.innerHTML = mobileGnbDataCode;
+
+  //// mobile gnb effect
+  const mobileGnbMenu = document.querySelectorAll('.mobileGnb-menu');
+  const mobileGnbMenuTitle = document.querySelectorAll('.mobileGnb-menu__title');
+  const mobileGnbMenuList = document.querySelectorAll('.mobileGnb-menu ol');
+
+  
+  mobileGnbMenu.forEach((ele,idx)=>{
+    let menuKo = mobileGnbMenuTitle[idx].innerText
+    
+    ele.addEventListener('mouseenter',()=>{
+      mobileGnbMenuList[idx].style.height = mobileGnbMenuList[idx].scrollHeight+'px'
+      mobileGnbMenuTitle[idx].innerText = Object.keys(gnbData[menuKo]);
+    })
+    ele.addEventListener('mouseleave',()=>{
+      mobileGnbMenuTitle[idx].innerText = menuKo
+      mobileGnbMenuList[idx].style.height = 0
+    })
+  })
+
+  
 })

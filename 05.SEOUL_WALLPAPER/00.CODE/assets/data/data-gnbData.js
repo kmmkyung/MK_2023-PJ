@@ -10,7 +10,7 @@ const gnbData = {
     }
   },
   '고객서비스':{
-    'CUSTOMER<br>SERVICE':{
+    'CUSTOMER SERVICE':{
       '스타일링 팁':[],
       '고객상담':[]
     }

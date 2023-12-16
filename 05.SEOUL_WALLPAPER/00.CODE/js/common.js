@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded',function(){
   //// etc-gnb
   const langBox = document.querySelector('.lang-box');
   const wishBox = document.querySelector('.wish-box');
-  const searchBoxIcon = document.querySelector('.search-box__icon');
+  const searchBox = document.querySelector('.search-box');
   const mobileBox = document.querySelector('.mobile-menu');
   const mobileHeader = document.querySelector('.mobile-header');
   const mobileGnbBg = document.querySelector('.mobile-header__bg');
@@ -90,7 +90,7 @@ window.addEventListener('DOMContentLoaded',function(){
       document.querySelector('.search-box__input').focus();
       langBox.classList.add('on')
       wishBox.classList.add('on')
-      searchBoxIcon.classList.add('on')
+      searchBox.classList.add('on')
       mobileHeader.classList.add('on')
       mobileGnbBg.classList.remove('-hidden')
       document.querySelector('.gnb').classList.add('mobileOn')
@@ -99,7 +99,7 @@ window.addEventListener('DOMContentLoaded',function(){
     else{
       langBox.classList.remove('on')
       wishBox.classList.remove('on')
-      searchBoxIcon.classList.remove('on')
+      searchBox.classList.remove('on')
       mobileHeader.classList.remove('on')
       mobileGnbBg.classList.add('-hidden')
       document.querySelector('.gnb').classList.remove('mobileOn')
@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded',function(){
     mobileBox.classList.remove('on')
     langBox.classList.remove('on')
     wishBox.classList.remove('on')
-    searchBoxIcon.classList.remove('on')
+    searchBox.classList.remove('on')
     mobileHeader.classList.remove('on')
     mobileGnbBg.classList.add('-hidden')
     document.querySelector('.gnb').classList.remove('mobileOn')

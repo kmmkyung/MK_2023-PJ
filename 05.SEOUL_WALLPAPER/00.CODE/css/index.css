@@ -5,27 +5,87 @@
   height: 100vh;
 }
 
-#section-1  .swiper-slide img{
+.section-1__swiper{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+.section-1__swiper .swiper-slide img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-#section-1 .swiper-pagination{
-  position: absolute;
+#section-1 .section-1__swiper .swiper-pagination{
   bottom: 50px;
   left: 50px;
   text-align: left;
 }
 
-#section-1 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.section-1__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background: var(--black);
 }
 
-#section-1 .swiper-pagination .swiper-pagination-bullet{
+.section-1__swiper .swiper-pagination .swiper-pagination-bullet{
   background: none;
   border: 1px solid black;
   opacity: 1;
   width: 5px;
   height: 5px;
+}
+
+.banner .banner-circle{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: min(15vw,200px);
+}
+
+.banner .banner-circle img{
+  width: 100%;
+  height: 100%;
+  animation: bannerCircle 10s linear infinite;
+}
+
+@keyframes bannerCircle {
+  100%{
+    rotate: 360deg;
+  }
+}
+
+.banner .banner-circle a{
+  width: 50%;
+  height: 50%;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.banner .banner-1-circle a{
+  background-color: #A0B9BB;
+}
+
+.banner .banner-2-circle a{
+  background-color: #FAECC8;
+}
+
+.banner .banner-3-circle a{
+  background-color: #99D959;
+}
+
+.banner .banner-circle a::after{
+  content: '';
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-image: url(../assets/svg/circleTxt-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

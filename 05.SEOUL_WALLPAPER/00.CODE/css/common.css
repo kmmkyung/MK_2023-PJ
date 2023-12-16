@@ -214,9 +214,8 @@
   background-repeat: no-repeat;
 }
 
-.etc-gnb .search-box .search-box__icon.on{
+.etc-gnb .search-box.on  .search-box__icon{
   background-image: url(../assets/svg/header-search_W.svg);
-
 }
 
 .etc-gnb .search-box .search-box__input{
@@ -231,7 +230,8 @@
   transition: all 1s;
 }
 
-.etc-gnb .search-box .search-box__input:focus{
+.etc-gnb .search-box .search-box__input:focus,
+.etc-gnb .search-box .search-box__input.on{
   opacity: 0.5;
   width: 300px
 }
@@ -262,7 +262,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 .mobile-header__bg{
@@ -273,7 +273,7 @@
   top: 0;
   left: 0;
   transition: all .2s;
-  z-index: 1;
+  z-index: 100;
 }
 
 .mobile-header{
@@ -284,7 +284,7 @@
   background-color: var(--main);
   transform: translateX(595px);
   transition: all .2s;
-  z-index: 2;
+  z-index: 200;
 }
 
 .mobile-header.on{
@@ -351,7 +351,6 @@
 
 .mobileGnb-circle{
   width: 160px;
-  height: 160px;
   position: absolute;
   right: 50px;
   bottom: 50px;
@@ -371,8 +370,8 @@
 
 .mobileGnb-circle a{
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
   background-color: #c8c8c8;
   position: absolute;
@@ -381,8 +380,8 @@
 .mobileGnb-circle a::after{
   content: '';
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 50%;
+  height: 50%;
   background-image: url(../assets/svg/circleTxt-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;

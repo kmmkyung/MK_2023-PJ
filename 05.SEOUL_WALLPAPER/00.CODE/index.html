@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="./css/index.css">
   <!-- js -->
   <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header id="header">
@@ -58,7 +62,7 @@
           </li>
           <li class="search-box">
             <label id="search-box__input" class="search-box__icon">
-              <img src="./assets/svg/search_black_24dp.svg" alt="">
+              <img src="./assets/svg/header-search_B.svg" alt="">
             </label>
             <input name="search-box__input" class="search-box__input" type="text" placeholder="제품번호/컬렉션">
           </li>
@@ -95,7 +99,29 @@
   </header>
   <main>
     <section id="section-1">
-      <img src="./assets/images/main_banner_1.jpg" alt="">
+      <div class="section-1__swiper">
+        <div class="swiper-wrapper">
+          <div class="banner-1 swiper-slide">
+            <img src="./assets/images/main_banner_1.jpg" alt="banner-1">
+            <div class="banner-1-circle">
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="banner-2 swiper-slide">
+            <img src="./assets/images/main_banner_2.jpg" alt="banner-2">
+            <div class="banner-2-circle">
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="banner-3 swiper-slide">
+            <img src="./assets/images/main_banner_3.jpg" alt="banner-3">
+            <div class="banner-3-circle">
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </section>
     <section></section>
     <section></section>

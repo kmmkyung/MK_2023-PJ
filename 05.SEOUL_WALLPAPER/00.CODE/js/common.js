@@ -1,6 +1,6 @@
 import svgData from '../assets/data/data-svgData.js';
 import gnbData from '../assets/data/data-gnbData.js';
-import {footerData1,footerData2} from '../assets/data/data-footerData.js'
+// import {footerData1,footerData2} from '../assets/data/data-footerData.js'
 
 window.addEventListener('DOMContentLoaded',function(){
   // [ header ]

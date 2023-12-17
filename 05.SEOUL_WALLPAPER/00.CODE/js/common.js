@@ -162,5 +162,9 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
-  
+  const footerMenuList = document.querySelector('.footer-menu__item');
+  const footerCircle = document.querySelector('.footer-circle');
+  const footerCircleSvg = svgData.footerCircleSvg
+  footerCircle.innerHTML = footerCircleSvg 
+  footerMenuList.appendChild(footerCircle)
 })

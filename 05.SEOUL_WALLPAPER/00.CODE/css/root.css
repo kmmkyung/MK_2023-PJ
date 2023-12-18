@@ -9,7 +9,7 @@ body{
 }
 
 * {
-  /* outline: 1px dotted turquoise; */
+  outline: 1px dotted turquoise;
   /* outline: 1px dotted tomato; */
 }
 
@@ -17,7 +17,7 @@ body{
   /* COLOR */
   --black: #000000;
   --white: #ffffff;
-  --fontBlack: #0d0d0d;
+  --darkgray: #0d0d0d;
   --gray: #adb4b5;
   --grayf5: #f5f5f5;
   --main: #667475;

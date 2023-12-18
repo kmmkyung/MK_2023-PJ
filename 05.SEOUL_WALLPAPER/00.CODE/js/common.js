@@ -1,12 +1,12 @@
 import svgData from '../assets/data/data-svgData.js';
 import gnbData from '../assets/data/data-gnbData.js';
-// import {footerData1,footerData2} from '../assets/data/data-footerData.js'
+import {footerData1,footerData2} from '../assets/data/data-footerData.js'
 
 window.addEventListener('DOMContentLoaded',function(){
   // [ header ]
   //// logo
-  const logo = document.querySelector('.pc-header .logo');
-  logo.innerHTML = svgData.logoSvg_b;
+  const headerLogo = document.querySelector('.pc-header .logo');
+  headerLogo.innerHTML = svgData.logoSvg_b;
 
   //// main-gnb
   const gnb = document.querySelector('.gnb-all .gnb');
@@ -162,9 +162,61 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
-  const footerMenuList = document.querySelector('.footer-menu__item');
-  const footerCircle = document.querySelector('.footer-circle');
-  const footerCircleSvg = svgData.footerCircleSvg
-  footerCircle.innerHTML = footerCircleSvg 
-  footerMenuList.appendChild(footerCircle)
+  // [ footer ]
+  //// footer menu
+  const footerMenuItem = document.querySelectorAll('.footer-menu__item');
+  function createDiv(){
+    let footerCircle = document.createElement('div');
+    footerCircle.classList.add('footer-circle');
+    footerCircle.innerHTML = svgData.footerCircleSvg;
+    return footerCircle
+  }
+  footerMenuItem.forEach((ele)=>{
+    ele.appendChild(createDiv())
+  })
+
+  //// logo
+  const footerLogo = document.querySelector('.footer-info .logo');
+  footerLogo.innerHTML = svgData.logoSvg_w;
+
+  //// footerData1 / footerData2
+  const footerContentAddress = document.querySelector('.footer-content__address')
+  let footerContentAddressCode = ``;
+  for(let title in footerData1){
+    footerContentAddressCode += /* html */`
+    <ul>
+      <li class="address-title">${title}</li>
+    `
+    for(let subTitle in footerData1[title]){
+      footerContentAddressCode += /* html */`
+      <li class="address-item">
+        <span class="item-title">${subTitle}</span>
+        <p>${footerData1[title][subTitle]}</p>
+      </li>
+        `
+    }
+    footerContentAddressCode += /* html */`
+    </ul>
+    `
+  }
+  footerContentAddress.innerHTML = footerContentAddressCode
+
+  const footerContentMenu = document.querySelector('.footer-content__menu');
+  let footerContentMenuCode = ``;
+  for(let title in footerData2){
+    footerContentMenuCode += /* html */`
+      <li class="menu-title">${title}
+        <ol class="menu-list">
+    `
+    for(let menu of footerData2[title]){
+      footerContentMenuCode += /* html */`
+      <li class="menu-item"><a href="#">${menu}</a></li>
+      `
+    }
+    footerContentMenuCode += /* html */`
+      </ol>
+    </li>
+    `
+  }
+  footerContentMenu.innerHTML = footerContentMenuCode
 })

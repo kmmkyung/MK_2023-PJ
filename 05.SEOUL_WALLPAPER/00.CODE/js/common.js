@@ -184,14 +184,14 @@ window.addEventListener('DOMContentLoaded',function(){
   let footerContentAddressCode = ``;
   for(let title in footerData1){
     footerContentAddressCode += /* html */`
-    <ul>
+    <ul class="address-list">
       <li class="address-title">${title}</li>
     `
     for(let subTitle in footerData1[title]){
       footerContentAddressCode += /* html */`
       <li class="address-item">
         <span class="item-title">${subTitle}</span>
-        <p>${footerData1[title][subTitle]}</p>
+        <span>${footerData1[title][subTitle]}</span>
       </li>
         `
     }
@@ -210,7 +210,9 @@ window.addEventListener('DOMContentLoaded',function(){
     `
     for(let menu of footerData2[title]){
       footerContentMenuCode += /* html */`
-      <li class="menu-item"><a href="#">${menu}</a></li>
+      <li class="menu-item">
+        <a href="#">${menu}</a>
+      </li>
       `
     }
     footerContentMenuCode += /* html */`

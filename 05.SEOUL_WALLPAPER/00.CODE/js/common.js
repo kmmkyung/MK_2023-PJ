@@ -162,8 +162,6 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
-  //// gnb media 1400px
-  
 
   // [ footer ]
   //// footer menu
@@ -223,5 +221,15 @@ window.addEventListener('DOMContentLoaded',function(){
     </li>
     `
   }
-  footerContentMenu.innerHTML = footerContentMenuCode
+  footerContentMenu.innerHTML = footerContentMenuCode;
+
+  //// footer top button
+  const footerTopButton = document.querySelector('.footer-info .top-button');
+  footerTopButton.addEventListener('click',function(){
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  })
 })

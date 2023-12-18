@@ -162,6 +162,19 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
+  let lastScroll = 0;
+  window.addEventListener('scroll',function(){
+    let currentScroll = window.scrollY
+    if(currentScroll < lastScroll){
+      pcHeader.classList.add('nav-up')
+      pcHeader.classList.remove('nav-down') 
+    }
+    else{
+      pcHeader.classList.remove('nav-up')
+      pcHeader.classList.add('nav-down') 
+    }
+    lastScroll = currentScroll;
+  })
 
   // [ footer ]
   //// footer menu

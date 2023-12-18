@@ -2,13 +2,21 @@
 .pc-header{
   width: 100%;
   height: 100px;
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: all .2s;
   z-index: 999;
+}
+
+.pc-header.nav-up{
+  top: 0;
+}
+
+.pc-header.nav-down{
+  top: -100px;
 }
 
 .pc-header .logo{
@@ -574,6 +582,7 @@
 .footer-content__menu .menu-title{
   color: var(--white);
 }
+
 .footer-content__menu .menu-list{
   margin-top: 20px;
 }
@@ -618,11 +627,10 @@
   left: 0;
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
   align-items: center;
   white-space: nowrap;
   line-height: 1.5;
-  column-gap: 20px;
+  gap: 20px;
   overflow: hidden;
 }
 
@@ -635,8 +643,11 @@
 }
 
 @keyframes footerText {
+  0%{
+    transform: translateX(0px);
+  }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% + -20px));
   }
 }
 
@@ -702,6 +713,18 @@
     margin-top: 20px;
   }
 
+  .mobile-header .mobileGnb-menu ol{
+    width: 350px
+  }
+
+  .mobileGnb-menu:first-child .mobileGnb-menu__item:nth-child(3) a::after{
+    display: none;
+  }
+
+  .mobileGnb-menu:last-child .mobileGnb-menu__item:nth-child(2) a::after{
+    display: none;
+  }
+
   .footer-info{
     height: 600px;
   }
@@ -743,8 +766,44 @@
 }
 
 @media screen and (max-width:480px){
+  .pc-header .logo {
+    margin-left: 20px;
+  }
+
+  .gnb-all .etc-gnb{
+    margin-right: 20px;
+    gap: 20px;
+  }
+
+  .etc-gnb .lang-box span{
+    position: relative;
+    top: -10px;
+  }
+
+  .etc-gnb .lang-box span a{
+    display: block;
+    padding: 10px 0;
+  }
+
   .mobile-gnb .mobileGnb-menu__title{
     font-size: var(--font-size-L);
+  }
+
+  .mobile-header .mobileGnb-menu ol{
+    width: 300px
+  }
+
+  .mobileGnb-menu:first-child .mobileGnb-menu__item:nth-child(2) a::after,
+  .mobileGnb-menu:first-child .mobileGnb-menu__item:nth-child(4) a::after{
+    display: none;
+  }
+
+  .mobileGnb-menu:first-child .mobileGnb-menu__item:nth-child(3) a::after{
+    display: block;
+  }
+
+  .mobileGnb-menu:last-child .mobileGnb-menu__item:nth-child(2) a::after{
+    display: none;
   }
 
   .address-item span:last-child{

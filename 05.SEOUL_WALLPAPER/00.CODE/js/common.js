@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded',function(){
       `
         for(let menu of gnbData[title][enTitle][subTitle]){
         gnbDataCode += /* html */`
-            <span>${menu}</span>
+            <span><a href="#">${menu}</a></span>
       `
         }
       gnbDataCode += /*html*/`

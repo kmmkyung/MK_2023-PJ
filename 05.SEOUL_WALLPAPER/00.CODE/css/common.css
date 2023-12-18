@@ -115,6 +115,11 @@
   position: relative;
 }
 
+.gnb .gnb-menu__area ol .gnb-menu__item a{
+  font-size: var(--font-size-S);
+  color: var(--gray);
+}
+
 .gnb-menu__item::after{
   content: '';
   position: absolute;

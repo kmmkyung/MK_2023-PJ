@@ -107,6 +107,7 @@
   }
 
   .banner .mobile-banner{
+    display: block;
     object-position: center;
   }
 }

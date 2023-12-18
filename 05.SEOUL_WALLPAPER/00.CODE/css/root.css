@@ -49,3 +49,16 @@ body{
 }
 
 /*----- CSS -----*/
+.circle-button__W{
+  padding: 10px 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle-button__B{
+  padding: 10px 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}

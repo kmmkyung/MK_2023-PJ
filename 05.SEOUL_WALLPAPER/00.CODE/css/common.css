@@ -6,7 +6,6 @@
   top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   transition: all .2s;
   z-index: 999;
@@ -20,8 +19,7 @@
 
 .pc-header .logo svg{
   width: 100%;
-  height: auto;
-  vertical-align: middle;
+  height: 100%;
 }
 
 .pc-header .logo.mobileOn svg path{
@@ -297,6 +295,30 @@
   height: 100%;
   padding: 100px 50px 50px;
   position: relative;
+}
+
+.mobile-header .search-box .search-box__icon{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  background-image: url(../assets/svg/header-search_W.svg);
+  background-repeat: no-repeat;
+}
+
+.mobile-header .search-box .search-box__input{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  opacity: 0.5;
 }
 
 .mobile-header .mobileGnb-menu{
@@ -597,6 +619,19 @@
 /* 미디어쿼리 */
 
 @media screen and (max-width:1400px){
+  .gnb-all {
+    justify-content: flex-end;
+  }
+
+  .gnb-all .gnb{
+    display: none;
+  }
+
+  .pc-header .logo {
+    margin: 0;
+    margin-left: 50px;
+}
+
   .footer-menu__item a h5{
     font-size: var(--font-size-L);
   }
@@ -611,6 +646,7 @@
     font-size: var(--font-size-S);
   }
 }
+
 @media screen and (max-width:1200px){
   .footer-content .footer-content__address {
     flex-direction: column;
@@ -618,24 +654,48 @@
 }
 
 @media screen and (max-width:950px){
+  .pc-header .etc-gnb .search-box{
+    display: none;
+  }
+
+  .mobile-header {
+    width: 100%;
+  }
+
+  .mobile-header .search-box{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 40px;
+  }
+
+  .mobile-header .mobile-gnb{
+    margin-top: 20px;
+  }
+
   .footer-menu{
     height: auto;
   }
+
   .footer-menu__list{
     flex-direction: column;
   }
+
   .footer-menu__item{
     padding: 20px;
   }
+
   .footer-menu__item:not(:last-child)::after{
     top: 125%;
     left: 50%;
     transform: translateX(-50%);
   }
+
   .footer-menu__item:hover .footer-circle svg{
     animation: none;
     opacity: 0;
   }
+
   .footer-content .footer-content__menu{
     display: none;
   }

@@ -162,6 +162,9 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
+  //// gnb media 1400px
+  
+
   // [ footer ]
   //// footer menu
   const footerMenuItem = document.querySelectorAll('.footer-menu__item');

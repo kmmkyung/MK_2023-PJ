@@ -148,10 +148,10 @@ window.addEventListener('DOMContentLoaded',function(){
   const mobileGnbMenuTitle = document.querySelectorAll('.mobileGnb-menu__title');
   const mobileGnbMenuList = document.querySelectorAll('.mobileGnb-menu ol');
 
-  
+  let menuClick = 0;
   mobileGnbMenu.forEach((ele,idx)=>{
     let menuKo = mobileGnbMenuTitle[idx].innerText
-    
+    // pc
     ele.addEventListener('mouseenter',()=>{
       mobileGnbMenuList[idx].style.height = mobileGnbMenuList[idx].scrollHeight+'px'
       mobileGnbMenuTitle[idx].innerText = Object.keys(gnbData[menuKo]);
@@ -159,6 +159,18 @@ window.addEventListener('DOMContentLoaded',function(){
     ele.addEventListener('mouseleave',()=>{
       mobileGnbMenuTitle[idx].innerText = menuKo
       mobileGnbMenuList[idx].style.height = 0
+    })
+  
+    ele.addEventListener('click',function(){
+      menuClick++;
+      if(menuClick%2 == 1){
+        mobileGnbMenuList[idx].style.height = mobileGnbMenuList[idx].scrollHeight+'px'
+        mobileGnbMenuTitle[idx].innerText = Object.keys(gnbData[menuKo]);
+      }
+      else{
+        mobileGnbMenuList[idx].style.height = 0
+        mobileGnbMenuTitle[idx].innerText = menuKo
+      }
     })
   })
 

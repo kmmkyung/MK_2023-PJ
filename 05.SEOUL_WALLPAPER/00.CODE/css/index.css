@@ -97,10 +97,176 @@
 #section-2{
   width: 100%;
   height: 100vh;
+  position: relative;
+}
+
+.section-2__title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 60px;
+  position: absolute;
+  top: 60px;
+}
+
+.section-2__title p,
+.section-2__title a{
+  font-size: var(--font-size-M );
+  color: var(--gray);
+}
+
+.section-2__title a{
+  display: block;
+  position: relative;
+  margin-right: 30px;
+}
+
+.section-2__title a::after{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/svg/card-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  transition: all .4s;
+}
+
+.section-2__title a:hover::after{
+  transform: translateY(-50%) translateX(20%);
+}
+
+.section-2__content{
+  width: 200%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.section-2__content .content-wallPaperCard{
+  display: flex;
+  gap: 60px;
+}
+
+.section-2__content .wallPaperCard{
+  aspect-ratio: 3/4.2;
+  width: min(25vw,500px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-2__content .card-1{
+  background-image: url(../assets/images/card_paper1_bg.png);
+}
+
+.section-2__content .card-2{
+  background-image: url(../assets/images/card_paper2_bg.png);
+}
+
+.section-2__content .card-3{
+  background-image: url(../assets/images/card_paper3_bg.png);
+}
+
+.section-2__content .wallPaperCard-inner{
+  box-sizing: border-box;
+  padding: 70px 0 50px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-2__content .wallPaperCard h5{
+  font-size: var(--font-size-L);
+  text-align: center;
+}
+
+.section-2__content .wallPaperCard img{
+  width: 60%;
+  aspect-ratio: 3/3.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.section-2__content .wallPaperCard p{
+  font-size: var(--font-size-M);
+  color: var(--main);
+  text-align: center;
+}
+
+.section-2__content .card-3 h5,
+.section-2__content .card-3 p{
+  color: var(--grayf5);
+}
+
+.section-2__content .content-searchPaperCard{
+  aspect-ratio: 3/4.2;
+  width: min(25vw,500px);
+  background-image: url(../assets/images/card_paper4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-2__content .searchPaperCard-inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section-2__content .content-searchPaperCard h5{
+  font-size: min(1vw,var(--font-size-L));
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+}
+
+.section-2__content .content-searchPaperCard h5::after{
+  content: "";
+  display: block;
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 3/3.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* 미디어쿼리 */
 /* 1400 1200 950 480 */
+@media screen and (max-width:1400px){
+
+  .section-2__content .wallPaperCard-inner{
+    padding: 50px 0 25px 0;
+  }
+
+  .section-2__content .wallPaperCard h5{
+    font-size: var(--font-size-M);
+  }
+
+  .section-2__content .wallPaperCard p{
+    font-size: min(1vw,var(--font-size-S));
+  }
+}
+
 @media screen and (max-width:480px){
   .banner .pc-banner{
     display: none;

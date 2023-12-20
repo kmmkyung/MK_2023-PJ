@@ -147,8 +147,6 @@
 .section-2__content{
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 160%;
   height: 100vh;
   gap: 60px;
 }
@@ -214,7 +212,7 @@
   color: var(--grayf5);
 }
 
-.section-2__content .content-searchPaperCard{
+.section-2__content .searchPaperCard-warp{
   aspect-ratio: 3/4.2;
   width: min(25vw,500px);
   background-image: url(../assets/images/card_paper4.png);

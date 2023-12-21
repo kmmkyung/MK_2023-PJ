@@ -14,27 +14,40 @@ window.addEventListener('DOMContentLoaded',function(){
       clickable: true
     },
   });
+  
 
   // section2
   //// card
   const section2 = document.querySelector('#section-2');
+  const cards = document.querySelector('.section-2__content');
+  const lastCardImg = document.querySelector('.content-searchPaperCard img');
+  const searchPaperTextChange = document.querySelector('.content-searchPaperCard .searchPaperText-change');
 
-  window.addEventListener('scroll',function(){
-    let section2WinTop = section2.getBoundingClientRect().top
-    let section2PageSize = section2.offsetHeight
-    // console.log(window.scrollY-section2PageSize);
-    // console.log(section2PageSize/2*1);
-    
-    // if(section2WinTop<=0){
-    //   section2.style.position = 'fixed';
-    // }
-    // if(window.scrollY - section2PageSize >= section2PageSize/2*1){
-    //   section2.style.position = 'relative';
-    // }
+  function changeContent(){
+    const searchPaperText = document.querySelector('.content-searchPaperCard .searchPaperText');
+    searchPaperText.classList.toggle('-hidden');
+}
+
+
+
+
+  let timeline = gsap.timeline({
+    scrollTrigger:{
+      trigger:section2,
+      pin:true,
+      scrub:1,
+      end: section2.scrollWidth,
+      makers:true 
+    },
+    defaults: { ease: 'none', duration: 10, }
   })
 
+  timeline.to(cards,{x:-(cards.clientWidth/4*3)-30})
+  
+  timeline.to(lastCardImg,14,{width: '110vw', height: '100vh', onStart:changeContent})
 
-
-
-
+  timeline.to(searchPaperTextChange,4,{
+    visibility: 'visible',
+    opacity: 1
+  },"-=10")
 })

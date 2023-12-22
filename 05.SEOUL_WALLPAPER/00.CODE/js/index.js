@@ -22,32 +22,23 @@ window.addEventListener('DOMContentLoaded',function(){
   const cards = document.querySelector('.section-2__content');
   const lastCardImg = document.querySelector('.content-searchPaperCard img');
   const searchPaperTextChange = document.querySelector('.content-searchPaperCard .searchPaperText-change');
-
-  function changeContent(){
-    const searchPaperText = document.querySelector('.content-searchPaperCard .searchPaperText');
-    searchPaperText.classList.toggle('-hidden');
-}
-
-
-
+  const searchPaperText = document.querySelector('.content-searchPaperCard .searchPaperText');
 
   let timeline = gsap.timeline({
     scrollTrigger:{
       trigger:section2,
       pin:true,
       scrub:1,
-      end: section2.scrollWidth,
-      makers:true 
+      end: section2.scrollWidth
     },
-    defaults: { ease: 'none', duration: 10, }
+    defaults: { ease: 'none', duration: 10}
   })
 
   timeline.to(cards,{x:-(cards.clientWidth/4*3)-30})
-  
-  timeline.to(lastCardImg,14,{width: '110vw', height: '100vh', onStart:changeContent})
-
-  timeline.to(searchPaperTextChange,4,{
+  timeline.to(searchPaperText,1,{display:'none'})
+  timeline.to(lastCardImg,1.5,{width: '110vw', height: '100vh'})
+  timeline.to(searchPaperTextChange,0.5,{
     visibility: 'visible',
     opacity: 1
-  },"-=10")
+  },"-=1")
 })

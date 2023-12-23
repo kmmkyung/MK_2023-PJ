@@ -29,16 +29,17 @@ window.addEventListener('DOMContentLoaded',function(){
       trigger:section2,
       pin:true,
       scrub:1,
-      end: section2.scrollWidth
+      end: section2.scrollWidth+"+=2000"
     },
     defaults: { ease: 'none', duration: 10}
   })
 
-  timeline.to(cards,{x:-(cards.clientWidth/4*3)-30})
+  timeline.to(cards,{xPercent:-30})
+  timeline.to(cards,{x:-(cards.clientWidth/4*1.5)-180})
   timeline.to(searchPaperText,1,{display:'none'})
-  timeline.to(lastCardImg,1.5,{width: '110vw', height: '100vh'})
-  timeline.to(searchPaperTextChange,0.5,{
-    visibility: 'visible',
-    opacity: 1
-  },"-=1")
+  timeline.to(lastCardImg,4,{width: '110vw', height: '100vh'})
+  timeline.to(searchPaperTextChange,1,{
+    autoAlpha: 1
+  },"-=1.5")
+  timeline.addPause(50);
 })

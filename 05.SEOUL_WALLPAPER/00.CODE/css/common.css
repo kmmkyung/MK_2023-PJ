@@ -649,7 +649,7 @@
 }
 
 /* 미디어쿼리 */
-/* 1400 1200 950 480 */
+/* 1400 1200 950-모바일 480 */
 @media screen and (max-width:1400px){
   .gnb-all {
     justify-content: flex-end;

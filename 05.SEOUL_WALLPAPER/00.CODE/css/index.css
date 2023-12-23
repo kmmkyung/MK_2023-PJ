@@ -297,6 +297,8 @@
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
 }
 
 .section-2__content .searchPaperText-change .search-box input{
@@ -309,6 +311,7 @@
   outline: none;
   opacity: 0.3;
   background-color: var(--darkgray);
+  color: var(--white);
 }
 
 .section-2__content .searchPaperText-change .search-box ::placeholder{
@@ -320,8 +323,13 @@
   display: inline-block;
   font-size: var(--font-size-S);
   color: var(--white);
+  transition: all .4s;
 }
 
+.section-2__content .searchPaperText-change a:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
 
 /* section-3 */
 #section-3{
@@ -344,6 +352,10 @@
   .section-2__content .wallPaperCard p{
     font-size: min(1vw,var(--font-size-S));
   }
+}
+
+@media screen and (max-width:950px){
+  
 }
 
 @media screen and (max-width:480px){

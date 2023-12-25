@@ -20,13 +20,14 @@ window.addEventListener('DOMContentLoaded',function(){
   window.addEventListener('resize',function(){
     const section2cards = document.querySelector('.section-2__pc');
     const section2swiper = document.querySelector('.section-2__mobile');
+
     if(window.innerWidth<=950){
       section2cards.style.display='none'
-      section2swiper.style.display='block'
+      section2swiper.classList.remove('-hidden')
     }
     if(window.innerWidth>950){
       section2cards.style.display='flex'
-      section2swiper.style.display='none'
+      section2swiper.classList.add('-hidden')
     }
   })
   
@@ -70,9 +71,9 @@ window.addEventListener('DOMContentLoaded',function(){
   let swiper2 = new Swiper('#section-2 .section-2__swiper', {
       direction: 'horizontal',
       loop: true,
-      // autoplay: {
-      //   delay: 3000
-      // },
+      autoplay: {
+        delay: 3000
+      },
       pagination: {
         el: '.swiper-pagination__2',
         clickable: true,

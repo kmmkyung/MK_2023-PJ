@@ -17,19 +17,19 @@ window.addEventListener('DOMContentLoaded',function(){
   
 
   // section2
-  window.addEventListener('resize',function(){
-    const section2cards = document.querySelector('.section-2__pc');
-    const section2swiper = document.querySelector('.section-2__mobile');
+  // window.addEventListener('resize',function(){
+  //   const section2cards = document.querySelector('.section-2__pc');
+  //   const section2swiper = document.querySelector('.section-2__mobile');
 
-    if(window.innerWidth<=950){
-      section2cards.style.display='none'
-      section2swiper.classList.remove('-hidden')
-    }
-    if(window.innerWidth>950){
-      section2cards.style.display='flex'
-      section2swiper.classList.add('-hidden')
-    }
-  })
+  //   if(window.innerWidth<=950){
+  //     section2cards.style.display='none'
+  //     section2swiper.classList.remove('-hidden')
+  //   }
+  //   if(window.innerWidth>950){
+  //     section2cards.style.display='flex'
+  //     section2swiper.classList.add('-hidden')
+  //   }
+  // })
   
   //// card
   const section2 = document.querySelector('#section-2');

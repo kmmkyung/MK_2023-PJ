@@ -1,0 +1,69 @@
+import svgData from '../assets/data/svgData.js'
+import gndData from '../assets/data/gndData.js';
+
+window.addEventListener('DOMContentLoaded',function(){
+  //// header
+  // logo
+  const headerLogo = document.querySelector('.header-logo');
+  headerLogo.innerHTML = svgData.logo_W;
+
+  // menu
+  // 메뉴 버튼을 누르면 메뉴창 열림
+  const menuButton = document.querySelector('.header-left__img .menu')
+  const closeButton = document.querySelector('.header-menu .close')
+  const headerLeftMenu = document.querySelector('.header-left__menu')
+  const headerMenu = document.querySelector('.header-menu')
+  menuButton.addEventListener('click',function(){
+    // 만약 메뉴버튼에 히든이 없으면 왼쪽전체에 히든넣고 사이드메뉴 히든빼
+    menuButton.classList.add('-hidden')
+    headerLeftMenu.classList.add('off')
+    headerMenu.classList.remove('-hidden')
+  })
+  closeButton.addEventListener('click',function(){
+    menuButton.classList.remove('-hidden')
+    headerLeftMenu.classList.remove('off')
+    headerMenu.classList.add('-hidden')
+  })
+  
+  // 메뉴 적용
+  const headerMenuUl = document.querySelector('.header-menu ul')
+  let headerMenuCode = '';
+
+  for(let title in gndData){
+    headerMenuCode += /* html */`
+    <li class="menu-list">
+    <a href="#">
+    ${title}
+    </a>
+      <ol>
+    `
+    for(let menu of gndData[title]){
+      headerMenuCode += /* html */` 
+      <li class="menu-item">${menu}</li>
+      `
+    }
+    headerMenuCode += /* html */`
+      </ol>
+    </li>
+    `
+  }
+  headerMenuUl.innerHTML = headerMenuCode;
+
+  // 메뉴 누르면 메뉴 닫힘
+  let click = [0,0,0];
+  const menuTitle = document.querySelectorAll('.header-menu .menu-list a')
+  const menuItem = document.querySelectorAll('.header-menu .menu-list ol')
+  
+  menuTitle.forEach(function(ele,idx){
+    ele.addEventListener('click',function(){
+      click[idx]++;
+      if(click[idx]%2==1){
+        menuItem[idx].style.height=0
+      }
+      if(click[idx]%2==0){
+        menuItem[idx].style.height=menuItem[idx].scrollHeight+'px'
+      }
+    })
+  })
+
+})

@@ -15,22 +15,6 @@ window.addEventListener('DOMContentLoaded',function(){
     },
   });
   
-
-  // section2
-  // window.addEventListener('resize',function(){
-  //   const section2cards = document.querySelector('.section-2__pc');
-  //   const section2swiper = document.querySelector('.section-2__mobile');
-
-  //   if(window.innerWidth<=950){
-  //     section2cards.style.display='none'
-  //     section2swiper.classList.remove('-hidden')
-  //   }
-  //   if(window.innerWidth>950){
-  //     section2cards.style.display='flex'
-  //     section2swiper.classList.add('-hidden')
-  //   }
-  // })
-  
   //// card
   const section2 = document.querySelector('#section-2');
   const cards = document.querySelector('.section-2__pc');
@@ -44,7 +28,7 @@ window.addEventListener('DOMContentLoaded',function(){
       trigger:section2,
       pin:true,
       scrub:1,
-      end: section2.scrollWidth+"+=2000"
+      end: section2.scrollWidth
     },
     defaults: { ease: 'none', duration: 10}
   })
@@ -59,7 +43,7 @@ window.addEventListener('DOMContentLoaded',function(){
   ScrollTrigger.matchMedia({
     "(max-width: 950px)": function(){
       timeline.pause(!timeline.pause);
-      ScrollTrigger.disable(false)
+      ScrollTrigger.disable(false);
     },
     "(min-width: 951px)": function(){
       ScrollTrigger.enable()
@@ -69,11 +53,13 @@ window.addEventListener('DOMContentLoaded',function(){
 
   //// banner
   let swiper2 = new Swiper('#section-2 .section-2__swiper', {
-      direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 3000
-      },
+    direction: 'horizontal',
+    loop: true,
+    // autoplay: {
+    //   delay: 3000
+    // },
+    effect:'fade',
+    crossFade:true,
       pagination: {
         el: '.swiper-pagination__2',
         clickable: true,

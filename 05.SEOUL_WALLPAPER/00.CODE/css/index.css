@@ -349,6 +349,7 @@ background-image: url(../assets/images/card_paper2_bg.png);
   width: 100%;
   height: 160vh;
   position: relative;
+  overflow: hidden;
 }
 
 .section-2__mobile .content-wallPaperCard{
@@ -516,14 +517,14 @@ background-image: url(../assets/images/card_paper2_bg.png);
 
 
 @media screen and (max-width:950px){
-  #section-2{
+  #section-2 {
     height: 160vh;
   }
-  
+
   #section-2 .section-2__pc{
     display: none;
   }
-
+  
   #section-2 .section-2__mobile{
     display: block;
   }
@@ -539,4 +540,15 @@ background-image: url(../assets/images/card_paper2_bg.png);
     object-position: center;
   }
 
+  #section-2 {
+    height: 100vh;
+  }
+
+  .section-2__mobile .content-wallPaperCard{
+    height: 50vh;
+  }
+
+  .section-2__mobile .content-searchPaperCard{
+    height: 50vh;
+  }
 }

@@ -540,7 +540,7 @@ background-image: url(../assets/images/card_paper2_bg.png);
     object-position: center;
   }
 
-  #section-2 {
+  /* #section-2 {
     height: 100vh;
   }
 
@@ -550,5 +550,5 @@ background-image: url(../assets/images/card_paper2_bg.png);
 
   .section-2__mobile .content-searchPaperCard{
     height: 50vh;
-  }
+  } */
 }

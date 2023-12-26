@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded',function(){
     defaults: { ease: 'none', duration: 10}
   })
   timeline.to(cards,{xPercent:-30,x:-(cards.clientWidth/4*1.5)-180})
-  timeline.to(searchPaperText,1,{display:'none'})
+  timeline.to(searchPaperText,3,{display:'none'})
   timeline.to(lastCard,2,{overflow:'visible'})
   timeline.to(lastCardImg,2,{display: 'block', width: '110vw', height: '100vh'})
   timeline.to(searchPaperTextChange,1,{autoAlpha: 1},"-=1.5")

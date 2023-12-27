@@ -34,7 +34,6 @@
 }
 
 .header-left__menu{
-  color: var(--white);
   display: flex;
   gap: 40px;
   flex-basis: 1;
@@ -42,7 +41,11 @@
   font-family: 'FreightDisplay', Noto Sans KR;
 }
 
-.header-pc li:last-child{
+.header-left__menu li a{
+  color: var(--white);
+}
+
+.header-left__menu li:last-child a{
   color: var(--main);
 }
 
@@ -54,6 +57,7 @@
 .header-etc{
   flex-basis: 50%;
   text-align: end;
+  cursor: pointer;
 }
 
 #header .header-menu{
@@ -67,6 +71,14 @@
   z-index: 999;
   box-sizing: border-box;
   padding: 20px 20px 100px;
+  transition: all 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#header .header-menu.on{
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu-inner{
@@ -98,13 +110,15 @@
 .header-menu ol{
   transition: all .4s;
   overflow: hidden;
+  height: 100%;
 }
 
 .header-menu .menu-item{
   color: var(--white);
   font-size: var(--font-size-S);
   margin: 20px 0;
-  opacity: 0.85;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .header-menu .menu-list a:hover,

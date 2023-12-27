@@ -14,15 +14,14 @@ window.addEventListener('DOMContentLoaded',function(){
   const headerLeftMenu = document.querySelector('.header-left__menu')
   const headerMenu = document.querySelector('.header-menu')
   menuButton.addEventListener('click',function(){
-    // 만약 메뉴버튼에 히든이 없으면 왼쪽전체에 히든넣고 사이드메뉴 히든빼
     menuButton.classList.add('-hidden')
     headerLeftMenu.classList.add('off')
-    headerMenu.classList.remove('-hidden')
+    headerMenu.classList.add('on')
   })
   closeButton.addEventListener('click',function(){
     menuButton.classList.remove('-hidden')
     headerLeftMenu.classList.remove('off')
-    headerMenu.classList.add('-hidden')
+    headerMenu.classList.remove('on')
   })
   
   // 메뉴 적용
@@ -55,10 +54,11 @@ window.addEventListener('DOMContentLoaded',function(){
   const menuItem = document.querySelectorAll('.header-menu .menu-list ol')
   
   menuTitle.forEach(function(ele,idx){
+    menuItem[idx].style.height=menuItem[idx].scrollHeight+'px'
     ele.addEventListener('click',function(){
       click[idx]++;
       if(click[idx]%2==1){
-        menuItem[idx].style.height=0
+        menuItem[idx].style.height = 0 
       }
       if(click[idx]%2==0){
         menuItem[idx].style.height=menuItem[idx].scrollHeight+'px'

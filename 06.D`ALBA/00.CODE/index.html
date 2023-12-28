@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./css/index.css">
   <!-- js -->
   <script src="./js/common.js" type="module" ></script>
+  <script src="./js/index.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header id="header">
@@ -20,7 +24,7 @@
         <div class="header-left__img">
           <img class="menu" src="./assets/svg/menu_w.svg" alt="menu">
         </div>
-        <ul class="header-left__menu">
+        <ul class="header-left__menu font_freightDisplay">
           <li><a href="#">Stroy</a></li>
           <li><a href="#">Collection</a></li>
           <li><a href="#">Product</a></li>
@@ -39,7 +43,7 @@
         <img class="-hidden" src="./assets/svg/cart_b.svg" alt="cart">
       </div>
     </div>
-    <div class="header-menu">
+    <div class="header-menu font_freightDisplay">
       <div class="menu-inner">
         <img class="close" src="./assets/svg/close_w.svg" alt="close">
         <ul>
@@ -57,10 +61,42 @@
       </div>
     </header>
     <main>
-    <section id="section-1">
-      <div class="section-wrap">
-        <img src="./assets/images/section-1-1.jpg" alt="banner1">
+    <section id="section-1" class="section-1__swiper">
+      <div class="section-wrap swiper-wrapper">
+        <div class="banner-1 swiper-slide">
+          <div class="banner-content -center">
+            <p class="sub-title">Vegan</p>
+            <h2 class="title">THE VEGAN RECIPE</h2>
+            <p class="text">최적의 피부 상태를 위한 프리미엄 맞춤 더블 케어</p>
+            <a class="button__W button" href="#">더 알아보기</a>
+          </div>
+        </div>
+        <div class="banner-2 swiper-slide">
+          <div class="banner-content -center">
+            <p class="sub-title">Vegan</p>
+            <h2 class="title">PREMIUM VEGAN<br>8%</h2>
+            <p class="text">진한 보습과 빈틈 없는 탄력, 아로마틱 스프레이 세럼 8%</p>
+            <a class="button__W button" href="#">더 알아보기</a>
+          </div>
+        </div>
+        <div class="banner-3 swiper-slide">
+          <div class="banner-content -center">
+            <p class="sub-title">Vegan</p>
+            <h2 class="title">Natural Healthy Glow Skin</h2>
+            <p class="text">피부의 아름다운 빛을 되찾아 줄 프리미엄 오가닉 오일</p>
+            <a class="button__W button" href="#">더 알아보기</a>
+          </div>
+        </div>
+        <div class="banner-4 swiper-slide">
+          <div class="banner-content -center">
+            <p class="sub-title">Vegan</p>
+            <h2 class="title">New Generation Collagen</h2>
+            <p class="text">비릿한 맛없이 섭취하기 편한 식물성 콜라겐 부스터 앰플</p>
+            <a class="button__W button" href="#">더 알아보기</a>
+          </div>
+        </div>
       </div>
+      <div class="swiper1-pagination"></div>
     </section>
     <section id="section-2"></section>
     <section id="section-3"></section>

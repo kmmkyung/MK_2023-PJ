@@ -54,8 +54,17 @@ body{
 }
 
 /*----- CSS -----*/
+.font_freightDisplay{
+  font-family: 'FreightDisplay', Noto Sans KR;
+}
+
 .button__W{
-  padding: 15px 25px;
-  border: 1px solid #fff;;
+  padding: 25px 25px;
+  border: 1px solid #fff;
   cursor: pointer;
+  transition: all .2s;
+}
+
+.button__W:hover{
+  background-color: #fff;
 }

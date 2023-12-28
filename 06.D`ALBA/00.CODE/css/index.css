@@ -2,6 +2,7 @@
 #section-1{
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .section-wrap{
@@ -82,4 +83,76 @@
 
 .banner-content .button:hover{
   color: var(--main);
+}
+
+.section-1__swiper .swiper1-pagination,
+.section-1__swiper .swiper-horizontal>.swiper-pagination-bullets,
+.section-1__swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.section-1__swiper .swiper-pagination-custom,
+.section-1__swiper .swiper-pagination-fraction{
+  width: 100px;
+  height: 260px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: auto;
+  right: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1__swiper .swiper1-pagination li{
+  width: 100px;
+  height: 50px;
+  font-size: var(--font-size-L);
+  color: var(--white);
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  opacity: 0.5;
+  background: none;
+}
+
+.section-1__swiper .swiper1-pagination li:focus{
+  border: none;
+  outline: none;
+}
+
+.section-1__swiper .swiper1-pagination li:not(li:last-child){
+  margin-bottom: 20px;
+}
+
+.section-1__swiper .swiper1-pagination li::after{
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.section-1__swiper .swiper1-pagination li.swiper-pagination-bullet-active{
+  opacity: 1;
+}
+
+/* section-2 */
+#section-2{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/section-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#section-2 a{
+  position: absolute;
+  width: 340px;
+  height: 100px;
+  top: 80%;
+  left: 14%;
 }

@@ -6,23 +6,6 @@ window.addEventListener('DOMContentLoaded',function(){
   // logo
   const headerLogo = document.querySelector('.header-logo');
   headerLogo.innerHTML = svgData.logo_W;
-
-  // menu
-  // 메뉴 버튼을 누르면 메뉴창 열림
-  const menuButton = document.querySelector('.header-left__img .menu')
-  const closeButton = document.querySelector('.header-menu .close')
-  const headerLeftMenu = document.querySelector('.header-left__menu')
-  const headerMenu = document.querySelector('.header-menu')
-  menuButton.addEventListener('click',function(){
-    menuButton.classList.add('-hidden')
-    headerLeftMenu.classList.add('off')
-    headerMenu.classList.add('on')
-  })
-  closeButton.addEventListener('click',function(){
-    menuButton.classList.remove('-hidden')
-    headerLeftMenu.classList.remove('off')
-    headerMenu.classList.remove('on')
-  })
   
   // 메뉴 적용
   const headerMenuUl = document.querySelector('.header-menu ul')
@@ -48,6 +31,31 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   headerMenuUl.innerHTML = headerMenuCode;
 
+    // menu
+  // 메뉴 버튼을 누르면 메뉴창 열림 / 메뉴 다른곳 누르면 메뉴창 닫힘
+  const menuButton = document.querySelector('.header-left__img .menu');
+  const closeButton = document.querySelector('.header-menu .close');
+  const headerLeftMenu = document.querySelector('.header-left__menu');
+  const headerMenu = document.querySelector('.header-menu');
+  const headerMenuBg = document.querySelector('.header-menu__bg');
+  const menuInner = document.querySelector('.menu-inner');
+  menuButton.addEventListener('click',function(){
+    menuButton.classList.add('-hidden')
+    headerLeftMenu.classList.add('off')
+    headerMenu.classList.add('on')
+  });
+  closeButton.addEventListener('click',function(){
+    menuButton.classList.remove('-hidden')
+    headerLeftMenu.classList.remove('off')
+    headerMenu.classList.remove('on')
+  });
+  headerMenuBg.addEventListener('click',function(){
+    menuButton.classList.remove('-hidden')
+    headerLeftMenu.classList.remove('off')
+    headerMenu.classList.remove('on')
+  })
+
+
   // 메뉴 누르면 메뉴 닫힘
   let click = [0,0,0];
   const menuTitle = document.querySelectorAll('.header-menu .menu-list a')
@@ -65,5 +73,6 @@ window.addEventListener('DOMContentLoaded',function(){
       }
     })
   })
+
 
 })

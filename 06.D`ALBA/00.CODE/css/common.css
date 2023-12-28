@@ -54,9 +54,18 @@
 }
 
 .header-etc{
+  display: flex;
   flex-basis: 50%;
-  text-align: end;
+  justify-content: flex-end;
   cursor: pointer;
+}
+
+.header-menu__bg{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #header .header-menu{
@@ -68,7 +77,7 @@
   left: 0;
   z-index: 999;
   box-sizing: border-box;
-  padding: 20px 20px 100px;
+  padding: 20px;
   transition: all 1s;
   visibility: hidden;
   opacity: 0;
@@ -129,4 +138,25 @@
   color: var(--white);
   font-size: var(--font-size-XL);
   margin: 20px 0;
+}
+
+@media screen and (max-width:1100px) {
+  .header-left__menu li{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .header-menu__bg{
+    display: none;
+  }
+  
+  .header-left__menu{
+    display: none;
+  }
+
+  .header-etc li:first-child,
+  .header-etc li:nth-child(2){
+    display: none;
+  }
 }

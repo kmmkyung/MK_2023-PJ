@@ -142,11 +142,12 @@
 
 @media screen and (max-width:1100px) {
   .header-left__menu li{
-    font-size: 1.2rem;
+    font-size: var(--font-size-XS);
   }
 }
 
 @media screen and (max-width:900px) {
+  
   .header-menu__bg{
     display: none;
   }
@@ -154,9 +155,11 @@
   .header-left__menu{
     display: none;
   }
-
+  
   .header-etc li:first-child,
   .header-etc li:nth-child(2){
     display: none;
   }
+
+
 }

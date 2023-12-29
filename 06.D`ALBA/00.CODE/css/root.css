@@ -13,7 +13,7 @@ body{
 }
 
 * {
-  outline: 1px dotted turquoise;
+  /* outline: 1px dotted turquoise; */
   /* outline: 1px dotted tomato; */
 }
 
@@ -25,9 +25,10 @@ body{
   --gray: #adb4b5;
   --grayf5: #f5f5f5;
   --main: #D5AE6B;
-  --section2: #eaa200;
+  --section3: #e7892f;
 
   /* FONTSIZE */
+  --font-size-XS: 1.2rem;
   --font-size-S: 1.8rem;
   --font-size-M: 2.4rem;
   --font-size-L: 2.8rem;
@@ -61,6 +62,13 @@ body{
 .button__W{
   padding: 25px 25px;
   border: 1px solid #fff;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.button__B{
+  padding: 25px 25px;
+  border: 1px solid #000;
   cursor: pointer;
   transition: all .2s;
 }

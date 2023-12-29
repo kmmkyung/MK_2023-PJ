@@ -1,3 +1,6 @@
+import bestProductData from '../assets/data/bestProductData.js'
+import bestProduct from '../assets/data/bestProductData.js'
+
 window.addEventListener('DOMContentLoaded',function(){
   // section1
   //// swiper
@@ -14,6 +17,7 @@ window.addEventListener('DOMContentLoaded',function(){
     //   delay: 5000
     // },
     effect:'fade',
+    fadeEffect: { crossFade: true },
     pagination: {
       el: '.swiper1-pagination',
       clickable: true,
@@ -23,6 +27,7 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   })
 
+  //// 배경이미지
   window.addEventListener('resize',function(){
     const bannerBg1 = document.querySelector('.banner-1')
     const bannerBg2 = document.querySelector('.banner-2')
@@ -39,7 +44,34 @@ window.addEventListener('DOMContentLoaded',function(){
       bannerBg2.style.backgroundImage='url(./assets/images/section-1-2.jpg)'
       bannerBg3.style.backgroundImage='url(./assets/images/section-1-3.jpg)'
       bannerBg4.style.backgroundImage='url(./assets/images/section-1-4.jpg)'
-      
     }
   })
+
+  // section-3
+  //// 데이터 넣기
+  const slide = document.querySelector('.section-3__swiper .slide');
+  let slideCode = ``;
+  bestProductData.forEach(function(ele){
+    slideCode+= /* html */`
+    <li class="slide-item swiper-slide">
+      <img class="slide-item__img" src="${ele.img}">
+      <h5 class="slide-item__title">${ele.title}</h5>
+      <p class="slide-item__price">${ele.price}</p>
+      <span class="slide-item__tag">${ele.tag}</span>
+    </li>
+    `;
+  })
+  slide.innerHTML = slideCode;
+
+  const swiper2 = new Swiper('.section-3__swiper',{
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    effect:'fade',
+    fadeEffect: { crossFade: true },
+    
+  })
+  
 })

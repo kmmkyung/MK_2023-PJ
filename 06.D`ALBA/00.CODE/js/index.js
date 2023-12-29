@@ -66,12 +66,15 @@ window.addEventListener('DOMContentLoaded',function(){
   const swiper2 = new Swiper('.section-3__swiper',{
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
     effect:'fade',
     fadeEffect: { crossFade: true },
-    
+    navigation:{
+      nextEl: '.section-3__navigation-button-next',
+      prevEl: '.section-3__navigation-button-prev',
+    }
   })
   
 })

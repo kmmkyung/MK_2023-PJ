@@ -81,20 +81,21 @@ window.addEventListener('DOMContentLoaded',function(){
   function itemSHow(arr,item){
     arr.forEach(function(ele,idx){
       ele.addEventListener('mouseenter',function(){
-        ele[idx].classList.add('on')
+        item[idx].classList.add('on')
       })
       // ele.addEventListener('click',function(){
       //   item[idx].classList.add('on')
       // })
-      // ele.addEventListener('mouseleave',function(){
-      //   item[idx].classList.remove('on')
-      // })
+      ele.addEventListener('mouseleave',function(){
+        item[idx].classList.remove('on')
+      })
     })
   }
 
+  const contentTextAll = document.querySelectorAll('.content-text__all')
   const contentText = document.querySelectorAll('.content-text')
   const contentImg = document.querySelectorAll('.content-img')
-  itemSHow(contentText,contentImg)
+  itemSHow(contentText,contentTextAll)
   
 
 

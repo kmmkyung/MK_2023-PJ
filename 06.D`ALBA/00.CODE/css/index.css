@@ -75,7 +75,7 @@
 }
 
 .banner-content .button{
-  font-size: var(--font-size-S);
+  font-size: var(--font-size-XS);
   display: inline-block;
   color: var(--white);
   margin-top: 40px;
@@ -228,6 +228,12 @@
 
 .section-3-button{
   margin-bottom: 5vh;
+  font-size: var(--font-size-XS);
+}
+
+.section-3-button:hover{
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .section-3__navigation{

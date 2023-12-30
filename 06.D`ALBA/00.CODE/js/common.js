@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded',function(){
   }
   headerMenuUl.innerHTML = headerMenuCode;
 
-    // menu
+  // menu
   // 메뉴 버튼을 누르면 메뉴창 열림 / 메뉴 다른곳 누르면 메뉴창 닫힘
   const menuButton = document.querySelector('.header-left__img .menu');
   const closeButton = document.querySelector('.header-menu .close');
@@ -74,5 +74,20 @@ window.addEventListener('DOMContentLoaded',function(){
     })
   })
 
+  // search 버튼
+  const headerEtcSearchButton = document.querySelector('.header-etc__searchButton');
+  const headerSearch = document.querySelector('.header-search');
+  const searchContentCloseButton = document.querySelector('.search-content__closeButton');
+  headerEtcSearchButton.addEventListener('click',function(){
+    headerSearch.classList.add('on');
+  })
+  searchContentCloseButton.addEventListener('click',function(){
+    headerSearch.classList.remove('on');
+  })
 
+  // search 버튼 다른곳 누르면 닫힘
+  const main = document.querySelector('main');
+  main.addEventListener('click',function(){
+    headerSearch.classList.remove('on');
+  })
 })

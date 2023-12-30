@@ -2,10 +2,12 @@
 /* icon size = 40px */
 .header-left img,
 .header-etc img,
-.menu-inner img{
+.menu-inner img,
+.search-inner img{
   width: 24px;
   height: 24px;
   padding: 8px;
+  vertical-align: middle;
 }
 
 .header-wrap{
@@ -140,6 +142,72 @@
   margin: 20px 0;
 }
 
+.header-search{
+  transform: translateY(-100%);
+  transition: all .4s;
+  background-color: var(--white);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.header-search.on{
+  transform: translateY(0);
+}
+
+.header-search .search-inner{
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-content__closeButton{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.search-content{
+  margin: 0 auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-content input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.search-content__searchButton{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.search-tag{
+  max-width: 500px;
+  text-align: left;
+}
+
+.search-tag a{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: var(--font-size-XS);
+  background-color: var(--main);
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.search-tag a:not(a:last-child){
+  margin-right: 10px;
+}
+
 @media screen and (max-width:1100px) {
   .header-left__menu li{
     font-size: var(--font-size-XS);
@@ -151,6 +219,10 @@
   .header-menu__bg{
     display: none;
   }
+
+  .menu-inner{
+    width: 100%;
+  }
   
   .header-left__menu{
     display: none;
@@ -161,5 +233,8 @@
     display: none;
   }
 
+  .search-content__closeButton{
+    display: none;
+  }
 
 }

@@ -77,4 +77,26 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   })
   
+  // section4
+  function itemSHow(arr,item){
+    arr.forEach(function(ele,idx){
+      ele.addEventListener('mouseenter',function(){
+        ele[idx].classList.add('on')
+      })
+      // ele.addEventListener('click',function(){
+      //   item[idx].classList.add('on')
+      // })
+      // ele.addEventListener('mouseleave',function(){
+      //   item[idx].classList.remove('on')
+      // })
+    })
+  }
+
+  const contentText = document.querySelectorAll('.content-text')
+  const contentImg = document.querySelectorAll('.content-img')
+  itemSHow(contentText,contentImg)
+  
+
+
+
 })

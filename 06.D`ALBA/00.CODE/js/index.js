@@ -83,9 +83,6 @@ window.addEventListener('DOMContentLoaded',function(){
       ele.addEventListener('mouseenter',function(){
         item[idx].classList.add('on')
       })
-      // ele.addEventListener('click',function(){
-      //   item[idx].classList.add('on')
-      // })
       ele.addEventListener('mouseleave',function(){
         item[idx].classList.remove('on')
       })

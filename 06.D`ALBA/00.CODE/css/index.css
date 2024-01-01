@@ -335,18 +335,16 @@
   transition: all .4s;
 }
 
+.content-text__all:hover .content-text{
+  opacity: 1;
+}
+
 .content-img{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
-}
-
-.content-text__all.on img,
-.content-text__all.on a,
-.content-text__all.on .content-text{
-  opacity: 1;
 }
 
 .content-img img{
@@ -366,6 +364,11 @@
   text-align: center;
   background-color: var(--white);
   margin: 0 auto;
+}
+
+.content-text__all.on img,
+.content-text__all.on a{
+  opacity: 1;
 }
 
 .section-4__button{

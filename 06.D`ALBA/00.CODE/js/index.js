@@ -79,22 +79,31 @@ window.addEventListener('DOMContentLoaded',function(){
   
   // section4
   function itemSHow(arr,item){
+    let eleHover = 0
+    let eleClick = [0,0,0,0]
     arr.forEach(function(ele,idx){
       ele.addEventListener('mouseenter',function(){
-        item[idx].classList.add('on')
+        if(eleHover == 0){
+          item[idx].classList.add('on')
+        }
       })
       ele.addEventListener('mouseleave',function(){
-        item[idx].classList.remove('on')
+        if(eleHover == 0){
+          item[idx].classList.remove('on')
+        }
+      })
+      ele.addEventListener('click',function(){
+        eleHover = 1;
+        eleClick[idx]++; 
+        if(!eleClick[idx] == 0){
+          item[idx].classList.add('on')
+          ele.style.opacity = 1
+        }
       })
     })
   }
 
   const contentTextAll = document.querySelectorAll('.content-text__all')
   const contentText = document.querySelectorAll('.content-text')
-  const contentImg = document.querySelectorAll('.content-img')
   itemSHow(contentText,contentTextAll)
-  
-
-
-
 })

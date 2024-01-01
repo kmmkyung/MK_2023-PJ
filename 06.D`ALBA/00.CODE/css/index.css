@@ -331,6 +331,7 @@
 }
 
 .content-text{
+  cursor: pointer;
   opacity: 0.5;
   transition: all .4s;
 }
@@ -345,6 +346,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
+  visibility: hidden;
 }
 
 .content-img img{
@@ -355,7 +357,6 @@
 }
 
 .content-img a{
-  transition: all .4s;
   opacity: 0;
   font-size: var(--font-size-XS);
   display: block;
@@ -364,10 +365,12 @@
   text-align: center;
   background-color: var(--white);
   margin: 0 auto;
+  transition: all .4s;
 }
 
-.content-text__all.on img,
-.content-text__all.on a{
+.content-text__all.on .content-img img,
+.content-text__all.on .content-img a{
+  visibility: visible;
   opacity: 1;
 }
 

@@ -5,4 +5,11 @@ const gndData = {
   'Home Try' :[]
 }
 
-export default gndData;
+const footerData = {
+  'Customer Care' : ['Mon - Fri 10:00 - 17:00','+82 02-332-7727','dalba@bmonument.com'],
+  'Order' : ['Order Tracking'],
+  'Legal' : ['Terms of Use', 'Privacy Policy'],
+  'Social' : ['Instagram', 'Facebook', 'Youtube'],
+}
+
+export {gndData,footerData};

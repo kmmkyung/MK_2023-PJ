@@ -1,5 +1,4 @@
 import bestProductData from '../assets/data/bestProductData.js'
-import bestProduct from '../assets/data/bestProductData.js'
 
 window.addEventListener('DOMContentLoaded',function(){
   // section1
@@ -33,17 +32,23 @@ window.addEventListener('DOMContentLoaded',function(){
     const bannerBg2 = document.querySelector('.banner-2')
     const bannerBg3 = document.querySelector('.banner-3')
     const bannerBg4 = document.querySelector('.banner-4')
+    const sectionBg4 = document.querySelector('.section-4')
+    const sectionBg5 = document.querySelector('.section-5')
     if(window.innerWidth<=900){
       bannerBg1.style.backgroundImage='url(./assets/images/mobile_section-1-1.jpg)'
       bannerBg2.style.backgroundImage='url(./assets/images/mobile_section-1-2.jpg)'
       bannerBg3.style.backgroundImage='url(./assets/images/mobile_section-1-3.jpg)'
       bannerBg4.style.backgroundImage='url(./assets/images/mobile_section-1-4.jpg)'
+      sectionBg4.style.backgroundImage='url(./assets/images/mobile_section-4.jpg)'
+      sectionBg5.style.backgroundImage='url(./assets/images/mobile_section-5.jpg)'
     }
     if(window.innerWidth>900){
       bannerBg1.style.backgroundImage='url(./assets/images/section-1-1.jpg)'
       bannerBg2.style.backgroundImage='url(./assets/images/section-1-2.jpg)'
       bannerBg3.style.backgroundImage='url(./assets/images/section-1-3.jpg)'
       bannerBg4.style.backgroundImage='url(./assets/images/section-1-4.jpg)'
+      sectionBg4.style.backgroundImage='url(./assets/images/section-4.jpg)'
+      sectionBg5.style.backgroundImage='url(./assets/images/section-5.jpg)'
     }
   })
 
@@ -77,10 +82,10 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   })
   
-  // section4
+  // section4, section5
   function itemSHow(arr,item){
     let eleHover = 0
-    let eleClick = [0,0,0,0]
+    let eleClick = 0
     arr.forEach(function(ele,idx){
       ele.addEventListener('mouseenter',function(){
         if(eleHover == 0){
@@ -93,9 +98,15 @@ window.addEventListener('DOMContentLoaded',function(){
         }
       })
       ele.addEventListener('click',function(){
+        let findOn = document.querySelector('.content-text__all.on')
+        let findOnText = document.querySelector('.content-text__all.on .content-text')
         eleHover = 1;
-        eleClick[idx]++; 
-        if(!eleClick[idx] == 0){
+        item[idx].classList.add('on')
+        ele.style.opacity = 1
+
+        if(item[idx].classList.contains('on')){
+          findOn.classList.remove('on')
+          findOnText.style.opacity = 0.5
           item[idx].classList.add('on')
           ele.style.opacity = 1
         }

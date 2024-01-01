@@ -1,5 +1,5 @@
 import svgData from '../assets/data/svgData.js'
-import gndData from '../assets/data/gndData.js';
+import {gndData,footerData} from '../assets/data/gndData.js';
 
 window.addEventListener('DOMContentLoaded',function(){
   //// header

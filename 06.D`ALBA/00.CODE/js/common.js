@@ -90,4 +90,25 @@ window.addEventListener('DOMContentLoaded',function(){
   main.addEventListener('click',function(){
     headerSearch.classList.remove('on');
   })
+
+  //// footer
+  // 메뉴적용
+  const footerMenu = document.querySelector('.footer-menu');
+  let footerMenuCode = '';
+  for(let title in footerData){
+    footerMenuCode += /* html */ `
+      <li class="footer-menu__title">${title}
+        <ol>
+    `
+    for(let item of footerData[title]){
+      footerMenuCode += /* html */ `
+        <li class="footer-menu__item">${item}</li>
+        `
+    }
+    footerMenuCode += /* html */ `
+      </ol>
+    </li>
+    `
+  }
+  footerMenu.innerHTML = footerMenuCode;
 })

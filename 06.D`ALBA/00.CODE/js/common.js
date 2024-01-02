@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded',function(){
     `
     for(let item of footerData[title]){
       footerMenuCode += /* html */ `
-        <li class="footer-menu__item">${item}</li>
+        <li class="footer-menu__item"><a href="#">${item}</a></li>
         `
     }
     footerMenuCode += /* html */ `

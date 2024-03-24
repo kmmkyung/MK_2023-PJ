@@ -1,11 +1,16 @@
 window.addEventListener("DOMContentLoaded", function () {
   // [ header - contact]
-  const workBtn = $(".works-btn");
+  const workBtn = document.querySelector(".works-btn")
+  const secWorks = document.querySelector('#sec-works')
   const aboutBtn = $(".about-btn");
   const footerBtn = $(".footer-btn");
-  workBtn.on("click", function () {
-    $("html").animate({ scrollTop: $("#sec-works").offset().top }, 300);
-  });
+  // workBtn.on("click", function () {
+  //   $("html").animate({ scrollTop: $("#sec-works").offset().top }, 300);
+  // });
+
+  workBtn.addEventListener('click',function(){
+    window.scrollTo({top:secWorks.offsetHeight, behavior: "smooth",})
+  })
   aboutBtn.on("click", function () {
     $("html").animate({ scrollTop: $("#sec-me").offset().top }, 300);
   });

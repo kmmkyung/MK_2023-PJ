@@ -1351,14 +1351,14 @@ const DataWineList = [
           },
           {
             ID : 7,
-            WINE : 'Sonia',  
+            WINE : 'Sonja',  
             PRODUCER : 'Christian Tschida',  
             COUNTRY : 'Austria',  
             REGION : 'Burgenland',  
             VARIETY : 'Cabernet Franc',  
             STYLE : 'Red',
             ABOUT : `100% Cabernet Franc from 40 year old vines. Grapes are hand harvested, destemmed, and crushed by foot gently to produce a light and juicy red wine. The juice ferments in barrel with indigenous yeast and no racking. The wine is bottled without fining or filtering and no addition of sulphur.`,
-            IMG: 'assets/images/Christian Tschida/Sonia.jpg' 
+            IMG: 'assets/images/Christian Tschida/Sonja.jpg' 
           },
           {
             ID : 8,

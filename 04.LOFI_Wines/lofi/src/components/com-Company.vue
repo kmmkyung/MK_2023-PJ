@@ -171,7 +171,7 @@ export default {
         })
       })
       ele.addEventListener('mouseleave',()=>{
-        this.findListArr[0].IMG !==''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
+        this.findListArr[0].IMG !=''? itemImg.style.backgroundImage = 'url(' + require(`../${this.findListArr[0].IMG}`) + ')' : itemImg.style.backgroundImage = 'none'
         ele.classList.remove('colorB');
         let notEle = document.querySelectorAll('.item-list>li[class]:not(.colorB)')
         notEle.forEach(function(ele){

@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="about-right">
-          <div class="about-imgBox">
+          <div class="about-imgBox" v-if="findListArr[wineItem].IMG !=='' ">
             <img :src="require(`../${findListArr[wineItem].IMG}`)" alt="wines">
           </div>
         </div>
@@ -25,8 +25,8 @@
 </template>
 
 <script setup>
-const { wineItem } = history.state;
-const { wineName } = history.state;
+  const { wineItem } = history.state;
+  const { wineName } = history.state;
 </script>
 
 <script>
@@ -59,12 +59,15 @@ export default {
     window.scrollTo(0,0)
 
     this.DataWineList.forEach((ele)=>{
-      this.countryArr.push(...ele.DATA)
+      this.countryArr.push(...ele.DATA)      
     })
     this.countryArr.find((ele)=>{
       if(ele.COMPANY == this.routeID){
         this.findArr = ele
         this.findListArr = ele.LIST
+        console.log(this.findArr);
+        console.log(this.findListArr);
+        
       }
     })
   },

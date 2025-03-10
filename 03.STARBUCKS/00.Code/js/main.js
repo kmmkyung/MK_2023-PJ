@@ -63,22 +63,22 @@ window.addEventListener('DOMContentLoaded',function(){
 
   // [ 공지사항 - 프로모션 아코디언 ]
   function promotionAccordion(){
-    const promotionTitie =  document.querySelector('.notice-line__promotion');
+    const promotionTitle =  document.querySelector('.notice-line__promotion');
     const promotionAccBtn = document.querySelector('.notice-line__promotion i');
-    const promotioncontent = document.querySelector('#notice-promotionBanner');
+    const promotionContent = document.querySelector('#notice-promotionBanner');
     let promotionBanner = false;
-    promotionTitie.addEventListener('click',function(){
+    promotionTitle.addEventListener('click',function(){
       promotionBanner = !promotionBanner
       if(promotionBanner){
         promotionAccBtn.classList.toggle('fa-chevron-up');
         promotionAccBtn.classList.toggle('fa-chevron-down');
-        window.innerWidth>670 ? promotioncontent.style.height = 650+'px' : promotioncontent.style.height = 500+'px';
+        window.innerWidth>670 ? promotionContent.style.height = 650+'px' : promotionContent.style.height = 500+'px';
         clearAuto()
       }
       else{
         promotionAccBtn.classList.toggle('fa-chevron-up');
         promotionAccBtn.classList.toggle('fa-chevron-down');
-        promotioncontent.style.height = 0;
+        promotionContent.style.height = 0;
         clearInterval(autoSlideInterval);
         clearTimeout(autoSlideTimeout);
       }

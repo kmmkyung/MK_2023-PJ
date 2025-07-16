@@ -33,56 +33,33 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   // [프로젝트 페이지 가로 스크롤]
-  // const projectPage = document.querySelector("#sec-works");
-  // const hiddenPj = gsap.utils.toArray(".hiddenPj");
-  // const project = gsap.utils.toArray(".project");
+  const projectPage = document.querySelector("#sec-works");
+  const hiddenPj = gsap.utils.toArray(".hiddenPj");
+  const project = gsap.utils.toArray(".project");
   const firstPj = document.querySelector(".firstPj");
 
-  // let projectTl = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: projectPage,
-  //     pin: true,
-  //     scrub: 1,
-  //   },
-  //   defaults: { ease: "none", duration: 1 },
-  // });
-
-  // projectTl
-  //   .to(
-  //     project,
-  //     {
-  //       x: () => -(projectPage.scrollWidth - document.documentElement.clientWidth + 200 ),},"same")
-  //   .from(hiddenPj,{
-  //       opacity: 0.2,
-  //       y: 100,
-  //       duration: 0.5,
-  //       stagger: {
-  //       amount: 0.5,
-  //       },},"same"
-  //   );
-
-
-  const projectPage = document.querySelector("#sec-works");
-  const project = gsap.utils.toArray(".project");
-  
-  const maxX = projectPage.scrollWidth - window.innerWidth;
-  
-  gsap.timeline({
+  let projectTl = gsap.timeline({
     scrollTrigger: {
       trigger: projectPage,
       pin: true,
       scrub: 1,
-      end: () => "+=" + maxX,
     },
-    defaults: { ease: "none" },
-  })
-  .to(project, {
-    x: -maxX,
-    ease: "none",
+    defaults: { ease: "none", duration: 1 },
   });
 
-
-  
+  projectTl
+    .to(
+      project,
+      {
+        x: () => -(projectPage.scrollWidth - document.documentElement.clientWidth + 200 ),},"same")
+    .from(hiddenPj,{
+        opacity: 0.2,
+        y: 100,
+        duration: 0.5,
+        stagger: {
+        amount: 0.5,
+        },},"same"
+    );
 
   gsap.from(firstPj, {
     duration: 1,

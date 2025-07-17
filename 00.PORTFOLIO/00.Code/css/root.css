@@ -23,9 +23,9 @@ body {
 
 
   /* FONTSIZE */
-  --font-size-S: 1.4rem;
-  --font-size-M: 1.8rem;
-  --font-size-L: 3rem;
+  --font-size-S: clamp(1.2rem, 2vw, 1.4rem);
+  --font-size-M: clamp(1.6rem, 4vw, 1.8rem);
+  --font-size-L: clamp(2rem, 6vw, 2.4rem);
 }
 /*----------*/
 /*-- CSS CLASS --*/

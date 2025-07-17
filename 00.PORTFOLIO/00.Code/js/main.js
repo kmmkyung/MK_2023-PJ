@@ -34,44 +34,38 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // [프로젝트 페이지 가로 스크롤]
   const projectPage = document.querySelector("#sec-works");
-  const hiddenPj = gsap.utils.toArray(".hiddenPj");
   const project = gsap.utils.toArray(".project");
-  const firstPj = document.querySelector(".firstPj");
-
+  
   let projectTl = gsap.timeline({
     scrollTrigger: {
       trigger: projectPage,
       pin: true,
       scrub: 1,
+      // markers: true, // 개발 중에만 표시
     },
     defaults: { ease: "none", duration: 1 },
   });
 
-  projectTl
-    .to(
-      project,
+  projectTl.to( project,{ x: () => -(projectPage.scrollWidth - document.documentElement.clientWidth + 200 ),},"same")
+
+  project.forEach((pj) => {
+    gsap.fromTo( pj,
+      { opacity: 0.5, y: 100 },
       {
-        x: () => -(projectPage.scrollWidth - document.documentElement.clientWidth + 200 ),},"same")
-    .from(hiddenPj,{
-        opacity: 0.2,
-        y: 100,
-        duration: 0.5,
-        stagger: {
-        amount: 0.5,
-        },},"same"
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: pj,
+          containerAnimation: projectTl, // 가로 스크롤 타임라인과 연동
+          start: "left 80%",
+          end: "right 20%",
+          toggleActions: "play reverse play reverse",
+          // markers: true, // 개발 중에만 표시
+        },
+        duration: 0.8,
+      }
     );
-
-  gsap.from(firstPj, {
-    duration: 1,
-    opacity: 0.2,
-    scrollTrigger: {
-      trigger: projectPage,
-      start: "top 40%",
-      end: "bottom 10%",
-      toggleActions: "play none none reverse",
-    },
   });
-
 
   // [ header - logo ]
   const svgW = $("svg .white");

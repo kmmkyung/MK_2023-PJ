@@ -21,7 +21,7 @@ body{
 
 .main-project__imgBox{
   width: clamp(300px, 70vw, 500px);
-  height: 300px;
+  height: clamp(150px, 50vw, 300px);
   margin: 20px 0;
   position: relative;
   border-radius: 50px;
@@ -80,6 +80,7 @@ body{
   display: flex;
   align-items: center;
   gap: 100px;
+  padding: 0 100px;
 }
 
 .project h5{
@@ -90,7 +91,7 @@ body{
 
 .project-imgBox{
   width: clamp(300px, 60vw, 500px);
-  height: 300px;
+  height: clamp(150px, 50vw, 300px);
   margin: 20px 0;
   position: relative;
   border-radius: 50px;
@@ -110,7 +111,6 @@ body{
   font-size: var(--font-size-M);
   margin-top: 20px;
 }
-
 
 /* sec-me */
 #sec-me{

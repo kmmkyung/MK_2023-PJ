@@ -43,3 +43,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}

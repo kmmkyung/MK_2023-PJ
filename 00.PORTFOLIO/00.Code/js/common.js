@@ -17,7 +17,7 @@ for(let i=0; i<menu.length; i++){
   let value = idx.split('')
   let text = ''
   for(let x=0; x<value.length; x++){
-    text += `<span>${value[x]}</span>`
+    text += `<span class="menu-word">${value[x]}</span>`
     menu.html(text)
   }    
 }
@@ -27,7 +27,7 @@ const tl = gsap.timeline({defaults: { ease: "power4.inOut"},
   yoyo: true, 
 });
 
-tl.from($('span'),{
+tl.from($('.menu-word'),{
   y: 10,
   opacity: 0,
   skewX: 30,

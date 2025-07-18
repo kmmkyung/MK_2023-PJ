@@ -35,13 +35,16 @@ window.addEventListener("DOMContentLoaded", function () {
   // [프로젝트 페이지 가로 스크롤]
   const projectPage = document.querySelector("#sec-works");
   const project = gsap.utils.toArray(".project");
-  
+
   let projectTl = gsap.timeline({
     scrollTrigger: {
       trigger: projectPage,
       pin: true,
       scrub: 1,
-      // markers: true, // 개발 중에만 표시
+      anticipatePin: 1,
+      end: () => "+="+(projectPage.scrollWidth - window.innerWidth),
+      start: "top top",
+      markers: true, // 개발 중에만 표시
     },
     defaults: { ease: "none", duration: 1 },
   });
@@ -50,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   project.forEach((pj) => {
     gsap.fromTo( pj,
-      { opacity: 0.5, y: 100 },
+      { opacity: 0.5, y: 0 },
       {
         opacity: 1,
         y: 0,

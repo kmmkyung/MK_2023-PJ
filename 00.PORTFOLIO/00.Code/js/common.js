@@ -42,6 +42,55 @@ tl.from($('.menu-word'),{
   duration: 1,
 })
 
+
+  // [ header - logo ]
+  const svgW = $("svg .white");
+  const header = $("header");
+
+  let headerH = header.height();
+  const page1 = $('#sec-main').offset().top;
+  const page2 = $('#sec-works').offset().top;
+  const page3 = $('#sec-me .about').offset().top;
+  const page4 = $('#sec-me .stack').offset().top;
+  const page5 = $('#footer').offset().top;
+
+  $(window).on("scroll", function () {
+    const winTop = $(window).scrollTop();
+  
+    if (winTop < page2 - headerH) {
+      // 메인
+      console.log('메인');
+      svgW.css({ fill: "white" });
+      menu.css({ color: "white" });
+  
+    } else if (winTop >= page2 - headerH && winTop < page1 + page3 - headerH) {
+      // 작업물
+      console.log('작업물');
+      svgW.css({ fill: "black" });
+      menu.css({ color: "black" });
+  
+    }
+    // else if (winTop < page4 - headerH) {
+    //   // about
+    //   console.log('about');
+    //   svgW.css({ fill: "white" });
+    //   menu.css({ color: "white" });
+  
+    // } else if (winTop < page5 - headerH) {
+    //   // tool
+    //   console.log('tool');
+    //   svgW.css({ fill: "black" });
+    //   menu.css({ color: "black" });
+  
+    // } else {
+    //   // footer
+    //   console.log('footer');
+    //   svgW.css({ fill: "white" });
+    //   menu.css({ color: "white" });
+    // }
+  });
+  
+
 // [ footer - z-index]
 const footer = $('footer');
 let mainH = $('#sec-main').height();

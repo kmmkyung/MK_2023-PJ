@@ -74,10 +74,6 @@ header .menu .menu-word{
 main{
   position: relative;
   z-index: 2;
-  overflow: hidden;
-  /* background-color: var(--white); */
-  border-radius: 100px 100px 0 0;
-  background: linear-gradient(180deg,#fff, #ec0d0d,#181ff4);
 }
 
 .main-title h1,

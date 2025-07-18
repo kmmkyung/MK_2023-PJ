@@ -70,10 +70,11 @@ body{
 
 /* sec-works */
 #sec-works{
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  background-color: var(--white);
 }
 
 .work-content{
@@ -142,6 +143,7 @@ body{
 #sec-me{
   width: 100%;
   height: auto;
+  background-color: var(--white);
 }
 
 .about,

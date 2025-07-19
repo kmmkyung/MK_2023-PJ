@@ -48,28 +48,32 @@ tl.from($('.menu-word'),{
   const header = $("header");
 
   let headerH = header.height();
+  const viewportWidth = $(window).width(); // 현재 화면의 너비
   const page2 = $('#sec-works').offset().top;
-  const page2Width = $('#sec-works').offset().width;
+  const page2W = $('.work-main').outerWidth();
+  const page2HH = $('.work-main').outerHeight();
+  const page2H = $('#sec-works')[0].scrollWidth;
   const page3 = $('#sec-me .about').offset().top;
   const page4 = $('#sec-me .stack').offset().top;
-console.log( page2, page3, page4,page2Width);
-console.log(page2Width);
-  $(window).on("scroll", function () {
-    const winTop = $(window).scrollTop();
-  console.log(winTop),'winTop';
+
+console.log(viewportWidth, page2W,page2HH, page2H);
+$(window).on("scroll", function () {
+  const winTop = $(window).scrollTop();
+  console.log(winTop,'winTop');
+  console.log(page2 + page2H +200 ,'ggg');
+//134
     if (winTop < page2 - headerH) {
       // 메인
       console.log('메인');
       svgW.css({ fill: "white" });
       menu.css({ color: "white" });
-  
-    } else if (winTop >= page2 - headerH && winTop <  page2Width+ page3 - headerH) {
-      // 작업물
-      console.log('작업물');
-      svgW.css({ fill: "black" });
-      menu.css({ color: "black" });
-  
     }
+    // } else if (winTop >= page2 - headerH && winTop < page2Width+page2+ headerH) {
+    //   // 작업물
+    //   console.log('작업물');
+    //   svgW.css({ fill: "black" });
+    //   menu.css({ color: "black" });
+    // }
     // else if (winTop < page4 - headerH) {
     //   // about
     //   console.log('about');

@@ -35,7 +35,6 @@ window.addEventListener("DOMContentLoaded", function () {
   // [프로젝트 페이지 가로 스크롤]
   const projectPage = document.querySelector("#sec-works");
   const project = gsap.utils.toArray(".project");
-  
   let projectTl = gsap.timeline({
     scrollTrigger: {
       trigger: projectPage,

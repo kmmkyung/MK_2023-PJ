@@ -48,22 +48,22 @@ tl.from($('.menu-word'),{
   const header = $("header");
 
   let headerH = header.height();
-  const page1 = $('#sec-main').offset().top;
   const page2 = $('#sec-works').offset().top;
+  const page2Width = $('#sec-works').offset().width;
   const page3 = $('#sec-me .about').offset().top;
   const page4 = $('#sec-me .stack').offset().top;
-  const page5 = $('#footer').offset().top;
-
+console.log( page2, page3, page4,page2Width);
+console.log(page2Width);
   $(window).on("scroll", function () {
     const winTop = $(window).scrollTop();
-  
+  console.log(winTop),'winTop';
     if (winTop < page2 - headerH) {
       // 메인
       console.log('메인');
       svgW.css({ fill: "white" });
       menu.css({ color: "white" });
   
-    } else if (winTop >= page2 - headerH && winTop < page1 + page3 - headerH) {
+    } else if (winTop >= page2 - headerH && winTop <  page2Width+ page3 - headerH) {
       // 작업물
       console.log('작업물');
       svgW.css({ fill: "black" });

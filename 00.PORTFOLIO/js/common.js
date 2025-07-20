@@ -48,7 +48,6 @@ window.addEventListener('DOMContentLoaded',function(){
   const section2Content = document.querySelector(".section-2__content");
   const section3 = document.querySelector(".section-3");
   const section4 = document.querySelector(".section-4");
-console.log(section2Content.clientWidth -window.innerHeight - window.innerWidth-headerH-100);
   window.addEventListener('scroll', function(){
     const scrollTop = window.scrollY;
     console.log('scrollTop:', scrollTop);
@@ -63,7 +62,7 @@ console.log(section2Content.clientWidth -window.innerHeight - window.innerWidth-
       svgW.forEach((svg) => svg.style.fill = "#000");
       menuWords.forEach((word) => word.style.color = "#000");
     }
-    else if(scrollTop >= section2Content.clientWidth - window.innerHeight - headerH){
+    else if(scrollTop >= section2Content.clientWidth - window.innerWidth - headerH){
       console.log('section3');
       // svgW.forEach((svg) => svg.style.fill = "#fff");
       // menuWords.forEach((word) => word.style.color = "#fff");

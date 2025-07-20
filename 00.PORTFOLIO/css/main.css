@@ -28,6 +28,10 @@
   z-index: 2;
 }
 
+.section-2 .inner {
+  padding: 0;
+}
+
 .section-2__content {
   width: fit-content;
   height: 100%;
@@ -35,7 +39,6 @@
   align-items: center;
   gap: min(10vw, 10rem);
   padding: 0 10rem;
-  background: #f3f3f3; /* 확인용 */
 }
 
 /* project */
@@ -50,7 +53,7 @@
   width: clamp(250px, 60vw, 500px);
   height: auto;
   aspect-ratio: 1 / 0.65;
-  padding: 20px;
+  padding: 25px;
   position: relative;
   border-radius: clamp(1.2rem, 2.5vw, 5rem);
 }
@@ -59,8 +62,19 @@
   background: linear-gradient(var(--white), var(--black));
 }
 
-.project-box.works{
-  background: linear-gradient(var(--gray_f5), #ffffff);
+.project-box.projects{
+  background: linear-gradient(var(--gray_f5), #ffffff00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box img {
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 .project-box__text{

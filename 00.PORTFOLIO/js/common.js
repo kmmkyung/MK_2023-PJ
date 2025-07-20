@@ -1,3 +1,4 @@
+// cSpell: disable
 import { svgLogo } from "./svgLogo.js"
 
 window.addEventListener('DOMContentLoaded',function(){
@@ -35,13 +36,41 @@ window.addEventListener('DOMContentLoaded',function(){
 
   // header - logo click scroll to top
   headerLogo.addEventListener('click', function(){
-    setTimeout(()=>{
-      window.scrollTo(0, 0);
-    }, 500)
+    window.scrollTo({ top: 0, behavior: "smooth" });
   })
 
+  // header - svg color change on scroll
+  const headerH = document.querySelector("header").offsetHeight;
+  const svgW = document.querySelectorAll("svg .white");
+  const menuWords = document.querySelectorAll(".menu-word");
+  const section1 = document.querySelector(".section-1");
+  const section2 = document.querySelector(".section-2");
+  const section2Content = document.querySelector(".section-2__content");
+  const section3 = document.querySelector(".section-3");
+  const section4 = document.querySelector(".section-4");
+console.log(section2Content.clientWidth -window.innerHeight - window.innerWidth-headerH-100);
+  window.addEventListener('scroll', function(){
+    const scrollTop = window.scrollY;
+    console.log('scrollTop:', scrollTop);
+
+    if(scrollTop < section1.clientHeight - headerH){ //743
+      // console.log('section1');
+      svgW.forEach((svg) => svg.style.fill = "#fff");
+      menuWords.forEach((word) => word.style.color = "#fff");
+    }
+    else if(scrollTop >= section1.clientHeight - headerH && scrollTop < section2Content.clientWidth - window.innerWidth - headerH){
+      console.log('section2');
+      svgW.forEach((svg) => svg.style.fill = "#000");
+      menuWords.forEach((word) => word.style.color = "#000");
+    }
+    else if(scrollTop >= section2Content.clientWidth - window.innerHeight - headerH){
+      console.log('section3');
+      // svgW.forEach((svg) => svg.style.fill = "#fff");
+      // menuWords.forEach((word) => word.style.color = "#fff");
+    }
+  });
+
   // footer - z-index
-  const section1 = document.querySelector('.section-1');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
   const mainHeight = main.offsetHeight;

@@ -733,13 +733,13 @@ body {
 .list-type {
   display: block;
   color: var(--main-color);
-  font-size: min(1.3vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   margin-bottom: 40px;
 }
 
 .list-read {
   display: block;
-  font-size: min(1.5vw, 2.4rem);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   font-weight: bold;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -747,7 +747,7 @@ body {
 
 .list-date {
   display: block;
-  font-size: min(1.3vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   margin-top: 12px;
 }
 

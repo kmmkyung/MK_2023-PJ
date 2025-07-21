@@ -4,6 +4,10 @@ svg {
   aspect-ratio: 1 / 1;
 }
 
+svg .white{
+  transition: all 0.5s;
+}
+
 /* inner */
 .inner {
   width: 100%;
@@ -31,7 +35,7 @@ header .inner {
 }
 
 .logo{
-  transition: all 1s;
+  transition: all 0.5s;
   width: min(10vw, 100px);
   cursor: pointer;
 }
@@ -51,6 +55,7 @@ nav {
 
 .menu-word{
   display: inline-block;
+  transition: color 0.5s;
 }
 
 /* section-1 */
@@ -63,9 +68,22 @@ nav {
   top: 0;
 }
 
+.page-title {
+  position: absolute;
+  bottom: min(3.5vw, 20px);
+  font-weight: normal;
+  font-size: var(--font-size-S);
+  color: var(--gray_a);
+  line-height: 2;
+}
+
 /* section-2 */
 .section-2 {
   background-color: var(--white);
+  border-radius: 4rem 4rem 0 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 /* footer */

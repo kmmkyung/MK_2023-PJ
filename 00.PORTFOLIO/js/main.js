@@ -19,6 +19,43 @@ window.addEventListener('DOMContentLoaded',function(){
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   });
 
+  // header - svg color change on scroll
+  const headerH = document.querySelector("header").offsetHeight;
+  const svgW = document.querySelectorAll("svg .white");
+  const menuWords = document.querySelectorAll(".menu-word");
+  const section1 = document.querySelector(".section-1");
+  const section3 = document.querySelector(".section-3");
+  const section4 = document.querySelector(".section-4");
+
+  window.addEventListener('scroll', function(){
+    const scrollTop = window.scrollY;
+    // console.log('scrollTop:', scrollTop);
+
+    if(scrollTop < section1.clientHeight - headerH){ 
+      svgW.forEach((svg) => svg.style.fill = "#fff");
+      menuWords.forEach((word) => word.style.color = "#fff");
+    }
+    else if(scrollTop >= section1.clientHeight - headerH
+      && scrollTop < section3.offsetTop - headerH){
+      svgW.forEach((svg) => svg.style.fill = "#000");
+      menuWords.forEach((word) => word.style.color = "#000");
+    }
+    else if(scrollTop >= section3.offsetTop - headerH
+      && scrollTop < section4.offsetTop - headerH){
+      svgW.forEach((svg) => svg.style.fill = "#fff");
+      menuWords.forEach((word) => word.style.color = "#fff");
+    }
+    else if(scrollTop >= section4.offsetTop - headerH
+      && scrollTop < section4.offsetTop + section4.offsetHeight - headerH){
+      svgW.forEach((svg) => svg.style.fill = "#000");
+      menuWords.forEach((word) => word.style.color = "#000");
+    }
+    else {
+      svgW.forEach((svg) => svg.style.fill = "#fff");
+      menuWords.forEach((word) => word.style.color = "#fff");
+    }
+  });
+
   // section1 - last project GSAP animation
   const lastProjectBox = document.querySelector(".last-project .project-box");
   const lastProjectText = document.querySelectorAll(".last-project__text");

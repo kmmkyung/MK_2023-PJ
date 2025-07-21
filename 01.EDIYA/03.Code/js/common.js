@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /*-------------------------
         함수명: autoSlide
         기능: 인터발 함수로 슬라이드 자동 함수 호출
-        -------------------------*/
+  -------------------------*/
 
   // 인터발 함수 지우기 위한 변수
   let autoI;
@@ -196,7 +196,7 @@ window.addEventListener("DOMContentLoaded", () => {
         함수명: scrollC
         기능: 스크롤시 등장액션 
         대상: scroll-con
-        -------------------------*/
+  -------------------------*/
 
   // 대상선정
   const scrollCon = qsa(".scroll-con");

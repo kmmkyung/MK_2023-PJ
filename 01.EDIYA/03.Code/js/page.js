@@ -31,125 +31,201 @@ window.addEventListener("DOMContentLoaded", () => {
 }; ///// EVNET-FN__onmousemove /////
 
 
-//_____________지동 페이지 휠 효과_____________
-// 0. 변수 설정하기
-// (1) 전체 페이지 변수
-let pgnum = 0;
-// (2)전체 페이지 수
-const pgall = document.querySelectorAll(".page").length + 1;
-// console.log("페이지 수",pgall);
-// (3) 광스크롤 금지변수
-let prot_sc = 0;
-// (4) 스크롤 금지변수(0-허용,1-금지)
-let sc_sts = 0;
+// //_____________지동 페이지 휠 효과_____________
+// // 0. 변수 설정하기
+// // (1) 전체 페이지 변수
+// let pgnum = 0;
+// // (2)전체 페이지 수
+// const pgall = document.querySelectorAll(".page").length + 1;
+// // console.log("페이지 수",pgall);
+// // (3) 광스크롤 금지변수
+// let prot_sc = 0;
+// // (4) 스크롤 금지변수(0-허용,1-금지)
+// let sc_sts = 0;
 
-  // 1. 전체 휠 이벤트 설정
-  window.addEventListener("wheel", wheelFn, { passive: false });
+//   // 1. 전체 휠 이벤트 설정
+//   window.addEventListener("wheel", wheelFn, { passive: false });
 
-  // 2. 휠 이벤트 함수
-  function wheelFn(e) {
-    // console.log("스상:", sc_sts, "/pgnum:", pgnum);
 
-    if (sc_sts && (pgnum === 3 || pgnum === 4)) return;
-    // 기본기능 멈추기
-    e.preventDefault();
+  
+//   // 2. 휠 이벤트 함수
+//   function wheelFn(e) {
+//     // console.log("스상:", sc_sts, "/pgnum:", pgnum);
 
-    // 광스크롤 막기
-    if (prot_sc) return;
-    prot_sc = 1;
-    setTimeout(() => (prot_sc = 0), 800);
+//     if (sc_sts && (pgnum === 3 || pgnum === 4)) return;
+//     // 기본기능 멈추기
+//     e.preventDefault();
 
-    // (1)호출 확인
-    // console.log("휠 기능");
+//     // 광스크롤 막기
+//     if (prot_sc) return;
+//     prot_sc = 1;
+//     setTimeout(() => (prot_sc = 0), 800);
 
-    // (2) 췰 방향 알아내기
-    // 이벤트 객체.wheelDelta
-    let dir = e.wheelDelta;
-    // console.log("방향",dir);
+//     // (1)호출 확인
+//     // console.log("휠 기능");
 
-    if (dir < 0) {
-      pgnum++;
-      if (pgnum > pgall - 1) pgnum = pgall - 1;
-    } else {
-      pgnum--;
-      if (pgnum < 0) pgnum = 0;
-    }
+//     // (2) 췰 방향 알아내기
+//     // 이벤트 객체.wheelDelta
+//     let dir = e.wheelDelta;
+//     // console.log("방향",dir);
 
-    // console.log("페이지번호", pgnum);
-    // updatePg();
+//     if (dir < 0) {
+//       pgnum++;
+//       if (pgnum > pgall - 1) pgnum = pgall - 1;
+//     } else {
+//       pgnum--;
+//       if (pgnum < 0) pgnum = 0;
+//     }
+
+//     // console.log("페이지번호", pgnum);
+//     updatePg();
+//   }
+//   /***********************************************
+//       함수명: updatePg
+//       기능: 페이지 이동시 설정값 업데이트 하기
+//   ***********************************************/
+//   function updatePg() {
+//     // 1. 함수 호출 확인
+//     // console.log("업데이트");
+
+//     // 2. 페이지 이동값 셋팅
+//     let pgpos = window.innerHeight * pgnum;
+
+//     // 3. 페이지 이동하기 : 제이쿼리
+//     $("html,body")
+//       .stop()
+//       .animate(
+//         {
+//           scrollTop: pgpos + "px",
+//         },
+//         400,
+//         "easeInOutQuint",
+//         () => {
+//           // 이동후 업데이트 구역!
+//           // pgnum이 2이면 스크롤 상태값 1
+//           if (pgnum === 3 || pgnum === 4) sc_sts = 1;
+//         }
+//       );
+
+//     // scrollTo(가로,세로)
+//     // window.scrollTo(0, pgpos);
+//     // 세로 이동 위치: 윈도우 높이값*페이지 번호
+//   } //////////////////// updatePg 함수 //////////////////
+
+//   // 스크롤 체크할 요소의 위치값
+//   const pg4 = $("#page_4");
+//   let pg4pos = pg4.offset().top;
+//   let pg4Ht = pg4.height() - $(window).height();
+//   // 총이동가능거리
+//   let mvHt = pg4pos + pg4Ht;
+//   // console.log("4페이지top:", pg4pos, pg4Ht, mvHt);
+
+//   // pg4 내부 pgnum 분기 기준박스
+//   const pg3Inbx = $(".page_4-con1").offset().top;
+
+//   // 한번만 실행 상태값(1-한번실행전,0-이미실행함)
+//   let one_sts = 1;
+
+//   // 스크롤 이벤트 셋팅하기 /////
+//   $(window).scroll(function () {
+//     let scTop = $(window).scrollTop();
+//     // console.log(scTop);
+//     // console.log("***한번실행:", one_sts);
+
+//     // 만약 4페이지에서 이동범위바깥으로 나갈경우 다시
+//     // 스크롤 허용을 불허용값으로 업데이트 하기!
+//     // sc_sts = 0
+//     if (scTop < pg4pos || scTop >= mvHt) {
+//       sc_sts = 0;
+//       one_sts = 1; // 한번실행 초기화
+//       // console.log("대상외구역:", sc_sts, one_sts);
+//     }
+
+//     // 해당구역 하단부분 처리
+//     if (scTop >= mvHt && scTop <= mvHt + 1 && sc_sts === 0 && one_sts === 1) {
+//       one_sts = 0; // 한번실행잠금!
+//       // console.log("한번실행:", sc_sts, one_sts);
+
+//       updatePg();
+//       // console.log("페이지번호:", pgnum);
+//     }
+
+//     // 스크롤 내부에서 pgnum 3,4 분기하기
+//     if (scTop > pg3Inbx - 100 && scTop < pg3Inbx) pgnum = 3;
+//     if (scTop > pg3Inbx && scTop < pg3Inbx + 100) pgnum = 4;
+//   }); //////////// scroll /////////////////////
+
+let pgnum = 1;
+let totalPg = 6;
+let isWheelLocked = false;
+let pg4pos = 0;
+let pg4Ht = 0;
+let mvHt = 0;
+
+const pg4 = $("#page_4");
+
+function updatePositions() {
+  pg4pos = pg4.offset().top;
+  pg4Ht = pg4.height() - window.innerHeight;
+  mvHt = pg4pos + pg4Ht;
+}
+
+function scrollToPage(pg) {
+  const pos = $("#page_" + pg).offset().top;
+  $("html, body").stop().animate({ scrollTop: pos }, 500);
+}
+
+// 페이지 진입 시 초기화
+$(window).on("load", function () {
+  updatePositions();
+  scrollToPage(pgnum);
+});
+
+// 윈도우 리사이즈 시 위치 갱신
+$(window).on("resize", function () {
+  updatePositions();
+});
+
+// 휠 이벤트 처리
+$(window).on("wheel", function (e) {
+  if (isWheelLocked) return;
+  isWheelLocked = true;
+
+  const delta = e.originalEvent.deltaY;
+  const scrollTop = $(window).scrollTop();
+
+  // ✅ page4 안에 있을 때는 자연스크롤 허용
+  if (scrollTop >= pg4pos && scrollTop < mvHt) {
+    isWheelLocked = false;
+    return;
   }
-  /***********************************************
-      함수명: updatePg
-      기능: 페이지 이동시 설정값 업데이트 하기
-  ***********************************************/
-  function updatePg() {
-    // 1. 함수 호출 확인
-    // console.log("업데이트");
 
-    // 2. 페이지 이동값 셋팅
-    let pgpos = window.innerHeight * pgnum;
+  // ✅ 위로 스크롤
+  if (delta < 0 && pgnum > 1) {
+    pgnum--;
+    scrollToPage(pgnum);
+  }
 
-    // 3. 페이지 이동하기 : 제이쿼리
-    $("html,body")
-      .stop()
-      .animate(
-        {
-          scrollTop: pgpos + "px",
-        },
-        400,
-        "easeInOutQuint",
-        () => {
-          // 이동후 업데이트 구역!
-          // pgnum이 2이면 스크롤 상태값 1
-          if (pgnum === 3 || pgnum === 4) sc_sts = 1;
-        }
-      );
+  // ✅ 아래로 스크롤
+  else if (delta > 0 && pgnum < totalPg) {
+    pgnum++;
+    scrollToPage(pgnum);
+  }
 
-    // scrollTo(가로,세로)
-    // window.scrollTo(0, pgpos);
-    // 세로 이동 위치: 윈도우 높이값*페이지 번호
-  } //////////////////// updatePg 함수 //////////////////
+  setTimeout(() => {
+    isWheelLocked = false;
+  }, 600);
+});
 
-  // 스크롤 체크할 요소의 위치값
-  const pg4 = $("#page_4");
-  let pg4pos = pg4.offset().top;
-  let pg4Ht = pg4.height() - $(window).height();
-  // 총이동가능거리
-  let mvHt = pg4pos + pg4Ht;
-  // console.log("4페이지top:", pg4pos, pg4Ht, mvHt);
+// 스크롤 수동 조작에 따른 pgnum 동기화 (예외 처리)
+$(window).on("scroll", function () {
+  const scrollTop = $(window).scrollTop();
+  if (scrollTop >= pg4pos && scrollTop < mvHt) {
+    pgnum = 4;
+  }
+});
 
-  // pg4 내부 pgnum 분기 기준박스
-  const pg3Inbx = $(".page_4-con1").offset().top;
 
-  // 한번만 실행 상태값(1-한번실행전,0-이미실행함)
-  let one_sts = 1;
 
-  // 스크롤 이벤트 셋팅하기 /////
-  $(window).scroll(function () {
-    let scTop = $(window).scrollTop();
-    // console.log(scTop);
-    // console.log("***한번실행:", one_sts);
 
-    // 만약 4페이지에서 이동범위바깥으로 나갈경우 다시
-    // 스크롤 허용을 불허용값으로 업데이트 하기!
-    // sc_sts = 0
-    if (scTop < pg4pos || scTop >= mvHt) {
-      sc_sts = 0;
-      one_sts = 1; // 한번실행 초기화
-      // console.log("대상외구역:", sc_sts, one_sts);
-    }
-
-    // 해당구역 하단부분 처리
-    if (scTop >= mvHt && scTop <= mvHt + 1 && sc_sts === 0 && one_sts === 1) {
-      one_sts = 0; // 한번실행잠금!
-      // console.log("한번실행:", sc_sts, one_sts);
-
-      updatePg();
-      // console.log("페이지번호:", pgnum);
-    }
-
-    // 스크롤 내부에서 pgnum 3,4 분기하기
-    if (scTop > pg3Inbx - 100 && scTop < pg3Inbx) pgnum = 3;
-    if (scTop > pg3Inbx && scTop < pg3Inbx + 100) pgnum = 4;
-  }); //////////// scroll /////////////////////
 }); ///////////////////////// load /////////////////////////

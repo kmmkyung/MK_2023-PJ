@@ -329,7 +329,7 @@
   /*---------- _____page4_____ ----------*/
 
   #page_4 {
-    height: 150vh;
+    height: auto;
   }
 
   .page_4-top h2 {
@@ -352,6 +352,7 @@
 
   .page_4-con1__text,
   .page_4-con1 > img {
+    margin-top: 20px;
     width: 80%;
     margin-right: 0;
   }

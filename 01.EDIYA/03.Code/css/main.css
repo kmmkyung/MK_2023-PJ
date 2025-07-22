@@ -626,12 +626,12 @@ body {
 
 .page_4-con1 h5,
 .page_4-con2 h5 {
-  font-size: min(3vw, 28px);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
 .page_4-con1 p,
 .page_4-con2 p {
-  font-size: min(1.4vw, 14px);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   word-break: keep-all;
   word-wrap: break-word;
 }

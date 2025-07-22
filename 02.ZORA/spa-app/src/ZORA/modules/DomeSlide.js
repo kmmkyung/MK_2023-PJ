@@ -6,14 +6,10 @@ import DomeSlide_data from "../data/DomeSlide_data";
 // 제이쿼리
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
-// import 'jquery-ui-touch-punch';
-// import { Draggable } from 'react-touch'
-// import Hammer from 'react-hammerjs'
+
 
 function jqFn() {
   $(() => {
-    console.log("DomeSlide 로딩");
-    document.querySelectorAll(".domeslide-btn li").item(0).classList.add("on");
   }); //--- JQB ---//
 } //_______________ jqFn _______________//
 
@@ -30,7 +26,7 @@ const DomeSlide = () => {
     // 리사이즈 업데이트
     $(window).resize(() => {
       winW = $(window).width();
-      console.log("reWin:", winW);
+      // console.log("reWin:", winW);
     });
     let winW = reWin();
 
@@ -38,7 +34,6 @@ const DomeSlide = () => {
     slide.on("dragstop", function () {
       // 위치값
       let slideL = slide.offset().left;
-      console.log("왼", slideL);
 
       // 1. 이동제어(왼/오/제자리)
       if (slideL < -winW * 1.1) {
@@ -92,7 +87,12 @@ const DomeSlide = () => {
 
   }; //////// setFn ////////////////
   useEffect(setFn, []);
-
+  useEffect(() => {
+    const firstBtn = document.querySelectorAll(".domeslide-btn li")[0];
+    if (firstBtn) {
+      firstBtn.classList.add("on");
+    }
+  }, []);
   return (
     <>
       <section id="domeslide">

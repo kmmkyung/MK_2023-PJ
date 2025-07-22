@@ -13,7 +13,6 @@ function jqFn(){
   // rounde SVG scroll rotate ______________________________________
   roundSvgMove(); //---- 호출
   function roundSvgMove(){
-    const RC = document.querySelector(".svg__1")
     
     window.addEventListener('scroll' ,function(){
       if(!document.querySelector(".svg__1")) return;

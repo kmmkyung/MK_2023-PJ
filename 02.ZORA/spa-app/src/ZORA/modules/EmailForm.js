@@ -20,7 +20,7 @@ function labelclick(params){
   })
   
   input.on('blur',function(){
-    if(input.val() !=""){
+    if(input.val() !== ""){
       inputlabel.css("top","-50%")
       inputlabel.css("color","#ccc")
     }else{

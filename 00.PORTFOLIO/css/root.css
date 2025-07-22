@@ -23,16 +23,16 @@ body {
 
   /* fontSize */
   --font-size-S: clamp(1.2rem, 2vw, 1.4rem);
-  --font-size-M: clamp(1.4rem, 3vw, 1.8rem);
+  --font-size-M: clamp(1.4rem, 2.5vw, 1.6rem);
   --font-size-L: clamp(2rem, 5vw, 3rem);
 }
 
-.mobile{
+.br_mobile{
   display: none;
 }
 
 @media (max-width: 768px) {
-  .mobile {
+  .br_mobile {
     display: block;
   }
 }

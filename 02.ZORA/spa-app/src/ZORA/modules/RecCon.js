@@ -49,7 +49,7 @@ function RecCon(props) {
 
   const setVal = (i) => {
     // return i==0 && props.sty ? props.sty : '';
-    if (i == 0) return props.sty;
+    if (i === 0) return props.sty;
     // if (v == "main" && i == 1) return props.sty
   };
 
@@ -70,11 +70,11 @@ function RecCon(props) {
               if(v){
                 return <p key={i}>{v}</p>
               }else{
-                return
+                return null;
               }
             })}
             {
-              content.btn != "" && (
+              content.btn !== "" && (
                 <Link to="/story">
               <button className="reccon-text__btn btn-B">{content.btn}</button>
             </Link>

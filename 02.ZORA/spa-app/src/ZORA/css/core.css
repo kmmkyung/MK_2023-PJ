@@ -213,7 +213,7 @@ body {
   width: 100%;
   background-color: var(--main);
   z-index: 3;
-  transition: opacity 2s;
+  transition: opacity 0.5s;
   opacity: 0;
 }
 

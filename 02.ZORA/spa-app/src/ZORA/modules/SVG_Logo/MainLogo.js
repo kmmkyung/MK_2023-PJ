@@ -1,6 +1,3 @@
-import { useLocation } from "react-router-dom";
-
-// Logo Svg
 const MainLogo = () => {
   const logo = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 74.9" style="enable-background:new 0 0 240 74.9;" xml:space="preserve">
   <path d="M54,1.8H2.7v4.5l43.6,0L0,73.3h54.5v-4.5h-40L54,1.8z"></path>
@@ -13,31 +10,23 @@ const MainLogo = () => {
   <path d="M215.1,0.1c-13.7,0-24.9,11.4-24.9,25.3v48h7v-19c0-10,8-18.5,17.9-18.5c9.8,0,17.9,8.4,17.9,18.5v19h7v-48
     C240,11.4,228.8,0.1,215.1,0.1z M232.9,39.4c-4.5-4.7-10.8-7.7-17.8-7.7c-7,0-13.3,2.9-17.9,7.7V22.7c0-10,8-18.1,17.9-18.1
     c9.8,0,17.8,8.2,17.8,18.1V39.4z"></path>
-  </svg>
-`
+  </svg>`;
 
+  const goTop = () => {
+    const html = document.documentElement;
+    html.style.scrollBehavior = "smooth";
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      html.style.scrollBehavior = "auto";
+    }, 2000);
+  };
 
-let loc = useLocation();
-console.log(loc.pathname);
-
-const goTop = () => {
-
-  let thtml = document.querySelector('html');
-
-  if(loc.pathname='/'){ 
-    thtml.style.scrollBehavior = "smooth";
-    setTimeout(()=>window.scrollTo(0,0),10);
-    setTimeout(()=>thtml.style.scrollBehavior = "auto",2000);
-  }
-  
-}; ///////// goTop ////////////
-
-
-  return(
-    <>
-      <div onClick={goTop} dangerouslySetInnerHTML={ {__html: logo} } className="nav-C nav-logo"></div>
-    </>
-
+  return (
+    <div
+      onClick={goTop}
+      dangerouslySetInnerHTML={{ __html: logo }}
+      className="nav-C nav-logo"
+    ></div>
   );
 };
 

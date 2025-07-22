@@ -11,16 +11,10 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { chocobreak } from "./ChocoDomeCon";
 
-function jqFn() {
-  $(() => {
-    console.log("Subitem로딩");
-  }); //--- JQB ---//
-}
 
 function inputclick(params) {
   // 인풋
   const sumInput = $(params);
-  console.log("suminput", sumInput);
 
   // 인풋 버튼
   $(params)
@@ -35,7 +29,6 @@ function inputclick(params) {
 
       // 2. 현재값 읽어오기 문자->숫자
       let isV = Number(sumInput.val());
-      console.log("현재값", isV);
 
       // 3. 버튼 분기하기
       if (altbtn === "add") {
@@ -68,98 +61,62 @@ function inputclick(params) {
 function SubAll(props) {
 
   function addCart_data() {
-    // 로컬에 cart가 없으면 배열로 문자 넣기
-    if (localStorage.getItem("cart") == null) {
-      localStorage.setItem("cart", "[]");
-      // console.log("cart후", localStorage.getItem("cart"));
-    }
-
-    let org = localStorage.getItem("cart");
-    org = JSON.parse(org); // 객체화 한 데이터
-
-    //
-
-    // let seltit = $(".subface-con h1").text();
+    let org = JSON.parse(localStorage.getItem("cart")) || [];
     let selidx = Number(SubItem_data[props.num].idx);
-    console.log(org, selidx);
+    let inputNum = Number($(".subface-con .number-btn__input").val());
+  
+    let seldt = Bag_data.find((v) => Number(v.idx) === selidx);
+    // console.log("seldt:", seldt);
 
-    // console.log(seltit, "/쉽게/", props.idx);
-    console.log(Bag_data);
-
-    // 새로 장바구니 등록하기
-    const createCart = () => {
-      let seldt = Bag_data.find((v) => {
-        if (v.idx == selidx) return true;
-      });
+    if (!seldt) return;
+  
+    let existingItem = org.find(item => item.idx === selidx);
+    if (existingItem) {
+      existingItem.num = Number(existingItem.num) + inputNum;
+    } else {
       org.push({
-        idx: org.length + 1,
+        idx: selidx,
         tit: seldt.tit,
         src: seldt.src,
-        num: Number($(".subface-con .number-btn__input").val()),
+        num: inputNum,
+        price: seldt.price
       });
-    }; /////////// createCart /////////////
-
-    // 로컬스 데이터가 있다!
-    if (org.length > 0) {
-      let seldt = org.find((v) => {
-        if (v.idx == selidx) return true;
-      });
-
-      // 만약 배열 find()의 결과가 없으면 undefined 이므로 false처리됨!
-      if (seldt) {
-        // find()의 결과가 있을때만 들어옴! - 기존장바구니에 같은 항목이 있다는말!
-        console.log(
-          "있다!",
-          seldt.num, // 누르기 전 갯수
-          seldt, // 해당 데이터
-          Number($(".subface-con .number-btn__input").val()) // input 값에 찍히는 갯수
-        );
-        // 기존항목에 개수만 업데이트함!!!^^
-        seldt.num =
-          Number(seldt.num) +
-          Number($(".subface-con .number-btn__input").val());
-      } ////////////// if ///////////////
-      else {
-        // 새로운 아이템일 경우 새로등록하기!!!^^
-        createCart();
-      } ///////////// else ////////////////
     }
-    // 로컬스 데이터가 아예없는 경우 새로등록!
-    else {
-      createCart();
-    }
+  
     localStorage.setItem("cart", JSON.stringify(org));
-    console.log("저장후", localStorage.getItem("cart"));
-  } ///// addCart_data //////
+    // console.log("Updated cart in localStorage:", org);
+  
+    if (props.setCart) {
+      props.setCart(org);
+    }
+  }
+
+    
+  
 
   // 버튼 액션
   const btnAct = () => {
-    // console.log(3333);
-
     window.scrollTo(0, 0);
     $(".subface-con .number-btn__input").val("1");
   }; /////////// btnAct ///////////
 
   useEffect(() => inputclick(".number-btn__input"), []);
   useEffect(chocobreak, []);
-  let [winW, setWinW] = useState(0)
 
-  const test = ()=>{
-    setWinW($(window).width())
-    console.log("test",winW)
-    
-  }
-useEffect(() => {
-    test();
-    window.addEventListener("resize",()=>{
-      test()
-    });
-    return (
-      window.removeEventListener("resize",()=>{
-        test();
-      })
-    )
-    },[winW]);
+  const [winW, setWinW] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWinW(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // 클린업 함수: 이벤트 해제
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
     
   return (
     <>
@@ -277,7 +234,7 @@ useEffect(() => {
                     to="/sub"
                     state={{
                       num:
-                        Number(props.num) - 1 == -1 ? 4 : Number(props.num) - 1,
+                        Number(props.num) - 1 === -1 ? 4 : Number(props.num) - 1,
                     }}
                   >
                     <button className="btn-B" onClick={btnAct}>
@@ -320,7 +277,7 @@ useEffect(() => {
                     to="/sub"
                     state={{
                       num:
-                        Number(props.num) + 1 == 5 ? 0 : Number(props.num) + 1,
+                        Number(props.num) + 1 === 5 ? 0 : Number(props.num) + 1,
                     }}
                   >
                     <button className="btn-B" onClick={btnAct}>
@@ -361,7 +318,7 @@ useEffect(() => {
                     to="/sub"
                     state={{
                       num:
-                        Number(props.num) + 1 == 5 ? 0 : Number(props.num) + 1,
+                        Number(props.num) + 1 === 5 ? 0 : Number(props.num) + 1,
                     }}
                   >
                     <button className="btn-B" onClick={btnAct}>
@@ -381,7 +338,6 @@ useEffect(() => {
           </div>
         </div>
       </section>
-      {jqFn()}
     </>
   );
 } //______________ SubItem _______________//

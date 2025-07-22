@@ -1,37 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // Data
 import OurFace_data from "../data/OurFace_data";
 // CSS
 import "../css/ourface.css";
-// 제이쿼리
-import $ from "jquery";
-function jqFn() {
-  $(() => {});
-}
+
 
 const OurFace = (props) => {
   // 윈도크기리턴함수
-  const reWin = () => $(window).width();
-  let [winW, setWinW] = useState(0)
-
-  const test = ()=>{
-    setWinW($(window).width())
-    console.log("test",winW)
-    
-  }
+  const [winW, setWinW] = useState(window.innerWidth);
 
   useEffect(() => {
-    test();
-    window.addEventListener("resize",()=>{
-      test()
-    });
-    return (
-      window.removeEventListener("resize",()=>{
-        test();
-      })
-    )
-    },[winW]);
+    const handleResize = () => {
+      setWinW(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // 클린업 함수: 이벤트 해제
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <>
@@ -77,7 +68,6 @@ const OurFace = (props) => {
           </div>
         </div>
       </section>
-      {jqFn()}
     </>
   );
 };

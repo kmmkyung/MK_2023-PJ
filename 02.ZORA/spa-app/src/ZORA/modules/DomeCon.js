@@ -43,7 +43,7 @@ function DomeCon(props) {
               <img className="src2" src={content.src2} alt="img" />
             )}
             {
-              content.con1.split("^").length == 1 &&
+              content.con1.split("^").length === 1 &&
               <p className="domecon-con__text">{content.con1}</p>
             }
             {

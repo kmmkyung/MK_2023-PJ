@@ -37,7 +37,6 @@ $(() => {
     
 
   // <head> 파비콘 함수 + 호출 _____________________________________
-  favicon(); //---- 호출
   function favicon() {
     let faviconCounter = 0;
     const faviconImg = [
@@ -49,15 +48,17 @@ $(() => {
     ];
 
     setInterval(function () {
-      document
-        .querySelector(".icon")
-        .setAttribute("href", faviconImg[faviconCounter]);
-      faviconCounter++;
-      if (faviconCounter == faviconImg.length - 1) {
-        faviconCounter = 0;
+      const iconElem = document.querySelector(".icon");
+      if (iconElem) {
+        iconElem.setAttribute("href", faviconImg[faviconCounter]);
+        faviconCounter++;
+        if (faviconCounter >= faviconImg.length) {
+          faviconCounter = 0;
+        }
       }
     }, 800);
   }
+  favicon(); // 호출
 
   // MOUSE_CURSOR ______________________________________
   const mouseCursor = $(".cursor");
@@ -158,32 +159,99 @@ $(() => {
   }
 
   // Bag ____________________________________________________________
-  Bag();
+  // function Bag() {
+  //   const BagBtn = document.querySelectorAll(".Bag"); // 버튼들
+  //   const Bclose = document.querySelector(".Bag-close");
+  //   const Bagwrap = document.querySelector("#bag");
+  //   const Bag = document.querySelector(".bag-wrap");
+  
+  //   BagBtn.forEach((v) => {
+  //     v.addEventListener("click", function () {
+  //       const scrollY = window.scrollY || document.documentElement.scrollTop; // 여기서 새로 계산!
+  //       Bagwrap.style.transform = "translateX(0%)";
+  //       Bagwrap.style.overflow = "hidden";
+  
+  //       document.body.style.position = "fixed";
+  //       document.body.style.top = `-${scrollY}px`;
+  //       document.body.style.width = "100%";
+  
+  //       Bag.style.overflow = "auto";
+  
+  //       setTimeout(() => {
+  //         Bagwrap.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  //       }, 500);
+  //     });
+  //   });
+  
+  //   Bclose.addEventListener("click", () => {
+  //     Bagwrap.style.backgroundColor = "rgba(0, 0, 0, 0)";
+  
+  //     setTimeout(() => {
+  //       Bagwrap.style.transform = "translateX(100%)";
+  
+  //       // 스크롤 풀기 전에 위치 복원
+  //       const scrollY = parseInt(document.body.style.top || "0") * -1;
+  //       document.body.style.position = "";
+  //       document.body.style.top = "";
+  //       document.body.style.width = "";
+  
+  //       window.scrollTo(0, scrollY);
+  //     }, 800);
+  //   });
+  // }
+  
   function Bag() {
-    const BagBtn = document.querySelectorAll(".Bag"); // 데스크탑, 모바일 버튼
-    const Bclose = document.querySelector(".Bag-close");
+    const BagBtn = document.querySelectorAll(".Bag"); // 열기 버튼들 (모바일, 데스크탑)
+    const Bclose = document.querySelector(".Bag-close"); // 닫기 버튼
     const Bagwrap = document.querySelector("#bag");
     const Bag = document.querySelector(".bag-wrap");
 
+    let scrollY = 0;
+
     BagBtn.forEach((v) => {
-      v.addEventListener("click", function () {
+      v.addEventListener("click", () => {
+        // 현재 스크롤 위치 저장
+        scrollY = window.scrollY || document.documentElement.scrollTop;
+
         Bagwrap.style.transform = "translateX(0%)";
         Bagwrap.style.overflow = "hidden";
-        document.body.style.overflow = "hidden";
-        Bag.style.overflow = "auto";
-        setTimeout(()=>{
-          Bagwrap.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-        },500)
+
+        // position: fixed 바로 적용 시 스크롤 튀는 문제 방지 딜레이
+        setTimeout(() => {
+          document.body.style.paddingRight = '15px';
+          document.body.style.position = "fixed";
+          document.body.style.top = `-${scrollY}px`;
+          document.body.style.width = "100%";
+          Bag.style.overflow = "auto";
+        }, 10);
+
+        setTimeout(() => {
+          Bagwrap.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        }, 500);
       });
     });
+
     Bclose.addEventListener("click", () => {
-      Bagwrap.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-      document.body.style.overflow = "auto";
-      setTimeout(()=>{
+      Bagwrap.style.backgroundColor = "rgba(0, 0, 0, 0)";
+
+      setTimeout(() => {
         Bagwrap.style.transform = "translateX(100%)";
-      },800)
+
+        // body 고정 해제
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+        document.body.style.paddingRight = '0px';
+
+        // 저장된 스크롤 위치로 돌아가기
+        window.scrollTo(0, scrollY);
+      }, 800);
     });
   }
+
+  Bag(); // 호출
+
+  
 
   // Login ____________________________________________________________
   LoginBtn();
@@ -196,36 +264,50 @@ $(() => {
       document.querySelector("#Login").classList.remove("-hidden");
       setTimeout(() => {
         document.querySelector("#Login").style.opacity = "1";
-      }, 10);
+      }, 300);
       document.body.style.overflow = "hidden";
     });
     Lclose.addEventListener("click", function () {
       document.querySelector("#Login").style.opacity = "0";
       setTimeout(() => {
         document.querySelector("#Login").classList.add("-hidden");
-      }, 2000);
+      }, 300);
       document.body.style.overflow = "auto";
     });
     DTLopen.addEventListener("click", function () {
       document.querySelector("#Login").classList.remove("-hidden");
       setTimeout(() => {
         document.querySelector("#Login").style.opacity = "1";
-      }, 10);
+      }, 300);
       document.body.style.overflow = "hidden";
     });
   }
 });
 
-// 장바구니 __________________________________________________________
-let org = JSON.parse(localStorage.getItem("cart"));
+
 
 const Layout = () => {
+  // 장바구니 __________________________________________________________
+  const [cart, setCart] = useState(() => {
+    const storedCart = localStorage.getItem("cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  const totalNum = cart.reduce((acc, item) => acc + Number(item.num), 0);
+  const totalPrice = cart.reduce(
+    (acc, item) => acc + Number(item.num) * Number(item.price),
+    0
+  );
+
+  // 로컬스토리지 업데이트 반영
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   // 0- main, 1- else
   let [topCon, setTopCon] = useState(0)
   const topWhite = () =>{
     let scTop = $(window).scrollTop();
-    // console.log('실행');
-    // console.log(scTop);
     
     if (scTop <800) {
       if(topCon) return
@@ -250,18 +332,19 @@ const Layout = () => {
     document.querySelector("#DTnav .Bag").style.color = "#000";
     const DTnavli = document.querySelectorAll("#DTnav .nav-L li a");
     DTnavli.forEach((v)=>{ v.style.color = "#000"; })
+    }
   }
-}
-const chgTop = () =>{
-  setTopCon(1);
-  topWhite();
-}
-useEffect(()=>{
-  topWhite();
-    $(window).on("mousewheel",()=>{
-      topWhite()
-    });
-})
+
+  const chgTop = () =>{
+    setTopCon(1);
+    topWhite();
+  }
+  useEffect(()=>{
+    topWhite();
+      $(window).on("mousewheel",()=>{
+        topWhite()
+      });
+  })
 
   return (
     <>
@@ -295,7 +378,7 @@ useEffect(()=>{
             <div className="nav-R">
               <ul>
                 <li className="login">LOG-IN</li>
-                <li className="Bag">BAG<span>(0)</span></li>
+                <li className="Bag">BAG<span>({totalNum})</span></li>
               </ul>
             </div>
           </div>
@@ -321,7 +404,7 @@ useEffect(()=>{
             <span className="ir">ZORA</span>
             <div className="nav-R">
               <ul>
-                <li className="Bag">BAG(0)</li>
+                <li className="Bag">BAG({totalNum})</li>
               </ul>
             </div>
           </div>
@@ -352,13 +435,13 @@ useEffect(()=>{
           </div>
           <div className="bag-items__tit">
             <h3>
-              ITEMS(<span>0</span>)
+              ITEMS(<span>{totalNum}</span>)
             </h3>
           </div>
-          <Bag />
+          <Bag cart={cart} setCart={setCart}/>
           <div className="bag-items__total">
             <span>TOTAL</span>
-            <span>$0</span>
+            <span>${totalPrice.toFixed(2)}</span>
           </div>
           <button className="con-btn__buy">BUY NOW</button>
         </div>
@@ -390,7 +473,7 @@ useEffect(()=>{
       </aside>
       {/* MAIN CONTENT -----------------------------------------------------*/}
       <main id="cont">
-        <Outlet />
+        <Outlet context={{ cart, setCart }} />
       </main>
       {/* FOOTER -----------------------------------------------------*/}
       <footer id="footer">

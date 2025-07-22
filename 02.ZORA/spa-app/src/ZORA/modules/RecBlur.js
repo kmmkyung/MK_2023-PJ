@@ -4,7 +4,7 @@ import "../css/recblur.css";
 import RecCon_data from "../data/RecBlur_data";
 // 제이쿼리
 import $ from "jquery"
-import Fade from "react-reveal/Fade"
+import { motion } from "framer-motion";
 
 
 function jqFn(){
@@ -15,12 +15,21 @@ function jqFn(){
 jqFn();
 
 function RecBlur(props){
+    const fadeUpVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+      };
     return(
         <>        
             <section id="recblur">
                 <div className="recblur-con">
                     <img src={RecCon_data[props.num].src} alt="이미지"  />
-                    <Fade bottom>
+                    <motion.div
+        variants={fadeUpVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        >
                     <div className="recblur-text">
                         <h2>{RecCon_data[props.num].tit}</h2>
                         <p>{RecCon_data[props.num].con}</p>
@@ -28,7 +37,7 @@ function RecBlur(props){
                             <button className="recblur-text__btn btn-B">{RecCon_data[props.num].btn}</button>
                         </Link>
                     </div>
-                </Fade>
+                </motion.div>
                 </div>
             </section>
             {/* {jqFn()} */}

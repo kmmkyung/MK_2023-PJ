@@ -65,8 +65,8 @@ export default {
       if(ele.COMPANY == this.routeID){
         this.findArr = ele
         this.findListArr = ele.LIST
-        console.log(this.findArr);
-        console.log(this.findListArr);
+        // console.log(this.findArr);
+        // console.log(this.findListArr);
         
       }
     })

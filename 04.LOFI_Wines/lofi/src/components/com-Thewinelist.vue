@@ -160,12 +160,12 @@ export default {
   created(){
     window.scrollTo(0,0)
 
-    this.DataWineList.forEach((ele)=>{
-      this.countryArr.push(...ele.DATA)
-      this.countryArr.forEach((ele)=>{
-        this.companyArr.push(...ele.LIST)
-      })
-    })
+  this.DataWineList.forEach((ele) => {
+    this.countryArr.push(...ele.DATA);
+    ele.DATA.forEach((item) => {
+      this.companyArr.push(...item.LIST);
+    });
+  });
   }
 }
 </script>

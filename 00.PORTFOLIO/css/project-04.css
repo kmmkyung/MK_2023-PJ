@@ -2,28 +2,32 @@
 
 .content-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: clamp(20px, 4vw, 40px);
 }
 
 .content-1 {
-  flex: 1; 
   display: flex;
-}
-
-.content-1 img {
   width: 100%;
-  height: auto;
-}
-
-.content-2 {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   gap: 10px;
 }
 
-.content-3 {
+.content-2 {
   display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.content-2__left {
+  flex: 1;
+}
+
+.content-2__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

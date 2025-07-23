@@ -23,7 +23,3 @@
   width: 100%;
   height: auto;
 }
-
-.content-2 img {
-  width: calc(50% - 5px);
-}

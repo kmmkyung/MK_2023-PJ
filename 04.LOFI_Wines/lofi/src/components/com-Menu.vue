@@ -106,8 +106,9 @@ export default {
     menuHam(){
       const nav = document.querySelector('nav');
       const hamburger = document.querySelector('.hamburger');
-        nav.classList.remove('on')
-        hamburger.classList.remove('on')
+      nav.classList.remove('on')
+      hamburger.classList.remove('on')
+      document.body.style.overflow = 'auto';
     }
   },
   mounted(){
@@ -130,6 +131,8 @@ export default {
       hamburger.classList.toggle('on');
       nav.classList.toggle('on');
       if(nav.classList.contains('on')){
+        document.body.style.overflow = 'hidden';
+
         menuItemFn(0,600)
         menuItemFn(1,800)
         menuItemFn(2,1000)
@@ -139,6 +142,7 @@ export default {
         },400)
       }
       else{
+        document.body.style.overflow = 'auto';
         menuItem.forEach((ele,idx) => {
           menuItem[idx].style.opacity='0'
           menuItem[idx].style.transform='translateY(100%)'

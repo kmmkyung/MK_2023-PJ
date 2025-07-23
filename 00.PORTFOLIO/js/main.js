@@ -2,18 +2,22 @@
 const timeline = gsap.timeline()
 
 window.addEventListener('DOMContentLoaded',function(){
+  const section1 = document.querySelector(".section-1");
+  const section2 = document.querySelector(".section-2");
+  const section3 = document.querySelector(".section-3");
+  const section4 = document.querySelector(".section-4");
+
   // menu - menu click
   const projectBtn = document.querySelector(".project-btn");
   const aboutBtn = document.querySelector(".about-btn");
   const contactBtn = document.querySelector(".contact-btn");
-  const workSection = document.querySelector(".section-2");
-  const aboutSection = document.querySelector(".section-3");
-console.log(workSection.offsetTop);
+
+
   projectBtn.addEventListener('click', function() {
-    window.scrollTo({ top: workSection.offsetTop, behavior: "smooth" });
+    window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
   });
   aboutBtn.addEventListener('click', function() {
-    window.scrollTo({ top: aboutSection.offsetTop, behavior: "smooth" });
+    window.scrollTo({ top: section3.offsetTop, behavior: "smooth" });
   });
   contactBtn.addEventListener('click', function() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
@@ -23,9 +27,7 @@ console.log(workSection.offsetTop);
   const headerH = document.querySelector("header").offsetHeight;
   const svgW = document.querySelectorAll("svg .white");
   const menuWords = document.querySelectorAll(".menu-word");
-  const section1 = document.querySelector(".section-1");
-  const section3 = document.querySelector(".section-3");
-  const section4 = document.querySelector(".section-4");
+
 
   window.addEventListener('scroll', function(){
     const scrollTop = window.scrollY;
@@ -65,12 +67,11 @@ console.log(workSection.offsetTop);
 
 
   //section2 - horizontal scroll GSAP animation
-  const projectPage = document.querySelector(".section-2");
   const project = gsap.utils.toArray(".section-2 .project");
 
   const projectTimeline = gsap.timeline({
     scrollTrigger: {
-      trigger: projectPage,
+      trigger: section2,
       pin: true,
       scrub: 1,
       // anticipatePin: 1,
@@ -79,7 +80,7 @@ console.log(workSection.offsetTop);
     defaults: { ease: "none", duration: 1 },
   });
 
-  projectTimeline.to( project,{ x: () => -(projectPage.scrollWidth - document.body.clientWidth + 100)})
+  projectTimeline.to( project,{ x: () => -(section2.scrollWidth - document.body.clientWidth + 100)})
 
   project.forEach((pj) => {
     gsap.fromTo( pj,

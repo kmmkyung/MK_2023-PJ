@@ -23,10 +23,16 @@ window.addEventListener('DOMContentLoaded',function(){
     }
   });
 
-  // header - menu click
+  // header - menu click & color change
   const homeBtn = document.querySelector(".home-btn");
   const visitSiteBtn = document.querySelector(".visitSite-btn");
   const contactBtn = document.querySelector(".contact-btn");
+  const visitSiteBtnWords = visitSiteBtn.querySelectorAll('.menu-word');
+
+  visitSiteBtnWords.forEach((ele)=>{
+    ele.classList.add('gradient-text');
+  })
+  visitSiteBtnWords[0].classList.add('icon');
 
   homeBtn.addEventListener('click', function() {
     location.href = 'index.html';

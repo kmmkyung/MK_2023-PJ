@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded',function(){
   const contactBtn = document.querySelector(".contact-btn");
   const workSection = document.querySelector(".section-2");
   const aboutSection = document.querySelector(".section-3");
-
+console.log(workSection.offsetTop);
   projectBtn.addEventListener('click', function() {
     window.scrollTo({ top: workSection.offsetTop, behavior: "smooth" });
   });

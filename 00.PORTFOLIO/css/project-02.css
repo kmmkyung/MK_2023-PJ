@@ -8,7 +8,7 @@
 }
 
 .content-1 {
-  flex: 1.8; 
+  flex: 1.6; 
 }
 
 .content-2 {
@@ -25,5 +25,5 @@
 }
 
 .content-2 img {
-  width: 100%;
+  width: calc(50% - 5px);
 }

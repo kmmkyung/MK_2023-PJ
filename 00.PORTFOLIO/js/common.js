@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded',function(){
   for(let i = 0; i <menu.length; i++){
     const menuItem = menu[i];
     const menuValue = menuItem.textContent;
-    const valueWords = menuValue.split('');
+    const valueWords = [...menuValue];
     menuItem.innerHTML ='';
     
     for(let word = 0; word < valueWords.length; word++){

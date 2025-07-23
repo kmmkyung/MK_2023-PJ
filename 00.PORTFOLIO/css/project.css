@@ -1,3 +1,9 @@
+/* menu */
+.visitSite-btn .icon {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
 /* project-inner */
 .project-inner {
   padding: 80px min(3.5vw, 50px);
@@ -60,6 +66,32 @@
   margin-top: 5px;
   font-size: var(--font-size-S);
   color: var(--gray_a);
+}
+
+.project-info__site {
+  display: block;
+  margin-top: 5px;
+  font-size: var(--font-size-S);
+}
+
+.project-info__site span {
+  position: relative;
+}
+
+.project-info__site span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  transition: all .2s;
+  width: 0%;
+  background-color: var(--gray_a);
+}
+
+
+.project-info__site span:hover::after{
+  width: 100%;
 }
 
 .project-info__text {

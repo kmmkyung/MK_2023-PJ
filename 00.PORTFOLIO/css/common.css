@@ -58,6 +58,28 @@ nav {
   transition: color 0.5s;
 }
 
+.gradient-text {
+  background: linear-gradient(to right, #ff943e ,#ffd300, #00d1f3);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* section-1 */
 .section-1 {
   background-color: var(--black);

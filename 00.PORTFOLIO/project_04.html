@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/logo/favicon.png" />
+  <title>PORTFOLIO_LO-FI Wines</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/project-02.css" />
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- js -->
+    <script src="./js/common.js" type="module"></script>
+    <script src="./js/project.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="logo"></div>
+      <nav>
+        <div class="home-btn menu">HOME</div>
+        <div class="visitSite-btn menu" data-site-url="https://kmmkyung.github.io/PJ-LOFI/">🔗VISIT_SITE</div>
+        <div class="contact-btn menu">CONTACT</div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="inner project-inner">
+        <div class="thumbnail-container">
+          <img class="thumbnail pc" src="./images/project-04/lofi_pc.png" alt="Lofi">
+          <img class="thumbnail mobile" src="./images/project-04/lofi_mobile.png" alt="Lofi">
+        </div>
+        <p class="page-title">
+          <span class="title">Portfolio</span><br/>
+          <span class="subTitle">Kim min kyung</span>
+        </p>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="inner project-inner">
+        <div class="project-info">
+          <div class="project-info__header">
+            <h2 class="project-info__title">LO-FI Wines</h2>
+            <p class="project-info__stack">└ Stack : React / HTML / CSS / JavaScript</p>
+            <p class="project-info__media">└ Media Query : DeskTop / Tablet </p>
+            <a class="project-info__site" href="https://kmmkyung.github.io/PJ-LOFI/" target="_blank">└ 🔗 <span>Vite Site</span></a>
+          </div>
+          <p class="project-info__text">
+            LO-FI Wines 공식 웹사이트를 클론하여 React로 구조화한 SPA(싱글 페이지 어플리케이션)입니다.<br>
+            메인 페이지 퍼블리싱뿐 아니라, 상품 목록 렌더링과 장바구니 기능까지 구현하였습니다.<br>
+            상태 관리는 React와 localStorage를 활용해, 로컬 환경에서 실제처럼 동작하도록 만들었습니다.            
+          </p>
+        </div>
+        <div class="project-content">
+          <div class="content-container">
+            <div class="content-1">
+              <img src="./images/project-02/zora_pc.png" alt="Lofi">
+            </div>
+            <div class="content-2">
+              <img src="./images/project-02/zora_1.png" alt="Lofi">
+              <img src="./images/project-02/zora_2.png" alt="Lofi">
+            </div>
+          </div>
+          <!-- 각 페이지 content 요소 -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="inner">
+      <div class="footer-content">
+        <h2>Contact</h2>
+        <h3>01aldrn10@gmail.com</h3>
+        <a href="https://github.com/kmmkyung">github</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

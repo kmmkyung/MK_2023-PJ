@@ -20,14 +20,15 @@
 }
 
 .thumbnail {
-  border-radius: clamp(1.2rem, 2.5vw, 5rem);
+  /* border-radius: clamp(1.2rem, 2.5vw, 5rem); */
+  border-radius: 2rem;
   overflow: hidden;
 }
 
 .thumbnail.pc{
   width: 90%;
   max-width: 1000px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 60 / 31;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -35,8 +36,8 @@
 
 .thumbnail.mobile {
   max-width: 360px;
-  max-height: 774px;
-  aspect-ratio: 9 / 20;
+  max-height: 553px;
+  aspect-ratio: 100 / 161;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -123,7 +124,7 @@
   
   .thumbnail.mobile {
     width: 90%;
-    height: 90%;
+    height: auto;
     position: static;
     outline: none;
   }

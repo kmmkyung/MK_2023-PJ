@@ -12,9 +12,8 @@ window.addEventListener('DOMContentLoaded',function(){
   const aboutBtn = document.querySelector(".about-btn");
   const contactBtn = document.querySelector(".contact-btn");
 
-
   projectBtn.addEventListener('click', function() {
-    window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+    window.scrollTo({ top: section2.offsetHeight, behavior: "smooth" });
   });
   aboutBtn.addEventListener('click', function() {
     window.scrollTo({ top: section3.offsetTop, behavior: "smooth" });

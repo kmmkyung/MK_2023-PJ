@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 100 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
 const OurStory = () => {

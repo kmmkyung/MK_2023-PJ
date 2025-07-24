@@ -47,16 +47,17 @@
         <div class="project-info">
           <div class="project-info__header">
             <h2 class="project-info__title">Carrot Market</h2>
-            <p class="project-info__stack">└ Stack : Next / HTML / CSS / JavaScript</p>
+            <p class="project-info__stack">└ Stack : Next / HTML / CSS / JavaScript / TypeScript</p>
             <p class="project-info__media">└ Media Query : DeskTop / Tablet</p>
             <a class="project-info__site" href="https://carrot-market-flame.vercel.app/" target="_blank">└ 🔗 <span>Vite Site</span></a>
           </div>
           <p class="project-info__text">
-            Vanilla JS 기반의 반응형 화장품 쇼핑몰 제품 리스트 페이지를 퍼블리싱 및 개발하였습니다.<br>
-            미디어쿼리에 따라 각 섹션의 배경 이미지를 변경하고, GSAP + ScrollTrigger를 활용해 가로 스크롤 애니메이션과 스크롤 기반 등장 효과를 구현했습니다.<br>
-            itemData를 기반으로 동적 필터 태그 생성, 정렬 기능, 카테고리 및 서브카테고리 필터링, 페이지네이션 등을 JavaScript로 직접 처리하였습니다.<br>
-            URL 쿼리스트링 파싱을 통해 사용자 선택 상태를 반영하고, 클릭 이벤트에 따라 실시간으로 상품 데이터를 필터링하여 렌더링합니다.<br>
-            *로그인, 장바구니, 검색 기능은 포함되어 있지 않으며, 프론트엔드 UI/UX 구현과 필터링 로직 중심으로 개발된 프로젝트입니다.*
+            TMDB API를 활용해 React 기반의 Disney Plus 클론 SPA를 개발하였습니다.<br>
+            Firebase Auth를 이용해 이메일/비밀번호 로그인과 GitHub OAuth 로그인을 구현했으며, 로그인 상태와 사용자 정보를 Recoil 전역 상태로 관리합니다.<br>
+            특히 Recoil의 atom을 활용해 검색 중 상태, 검색어, 검색 결과, 그리고 로그인 사용자 정보를 체계적으로 정의하였습니다.<br>
+            React Query를 사용해 TMDB API에서 다양한 영화 데이터를 비동기적으로 패칭하고, 배너와 카테고리별 영화 리스트를 효율적으로 렌더링하였습니다.<br>
+            검색 페이지는 디바운싱 처리된 실시간 검색 기능을 제공하며, backdrop 이미지가 존재하는 결과만 필터링하여 보여줍니다.<br>
+            Styled-components로 반응형 UI를 구성하였으며, 로딩과 에러 상태 처리에도 신경 썼습니다.
           </p>
         </div>
         <div class="project-content">

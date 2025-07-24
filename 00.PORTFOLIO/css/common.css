@@ -43,7 +43,6 @@ header .inner {
 nav {
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
   gap: 30px;
 }
 

@@ -43,7 +43,7 @@ const Main = () => {
         variants={fadeUpVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         <DomeCon cat="main" num="0" />
         <RecCon cat="main" num="1" sty={{ position: "absolute", top: "min(-2vw,-30px)" }} />
